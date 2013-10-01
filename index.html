@@ -1,74 +1,407 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Jordanmoore.github.io : " />
+<head>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <title>Styleguide</title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+</head>
 
-    <title>Jordanmoore.github.io</title>
-  </head>
+<body>
 
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/jordanmoore">View on GitHub</a>
-
-          <h1 id="project_title">Jordanmoore.github.io</h1>
-          <h2 id="project_tagline"></h2>
-
-        </header>
+  <div class="container">
+    <h1 contenteditable>Project name <span>Styleguide</span></h1>
+    <div class="block-controls">
+      <div class="block-controls-inner">
+        <div class="block-controls-font-family">
+          <label for="block-controls-font">Typeface</label>
+          <select name="block-controls-font" class="block-controls-font">
+            <optgroup label="Universal system fonts">
+              <option value="Arial, sans-serif">Arial</option>
+              <option value="Courier, monospace">Courier</option>
+              <option value="Georgia, serif">Georgia</option>
+              <option value="'Times New Roman', serif">Times New Roman</option>
+              <option value="'Trebuchet MS', sans-serif">Trebuchet MS</option>
+              <option value="'Verdana', sans-serif">Verdana</option>
+            </optgroup>
+            <optgroup label="Mac system fonts">
+              <option value="'American Typewriter', sans-serif">American Typewriter</option>
+              <option value="Baskerville, serif">Baskerville</option>
+              <option value="'Big Caslon', serif">Big Caslon</option>
+              <option value="Copperplate, serif">Copperplate</option>
+              <option value="Didot, serif">Didot</option>
+              <option value="Futura, sans-serif">Futura</option>
+              <option value="'Gill Sans', sans-serif">Gill Sans</option>
+              <option value="Helvetica, sans-serif">Helvetica</option>
+              <option value="'Lucida Grande', sans-serif">Lucida Grande</option>
+              <option value="Monaco, monospace">Monaco</option>
+              <option value="Optima, sans-serif">Optima</option>
+              <option value="Palatino, serif">Palatino</option>
+            </optgroup>
+            <optgroup label="Web fonts">
+              <option value="'FreightSans Pro', sans-serif">Freight Sans</option>
+              <option value="Lato, sans-serif">Lato</option>
+              <option value="'Open Sans', sans-serif">Open Sans</option>
+              <option value="'Source Sans Pro', sans-serif">Source Sans Pro</option>
+              <option value="TisaOT, serif">FF Tisa</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="block-controls-formatting">
+          <a href="" class="icon-bold inactive" title="Bold"></a>
+          <a href="" class="icon-italic inactive" title="Italic"></a>
+          <a href="" class="icon-align-left inactive" title="Left align"></a>
+          <a href="" class="icon-align-center inactive" title="Center align"></a>
+          <a href="" class="icon-align-right inactive" title="Right align"></a>
+          <a href="" class="icon-align-justify inactive" title="Justify"></a>
+          <a href="" class="icon-text-width inactive" title="Toggle kerning"></a>
+        </div>
+        <div class="block-controls-measurements">
+          <label for="block-controls-size">Size</label>
+          <input type="number" name="block-controls-size" class="block-controls-size" value="10" min="10" step="1" max="48">
+          <span>px</span>
+          <label for="block-controls-lineheight">Line-height</label>
+          <input type="number" name="block-controls-lineheight" class="block-controls-lineheight" value="1.4" min="1" step="0.05" max="4">
+          <span>em</span>
+        </div>
+        <div class="block-controls-colour">
+          <label for="block-controls-background">BG Colour</label>
+          <input type="color" class="block-controls-background">
+          <label for="block-controls-textcolor">Text Colour</label>
+          <input type="color" class="block-controls-textcolor">
+        </div>
+        <!-- <a href="" class="btn">Share</a> -->
+      </div>
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+    <div class="block">
+      <div class="block-inner">      
+    <!-- 
+         --><div class="block-letters">
+         <div class="block-letters-font">Freight Sans</div>
+          Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
+          <br>
+          <br>
+          1 2 3 4 5 6 7 8 9 0 ! ? . ( ) { } £ $ € &amp; &hellip; &ldquo; &rdquo; &apos;
+        </div><!-- 
+         --><div class="block-preview" contenteditable>
+          They rushed down the street together, digging everything in the early way they had, which later became so much sadder and perceptive and blank.
+          <br>
+          <br>
+          But then they danced down the streets like dingledodies, and I shambled after as I’ve been doing all my life after people who interest me, because the only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
+        </div>
+      </div>
     </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
+    <hr>
+    <div class="block">
+      <div class="block-inner">      
+    <!-- 
+         --><div class="block-letters">
+         <div class="block-letters-font">Freight Sans</div>
+          Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
+          <br>
+          <br>
+          1 2 3 4 5 6 7 8 9 0 ! ? . ( ) { } £ $ € &amp; &hellip; &ldquo; &rdquo; &apos;
+        </div><!-- 
+         --><div class="block-preview" contenteditable>
+          They rushed down the street together, digging everything in the early way they had, which later became so much sadder and perceptive and blank.
+          <br>
+          <br>
+          But then they danced down the streets like dingledodies, and I shambled after as I’ve been doing all my life after people who interest me, because the only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
+        </div>
+      </div>
     </div>
+    <hr>
+    <div class="block">
+      <div class="block-inner">      
+    <!-- 
+         --><div class="block-letters">
+         <div class="block-letters-font">Freight Sans</div>
+          Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
+          <br>
+          <br>
+          1 2 3 4 5 6 7 8 9 0 ! ? . ( ) { } £ $ € &amp; &hellip; &ldquo; &rdquo; &apos;
+        </div><!-- 
+         --><div class="block-preview" contenteditable>
+          They rushed down the street together, digging everything in the early way they had, which later became so much sadder and perceptive and blank.
+          <br>
+          <br>
+          But then they danced down the streets like dingledodies, and I shambled after as I’ve been doing all my life after people who interest me, because the only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.
+        </div>
+      </div>
+    </div>
+    <div class="block-add">
+      <a class="icon-plus" title="Add text block" href=""></a>
+      <a class="icon-list-ul" title="Add unordered list block" href=""></a>
+      <a class="icon-list-ol" title="Add ordered list block" href=""></a>
+      <a class="icon-indent-right" title="Add blockquote" href=""></a>
+      <a class="icon-th" title="Add colour palette" href=""></a>
+      <p>Made by @jordanmoore</p>
+    </div>
+    <script>
+      function rgb2hex(rgb) {
+           if (  rgb.search("rgb") == -1 ) {
+                return rgb;
+           } else {
+                rgb = rgb.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+))?\)$/);
+                function hex(x) {
+                     return ("0" + parseInt(x).toString(16)).slice(-2);
+                }
+                return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]); 
+           }
+      }
+      $(function(){
+        $('.icon-plus').click(function(e){
+          $('.container').append('<hr><div class="block"><div class="block-inner"><div class="block-letters"><div class="block-letters-font">Freight Sans</div>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br><br>1 2 3 4 5 6 7 8 9 0 ! ? . ( ) { } £ $ € &amp; &hellip; &ldquo; &rdquo; &apos;<div class="block-letters-tip"><p class="family">font-family: <span></span></p><p class="size">font-size: <span></span></p><p class="bgc">background-color: <span></span></p></div></div><div class="block-preview" contenteditable>They rushed down the street together, digging everything in the early way they had, which later became so much sadder and perceptive and blank.<br><br>But then they danced down the streets like dingledodies, and I shambled after as I’ve been doing all my life after people who interest me, because the only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</div></div></div>');
+          $(this).parent().insertAfter($('.block:last'));
+          $.waypoints('destroy');
+          initWaypoints();
+          e.preventDefault();
+        });
+        $('.icon-list-ul').click(function(e){
+          $('.container').append('<hr><div class="block"><div class="block-inner"><div class="block-letters"><div class="block-letters-font">Freight Sans</div>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br><br>1 2 3 4 5 6 7 8 9 0 ! ? . ( ) { } £ $ € &amp; &hellip; &ldquo; &rdquo; &apos;<div class="block-letters-tip"><p class="family">font-family: <span></span></p><p class="size">font-size: <span></span></p><p class="bgc">background-color: <span></span></p></div></div><div class="block-preview" contenteditable><ul><li>Use short sentences</li><li>Use short first paragraphs</li><li>Use vigorous English</li><li>Be positive, not negative</li><li>Never have only 4 rules</li></ul></div></div></div>');
+          $(this).parent().insertAfter($('.block:last'));
+          $.waypoints('destroy');
+          initWaypoints();
+          e.preventDefault();
+        });
+        $('.icon-list-ol').click(function(e){
+          $('.container').append('<hr><div class="block"><div class="block-inner"><div class="block-letters"><div class="block-letters-font">Freight Sans</div>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br><br>1 2 3 4 5 6 7 8 9 0 ! ? . ( ) { } £ $ € &amp; &hellip; &ldquo; &rdquo; &apos;<div class="block-letters-tip"><p class="family">font-family: <span></span></p><p class="size">font-size: <span></span></p><p class="bgc">background-color: <span></span></p></div></div><div class="block-preview" contenteditable><ol><li>Use short sentences</li><li>Use short first paragraphs</li><li>Use vigorous English</li><li>Be positive, not negative</li><li>Never have only 4 rules</li></ol></div></div></div>');
+          $(this).parent().insertAfter($('.block:last'));
+          $.waypoints('destroy');
+          initWaypoints();
+          e.preventDefault();
+        });
+        $('.icon-indent-right').click(function(e){
+          $('.container').append('<hr><div class="block"><div class="block-inner"><div class="block-letters"><div class="block-letters-font">Freight Sans</div>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br><br>1 2 3 4 5 6 7 8 9 0 ! ? . ( ) { } £ $ € &amp; &hellip; &ldquo; &rdquo; &apos;<div class="block-letters-tip"><p class="family">font-family: <span></span></p><p class="size">font-size: <span></span></p><p class="bgc">background-color: <span></span></p></div></div><div class="block-preview"><span>Jack Kerouac once described future generations looking at images of our past:</span><br><blockquote>I realized these were all the snapshots which our children would look at someday with wonder, thinking their parents had lived smooth, well-ordered lives and got up in the morning to walk proudly on the sidewalks of life, never dreaming the raggedy madness and riot of our actual lives, our actual night, the hell of it, the senseless emptiness.</blockquote><br><span>This was one of his more well known quotations.</span></div></div></div>');
+          $(this).parent().insertAfter($('.block:last'));
+          $.waypoints('destroy');
+          initWaypoints();
+          e.preventDefault();
+        });
+$('.icon-th').click(function(e){
+  $('.container').append('<hr><div class="block"><div class="block-inner"><div class="block-color"><div class="block-color-font">Color Palette</div><ul class="block-preview-color-list"><li><input type="color"><span>#000000</span></li><li><input type="color"><span>#000000</span></li><li><a class="icon-plus-sign" href=""></a></li></ul></div></div></div>');
+  $(this).parent().insertAfter($('.block:last'));
+  $.waypoints('destroy');
+  initWaypoints();
+  e.preventDefault();
+});
+        $('.block:first-of-type').addClass('active');
+        var initialJustify = $('.block.active .block-preview').css('text-align');
+        $('.block.active .block-preview').addClass('align-'+initialJustify);
+        initWaypoints();
+        function initialize(){
+          var initialSizePx = $('.active .block-preview').css('font-size');
+          var initialLineHeightPx = $('.active .block-preview').css('line-height');
+          var initialSize = parseInt(initialSizePx);
+          var initialLineHeight = parseInt(initialLineHeightPx);
+          var initialLineHeightEm = initialLineHeight/initialSize;
+          var initialLineHeightEmR = Math.round( initialLineHeightEm * 100) / 100;
+          var initialFontFamily = $('.block.active .block-letters').css('font-family');
+          $('.block-controls-font').val(initialFontFamily);
+          $('.block-controls-size').val(initialSize);
+          $('.block-controls-lineheight').val(initialLineHeightEmR);
+          var initialBG = $('.block.active').css('background-color');
+          var initialBGH = rgb2hex(initialBG);
+          var initialTC = $('.block.active').css('color');
+          var initialTCH = rgb2hex(initialTC);
+          $('.block-controls-background').val(initialBGH);
+          $('.block-controls-textcolor').val(initialTCH);
+          var initialWeight = $('.block.active .block-letters').css('font-weight');
+          console.log(initialFontFamily);
+          console.log(initialBGH);
+        }
+        $('.block-controls-size').change(function(){
+          var thisSize = $(this).val();
+          $('.active .block-preview, .active .block-letters').css("font-size", thisSize +"px");
+          $('.active .block-letters-tip .size span').text(thisSize +"px");
+          $.waypoints('refresh');
+        });
+        $('.block-controls-lineheight').change(function(){
+          var thisLh = $(this).val();
+          $('.active .block-preview, .active .block-letters').css("line-height", thisLh);
+          $.waypoints('refresh');
+        });
+        $('.block-controls-font').change(function(){
+          var thisFont = $(this).val();
+          var thisFontName = $(".block-controls-font option:selected").text();
+          $('.active .block-preview, .active .block-letters').css("font-family", thisFont);
+          $('.active .block-letters-tip .family span').text(thisFont);
+          $('.active .block-letters-font').text(thisFontName);
+        });
+        $('.block-controls-background').change(function(){
+          var thisBg = $(this).val();
+          $('.block.active').css("background-color",thisBg);
+          $('.block-letters-tip .bgc span').text(thisBg);
+        });
+        $('.block-controls-textcolor').change(function(){
+          var thisTc = $(this).val();
+          $('.block.active').css("color",thisTc);
+        });
+        
+        $('.icon-bold').click(function(e){
+          $(this).toggleClass('active');
+          $('.block.active').toggleClass("bold");
+          e.preventDefault();
+        });
+        $('.icon-italic').click(function(e){
+          $(this).toggleClass('active');
+          $('.block.active').toggleClass("italic");
+          e.preventDefault();
+        });
+        $('.icon-align-left').click(function(e){
+          $('.icon-align-left').removeClass('active');
+          $('.icon-align-right').removeClass('active');
+          $('.icon-align-center').removeClass('active');
+          $('.icon-align-justify').removeClass('active');
+          $(this).toggleClass('active');
+          $('.block.active .block-preview').removeClass("align-center");
+          $('.block.active .block-preview').removeClass("align-left");
+          $('.block.active .block-preview').removeClass("align-right");
+          $('.block.active .block-preview').removeClass("align-justify");
+          $('.block.active .block-preview').addClass("align-left");
+          e.preventDefault();
+        });
+        $('.icon-align-center').click(function(e){
+          $('.icon-align-left').removeClass('active');
+          $('.icon-align-right').removeClass('active');
+          $('.icon-align-center').removeClass('active');
+          $('.icon-align-justify').removeClass('active');
+          $(this).toggleClass('active');
+          $('.block.active .block-preview').removeClass("align-center");
+          $('.block.active .block-preview').removeClass("align-left");
+          $('.block.active .block-preview').removeClass("align-right");
+          $('.block.active .block-preview').removeClass("align-justify");
+          $('.block.active .block-preview').addClass("align-center");
+          e.preventDefault();
+        });
+        $('.icon-align-justify').click(function(e){
+          $('.icon-align-left').removeClass('active');
+          $('.icon-align-right').removeClass('active');
+          $('.icon-align-center').removeClass('active');
+          $('.icon-align-justify').removeClass('active');
+          $(this).toggleClass('active');
+          $('.block.active .block-preview').removeClass("align-center");
+          $('.block.active .block-preview').removeClass("align-left");
+          $('.block.active .block-preview').removeClass("align-right");
+          $('.block.active .block-preview').removeClass("align-justify");
+          $('.block.active .block-preview').addClass("align-justify");
+          e.preventDefault();
+        });
+        $('.icon-align-right').click(function(e){
+          $('.icon-align-left').removeClass('active');
+          $('.icon-align-right').removeClass('active');
+          $('.icon-align-center').removeClass('active');
+          $('.icon-align-justify').removeClass('active');
+          $(this).toggleClass('active');
+          $('.block.active .block-preview').removeClass("align-center");
+          $('.block.active .block-preview').removeClass("align-left");
+          $('.block.active .block-preview').removeClass("align-right");
+          $('.block.active .block-preview').removeClass("align-justify");
+          $('.block.active .block-preview').addClass("align-right");
+          e.preventDefault();
+        });
+        $('.icon-text-width').click(function(e){
+          $(this).toggleClass('active');
+          $('.block.active .block-preview').toggleClass("kern");
+          e.preventDefault();
+        });
+        $('.block-controls-style').change(function(){
+          var thisStyle = $(this).val();
+          $('.block').css("font-style",thisStyle);
+        });
+        $('.icon-arrow-left').click(function(e){
+          $('.block-controls').addClass('hidden');
+          $(this).removeClass();
+          $(this).addClass('icon-arrow-right');
+          e.preventDefault();
+        });
+        function initWaypoints() {
+          $.waypoints('refresh');
+          $('.block').waypoint(function(direction) {
+            $('.block').removeClass('active');
+            $(this).addClass('active');
+            console.log('Bing!');
+            initialize();
+          }, {offset: 95});
+        }
+        $(window).scroll(function() {
+          if($('.block.active').hasClass('bold')) {
+            $('.icon-bold').addClass('active');
+          } else {
+            $('.icon-bold').removeClass('active');
+          };
+          if($('.block.active').hasClass('italic')) {
+            $('.icon-italic').addClass('active');
+          } else {
+            $('.icon-italic').removeClass('active');
+          };
+          if($('.block.active .block-preview').hasClass('kern')) {
+              $('.icon-text-width').addClass('active');
+            } else {
+              $('.icon-text-width').removeClass('active');
+          };
+          if($('.block.active .block-preview').hasClass('align-left')) {
+            $('.icon-align-left').removeClass('active');
+            $('.icon-align-right').removeClass('active');
+            $('.icon-align-center').removeClass('active');
+            $('.icon-align-justify').removeClass('active');
+            $('.icon-align-left').addClass('active');
+          } else {
+            $('.icon-align-left').removeClass('active');
+          };
+          if($('.block.active .block-preview').hasClass('align-right')) {
+            $('.icon-align-left').removeClass('active');
+            $('.icon-align-right').removeClass('active');
+            $('.icon-align-center').removeClass('active');
+            $('.icon-align-justify').removeClass('active');
+            $('.icon-align-right').addClass('active');
+          } else {
+            $('.icon-align-right').removeClass('active');
+          };
+          if($('.block.active .block-preview').hasClass('align-center')) {
+            $('.icon-align-left').removeClass('active');
+            $('.icon-align-right').removeClass('active');
+            $('.icon-align-center').removeClass('active');
+            $('.icon-align-justify').removeClass('active');
+            $('.icon-align-center').addClass('active');
+          } else {
+            $('.icon-align-center').removeClass('active');
+          };
+          if($('.block.active .block-preview').hasClass('align-justify')) {
+            $('.icon-align-left').removeClass('active');
+            $('.icon-align-right').removeClass('active');
+            $('.icon-align-center').removeClass('active');
+            $('.icon-align-justify').removeClass('active');
+            $('.icon-align-justify').addClass('active');
+          } else {
+            $('.icon-align-justify').removeClass('active');
+          };
+          if($(window).scrollTop() + $(window).height() == $(document).height()) {
+              $('.block').removeClass('active')
+              $('.block:last').addClass('active');
+              initialize();
+          }
+        });
+      });
+        $('body').on('change', '.block-color input', function(){
+          var thisCc = $(this).val();
+          console.log(thisCc);
+          $(this).parent('li').find('span').text(thisCc);
+        });
+        $('body').on('click', '.block-color .icon-plus-sign', function(e){
+          $(this).parent().remove();
+          $('.active .block-color ul').append('<li><input type="color"><span>#000000</span></li><li><a class="icon-plus-sign" href=""></a></li>');
+          e.preventDefault();
+        });
 
-    
+    </script>
+  </div>
 
-  </body>
+</body>
+
 </html>
