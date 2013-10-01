@@ -14,7 +14,7 @@
 body {
   background: #322928;
   color: #eee7e3;
-  font-family: "FreightSans Pro", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 200;
   margin: 0;
   padding: 4em 0;
@@ -49,7 +49,7 @@ hr {
   display: inline-block;
   background: #701b28;
   padding: 0.5em 1em 0.5em;
-  font-family: "TisaOT", serif;
+  font-family: "Droid Serif", serif;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -120,7 +120,7 @@ hr {
 }
 .block-letters-font,
 .block-color-font {
-  font-family: "FreightSans Pro", sans-serif !important;
+  font-family: 'Open Sans', sans-serif !important;
   font-weight: 200 !important;
   font-size: 12px;
   text-transform: uppercase;
@@ -162,7 +162,7 @@ hr {
 .block-controls-measurements input {
   border: none;
   padding: 0.2em 0 0.25em 0.1em;
-  font-family: "FreightSans Pro", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   width: 43px;
   -webkit-border-radius: 2px;

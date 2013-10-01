@@ -5,6 +5,7 @@
 
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic|Lato:300,400,700,900,300italic,400italic,700italic,900italic|PT+Sans:400,700,400italic,700italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <title>Styleguide</title>
@@ -44,11 +45,11 @@
               <option value="Palatino, serif">Palatino</option>
             </optgroup>
             <optgroup label="Web fonts">
-              <option value="'FreightSans Pro', sans-serif">Freight Sans</option>
+              <option value="'Droid Serif', sans-serif">Droid Serif</option>
               <option value="Lato, sans-serif">Lato</option>
+              <option value="'PT Sans', sans-serif">PT Sans</option>
               <option value="'Open Sans', sans-serif">Open Sans</option>
               <option value="'Source Sans Pro', sans-serif">Source Sans Pro</option>
-              <option value="TisaOT, serif">FF Tisa</option>
             </optgroup>
           </select>
         </div>
@@ -82,7 +83,7 @@
       <div class="block-inner">      
     <!-- 
          --><div class="block-letters">
-         <div class="block-letters-font">Freight Sans</div>
+         <div class="block-letters-font">Open Sans</div>
           Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
           <br>
           <br>
@@ -101,7 +102,7 @@
       <div class="block-inner">      
     <!-- 
          --><div class="block-letters">
-         <div class="block-letters-font">Freight Sans</div>
+         <div class="block-letters-font">Open Sans</div>
           Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
           <br>
           <br>
@@ -120,7 +121,7 @@
       <div class="block-inner">      
     <!-- 
          --><div class="block-letters">
-         <div class="block-letters-font">Freight Sans</div>
+         <div class="block-letters-font">Open Sans</div>
           Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
           <br>
           <br>
@@ -156,40 +157,40 @@
       }
       $(function(){
         $('.icon-plus').click(function(e){
-          $('.container').append('<hr><div class="block"><div class="block-inner"><div class="block-letters"><div class="block-letters-font">Freight Sans</div>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br><br>1 2 3 4 5 6 7 8 9 0 ! ? . ( ) { } £ $ € &amp; &hellip; &ldquo; &rdquo; &apos;<div class="block-letters-tip"><p class="family">font-family: <span></span></p><p class="size">font-size: <span></span></p><p class="bgc">background-color: <span></span></p></div></div><div class="block-preview" contenteditable>They rushed down the street together, digging everything in the early way they had, which later became so much sadder and perceptive and blank.<br><br>But then they danced down the streets like dingledodies, and I shambled after as I’ve been doing all my life after people who interest me, because the only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</div></div></div>');
+          $('.container').append('<hr><div class="block"><div class="block-inner"><div class="block-letters"><div class="block-letters-font">Open Sans</div>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br><br>1 2 3 4 5 6 7 8 9 0 ! ? . ( ) { } £ $ € &amp; &hellip; &ldquo; &rdquo; &apos;<div class="block-letters-tip"><p class="family">font-family: <span></span></p><p class="size">font-size: <span></span></p><p class="bgc">background-color: <span></span></p></div></div><div class="block-preview" contenteditable>They rushed down the street together, digging everything in the early way they had, which later became so much sadder and perceptive and blank.<br><br>But then they danced down the streets like dingledodies, and I shambled after as I’ve been doing all my life after people who interest me, because the only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</div></div></div>');
           $(this).parent().insertAfter($('.block:last'));
           $.waypoints('destroy');
           initWaypoints();
           e.preventDefault();
         });
         $('.icon-list-ul').click(function(e){
-          $('.container').append('<hr><div class="block"><div class="block-inner"><div class="block-letters"><div class="block-letters-font">Freight Sans</div>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br><br>1 2 3 4 5 6 7 8 9 0 ! ? . ( ) { } £ $ € &amp; &hellip; &ldquo; &rdquo; &apos;<div class="block-letters-tip"><p class="family">font-family: <span></span></p><p class="size">font-size: <span></span></p><p class="bgc">background-color: <span></span></p></div></div><div class="block-preview" contenteditable><ul><li>Use short sentences</li><li>Use short first paragraphs</li><li>Use vigorous English</li><li>Be positive, not negative</li><li>Never have only 4 rules</li></ul></div></div></div>');
+          $('.container').append('<hr><div class="block"><div class="block-inner"><div class="block-letters"><div class="block-letters-font">Open Sans</div>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br><br>1 2 3 4 5 6 7 8 9 0 ! ? . ( ) { } £ $ € &amp; &hellip; &ldquo; &rdquo; &apos;<div class="block-letters-tip"><p class="family">font-family: <span></span></p><p class="size">font-size: <span></span></p><p class="bgc">background-color: <span></span></p></div></div><div class="block-preview" contenteditable><ul><li>Use short sentences</li><li>Use short first paragraphs</li><li>Use vigorous English</li><li>Be positive, not negative</li><li>Never have only 4 rules</li></ul></div></div></div>');
           $(this).parent().insertAfter($('.block:last'));
           $.waypoints('destroy');
           initWaypoints();
           e.preventDefault();
         });
         $('.icon-list-ol').click(function(e){
-          $('.container').append('<hr><div class="block"><div class="block-inner"><div class="block-letters"><div class="block-letters-font">Freight Sans</div>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br><br>1 2 3 4 5 6 7 8 9 0 ! ? . ( ) { } £ $ € &amp; &hellip; &ldquo; &rdquo; &apos;<div class="block-letters-tip"><p class="family">font-family: <span></span></p><p class="size">font-size: <span></span></p><p class="bgc">background-color: <span></span></p></div></div><div class="block-preview" contenteditable><ol><li>Use short sentences</li><li>Use short first paragraphs</li><li>Use vigorous English</li><li>Be positive, not negative</li><li>Never have only 4 rules</li></ol></div></div></div>');
+          $('.container').append('<hr><div class="block"><div class="block-inner"><div class="block-letters"><div class="block-letters-font">Open Sans</div>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br><br>1 2 3 4 5 6 7 8 9 0 ! ? . ( ) { } £ $ € &amp; &hellip; &ldquo; &rdquo; &apos;<div class="block-letters-tip"><p class="family">font-family: <span></span></p><p class="size">font-size: <span></span></p><p class="bgc">background-color: <span></span></p></div></div><div class="block-preview" contenteditable><ol><li>Use short sentences</li><li>Use short first paragraphs</li><li>Use vigorous English</li><li>Be positive, not negative</li><li>Never have only 4 rules</li></ol></div></div></div>');
           $(this).parent().insertAfter($('.block:last'));
           $.waypoints('destroy');
           initWaypoints();
           e.preventDefault();
         });
         $('.icon-indent-right').click(function(e){
-          $('.container').append('<hr><div class="block"><div class="block-inner"><div class="block-letters"><div class="block-letters-font">Freight Sans</div>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br><br>1 2 3 4 5 6 7 8 9 0 ! ? . ( ) { } £ $ € &amp; &hellip; &ldquo; &rdquo; &apos;<div class="block-letters-tip"><p class="family">font-family: <span></span></p><p class="size">font-size: <span></span></p><p class="bgc">background-color: <span></span></p></div></div><div class="block-preview"><span>Jack Kerouac once described future generations looking at images of our past:</span><br><blockquote>I realized these were all the snapshots which our children would look at someday with wonder, thinking their parents had lived smooth, well-ordered lives and got up in the morning to walk proudly on the sidewalks of life, never dreaming the raggedy madness and riot of our actual lives, our actual night, the hell of it, the senseless emptiness.</blockquote><br><span>This was one of his more well known quotations.</span></div></div></div>');
+          $('.container').append('<hr><div class="block"><div class="block-inner"><div class="block-letters"><div class="block-letters-font">Open Sans</div>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br><br>1 2 3 4 5 6 7 8 9 0 ! ? . ( ) { } £ $ € &amp; &hellip; &ldquo; &rdquo; &apos;<div class="block-letters-tip"><p class="family">font-family: <span></span></p><p class="size">font-size: <span></span></p><p class="bgc">background-color: <span></span></p></div></div><div class="block-preview"><span>Jack Kerouac once described future generations looking at images of our past:</span><br><blockquote>I realized these were all the snapshots which our children would look at someday with wonder, thinking their parents had lived smooth, well-ordered lives and got up in the morning to walk proudly on the sidewalks of life, never dreaming the raggedy madness and riot of our actual lives, our actual night, the hell of it, the senseless emptiness.</blockquote><br><span>This was one of his more well known quotations.</span></div></div></div>');
           $(this).parent().insertAfter($('.block:last'));
           $.waypoints('destroy');
           initWaypoints();
           e.preventDefault();
         });
-$('.icon-th').click(function(e){
-  $('.container').append('<hr><div class="block"><div class="block-inner"><div class="block-color"><div class="block-color-font">Color Palette</div><ul class="block-preview-color-list"><li><input type="color"><span>#000000</span></li><li><input type="color"><span>#000000</span></li><li><a class="icon-plus-sign" href=""></a></li></ul></div></div></div>');
-  $(this).parent().insertAfter($('.block:last'));
-  $.waypoints('destroy');
-  initWaypoints();
-  e.preventDefault();
-});
+        $('.icon-th').click(function(e){
+          $('.container').append('<hr><div class="block"><div class="block-inner"><div class="block-color"><div class="block-color-font">Color Palette</div><ul class="block-preview-color-list"><li><input type="color"><span>#000000</span></li><li><input type="color"><span>#000000</span></li><li><a class="icon-plus-sign" href=""></a></li></ul></div></div></div>');
+          $(this).parent().insertAfter($('.block:last'));
+          $.waypoints('destroy');
+          initWaypoints();
+          e.preventDefault();
+        });
         $('.block:first-of-type').addClass('active');
         var initialJustify = $('.block.active .block-preview').css('text-align');
         $('.block.active .block-preview').addClass('align-'+initialJustify);
