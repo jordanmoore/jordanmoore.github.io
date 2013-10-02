@@ -209,6 +209,9 @@ hr {
   text-align: center;
   margin-top: 0.2em;
 }
+.block-controls input[type=number]:focus {
+  outline: none;
+}
 .block-controls .btn {
   float: right;
   margin-top: -0.4em;
