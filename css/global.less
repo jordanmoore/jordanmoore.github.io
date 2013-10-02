@@ -132,6 +132,7 @@ hr {
 .block-letters-font, .block-color-font {
 	font-family: @type !important;
 	font-weight: 200 !important;
+	font-style: normal !important;
 	font-size: 12px;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
@@ -171,18 +172,6 @@ hr {
 		display: inline-block;
 		margin-right: 1em;
 	}
-	input {
-		border: none;
-		padding: 0.2em 0 0.25em 0.1em;
-		font-family: @type;
-		font-size: 14px;
-		width: 43px;
-		-webkit-border-radius: 2px;
-		-moz-border-radius: 2px;
-		border-radius: 2px;
-		text-align: center;
-		margin-top: 0.2em;
-	}
 }
 
 .block-controls-colour {
@@ -197,6 +186,10 @@ hr {
 		position: relative;
 		top: 0.7em;
 	}
+}
+
+.block-controls-weight {
+margin-right: 1.4em;
 }
 
 .block-controls {
@@ -214,6 +207,18 @@ hr {
 		max-width: 1150px;
 		margin: 0 auto;
 		text-align: center;
+	}
+	input[type=number] {
+		border: none;
+		padding: 0.2em 0 0.25em 0.1em;
+		font-family: @type;
+		font-size: 14px;
+		width: 43px;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		text-align: center;
+		margin-top: 0.2em;
 	}
 	.btn {
 		float: right;
@@ -250,7 +255,7 @@ hr {
 		width: 66%;
 	}
 	label {
-		font-family: "Proxima Nova";
+		font-family: Lato;
 		font-size: 10px;
 		text-transform: uppercase;
 		font-weight: 500;
@@ -332,6 +337,7 @@ a.icon-plus:hover, a.icon-list-ul:hover, a.icon-list-ol:hover, a.icon-indent-rig
 	position: relative;
 	opacity:0.4;
 	clear: both;
+	font-weight: 500;
 	background: @dark;
 	-webkit-transition: opacity 0.25s ease-in;
 	-moz-transition: opacity 0.25s ease-in;

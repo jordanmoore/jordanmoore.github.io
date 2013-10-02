@@ -5,7 +5,7 @@
 
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic|Lato:300,400,700,900,300italic,400italic,700italic,900italic|PT+Sans:400,700,400italic,700italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic|Lato:300,400,700,900,300italic,400italic,700italic,900italic|PT+Sans:400,700,400italic,700italic|Droid+Serif:400,700,400italic,700italic|Playfair+Display:400,700,900,400italic,700italic,900italic|Volkhov:400,400italic,700,700italic|Gentium+Book+Basic:400,400italic,700,700italic|Merriweather:400,300,300italic,700,400italic,700italic,900,900italic|Abril+Fatface' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <title>Styleguide</title>
@@ -44,17 +44,22 @@
               <option value="Optima, sans-serif">Optima</option>
               <option value="Palatino, serif">Palatino</option>
             </optgroup>
-            <optgroup label="Web fonts">
-              <option value="'Droid Serif', sans-serif">Droid Serif</option>
+            <optgroup label="Web fonts (from Google Web Fonts)">
+              <option value="'Abril Fatface', serif">Abril Fatface</option>
+              <option value="'Droid Serif', serif">Droid Serif</option>
+              <option value="'Gentium Book Basic', serif">Gentium Book Basic</option>
               <option value="Lato, sans-serif">Lato</option>
+              <option value="Merriweather, serif">Merriweather</option>
+              <option value="'Playfair Display', serif">Playfair Display</option>
               <option value="'PT Sans', sans-serif">PT Sans</option>
               <option value="'Open Sans', sans-serif">Open Sans</option>
               <option value="'Source Sans Pro', sans-serif">Source Sans Pro</option>
+              <option value="Volkhov, serif">Volkhov</option>
             </optgroup>
           </select>
         </div>
         <div class="block-controls-formatting">
-          <a href="" class="icon-bold inactive" title="Bold"></a>
+          <!-- <a href="" class="icon-bold inactive" title="Bold"></a> -->
           <a href="" class="icon-italic inactive" title="Italic"></a>
           <a href="" class="icon-align-left inactive" title="Left align"></a>
           <a href="" class="icon-align-center inactive" title="Center align"></a>
@@ -63,6 +68,8 @@
           <a href="" class="icon-text-width inactive" title="Toggle kerning"></a>
         </div>
         <div class="block-controls-measurements">
+          <label for="block-controls-weight">Weight</label>
+          <input type="number" name="block-controls-weight" class="block-controls-weight" value="500" min="100" step="100" max="900">
           <label for="block-controls-size">Size</label>
           <input type="number" name="block-controls-size" class="block-controls-size" value="10" min="10" step="1" max="48">
           <span>px</span>
@@ -97,7 +104,6 @@
         </div>
       </div>
     </div>
-    <hr>
     <div class="block">
       <div class="block-inner">      
     <!-- 
@@ -116,7 +122,6 @@
         </div>
       </div>
     </div>
-    <hr>
     <div class="block">
       <div class="block-inner">      
     <!-- 
@@ -157,35 +162,35 @@
       }
       $(function(){
         $('.icon-plus').click(function(e){
-          $('.container').append('<hr><div class="block"><div class="block-inner"><div class="block-letters"><div class="block-letters-font">Open Sans</div>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br><br>1 2 3 4 5 6 7 8 9 0 ! ? . ( ) { } £ $ € &amp; &hellip; &ldquo; &rdquo; &apos;<div class="block-letters-tip"><p class="family">font-family: <span></span></p><p class="size">font-size: <span></span></p><p class="bgc">background-color: <span></span></p></div></div><div class="block-preview" contenteditable>They rushed down the street together, digging everything in the early way they had, which later became so much sadder and perceptive and blank.<br><br>But then they danced down the streets like dingledodies, and I shambled after as I’ve been doing all my life after people who interest me, because the only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</div></div></div>');
+          $('.container').append('<div class="block"><div class="block-inner"><div class="block-letters"><div class="block-letters-font">Open Sans</div>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br><br>1 2 3 4 5 6 7 8 9 0 ! ? . ( ) { } £ $ € &amp; &hellip; &ldquo; &rdquo; &apos;<div class="block-letters-tip"><p class="family">font-family: <span></span></p><p class="size">font-size: <span></span></p><p class="bgc">background-color: <span></span></p></div></div><div class="block-preview" contenteditable>They rushed down the street together, digging everything in the early way they had, which later became so much sadder and perceptive and blank.<br><br>But then they danced down the streets like dingledodies, and I shambled after as I’ve been doing all my life after people who interest me, because the only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</div></div></div>');
           $(this).parent().insertAfter($('.block:last'));
           $.waypoints('destroy');
           initWaypoints();
           e.preventDefault();
         });
         $('.icon-list-ul').click(function(e){
-          $('.container').append('<hr><div class="block"><div class="block-inner"><div class="block-letters"><div class="block-letters-font">Open Sans</div>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br><br>1 2 3 4 5 6 7 8 9 0 ! ? . ( ) { } £ $ € &amp; &hellip; &ldquo; &rdquo; &apos;<div class="block-letters-tip"><p class="family">font-family: <span></span></p><p class="size">font-size: <span></span></p><p class="bgc">background-color: <span></span></p></div></div><div class="block-preview" contenteditable><ul><li>Use short sentences</li><li>Use short first paragraphs</li><li>Use vigorous English</li><li>Be positive, not negative</li><li>Never have only 4 rules</li></ul></div></div></div>');
+          $('.container').append('<div class="block"><div class="block-inner"><div class="block-letters"><div class="block-letters-font">Open Sans</div>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br><br>1 2 3 4 5 6 7 8 9 0 ! ? . ( ) { } £ $ € &amp; &hellip; &ldquo; &rdquo; &apos;<div class="block-letters-tip"><p class="family">font-family: <span></span></p><p class="size">font-size: <span></span></p><p class="bgc">background-color: <span></span></p></div></div><div class="block-preview" contenteditable><ul><li>Use short sentences</li><li>Use short first paragraphs</li><li>Use vigorous English</li><li>Be positive, not negative</li><li>Never have only 4 rules</li></ul></div></div></div>');
           $(this).parent().insertAfter($('.block:last'));
           $.waypoints('destroy');
           initWaypoints();
           e.preventDefault();
         });
         $('.icon-list-ol').click(function(e){
-          $('.container').append('<hr><div class="block"><div class="block-inner"><div class="block-letters"><div class="block-letters-font">Open Sans</div>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br><br>1 2 3 4 5 6 7 8 9 0 ! ? . ( ) { } £ $ € &amp; &hellip; &ldquo; &rdquo; &apos;<div class="block-letters-tip"><p class="family">font-family: <span></span></p><p class="size">font-size: <span></span></p><p class="bgc">background-color: <span></span></p></div></div><div class="block-preview" contenteditable><ol><li>Use short sentences</li><li>Use short first paragraphs</li><li>Use vigorous English</li><li>Be positive, not negative</li><li>Never have only 4 rules</li></ol></div></div></div>');
+          $('.container').append('<div class="block"><div class="block-inner"><div class="block-letters"><div class="block-letters-font">Open Sans</div>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br><br>1 2 3 4 5 6 7 8 9 0 ! ? . ( ) { } £ $ € &amp; &hellip; &ldquo; &rdquo; &apos;<div class="block-letters-tip"><p class="family">font-family: <span></span></p><p class="size">font-size: <span></span></p><p class="bgc">background-color: <span></span></p></div></div><div class="block-preview" contenteditable><ol><li>Use short sentences</li><li>Use short first paragraphs</li><li>Use vigorous English</li><li>Be positive, not negative</li><li>Never have only 4 rules</li></ol></div></div></div>');
           $(this).parent().insertAfter($('.block:last'));
           $.waypoints('destroy');
           initWaypoints();
           e.preventDefault();
         });
         $('.icon-indent-right').click(function(e){
-          $('.container').append('<hr><div class="block"><div class="block-inner"><div class="block-letters"><div class="block-letters-font">Open Sans</div>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br><br>1 2 3 4 5 6 7 8 9 0 ! ? . ( ) { } £ $ € &amp; &hellip; &ldquo; &rdquo; &apos;<div class="block-letters-tip"><p class="family">font-family: <span></span></p><p class="size">font-size: <span></span></p><p class="bgc">background-color: <span></span></p></div></div><div class="block-preview"><span>Jack Kerouac once described future generations looking at images of our past:</span><br><blockquote>I realized these were all the snapshots which our children would look at someday with wonder, thinking their parents had lived smooth, well-ordered lives and got up in the morning to walk proudly on the sidewalks of life, never dreaming the raggedy madness and riot of our actual lives, our actual night, the hell of it, the senseless emptiness.</blockquote><br><span>This was one of his more well known quotations.</span></div></div></div>');
+          $('.container').append('<div class="block"><div class="block-inner"><div class="block-letters"><div class="block-letters-font">Open Sans</div>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br><br>1 2 3 4 5 6 7 8 9 0 ! ? . ( ) { } £ $ € &amp; &hellip; &ldquo; &rdquo; &apos;<div class="block-letters-tip"><p class="family">font-family: <span></span></p><p class="size">font-size: <span></span></p><p class="bgc">background-color: <span></span></p></div></div><div class="block-preview"><span>Jack Kerouac once described future generations looking at images of our past:</span><br><blockquote>I realized these were all the snapshots which our children would look at someday with wonder, thinking their parents had lived smooth, well-ordered lives and got up in the morning to walk proudly on the sidewalks of life, never dreaming the raggedy madness and riot of our actual lives, our actual night, the hell of it, the senseless emptiness.</blockquote><br><span>This was one of his more well known quotations.</span></div></div></div>');
           $(this).parent().insertAfter($('.block:last'));
           $.waypoints('destroy');
           initWaypoints();
           e.preventDefault();
         });
         $('.icon-th').click(function(e){
-          $('.container').append('<hr><div class="block"><div class="block-inner"><div class="block-color"><div class="block-color-font">Color Palette</div><ul class="block-preview-color-list"><li><input type="color"><span>#000000</span></li><li><input type="color"><span>#000000</span></li><li><a class="icon-plus-sign" href=""></a></li></ul></div></div></div>');
+          $('.container').append('<div class="block"><div class="block-inner"><div class="block-color"><div class="block-color-font">Color Palette</div><ul class="block-preview-color-list"><li><input type="color"><span>#000000</span></li><li><input type="color"><span>#000000</span></li><li><a class="icon-plus-sign" href=""></a></li></ul></div></div></div>');
           $(this).parent().insertAfter($('.block:last'));
           $.waypoints('destroy');
           initWaypoints();
@@ -203,6 +208,7 @@
           var initialLineHeightEm = initialLineHeight/initialSize;
           var initialLineHeightEmR = Math.round( initialLineHeightEm * 100) / 100;
           var initialFontFamily = $('.block.active .block-letters').css('font-family');
+          var initialWeight = $('.block.active .block-letters').css('font-weight');
           $('.block-controls-font').val(initialFontFamily);
           $('.block-controls-size').val(initialSize);
           $('.block-controls-lineheight').val(initialLineHeightEmR);
@@ -212,14 +218,17 @@
           var initialTCH = rgb2hex(initialTC);
           $('.block-controls-background').val(initialBGH);
           $('.block-controls-textcolor').val(initialTCH);
-          var initialWeight = $('.block.active .block-letters').css('font-weight');
-          console.log(initialFontFamily);
-          console.log(initialBGH);
+          $('.block-controls-weight').val(initialWeight);
         }
         $('.block-controls-size').change(function(){
           var thisSize = $(this).val();
           $('.active .block-preview, .active .block-letters').css("font-size", thisSize +"px");
           $('.active .block-letters-tip .size span').text(thisSize +"px");
+          $.waypoints('refresh');
+        });
+        $('.block-controls-weight').change(function(){
+          var thisWeight = $(this).val();
+          $('.active .block-preview, .active .block-letters').css("font-weight", thisWeight);
           $.waypoints('refresh');
         });
         $('.block-controls-lineheight').change(function(){
@@ -326,7 +335,6 @@
           $('.block').waypoint(function(direction) {
             $('.block').removeClass('active');
             $(this).addClass('active');
-            console.log('Bing!');
             initialize();
           }, {offset: 95});
         }
@@ -391,7 +399,6 @@
       });
         $('body').on('change', '.block-color input', function(){
           var thisCc = $(this).val();
-          console.log(thisCc);
           $(this).parent('li').find('span').text(thisCc);
         });
         $('body').on('click', '.block-color .icon-plus-sign', function(e){
