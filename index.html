@@ -64,7 +64,6 @@
           </select>
         </div>
         <div class="block-controls-formatting">
-          <!-- <a href="" class="icon-bold inactive" title="Bold"></a> -->
           <a href="" class="icon-italic inactive" title="Italic"></a>
           <a href="" class="icon-align-left inactive" title="Left align"></a>
           <a href="" class="icon-align-center inactive" title="Center align"></a>
@@ -167,6 +166,11 @@
            }
       }
       $(function(){
+        $('.block:first').addClass('active');
+        initialize();
+        checkButtons();
+        var initialJustify = $('.block.active .block-preview').css('text-align');
+        $('.block.active .block-preview').addClass('align-'+initialJustify);
         $('.icon-plus').click(function(e){
           $('.container').append('<div class="block"><div class="block-inner"><div class="block-letters"><div class="block-letters-font">Open Sans</div>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br><br>1 2 3 4 5 6 7 8 9 0 ! ? . ( ) { } £ $ € &amp; &hellip; &ldquo; &rdquo; &apos;<div class="block-letters-tip"><p class="family">font-family: <span></span></p><p class="size">font-size: <span></span></p><p class="bgc">background-color: <span></span></p></div></div><div class="block-preview" contenteditable>They rushed down the street together, digging everything in the early way they had, which later became so much sadder and perceptive and blank.<br><br>But then they danced down the streets like dingledodies, and I shambled after as I’ve been doing all my life after people who interest me, because the only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</div></div></div>');
           $(this).parent().insertAfter($('.block:last'));
@@ -202,9 +206,6 @@
           initWaypoints();
           e.preventDefault();
         });
-        $('.block:first-of-type').addClass('active');
-        var initialJustify = $('.block.active .block-preview').css('text-align');
-        $('.block.active .block-preview').addClass('align-'+initialJustify);
         initWaypoints();
         function initialize(){
           var initialSizePx = $('.active .block-preview').css('font-size');
@@ -226,6 +227,64 @@
           $('.block-controls-background').val(initialBGH);
           $('.block-controls-textcolor').val(initialTCH);
           $('.block-controls-weight').val(initialWeight);
+        }
+        function checkButtons() {
+          if($('.block.active').hasClass('bold')) {
+            $('.icon-bold').addClass('active');
+          } else {
+            $('.icon-bold').removeClass('active');
+          };
+          if($('.block.active').hasClass('italic')) {
+            $('.icon-italic').addClass('active');
+          } else {
+            $('.icon-italic').removeClass('active');
+          };
+          if($('.block.active .block-preview').hasClass('kern')) {
+              $('.icon-text-width').addClass('active');
+            } else {
+              $('.icon-text-width').removeClass('active');
+          };
+          if($('.block.active .block-preview').hasClass('align-left')) {
+            $('.icon-align-left').removeClass('active');
+            $('.icon-align-right').removeClass('active');
+            $('.icon-align-center').removeClass('active');
+            $('.icon-align-justify').removeClass('active');
+            $('.icon-align-left').addClass('active');
+          } else {
+            $('.icon-align-left').removeClass('active');
+          };
+          if($('.block.active .block-preview').hasClass('align-right')) {
+            $('.icon-align-left').removeClass('active');
+            $('.icon-align-right').removeClass('active');
+            $('.icon-align-center').removeClass('active');
+            $('.icon-align-justify').removeClass('active');
+            $('.icon-align-right').addClass('active');
+          } else {
+            $('.icon-align-right').removeClass('active');
+          };
+          if($('.block.active .block-preview').hasClass('align-center')) {
+            $('.icon-align-left').removeClass('active');
+            $('.icon-align-right').removeClass('active');
+            $('.icon-align-center').removeClass('active');
+            $('.icon-align-justify').removeClass('active');
+            $('.icon-align-center').addClass('active');
+          } else {
+            $('.icon-align-center').removeClass('active');
+          };
+          if($('.block.active .block-preview').hasClass('align-justify')) {
+            $('.icon-align-left').removeClass('active');
+            $('.icon-align-right').removeClass('active');
+            $('.icon-align-center').removeClass('active');
+            $('.icon-align-justify').removeClass('active');
+            $('.icon-align-justify').addClass('active');
+          } else {
+            $('.icon-align-justify').removeClass('active');
+          };
+          if($(window).scrollTop() + $(window).height() == $(document).height()) {
+              $('.block').removeClass('active')
+              $('.block:last').addClass('active');
+              initialize();
+          }
         }
         $('.block-controls-size').change(function(){
           var thisSize = $(this).val();
@@ -346,62 +405,7 @@
           }, {offset: 95});
         }
         $(window).scroll(function() {
-          if($('.block.active').hasClass('bold')) {
-            $('.icon-bold').addClass('active');
-          } else {
-            $('.icon-bold').removeClass('active');
-          };
-          if($('.block.active').hasClass('italic')) {
-            $('.icon-italic').addClass('active');
-          } else {
-            $('.icon-italic').removeClass('active');
-          };
-          if($('.block.active .block-preview').hasClass('kern')) {
-              $('.icon-text-width').addClass('active');
-            } else {
-              $('.icon-text-width').removeClass('active');
-          };
-          if($('.block.active .block-preview').hasClass('align-left')) {
-            $('.icon-align-left').removeClass('active');
-            $('.icon-align-right').removeClass('active');
-            $('.icon-align-center').removeClass('active');
-            $('.icon-align-justify').removeClass('active');
-            $('.icon-align-left').addClass('active');
-          } else {
-            $('.icon-align-left').removeClass('active');
-          };
-          if($('.block.active .block-preview').hasClass('align-right')) {
-            $('.icon-align-left').removeClass('active');
-            $('.icon-align-right').removeClass('active');
-            $('.icon-align-center').removeClass('active');
-            $('.icon-align-justify').removeClass('active');
-            $('.icon-align-right').addClass('active');
-          } else {
-            $('.icon-align-right').removeClass('active');
-          };
-          if($('.block.active .block-preview').hasClass('align-center')) {
-            $('.icon-align-left').removeClass('active');
-            $('.icon-align-right').removeClass('active');
-            $('.icon-align-center').removeClass('active');
-            $('.icon-align-justify').removeClass('active');
-            $('.icon-align-center').addClass('active');
-          } else {
-            $('.icon-align-center').removeClass('active');
-          };
-          if($('.block.active .block-preview').hasClass('align-justify')) {
-            $('.icon-align-left').removeClass('active');
-            $('.icon-align-right').removeClass('active');
-            $('.icon-align-center').removeClass('active');
-            $('.icon-align-justify').removeClass('active');
-            $('.icon-align-justify').addClass('active');
-          } else {
-            $('.icon-align-justify').removeClass('active');
-          };
-          if($(window).scrollTop() + $(window).height() == $(document).height()) {
-              $('.block').removeClass('active')
-              $('.block:last').addClass('active');
-              initialize();
-          }
+          checkButtons();
         });
       });
         $('body').on('change', '.block-color input', function(){
