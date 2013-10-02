@@ -5,10 +5,12 @@
 
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic|Lato:300,400,700,900,300italic,400italic,700italic,900italic|PT+Sans:400,700,400italic,700italic|Droid+Serif:400,700,400italic,700italic|Playfair+Display:400,700,900,400italic,700italic,900italic|Vollkorn:400italic,700italic,400,700|Gentium+Book+Basic:400,400italic,700,700italic|Merriweather:400,300,300italic,700,400italic,700italic,900,900italic|Abril+Fatface|Alegreya:400italic,700italic,900italic,400,700,900|Alegreya+SC:400,400italic,700,700italic,900,900italic|Varela+Round' rel='stylesheet' type='text/css'>
+  
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
+
   <title>Styleguide</title>
+  <script src="//use.edgefonts.net/abril-fatface:n4,i4;alegreya:n4,i4,n7,i7,n9,i9;alegreya-sc:n4,i4,n7,i7,n9,i9;droid-serif:n4,i4,n7,i7;gentium-book-basic:n4,i4,n7,i7;lato:n1,i1,n3,i3,n4,i4,n7,i7,n9,i9;merriweather:n3,n4,n7,n9;playfair-display:n4,i4;pt-sans:n4,i4,n7,i7;open-sans:n3,i3,n4,i4,n6,i6,n7,i7,n8,i8;source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;varela-round;vollkorn:n4,i4,n7,i7.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="js/waypoints.min.js"></script>
 </head>
@@ -44,19 +46,19 @@
               <option value="Optima, sans-serif">Optima</option>
               <option value="Palatino, serif">Palatino</option>
             </optgroup>
-            <optgroup label="Web fonts (from Google Web Fonts)">
-              <option value="'Abril Fatface', serif">Abril Fatface</option>
+            <optgroup label="Web fonts (from Adobe Edge Web Fonts)">
+              <option value="Abril-Fatface, serif">Abril Fatface</option>
               <option value="Alegreya, serif">Alegreya</option>
-              <option value="'Alegreya SC', serif">Alegreya SC</option>
-              <option value="'Droid Serif', serif">Droid Serif</option>
-              <option value="'Gentium Book Basic', serif">Gentium Book Basic</option>
+              <option value="Alegreya-SC, serif">Alegreya SC</option>
+              <option value="Droid-Serif, serif">Droid Serif</option>
+              <option value="Gentium-Book-Basic, serif">Gentium Book Basic</option>
               <option value="Lato, sans-serif">Lato</option>
               <option value="Merriweather, serif">Merriweather</option>
-              <option value="'Playfair Display', serif">Playfair Display</option>
-              <option value="'PT Sans', sans-serif">PT Sans</option>
-              <option value="'Open Sans', sans-serif">Open Sans</option>
-              <option value="'Source Sans Pro', sans-serif">Source Sans Pro</option>
-              <option value="'Varela Round', sans-serif">Varela Round</option>
+              <option value="Playfair-Display, serif">Playfair Display</option>
+              <option value="PT-Sans, sans-serif">PT Sans</option>
+              <option value="Open-Sans, sans-serif">Open Sans</option>
+              <option value="Source-Sans-Pro, sans-serif">Source Sans Pro</option>
+              <option value="Varela-Round, sans-serif">Varela Round</option>
               <option value="Vollkorn, serif">Vollkorn</option>
             </optgroup>
           </select>
@@ -149,7 +151,8 @@
       <a class="icon-list-ol" title="Add ordered list block" href=""></a>
       <a class="icon-indent-right" title="Add blockquote" href=""></a>
       <a class="icon-th" title="Add colour palette" href=""></a>
-      <p>Made by @jordanmoore</p>
+      <p>Made by @jordanmoore<br>
+        Fonts from <a href="https://edgewebfonts.adobe.com/index">Adobe Edge Web Fonts</a></p>
     </div>
     <script>
       function rgb2hex(rgb) {
@@ -193,7 +196,7 @@
           e.preventDefault();
         });
         $('.icon-th').click(function(e){
-          $('.container').append('<div class="block"><div class="block-inner"><div class="block-color"><div class="block-color-font">Color Palette</div><ul class="block-preview-color-list"><li><input type="color"><span>#000000</span></li><li><input type="color"><span>#000000</span></li><li><a class="icon-plus-sign" href=""></a></li></ul></div></div></div>');
+          $('.container').append('<div class="block"><div class="block-inner"><div class="block-color"><div class="block-color-font">Color Palette (Experimental)</div><ul class="block-preview-color-list"><li><input type="color"><span>#000000</span></li><li><input type="color"><span>#000000</span></li><li><a class="icon-plus-sign" href=""></a></li></ul></div></div></div>');
           $(this).parent().insertAfter($('.block:last'));
           $.waypoints('destroy');
           initWaypoints();
@@ -219,6 +222,7 @@
           var initialBGH = rgb2hex(initialBG);
           var initialTC = $('.block.active').css('color');
           var initialTCH = rgb2hex(initialTC);
+          console.log(initialFontFamily);
           $('.block-controls-background').val(initialBGH);
           $('.block-controls-textcolor').val(initialTCH);
           $('.block-controls-weight').val(initialWeight);

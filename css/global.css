@@ -1,10 +1,10 @@
 ::selection {
-  background: rgba(238, 231, 227, 0.19999999999999996);
+  background: rgba(241, 241, 241, 0.19999999999999996);
   /* Safari */
 
 }
 ::-moz-selection {
-  background: rgba(238, 231, 227, 0.19999999999999996);
+  background: rgba(241, 241, 241, 0.19999999999999996);
   /* Firefox */
 
 }
@@ -12,9 +12,9 @@
   box-sizing: border-box;
 }
 body {
-  background: #322928;
-  color: #eee7e3;
-  font-family: 'Open Sans', sans-serif;
+  background: #f1f1f1;
+  color: #322928;
+  font-family: 'Open-Sans', sans-serif;
   font-weight: 200;
   margin: 0;
   padding: 4em 0;
@@ -28,7 +28,7 @@ hr {
 .container > h1 {
   width: 90%;
   margin: 1em auto 1em;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   overflow: hidden;
   padding-bottom: 1em;
 }
@@ -41,7 +41,7 @@ hr {
 }
 .btn {
   font-style: italic;
-  color: #eee7e3;
+  color: #f1f1f1;
   text-decoration: none;
   font-size: 13px;
   font-weight: normal;
@@ -56,7 +56,7 @@ hr {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 .btn:hover {
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 0 0 2px #eee7e3;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 0 0 2px #f1f1f1;
   text-shadow: 0 1px 0 #000000;
 }
 .block-letters-tip {
@@ -111,16 +111,17 @@ hr {
   background: #322928;
   padding: 0.2em 0.7em;
   border-radius: 10px;
+  color: #f1f1f1;
 }
 .block-preview-color-list li a {
-  color: #eee7e3;
+  color: #f1f1f1;
   font-size: 25px;
   position: relative;
   top: 1.7em;
 }
 .block-letters-font,
 .block-color-font {
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: 'Open-Sans', sans-serif !important;
   font-weight: 200 !important;
   font-style: normal !important;
   font-size: 12px;
@@ -129,7 +130,7 @@ hr {
   margin-bottom: 1.6em;
 }
 .block-controls-formatting a {
-  color: #eee7e3;
+  color: #f1f1f1;
   display: inline-block;
   vertical-align: top;
   background: #322928;
@@ -144,14 +145,14 @@ hr {
   font-size: 12.5px;
 }
 .block-controls-formatting a.active {
-  background-color: #eee7e3;
-  border-color: #eee7e3;
+  background-color: #f1f1f1;
+  border-color: #f1f1f1;
   color: #322928;
 }
 .block-controls-formatting a:hover,
 .block-controls-formatting a:focus {
   outline: none;
-  border-color: #eee7e3;
+  border-color: #f1f1f1;
 }
 .block-controls-measurements {
   margin-top: -0.2em;
@@ -196,7 +197,7 @@ hr {
 .block-controls input[type=number] {
   border: none;
   padding: 0.2em 0 0.25em 0.1em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open-Sans', sans-serif;
   font-size: 14px;
   width: 43px;
   -webkit-border-radius: 2px;
@@ -226,14 +227,14 @@ hr {
 .block-controls .block-controls-measurements span {
   font-size: 11px;
   text-transform: uppercase;
-  color: rgba(238, 231, 227, 0.5);
+  color: rgba(241, 241, 241, 0.5);
 }
 .block-controls .block-controls-measurements span:first-of-type {
   padding-right: 1.8em;
 }
 .block-controls .icon-arrow-left,
 .block-controls .icon-arrow-right {
-  color: #eee7e3;
+  color: #f1f1f1;
   text-align: right;
   display: block;
 }
@@ -250,6 +251,7 @@ hr {
   font-weight: 500;
   letter-spacing: 0.1em;
   padding: 1em 0 1em 0;
+  color: #f1f1f1;
 }
 .block-controls input[type=color] {
   margin-right: 1.55em;
@@ -263,10 +265,14 @@ hr {
 }
 .block-add p {
   margin-top: 8em;
-  font-size: 12px;
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  opacity: 0.4;
+  opacity: 1;
+  font-weight: 500;
+}
+.block-add p a {
+  color: #6e4401;
 }
 a.icon-plus,
 a.icon-list-ul,
@@ -280,16 +286,16 @@ a.icon-th {
   height: 35px;
   padding-top: 8px;
   border-radius: 30px;
-  color: #eee7e3;
+  color: #322928;
 }
 a.icon-plus:hover,
 a.icon-list-ul:hover,
 a.icon-list-ol:hover,
 a.icon-indent-right:hover,
 a.icon-th:hover {
-  background: #eee7e3;
-  color: #322928;
-  border-color: #eee7e3;
+  background: #322928;
+  color: #f1f1f1;
+  border-color: #322928;
 }
 .block.bold {
   font-weight: bold;
@@ -333,7 +339,7 @@ a.icon-th:hover {
   opacity: 0.4;
   clear: both;
   font-weight: 500;
-  background: #322928;
+  background: #f1f1f1;
   -webkit-transition: opacity 0.25s ease-in;
   -moz-transition: opacity 0.25s ease-in;
   -ms-transition: opacity 0.25s ease-in;

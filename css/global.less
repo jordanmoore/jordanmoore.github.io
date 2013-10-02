@@ -1,7 +1,7 @@
 @dark: #322928;
-@light: #eee7e3;
+@light: #f1f1f1;
 @link: #701b28;
-@type: 'Open Sans', sans-serif;
+@type: 'Open-Sans', sans-serif;
 @types: "Droid Serif", serif;
 
 ::selection {
@@ -16,8 +16,8 @@
 }
 
 body {
-	background: @dark;
-	color: @light;
+	background: @light;
+	color: @dark;
 	font-family: @type;
 	font-weight: 200;
 	margin: 0;
@@ -34,7 +34,7 @@ hr {
 .container > h1 {
 	width: 90%;
 	margin: 1em auto 1em;
-	border-bottom: 1px solid rgba(255,255,255,0.2);
+	border-bottom: 1px solid rgba(0,0,0,0.2);
 	overflow: hidden;
 	padding-bottom: 1em;
 	span {
@@ -119,6 +119,7 @@ hr {
 			background: @dark;
 			padding: 0.2em 0.7em;
 			border-radius: 10px;
+			color: @light;
 		}
 		a {
 			color: @light;
@@ -261,6 +262,7 @@ margin-right: 1.4em;
 		font-weight: 500;
 		letter-spacing: 0.1em;
 		padding: 1em 0 1em 0;
+		color: @light;
 	}
 	input[type=color] {
 		margin-right: 1.55em;
@@ -274,10 +276,14 @@ margin-right: 1.4em;
 	margin-top: 4em;
 	p {
 		margin-top: 8em;
-		font-size: 12px;
+		font-size: 11px;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
-		opacity: 0.4;
+		opacity: 1;
+		font-weight: 500;
+		a {
+			color: #6e4401;
+		}
 	}
 }
 a.icon-plus, a.icon-list-ul, a.icon-list-ol, a.icon-indent-right, a.icon-th {
@@ -288,12 +294,12 @@ a.icon-plus, a.icon-list-ul, a.icon-list-ol, a.icon-indent-right, a.icon-th {
 	height: 35px;
 	padding-top: 8px;
 	border-radius: 30px;
-	color: @light;
+	color: @dark;
 }
 a.icon-plus:hover, a.icon-list-ul:hover, a.icon-list-ol:hover, a.icon-indent-right:hover, a.icon-th:hover {
-	background: @light;
-	color: @dark;
-	border-color: @light;
+	background: @dark;
+	color: @light;
+	border-color: @dark;
 }
 
 .block.bold {
@@ -338,7 +344,7 @@ a.icon-plus:hover, a.icon-list-ul:hover, a.icon-list-ol:hover, a.icon-indent-rig
 	opacity:0.4;
 	clear: both;
 	font-weight: 500;
-	background: @dark;
+	background: @light;
 	-webkit-transition: opacity 0.25s ease-in;
 	-moz-transition: opacity 0.25s ease-in;
 	-ms-transition: opacity 0.25s ease-in;
