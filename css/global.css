@@ -84,10 +84,10 @@ hr {
 .block-preview-color-list li {
   display: inline-block;
   vertical-align: top;
-  width: 100px;
-  height: 100px;
-  margin-right: 2.6em;
-  margin-bottom: 2.6em;
+  width: 150px;
+  height: 160px;
+  margin-right: 2em;
+  margin-bottom: 2em;
   position: relative;
   padding: 0;
   text-align: center;
@@ -95,15 +95,18 @@ hr {
 .block-preview-color-list li input {
   border: none;
   background: none;
-  width: 9em;
-  height: 10em;
+  width: 14em;
+  height: 15em;
   position: absolute;
   top: 0;
   left: 0;
 }
+.block-preview-color-list li input:focus {
+  outline: none;
+}
 .block-preview-color-list li span {
   position: relative;
-  top: 6.3em;
+  top: 10em;
   right: 0;
   text-align: center;
   font-size: 12px;
@@ -117,7 +120,7 @@ hr {
   color: #322928;
   font-size: 25px;
   position: relative;
-  top: 1.7em;
+  top: 2.8em;
 }
 .block-letters-font,
 .block-color-font {
