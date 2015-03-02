@@ -10,6 +10,8 @@ twitter_username: jordanmoore
 github_username:  jordanmoore
 paginate: 10
 paginate_path: "/blog/page:num/"
+gems:
+  - jekyll-redirect-from
 
 # Build settings
 markdown: kramdown
