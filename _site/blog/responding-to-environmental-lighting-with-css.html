@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+  
+<head>
+	<meta charset="UTF-8">
+	<title>Responding to environmental lighting with CSS Media Queries Level 4</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10, user-scalable=1">
+  	<meta name="description" content="Media Queries Level 4 builds upon the existing media queries specification that many of us use when we build responsive designs today. The Media Queries Leve...">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="canonical" href="http://jordanm.co.uk//blog/responding-to-environmental-lighting-with-css.html">
+	<link rel="alternate" type="application/rss+xml" title="Jordan Moore | Responsive Web Design, UX Designer, Northern Ireland" href="http://jordanm.co.uk//feed.xml" />
+	<script src="//use.typekit.net/jku8hwm.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+</head>
+
+  <body>
+
+      <nav>
+    <div class="container">
+      <a class="home-link" href="http://jordanm.co.uk/"><img src="http://jordanm.co.uk/img/jordan-moore.png" alt="Jordan Moore"> <span class="mb-hide">Jordan Moore</span></a>
+      <ul>
+        <li class="mb-hide"><a href="/blog">Blog</a></li>
+        <li class="mb-hide"><a href="/feed.xml">RSS</a></li>
+        <li class="mb-hide"><a href="http://twitter.com/jordanmoore">Twitter</a></li>
+        <li class="mb-hide"><a href="mailto:madebyjordan@gmail.com">Get in touch</a></li>
+      </ul>
+    </div>
+    <!-- /.container -->
+  </nav>
+  <header>
+    <div class="container">
+      <p>Nov 2, 2013</p>
+      <h1>Responding to environmental lighting with CSS Media Queries Level 4</h1>
+    </div>
+    <!-- /.container -->
+  </header>
+
+    <div class="container">
+        <div class="post">
+
+<div class="col-2-3">
+  <article class="post-content">
+    <p><a href="http://dev.w3.org/csswg/mediaqueries4/">Media Queries Level 4</a> builds upon the <a href="http://www.w3.org/TR/css3-mediaqueries/">existing media queries specification</a> that many of us use when we build responsive designs today. The Media Queries Level 4 specification introduces four interesting new media features: <strong>script</strong>, <strong>hover</strong>, <strong>pointer</strong> and <strong>luminosity</strong>. At the time of writing the specification has yet to be implemented in a browser, but that shouldn&#8217;t stop us from exploring the potential use cases.</p>
+
+<p>The luminosity media feature has garnered interest from the web community, it will allow developers to make CSS adjustments based on changes in the ambient lighting in which the device is used. The user&#8217;s device must be equipped with a light sensor to trigger this new media feature.</p>
+
+<p>The most obvious use case for the luminosity media feature is to adapt a design depending on whether the user is reading the page during the day where ambient lighting is brighter or during the night where ambient lighting is darker. We already see this behaviour in a few native apps.</p>
+
+<p><figure><img src="http://farm8.staticflickr.com/7352/10715274745_2bb3cf0db0_o.png"/><figcaption><a href="http://digg.com/reader">Digg Reader</a> on iOS can change its theme depending on the brightness of the environmental lighting</figcaption></figure></p>
+
+<p>The thing about designing for the web is we don&#8217;t have the same prior knowledge of the destination device that designers for native apps do. The light sensor&#8217;s sensitivity on an iOS device might be different than an Android device, and the light sensor&#8217;s sensitivity on an Android device might be different to the light sensor of <em>another</em> Android device, so we would need to be careful with the degree of change we make as it could be jarring to devices that have an overly keen light sensor.</p>
+
+<p>The code looks something like this:
+<code></code></p>
+
+<pre>
+@media (luminosity: normal) {
+    body {
+        background: #f5f5f5;
+        color: #262626;
+    }
+}
+@media (luminosity: dim) {
+    body {
+        background: #e9e4e3;
+    }
+}
+@media (luminosity: washed) {
+    body {
+        background: #ffffff;
+    }
+}
+</pre>
+
+
+
+<p>A <strong>normal</strong> luminosity level represents the screen being viewed in ideal lighting conditions. I would recommend working from this level as your default — and rather than wrapping those styles in a media query targeted for normal luminosity levels it would probably be best to leave those styles unwrapped so browsers and devices that haven&#8217;t got the capability of seeing the luminosity media feature can see the page in it&#8217;s ideal condition. You can then use the <strong>dim</strong> value to make adjustments for darker environments and <strong>washed</strong> to adjust styles for brighter environments leaving the default styles accessible to all devices whether they are equipped with a light sensor or not.</p>
+
+<p>I mentioned earlier about the potential differences in the light sensor hardware sensitivity — I think this is a key reason not to go over the top with the changes we make within luminosity media queries. Can we definitively say that a cloud passing on front of the sun will not trigger the <strong>dim</strong> luminosity media feature? The last thing I&#8217;d imagine the user wants is a harsh change between light and dark designs that is too easily triggered.</p>
+
+<p><figure><img src="http://farm3.staticflickr.com/2882/10715357844_0ec5fc935b_o.jpg"/><figcaption>Potential stylesheet changes from dark to light environments (left to right). Subtle changes in contrast are key for avoiding a jarring user experience when environmental changes occur</figcaption></figure></p>
+
+<p>As with other facets of web design, we should strive to stay out of the user&#8217;s way when they are trying to enjoy our design. The luminosity media feature has the potential to be the most annoying media query at our disposal, it could be responsible for ushering in a new era of glow in the dark websites — let&#8217;s just be careful with it when it arrives.</p>
+
+  </article>
+</div><!-- 
+/.col-2-3
+ --><div class="col-3">
+  <div class="featured-articles">
+    <h2>Featured Articles</h2>
+    <ul>
+      <li>
+        <h3><a href="http://jordanm.co.uk/blog/how-i-test-type-and-layout.html">How I Test Typography and Layout for Mobile Devices</a></h3>
+        <p>Owning a set of mobile devices for testing has its benefits, but not necessarily for finding layout bugs. A varied set of screen densities however is invaluable for testing readability.</p>
+      </li>
+      <li>
+        <h3><a href="http://jordanm.co.uk/blog/building-for-content-choreography-using-flexbox.html">Building for Content Choreography with Flexbox</a></h3>
+        <p>The popular article featured in books that demonstrated a way for organising and rearranging content for small screens all the way up to large screens.</p>
+      </li>
+    </ul>
+  </div>
+  <!-- /.featured-articles -->
+  <div class="published-works">
+    <h2>Published Works</h2>
+    <div class="book">
+      <div class="left"><img src="http://jordanm.co.uk/img/smashing-book.jpg" alt="An image of the front cover of Smashing Magazine's Responsive Web Design Vol.2"></div><!-- 
+      /.left
+     --><div class="right">
+        <h3><a href="https://shop.smashingmagazine.com/responsive-web-design-vol-2.html">Responsible Considerations for Responsive Web Design</a></h3>
+        <p>I authored a chapter regarding advanced methods and techniques for going the extra mile with Responsive Web Design for Smashing Magazine's Responsive Web Design Vol.2 book</p>
+      </div>
+      <!-- /.right -->
+    </div>
+    <!-- /.book -->
+  </div>
+  <!-- /.published-works -->
+  </div>
+  <!-- /.col-3 -->
+
+</div>
+
+    </div>
+
+    <footer>
+  <div class="container">
+    <hr>
+    <p class="copy">&copy; Jordan Moore 2015</p>
+  </div>
+  <!-- /.container -->
+</footer>
+
+
+  </body>
+
+</html>

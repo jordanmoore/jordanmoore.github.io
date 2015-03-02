@@ -1,0 +1,97 @@
+---
+layout: post
+title: Source shuffling - responsive images based on media queries
+date: '2012-05-13T12:39:00+01:00'
+tags:
+- responsive images
+- responsive web design
+tumblr_url: http://www.jordanm.co.uk/post/22964442013/source-shuffling-responsive-images-based-on
+summary: There are lots of solutions to address the problem of responsive images. The solutions share a similar set of requirements, some meet the majority of the requirements, some don&#8217;t and specialise in doing one thing well.
+---
+<p>There are lots of solutions to address the problem of responsive images. The solutions share a similar set of requirements, some meet the majority of the requirements, some don&#8217;t and specialise in doing one thing well.</p>
+
+<p>I recently read <a href="http://blog.cloudfour.com/a-framework-for-discussing-responsive-images-solutions/" title="a framework for discussing responsive images solutions">a framework for discussing responsive images solutions</a> by Jason Grigsby and his first point really hit home with me. Scaling a large image for mobile devices may not produce the desired results every time, content authors should be allowed to specify different images for different contexts.</p>
+
+<p><img src="http://media.tumblr.com/tumblr_m5adg5oTi61qcjdi5.jpg" alt=""/></p>
+
+<p>Most solutions offer this approach including the <a href="http://www.w3.org/community/respimg/2012/05/11/respimg-proposal/" title="Responsive image element proposed by the WHATWG | Responsive Images Community Group">picture tag proposal</a>. Where this falls short, in my opinion, is that there is still a disconnect between the picture tag breakpoint values and the media query values specified in your CSS. Each time a picture tag is written you need to specify your breakpoints again. In a templating environment you would use variables to take care of this but you will still be setting your breakpoints in different places.</p>
+
+<p>Then I recently read Jeremy Keith&#8217;s fantastic <a href="http://adactio.com/journal/5429/" title="Adactio: Journal—Conditional CSS">Conditional CSS</a> article which helps connect your CSS media queries to JavaScript to perform actions based on breakpoints. The possibilities are endless with this little gem. One of those possibilities is using it for specifying breakpoints for responsive images that are set in our HTML.</p>
+
+<p>Here&#8217;s the approach I am proposing:</p>
+
+<pre><code>&lt;img src="mobilefirst.jpg" data-medium="tabletfriendlyversion.jpg" data-large="desktopfriendlyversion.jpg" /&gt;
+</code></pre>
+
+<p>We can store image URLs in data attributes to ensure they aren&#8217;t loaded initially, only the original src is loaded. This approach borrows from Josh Emerson&#8217;s <a href="https://github.com/joshje/Responsive-Enhance" title="joshje/Responsive-Enhance · GitHub">Responsive-Enhance</a> technique where you load the fastest image you can for mobile and replace on the fly where it&#8217;s suitable to do so for the end device. By combining this philosophy with Jeremy Keith&#8217;s Conditional CSS, then we have responsive images based on our media queries.</p>
+
+<p>CSS:</p>
+
+<pre><code>@media all and (min-width: 45em) {
+body:after {
+    content: 'desktop';
+    display: none;
+}
+}
+</code></pre>
+
+<p>As outlined by Jeremy&#8217;s Conditional CSS technique, this sets a string of text we can detect using JavaScript to determine when the media query is active. You would then repeat the above code for your other contexts eg &#8220;tablet&#8221;, you could extend it for a 2x retina display with the -webkit-device-pixel-ratio media query.</p>
+
+<p>JavaScript:</p>
+
+<pre><code>var size = window.getComputedStyle(document.body,':after').getPropertyValue('content');
+
+if (size == 'desktop') {
+        $('img').each(function(index) {
+            var large = $(this).data('large');
+            $(this).attr('src',large);
+            }
+}
+if (size == tablet') {...
+</code></pre>
+
+<p>So to recap on the code above, it&#8217;s checking that when the desktop media query is active by checking the existence of the content in the &#8220;body:after&#8221; element, then it swaps the src with the value of the data attribute &#8220;data-large&#8221;. And of course you would repeat this for the other media queries too. Note I&#8217;m using jQuery above, you (the smarter one in this dialogue) could do this without a framework, I&#8217;m just proposing an approach. Users without JavaScript enabled get the low resolution, compressed mobile image specified in the img src, I&#8217;m fine with this as users without JS are getting a lo-fi version of the web anyway.</p>
+
+<p>So now we have an approach that ticks a few important boxes:</p>
+
+<ul><li>Breakpoints defined in CSS <em>and only</em> in the CSS </li>
+<li>Images can be whatever the content author specifies (no automatic resizing)</li>
+<li>No bandwidth hit for mobile devices</li>
+<li>No code repetition </li>
+<li>Fallback for users without JS</li>
+</ul><p>I would love to hear your thoughts on the approach above and any improvements you can think of.</p>
+
+<p><a href="http://www.jordanm.co.uk/sourceshuffling">View demo</a></p>
+
+<script type="text/javascript" src="http://dl.dropbox.com/u/12091580/responsiveimages/js/onmediaquery.min.js"></script><script>
+var queries = [
+    {
+        context: 'global',
+        callback: function() {
+            $('img').each(function(index) {
+                var small = $(this).attr('src');
+                $(this).attr('src',small);
+            });
+        }
+    },
+    {
+        context: 'tablet',
+        callback: function() {
+            $('img').each(function(index) {
+                var medium = $(this).data('medium');
+                $(this).attr('src',medium);
+            });
+        }
+    },
+    {
+        context: 'desktop',
+        callback: function() {
+            $('img').each(function(index) {
+                var large = $(this).data('large');
+                $(this).attr('src',large);
+            });
+        }
+    }
+];
+MQ.init(queries);
+</script><p><a href="http://static.tumblr.com/jdwzxqr/hm8mohcyk/shuffling.jpg" class="cover" data-credit="© Anthony Abbott" data-link="http://www.flickr.com/photos/antsnaps"></a></p>

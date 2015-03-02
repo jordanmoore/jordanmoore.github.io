@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+  
+<head>
+	<meta charset="UTF-8">
+	<title>Building with Content Choreography</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10, user-scalable=1">
+  	<meta name="description" content="Responsive Web Design allows us to change layouts and element appearance based upon the width and/or height of the destination device. It&#8217;s the ideal s...">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="canonical" href="http://jordanm.co.uk//blog/building-with-content-choreography.html">
+	<link rel="alternate" type="application/rss+xml" title="Jordan Moore | Responsive Web Design, UX Designer, Northern Ireland" href="http://jordanm.co.uk//feed.xml" />
+	<script src="//use.typekit.net/jku8hwm.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+</head>
+
+  <body>
+
+      <nav>
+    <div class="container">
+      <a class="home-link" href="http://jordanm.co.uk/"><img src="http://jordanm.co.uk/img/jordan-moore.png" alt="Jordan Moore"> <span class="mb-hide">Jordan Moore</span></a>
+      <ul>
+        <li class="mb-hide"><a href="/blog">Blog</a></li>
+        <li class="mb-hide"><a href="/feed.xml">RSS</a></li>
+        <li class="mb-hide"><a href="http://twitter.com/jordanmoore">Twitter</a></li>
+        <li class="mb-hide"><a href="mailto:madebyjordan@gmail.com">Get in touch</a></li>
+      </ul>
+    </div>
+    <!-- /.container -->
+  </nav>
+  <header>
+    <div class="container">
+      <p>Apr 26, 2012</p>
+      <h1>Building with Content Choreography</h1>
+    </div>
+    <!-- /.container -->
+  </header>
+
+    <div class="container">
+        <div class="post">
+
+<div class="col-2-3">
+  <article class="post-content">
+    <p>Responsive Web Design allows us to change layouts and element appearance based upon the width and/or height of the destination device. It&#8217;s the ideal scenario for users, coders and content coordinators alike - same site, same code, same content, just optimised for your experience depending on the display properties of the device you are using.</p>
+
+<p>There can be stumbling blocks along the way to a beautiful unified site that runs perfectly on all platforms, which I&#8217;ll not go into as they are well documented (think, responsive images, page weight and so-on). The one that has been teasing me for a while is Content Choreography. Trent Walton <a href="http://trentwalton.com/2011/07/14/content-choreography/">wrote a great article on the matter</a>. My key takeaway from his article was that when it comes to the narrow width single column view, content stacking is unavoidable and the approach the majority of us take is to simply stack the page elements in the order they appear in our document order.</p>
+
+<p><img src="http://media.tumblr.com/tumblr_m33rrog1f71qcjdi5.jpg" alt=""/></p>
+
+<p>What happens when this order isn&#8217;t ideal for a narrow single column viewport but it works as we want it to for others? We want to make the most of the confined space and let key content and components flourish, but sometimes our hierarchy of elements can prevent that from happening. Say for example we want to present an article in the narrow single column view, but before the article appears in the stacking order we have: a header (containing site name etc), navigation, maybe even a banner advertisement, then the article. The heart of the page is buried beneath items that may be less important in this context. Rather than brutally hiding these items with a display:none property we can reorder them using another CSS property - <strong>flexbox</strong>.</p>
+
+<p>The flexible box layout module allows us to do more interesting things than our current box model allows for producing layouts, <strong>including the ability to reorder elements</strong>. Sounds exactly like what we wanted to do with the article example mentioned earlier, right? The flexbox property <strong>box-ordinal-group</strong> let&#8217;s us reorder elements based on a group number assigned to elements in our CSS. They appear in the order you specify starting from 1. So in our example we would priortise the elements on the page:</p>
+
+<ul><li>Header (1) - Contains the site name, most important</li>
+<li>Navigation (4) - While a key element, it&#8217;s not crucial in our example - we just want to present an article</li>
+<li>Banner advertisement (3) - Important for our advertisers, we are compromising for our example and dropping them below the article</li>
+<li>Article (2) - The second most important thing on the page apart from the site&#8217;s name.</li>
+</ul><p>When we apply those values to box-ordinal-group for each of the elements, the browser would render them in this order:</p>
+
+<ul><li>Header (1)</li>
+<li>Article (2)</li>
+<li>Banner advertisement (3)</li>
+<li>Navigation (4)</li>
+</ul><p>All this happens with minimal fuss - in your single column media query you apply display:box to the parent container which houses the elements you wish to re-order, assign the box-ordinal-group values according to the order in which you want them to appear, save, refresh and - ah-ha! They appear as if they have been floated horizontally, what happened? Flexbox arranges elements horizontally by default, because we <strong>only</strong> want to apply this at the single column view (I&#8217;ll explain why later), we need to add one more property to the container alongside display:box, and that property is - box-orient:vertical. Now we are working with our familiar stacked block-level elements only this time we have the delicious power to re-order them as we please.</p>
+
+<p>I mentioned briefly that we would only want to do this when our layout is viewed in a single column, allow me to explore this a little further - there are advantages to applying flexbox at a single column level. One is that it is easier to get your head around moving objects up and down rather than horizontally moving and stretching and filling and stacking. Another is that by aiming to do this at a single column media query (I hate associating devices with viewport widths but for the sake of illustrating this point this would be the mobile view) we can enjoy the <a href="http://caniuse.com/flexbox" title="When can I use Flexible Box Layout Module?">incredible support for flexbox</a> on mobile devices. In addition it is (arguably) mobile devices that feel the pain of the need to re-arrange elements for optimal presentation in that context. Also if a mobile browser can&#8217;t recognise flexbox (IE9 Mobile is the only major one missing from <a href="http://caniuse.com/flexbox" title="When can I use Flexible Box Layout Module?">the list</a> so I&#8217;m assuming it can&#8217;t), then it will simply fallback to the default document order which isn&#8217;t the worst outcome.</p>
+
+<p>So unless anybody points out some fundamental flaws in this technique, and <a href="http://twitter.com/jordanmoore">please feel free to do so</a> if there are any, then I plan to use this a lot when building responsive sites. I can see it causing some extra foresight when building for mobile first although I don&#8217;t think that&#8217;s an entirely bad thing, you would essentially build for mobile fallbacks and the larger context&#8217;s document order first, then re-order to the ideal choreographed scenario when finished. To be honest, I&#8217;m still figuring that part out, the best way to approach this, as with everything else in responsive web design is to build and refine and repeat.</p>
+
+<p><a href="http://www.jordanm.co.uk/contentchoreography">View demo</a> (resize your browser window to see the narrow column reordering)
+<a href="http://www.jordanm.co.uk/contentchoreographydemo">View explanation demo</a></p>
+
+<h2>Update</h2>
+
+<p>Thanks to the good work of <a href="http://twitter.com/irishstu">Stewart Curry</a> and <a href="http://twitter.com/sturobson">Stuart Robson</a>, this technique has a mixin for your favourite CSS pre-processor:</p>
+
+<ul><li><a href="http://www.alwaystwisted.com/post.php?s=2012-05-17-content-choreography-mixins-in-less">Content Choreography LESS mixin</a> by Stu Robson</li>
+<li><a href="http://blog.woop.ie/post/23227066135/content-choreography-mixin">Content Choreography SASS mixin</a> by Stewart Curry</li>
+</ul><p><a href="http://farm9.staticflickr.com/8368/8405185756_3578971882_h.jpg" class="cover" data-credit="© Kryziz Bonny" data-link="http://www.flickr.com/photos/kryziz"></a></p>
+
+  </article>
+</div><!-- 
+/.col-2-3
+ --><div class="col-3">
+  <div class="featured-articles">
+    <h2>Featured Articles</h2>
+    <ul>
+      <li>
+        <h3><a href="http://jordanm.co.uk/blog/how-i-test-type-and-layout.html">How I Test Typography and Layout for Mobile Devices</a></h3>
+        <p>Owning a set of mobile devices for testing has its benefits, but not necessarily for finding layout bugs. A varied set of screen densities however is invaluable for testing readability.</p>
+      </li>
+      <li>
+        <h3><a href="http://jordanm.co.uk/blog/building-for-content-choreography-using-flexbox.html">Building for Content Choreography with Flexbox</a></h3>
+        <p>The popular article featured in books that demonstrated a way for organising and rearranging content for small screens all the way up to large screens.</p>
+      </li>
+    </ul>
+  </div>
+  <!-- /.featured-articles -->
+  <div class="published-works">
+    <h2>Published Works</h2>
+    <div class="book">
+      <div class="left"><img src="http://jordanm.co.uk/img/smashing-book.jpg" alt="An image of the front cover of Smashing Magazine's Responsive Web Design Vol.2"></div><!-- 
+      /.left
+     --><div class="right">
+        <h3><a href="https://shop.smashingmagazine.com/responsive-web-design-vol-2.html">Responsible Considerations for Responsive Web Design</a></h3>
+        <p>I authored a chapter regarding advanced methods and techniques for going the extra mile with Responsive Web Design for Smashing Magazine's Responsive Web Design Vol.2 book</p>
+      </div>
+      <!-- /.right -->
+    </div>
+    <!-- /.book -->
+  </div>
+  <!-- /.published-works -->
+  </div>
+  <!-- /.col-3 -->
+
+</div>
+
+    </div>
+
+    <footer>
+  <div class="container">
+    <hr>
+    <p class="copy">&copy; Jordan Moore 2015</p>
+  </div>
+  <!-- /.container -->
+</footer>
+
+
+  </body>
+
+</html>

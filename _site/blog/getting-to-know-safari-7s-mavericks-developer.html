@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+  
+<head>
+	<meta charset="UTF-8">
+	<title>Getting to know Safari 7's (Mavericks) developer tools</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10, user-scalable=1">
+  	<meta name="description" content="I can only speculate why Safari hasn&#8217;t been widely adopted for web development — maybe it&#8217;s because Safari isn&#8217;t an overly popular browser,...">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="canonical" href="http://jordanm.co.uk//blog/getting-to-know-safari-7s-mavericks-developer.html">
+	<link rel="alternate" type="application/rss+xml" title="Jordan Moore | Responsive Web Design, UX Designer, Northern Ireland" href="http://jordanm.co.uk//feed.xml" />
+	<script src="//use.typekit.net/jku8hwm.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+</head>
+
+  <body>
+
+      <nav>
+    <div class="container">
+      <a class="home-link" href="http://jordanm.co.uk/"><img src="http://jordanm.co.uk/img/jordan-moore.png" alt="Jordan Moore"> <span class="mb-hide">Jordan Moore</span></a>
+      <ul>
+        <li class="mb-hide"><a href="/blog">Blog</a></li>
+        <li class="mb-hide"><a href="/feed.xml">RSS</a></li>
+        <li class="mb-hide"><a href="http://twitter.com/jordanmoore">Twitter</a></li>
+        <li class="mb-hide"><a href="mailto:madebyjordan@gmail.com">Get in touch</a></li>
+      </ul>
+    </div>
+    <!-- /.container -->
+  </nav>
+  <header>
+    <div class="container">
+      <p>Nov 4, 2013</p>
+      <h1>Getting to know Safari 7's (Mavericks) developer tools</h1>
+    </div>
+    <!-- /.container -->
+  </header>
+
+    <div class="container">
+        <div class="post">
+
+<div class="col-2-3">
+  <article class="post-content">
+    <p>I can only speculate why Safari hasn&#8217;t been widely adopted for web development — maybe it&#8217;s because Safari isn&#8217;t an overly popular browser, or perhaps it&#8217;s because it hasn&#8217;t been too developer friendly in the past. Safari&#8217;s web developer tools always felt like they were playing catch up with Chrome and Firefox, they seemed clunky and cumbersome by comparison. Thankfully the same can&#8217;t be said for Safari in Mavericks.</p>
+
+<p>This is by no means a comprehensive overview of the powerful web development tools at our disposal — just the ones that I (as a front end developer) encounter every day.</p>
+
+<p><figure><img src="http://farm4.staticflickr.com/3716/10715368486_b742f1b6cd_o.jpg"/><figcaption>Yikes, 1MB? Looks like I&#8217;ve got some optimising to do.</figcaption></figure></p>
+
+<p>As far as web inspectors go Safari&#8217;s UI easily beats the competition in terms of look and feel (and that&#8217;s a pretty grim beauty contest). It&#8217;s an adaptive UI too — the labels beside the icons in the toolbar disappear when space is scarce, and if you keep resizing the activity bar drops a few items too.</p>
+
+<p>The activity bar itself is great. It shows the number of resources on the page right beside the page weight which is good for <a href="http://timkadlec.com/2013/01/setting-a-performance-budget/">performance budgets</a>. It&#8217;s nice to see a persistently juxtaposed value sitting there while you work so you don&#8217;t lose track of how much weight your page is gaining — a huge problem for sticking to a performance budget.</p>
+
+<p>What really sets Safari apart from Chrome and Firefox is writing and editing CSS rules in the sidebar. Writing new rules just <em>feels</em> better. Chrome&#8217;s auto-complete is intrusive whereas Safari&#8217;s auto-complete stays out of the way. Values can be incremented and decremented by pressing the option key and up or down respectfully. My favourite thing about writing CSS rules in Safari is that when disabling a rule by either toggling the checkbox or pressing <strong>Cmd + /</strong> it wraps the CSS rule as a comment. The Safari team have really observed web design workflows here — because the rule is commented when disabled, you can copy the block of rules into your code editor and the disabled rule remains disabled after transition. With Chrome and Firefox, you need to remember which rule or rules you unchecked when copying and pasting it into your code editor and then remove them afterwards.</p>
+
+<p><figure><img src="http://farm8.staticflickr.com/7403/10715358094_ab84a00a7e_o.jpg"/><figcaption>Rules that are disabled via the checkbox or by hitting <strong>Cmd + /</strong> are wrapped in quotes meaning when it is copied into a code editor, the disabled rules stay disabled</figcaption></figure></p>
+
+<p>One of Safari&#8217;s most powerful features is allowing you to access and manipulate the code on iOS devices when plugged in via USB. Inspecting and editing this way is noticeably faster than other methods like Weinre, Edge Inspect and other similar techniques. That&#8217;s great if you&#8217;re just building things for Apple devices, which you shouldn&#8217;t be — you&#8217;ll still need to test on other devices the old fashioned way.</p>
+
+<p>I do have a few gripes with Safari&#8217;s developer tools, albeit quite minor ones — docking. Docking the web inspector on the right hand side is something I use heavily in Chrome — the option <em>is</em> present in Safari but Apple seem to care a great deal about the appearance of their inspector to the point of it having a ridiculously large minimum width. It takes up half my screen on a 13&#8221; MacBook Air leaving little room to resize the screen. Toggling between docked tools on the right and the bottom isn&#8217;t as easy as it is in Chrome. You need to completely undock the web developer tools window, then use the corresponding icon to dock it into the position you want.</p>
+
+<p>But that shouldn&#8217;t stop you from giving Safari a try as your web development browser. The noticeable improvements in writing CSS rules and the emphasis on improving performance was enough to encourage me to try it for a while.</p>
+
+  </article>
+</div><!-- 
+/.col-2-3
+ --><div class="col-3">
+  <div class="featured-articles">
+    <h2>Featured Articles</h2>
+    <ul>
+      <li>
+        <h3><a href="http://jordanm.co.uk/blog/how-i-test-type-and-layout.html">How I Test Typography and Layout for Mobile Devices</a></h3>
+        <p>Owning a set of mobile devices for testing has its benefits, but not necessarily for finding layout bugs. A varied set of screen densities however is invaluable for testing readability.</p>
+      </li>
+      <li>
+        <h3><a href="http://jordanm.co.uk/blog/building-for-content-choreography-using-flexbox.html">Building for Content Choreography with Flexbox</a></h3>
+        <p>The popular article featured in books that demonstrated a way for organising and rearranging content for small screens all the way up to large screens.</p>
+      </li>
+    </ul>
+  </div>
+  <!-- /.featured-articles -->
+  <div class="published-works">
+    <h2>Published Works</h2>
+    <div class="book">
+      <div class="left"><img src="http://jordanm.co.uk/img/smashing-book.jpg" alt="An image of the front cover of Smashing Magazine's Responsive Web Design Vol.2"></div><!-- 
+      /.left
+     --><div class="right">
+        <h3><a href="https://shop.smashingmagazine.com/responsive-web-design-vol-2.html">Responsible Considerations for Responsive Web Design</a></h3>
+        <p>I authored a chapter regarding advanced methods and techniques for going the extra mile with Responsive Web Design for Smashing Magazine's Responsive Web Design Vol.2 book</p>
+      </div>
+      <!-- /.right -->
+    </div>
+    <!-- /.book -->
+  </div>
+  <!-- /.published-works -->
+  </div>
+  <!-- /.col-3 -->
+
+</div>
+
+    </div>
+
+    <footer>
+  <div class="container">
+    <hr>
+    <p class="copy">&copy; Jordan Moore 2015</p>
+  </div>
+  <!-- /.container -->
+</footer>
+
+
+  </body>
+
+</html>

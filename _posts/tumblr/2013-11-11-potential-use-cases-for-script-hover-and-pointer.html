@@ -1,0 +1,122 @@
+---
+layout: post
+title: Potential use cases for script, hover and pointer CSS Level 4 Media Features
+date: '2013-11-11T07:50:00+00:00'
+tags: []
+tumblr_url: http://www.jordanm.co.uk/post/66660448615/potential-use-cases-for-script-hover-and-pointer
+summary: Having recently covered the <a href="http://www.jordanm.co.uk/2013/11/02/responding-to-environmental-lighting-with-css.html-media">luminosity media feature</a>, I thought I&#8217;d take time to document the potential use cases for the other new media features in the CSS Level 4 Media Queries module. Note that at the time of writing these features don&#8217;t exist in any browser yet, so the following use cases are theoretical.
+---
+<p>Having recently covered the <a href="http://www.jordanm.co.uk/2013/11/02/responding-to-environmental-lighting-with-css.html-media">luminosity media feature</a>, I thought I&#8217;d take time to document the potential use cases for the other new media features in the CSS Level 4 Media Queries module. Note that at the time of writing these features don&#8217;t exist in any browser yet, so the following use cases are theoretical.</p>
+
+<h3>Introducing Script</h3>
+
+<p>The <code>script</code> media feature does largely the same job as <a href="http://modernizr.com">existing feature detection methods</a> albeit on a more limited scale (browsers that support CSS level 4 media queries). It checks to see if <a href="http://en.wikipedia.org/wiki/ECMAScript">ECMAscript</a> (commonly in the form of JavaScript on the web) is supported in the current document. That means if a user has JavaScript enabled or disabled in their browser, we can detect its state and make appropriate formatting adjustments in CSS.</p>
+
+<p>There are certain limitations to what the <code>script</code> media feature can detect. If JavaScript is switched off and a page is loaded, the media feature will correctly report a value of &#8220;0&#8221; and it will report a value of &#8220;1&#8221; when JavaScript is enabled. But what happens to the media feature result when the user switches JavaScript off <em>whilst viewing the page</em> depends on the individual browser&#8217;s behaviour — it may or may not report a value of &#8220;0&#8221;. It also can&#8217;t be used as a way of providing a fallback if JavaScript errors cause something to break<sup id="fnref:p66660448615-1"><a href="#fn:p66660448615-1" rel="footnote">1</a></sup> because the browser will correctly say that the current document is capable of showing scripts and return a value of &#8220;1&#8221;. The specification hints at future levels of CSS being able to provide fine-grained results of which scripts are allowed to run on a page<sup id="fnref:p66660448615-2"><a href="#fn:p66660448615-2" rel="footnote">2</a></sup>.</p>
+
+<h3>Use cases for script</h3>
+
+<p>Using the &#8220;not&#8221; keyword in a <code>script</code> media query would allow us to style fallbacks where JavaScript isn&#8217;t enabled. It could also be used for progressive enhancement where the presence of JavaScript isn&#8217;t taken for granted.</p>
+
+<p>Here is an example of a <code>script</code> media query written with progressive enhancement in mind (assuming we have a JavaScript-powered carousel):</p>
+
+<pre>
+<code>
+@media (script) {
+    .carousel-links {
+        display:inline-block;
+                padding: 0.3em 0.6em;
+                ...
+    }
+}
+</code>
+</pre>
+
+<h3>Introducing Hover</h3>
+
+<p>Similar to the <code>script</code> media feature <code>hover</code> returns a basic on/off (1/0) result depending on whether the primary pointing system on the device can hover<sup id="fnref:p66660448615-3"><a href="#fn:p66660448615-3" rel="footnote">3</a></sup>. Although touch-based devices may have the potential for hover capable input devices like a mouse, this media query will still report a value of &#8220;0&#8221; before any peripherals are attached.</p>
+
+<p>The <code>hover</code> media feature solves a very common problem. Some UI elements that require a hover interacting like mega drop-down navigation menus often appear on touch-based devices that aren&#8217;t capable of hover functions. Their appearance is usually triggered by media queries based on screen dimensions which is not a reliable method for knowing if a device is capable of touch and/or hover inputs.</p>
+
+<p>Currently the user agent on a touch device mimics a hover in some cases on the first tap of the hover menu item which seems to apply some sort of :hover and :active state. The point is — it&#8217;s not that reliable or user friendly. It takes a bit of guess work for the user to know a single tap activates hover. Thankfully the <code>hover</code> media query can help us fix this issue — as you&#8217;ve probably guessed, it detects the device&#8217;s ability to hover.</p>
+
+<h3>Use cases for hover</h3>
+
+<p>Upon detection of a hover-capable input device we could format our markup to enhance interfaces for such devices (e.g. drop-down menus, tooltips etc).</p>
+
+<p>If we wanted drop down menus to only appear on devices that have hover input devices connected, then we would write:</p>
+
+<pre>
+<code>
+@media (hover) {
+    nav ul ul {
+        display:none;
+                /* Hide the sub menu and position absolutely to the parent li for a CSS-based hover drop down menu */
+                ...
+    }
+        nav ul li:hover ul {
+            display:block;
+            /* Show the menu on hover of the parent li */
+        }
+}
+</code>
+</pre>
+
+<h3>Introducing Pointer</h3>
+
+<p><code>Pointer</code> was generally thought of a way to differentiate between touch and other peripheral-based inputs. The media query produces 3 different values: <strong>none</strong>, <strong>coarse</strong> and <strong>fine</strong> — the assumption being that when implemented a non-touch or mouse-based device (like the 4th generation Kindles) would report &#8220;none&#8221;, an iPhone and iPad would report a value of &#8220;coarse&#8221; and a desktop machine would report &#8220;fine&#8221;.</p>
+
+<p>Coarse means that the pointer limited accuracy. According to the spec<sup id="fnref:p66660448615-4"><a href="#fn:p66660448615-4" rel="footnote">4</a></sup>, that means that at a zoom level of 1 (your default zoom level) the pointing device would have trouble accurately selecting several small adjacent targets.</p>
+
+<p>Inputs that would give a value of fine would likely be a mouse, a trackpad or even a stylus.</p>
+
+<p>I have a couple of reservations about the <code>pointer</code> media feature and I can see potential misuse or misunderstanding of it.</p>
+
+<p>A potential limitation might be when peripherals are used after the page load. For example would the media query update it&#8217;s values if I decided to switch to a stylus during browsing? Also the spec notes that for accessibility reasons some user agents may report a value of &#8220;coarse&#8221; in an environment where the input would normally be reported as &#8220;fine&#8221;.</p>
+
+<p>The takeaway from all of this? Don&#8217;t rely on a coarse pointer to mean <em>touch</em>. Loading touch UI elements based on the accuracy of the input device is trying to solve a problem with the wrong tools. We should take pointer accuracy at face value — it can only tell us how accurate the input device is, therefore our formatting changes within a <code>pointer</code> media query should only make adjustments to for accuracy rather than input type. If you want to write CSS for touch enabled devices <a href="http://modernizr.com">use Modernizr</a> to detect touch capabilities because relying on the <code>pointer</code> media feature is like relying on a width media query to definitively say &#8220;this browser is a mobile phone&#8221;.</p>
+
+<h3>Use cases for pointer</h3>
+
+<p>The specification provides a good use case where you could theoretically enlarge tricky targets like radio buttons based on the accuracy of the pointer. Perhaps &#8220;coarse&#8221; would be a good default to work from - if we assume that the device is inaccurate then we can progressively enhance for accuracy.</p>
+
+<p>The following code demonstrates how we could potentially improve accuracy on UI elements for devices with inaccurate pointers and reduce their size for devices with accurate pointers:</p>
+
+<pre>
+<code>
+@media (pointer:coarse) {
+  .btn {
+        padding: 1.2em 2em;
+        font-size: 1.6em;
+  }
+}
+
+@media (pointer:fine) {
+  .btn {
+        padding: 0.6em 1em;
+        font-size: 1em;
+  }
+}
+</code>
+</pre>
+
+<p>The new media features offer great opportunities to progressively enhance our designs. I don&#8217;t think any of them should form the <em>foundation</em> for a design, nor do I think that they were ever intended to be used in such a way. What they do provide is a way for us to finesse the details. Make sure to check <a href="http://jordanm.co.uk/palmreader">PalmReader</a> to see when the new media features arrive on your device.</p>
+
+<div class="footnotes">
+<hr><ol><li id="fn:p66660448615-1">
+<p><a href="http://lists.w3.org/Archives/Public/www-style/2013Nov/0023.html%C2%A0">http://lists.w3.org/Archives/Public/www-style/2013Nov/0023.html </a><a href="#fnref:p66660448615-1" rev="footnote">↩</a></p>
+</li>
+
+<li id="fn:p66660448615-2">
+<p><a href="http://dev.w3.org/csswg/mediaqueries4/#script%C2%A0">http://dev.w3.org/csswg/mediaqueries4/#script </a><a href="#fnref:p66660448615-2" rev="footnote">↩</a></p>
+</li>
+
+<li id="fn:p66660448615-3">
+<p><a href="http://dev.w3.org/csswg/mediaqueries4/#hover%C2%A0">http://dev.w3.org/csswg/mediaqueries4/#hover </a><a href="#fnref:p66660448615-3" rev="footnote">↩</a></p>
+</li>
+
+<li id="fn:p66660448615-4">
+<p><a href="http://dev.w3.org/csswg/mediaqueries4/#pointer%C2%A0">http://dev.w3.org/csswg/mediaqueries4/#pointer </a><a href="#fnref:p66660448615-4" rev="footnote">↩</a></p>
+</li>
+
+</ol></div>

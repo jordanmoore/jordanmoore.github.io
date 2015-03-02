@@ -1,0 +1,25 @@
+---
+layout: post
+title: The web was always responsive
+date: '2012-03-17T09:07:00+00:00'
+tags:
+- responsive web design
+tumblr_url: http://www.jordanm.co.uk/post/19444474810/the-web-was-always-responsive
+summary: The web is inherently responsive. It&#8217;s in it&#8217;s DNA. If you create a structured HTML document with no CSS applied and open it in any browser, you will see it is naturally fluid and will fit any window size.
+---
+<p>The web is inherently responsive. It&#8217;s in it&#8217;s DNA. If you create a structured HTML document with no CSS applied and open it in any browser, you will see it is naturally fluid<sup id="fnref:p19444474810-1"><a href="#fn:p19444474810-1" rel="footnote">1</a></sup> and will fit any window size.</p>
+
+<p>This is why <a href="http://www.lukew.com/ff/entry.asp?933" title="LukeW | Mobile First">mobile first</a> makes sense to me. Block level elements stack nicely on top of each other and are fluid by default so our code should&#8217;t be heavy at this stage. From a styling perspective, at the mobile first stage you are essentially adding colour, type properties and establishing the vertical relationship between objects.</p>
+
+<p>At your breakpoints you are mainly dealing with layout (widths and floats). <a href="http://adactio.com/journal/4227/" title="Adactio: Journal—Tweaking Huffduffer">Jeremy Keith&#8217;s approach</a> for serving stylesheets helps here. Jeremy serves a separate stylesheet for mobile which filters through all properties to the layout stylesheet which is only applied when a viewport can handle it. The layout stylesheet shouldn&#8217;t be heavy either as it should only contain layout properties.</p>
+
+<p>Realising that the web is naturally responsive encourages your thinking to keep your code light. A lot of the work is already done for you when using a mobile first approach. That was my epiphany, I hope it helps you too.</p>
+
+<p><a href="http://static.tumblr.com/jdwzxqr/nAQmohdfx/webalwaysresponsive.jpg" class="cover" data-credit="© Clinton Steeds" data-link="http://www.flickr.com/photos/cwsteeds"></a></p>
+
+<div class="footnotes">
+<hr><ol><li id="fn:p19444474810-1">
+<p>I owe my epiphany to Chris Armstrong who pointed this out to me during our first responsive design project together. <a href="#fnref:p19444474810-1" rev="footnote">↩</a></p>
+</li>
+
+</ol></div>
