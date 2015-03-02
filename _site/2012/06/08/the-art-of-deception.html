@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+  
+<head>
+	<meta charset="UTF-8">
+	<title>The Art of Deception</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10, user-scalable=1">
+  	<meta name="description" content="As you have probably noticed by now — I have a thing about magic. It has fascinated me since I was a young boy, particularly the tricks that would lead you d...">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="canonical" href="http://jordanm.co.uk//2012/06/08/the-art-of-deception.html">
+	<link rel="alternate" type="application/rss+xml" title="Jordan Moore | Responsive Web Design, UX Designer, Northern Ireland" href="http://jordanm.co.uk//feed.xml" />
+	<script src="//use.typekit.net/jku8hwm.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+</head>
+
+  <body>
+
+      <nav>
+    <div class="container">
+      <a class="home-link" href="http://jordanm.co.uk/"><img src="http://jordanm.co.uk/img/jordan-moore.png" alt="Jordan Moore"> <span class="mb-hide">Jordan Moore</span></a>
+      <ul>
+        <li class="mb-hide"><a href="/blog">Blog</a></li>
+        <li class="mb-hide"><a href="/feed.xml">RSS</a></li>
+        <li class="mb-hide"><a href="http://twitter.com/jordanmoore">Twitter</a></li>
+        <li class="mb-hide"><a href="mailto:madebyjordan@gmail.com">Get in touch</a></li>
+      </ul>
+    </div>
+    <!-- /.container -->
+  </nav>
+  <header>
+    <div class="container">
+      <p>Jun 8, 2012</p>
+      <h1>The Art of Deception</h1>
+    </div>
+    <!-- /.container -->
+  </header>
+
+    <div class="container">
+        <div class="post">
+
+<div class="col-2-3">
+  <article class="post-content">
+    <p>As you have probably noticed by now — I have a thing about magic. It has fascinated me since I was a young boy, particularly the tricks that would lead you down a path of thinking expecting a certain result only for it to produce an unexpected, yet astounding result.</p>
+
+<p>Magic is entertainment. Magicians are masters in the art of deception — they deceive to astound, to delight their audience, to make their experience with the show an enjoyable and memorable one.</p>
+
+<p><figure><img src="http://farm5.staticflickr.com/4004/4322950792_e205fc98f8.jpg"/><figcaption>Via <a href="http://www.flickr.com/photos/whsimages/4322950792/">Wisconsin Historical Images</a> on Flickr</figcaption></figure></p>
+
+<p>We can use deception where appropriate in our medium. Think of a scenario where you may present something very image heavy, like a photo gallery — if a user can only see 4 out of 50 images in their viewport it would be wrong to force them to download every image on that page. Using a technique like lazy loading gives the user the impression they have quickly loaded a full page of images, thus enhancing their experience, but instead we only show them on demand. It&#8217;s deceiving — but in a good way.</p>
+
+<p>When lazy loading images there can be a flash of an empty placeholder before the requested image comes into view. It&#8217;s not a big deal but that split second flash can be a bit jarring. Maybe there is another way we could use deception to prevent this, like changing the placeholder to become an extremely compressed version of the higher quality yet to be loaded. The transition from heavily compressed image to the higher quality version intended for the visitor to see is a lot more subtle.</p>
+
+<p>Progressively saved images offer a similar approach. They load the image as quickly as possible onto the page which produces an initially rough version of the image before it begins to render clearer. Sadly this technique doesn&#8217;t work in Safari iOS which is a shame. Safari instead waits until it is ready to show the full quality image before showing anything. Progressively saved images do work as expected on most desktop browsers though, so they are still useful in producing a faster perceived page load.</p>
+
+<p>Sometimes using deception can greatly improve a user&#8217;s experience with your product. I have outlined some basic ideas focused on images and speed. There is a lot more we could tap into, <a href="http://twitter.com/jordanmoore">I would love to hear your thoughts</a>.</p>
+
+<p><a href="http://static.tumblr.com/jdwzxqr/05tmohcp2/deception.jpg" class="cover" data-credit="© Josh McGinn" data-link="http://www.flickr.com/photos/svenstorm"></a></p>
+
+  </article>
+</div><!-- 
+/.col-2-3
+ --><div class="col-3">
+  <div class="featured-articles">
+    <h2>Featured Articles</h2>
+    <ul>
+      <li>
+        <h3><a href="http://jordanm.co.uk/blog/how-i-test-type-and-layout.html">How I Test Typography and Layout for Mobile Devices</a></h3>
+        <p>Owning a set of mobile devices for testing has its benefits, but not necessarily for finding layout bugs. A varied set of screen densities however is invaluable for testing readability.</p>
+      </li>
+      <li>
+        <h3><a href="http://jordanm.co.uk/blog/building-for-content-choreography-using-flexbox.html">Building for Content Choreography with Flexbox</a></h3>
+        <p>The popular article featured in books that demonstrated a way for organising and rearranging content for small screens all the way up to large screens.</p>
+      </li>
+    </ul>
+  </div>
+  <!-- /.featured-articles -->
+  <div class="published-works">
+    <h2>Published Works</h2>
+    <div class="book">
+      <div class="left"><img src="http://jordanm.co.uk/img/smashing-book.jpg" alt="An image of the front cover of Smashing Magazine's Responsive Web Design Vol.2"></div><!-- 
+      /.left
+     --><div class="right">
+        <h3><a href="https://shop.smashingmagazine.com/responsive-web-design-vol-2.html">Responsible Considerations for Responsive Web Design</a></h3>
+        <p>I authored a chapter regarding advanced methods and techniques for going the extra mile with Responsive Web Design for Smashing Magazine's Responsive Web Design Vol.2 book</p>
+      </div>
+      <!-- /.right -->
+    </div>
+    <!-- /.book -->
+  </div>
+  <!-- /.published-works -->
+  </div>
+  <!-- /.col-3 -->
+
+</div>
+
+    </div>
+
+    <footer>
+  <div class="container">
+    <hr>
+    <p class="copy">&copy; Jordan Moore 2015</p>
+  </div>
+  <!-- /.container -->
+</footer>
+
+
+  </body>
+
+</html>

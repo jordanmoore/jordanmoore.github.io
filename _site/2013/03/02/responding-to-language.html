@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+  
+<head>
+	<meta charset="UTF-8">
+	<title>Responding to Language</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10, user-scalable=1">
+  	<meta name="description" content="Recently Vasilis van Gemert authored a very useful article on Smashing Magazine about Logical Breakpoints For Your Responsive Design. The article touches on ...">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="canonical" href="http://jordanm.co.uk//2013/03/02/responding-to-language.html">
+	<link rel="alternate" type="application/rss+xml" title="Jordan Moore | Responsive Web Design, UX Designer, Northern Ireland" href="http://jordanm.co.uk//feed.xml" />
+	<script src="//use.typekit.net/jku8hwm.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+</head>
+
+  <body>
+
+      <nav>
+    <div class="container">
+      <a class="home-link" href="http://jordanm.co.uk/"><img src="http://jordanm.co.uk/img/jordan-moore.png" alt="Jordan Moore"> <span class="mb-hide">Jordan Moore</span></a>
+      <ul>
+        <li class="mb-hide"><a href="/blog">Blog</a></li>
+        <li class="mb-hide"><a href="/feed.xml">RSS</a></li>
+        <li class="mb-hide"><a href="http://twitter.com/jordanmoore">Twitter</a></li>
+        <li class="mb-hide"><a href="mailto:madebyjordan@gmail.com">Get in touch</a></li>
+      </ul>
+    </div>
+    <!-- /.container -->
+  </nav>
+  <header>
+    <div class="container">
+      <p>Mar 2, 2013</p>
+      <h1>Responding to Language</h1>
+    </div>
+    <!-- /.container -->
+  </header>
+
+    <div class="container">
+        <div class="post">
+
+<div class="col-2-3">
+  <article class="post-content">
+    <p>Recently Vasilis van Gemert authored a very useful article on Smashing Magazine about <a href="http://www.smashingmagazine.com/2013/03/01/logical-breakpoints-responsive-design/">Logical Breakpoints For Your Responsive Design</a>. The article touches on how it you could theoretically produce different reading lengths and breakpoints for different languages. To support this idea Vasilis introduces an insightful little tool showing how the contrasting word length between different languages influences reading length.</p>
+
+<p><img src="http://static.tumblr.com/jdwzxqr/bx5mj0xoa/screen_shot_2013-03-02_at_08.16.28.png" alt="Cropped screenshot of The International Measure Slider"/></p>
+
+<p>This tool is worth bookmarking if you are designing multi-lingual layouts. You can take it a step further by <strong>responding to the user’s language using CSS</strong>.</p>
+
+<p>The language of an HTML document is defined by the ‘lang’ attribute in the ‘&lt;html&gt;’ tag at the root of the document. This gives us a hook that we can use in CSS to apply globally to the document.</p>
+
+<p>Imagine a scenario where we had a blog that has a language switcher between English and German. Generally German words are longer than English so we might want to set the reading length on the German version of our article to a slightly wider value.</p>
+
+<p>The CSS might look something like this:</p>
+
+<pre><code>article {
+   max-width:33em;
+}
+:lang(de) article {
+  max-width:40em;
+}
+</code></pre>
+
+<p>As soon as the ‘lang’ attribute is changed from the default ‘en’ to ‘de’ (through a mechanism like a language select dropdown) the width of the ‘&lt;article&gt;’ changes to a wider reading length making a (potentially) easier read for our German readers.</p>
+
+<p>You could extend this technique to tweak the rest of the layout to adapt to the changing line-length. The fact that the language attribute is at the root of the document makes for a nice and clean base to apply global rules that respond to different languages.</p>
+
+<p><a href="http://static.tumblr.com/jdwzxqr/u82moh7s5/language.jpg" class="cover" data-credit="© alangrlane" data-link="http://www.flickr.com/photos/53914298@N07"></a></p>
+
+  </article>
+</div><!-- 
+/.col-2-3
+ --><div class="col-3">
+  <div class="featured-articles">
+    <h2>Featured Articles</h2>
+    <ul>
+      <li>
+        <h3><a href="http://jordanm.co.uk/blog/how-i-test-type-and-layout.html">How I Test Typography and Layout for Mobile Devices</a></h3>
+        <p>Owning a set of mobile devices for testing has its benefits, but not necessarily for finding layout bugs. A varied set of screen densities however is invaluable for testing readability.</p>
+      </li>
+      <li>
+        <h3><a href="http://jordanm.co.uk/blog/building-for-content-choreography-using-flexbox.html">Building for Content Choreography with Flexbox</a></h3>
+        <p>The popular article featured in books that demonstrated a way for organising and rearranging content for small screens all the way up to large screens.</p>
+      </li>
+    </ul>
+  </div>
+  <!-- /.featured-articles -->
+  <div class="published-works">
+    <h2>Published Works</h2>
+    <div class="book">
+      <div class="left"><img src="http://jordanm.co.uk/img/smashing-book.jpg" alt="An image of the front cover of Smashing Magazine's Responsive Web Design Vol.2"></div><!-- 
+      /.left
+     --><div class="right">
+        <h3><a href="https://shop.smashingmagazine.com/responsive-web-design-vol-2.html">Responsible Considerations for Responsive Web Design</a></h3>
+        <p>I authored a chapter regarding advanced methods and techniques for going the extra mile with Responsive Web Design for Smashing Magazine's Responsive Web Design Vol.2 book</p>
+      </div>
+      <!-- /.right -->
+    </div>
+    <!-- /.book -->
+  </div>
+  <!-- /.published-works -->
+  </div>
+  <!-- /.col-3 -->
+
+</div>
+
+    </div>
+
+    <footer>
+  <div class="container">
+    <hr>
+    <p class="copy">&copy; Jordan Moore 2015</p>
+  </div>
+  <!-- /.container -->
+</footer>
+
+
+  </body>
+
+</html>
