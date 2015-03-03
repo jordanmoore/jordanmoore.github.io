@@ -110,7 +110,7 @@ h3 {
 	font-size: 20px;
 }
 
-p {
+p, li {
 	color: $grey;
 	font-family: $facit;
 	line-height: 1.6;
@@ -128,6 +128,10 @@ ul {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
+}
+
+ul li {
+	list-style-type: disc;
 }
 
 hr {
