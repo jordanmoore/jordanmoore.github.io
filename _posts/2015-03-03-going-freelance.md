@@ -11,4 +11,4 @@ Since I joined Front in 2008 midway through my final year of university, I have 
 
 Working and collaborating closely with clients of all different shapes and sizes from various sectors including the BBC, Firefly and TextHelp and has been a truly invaluable experience. I'll miss working with my fantastic clients - it has been a priviledge working together with **each and every one of you** to make useful, meaningful things for the web.
 
-And of course I will miss working alonside the wonderful team at Eyekiller. I have made many friends since I joined in 2012. My last day is just under a month away on April 1st 2015. If you have any projects you would like to discuss with me, please feel free to [get in touch](mailto:madebyjordan@gmail.com)!
+And of course I will miss working alongside the wonderful team at Eyekiller. I have made many friends since I joined in 2012. My last day is just under a month away on April 1st 2015. If you have any projects you would like to discuss with me, please feel free to [get in touch](mailto:madebyjordan@gmail.com)!
