@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jordan Moore | Responsive Web Design, UX Designer, Northern Ireland</title>
+    <title>Jordan Moore | Responsive Web Design, UX Design, Belfast Northern Ireland</title>
     <description>Freelance responsive web designer in Belfast, Northern Ireland, specialising in user experience and accessible design
 </description>
     <link>http://jordanm.co.uk//</link>
     <atom:link href="http://jordanm.co.uk//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 02 Mar 2015 23:37:18 +0000</pubDate>
-    <lastBuildDate>Mon, 02 Mar 2015 23:37:18 +0000</lastBuildDate>
+    <pubDate>Tue, 03 Mar 2015 10:21:46 +0000</pubDate>
+    <lastBuildDate>Tue, 03 Mar 2015 10:21:46 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Going Freelance</title>
+        <description>&lt;p&gt;I am delighted to announce that after 7 years working in web agencies I have decided to leave and start a new adventure as a freelance web designer.&lt;/p&gt;
+
+&lt;p&gt;I have spent the last 7 years honing my craft specialising in &lt;strong&gt;responsive web design&lt;/strong&gt;, &lt;strong&gt;user experience&lt;/strong&gt; as well as &lt;strong&gt;front end&lt;/strong&gt; and &lt;strong&gt;Expression Engine development&lt;/strong&gt;. I believe that working for both Front/Typecast and Eyekiller has equipped me with the skills required to manage my own destiny and seek new and exciting projects. &lt;/p&gt;
+
+&lt;p&gt;Working and collaborating closely with clients of all different shapes and sizes from various sectors including the BBC, Firefly and TextHelp and has been a truly invaluable experience. The sum of the knowledge that I have gained along the way &lt;/p&gt;
+
+&lt;p&gt;My last day at Eyekiller is just under a month away on April 1st 2015. If you have any projects you would like to discuss with me, please feel free to &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#109;&amp;#097;&amp;#100;&amp;#101;&amp;#098;&amp;#121;&amp;#106;&amp;#111;&amp;#114;&amp;#100;&amp;#097;&amp;#110;&amp;#064;&amp;#103;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;get in touch&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 03 Mar 2015 09:12:00 +0000</pubDate>
+        <link>http://jordanm.co.uk//2015/03/03/going-freelance.html</link>
+        <guid isPermaLink="true">http://jordanm.co.uk//2015/03/03/going-freelance.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>I am the Fold</title>
@@ -422,66 +439,6 @@
         <guid isPermaLink="true">http://jordanm.co.uk//2013/12/10/the-web-designers-holiday-gift-guide-2013.html</guid>
         
         <category>Gear</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>What we can learn from game designers</title>
-        <description>&lt;p&gt;After watching Indie Game: The Movie during Channel 4’s video games night I couldn’t help but notice the parallels between game design and web design. There are elements of this that I have noticed before, but I thought I’d share some of the facets of video games that aren’t spoken about so often in relation to our industry.&lt;/p&gt;
-
-&lt;p&gt;Note that this isn’t a discussion about &lt;a href=&quot;http://en.wikipedia.org/wiki/Gamification&quot;&gt;gamification&lt;/a&gt;, rather a look at how game &lt;em&gt;design&lt;/em&gt; applies to the web.&lt;/p&gt;
-
-&lt;h3&gt;Video games are usability success stories&lt;/h3&gt;
-
-&lt;p&gt;Pong is perhaps one of the greatest examples of usability for a digital product. The original Pong arcade box featured two knobs. A knob on one side of the box for player one and one on the other side for player two. Twisting the knob on the either side moved the corresponding on screen paddle up and down.&lt;/p&gt;
-
-&lt;p&gt;The box had no instructions. The player was left to learn the behaviour and play.&lt;/p&gt;
-
-&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3743/11189802263_36d1eb76a4_o.png&quot;/&gt;&lt;figcaption&gt;The original Pong machine deserves credit for being a usability success&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
-
-&lt;p&gt;More complex games that require extra behaviours to progress (let’s use Tomb Raider as an example) produce scenarios where environmental situations encourage you to recall certain behaviours, perform the input combination on the controller to trigger the behaviour and progress. In fact most games are essentially sequences of pattern recognition.&lt;/p&gt;
-
-&lt;p&gt;One of the most enjoyable facets of gaming is when the player is in a state of flow&lt;sup id=&quot;fnref:p68879624841-1&quot;&gt;&lt;a href=&quot;#fn:p68879624841-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; and they perform the actions almost instinctively. The game then feels more rewarding to play because the player is progressing at the ideal pacing and feels more at one with the game when difficulty level and ability level are in perfect synergy.&lt;/p&gt;
-
-&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3793/11189680715_eb10fb7e66_o.jpg&quot;/&gt;&lt;figcaption&gt;In Tomb Raider the player quickly learns to apply input combinations in relation to environmental features. Some ledges require a running jump rather than a regular jump to progress to the next area&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
-
-&lt;p&gt;Repetition plays a key role in establishing these actions in the user’s mind. If you strip the surface texture graphics and reduce the polygon count in Tomb Raider, you would notice that the environments would look quite similar in that they can all be traversed using the same character behaviours but in varied and more challenging ways — the foundations remain the same from the first level through to the end.&lt;/p&gt;
-
-&lt;p&gt;There are many lessons we can learn from how games are designed and built and apply the findings to the web. Input combinations that trigger specific actions could appear in the form of &lt;strong&gt;gestures&lt;/strong&gt; or even as part of a &lt;strong&gt;visual language&lt;/strong&gt;. Think about how games teach you to subconsciously perform such actions using techniques like &lt;strong&gt;pacing&lt;/strong&gt; and &lt;strong&gt;repetition&lt;/strong&gt; to help engrain them in the user’s intuition.&lt;/p&gt;
-
-&lt;p&gt;You might think that kind of thinking could lead to a deviation from established web design patterns” - it all depends on the implementation. Imagine a first person shooter that didn’t bind the fire action to the right shoulder button on a controller or the left mouse button and instead required you to press a button like ’x’. It would be infuriating because it simply doesn’t feel right. Design patterns occur in games too, they’re just sometimes hard to spot because they almost feel like second nature — which is a very good thing.&lt;/p&gt;
-
-&lt;h3&gt;Storytelling and narratives&lt;/h3&gt;
-
-&lt;p&gt;We can learn a lot from point-and-click adventure games. Not even in regards to the nature of the input for the genre — my favourite point-and-click adventure was Grim Fandango which was labelled a point-and-click adventure even though it was controlled entirely by keyboard — I’m talking about how they are structured in terms of their narratives.&lt;/p&gt;
-
-&lt;p&gt;All good stories have a beginning, a middle and an end. Point-and-click adventures are (mostly) linear stories made up of &lt;strong&gt;sequences&lt;/strong&gt; that require item collection and puzzle solving to advance to the next sequence. The difference between the web and point-and-click adventures is that the latter wants you to struggle to advance, but not too much. In &lt;em&gt;most&lt;/em&gt; cases on the web, that’s not what we want to do, but there are certainly elements from this genre that we can learn from and apply to the web. Adventure games are trying to funnel the user down the linear story without leaving you &lt;em&gt;completely&lt;/em&gt; stuck, otherwise the user is less likely to feel compelled to finish the game. It’s the in-between bits that hold this narrative flow together that interests me the most — when the player starts to struggle the game has a job on its hands to keep the player interested and help them back into the narrative so the game can tell its story.&lt;/p&gt;
-
-&lt;p&gt;Characters respond to changes in the dynamics of the game. If you are looking for a specific item to proceed to the next sequence and you’re having a hard time doing so, some specific characters will become aware of the situation at hand and perhaps provide help or hints when spoken to.&lt;/p&gt;
-
-&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7290/11189654275_7470acb045_o.png&quot;/&gt;&lt;figcaption&gt;In Grim Fandango speaking to characters you have already met can often provide clues as to how to proceed to the next sequence&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
-
-&lt;p&gt;This sense of situational awareness can apply to the web too. As a user progresses through our own narrative, situational awareness can help the user progress to the next scene. Imagine a user adds an item to their cart in an e-commerce website — the dynamics of the situation have changed from when the user began on their journey and we can help them through to the end of the story. Perhaps the user digresses from the shop after deciding to read a rather interesting article on the store’s blog about how the store has been donating a portion of profits to charity. What if the blog post had a helpful block at the end to inform the user of the change in dynamics? Something to the effect of: “And you can help us donate too by buying that t-shirt in your cart. Would you like to do that now?”&lt;/p&gt;
-
-&lt;p&gt;Games speak to the players in plain English. No technical jargon like “Your session has expired” — something informative, clear and to the point, but not abrupt and not too long so that it wastes time either. Narrative content is hard.&lt;/p&gt;
-
-&lt;p&gt;We really should listen to video game designers and developers a lot more. I would love to see people like &lt;a href=&quot;http://www.raphkoster.com&quot;&gt;Raph Koster&lt;/a&gt; speak at web design conferences and talk about flow theory, establishing core gameplay and environmental mechanics and the similar challenges we face in both industries. When it comes to telling compelling stories and teaching users to perform instinctual reactions to scenarios, the games industry has been doing this for a long time and have left a lot of good examples for us to learn from.&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-&lt;hr&gt;&lt;ol&gt;&lt;li id=&quot;fn:p68879624841-1&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.ccs.neu.edu/home/lieber/courses/cs4500/sp09/resources/p31-chen-flow-in-games.pdf%C2%A0&quot;&gt;http://www.ccs.neu.edu/home/lieber/courses/cs4500/sp09/resources/p31-chen-flow-in-games.pdf &lt;/a&gt;&lt;a href=&quot;#fnref:p68879624841-1&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;/ol&gt;&lt;/div&gt;
-</description>
-        <pubDate>Wed, 04 Dec 2013 01:04:00 +0000</pubDate>
-        <link>http://jordanm.co.uk//2013/12/04/what-we-can-learn-from-game-designers.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk//2013/12/04/what-we-can-learn-from-game-designers.html</guid>
-        
-        <category>Design Patterns</category>
-        
-        <category>Game Design</category>
         
         
       </item>
