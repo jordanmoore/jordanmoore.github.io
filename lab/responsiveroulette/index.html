@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Responsive Roulette - A demonstration of the need for resolution independence in responsive web design | Experiment #6</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+<link href='http://fonts.googleapis.com/css?family=Quicksand|Open+Sans:400,700,800,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://dl.dropbox.com/u/12091580/jordanm/css/lab.css" media="all">
+    <link rel="stylesheet" href="https://dl.dropbox.com/u/12091580/rist/css/global.css" media="all">
+
+<meta http-equiv="x-dns-prefetch-control" content="off"/><meta http-equiv="x-dns-prefetch-control" content="off"/></head>
+<body>
+
+  <header>
+      <div class="top">
+        <div class="heading">
+          <div class="experiment-number">
+            <span>Experiment</span>
+            N<sup>o</sup> 6
+          </div>
+          <h1>Responsive Roulette</h1>
+        </div>
+        <form action="/">
+          <input type="text" value="http://stuffandnonsense.co.uk" /><button class="load-url">Spin</button>
+        </form>
+      </div>
+      <div class="result">
+        <p><span class="spun">You spun:</span> <span class="px"></span> / <span class="em"></span><span class="by">by <a href="http://twitter.com/jordanmoore">Jordan Moore</a></span></p>
+      </div>
+    </header>
+
+    <iframe id="testbed" src="http://stuffandnonsense.co.uk" frameborder="0" height="100%"></iframe>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
+    <script type="text/javascript">
+    var screenWidth;
+    var url;
+    var iframeW;
+    var bodyFontSize = $('body').css('font-size');
+    var bodyFontSizeWithoutPx = parseInt(bodyFontSize);
+    var emValue;
+    var urls = ["http://stuffandnonsense.co.uk", "http://www.thegreatdiscontent.com", "http://www.starbucks.com", "http://www.anderssonwise.com/", "http://2012.newadventuresconf.com/", "http://trentwalton.com/"],
+        urls = urls[Math.floor(Math.random() * urls.length)];
+
+    (function($,sr){
+           var debounce = function (func, threshold, execAsap) {
+          var timeout;
+
+          return function debounced () {
+              var obj = this, args = arguments;
+              function delayed () {
+                  if (!execAsap)
+                      func.apply(obj, args);
+                  timeout = null;
+              };
+
+              if (timeout)
+                  clearTimeout(timeout);
+              else if (execAsap)
+                  func.apply(obj, args);
+
+              timeout = setTimeout(delayed, threshold || 100);
+          };
+      }
+        // smartresize
+        screenWidth = $(window).width();
+        getSizes();
+        sizeCenter();
+        url = $('input[type=text]').val();
+        jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
+    })(jQuery,'smartresize');
+
+     $(document).ready(function(){
+        $('iframe').attr('src',urls);
+        $('input[type=text]').val(urls);
+     });
+
+    // usage:
+    $(window).smartresize(function(){
+      sizeCenter();
+      getSizes();
+    });
+        function getSizes() {
+          iframeW = $('iframe').width();
+          emValue = iframeW/bodyFontSizeWithoutPx;
+          $('.result span.px').text(iframeW+"px");
+          $('.result span.em').text(emValue+"em");
+        }
+        function sizeCenter() {
+            iframeW = $('iframe').width();
+            var result = iframeW/2;
+            $('#testbed').css('margin-left', -result);
+        }
+        $('button.load-url').click(function(e){
+          var url = urls;
+          var newUrl = $('input[type=text]').val();
+          if (url != newUrl) {
+            $('iframe').attr('src',newUrl);
+            url = $('input[type=text]').val();
+            getRandomInt(250,screenWidth);
+            sizeCenter();
+            getSizes();
+            e.preventDefault();
+          } else {
+            getRandomInt(250,screenWidth);
+            sizeCenter();
+            getSizes();
+            e.preventDefault();
+          }
+        });
+        function getRandomInt (min, max) {
+            var rndm = Math.floor(Math.random() * (max - min + 1)) + min;
+            $('iframe').width(rndm);
+        }
+    </script>
+  <script type="text/javascript">
+
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-7180140-5']);
+   _gaq.push(['_trackPageview']);
+
+   (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
+
+  </script>
+
+</body>
+</html>

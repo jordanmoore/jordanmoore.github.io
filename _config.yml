@@ -8,6 +8,7 @@ url: "http://jordanm.co.uk" # the base hostname & protocol for your site
 twitter_username: jordanmoore
 github_username:  jordanmoore
 paginate: 10
+exclude: node_modules
 paginate_path: "/blog/page:num/"
 gems:
   - jekyll-redirect-from
