@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- /ht Paul Irish - http://front.ie/j5OMXi -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Content Choreography - A technique for re-arranging layouts using CSS in responsive web design | Experiment #1</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- /ht Andy Clarke - http://front.ie/lkCwyf -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="shortcut icon" href="/link/to/favicon.ico">
+<link rel="apple-touch-icon" href="/link/to/apple-touch-icon.png">
+
+<!-- /ht Jeremy Keith - http://front.ie/mLXiaS -->
+<link href='http://fonts.googleapis.com/css?family=Quicksand|Open+Sans:400,700,800,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://dl.dropbox.com/u/12091580/jordanm/css/lab.css" media="all">
+<link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/12091580/jordanm/css/contentchoreography.css" media="all">
+
+<script src="js/libs/modernizr-1.7.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <header>
+        <div class="heading">
+          <div class="experiment-number">
+            <span>Experiment</span>
+            N<sup>o</sup> 1
+          </div>
+          <h1>Content Choreography</h1>
+        </div>
+      </header>
+
+      <div class="container">
+        <section>
+          <h2>Aim</h2>
+          <p>To re-arrange layouts in small contexts that wouldn't make sense in large contexts. Sometimes there is a need to change the layout order and using CSS - we can do it.</p>
+        </section>
+        <section>
+          <h2>Method</h2>
+          <p>Resize your browser window to see the layout blocks below change from a small context to a large context.</p>
+          <div id="container">
+            <header>
+                  <span>1</span>
+                  <h3>(header)</h3>
+                </header>
+                <nav>
+                  <span>2</span>
+                  <h3>(navigation) Home | About | Contact | Example</h3>
+                </nav>
+                <div class="main" role="main">
+                  <span>3</span>
+                  <h3>(main)</h3>
+            <p>Using flexbox and box-ordinal-group CSS properties, <strong>we can change the order</strong> of elements on a page at different viewport sizes. In this very basic example I initiate flexbox via a media query in my global styles stylesheet so that only browsers that can a) read media queries and b) have smaller viewports than 33em (i.e smartphones and i.e not IE<9) see the re-ordered items. The numbered labels represent the order they appear in the code - resize your browser to see them change if you are on a desktop.</p>
+            <p>Support for this technique is <a href="http://caniuse.com/#feat=flexbox">widespread among smartphones</a>, it is safe to use to re-order page contents for mobile and tablet devices.</p>
+                </div>
+                <aside>
+                  <span>4</span>
+                  <h3>(aside)</h3>
+                  <p>I am using this technique with <a href="http://goldilocksapproach.com">The Goldilocks Approach</a> as my responsive web design boilerplate. It seems to compliment it perfectly along with a mobile first approach.</p>
+                </aside>
+                <div class="example_ad">
+                  <span>5</span>
+                  <h3>(banner ad)</h3>
+                </div>
+                <footer>
+                  <span>6</span>
+                  <h3>(footer)</h3>
+                </footer>
+          </div>
+        </section>
+      </div>
+
+        <footer>
+          <p>A <a href="http://jordanm.co.uk">lab experiment</a> by <a href="http://twitter.com/jordanmoore">Jordan Moore</a>.</p>
+        </footer>
+
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/noisy/1.1/jquery.noisy.min.js"></script>
+      <script type="text/javascript">
+        $(function(){
+          $('body, .top').noisy({
+            intensity: 0.2,
+            opacity: 0.06
+          });
+        });
+      </script>
+      <script type="text/javascript">
+
+       var _gaq = _gaq || [];
+       _gaq.push(['_setAccount', 'UA-7180140-5']);
+       _gaq.push(['_trackPageview']);
+
+       (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+
+      </script>
+
+
+</body>
+
+</html>

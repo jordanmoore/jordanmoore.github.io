@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!-- /ht Paul Irish - http://front.ie/j5OMXi -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Top Drawer - A smooth dropdown menu for responsive web design | Experiment #5</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- /ht Andy Clarke - http://front.ie/lkCwyf -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="shortcut icon" href="/link/to/favicon.ico">
+<link rel="apple-touch-icon" href="/link/to/apple-touch-icon.png">
+
+<!-- /ht Jeremy Keith - http://front.ie/mLXiaS -->
+<link href='http://fonts.googleapis.com/css?family=Quicksand|Open+Sans:400,700,800,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://dl.dropbox.com/u/12091580/jordanm/css/lab.css" media="all">
+<link rel="stylesheet" href="http://static.tumblr.com/jdwzxqr/iolmjsq4g/global.css" media="all">
+
+<!-- 30em + (1.618em * 2) = 33.236em / Eliminates potential of horizontal scrolling in most cases -->
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" href="css/layout.css" media="all">
+<![endif]-->
+<script src="http://static.tumblr.com/jdwzxqr/rhgmjsptj/fastclick.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.1/modernizr.min.js"></script>
+
+</head>
+
+<body>
+
+
+  <header>
+    <div class="top">
+      <div class="heading">
+        <div class="experiment-number">
+          <span>Experiment</span>
+          N<sup>o</sup> 5
+        </div>
+        <h1>Top Drawer</h1>
+      </div>
+      <a href="#" class="menu"><span>&equiv;</span> Menu</a>
+    </div>
+  </header>
+
+  <div class="drawer">
+    <nav>
+      <ul class="nav nav-tabs nav-stacked">
+        <li><a href="#">Menu Item</a></li>
+        <li><a href="#">Menu Item</a></li>
+        <li><a href="#">Menu Item</a></li>
+        <li><a href="#">Menu Item</a></li>
+        <li><a href="#">Menu Item</a></li>
+      </ul>
+    </nav>
+    <div class="container" class="cf">
+
+        <section>
+          <h2>Aim</h2>
+          <p>To demonstrate smoother reveal menus in small contexts using CSS3 rather than animating with JavaScript.</p>
+          <h2>Ingredients</h2>
+          <ul>
+            <li>CSS Transforms</li>
+            <li>Modernizr</li>
+            <li>FT Labs <a href="https://github.com/ftlabs/fastclick">Fast Click</a> (optional - for speedy tap events)</li>
+            <li>JavaScript (I used jQuery, but you could easily do this with VanillaJS)</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Method</h2>
+          <p>Tap the menu icon in the top right. The click event will assign the class of active to the drawer container which alters the translate value to bring it into view.</p>
+          <p>Modernizr will detect whether the user's device is capable of CSS transforms, if it isn't we simply show and hide the menu after the button is pressed - no point in animating if it isn't going to work smoothly.</p>
+          <p>To set up the experiment we need to create a scenario similar to a box of matches, the box (in our case the top black heading) covers the match drawer beneath (our div with a class of drawer). We build the page as normal but pull the drawer up and off the canvas using the CSS Translate property and show it again in the active state for the div using Translate back to it's regular position. CSS Transitions allow us to create the smooth animation between the states.</p>
+
+          <h3>HTML</h3>
+          <pre>
+&lt;div class="top"&gt;
+  ...
+  &lt;a href="#" class="menu"&gt;&lt;span&gt;&equiv;&lt;/span&gt; Menu&lt;/a&gt;
+&lt;/div&gt;
+&lt;/header&gt;
+
+&lt;div class="drawer"&gt;
+&lt;nav&gt;
+  &lt;ul class="nav nav-tabs nav-stacked"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Menu Item&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Menu Item&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Menu Item&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Menu Item&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Menu Item&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+...
+
+          </pre>
+
+          <h3>CSS</h3>
+          <pre>
+.top {
+  background: #212121;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  overflow: hidden;
+}
+a.menu {
+  position: absolute;
+  z-index: 3;
+  border:1px solid white;
+  text-decoration: none;
+  top: 1.6em;
+  right: 1.6em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.65em;
+  padding: 0.4em 0.7em;
+  border-radius: 4px;
+}
+a.menu span {
+  font-size:1.6em;
+  vertical-align: -0.15em;
+}
+nav ul {
+list-style:none;
+}
+nav ul li a {
+display: block;
+text-decoration: none;
+background: rgba(0,0,0,0.3);
+color: white;
+padding: 1em;
+margin-bottom: 1px;
+}
+.drawer {
+  -webkit-transform: translate3d(0, -131px, 0);
+  -moz-transform: translate3d(0, -131px, 0);
+  -o-transform: translate3d(0, -131px, 0);
+  transform: translate3d(0, -131px, 0);
+  -webkit-transition:-webkit-transform 0.25s linear;
+  -moz-transition:-moz-transform 0.25s linear;
+  -o-transition:-o-transform 0.25s linear;
+  transition:transform 0.25s linear;
+}
+.drawer.active {
+  -webkit-transform: translate3d(0,129px,0)
+  -moz-transform: translate3d(0,129px,0)
+  -o-transform: translate3d(0,129px,0)
+  transform: translate3d(0,129px,0)
+}
+
+/* Fallbacks */
+
+.no-csstransforms .top {
+  position: static;
+}
+
+.no-csstransforms .drawer nav {
+  display: none;
+}
+
+.no-csstransforms .drawer.active nav {
+  display: block;
+}
+          </pre>
+        </section>
+      </div>
+
+      <footer>
+        <p>A <a href="http://jordanm.co.uk">lab experiment</a> by <a href="http://twitter.com/jordanmoore">Jordan Moore</a>.</p>
+      </footer>
+  </div>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript">
+    window.addEventListener('load', function() {
+    new FastClick(document.body);
+}, false);
+    $('.menu').click(function(e){
+      $('.drawer').toggleClass('active');
+      e.preventDefault();
+    });
+  </script>
+  <script type="text/javascript">
+
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-7180140-5']);
+   _gaq.push(['_trackPageview']);
+
+   (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
+
+  </script>
+</body>
+
+</html>
