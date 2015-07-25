@@ -1,0 +1,24 @@
+  <nav>
+    <div class="container">
+      <a class="home-link" href="{{ site.url }}"><img src="{{ '/img/logo.png' | prepend: site.url }}" alt="Jordan Moore"> <span class="mb-hide">Jordan Moore</span></a>
+      <ul>
+        <li><a href="{{ site.url }}">Home</a></li>
+        <li><a class="active" href="/blog">Ideas &amp; Thinking</a></li>
+        <li><a href="mailto:madebyjordan@gmail.com?subject=[Enquiry]">Get in touch</a></li>
+        <li class="mb-hide"><a href="http://twitter.com/jordanmoore">Twitter</a></li>
+      </ul>
+    </div>
+    <!-- /.container -->
+  </nav>
+  <header class="article-header">
+    <div class="container">
+      <h1>{% if page.title %}{{ page.title }}{% else %}Blog{% endif %}</h1>
+      {% if page.title %}<p class="meta">{{ page.date | date: "%-d" }}{% case d %}
+  {% when '1' or '21' or '31' %}{{ d }}st
+  {% when '2' or '22' %}{{ d }}nd
+  {% when '3' or '23' %}{{ d }}rd
+  {% else %}{{ d }}th
+  {% endcase %}{{ page.date | date: "%B" }} {{ page.date | date: "%Y" }}</p>{% endif %}
+    </div>
+    <!-- /.container -->
+  </header>
