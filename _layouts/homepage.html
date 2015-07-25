@@ -3,64 +3,11 @@
 
   {% include head.html %}
 
-  <body>
-
-    {% include home_header.html %}
+  <body class="bd-home">
 
     <div class="container">
-      <div class="left recent-work">
-        <h2>Recent Work</h2>
-        <a href="http://niice.co"><img src="{{ '/img/niice.jpg' | prepend: site.baseurl }}" alt="The iOS app page for Niice"></a>
-        <h3><a href="http://niice.co">Niice&apos;s iOS App Page</a></h3>
-        <p>Niice is a wonderful inspiration search engine that delivers high quality images from different sources that help creative teams and individuals produce their best work. The Niice team hired me to help build their <strong>responsive</strong>, <strong>retina-ready</strong> landing page for their iOS app.</p>
-        <p>Want to work together to create something remarkable? <a href="mailto:madebyjordan@gmail.com?subject=[Enquiry]">Let&apos;s talk</a>.</p>
-      </div><!-- 
-      /.left
-      --><div class="right">
-        <div class="featured-articles">
-          <h2>Featured Articles</h2>
-          <ul>
-            <li>
-              <h3><a href="http://jordanm.co.uk/2014/07/31/how-i-test-type-and-layout.html">How I Test Typography and Layout for Mobile Devices</a></h3>
-              <p>Owning a set of mobile devices for testing has its benefits, but not necessarily for finding layout bugs. A varied set of screen densities however is invaluable for testing readability.</p>
-            </li>
-            <li>
-              <h3><a href="http://jordanm.co.uk/2013/06/17/building-for-content-choreography-using-flexbox.html">Building for Content Choreography with Flexbox</a></h3>
-              <p>The popular article featured in books that demonstrated a way for organising and rearranging content for small screens all the way up to large screens.</p>
-            </li>
-          </ul>
-        </div>
-        <!-- /.featured-articles -->
-        <div class="published-works">
-          <h2>Published Works</h2>
-          <div class="book">
-            <div class="left"><img src="{{ '/img/smashing-book.jpg' | prepend: site.baseurl }}" alt="An image of the front cover of Smashing Magazine's Responsive Web Design Vol.2"></div><!-- 
-            /.left
-           --><div class="right">
-              <h3><a href="https://shop.smashingmagazine.com/responsive-web-design-vol-2.html">Responsible Considerations for Responsive Web Design</a></h3>
-              <p>I authored a chapter regarding advanced methods and techniques for going the extra mile with Responsive Web Design for Smashing Magazine's Responsive Web Design Vol.2 book</p>
-            </div>
-            <!-- /.right -->
-          </div>
-          <!-- /.book -->
-        </div>
-        <!-- /.published-works -->
-      </div>
-      <!-- /.right -->
-      <hr>
-      <div class="clients">
-        <h4>Clients I have worked with</h4>
-        <ul>
-          <li><img src="{{ '/img/logo-bbc.jpg' | prepend: site.baseurl }}" alt="BBC logo"></li>
-          <li><img src="{{ '/img/logo-firefly.jpg' | prepend: site.baseurl }}" alt="Firefly logo"></li>
-          <li><img src="{{ '/img/logo-texthelp.jpg' | prepend: site.baseurl }}" alt="TextHelp logo"></li>
-          <li><img src="{{ '/img/logo-cbg.jpg' | prepend: site.baseurl }}" alt="Carte Blanche logo"></li>
-          <li><img src="{{ '/img/logo-abbey-theatre.jpg' | prepend: site.baseurl }}" alt="Abbey Theatre logo"></li>
-        </ul>
-        <p>With over 7 years industry experience I have worked with individuals and businesses large and small. If you are looking for an experienced pair of hands, then please:</p>
-        <p><a href="mailto:madebyjordan@gmail.com?subject=[Enquiry]" class="btn">Get in touch</a></p>
-      </div>
-      <!-- /.clients -->
+      {% include home_header.html %}
+
     </div>
     <!-- /.container -->
 
