@@ -363,3 +363,8 @@ figcaption {
 a.next {
     float: right;
 }
+
+
+pre, code {
+	font-family: $code;
+}
