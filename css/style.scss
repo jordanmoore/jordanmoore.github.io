@@ -45,19 +45,20 @@ html {
 		&.bd-home {
 			height: 100%;
 			border: none;
-			&:after {
-				content: '';
-				position: absolute;
-				background: url(../img/hpfooter.png) center bottom no-repeat;
-				background-size: 206px 499px;
-				width: 206px;
-				height: 499px;
-				left: 50%;
-				bottom: -96px;
-				margin-left: -103px;
-				border-bottom: none;
-				z-index: -1;
-			}
+			// This might be overkill on the homepage
+			// &:after {
+			// 	content: '';
+			// 	position: absolute;
+			// 	background: url(../img/hpfooter.png) center bottom no-repeat;
+			// 	background-size: 206px 499px;
+			// 	width: 206px;
+			// 	height: 499px;
+			// 	left: 50%;
+			// 	bottom: -96px;
+			// 	margin-left: -103px;
+			// 	border-bottom: none;
+			// 	z-index: -1;
+			// }
 		}
 	}
 }
