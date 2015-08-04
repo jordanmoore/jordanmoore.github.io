@@ -45,6 +45,9 @@ html {
 		&.bd-home {
 			height: 100%;
 			border: none;
+			&:after {
+				border: none;
+			}
 			// This might be overkill on the homepage
 			// &:after {
 			// 	content: '';
