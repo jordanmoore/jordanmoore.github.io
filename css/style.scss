@@ -362,12 +362,11 @@ nav {
 	font-weight: 600;
 	padding: 1em 1.5em;
 	-webkit-font-smoothing: antialiased;
-	color: $pri;
+	color: #fff;
 	border: 2px solid #fff;
-	background: #fff;
 	&:hover {
-		color: #fff;
-		background: none;
+		background: #fff;
+		color: $pri;
 	}
 	&:after {
 		display: none;
