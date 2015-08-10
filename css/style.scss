@@ -6,6 +6,7 @@ $sans: "stevie-sans", sans-serif;
 $code: "source-code-pro", monospace;
 $serif: "source-serif-pro", serif;
 $pri: #293137;
+$pri: #030301;
 
 * {
 	box-sizing: border-box;
@@ -29,18 +30,6 @@ html {
 			content: '';
 			display: block;
 			border-bottom: 22px solid rgba(255,255,255,0.04);
-		}
-		&:before {
-			content: '';
-			position: absolute;
-			background: url(../img/hpheader.png) center 0 no-repeat;
-			background-size: 674px 507px;
-			width: 674px;
-			height: 507px;
-			left: 53%;
-  		top: -16px;
-			margin-left: -337px;
-			z-index: -1;
 		}
 		&.bd-home {
 			height: 100%;
@@ -72,8 +61,7 @@ html {
 body {
 	height: 100%;
 	background: $pri;
-	background: #030301 url(../img/hpbg.jpg) center 0 no-repeat;
-	background-size: contain;
+	background: #030301;
 	color: #fff;
 	padding: 2.6em 1em;
 	@media screen and (min-width:609px) {
@@ -281,6 +269,7 @@ nav {
 	margin-bottom: 4.236em;
 	@media screen and (min-width:609px) {
 		margin-bottom: 11.089em;
+		margin-top: 1.6em;
 	}
 	position: relative;
 	&:after, &:before {
