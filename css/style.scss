@@ -153,7 +153,8 @@ body {
 					display: inline;
 				}
 			}
-			font-weight: 400;
+			font-family: $raleway;
+			font-weight: 600;
 			font-size: 13px;
 			letter-spacing: 6px;
 			line-height: 15px;
@@ -354,7 +355,7 @@ nav {
 }
 
 .btn {
-	font-size: 15px;
+	font-size: 13px;
 	text-transform: uppercase;
 	font-family: $raleway;
 	letter-spacing: 3px;
