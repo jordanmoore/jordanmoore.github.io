@@ -98,7 +98,10 @@ body {
 			// background-size: cover;
 			background: url(../img/hpbg.png) center 0 no-repeat;
 			background-size: 674px 507px;
-			padding: 6.854em 1.6em 0;
+			padding: 4.236em 1.6em 0;
+			@media screen and (min-width:605px) {
+				padding: 10.054em 1.6em 0;
+			}
 		}
 		h1 {
 			position: relative;
