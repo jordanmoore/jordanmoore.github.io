@@ -45,6 +45,9 @@ html {
 		&.bd-home {
 			height: 100%;
 			border: none;
+			&:before {
+				display: none;
+			}
 			&:after {
 				border: none;
 			}
@@ -74,39 +77,49 @@ body {
 	color: #fff;
 	padding: 2.6em 1em;
 	@media screen and (min-width:609px) {
-		padding: 6.854em 2.6em;
+		padding: 2.6em;
 	}
 	margin: 0;
 	font-family: $sans;
 	line-height: 1.4;
 	&.bd-home {
-		background: #030301 url(../img/hpbg.jpg) center 0 no-repeat;
-		background-size: cover;
 		text-align: center;
 		height: 100%;
+		padding: 0;
 		.container {
 			display: flex;
-		  align-items: center;
-		  justify-content: center;
-			height: 100%;
+			align-items: center;
+			justify-content: center;
 		}
 		.content {
 			position: relative;
 			z-index: 1;
+			// background: #030301 url(../img/hpbg.jpg) center 0 no-repeat;
+			// background-size: cover;
+			background: url(../img/hpbg.png) center 0 no-repeat;
+			background-size: 674px 507px;
+			padding: 6.854em 1.6em 0;
 		}
 		h1 {
 			position: relative;
-			font-size: 19px;
-			letter-spacing: 11.87px;
-			line-height: 22px;
-			margin-bottom: 0;
-			font-weight: 500;
+			margin: 0 auto 24px;
+			font-weight: 400;
+			font-family: $sans;
+			text-transform: none;
+			letter-spacing: 0;
+			max-width: 680px;
+			font-size: 21px;
+			line-height: 29px;
+			@media screen and (min-width:605px) {
+				font-size: 36px;
+				line-height: 44px;
+			}
 			&:before {
 				content: '';
 				display: block;
-				height: 79px;
-				background: url(../img/logo-circled.png) center 0 no-repeat;
-				background-size: 79px;
+				height: 133px;
+				background: url(../img/logo-full.png) center 0 no-repeat;
+				background-size: 68px 133px;
 				margin-bottom: 26px;
 			}
 		}
@@ -118,19 +131,40 @@ body {
 			background-image: linear-gradient(-90deg, #000 0%, #fff 49%, #000 100%);
 			width: 365px;
 		}
+		.ta-c {
+			position: relative;
+			&:before {
+				display: block;
+				width: 1px;
+				border-right: 1px solid white;
+				margin: 0 auto 2.6em;
+				height: 4em;
+				content: '';
+			}
+		}
 		p.subheading {
 			span {
+				display: none;
 				opacity: 0.2;
+				@media screen and (min-width:526px) {
+					display: inline;
+				}
 			}
 			font-weight: 400;
 			font-size: 13px;
 			letter-spacing: 6px;
 			line-height: 15px;
 			text-transform: uppercase;
-			margin-bottom: 96px;
+			margin-bottom: 36px;
 			a {
 				opacity: 0.2;
 				background: none;
+				display: block;
+				margin-top: 8px;
+				@media screen and (min-width:526px) {
+				  display: inline;
+					margin-bottom: 0;
+				}
 				text-shadow: 0px 0px 10px rgba(255,255,255,0.40);
 				&:hover {
 					opacity: 0.9;
@@ -180,19 +214,10 @@ a {
 	max-width: 1170px;
 	margin: 0 auto;
 }
-.bd-home .container {
-	margin: 0 auto 6.854em;
-}
-.bd-home {
-	@media screen and (min-width:609px) {
-	  padding: 6.854em 2.6em;
-	}
-}
 
 .home-link {
 	display: inline-block;
-	width: 37px;
-	height: 37px;
+	width: 33px;
 	float: left;
 	margin-top: 0.62em;
 	&:after {
@@ -215,7 +240,6 @@ h1 {
     font-weight: 600;
 		text-transform: uppercase;
 		line-height: 24px;
-		margin-bottom: 0;
 		@media screen and (min-width:402px) {
 			font-weight: 500;
 			letter-spacing: 13px;
@@ -327,20 +351,19 @@ nav {
 }
 
 .btn {
-	font-size: 13px;
+	font-size: 15px;
 	text-transform: uppercase;
 	font-family: $raleway;
 	letter-spacing: 3px;
 	font-weight: 600;
-	padding: 1.25em 1.75em;
+	padding: 1em 1.5em;
 	-webkit-font-smoothing: antialiased;
-	-webkit-transition: all 0.1s ease-out;
-	-o-transition: all 0.1s ease-out;
-	transition: all 0.1s ease-out;
-	color: #fff;
+	color: $pri;
 	border: 2px solid #fff;
+	background: #fff;
 	&:hover {
-		border: 2px solid fade-out(#fff, 0.9);
+		color: #fff;
+		background: none;
 	}
 	&:after {
 		display: none;
