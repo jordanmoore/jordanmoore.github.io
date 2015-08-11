@@ -208,10 +208,9 @@ a {
 }
 
 .home-link {
-	display: inline-block;
-	width: 33px;
-	float: left;
-	margin-top: 0.62em;
+	display: block;
+	width: 46px;
+	margin: 0.62em auto 2.6em;
 	&:after {
 		display: none;
 	}
@@ -293,13 +292,14 @@ nav {
 	}
 	ul {
 		list-style: none;
-		float: right;
 		white-space: nowrap;
 		max-width: 62%;
 		overflow-y: hidden;
 		overflow-x: auto;
 		-webkit-overflow-scrolling:touch;
     padding: 0 1.6em 1.6em 0;
+		margin: 0 auto;
+		text-align: center;
 		@media screen and (min-width:742px) {
 		  max-width: none;
 			overflow-x: visible;
@@ -319,10 +319,7 @@ nav {
 				-webkit-transition: all 0.1s ease-out;
 				-o-transition: all 0.1s ease-out;
 				transition: all 0.1s ease-out;
-				margin-left: 2.618em;
-				@media screen and (min-width:819px) {
-					margin-left: 4.236em;
-				}
+				margin: 0 2.118em;
 				&:hover, &.active {
 					opacity: 1;
 				}
