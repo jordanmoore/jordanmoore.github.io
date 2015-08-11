@@ -275,7 +275,7 @@ nav {
 		&:after, &:before {
 			content: '';
 			position: absolute;
-			right: 0;
+			right: 19%;
 			top: 0;
 			background-image: linear-gradient(90deg, rgba(40,48,55,0.00) 0%, $pri 100%);
 			height: 3.2em;
@@ -288,7 +288,7 @@ nav {
 		}
 		&:before {
 			right: auto;
-	    left: 37.5%;
+	    left: 17.5%;
 	    background-image: linear-gradient(-90deg, rgba(40,48,55,0) 0%, $pri 100%);
 		}
 	}
