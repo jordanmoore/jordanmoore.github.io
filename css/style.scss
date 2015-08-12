@@ -275,7 +275,7 @@ nav {
 		&:after, &:before {
 			content: '';
 			position: absolute;
-			right: 19%;
+			right: 1.9%;
 			top: 0;
 			background-image: linear-gradient(90deg, rgba(40,48,55,0.00) 0%, $pri 100%);
 			height: 3.2em;
@@ -288,14 +288,14 @@ nav {
 		}
 		&:before {
 			right: auto;
-	    left: 17.5%;
+	    left: 1.9%;
 	    background-image: linear-gradient(-90deg, rgba(40,48,55,0) 0%, $pri 100%);
 		}
 	}
 	ul {
 		list-style: none;
 		white-space: nowrap;
-		max-width: 62%;
+		max-width: 96%;
 		overflow-y: hidden;
 		overflow-x: auto;
 		-webkit-overflow-scrolling:touch;
