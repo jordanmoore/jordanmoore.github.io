@@ -12,6 +12,7 @@
 	<link rel="canonical" href="http://jordanm.co.uk/2013/11/19/start-from-impossible.html">
 	<link rel="alternate" type="application/rss+xml" title="Jordan Moore | Responsive Web Design, UX Design, Belfast Northern Ireland" href="http://jordanm.co.uk/feed.xml" />
 	<link rel="icon" type="image/png" href="/favicon.png" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
 	<script src="//use.typekit.net/sxt3pks.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 </head>
@@ -22,14 +23,6 @@
       <nav>
     <div class="container">
       <a class="home-link" href="http://jordanm.co.uk"><img src="http://jordanm.co.uk/img/logo-shield.png" alt="Jordan Moore"> <span class="mb-hide">Jordan Moore</span></a>
-      <div class="nav-wrap">
-        <ul>
-          <li><a href="http://jordanm.co.uk">Home</a></li>
-          <li><a class="active" href="/blog">Ideas &amp; Thinking</a></li>
-          <li><a href="mailto:madebyjordan@gmail.com?subject=[Enquiry]">Get in touch</a></li>
-          <li class="mb-hide"><a href="http://twitter.com/jordanmoore">Twitter</a></li>
-        </ul>
-      </div>
     </div>
     <!-- /.container -->
   </nav>
@@ -42,7 +35,16 @@
     <!-- /.container -->
   </header>
 
-
+    <div class="menu-overlay">
+      <ul class="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog">Ideas &amp; Thinking</a></li>
+        <li><a href="mailto:madebyjordan@gmail.com">Get in Touch</a></li>
+        <li><a href="http://twitter.com/jordanmoore">Follow</a></li>
+      </ul>
+    </div>
+    <a href="" class="ico-menu"></a>
+    <a href="" class="ico-close"></a>
     <div class="container">
         <div class="post">
 
@@ -86,6 +88,18 @@
   </div>
   <!-- /.container -->
 </footer>
+<script>
+  $(function(){
+    $('.ico-menu').click(function(e){
+      $('body').addClass('menu-active');
+      e.preventDefault();
+    });
+    $('.ico-close').click(function(e){
+      $('body').removeClass('menu-active');
+      e.preventDefault();
+    });
+  });
+</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
