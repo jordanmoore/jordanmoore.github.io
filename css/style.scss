@@ -525,6 +525,7 @@ body.bd-home {
 		padding: 0;
 		.container {
 			white-space: nowrap;
+			max-width: none;
 		}
 		.content {
 			display: inline-block;
@@ -534,7 +535,7 @@ body.bd-home {
 	}
 	@media screen and (min-height:768px) and (min-width: 620px) {
 		.content {
-			padding: 10.054em 10.054em 6.18em;
+			padding: 10.054em 16.18em 6.18em;
 		}
 	}
 }
