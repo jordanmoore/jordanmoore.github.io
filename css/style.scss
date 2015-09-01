@@ -622,6 +622,7 @@ body.bd-home {
 			@media screen and (min-width:521px) {
 			  padding: 0;
 				overflow: visible;
+				margin-top: -26px;
 				&:after {
 					content: '';
 					position: absolute;
