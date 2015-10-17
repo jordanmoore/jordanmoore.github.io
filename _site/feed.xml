@@ -6,8 +6,8 @@
 </description>
     <link>http://jordanm.co.uk/</link>
     <atom:link href="http://jordanm.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 17 Oct 2015 01:23:55 +0100</pubDate>
-    <lastBuildDate>Sat, 17 Oct 2015 01:23:55 +0100</lastBuildDate>
+    <pubDate>Sat, 17 Oct 2015 16:04:33 +0100</pubDate>
+    <lastBuildDate>Sat, 17 Oct 2015 16:04:33 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -91,80 +91,6 @@
         <pubDate>Wed, 21 Jan 2015 00:46:00 +0000</pubDate>
         <link>http://jordanm.co.uk/2015/01/21/a-modern-default.html</link>
         <guid isPermaLink="true">http://jordanm.co.uk/2015/01/21/a-modern-default.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>The web designer&#39;s holiday gift guide 2014</title>
-        <description>&lt;p&gt;With the holiday season drawing ever closer, I thought I&amp;#8217;d revisit a theme from last year and pull together some Christmas gift ideas for folks in the web industry.&lt;/p&gt;
-
-
-&lt;p&gt;It can be tricky finding a suitable gift that will be of genuine use to the recipient — whether it&amp;#8217;s a co-worker, a relative or maybe you&amp;#8217;re looking for a meaningful gift that will benefit someone who works in the web or is looking to break into the industry. I&amp;#8217;ve tried to strike a good balance between the obvious, the eclectic, gifts for pros and gifts for beginners. Happy holidays!&lt;/p&gt;
-
-&lt;hr&gt;&lt;h3&gt;Tilde by Jessica Hische (from $20 per year)&lt;/h3&gt;
-
-&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;https://farm9.staticflickr.com/8608/15664299767_0a4331fb5f_c.jpg&quot;/&gt;&lt;figcaption&gt;Jessica&amp;#8217;s attention to detail is evident in those beautiful in-between details&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
-
-&lt;p&gt;A stunning new typeface that looks effortless but is full of gorgeous subtle flourishes in its ligatures and strokes. It comes in two sizes for small and large uses helping maintain its delicate quality wherever you use it.&lt;/p&gt;
-
-&lt;p&gt;Available from &lt;a href=&quot;http://tilda.fontbureau.com&quot;&gt;Webtype&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr&gt;&lt;h3&gt;Sketch 3 ($99)&lt;/h3&gt;
-
-&lt;p&gt;2014 has been the year of Sketch. Most folks I know have ditched other graphics editors in favour of Bohemian Coding&amp;#8217;s contender. Sketch is great for easily exporting resolution independent assets, constructing styleguides, establishing typographic systems - you name it.&lt;/p&gt;
-
-&lt;p&gt;The infinite canvas approach helps keep your broad vision for your project in check — and the ability to create symbols will save you heaps of time if you need to adjust shared elements across a number of layouts.&lt;/p&gt;
-
-&lt;p&gt;Available from &lt;a href=&quot;http://bohemiancoding.com/sketch/&quot;&gt;Bohemian Coding&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr&gt;&lt;h3&gt;Kano ($149)&lt;/h3&gt;
-
-&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;https://farm8.staticflickr.com/7541/15662728718_e06c94a220_c.jpg&quot;/&gt;&lt;figcaption&gt;Creativity out of the box — build the hardware, build the software — Kano is a great learning tool&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
-
-&lt;p&gt;After watching Alex Klein speak at &lt;a href=&quot;http://breakconf.org&quot;&gt;Break Conference&lt;/a&gt; in Belfast earlier this month I was completely astounded by what his company achieved with the Kano project. It started life as a humble Raspberry Pi and became a set of easy-to-assemble components that slot together to make a computer that teaches you how to code. The best part is - it&amp;#8217;s great for kids and adults alike.&lt;/p&gt;
-
-&lt;p&gt;Available from &lt;a href=&quot;http://www.kano.me&quot;&gt;Kano&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr&gt;&lt;h3&gt;Responsible Responsive Design by Scott Jehl (from $9)&lt;/h3&gt;
-
-&lt;p&gt;Scott Jehl&amp;#8217;s new book is a great addition to the A Book Apart library. He takes a look at the next level of responsive design as a practice: speed, overcoming performance issues on troublesome networks and delivering appropriate assets across the vast array of different platforms and conditions we face.&lt;/p&gt;
-
-&lt;p&gt;Available from &lt;a href=&quot;http://www.abookapart.com/products/&quot;&gt;A Book Apart&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr&gt;&lt;h3&gt;Responsive Sketch Pad ($16)&lt;/h3&gt;
-
-&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;https://farm8.staticflickr.com/7523/15230413133_93895d195f_b.jpg&quot;/&gt;&lt;figcaption&gt;I try not to take the &amp;#8220;screens&amp;#8221; too seriously – the boxed areas are enough for me to figure out how elements work in a given space&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
-
-&lt;p&gt;I use my Responsive Sketch Pad pretty much every day. Its great for quickly drawing components in a narrow column and figuring out how they translate to larger spaces. Apparently it works well with UI Stencil&amp;#8217;s pixel ruler — I didn&amp;#8217;t realise such a thing existed!&lt;/p&gt;
-
-&lt;p&gt;Available from &lt;a href=&quot;http://www.uistencils.com/products/responsive-sketch-pad&quot;&gt;UI Stencils&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr&gt;&lt;h3&gt;Invision App (Free with paid plans starting from $15 per month)&lt;/h3&gt;
-
-&lt;p&gt;I&amp;#8217;ll have to confess that I have only started using Invision App picked up recently, but already the benefits are obvious and it feels like the missing link that holds the whole design and development process together.&lt;/p&gt;
-
-&lt;p&gt;From keeping designers and developers singing from the same hymnsheet, to fostering design feedback discussion and iterations — Invision has you covered.&lt;/p&gt;
-
-&lt;p&gt;Available from &lt;a href=&quot;http://www.invisionapp.com&quot;&gt;Invision&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr&gt;&lt;h3&gt;Typecast (from $19 per month)&lt;/h3&gt;
-
-&lt;p&gt;Typecast is &lt;em&gt;the&lt;/em&gt; best tool for creating beautiful and usable typography for the web. It saves scouring the many different web font services available by bringing them together in a unified font selection UI. Typecast allows you to easily set your vertical rhythm, change properties over different media queries, play with font feature settings — everything you could imagine doing with web type can be done in the app.&lt;/p&gt;
-
-&lt;p&gt;Available from &lt;a href=&quot;http://www.typecast.com&quot;&gt;Typecast&lt;/a&gt; or free with a &lt;a href=&quot;https://www.fonts.com&quot;&gt;fonts.com&lt;/a&gt; account&lt;/p&gt;
-
-&lt;hr&gt;&lt;h3&gt;The Great Discontent, Issue One ($30)&lt;/h3&gt;
-
-&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;https://farm9.staticflickr.com/8581/15227790624_2522fa427e_o.jpg&quot;/&gt;&lt;figcaption&gt;Weighing in at an impressive 272 pages on high quality paper, it&amp;#8217;s the perfect desk companion for a healthy dose of inspiration&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
-
-&lt;p&gt;I have been a fan of Ryan and Tina Essmaker&amp;#8217;s The Great Discontent for quite some time now — in fact, it has been my go-to example of responsive web design when I&amp;#8217;m explaining it to clients. The inspiring interviews from the series come to life in high quality print with design and art direction from Frank Chimero.&lt;/p&gt;
-
-&lt;p&gt;Available from &lt;a href=&quot;http://shop.thegreatdiscontent.com&quot;&gt;The Great Discontent&lt;/a&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 22 Nov 2014 10:53:00 +0000</pubDate>
-        <link>http://jordanm.co.uk/2014/11/22/the-web-designers-holiday-gift-guide-2014.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2014/11/22/the-web-designers-holiday-gift-guide-2014.html</guid>
         
         
       </item>
@@ -317,27 +243,6 @@
       </item>
     
       <item>
-        <title>SVG&#39;s missing killer feature</title>
-        <description>&lt;p&gt;SVG has all the attributes for becoming the responsive web&amp;#8217;s image format of choice. Built for scalability SVG is inherently resolution independent. You&amp;#8217;d think it would be omnipresent in websites existing after the introduction of responsive web design in 2010. It isn&amp;#8217;t.&lt;/p&gt;
-
-&lt;p&gt;So why don&amp;#8217;t we use SVG? Why sidestep it in favour of a raster image inflated to double its intended display size? SVG lacks a killer feature that is present in JPG, PNG and GIF: &lt;strong&gt;convenience&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Graphics editing packages such as Photoshop treat SVG as an edge case. You can export SVGs from such applications but in an inconvenient, hacky way known only to some in the darkest corners of StackOverflow. Some of these &amp;#8220;solutions&amp;#8221; involve stripping the scalability out of the format to ensure it plays nicely in Photoshop’s restrictive parameters. In addition to that, my experience of patching that behaviour into applications has produced SVGs with varied results.&lt;/p&gt;
-
-&lt;p&gt;The recommended route would be to close Photoshop and open an alternative package that allows you to easily import and export SVGs like Inkscape or Adobe Illustrator, but it would be foolish to think that these applications have been ingrained into web design culture at this stage.&lt;/p&gt;
-
-&lt;p&gt;Making an SVG shouldn&amp;#8217;t feel like going beyond the call of duty, nor should it require patching functionality into our current software. Perhaps when the big decision makers in hardware roll out even higher density displays beyond double density then it might expose the pixelated shortcomings of icons and other web assets built using oversized raster images. Maybe then we’ll see that the benefits of SVG outweigh the cost and convenience makes way for necessity.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 01 Apr 2014 07:49:00 +0100</pubDate>
-        <link>http://jordanm.co.uk/2014/04/01/svgs-missing-killer-feature.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2014/04/01/svgs-missing-killer-feature.html</guid>
-        
-        <category>SVG</category>
-        
-        
-      </item>
-    
-      <item>
         <title>View full site - the worst anti-pattern</title>
         <description>&lt;p&gt;The “view full site” link has fostered a negative behavioural trait. When faced with problems on a dedicated mobile site users have a tendency to look for the full site link like some sort of safety net.&lt;/p&gt;
 
@@ -363,84 +268,160 @@
       </item>
     
       <item>
-        <title>The Web Designer&#39;s Holiday Gift Guide 2013</title>
-        <description>&lt;p&gt;Now for something a little different. With Christmas around the corner I thought I’d share a collection of great gift ideas for your fellow web designer.&lt;/p&gt;
+        <title>What we can learn from game designers</title>
+        <description>&lt;p&gt;After watching Indie Game: The Movie during Channel 4’s video games night I couldn’t help but notice the parallels between game design and web design. There are elements of this that I have noticed before, but I thought I’d share some of the facets of video games that aren’t spoken about so often in relation to our industry.&lt;/p&gt;
 
-&lt;hr&gt;&lt;h3&gt;&lt;span&gt;Pencil&lt;/span&gt; from $49.95&lt;/h3&gt;
+&lt;p&gt;Note that this isn’t a discussion about &lt;a href=&quot;http://en.wikipedia.org/wiki/Gamification&quot;&gt;gamification&lt;/a&gt;, rather a look at how game &lt;em&gt;design&lt;/em&gt; applies to the web.&lt;/p&gt;
 
-&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm3.staticflickr.com/2849/11298395685_e931227fd5_o.jpg&quot;/&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3&gt;Video games are usability success stories&lt;/h3&gt;
 
-&lt;p&gt;Fifty Three are best known for their impeccably designed and critically acclaimed Paper app for iPad. Now Paper has a hardware companion — Pencil. The milled, graphite brushed aluminium finish provides a good grip that compliments the carpenter pencil form and the eraser on the opposite end of the point does exactly as you’d expect in the app.&lt;/p&gt;
+&lt;p&gt;Pong is perhaps one of the greatest examples of usability for a digital product. The original Pong arcade box featured two knobs. A knob on one side of the box for player one and one on the other side for player two. Twisting the knob on the either side moved the corresponding on screen paddle up and down.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Available from &lt;a href=&quot;http://www.fiftythree.com/pencil&quot;&gt;Fifty Three&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The box had no instructions. The player was left to learn the behaviour and play.&lt;/p&gt;
 
-&lt;hr&gt;&lt;h3&gt;&lt;span&gt;Slate&lt;/span&gt; from $98&lt;/h3&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3743/11189802263_36d1eb76a4_o.png&quot;/&gt;&lt;figcaption&gt;The original Pong machine deserves credit for being a usability success&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7430/11298421256_9f2158c1f4_o.jpg&quot;/&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;More complex games that require extra behaviours to progress (let’s use Tomb Raider as an example) produce scenarios where environmental situations encourage you to recall certain behaviours, perform the input combination on the controller to trigger the behaviour and progress. In fact most games are essentially sequences of pattern recognition.&lt;/p&gt;
 
-&lt;p&gt;This is a really neat idea. Slate is a portable desk that houses your laptop and a mobile device on your lap whilst providing you with space to take notes or even use a mouse. The holes beneath the space for your laptop helps keep your legs and your computer cool.&lt;/p&gt;
+&lt;p&gt;One of the most enjoyable facets of gaming is when the player is in a state of flow&lt;sup id=&quot;fnref:p68879624841-1&quot;&gt;&lt;a href=&quot;#fn:p68879624841-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; and they perform the actions almost instinctively. The game then feels more rewarding to play because the player is progressing at the ideal pacing and feels more at one with the game when difficulty level and ability level are in perfect synergy.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Available on &lt;a href=&quot;http://www.kickstarter.com/projects/iskelter/slate-mobile-airdesk&quot;&gt;Kickstarter&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3793/11189680715_eb10fb7e66_o.jpg&quot;/&gt;&lt;figcaption&gt;In Tomb Raider the player quickly learns to apply input combinations in relation to environmental features. Some ledges require a running jump rather than a regular jump to progress to the next area&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 
-&lt;hr&gt;&lt;h3&gt;&lt;span&gt;Device Lab stand&lt;/span&gt; $149&lt;/h3&gt;
+&lt;p&gt;Repetition plays a key role in establishing these actions in the user’s mind. If you strip the surface texture graphics and reduce the polygon count in Tomb Raider, you would notice that the environments would look quite similar in that they can all be traversed using the same character behaviours but in varied and more challenging ways — the foundations remain the same from the first level through to the end.&lt;/p&gt;
 
-&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm6.staticflickr.com/5505/11298395725_3fe44ea3d5_c.jpg&quot;/&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;There are many lessons we can learn from how games are designed and built and apply the findings to the web. Input combinations that trigger specific actions could appear in the form of &lt;strong&gt;gestures&lt;/strong&gt; or even as part of a &lt;strong&gt;visual language&lt;/strong&gt;. Think about how games teach you to subconsciously perform such actions using techniques like &lt;strong&gt;pacing&lt;/strong&gt; and &lt;strong&gt;repetition&lt;/strong&gt; to help engrain them in the user’s intuition.&lt;/p&gt;
 
-&lt;p&gt;A must for the responsive web designer. This device stand from Vanamco houses up to 6 devices leaving a gutter for USB and charging cables.&lt;/p&gt;
+&lt;p&gt;You might think that kind of thinking could lead to a deviation from established web design patterns” - it all depends on the implementation. Imagine a first person shooter that didn’t bind the fire action to the right shoulder button on a controller or the left mouse button and instead required you to press a button like ’x’. It would be infuriating because it simply doesn’t feel right. Design patterns occur in games too, they’re just sometimes hard to spot because they almost feel like second nature — which is a very good thing.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Available from &lt;a href=&quot;http://devicelab.vanamco.com&quot;&gt;Vanamco&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h3&gt;Storytelling and narratives&lt;/h3&gt;
 
-&lt;hr&gt;&lt;h3&gt;&lt;span&gt;UINK.it Stamp&lt;/span&gt; from $35&lt;/h3&gt;
+&lt;p&gt;We can learn a lot from point-and-click adventure games. Not even in regards to the nature of the input for the genre — my favourite point-and-click adventure was Grim Fandango which was labelled a point-and-click adventure even though it was controlled entirely by keyboard — I’m talking about how they are structured in terms of their narratives.&lt;/p&gt;
 
-&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3667/11298395605_bbcc8bd1bf_o.jpg&quot;/&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;All good stories have a beginning, a middle and an end. Point-and-click adventures are (mostly) linear stories made up of &lt;strong&gt;sequences&lt;/strong&gt; that require item collection and puzzle solving to advance to the next sequence. The difference between the web and point-and-click adventures is that the latter wants you to struggle to advance, but not too much. In &lt;em&gt;most&lt;/em&gt; cases on the web, that’s not what we want to do, but there are certainly elements from this genre that we can learn from and apply to the web. Adventure games are trying to funnel the user down the linear story without leaving you &lt;em&gt;completely&lt;/em&gt; stuck, otherwise the user is less likely to feel compelled to finish the game. It’s the in-between bits that hold this narrative flow together that interests me the most — when the player starts to struggle the game has a job on its hands to keep the player interested and help them back into the narrative so the game can tell its story.&lt;/p&gt;
 
-&lt;p&gt;Sketches are an interface designer’s best friend. They’re quick and easy to produce — devices however are not. When producing mobile UIs it helps to frame them but this takes away a lot of the flow and spontaneity that sketching brings. UINK.it solves that allowing you to stamp device templates anywhere you want.&lt;/p&gt;
+&lt;p&gt;Characters respond to changes in the dynamics of the game. If you are looking for a specific item to proceed to the next sequence and you’re having a hard time doing so, some specific characters will become aware of the situation at hand and perhaps provide help or hints when spoken to.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Available on &lt;a href=&quot;http://www.kickstarter.com/projects/1839712674/uinkit-stamp-user-interface-design-tool&quot;&gt;Kickstarter&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7290/11189654275_7470acb045_o.png&quot;/&gt;&lt;figcaption&gt;In Grim Fandango speaking to characters you have already met can often provide clues as to how to proceed to the next sequence&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 
-&lt;hr&gt;&lt;h3&gt;&lt;span&gt;Platinum Pro-Use I 03 Drafting Pencil&lt;/span&gt; $16.50&lt;/h3&gt;
+&lt;p&gt;This sense of situational awareness can apply to the web too. As a user progresses through our own narrative, situational awareness can help the user progress to the next scene. Imagine a user adds an item to their cart in an e-commerce website — the dynamics of the situation have changed from when the user began on their journey and we can help them through to the end of the story. Perhaps the user digresses from the shop after deciding to read a rather interesting article on the store’s blog about how the store has been donating a portion of profits to charity. What if the blog post had a helpful block at the end to inform the user of the change in dynamics? Something to the effect of: “And you can help us donate too by buying that t-shirt in your cart. Would you like to do that now?”&lt;/p&gt;
 
-&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm6.staticflickr.com/5509/11298421226_7873888226_o.jpg&quot;/&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;Games speak to the players in plain English. No technical jargon like “Your session has expired” — something informative, clear and to the point, but not abrupt and not too long so that it wastes time either. Narrative content is hard.&lt;/p&gt;
 
-&lt;p&gt;Those wireframes aren’t going to draw themselves. This exquisite drafting pencil produces the perfect weight for fast wireframe production.&lt;/p&gt;
+&lt;p&gt;We really should listen to video game designers and developers a lot more. I would love to see people like &lt;a href=&quot;http://www.raphkoster.com&quot;&gt;Raph Koster&lt;/a&gt; speak at web design conferences and talk about flow theory, establishing core gameplay and environmental mechanics and the similar challenges we face in both industries. When it comes to telling compelling stories and teaching users to perform instinctual reactions to scenarios, the games industry has been doing this for a long time and have left a lot of good examples for us to learn from.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Available from &lt;a href=&quot;http://www.jetpens.com/Platinum-Pro-Use-I-03-Drafting-Pencil-0.3-mm/pd/1458&quot;&gt;JetPens&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr&gt;&lt;ol&gt;&lt;li id=&quot;fn:p68879624841-1&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.ccs.neu.edu/home/lieber/courses/cs4500/sp09/resources/p31-chen-flow-in-games.pdf%C2%A0&quot;&gt;http://www.ccs.neu.edu/home/lieber/courses/cs4500/sp09/resources/p31-chen-flow-in-games.pdf &lt;/a&gt;&lt;a href=&quot;#fnref:p68879624841-1&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
 
-&lt;hr&gt;&lt;h3&gt;&lt;span&gt;Gridbooks Web Book&lt;/span&gt; $24&lt;/h3&gt;
-
-&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7323/11298395625_5102b92810_c.jpg&quot;/&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
-
-&lt;p&gt;Gridbooks produce high quality notebooks for wireframing. Their Web Book features a 15-point dot grid that divides vertically into two, three, four, five and six columns with horizontal grids that can adapt to two, three, four, six, eight, twelve and sixteen columns. The opposing page features space for notes like objectives and goals to help keep you focused and produce great looking wireframes ready for sign-off.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Available from &lt;a href=&quot;http://www.gridbooks.com/products/web-book&quot;&gt;Gridbooks&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr&gt;&lt;h3&gt;&lt;span&gt;Get Mental Notes&lt;/span&gt; Sold Out&lt;/h3&gt;
-
-&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3738/11297859585_fafea03da9_o.png&quot;/&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
-
-&lt;p&gt;Mental Notes are a set of 50 cards designed as both reference and brainstorming tool for psychological design. The first set of 5000 cards went in a flash, so make sure to get notified of when new batches arrive so you don’t miss out.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Available from &lt;a href=&quot;http://www.getmentalnotes.com&quot;&gt;Get Mental Notes&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr&gt;&lt;h3&gt;&lt;span&gt;Five Simple Steps Pocket Guides&lt;/span&gt; £19&lt;/h3&gt;
-
-&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7411/11298395395_fb9e0c5d6e_o.jpg&quot;/&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
-
-&lt;p&gt;Five Simple Steps’ popular Pocket Guides series have made the transition from digital to physical format seamlessly. The first set of books features works from The Standardistas, Brian Suda, Rachel Andrew and Joe Leech. You’ll also receive the digital editions when you buy the paperback versions.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Available from &lt;a href=&quot;http://www.fivesimplesteps.com/products/pocket-guides-collection-one&quot;&gt;Five Simple Steps&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-
-&lt;hr&gt;&lt;h3&gt;&lt;span&gt;Cloud Typography subscription&lt;/span&gt; $99&lt;/h3&gt;
-
-&lt;p&gt;The quality of Hoefler &amp;amp; Frere-Jones’ typefaces speak for themselves. Their long awaited web fonts service arrived earlier this year and the time taken to port their elegant library for the web shows in their ScreenSmart fonts. With packages starting from $99 per year it’s easy on the wallet too.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Available from &lt;a href=&quot;http://www.typography.com/cloud/&quot;&gt;Hoefler &amp;amp; Frere-Jones&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/ol&gt;&lt;/div&gt;
 </description>
-        <pubDate>Tue, 10 Dec 2013 00:52:00 +0000</pubDate>
-        <link>http://jordanm.co.uk/2013/12/10/the-web-designers-holiday-gift-guide-2013.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2013/12/10/the-web-designers-holiday-gift-guide-2013.html</guid>
+        <pubDate>Wed, 04 Dec 2013 01:04:00 +0000</pubDate>
+        <link>http://jordanm.co.uk/2013/12/04/what-we-can-learn-from-game-designers.html</link>
+        <guid isPermaLink="true">http://jordanm.co.uk/2013/12/04/what-we-can-learn-from-game-designers.html</guid>
         
-        <category>Gear</category>
+        <category>Design Patterns</category>
+        
+        <category>Game Design</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>My Design Principles</title>
+        <description>&lt;p&gt;In the interest of openness I thought I’d share my set of design principles that I have been experimenting with for the last few weeks. They serve as a guide for design decisions and help me focus on good, honest values when making products for real people.&lt;/p&gt;
+
+&lt;p&gt;I’ll run through each principle individually below expanding on its meaning. Some have been borrowed and tweaked from elsewhere and noted in the footnotes.&lt;/p&gt;
+
+&lt;h3&gt;Start with needs&lt;/h3&gt;
+
+&lt;p&gt;A product should be useful. To be useful it needs to serve a specific need or a set of needs. The needs belong to the &lt;em&gt;user&lt;/em&gt; and no-one else&lt;sup id=&quot;fnref:p68410595788-1&quot;&gt;&lt;a href=&quot;#fn:p68410595788-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. We need to know what the user &lt;em&gt;needs&lt;/em&gt; through and through otherwise we’re making a product nobody wants.&lt;/p&gt;
+
+&lt;h3&gt;Think impossible&lt;/h3&gt;
+
+&lt;p&gt;To serve needs in the most efficient manner, the solution must be visualised clearly without obstruction. Obstruction may come in the form of the proposed platform for the product — it’s best to think without the distraction of &lt;em&gt;how&lt;/em&gt; you’re going to solve the problem, rather think in terms of the impossible — &lt;a href=&quot;http://www.jordanm.co.uk/2013/11/19/start-from-impossible.html&quot;&gt;how would it work if it worked like magic?&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;Design from the content out&lt;sup id=&quot;fnref:p68410595788-2&quot;&gt;&lt;a href=&quot;#fn:p68410595788-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/h3&gt;
+
+&lt;p&gt;A design without content is, at best, &lt;strong&gt;a guess&lt;/strong&gt;. It’s a guess at how it should look, how it should function, how it should feel. One big assumption. The content informs the design and the overall shape of the product. Preconceived notions of how a website should look must be ignored and trust placed in the content to lead the decision making. Content is an absolute which holds value to the user and must be treated with such esteem rather than being regarded as a commodity.&lt;/p&gt;
+
+&lt;h3&gt;Keep it simple&lt;/h3&gt;
+
+&lt;p&gt;A simple product is more likely to be easier to use and rarely has complex problems to fix. Why design something complex? Superfluous design is nothing but exercise for the ego. Simple design is clear, useful and honest.&lt;/p&gt;
+
+&lt;h3&gt;Accessible&lt;/h3&gt;
+
+&lt;p&gt;In every sense of the word. From screen readers to Kindles. IE7 to Chrome Canary. A simple product shouldn’t have to bend and break to work everywhere.&lt;/p&gt;
+
+&lt;h3&gt;Future-Friendly&lt;/h3&gt;
+
+&lt;p&gt;Take a device agnostic approach to delivering an experience that works where the web works for past, present and future devices, interfaces and scenarios. The best way to achieve this is by &lt;a href=&quot;http://www.jordanm.co.uk/2013/09/15/in-flux.html&quot;&gt;staying true to the nature of the web&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Do less&lt;/h3&gt;
+
+&lt;p&gt;Where time and budget are fixed, scope needs to flex or else quality suffers&lt;sup id=&quot;fnref:p68410595788-3&quot;&gt;&lt;a href=&quot;#fn:p68410595788-3&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. Less important features can wait for another day, priority features shouldn’t be compromised for the sake of shipping with &lt;em&gt;all&lt;/em&gt; features. It’s better to do &lt;a href=&quot;http://onethingwell.org&quot;&gt;one thing well&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Make useful things&lt;/h3&gt;
+
+&lt;p&gt;The finished product should be useful, otherwise design hasn’t achieved anything — it’s solving imaginary problems. A useful product solves &lt;strong&gt;real&lt;/strong&gt; problems for &lt;strong&gt;real&lt;/strong&gt; people.&lt;/p&gt;
+
+&lt;h3&gt;Make remarkable things&lt;/h3&gt;
+
+&lt;p&gt;The finished product should resonate with people and touch their lives in a positive, meaningful way.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+&lt;hr&gt;&lt;ol&gt;&lt;li id=&quot;fn:p68410595788-1&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.gov.uk/designprinciples#first%C2%A0&quot;&gt;https://www.gov.uk/designprinciples#first &lt;/a&gt;&lt;a href=&quot;#fnref:p68410595788-1&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn:p68410595788-2&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.markboulton.co.uk/journal/a-richer-canvas%C2%A0&quot;&gt;http://www.markboulton.co.uk/journal/a-richer-canvas &lt;/a&gt;&lt;a href=&quot;#fnref:p68410595788-2&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id=&quot;fn:p68410595788-3&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;http://gettingreal.37signals.com&quot;&gt;http://gettingreal.37signals.com&lt;/a&gt; &lt;a href=&quot;#fnref:p68410595788-3&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;/ol&gt;&lt;/div&gt;
+</description>
+        <pubDate>Thu, 28 Nov 2013 23:53:00 +0000</pubDate>
+        <link>http://jordanm.co.uk/2013/11/28/my-design-principles.html</link>
+        <guid isPermaLink="true">http://jordanm.co.uk/2013/11/28/my-design-principles.html</guid>
+        
+        <category>Design</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Start from impossible</title>
+        <description>&lt;p&gt;Knowledge is a gift. Having a few years of experience in the web industry under my belt there are plenty of opportunities for prior knowledge to solve design problems. But knowledge comes with baggage. Knowledge stifles potential.&lt;/p&gt;
+
+&lt;p&gt;When approached with a design problem we have a tendency to try and solve the problem through the knowledge of our platform before writing a single line of code or painting a single pixel. We think about the restrictions and limitations that come with our platform and try to fit a solution to these requirements.&lt;/p&gt;
+
+&lt;p&gt;The problem is that this complicates the solution before we have even started. The solution has already been hindered by our understanding of the intended platform.&lt;/p&gt;
+
+&lt;p&gt;I had the privilege of working with &lt;a href=&quot;https://twitter.com/paulmmay&quot;&gt;Paul May&lt;/a&gt; for two years at the company now known as &lt;a href=&quot;http://www.typecast.com&quot;&gt;Typecast&lt;/a&gt;. Paul is a very talented interaction designer. He taught me to &lt;strong&gt;start from impossible&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Starting from impossible means worrying about the details later. This helps you work with an unclouded view and see the solution more clearly.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://hailocab.com&quot;&gt;Hailo&lt;/a&gt; is a common example of the importance of starting from impossible. The design problem was clear: hailing a taxi sucks. The success rate varies, sometimes you need to call the cab office and tell them where you are, sometimes it&amp;#8217;s not even obvious where you are, sometimes the taxi driver gets lost on their way to pick you up, it&amp;#8217;s hard to know how long it&amp;#8217;ll be before you can get a taxi — it has the potential to become a whole host of frustrating problems.&lt;/p&gt;
+
+&lt;p&gt;I imagine the conversations at Hailo started from impossible: &amp;#8220;If getting a cab worked like magic, how would it work?&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;In the impossible scenario the taxi would know when you needed it and just appear wherever you are standing to take you where you wanted to go as if by magic. &lt;em&gt;This is the solution to the design problem staring you right in the face!&lt;/em&gt; It&amp;#8217;s important not to lose sight of it as you introduce real world limitations.&lt;/p&gt;
+
+&lt;p&gt;In Hailo&amp;#8217;s case, their limitation was the platform and the device. How was the device to know the thoughts of the person who needed a taxi? The person could press a button to tell the device that they needed a taxi. How would the taxi know the person needed a ride? The taxi would have a communicator that could tell that the person pressed a button on their device. How would the person know that the taxi received their request and wants to pick them up? The taxi driver could also press a button telling the person&amp;#8217;s device that they are on the way.&lt;/p&gt;
+
+&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3722/10950743026_d0f96d78f9_o.png&quot;/&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;So in essence the design solution is an app with a &amp;#8220;Pick me up&amp;#8221; button and a confirmation message to tell them their taxi is on the way. It&amp;#8217;s a beautifully simple solution to a frustrating problem. The user doesn&amp;#8217;t need to worry about the communications between the device and the taxi, or about how the taxi uses the device&amp;#8217;s location sensors to know where to pick them up. They just need to worry about pushing a button when they need a ride.&lt;/p&gt;
+
+&lt;p&gt;By removing the restrictions and the limitations that prior knowledge imposes on your thinking, imagining the impossible helps you to see the solution more clearly.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 19 Nov 2013 21:49:00 +0000</pubDate>
+        <link>http://jordanm.co.uk/2013/11/19/start-from-impossible.html</link>
+        <guid isPermaLink="true">http://jordanm.co.uk/2013/11/19/start-from-impossible.html</guid>
         
         
       </item>
