@@ -135,11 +135,13 @@ nav {
 	.container {
 		position: relative;
 		@media screen and (max-width:701px) {
-			white-space: nowrap;
-			overflow-x: auto;
-			overflow-y: hidden;
-			-webkit-overflow-scrolling: touch;
-			max-width: none;
+			ul {
+				white-space: nowrap;
+				overflow-x: auto;
+				overflow-y: hidden;
+				-webkit-overflow-scrolling: touch;
+				max-width: none;
+			}
 		}
 	}
 	.home-link {
@@ -240,7 +242,9 @@ article {
 	margin-top: 56px;
 	text-align: center;
 	img {
-		max-width: 365px;
+		@media screen and (min-width:460px) {
+			max-width: 365px;
+		}
 	}
 }
 
