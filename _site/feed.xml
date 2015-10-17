@@ -6,55 +6,9 @@
 </description>
     <link>http://jordanm.co.uk/</link>
     <atom:link href="http://jordanm.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 06 Sep 2015 14:32:19 +0100</pubDate>
-    <lastBuildDate>Sun, 06 Sep 2015 14:32:19 +0100</lastBuildDate>
+    <pubDate>Sat, 17 Oct 2015 01:08:48 +0100</pubDate>
+    <lastBuildDate>Sat, 17 Oct 2015 01:08:48 +0100</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
-    
-      <item>
-        <title>Content Blocking - We Had it Coming</title>
-        <description>&lt;p&gt;The impending arrival of iOS 9’s content blocking feature has raised insightful discussions around the effect of ad blocking being available to the mass market, the reduction of page load times and the moral debate of ad blocking sites dependent on ad revenue.&lt;/p&gt;
-
-&lt;p&gt;So what drives someone to block content? I dabbled with ad blocking soon after I started using Firefox many years ago. The trigger was a horrible teeth whitening advertisement that made me wince every time I noticed it and worse still, it seemed to be omnipresent on the web at the time. I decided that it was something I didn’t want to see anymore and I certainly didn’t appreciate being forced to look at it. After some Googling I found and promptly added Adblock Plus to my browser and noticed that the web became a less distracting, more readable, faster place to enjoy. I imagine people have similar experiences and triggers for wanting to use blocking tools and I don’t begrudge anyone opting to do so.&lt;/p&gt;
-
-&lt;p&gt;Sometime after I became a professional web designer I stopped using blocking tools because it wasn’t helping me do my job for clients that required designs dependent upon ads as a source of revenue. As you can imagine it’s tricky to design and code a layout that will contain ads with software preventing them from appearing.&lt;/p&gt;
-
-&lt;p&gt;The crux of the issue is ads are annoying. I believe this is the case because ads follow an old model dating back to the guestbook times where webmasters (because that’s what website owners were called at the time) sold part of their page in the form of predefined sizes that had exciting names like “skyscraper” and a third party would fill in these gaps.&lt;/p&gt;
-
-&lt;p&gt;The content within these spaces has changed down the years - it has got smarter (read: creepier) by watching you around the web and seeing what you like to serve you something you would hopefully want in that space. In more recent times ads have become more deceptive, disguising themselves as content at the bottom of the thing you’ve just been reading, styled similarly to the surrounding design but with sensationalist headlines that would put The Sun to shame.&lt;/p&gt;
-
-&lt;p&gt;The problem is that ads have always been in the hands of marketers rather than designers. The content has a purpose - to serve the marketing company and do so by any means necessary. Website owners hope that their skyscraper is filled with something that is relevant, that looks good and that doesn’t embarrass them or undermine their own message.&lt;/p&gt;
-
-&lt;p&gt;My question is that as designers &lt;em&gt;why&lt;/em&gt; have we been relinquishing that much control? We know the audience after researching and building the entire experience around their needs, goals and desires - why leave a chunk of this up to a third party? I’d argue that together with the client we would be able to identify and approach appropriate advertisers that we know would resonate with our customers and help pay the bills and I’m damn sure we could present it better than company x’s marketing department.&lt;/p&gt;
-
-&lt;p&gt;[SHAWN BLANC]&lt;/p&gt;
-
-&lt;p&gt;The tech publishing space has been doing this and similar approaches for some time. They give potential sponsors an opportunity to sit alongside the content like an endorsement - and the great thing about this model is that it gives the site owner editorial control over who is fit for that space. I love this approach because it flips the old model on its head and puts the power into the hands of site owners.&lt;/p&gt;
-
-&lt;p&gt;I’ve been working on a project called &lt;a href=&quot;http://theturf.io&quot;&gt;Turf&lt;/a&gt; recently. It’s a magazine about cool stuff, adventure and a catalogue of finely made goods. We’re just about to launch with sponsored ads and rather than sell patches to third parties and hope that something useful appears in there, we’ve hand selected companies and services that would be useful or beneficial to our customers.&lt;/p&gt;
-
-&lt;p&gt;My hunch is that by picking useful, meaningful sponsors presented in a tasteful manner users are more likely to listen to their message.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&quot;http://38.media.tumblr.com/94c58801ad434df1bb99f9190938906f/tumblr_inline_nggpjhwTfp1qz4wz7.jpg&quot; /&gt;
-  &lt;figcaption&gt;
-      Kai Brach&#39;s Offscreen Magazine presents its sponsors tastefully with upfront honesty and integrity.
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;http://journal.danrowden.com/post/104997854158/three-magazines-who-have-done-away-withhttp://journal.danrowden.com/post/104997854158/three-magazines-who-have-done-away-withhttp://journal.danrowden.com/post/104997854158/three-magazines-who-have-done-away-withhttp://journal.danrowden.com/post/104997854158/three-magazines-who-have-done-away-withhttp://journal.danrowden.com/post/104997854158/three-magazines-who-have-done-away-withhttp://journal.danrowden.com/post/104997854158/three-magazines-who-have-done-away-withhttp://journal.danrowden.com/post/104997854158/three-magazines-who-have-done-away-withhttp://journal.danrowden.com/post/104997854158/three-magazines-who-have-done-away-withhttp://journal.danrowden.com/post/104997854158/three-magazines-who-have-done-away-withhttp://journal.danrowden.com/post/104997854158/three-magazines-who-have-done-away-withhttp://journal.danrowden.com/post/104997854158/three-magazines-who-have-done-away-withhttp://journal.danrowden.com/post/104997854158/three-magazines-who-have-done-away-withhttp://journal.danrowden.com/post/104997854158/three-magazines-who-have-done-away-with&lt;/p&gt;
-
-&lt;p&gt;We took cues from how beautiful magazines like &lt;a href=&quot;http://readlagom.com&quot;&gt;Lagom&lt;/a&gt; and &lt;a href=&quot;http://offscreenmag.com&quot;&gt;Offscreen&lt;/a&gt; present sponsors and we decided that readers deserve not to have their reading experience hampered by obtrusive ads with heavy third party JavaScripts. This point is key - the old model required site owners to place this magical piece of code to do the work for them, but really it was just a way of relinquishing control over to marketers who knew nothing about your design and arguably less about your users all whilst slowing the page down with additional requests and assets. Sure these guys are like private investigators stalking your users around the web, accumulating a list of habits and interests but when people are on your site to do a specific thing, whatever that might be, you’ll have a better understanding over what is useful for them to see in that context rather than a third party marketing department.&lt;/p&gt;
-
-&lt;p&gt;In summary I’m not saying this is the definitive approach but there are better ways of advertising than the outdated and deceptive models being employed today. I would advise retaining editorial control in regards to the design and assets, listen to your user research and talk with relevant sponsors, to hell with external scripts and assets and lastly look beyond the web’s creepy examples and find more tasteful off-screen approaches.&lt;/p&gt;
-
-&lt;p&gt;Content blockers gonna block, the least we can do is make a more pleasant experience for people who opted not to block.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 07 Sep 2015 09:12:00 +0000</pubDate>
-        <link>http://jordanm.co.uk/2015/09/07/content-blocking-we-had-it-coming.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2015/09/07/content-blocking-we-had-it-coming.html</guid>
-        
-        
-      </item>
     
       <item>
         <title>Going Freelance</title>
@@ -404,6 +358,89 @@
         <category>RWD</category>
         
         <category>Design Patterns</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>The Web Designer&#39;s Holiday Gift Guide 2013</title>
+        <description>&lt;p&gt;Now for something a little different. With Christmas around the corner I thought I’d share a collection of great gift ideas for your fellow web designer.&lt;/p&gt;
+
+&lt;hr&gt;&lt;h3&gt;&lt;span&gt;Pencil&lt;/span&gt; from $49.95&lt;/h3&gt;
+
+&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm3.staticflickr.com/2849/11298395685_e931227fd5_o.jpg&quot;/&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;Fifty Three are best known for their impeccably designed and critically acclaimed Paper app for iPad. Now Paper has a hardware companion — Pencil. The milled, graphite brushed aluminium finish provides a good grip that compliments the carpenter pencil form and the eraser on the opposite end of the point does exactly as you’d expect in the app.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Available from &lt;a href=&quot;http://www.fiftythree.com/pencil&quot;&gt;Fifty Three&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr&gt;&lt;h3&gt;&lt;span&gt;Slate&lt;/span&gt; from $98&lt;/h3&gt;
+
+&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7430/11298421256_9f2158c1f4_o.jpg&quot;/&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a really neat idea. Slate is a portable desk that houses your laptop and a mobile device on your lap whilst providing you with space to take notes or even use a mouse. The holes beneath the space for your laptop helps keep your legs and your computer cool.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Available on &lt;a href=&quot;http://www.kickstarter.com/projects/iskelter/slate-mobile-airdesk&quot;&gt;Kickstarter&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr&gt;&lt;h3&gt;&lt;span&gt;Device Lab stand&lt;/span&gt; $149&lt;/h3&gt;
+
+&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm6.staticflickr.com/5505/11298395725_3fe44ea3d5_c.jpg&quot;/&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;A must for the responsive web designer. This device stand from Vanamco houses up to 6 devices leaving a gutter for USB and charging cables.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Available from &lt;a href=&quot;http://devicelab.vanamco.com&quot;&gt;Vanamco&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr&gt;&lt;h3&gt;&lt;span&gt;UINK.it Stamp&lt;/span&gt; from $35&lt;/h3&gt;
+
+&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3667/11298395605_bbcc8bd1bf_o.jpg&quot;/&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;Sketches are an interface designer’s best friend. They’re quick and easy to produce — devices however are not. When producing mobile UIs it helps to frame them but this takes away a lot of the flow and spontaneity that sketching brings. UINK.it solves that allowing you to stamp device templates anywhere you want.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Available on &lt;a href=&quot;http://www.kickstarter.com/projects/1839712674/uinkit-stamp-user-interface-design-tool&quot;&gt;Kickstarter&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr&gt;&lt;h3&gt;&lt;span&gt;Platinum Pro-Use I 03 Drafting Pencil&lt;/span&gt; $16.50&lt;/h3&gt;
+
+&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm6.staticflickr.com/5509/11298421226_7873888226_o.jpg&quot;/&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;Those wireframes aren’t going to draw themselves. This exquisite drafting pencil produces the perfect weight for fast wireframe production.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Available from &lt;a href=&quot;http://www.jetpens.com/Platinum-Pro-Use-I-03-Drafting-Pencil-0.3-mm/pd/1458&quot;&gt;JetPens&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr&gt;&lt;h3&gt;&lt;span&gt;Gridbooks Web Book&lt;/span&gt; $24&lt;/h3&gt;
+
+&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7323/11298395625_5102b92810_c.jpg&quot;/&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;Gridbooks produce high quality notebooks for wireframing. Their Web Book features a 15-point dot grid that divides vertically into two, three, four, five and six columns with horizontal grids that can adapt to two, three, four, six, eight, twelve and sixteen columns. The opposing page features space for notes like objectives and goals to help keep you focused and produce great looking wireframes ready for sign-off.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Available from &lt;a href=&quot;http://www.gridbooks.com/products/web-book&quot;&gt;Gridbooks&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr&gt;&lt;h3&gt;&lt;span&gt;Get Mental Notes&lt;/span&gt; Sold Out&lt;/h3&gt;
+
+&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3738/11297859585_fafea03da9_o.png&quot;/&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;Mental Notes are a set of 50 cards designed as both reference and brainstorming tool for psychological design. The first set of 5000 cards went in a flash, so make sure to get notified of when new batches arrive so you don’t miss out.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Available from &lt;a href=&quot;http://www.getmentalnotes.com&quot;&gt;Get Mental Notes&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr&gt;&lt;h3&gt;&lt;span&gt;Five Simple Steps Pocket Guides&lt;/span&gt; £19&lt;/h3&gt;
+
+&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7411/11298395395_fb9e0c5d6e_o.jpg&quot;/&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;Five Simple Steps’ popular Pocket Guides series have made the transition from digital to physical format seamlessly. The first set of books features works from The Standardistas, Brian Suda, Rachel Andrew and Joe Leech. You’ll also receive the digital editions when you buy the paperback versions.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Available from &lt;a href=&quot;http://www.fivesimplesteps.com/products/pocket-guides-collection-one&quot;&gt;Five Simple Steps&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr&gt;&lt;h3&gt;&lt;span&gt;Cloud Typography subscription&lt;/span&gt; $99&lt;/h3&gt;
+
+&lt;p&gt;The quality of Hoefler &amp;amp; Frere-Jones’ typefaces speak for themselves. Their long awaited web fonts service arrived earlier this year and the time taken to port their elegant library for the web shows in their ScreenSmart fonts. With packages starting from $99 per year it’s easy on the wallet too.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Available from &lt;a href=&quot;http://www.typography.com/cloud/&quot;&gt;Hoefler &amp;amp; Frere-Jones&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 10 Dec 2013 00:52:00 +0000</pubDate>
+        <link>http://jordanm.co.uk/2013/12/10/the-web-designers-holiday-gift-guide-2013.html</link>
+        <guid isPermaLink="true">http://jordanm.co.uk/2013/12/10/the-web-designers-holiday-gift-guide-2013.html</guid>
+        
+        <category>Gear</category>
         
         
       </item>

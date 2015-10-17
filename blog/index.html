@@ -2,13 +2,20 @@
 layout: default
 ---
 
-<div class="recent-articles">
+<div class="container blog-posts">
+
+    <h1>Ideas &amp; <span>Thinking</span></h1>
 
     <ul class="post-list">
       {% for post in paginator.posts %}
         <li>
           <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-          <p class="meta">{{ post.date | date: "%-d %B %Y" }}</p>
+          <time>
+          {% assign d = post.date | date: "%-d"  %}
+          {{ post.date | date: "%B" }}
+          {% case d %}
+            {% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ post.date | date: "%Y" }}
+          </time>
           <p>{{ post.summary }}</p>
           <p class="read-more"><a href="{{ post.url | prepend: site.baseurl }}">Read more &rarr;</a></p>
         </li>
@@ -26,3 +33,9 @@ layout: default
     </div>
   <!-- /.container -->
 </div>
+
+<footer>
+  <div class="container">
+    <p class="copy">&copy; Jordan Moore 2015</p>
+  </div>
+</footer>

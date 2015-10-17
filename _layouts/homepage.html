@@ -4,110 +4,41 @@
   {% include head.html %}
 
   <body class="bd-home">
-    <div class="menu-overlay">
-      <div class="menu-overlay-inner">
-        <div class="menu-overlay-left">
-          <h2>Navigation</h2>
-          <ul class="menu">
-            <li><a href="/">Home</a></li>
-            <li><a href="/blog">Ideas &amp; Thinking</a></li>
-            <li><a href="mailto:madebyjordan@gmail.com">Get in Touch</a></li>
-            <li><a href="http://twitter.com/jordanmoore">Follow</a></li>
-          </ul>
-        </div><!--
-     --><div class="menu-overlay-right">
-          <h2>Lab Experiments</h2>
-          <ul class="menu">
-            <li><a href="/tinytype">TinyType</a></li>
-            <li><a href="/lab/responsiveroulette">Responsive Roulette</a></li>
-            <li><a href="/palmreader">Palm Reader</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <a href="" class="ico-menu"></a>
-    <a href="" class="ico-close"></a>
-    <div class="container">
-      <div class="content">
-        <div class="home-cover">
-          <img src="{{ '/img/logo-shield.png' | prepend: site.url }}" alt="Jordan Moore's Coat of Arms">
-          <h1>Jordan Moore.</h1>
-          <p>Responsive web designer and user experience specialist</p>
-          <p class="ta-c"><a href="mailto:madebyjordan@gmail.com" class="btn">Get in touch</a></p>
-        </div>
-      </div><!--
-   --><div class="portfolio">
-        <div class="col">
-          <figure>
-            <img src="{{ '/img/portfolio-niice.jpg' | prepend: site.url }}" alt="A screenshot of the Niice iOS page">
-            <figcaption>
-              <h2>Niice</h2>
-              <p>Design and development work on Niice.co - a place to find, collect and present creativity</p>
-            </figcaption>
-          </figure>
-        </div><!--
-     --><div class="col">
-          <figure>
-            <img src="{{ '/img/portfolio-turf2.jpg' | prepend: site.url }}" alt="Sneak preview of Turf promotional materials">
-            <figcaption>
-              <h2>Turf</h2>
-              <p>Design lead and front end development on new lifestyle and product magazine — Turf</p>
-            </figcaption>
-          </figure>
-        </div><!--
-     --><div class="col">
-          <figure>
-            <img src="{{ '/img/portfolio-firefly.jpg' | prepend: site.url }}" alt="A screenshot of the Niice iOS page">
-            <figcaption>
-              <h2>Firefly</h2>
-              <p>Design and development for Firefly — life-changing products for special needs family participation</p>
-            </figcaption>
-          </figure>
-        </div><!--
-     --><div class="col">
-          <figure>
-            <img src="{{ '/img/portfolio-tinybooks.jpg' | prepend: site.url }}" alt="A screenshot of the Niice iOS page">
-            <figcaption>
-              <h2>Tinybooks</h2>
-              <p>Design and development work for Tinybooks — a book series for creative individuals</p>
-            </figcaption>
-          </figure>
-        </div><!--
-     --><div class="col">
-          <figure>
-            <img src="{{ '/img/portfolio-reorder.jpg' | prepend: site.url }}" alt="A screenshot of the Niice iOS page">
-            <figcaption>
-             <h2>Reorder (Coming Soon)</h2>
-             <p>A content choreography CSS grid system for rearranging layouts for different device sizes</p>
-            </figcaption>
-          </figure>
-        </div><!--
-     --><div class="col">
-          <figure>
-            <img src="{{ '/img/portfolio-armstrong.jpg' | prepend: site.url }}" alt="A screenshot of the Niice iOS page">
-            <figcaption>
-              <h2>Armstrong Medical</h2>
-              <p>Design and development work for Armstrong Medical - medical equipment creating support for life</p>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </div>
-    <!-- /.container -->
 
-    <!-- <p class="subheading"><a href="mailto:madebyjordan@gmail.com">Contact</a> <span>/</span> <a href="/blog">Ideas &amp; Thinking</a> <span>/</span> <a href="http://www.twitter.com/jordanmoore">Twitter</a></p> -->
-    <script>
-      $(function(){
-        $('.ico-menu').click(function(e){
-          $('body').addClass('menu-active');
-          e.preventDefault();
-        });
-        $('.ico-close').click(function(e){
-          $('body').removeClass('menu-active');
-          e.preventDefault();
-        });
-      });
-    </script>
+    <nav>
+      <a href="/" class="home-link"><i class="ico-logo-small"></i></a>
+      <div class="container">
+        <ul>
+          <li><a href="/" class="active">Home</a></li><!--
+       --><li><a href="/case-studies">Case Studies</a></li><!--
+       --><li><a href="/design-philosophy">Design Philosophy</a></li><!--
+       --><li><a href="/blog">Blog</a></li><!--
+       --><li><a href="mailto:madebyjordan@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="home-hero">
+      <div class="container">
+        <i class="ico-logo"></i>
+        <h1>I am a <span>User Experience</span><br> &amp; <span>Responsive Design Specialist.</span></h1>
+        <p>I help businesses succeed on a multi device web by <strong>listening to their customers</strong> and <strong>making accessible, future-friendly</strong> web products</p>
+        <a href="mailto:madebyjordan@gmail.com" class="btn">Get in Touch</a>
+      </div>
+    </div>
+
+    <nav class="nav-bottom">
+      <div class="container">
+        <ul>
+          <li><a href="/" class="active">Home</a></li><!--
+       --><li><a href="/case-studies">Case Studies</a></li><!--
+       --><li><a href="/design-philosophy">Design Philosophy</a></li><!--
+       --><li><a href="/blog">Blog</a></li><!--
+       --><li><a href="mailto:madebyjordan@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

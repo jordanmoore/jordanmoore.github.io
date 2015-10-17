@@ -6,32 +6,8 @@
   <body>
 
     {% include header.html %}
-    <div class="menu-overlay">
-      <div class="menu-overlay-inner">
-        <div class="menu-overlay-left">
-          <h2>Navigation</h2>
-          <ul class="menu">
-            <li><a href="/">Home</a></li>
-            <li><a href="/blog">Ideas &amp; Thinking</a></li>
-            <li><a href="mailto:madebyjordan@gmail.com">Get in Touch</a></li>
-            <li><a href="http://twitter.com/jordanmoore">Follow</a></li>
-          </ul>
-        </div><!--
-     --><div class="menu-overlay-right">
-          <h2>Lab Experiments</h2>
-          <ul class="menu">
-            <li><a href="/tinytype">TinyType</a></li>
-            <li><a href="/lab/responsiveroulette">Responsive Roulette</a></li>
-            <li><a href="/palmreader">Palm Reader</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <a href="" class="ico-menu"></a>
-    <a href="" class="ico-close"></a>
-    <div class="container">
-        {{ content }}
-    </div>
+
+    {{ content }}
 
     {% include footer.html %}
 
