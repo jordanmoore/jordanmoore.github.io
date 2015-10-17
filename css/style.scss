@@ -137,6 +137,7 @@ nav {
 		@media screen and (max-width:701px) {
 			white-space: nowrap;
 			overflow-x: auto;
+			overflow-y: hidden;
 			-webkit-overflow-scrolling: touch;
 			max-width: none;
 		}
