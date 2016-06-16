@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
   
 <head>
 	<meta charset="UTF-8">
@@ -8,145 +7,142 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10, user-scalable=1">
   	<meta name="description" content="Freelance responsive web designer in Belfast, Northern Ireland, specialising in user experience and accessible design
 ">
-	<link href='http://fonts.googleapis.com/css?family=Raleway:400,600' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="/css/style.css">
-	<link rel="canonical" href="http://jordanm.co.uk/blog/page2/">
-	<link rel="alternate" type="application/rss+xml" title="Jordan Moore | Responsive Web Design, UX Design, Belfast Northern Ireland" href="http://jordanm.co.uk/feed.xml" />
+	<link rel="stylesheet" href="http://localhost:3000/dist/css/style.css">
+	<link rel="canonical" href="http://localhost:3000//blog/page2/">
+	<link rel="alternate" type="application/rss+xml" title="Jordan Moore | Responsive Web Design, UX Design, Belfast Northern Ireland" href="http://localhost:3000//feed.xml" />
 	<link rel="icon" type="image/png" href="/favicon.png" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
-	<script src="https://use.typekit.net/elr4rzw.js"></script>
+	<script src="https://use.typekit.net/zct0jmc.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 
-
   <body>
-
-    <nav>
+    <nav class="dark">
   <div class="container">
-    <a href="/" class="home-link"><i class="ico-logo-small"></i></a>
+    <a href="/" class="logo">
+      <img src="http://localhost:3000/img/logo-dark.svg">
+    </a>
     <ul>
-      <li><a href="/">Home</a></li><!--
-   --><li><a href="/case-studies">Case Studies</a></li><!--
-   --><li><a  href="/design-philosophy">Design Philosophy</a></li><!--
-   --><li><a  href="/blog">Blog</a></li><!--
-   --><li><a href="mailto:madebyjordan@gmail.com">Contact</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/blog">Journal</a></li>
+      <li><a class="nav-get-in-touch" href="mailto:madebyjordan@gmail.com">Get in touch</a></li>
     </ul>
   </div>
 </nav>
 
+    <div class="container narrow">
+      <div class="blog-posts">
 
-    <div class="container blog-posts">
-
-    <h1>Ideas &amp; <span>Thinking</span></h1>
+    <h1 class="title-big"><span>Journal</span></h1>
 
     <ul class="post-list">
       
         <li>
-          <h2><a class="post-link" href="/2013/11/19/start-from-impossible.html">Start from impossible</a></h2>
-          <time>
+          <h1><a class="post-link" href="/2013/11/19/start-from-impossible.html">Start from impossible</a></h1>
+          <p class="date"><time>
           
           November
           19th, 2013
-          </time>
+          </time></p>
           <p>Knowledge is a gift. Having a few years of experience in the web industry under my belt there are plenty of opportunities for prior knowledge to solve design problems. But knowledge comes with baggage. Knowledge stifles potential.</p>
           <p class="read-more"><a href="/2013/11/19/start-from-impossible.html">Read more &rarr;</a></p>
         </li>
       
         <li>
-          <h2><a class="post-link" href="/2013/11/15/markdown-beyond-the-screen.html">Markdown: Beyond the screen</a></h2>
-          <time>
+          <h1><a class="post-link" href="/2013/11/15/markdown-beyond-the-screen.html">Markdown: Beyond the screen</a></h1>
+          <p class="date"><time>
           
           November
           15th, 2013
-          </time>
+          </time></p>
           <p><a href="http://daringfireball.net/projects/markdown/">Markdown</a> is great for a number of reasons. It helps people unfamiliar with HTML write in a way that will render as valid, structured HTML with the appropriate tools behind the scenes that the writer doesn&#8217;t need to worry about.</p>
           <p class="read-more"><a href="/2013/11/15/markdown-beyond-the-screen.html">Read more &rarr;</a></p>
         </li>
       
         <li>
-          <h2><a class="post-link" href="/2013/11/11/potential-use-cases-for-script-hover-and-pointer.html">Potential use cases for script, hover and pointer CSS Level 4 Media Features</a></h2>
-          <time>
+          <h1><a class="post-link" href="/2013/11/11/potential-use-cases-for-script-hover-and-pointer.html">Potential use cases for script, hover and pointer CSS Level 4 Media Features</a></h1>
+          <p class="date"><time>
           
           November
           11th, 2013
-          </time>
+          </time></p>
           <p>Having recently covered the <a href="http://www.jordanm.co.uk/2013/11/02/responding-to-environmental-lighting-with-css.html-media">luminosity media feature</a>, I thought I&#8217;d take time to document the potential use cases for the other new media features in the CSS Level 4 Media Queries module. Note that at the time of writing these features don&#8217;t exist in any browser yet, so the following use cases are theoretical.</p>
           <p class="read-more"><a href="/2013/11/11/potential-use-cases-for-script-hover-and-pointer.html">Read more &rarr;</a></p>
         </li>
       
         <li>
-          <h2><a class="post-link" href="/2013/11/02/responding-to-environmental-lighting-with-css.html">Responding to environmental lighting with CSS Media Queries Level 4</a></h2>
-          <time>
+          <h1><a class="post-link" href="/2013/11/02/responding-to-environmental-lighting-with-css.html">Responding to environmental lighting with CSS Media Queries Level 4</a></h1>
+          <p class="date"><time>
           
           November
           2nd, 2013
-          </time>
+          </time></p>
           <p><a href="http://dev.w3.org/csswg/mediaqueries4/">Media Queries Level 4</a> builds upon the <a href="http://www.w3.org/TR/css3-mediaqueries/">existing media queries specification</a> that many of us use when we build responsive designs today. The Media Queries Level 4 specification introduces four interesting new media features - <strong>script</strong>, <strong>hover</strong>, <strong>pointer</strong> and <strong>luminosity</strong>. At the time of writing the specification has yet to be implemented in a browser, but that shouldn&#8217;t stop us from exploring the potential use cases.</p>
           <p class="read-more"><a href="/2013/11/02/responding-to-environmental-lighting-with-css.html">Read more &rarr;</a></p>
         </li>
       
         <li>
-          <h2><a class="post-link" href="/2013/09/15/in-flux.html">In Flux</a></h2>
-          <time>
+          <h1><a class="post-link" href="/2013/09/15/in-flux.html">In Flux</a></h1>
+          <p class="date"><time>
           
           September
           15th, 2013
-          </time>
+          </time></p>
           <p>I count myself lucky to work in such an exciting industry. When friends or family outside of web design circles ask me about my job I tell them that it is exciting. I often tell them that &#8220;No two days are the same&#8221;. In a recent moment of clarity I realised that there are very few parameters in our work that stay the same. The web as a medium changes every day, in fact it is <strong>changing all the time</strong>.</p>
           <p class="read-more"><a href="/2013/09/15/in-flux.html">Read more &rarr;</a></p>
         </li>
       
         <li>
-          <h2><a class="post-link" href="/2013/06/17/building-for-content-choreography-using-flexbox.html">Building for Content Choreography using Flexbox</a></h2>
-          <time>
+          <h1><a class="post-link" href="/2013/06/17/building-for-content-choreography-using-flexbox.html">Building for Content Choreography using Flexbox</a></h1>
+          <p class="date"><time>
           
           June
           17th, 2013
-          </time>
+          </time></p>
           <p>On July 14th 2011 Trent Walton published an article introducing the concept of <a href="http://trentwalton.com/2011/07/14/content-choreography/">Content Choreography</a>. The article opened my mind and made me question some of the limitations we face in how we build responsive experiences. At the time content reordering and reflow hadn&#8217;t been widely explored beyond JavaScript-based solutions and I had been experimenting a lot with flexbox to reorder and arrange items horizontally for <a href="http://www.typecast.com">Typecast&#8217;s</a> UI. When Trent spoke about content stacking, I started to think what was achievable for reordering content along the y-axis in a single column layout.</p>
           <p class="read-more"><a href="/2013/06/17/building-for-content-choreography-using-flexbox.html">Read more &rarr;</a></p>
         </li>
       
         <li>
-          <h2><a class="post-link" href="/2013/05/06/beyond-the-canvas.html">Beyond the Canvas</a></h2>
-          <time>
+          <h1><a class="post-link" href="/2013/05/06/beyond-the-canvas.html">Beyond the Canvas</a></h1>
+          <p class="date"><time>
           
           May
           6th, 2013
-          </time>
+          </time></p>
           <p>When we design we generally do so in two dimensions — length and width. They are the physical constraints of what our technology is currently capable of. Our dimensional restraints are then realised on the devices used to experience our design.</p>
           <p class="read-more"><a href="/2013/05/06/beyond-the-canvas.html">Read more &rarr;</a></p>
         </li>
       
         <li>
-          <h2><a class="post-link" href="/2013/04/26/book-review-combining-typefaces.html">Book Review: Combining Typefaces</a></h2>
-          <time>
+          <h1><a class="post-link" href="/2013/04/26/book-review-combining-typefaces.html">Book Review: Combining Typefaces</a></h1>
+          <p class="date"><time>
           
           April
           26th, 2013
-          </time>
+          </time></p>
           <p>The craft of <a href="http://www.fivesimplesteps.com/products/combining-typefaces">combining typefaces</a> can feel like a daunting prospect. It’s easy to shy away from the adventurous cross-pollination of different typefaces and stick to families and superfamilies to achieve typographic harmony.</p>
           <p class="read-more"><a href="/2013/04/26/book-review-combining-typefaces.html">Read more &rarr;</a></p>
         </li>
       
         <li>
-          <h2><a class="post-link" href="/2013/03/25/thoughts-on-toggling-a-responsive-design-on-and.html">Thoughts on Toggling a Responsive Design On and Off</a></h2>
-          <time>
+          <h1><a class="post-link" href="/2013/03/25/thoughts-on-toggling-a-responsive-design-on-and.html">Thoughts on Toggling a Responsive Design On and Off</a></h1>
+          <p class="date"><time>
           
           March
           25th, 2013
-          </time>
+          </time></p>
           <p>Earlier today Roger Johansson posted an article about potential scenarios for <a href="http://www.456bereastreet.com/archive/201303/letting_users_disable_responsive_layout/">disabling a responsive design</a> along with <a href="http://www.456bereastreet.com/lab/disable-responsive-layout/">a demo</a>. As noted in the article, this isn&#8217;t new thinking as both <a href="http://www.brucelawson.co.uk/2013/turning-off-responsive-web-design/">Bruce Lawson</a>, <a href="http://css-tricks.com/user-opt-out-responsive-design/">Chris Coyier</a> and various others have spoken about it before — the purpose was to introduce the demo along with scenarios where it would be useful.</p>
           <p class="read-more"><a href="/2013/03/25/thoughts-on-toggling-a-responsive-design-on-and.html">Read more &rarr;</a></p>
         </li>
       
         <li>
-          <h2><a class="post-link" href="/2013/03/12/under-the-microscope.html">Under the Microscope</a></h2>
-          <time>
+          <h1><a class="post-link" href="/2013/03/12/under-the-microscope.html">Under the Microscope</a></h1>
+          <p class="date"><time>
           
           March
           12th, 2013
-          </time>
+          </time></p>
           <p>When designing for small screens keep in mind that everything you do is under the microscope - design patterns, interactions, usability, speed — everything. These wonderful little devices that we cup in our hands offer a small, personal and intimate window in which to enjoy the web.</p>
           <p class="read-more"><a href="/2013/03/12/under-the-microscope.html">Read more &rarr;</a></p>
         </li>
@@ -156,7 +152,7 @@
     <!-- Pagination links -->
     <div class="pagination">
       
-        <a href="/blog/index.html" class="previous">&larr; Newer Articles</a>
+        <a href="/blog/" class="previous">&larr; Newer Articles</a>
       
       
         <a href="/blog/page3/" class="next">Older Articles &rarr;</a>
@@ -165,14 +161,41 @@
   <!-- /.container -->
 </div>
 
+    </div>
 <footer>
   <div class="container">
-    <p class="copy">&copy; Jordan Moore 2015</p>
+    <hr class="crest">
+    <img src="/img/logo.svg" alt="Moore coat of arms">
+    <ul class="list-inline">
+      <li><a href="http://twitter.com/jordanmoore" title="Follow Jordan Moore on Twitter">Twitter</a></li>
+      <li><a href="http://instagram.com/jordanmoore" title="Follow Jordan Moore on Instagram">Instagram</a></li>
+      <li><a href="http://jordanm.co.uk/feed.xml" title="Follow Jordan Moore's RSS Feed">RSS</a></li>
+    </ul>
+    <p class="copy">&copy; 2016 Jordan Moore</p>
   </div>
 </footer>
 
+<script>
+  $(window).on('load', function(){
+    $("li").each(function(index) {
+        var that = this;
+        var t = setTimeout(function() {
+            $(that).removeClass("fade-out");
+        }, 100 * index);
+    });
+  });
+  var today = new Date()
+  var curHr = today.getHours();
 
-    
+  if(curHr<12){
+    $('.time-greeting').text("Good morning");
+  }else if(curHr<18){
+    $('.time-greeting').text("Good afternoon")
+  }else{
+    $('.time-greeting').text("Good evening")
+  }
+
+</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -185,6 +208,6 @@
 </script>
 
 
-  </body>
+</body>
 
 </html>

@@ -59,6 +59,7 @@ gulp.task('styles', function () {
 	.pipe(autoprefixer())
 	.pipe(minifycss())
 	.pipe(gulp.dest('dist/css'))
+	.pipe(gulp.dest('_site/dist/css'))
   .pipe(reload({stream: true}))
   .pipe(notify({ message: 'CSS Compiled' }));
 });
@@ -79,7 +80,9 @@ gulp.task('clean', function(cb) {
 
 gulp.task('browser-sync', function() {
     browserSync({
-        proxy: "localhost/cc-grid"
+      server: {
+          baseDir: '_site'
+      }
     });
 });
 

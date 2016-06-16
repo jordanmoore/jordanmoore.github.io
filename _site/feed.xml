@@ -4,17 +4,15 @@
     <title>Jordan Moore | Responsive Web Design, UX Design, Belfast Northern Ireland</title>
     <description>Freelance responsive web designer in Belfast, Northern Ireland, specialising in user experience and accessible design
 </description>
-    <link>http://jordanm.co.uk/</link>
-    <atom:link href="http://jordanm.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 18 Oct 2015 16:00:35 +0100</pubDate>
-    <lastBuildDate>Sun, 18 Oct 2015 16:00:35 +0100</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <link>http://localhost:3000//</link>
+    <atom:link href="http://localhost:3000//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 16 Jun 2016 14:45:34 +0100</pubDate>
+    <lastBuildDate>Thu, 16 Jun 2016 14:45:34 +0100</lastBuildDate>
+    <generator>Jekyll v3.1.2</generator>
     
       <item>
         <title>What I learned transitioning from agency to freelance</title>
-        <description>&lt;p&gt;It has been just over six months since I left agency life behind and started a new chapter in my career as a freelance designer.  Now is the perfect time to stop and reflect on what the last six months have been like and share my journey.&lt;/p&gt;
-
-&lt;p&gt;Before I made the leap I read blog articles of other freelancers who did the same. People like &lt;a href=&quot;http://www.alwaystwisted.com/&quot;&gt;Stuart Robson&lt;/a&gt;, &lt;a href=&quot;http://cdja.co.uk/&quot;&gt;Chris Allwood&lt;/a&gt;, people who have made it work. I also called a &lt;strong&gt;lot&lt;/strong&gt; of people - &lt;a href=&quot;http://chris-armstrong.com/&quot;&gt;Chris Armstrong&lt;/a&gt;, &lt;a href=&quot;http://www.christophermurphy.org/&quot;&gt;Chris Murphy&lt;/a&gt;, &lt;a href=&quot;https://theturf.io/&quot;&gt;Andrew Fulton&lt;/a&gt; - without their advice I probably would have talked myself out of it because before you actually do it your mind finds plenty of reasons not to do it.&lt;/p&gt;
+        <description>&lt;p&gt;Before I made the leap I read blog articles of other freelancers who did the same. People like &lt;a href=&quot;http://www.alwaystwisted.com/&quot;&gt;Stuart Robson&lt;/a&gt;, &lt;a href=&quot;http://cdja.co.uk/&quot;&gt;Chris Allwood&lt;/a&gt;, people who have made it work. I also called a &lt;strong&gt;lot&lt;/strong&gt; of people - &lt;a href=&quot;http://chris-armstrong.com/&quot;&gt;Chris Armstrong&lt;/a&gt;, &lt;a href=&quot;http://www.christophermurphy.org/&quot;&gt;Chris Murphy&lt;/a&gt;, &lt;a href=&quot;https://theturf.io/&quot;&gt;Andrew Fulton&lt;/a&gt; - without their advice I probably would have talked myself out of it because before you actually do it your mind finds plenty of reasons not to do it.&lt;/p&gt;
 
 &lt;p&gt;To cut to the chase: it’s working for me too, and I want to give that reassurance to people are considering making a similar move that it can work for you.&lt;/p&gt;
 
@@ -52,9 +50,9 @@
 
 &lt;p&gt;The last point I want to make is the most important factor in my decision to go freelance. I went from seeing my kids for 1-2 hours a day to being able to drop them to school, pick them up from school, attend sports days, I’ve been able to &lt;strong&gt;be there&lt;/strong&gt;. That’s the kind of freedom that I enjoy most aside from all the other benefits. I can watch my young family grow up much more closely than I have before, and the best part is they don’t grow up so fast anymore because I’m there to see so more of it and spend time with them. It’s our most precious commodity and now I can shape my time to fit however I want rather than being told how to spend it.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 18 Oct 2015 09:12:00 +0000</pubDate>
-        <link>http://jordanm.co.uk/2015/10/18/freelance-vs-agency.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2015/10/18/freelance-vs-agency.html</guid>
+        <pubDate>Sun, 18 Oct 2015 10:12:00 +0100</pubDate>
+        <link>http://localhost:3000//2015/10/18/freelance-vs-agency.html</link>
+        <guid isPermaLink="true">http://localhost:3000//2015/10/18/freelance-vs-agency.html</guid>
         
         
       </item>
@@ -63,15 +61,15 @@
         <title>Going Freelance</title>
         <description>&lt;p&gt;I am delighted to announce that after 7 years working in web agencies I have decided to leave and start a new adventure as a freelance web designer.&lt;/p&gt;
 
-&lt;p&gt;Since I joined Front in 2008 midway through my final year of university, I have spent the last 7 years honing my craft specialising in &lt;strong&gt;responsive web design&lt;/strong&gt;, &lt;strong&gt;user experience&lt;/strong&gt; as well as &lt;strong&gt;front end&lt;/strong&gt; and &lt;strong&gt;Expression Engine development&lt;/strong&gt;. I believe that being part of the team with Front (now known as Typecast) and Eyekiller has equipped me with the skills required to manage my own destiny and seek new and exciting projects. &lt;/p&gt;
+&lt;p&gt;Since I joined Front in 2008 midway through my final year of university, I have spent the last 7 years honing my craft specialising in &lt;strong&gt;responsive web design&lt;/strong&gt;, &lt;strong&gt;user experience&lt;/strong&gt; as well as &lt;strong&gt;front end&lt;/strong&gt; and &lt;strong&gt;Expression Engine development&lt;/strong&gt;. I believe that being part of the team with Front (now known as Typecast) and Eyekiller has equipped me with the skills required to manage my own destiny and seek new and exciting projects.&lt;/p&gt;
 
 &lt;p&gt;Working and collaborating closely with clients of all different shapes and sizes from various sectors including the BBC, Firefly and TextHelp and has been a truly invaluable experience. I’ll miss working with my fantastic clients - it has been a priviledge working together with &lt;strong&gt;each and every one of you&lt;/strong&gt; to make useful, meaningful things for the web.&lt;/p&gt;
 
 &lt;p&gt;And of course I will miss working alongside the wonderful team at Eyekiller. I have made many friends since I joined in 2012. My last day is just under a month away on April 1st 2015. If you have any projects you would like to discuss with me, please feel free to &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#109;&amp;#097;&amp;#100;&amp;#101;&amp;#098;&amp;#121;&amp;#106;&amp;#111;&amp;#114;&amp;#100;&amp;#097;&amp;#110;&amp;#064;&amp;#103;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot;&gt;get in touch&lt;/a&gt;!&lt;/p&gt;
 </description>
         <pubDate>Tue, 03 Mar 2015 09:12:00 +0000</pubDate>
-        <link>http://jordanm.co.uk/2015/03/03/going-freelance.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2015/03/03/going-freelance.html</guid>
+        <link>http://localhost:3000//2015/03/03/going-freelance.html</link>
+        <guid isPermaLink="true">http://localhost:3000//2015/03/03/going-freelance.html</guid>
         
         
       </item>
@@ -110,8 +108,8 @@
 &lt;/ol&gt;&lt;/div&gt;
 </description>
         <pubDate>Sat, 07 Feb 2015 08:36:00 +0000</pubDate>
-        <link>http://jordanm.co.uk/2015/02/07/i-am-the-fold.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2015/02/07/i-am-the-fold.html</guid>
+        <link>http://localhost:3000//2015/02/07/i-am-the-fold.html</link>
+        <guid isPermaLink="true">http://localhost:3000//2015/02/07/i-am-the-fold.html</guid>
         
         <category>Viewports</category>
         
@@ -138,8 +136,8 @@
 &lt;p&gt;As designers we are in the position of power where we can both make and break the Web. We have a great foundation to work with by default, it&amp;#8217;s up to us where we go with it.&lt;/p&gt;
 </description>
         <pubDate>Wed, 21 Jan 2015 00:46:00 +0000</pubDate>
-        <link>http://jordanm.co.uk/2015/01/21/a-modern-default.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2015/01/21/a-modern-default.html</guid>
+        <link>http://localhost:3000//2015/01/21/a-modern-default.html</link>
+        <guid isPermaLink="true">http://localhost:3000//2015/01/21/a-modern-default.html</guid>
         
         
       </item>
@@ -170,8 +168,8 @@
 &lt;p&gt;I think we wrote off audio too soon.&lt;/p&gt;
 </description>
         <pubDate>Wed, 08 Oct 2014 00:01:00 +0100</pubDate>
-        <link>http://jordanm.co.uk/2014/10/08/a-silent-web.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2014/10/08/a-silent-web.html</guid>
+        <link>http://localhost:3000//2014/10/08/a-silent-web.html</link>
+        <guid isPermaLink="true">http://localhost:3000//2014/10/08/a-silent-web.html</guid>
         
         <category>User Experience</category>
         
@@ -216,8 +214,8 @@
 &lt;/ol&gt;&lt;/div&gt;
 </description>
         <pubDate>Fri, 01 Aug 2014 00:13:00 +0100</pubDate>
-        <link>http://jordanm.co.uk/2014/08/01/how-i-test-type-and-layout.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2014/08/01/how-i-test-type-and-layout.html</guid>
+        <link>http://localhost:3000//2014/08/01/how-i-test-type-and-layout.html</link>
+        <guid isPermaLink="true">http://localhost:3000//2014/08/01/how-i-test-type-and-layout.html</guid>
         
         <category>Testing</category>
         
@@ -283,8 +281,8 @@
 &lt;/ol&gt;&lt;/div&gt;
 </description>
         <pubDate>Thu, 10 Jul 2014 08:22:00 +0100</pubDate>
-        <link>http://jordanm.co.uk/2014/07/10/emmets-hidden-power-features.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2014/07/10/emmets-hidden-power-features.html</guid>
+        <link>http://localhost:3000//2014/07/10/emmets-hidden-power-features.html</link>
+        <guid isPermaLink="true">http://localhost:3000//2014/07/10/emmets-hidden-power-features.html</guid>
         
         <category>Coding</category>
         
@@ -306,8 +304,8 @@
 &lt;p&gt;So how do we fix this problem? By continuing to fight the good fight with ubiquitous experiences and earning back the user’s trust over time — it’s not going to be a quick fix. Bad habits take time to eradicate. The great content swindle needs to stop.&lt;/p&gt;
 </description>
         <pubDate>Thu, 19 Dec 2013 07:24:00 +0000</pubDate>
-        <link>http://jordanm.co.uk/2013/12/19/view-full-site-the-worst-anti-pattern.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2013/12/19/view-full-site-the-worst-anti-pattern.html</guid>
+        <link>http://localhost:3000//2013/12/19/view-full-site-the-worst-anti-pattern.html</link>
+        <guid isPermaLink="true">http://localhost:3000//2013/12/19/view-full-site-the-worst-anti-pattern.html</guid>
         
         <category>RWD</category>
         
@@ -366,8 +364,8 @@
 &lt;/ol&gt;&lt;/div&gt;
 </description>
         <pubDate>Wed, 04 Dec 2013 01:04:00 +0000</pubDate>
-        <link>http://jordanm.co.uk/2013/12/04/what-we-can-learn-from-game-designers.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2013/12/04/what-we-can-learn-from-game-designers.html</guid>
+        <link>http://localhost:3000//2013/12/04/what-we-can-learn-from-game-designers.html</link>
+        <guid isPermaLink="true">http://localhost:3000//2013/12/04/what-we-can-learn-from-game-designers.html</guid>
         
         <category>Design Patterns</category>
         
@@ -434,8 +432,8 @@
 &lt;/ol&gt;&lt;/div&gt;
 </description>
         <pubDate>Thu, 28 Nov 2013 23:53:00 +0000</pubDate>
-        <link>http://jordanm.co.uk/2013/11/28/my-design-principles.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2013/11/28/my-design-principles.html</guid>
+        <link>http://localhost:3000//2013/11/28/my-design-principles.html</link>
+        <guid isPermaLink="true">http://localhost:3000//2013/11/28/my-design-principles.html</guid>
         
         <category>Design</category>
         

@@ -1,12 +1,12 @@
 <nav>
   <div class="container">
-    <a href="/" class="home-link"><i class="ico-logo-small"></i></a>
+    <a href="/" class="logo">
+      <img src="{{ site.url }}img/logo.svg">
+    </a>
     <ul>
-      <li><a href="/">Home</a></li><!--
-   --><li><a {% if page.permalink == '/case-studies/' %}class="active"{% endif %}href="/case-studies">Case Studies</a></li><!--
-   --><li><a {% if page.permalink == '/design-philosophy/' %}class="active"{% endif %} href="/design-philosophy">Design Philosophy</a></li><!--
-   --><li><a {% if page.url == '/blog/index.html' %}class="active"{% endif %} href="/blog">Blog</a></li><!--
-   --><li><a href="mailto:madebyjordan@gmail.com">Contact</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/blog">Journal</a></li>
+      <li><a class="nav-get-in-touch" href="mailto:madebyjordan@gmail.com">Get in touch</a></li>
     </ul>
   </div>
 </nav>
