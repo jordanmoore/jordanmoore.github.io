@@ -1,4 +1,37 @@
+<footer>
+  <div class="container">
+    <hr class="crest">
+    <img src="/img/logo.svg" alt="Moore coat of arms">
+    <ul class="list-inline">
+      <li><a href="http://twitter.com/jordanmoore" title="Follow Jordan Moore on Twitter">Twitter</a></li>
+      <li><a href="http://instagram.com/jordanmoore" title="Follow Jordan Moore on Instagram">Instagram</a></li>
+      <li><a href="http://jordanm.co.uk/feed.xml" title="Follow Jordan Moore's RSS Feed">RSS</a></li>
+    </ul>
+    <p class="copy">&copy; 2016 Jordan Moore</p>
+  </div>
+</footer>
 
+<script>
+  $(window).on('load', function(){
+    $("li").each(function(index) {
+        var that = this;
+        var t = setTimeout(function() {
+            $(that).removeClass("fade-out");
+        }, 100 * index);
+    });
+  });
+  var today = new Date()
+  var curHr = today.getHours();
+
+  if(curHr<12){
+    $('.time-greeting').text("Good morning");
+  }else if(curHr<18){
+    $('.time-greeting').text("Good afternoon")
+  }else{
+    $('.time-greeting').text("Good evening")
+  }
+
+</script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
