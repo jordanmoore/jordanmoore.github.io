@@ -524,6 +524,14 @@ article {
 .article-cover {
 	color: #fff;
 	min-height: 90vh;
+	.meta {
+		@media screen and (min-height:640px) {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+	}
 	p {
 		text-align: center;
 		font-size: 1.31em;
@@ -541,10 +549,6 @@ article {
 }
 
 .meta {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
 	padding: 1em;
 	&.gradient {
 		padding-top: 1em;
