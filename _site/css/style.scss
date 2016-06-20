@@ -430,8 +430,9 @@ footer {
 	form {
 		background: white;
     display: inline-block;
-    padding: 2px;
 		margin-bottom: 2em;
+		border: 2px solid;
+		overflow: hidden;
 	}
 	p {
 		max-width: 433px;
@@ -480,6 +481,9 @@ footer {
 	cursor: pointer;
 	-webkit-appearance: none;
 	text-transform: uppercase;
+	&:focus {
+		outline: none;
+	}
 }
 
 article {
