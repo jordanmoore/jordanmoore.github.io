@@ -6,9 +6,32 @@
 </description>
     <link>http://jordanm.co.uk/</link>
     <atom:link href="http://jordanm.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 28 Jun 2016 12:10:52 +0100</pubDate>
-    <lastBuildDate>Tue, 28 Jun 2016 12:10:52 +0100</lastBuildDate>
+    <pubDate>Wed, 13 Jul 2016 12:34:04 +0100</pubDate>
+    <lastBuildDate>Wed, 13 Jul 2016 12:34:04 +0100</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Method UX</title>
+        <description>&lt;p&gt;Christian Bale famously lost 63lbs for the role of insomniac Trevor Reznik in Brad Anderson’s psychological thriller The Machinist. Bale’s disturbing body transformation happened over the course of 4 months during which he forced himself into a diet of a can of tuna and an apple per day, keeping himself isolated for prolonged periods of time and going without proper rest. His dedication to the role before filming even began is a common reference point for people describing method acting.&lt;/p&gt;
+
+&lt;p&gt;Method acting is a technique derived from Constantin Stanislavski, a Russian actor and theatre director who between 1911 and 1916 used a methodology to train actors in the quest for theatrical truth. In essence the goals of Stanislavski’s System were to portray actors on stage as natural, believable characters. To achieve these goals actors would rely on recalling emotional memories and past experiences to bring those feelings to the role they had to portray. Actors would also use “If” (often refered to as the “Magic If”) to answer the question “What would I do if I was in this situation?” by envisioning themselves in the characters situation.&lt;/p&gt;
+
+&lt;p&gt;Like Christian Bale, many actors in the film industry such as Anne Hathaway, Robert De Niro and Joaquin Pheonix employ the modern day interpretation of Stanislavski’s System — method acting. The method starts before filming giving the actor time to plan and prepare for the role leaving them better equipped to deliver a stronger performance during filming with a relatable, believable character.&lt;/p&gt;
+
+&lt;p&gt;Don’t think that I’m suggesting that we as designers for the Web take on extreme diets or the kind of psychological experimentation that could be potentially damaging without professional advice. I can’t help but admire the lengths method actors go to for their art. Perhaps we can learn from the emotional investment they make to a role before production begins. Isn’t that the whole point of UX research? We throw the word “empathy” around boardrooms and company about pages to show that we care about the people we are making the product for. To me, empathy has become an empty promise - a buzzword to appease potential clients.&lt;/p&gt;
+
+&lt;p&gt;To be truly empathetic I believe it involves going further than a few demographically informed personas that we assume are going to represent real people who use the things we make. Think about the project you’re working on now - how much of a difference would it make if you lived as the person you are making this for? How would they feel using the product? Where does it fit in their everyday lives? My hunch is that we would be able to make more well informed decisions that resonate with those people by diving right into the role, then we would have better tools to answer “What would I do if I was in this situation?”&lt;/p&gt;
+
+&lt;p&gt;There is no doubt that with this approach it can be emotionally taxing. There’s a balance and a scale in regards to how far you pursue it.&lt;/p&gt;
+
+&lt;p&gt;After filming of The Machinist wrapped up Christian Bale’s next role was Bruce Wayne in Batman Begins. He gained 100lbs in six months and started rigourously learning martial arts for the many tightly choreographed fight sequences in the film.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 13 Jul 2016 10:12:00 +0100</pubDate>
+        <link>http://jordanm.co.uk/2016/07/13/method-ux.html</link>
+        <guid isPermaLink="true">http://jordanm.co.uk/2016/07/13/method-ux.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>What I learned transitioning from agency to freelance</title>
@@ -370,72 +393,6 @@
         <category>Design Patterns</category>
         
         <category>Game Design</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>My Design Principles</title>
-        <description>&lt;p&gt;In the interest of openness I thought I’d share my set of design principles that I have been experimenting with for the last few weeks. They serve as a guide for design decisions and help me focus on good, honest values when making products for real people.&lt;/p&gt;
-
-&lt;p&gt;I’ll run through each principle individually below expanding on its meaning. Some have been borrowed and tweaked from elsewhere and noted in the footnotes.&lt;/p&gt;
-
-&lt;h3&gt;Start with needs&lt;/h3&gt;
-
-&lt;p&gt;A product should be useful. To be useful it needs to serve a specific need or a set of needs. The needs belong to the &lt;em&gt;user&lt;/em&gt; and no-one else&lt;sup id=&quot;fnref:p68410595788-1&quot;&gt;&lt;a href=&quot;#fn:p68410595788-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. We need to know what the user &lt;em&gt;needs&lt;/em&gt; through and through otherwise we’re making a product nobody wants.&lt;/p&gt;
-
-&lt;h3&gt;Think impossible&lt;/h3&gt;
-
-&lt;p&gt;To serve needs in the most efficient manner, the solution must be visualised clearly without obstruction. Obstruction may come in the form of the proposed platform for the product — it’s best to think without the distraction of &lt;em&gt;how&lt;/em&gt; you’re going to solve the problem, rather think in terms of the impossible — &lt;a href=&quot;http://www.jordanm.co.uk/2013/11/19/start-from-impossible.html&quot;&gt;how would it work if it worked like magic?&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3&gt;Design from the content out&lt;sup id=&quot;fnref:p68410595788-2&quot;&gt;&lt;a href=&quot;#fn:p68410595788-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/h3&gt;
-
-&lt;p&gt;A design without content is, at best, &lt;strong&gt;a guess&lt;/strong&gt;. It’s a guess at how it should look, how it should function, how it should feel. One big assumption. The content informs the design and the overall shape of the product. Preconceived notions of how a website should look must be ignored and trust placed in the content to lead the decision making. Content is an absolute which holds value to the user and must be treated with such esteem rather than being regarded as a commodity.&lt;/p&gt;
-
-&lt;h3&gt;Keep it simple&lt;/h3&gt;
-
-&lt;p&gt;A simple product is more likely to be easier to use and rarely has complex problems to fix. Why design something complex? Superfluous design is nothing but exercise for the ego. Simple design is clear, useful and honest.&lt;/p&gt;
-
-&lt;h3&gt;Accessible&lt;/h3&gt;
-
-&lt;p&gt;In every sense of the word. From screen readers to Kindles. IE7 to Chrome Canary. A simple product shouldn’t have to bend and break to work everywhere.&lt;/p&gt;
-
-&lt;h3&gt;Future-Friendly&lt;/h3&gt;
-
-&lt;p&gt;Take a device agnostic approach to delivering an experience that works where the web works for past, present and future devices, interfaces and scenarios. The best way to achieve this is by &lt;a href=&quot;http://www.jordanm.co.uk/2013/09/15/in-flux.html&quot;&gt;staying true to the nature of the web&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3&gt;Do less&lt;/h3&gt;
-
-&lt;p&gt;Where time and budget are fixed, scope needs to flex or else quality suffers&lt;sup id=&quot;fnref:p68410595788-3&quot;&gt;&lt;a href=&quot;#fn:p68410595788-3&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. Less important features can wait for another day, priority features shouldn’t be compromised for the sake of shipping with &lt;em&gt;all&lt;/em&gt; features. It’s better to do &lt;a href=&quot;http://onethingwell.org&quot;&gt;one thing well&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3&gt;Make useful things&lt;/h3&gt;
-
-&lt;p&gt;The finished product should be useful, otherwise design hasn’t achieved anything — it’s solving imaginary problems. A useful product solves &lt;strong&gt;real&lt;/strong&gt; problems for &lt;strong&gt;real&lt;/strong&gt; people.&lt;/p&gt;
-
-&lt;h3&gt;Make remarkable things&lt;/h3&gt;
-
-&lt;p&gt;The finished product should resonate with people and touch their lives in a positive, meaningful way.&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-&lt;hr&gt;&lt;ol&gt;&lt;li id=&quot;fn:p68410595788-1&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.gov.uk/designprinciples#first%C2%A0&quot;&gt;https://www.gov.uk/designprinciples#first &lt;/a&gt;&lt;a href=&quot;#fnref:p68410595788-1&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li id=&quot;fn:p68410595788-2&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.markboulton.co.uk/journal/a-richer-canvas%C2%A0&quot;&gt;http://www.markboulton.co.uk/journal/a-richer-canvas &lt;/a&gt;&lt;a href=&quot;#fnref:p68410595788-2&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li id=&quot;fn:p68410595788-3&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;http://gettingreal.37signals.com&quot;&gt;http://gettingreal.37signals.com&lt;/a&gt; &lt;a href=&quot;#fnref:p68410595788-3&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;/ol&gt;&lt;/div&gt;
-</description>
-        <pubDate>Thu, 28 Nov 2013 23:53:00 +0000</pubDate>
-        <link>http://jordanm.co.uk/2013/11/28/my-design-principles.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2013/11/28/my-design-principles.html</guid>
-        
-        <category>Design</category>
         
         
       </item>
