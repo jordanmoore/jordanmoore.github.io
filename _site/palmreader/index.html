@@ -201,6 +201,18 @@
 		li.active.luminosity-washed {display:block}
 		li.inactive.what-luminosity-washed {display:none}
 	}
+	@media (light-level: normal) {
+		li.active.lightlevel-normal {display:block}
+		li.inactive.what-lightlevel-normal {display:none}
+	}
+	@media (light-level: dim) {
+		li.active.lightlevel-dim {display:block}
+		li.inactive.what-lightlevel-dim {display:none}
+	}
+	@media (light-level: washed) {
+		li.active.lightlevel-washed {display:block}
+		li.inactive.what-lightlevel-washed {display:none}
+	}
 	@media (pointer:coarse) {
 		li.active.coarse {display:block}
 		li.inactive.what-coarse {display:none}
@@ -299,12 +311,12 @@
 			<li class="inactive what-coarse"><code>(pointer:fine)</code> <span>[MQ Level 4]</li>
 			<li class="active pointer-none"><code>(pointer:none)</code> <span>[MQ Level 4]</li>
 			<li class="inactive what-pointer-none"><code>(pointer:none)</code> <span>[MQ Level 4]</li>
-			<li class="active luminosity-normal"><code>(luminosity:normal)</code> <span>[MQ Level 4]</li>
-			<li class="inactive what-luminosity-normal"><code>(luminosity:normal)</code> <span>[MQ Level 4]</li>
-			<li class="active luminosity-dim"><code>(luminosity:dim)</code> <span>[MQ Level 4]</li>
-			<li class="inactive what-luminosity-dim"><code>(luminosity:dim)</code> <span>[MQ Level 4]</li>
-			<li class="active luminosity-washed"><code>(luminosity:washed)</code> <span>[MQ Level 4]</li>
-			<li class="inactive what-luminosity-washed"><code>(luminosity:washed)</code> <span>[MQ Level 4]</li>
+			<li class="active lightlevel-normal"><code>(light-level:normal)</code> <span>[MQ Level 4]</li>
+			<li class="inactive what-lightlevel-normal"><code>(light-level:normal)</code> <span>[MQ Level 4]</li>
+			<li class="active lightlevel-dim"><code>(light-level:dim)</code> <span>[MQ Level 4]</li>
+			<li class="inactive what-lightlevel-dim"><code>(light-level:dim)</code> <span>[MQ Level 4]</li>
+			<li class="active lightlevel-washed"><code>(light-level:washed)</code> <span>[MQ Level 4]</li>
+			<li class="inactive what-lightlevel-washed"><code>(light-level:washed)</code> <span>[MQ Level 4]</li>
 			<li class="active hover"><code>(hover)</code> <span>[MQ Level 4]</li>
 			<li class="inactive what-hover"><code>(hover)</code> <span>[MQ Level 4]</li>
 			<li class="active script"><code>(script)</code> <span>[MQ Level 4]</li>
