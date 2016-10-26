@@ -8,22 +8,25 @@
 
 	<title>Palm Reader &mdash; What media queries can my device see right now?</title>
 
-	<link href='http://fonts.googleapis.com/css?family=Dosis:300,400,600' rel='stylesheet' type='text/css'>
-
 	<style>
 
 	/* Tiny reset */
 	h1, h2, h3, p, li, ul, body {
 		padding: 0;
 		margin: 0;
+		font-weight: normal;
+		-webkit-font-smoothing: antialiased;
 	}
 	body {
 		background: #f1f1f1;
-		font-family: Dosis,sans-serif;
+		font-family: monospace;
 		color: #343434;
+		font-size: 16px;
 	}
 	.container {
 		padding: 1.618em;
+		max-width: 1200px;
+		margin: 0 auto;
 	}
 	.bar {
 		background: #2e2f2f;
@@ -32,12 +35,14 @@
 	}
 	h1 {
 		padding: 0.6em 0.6em 0.6em 1em;
-		font-size: 1.6em;
+		font-size: 1.2em;
 		margin-bottom: 0;
+		letter-spacing: 8px;
 	}
 	.bar p {
 		margin-bottom: 1em;
 		padding: 0 1.6em;
+		font-size: 14px;
 	}
 	h1, h2 {
 		font-weight: normal;
@@ -47,6 +52,7 @@
 		font-size: 0.95em;
 	}
 	p {
+		text-align: center;
 		margin-bottom: 2.618em;
 	}
 	p.test, #byline p {
@@ -59,9 +65,22 @@
 		margin-top: 0;
 		margin-bottom: 2.618em;
 	}
+	ul {
+
+	}
+	@media (min-width:36.25em) {
+		ul {
+			columns: 2;
+		}
+	}
+	@media (min-width:64em) {
+		ul {
+			columns: 3;
+		}
+	}
 	li {
 		margin-bottom: 0.65em;
-		list-style:none;
+		break-inside: avoid;
 	}
 	p {
 		color: #757575;
@@ -83,8 +102,8 @@
 	code {
 		background: black;
 		color: white;
+		display: block;
 		padding: 5px;
-		font-family: Dosis,sans-serif;
 		text-transform: uppercase;
 	}
 	.inactive code {
@@ -222,12 +241,9 @@
 		li.inactive.what-hover {display:none}
 	}
 	@media (min-width:36.25em) {
-		h1 {
-			float: left;
-		}
-		.bar p {
-			padding: 1.4em 0 0;
-			margin-bottom: 0;
+		.bar {
+			text-align: center;
+			padding: 0.4em 0 0;
 		}
 	}
 	</style>
@@ -241,8 +257,6 @@
 	</div>
 
 	<div class="container">
-
-		<h2>Owner's Manual</h2>
 		<p class="test">All the media query tests are listed below, the darker ones are currently active on this device</p>
 		<ul>
 			<li class="active screen"><code>screen</code></li>
@@ -293,28 +307,23 @@
 			<li class="inactive what-min-resolution"><code>(min-resolution)</code></li>
 			<li class="active max-resolution"><code>(max-resolution)</code></li>
 			<li class="inactive what-max-resolution"><code>(max-resolution)</code></li>
-			<li class="active fine"><code>(pointer:fine)</code> <span>[MQ Level 4]</li>
-			<li class="inactive what-fine"><code>(pointer:fine)</code> <span>[MQ Level 4]</li>
-			<li class="active coarse"><code>(pointer:coarse)</code> <span>[MQ Level 4]</li>
-			<li class="inactive what-coarse"><code>(pointer:coarse)</code> <span>[MQ Level 4]</li>
-			<li class="active pointer-none"><code>(pointer:none)</code> <span>[MQ Level 4]</li>
-			<li class="inactive what-pointer-none"><code>(pointer:none)</code> <span>[MQ Level 4]</li>
-			<li class="active lightlevel-normal"><code>(light-level:normal)</code> <span>[MQ Level 4]</li>
-			<li class="inactive what-lightlevel-normal"><code>(light-level:normal)</code> <span>[MQ Level 4]</li>
-			<li class="active lightlevel-dim"><code>(light-level:dim)</code> <span>[MQ Level 4]</li>
-			<li class="inactive what-lightlevel-dim"><code>(light-level:dim)</code> <span>[MQ Level 4]</li>
-			<li class="active lightlevel-washed"><code>(light-level:washed)</code> <span>[MQ Level 4]</li>
-			<li class="inactive what-lightlevel-washed"><code>(light-level:washed)</code> <span>[MQ Level 4]</li>
-			<li class="active hover"><code>(hover)</code> <span>[MQ Level 4]</li>
-			<li class="inactive what-hover"><code>(hover)</code> <span>[MQ Level 4]</li>
-			<li class="active script"><code>(script)</code> <span>[MQ Level 4]</li>
-			<li class="inactive what-script"><code>(script)</code> <span>[MQ Level 4]</li>
+			<li class="active fine"><code>(pointer:fine) [MQ Level 4]</code></li>
+			<li class="inactive what-fine"><code>(pointer:fine) [MQ Level 4]</code></li>
+			<li class="active coarse"><code>(pointer:coarse) [MQ Level 4]</code></li>
+			<li class="inactive what-coarse"><code>(pointer:coarse) [MQ Level 4]</code></li>
+			<li class="active pointer-none"><code>(pointer:none) [MQ Level 4]</code></li>
+			<li class="inactive what-pointer-none"><code>(pointer:none) [MQ Level 4]</code></li>
+			<li class="active lightlevel-normal"><code>(light-level:normal) [MQ Level 4]</code></li>
+			<li class="inactive what-lightlevel-normal"><code>(light-level:normal) [MQ Level 4]</code></li>
+			<li class="active lightlevel-dim"><code>(light-level:dim) [MQ Level 4]</code></li>
+			<li class="inactive what-lightlevel-dim"><code>(light-level:dim) [MQ Level 4]</code></li>
+			<li class="active lightlevel-washed"><code>(light-level:washed) [MQ Level 4]</code></li>
+			<li class="inactive what-lightlevel-washed"><code>(light-level:washed) [MQ Level 4]</code></li>
+			<li class="active hover"><code>(hover) [MQ Level 4]</code></li>
+			<li class="inactive what-hover"><code>(hover) [MQ Level 4]</code></li>
+			<li class="active script"><code>(script) [MQ Level 4]</code></li>
+			<li class="inactive what-script"><code>(script) [MQ Level 4]</code></li>
 		</ul>
-
-		<hr>
-		<div id="byline">
-			<p>A tool built purely in HTML and CSS by <a href="http://twitter.com/jordanmoore">Jordan Moore</a>. Make it better <a href="https://github.com/jordanmoore/palmreader">on GitHub</a>. Like this? You will love Viljami Salminen's <a href="http://mqtest.io/">MQtest.io</a> that shows you what dimensions your device will respond to.</p>
-		</div>
 	</div>
 
 
