@@ -6,9 +6,9 @@
 </description>
     <link>http://jordanm.co.uk/</link>
     <atom:link href="http://jordanm.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 13 Jul 2016 12:36:28 +0100</pubDate>
-    <lastBuildDate>Wed, 13 Jul 2016 12:36:28 +0100</lastBuildDate>
-    <generator>Jekyll v3.1.6</generator>
+    <pubDate>Sat, 29 Oct 2016 12:14:41 +0100</pubDate>
+    <lastBuildDate>Sat, 29 Oct 2016 12:14:41 +0100</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
     
       <item>
         <title>Method UX</title>
@@ -250,7 +250,7 @@
       </item>
     
       <item>
-        <title>Emmet&#39;s hidden power features</title>
+        <title>Emmet's hidden power features</title>
         <description>&lt;p&gt;&lt;a href=&quot;http://emmet.io/&quot;&gt;Emmet&lt;/a&gt; (formerly known as Zen Coding) is a plugin for text editors helping you create CSS and HTML faster by using abbreviations to write common values saving ridiculous amounts of time along the way.&lt;/p&gt;
 
 &lt;p&gt;There are heaps of really useful features alongside Emmet&amp;#8217;s primary text-expanding function. Here are a few of the hidden gems that I frequently use when coding&lt;sup id=&quot;fnref:p91335536701-1&quot;&gt;&lt;a href=&quot;#fn:p91335536701-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
