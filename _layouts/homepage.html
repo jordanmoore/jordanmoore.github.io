@@ -1,72 +1,48 @@
 <!DOCTYPE html>
 <html class="bd-home">
 
-  {% include head.html %}
+  {% include homehead.html %}
 
   <body class="bd-home">
 
-    <div class="cover">
-      {% include header.html %}
-      <div class="container">
-        <h1><span class="heading-1"><img src="img/heading-1.png" alt="Product Designer"></span>
-        <span class="heading-2"><img src="img/heading-2.png" alt="Design Thinker,"></span>
-        <span class="heading-3"><img src="img/heading-3.png" alt="Doer."></span></h1>
-        <p>It's my mission to work with people, brands and startups who exist to make the world a better place</p>
-        <img src="/img/signature.png" class="signature" alt="Jordan's signature">
-      </div>
-    </div>
+    <img src="img/avatar.png" alt="" class="avatar">
+    <h1>
+      <span class="name">Jordan Moore</span>
+      <span class="role">Designer + Co-Founder</span>
+    </h1>
 
-    <div class="container narrow">
-      <p>Over the last ten years I have helped independent authors, healthcare suppliers, charities and special needs product manufacturers find their voice on the web and other digital platforms.
-      <p>If you or your brand exists to do things that matter, to improve the world around us, to do better, then <a href="mailto:madebyjordan@gmail.com">I'd love to hear from you.</a></p>
+    <p class="bio">
+      <span class="handle-tl"></span>
+      <span class="handle-bl"></span>
+      <span class="handle-tm"></span>
+      <span class="handle-bm"></span>
+      <span class="handle-tr"></span>
+      <span class="handle-br"></span>
+      Director of design and co-founder at <a href="https://dawsonandrews.com">Dawson &amp; Andrews</a>. Based in Belfast, Northern Ireland most of the time — rest is spent remotely from various coffee establishments. Likes dabbling in mobile tech, AI and AR things.
+    </p>
 
-      <hr>
+    <ul class="social">
+      <li><a href="https://twitter.com/jordanmoore" class="twitter"></a></li>
+      <li><a href="https://medium.com/@jordanmoore" class="medium"></a></li>
+      <li><a href="https://www.instagram.com/jordanmoore/" class="instagram"></a></li>
+    </ul>
 
-    </div>
+    <p class="emoji">🤓</p>
+    <p class="copyright">&copy; Jordan Moore 2017</p>
 
-    <div class="container">
-      <div class="project luha">
-        <div class="content">
-          <h3 class="header-tall">LUHA&deg;</h3>
-          <p class="small-sans">Design • Build • Craft CMS &amp; Rails Integration</p>
-          <p>Redefining fitness beyond lifting weights, oversized builds and supplements. LUHA&deg; is for real people and run by real people helping you achieve your fitness goals.</p>
-          <p>Together with the LUHA&deg; team we built a custom app alongside Craft CMS to connect customers and personal trainers.</p>
-          <p><a href="http://www.luha.co" class="no-underline">www.luha.co</a></p>
-        </div>
-        <div class="images">
-          <img src="/img/luha.png" alt="LUHA° Screenshot">
-        </div>
-      </div>
-      <!-- /.project -->
-      <div class="project lagom">
-        <div class="content">
-          <h3 class="header-tall">Lagom Magazine</h3>
-          <p class="small-sans">Design • Development • Craft CMS Integration</p>
-          <p>The independent print publishing industry is thriving. Lagom Magazine is one of its finest products demonstrating a quality aesthetic backed up by compelling and inspiring content.</p>
-          <p>Alongside Elliot Jay Stocks I helped design, build and integrate with Craft CMS for Lagom's online presence.</p>
-          <p><a href="http://www.readlagom.com" class="no-underline">www.readlagom.com</a></p>
-        </div>
-        <div class="images">
-          <img src="/img/lagom.png" alt="Lagom Screenshot">
-        </div>
-      </div>
-      <!-- /.project -->
-      <div class="project niice">
-        <div class="content">
-          <h3 class="header-tall">Niice</h3>
-          <p class="small-sans">Design • Development • Rails Customisation</p>
-          <p>Empowering creative teams to collaborate closely and do their best work. With Niice we are aiming to shape the feedback process in a way that works for clients and designers alike.</p>
-          <p>Working closely with Chris Armstrong and the development team, I have been working on the user interface and user experience of Niice - a custom app built from the ground up.</p>
-          <p><a href="http://www.niice.co" class="no-underline">www.niice.co</a></p>
-        </div>
-        <div class="images">
-          <img src="/img/niice.png" alt="Niice Screenshot">
-        </div>
-      </div>
-      <!-- /.project -->
-    </div>
+    <script type="text/javascript">
 
-    {% include footer.html %}
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-7180140-5']);
+     _gaq.push(['_trackPageview']);
+
+     (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+
+    </script>
 
   </body>
 

@@ -1,0 +1,115 @@
+body {
+  font-family: "acumin-pro", sans-serif;
+  text-align: center;
+  line-height: 1.4;
+  padding-top: 8em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.avatar {
+  max-width: 81px;
+}
+
+h1 {
+  .name {
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-size: 0.88rem;
+    letter-spacing: 1.08px;
+    font-weight: normal;
+    display: block;
+  }
+}
+.bio {
+  margin: 0 auto 2em;
+  max-width: 36.63em;
+  border: 1px solid #CECDCD;
+  position: relative;
+  padding: 1.1em;
+  .handle-tl, .handle-tm, .handle-tr,
+  .handle-bl, .handle-bm, .handle-br {
+    @extend .ico-handle;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+  }
+  .handle-tm, .handle-bm {
+    left: 50%;
+    margin-left: -5px;
+  }
+  .handle-tr,
+  .handle-br {
+    left: auto;
+    right: -5px;
+  }
+  .handle-bl {
+    top: auto;
+    bottom: -5px;
+  }
+  .handle-bm{
+    top: auto;
+    bottom: -5px;
+  }
+  .handle-br {
+    top: auto;
+    bottom: -5px;
+  }
+}
+
+a {
+  color: #1E8FFE;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.ico-handle {
+  background-image: url(../../img/ico-handle.svg);
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+
+.social {
+  padding: 0;
+  margin: 0 0 9em;
+  list-style-type: none;
+  li {
+    display: inline-block;
+    margin: 0.4em;
+  }
+}
+
+.twitter, .medium, .instagram {
+  display: inline-block;
+  vertical-align: middle;
+  width: 28px;
+  height: 24px;
+  background: url(../../img/ico-twitter.png) center center no-repeat;
+  background-size: contain;
+}
+
+.medium {
+  background-image: url(../../img/ico-medium.png);
+  width: 31px;
+  height: 31px;
+}
+
+.instagram {
+  background-image: url(../../img/ico-instagram.png);
+  width: 27px;
+  height: 27px;
+}
+
+.emoji {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+.copyright {
+  opacity: 0.2;
+  font-size: 0.94em;
+}

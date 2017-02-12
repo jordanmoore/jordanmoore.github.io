@@ -8,7 +8,6 @@ var sass = require('gulp-sass'); // For compiling Scss files
 var minifycss = require('gulp-minify-css'); // For minifying CSS files
 var autoprefixer = require('gulp-autoprefixer'); // For writing cleaner CSS saving the need to write vendor prefixes
 var notify = require('gulp-notify'); // For notifying your operating system after tasks have successfully run - like an 'everything is ok' alarm
-var sprite = require('css-sprite').stream; // For generating CSS image sprites
 var imagemin = require('gulp-imagemin'); // For image compression and optimisation
 var livereload = require('gulp-livereload'); // For reloading changes live in the browser
 var browserSync = require('browser-sync'); // For reloading changes live in the browser
@@ -16,7 +15,7 @@ var reload = browserSync.reload; // For reloading changes live in the browser
 var del = require('del'); // For cleaning up leftovers
 
 // Running the default gulp command from the command line runs the following tasks with a dependency on the clean task running first
-gulp.task('default', ['clean'], function() {
+gulp.task('default', function() {
     gulp.start('styles', 'scripts', 'watch');
 });
 
@@ -26,20 +25,6 @@ var paths = {
 	html: 'system/expressionengine/templates/default_site/',
 	js: 'js/'
 }
-
-// Generate sprites
-gulp.task('sprites', function () {
-  return gulp.src('img/icons/*.png')
-    .pipe(sprite({
-      name: 'sprite',
-      style: '_sprite.scss',
-      retina: true,
-      cssPath: '../img/icons/',
-      interpolation: 'linear',
-      processor: 'scss'
-    }))
-    .pipe(gulpif('*.png', gulp.dest('dist/img/icons/'), gulp.dest(paths.css)))
-});
 
 // Run concatenation and minification on JS files
 gulp.task('scripts', function() {
@@ -53,13 +38,13 @@ gulp.task('scripts', function() {
 
 // Run concatenation, compile Sass, minifcation, sourcemaps and autoprefixes
 gulp.task('styles', function () {
-	gulp.src(paths.css + '*.scss')
+	gulp.src(paths.css + 'stylesheet.scss')
   .pipe(plumber())
 	.pipe(sass({ style: 'expanded' }))
 	.pipe(autoprefixer())
 	.pipe(minifycss())
-	.pipe(gulp.dest('dist/css'))
-	.pipe(gulp.dest('_site/dist/css'))
+	.pipe(gulp.dest('dist/styles'))
+	.pipe(gulp.dest('_site/dist/styles'))
   .pipe(reload({stream: true}))
   .pipe(notify({ message: 'CSS Compiled' }));
 });
