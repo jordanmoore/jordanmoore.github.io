@@ -20,9 +20,9 @@ gulp.task('default', function() {
 });
 
 var paths = {
-	images: 'images/roadshow',
+	images: 'images/',
   css: 'css/',
-	html: 'system/expressionengine/templates/default_site/',
+	html: '*.html',
 	js: 'js/'
 }
 
@@ -38,7 +38,7 @@ gulp.task('scripts', function() {
 
 // Run concatenation, compile Sass, minifcation, sourcemaps and autoprefixes
 gulp.task('styles', function () {
-	gulp.src(paths.css + 'stylesheet.scss')
+	gulp.src(paths.css + '**/*.scss')
   .pipe(plumber())
 	.pipe(sass({ style: 'expanded' }))
 	.pipe(autoprefixer())

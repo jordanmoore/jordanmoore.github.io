@@ -5,44 +5,19 @@
 
   <body class="bd-home">
 
-    <img src="img/avatar.png" alt="" class="avatar">
-    <h1>
-      <span class="name">Jordan Moore</span>
-      <span class="role">Designer + Co-Founder</span>
-    </h1>
+    <p class="introduction-text">Jordan Moore. Designer &amp; maker.</p>
 
-    <p class="bio">
-      <span class="handle-tl"></span>
-      <span class="handle-bl"></span>
-      <span class="handle-tm"></span>
-      <span class="handle-bm"></span>
-      <span class="handle-tr"></span>
-      <span class="handle-br"></span>
-      Director of design and co-founder at <a href="https://dawsonandrews.com">Dawson &amp; Andrews</a>. Based in Belfast, Northern Ireland most of the time — the rest is spent remotely from various coffee establishments. Likes dabbling in mobile tech, AI and AR things.
-    </p>
-
-    <ul class="social">
-      <li><a href="https://twitter.com/jordanmoore" class="twitter"></a></li>
-      <li><a href="https://medium.com/@jordanmoore" class="medium"></a></li>
-      <li><a href="https://www.instagram.com/jordanmoore/" class="instagram"></a></li>
+    <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        <p>{{ post.date | date: "%B %e, %Y" }}</p>
+      </li>
+    {% endfor %}
     </ul>
 
-    <p class="emoji">🤓</p>
-    <p class="copyright">&copy; Jordan Moore 2017</p>
 
-    <script type="text/javascript">
-
-     var _gaq = _gaq || [];
-     _gaq.push(['_setAccount', 'UA-7180140-5']);
-     _gaq.push(['_trackPageview']);
-
-     (function() {
-     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-     })();
-
-    </script>
+    {% include footer.html %}
 
   </body>
 

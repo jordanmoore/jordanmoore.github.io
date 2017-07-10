@@ -3,32 +3,19 @@
   {% include head.html %}
   <body>
   <article>
-    <header {% if page.cover %}class="article-cover" style="background: url({{ page.cover }}) center center no-repeat;background-size: cover;"{% endif %}>
-      {% if page.cover %}
-      {% include header.html %}
-      {% else %}
-      {% include header-dark.html %}
-      {% endif %}
-      <div class="meta {% if page.gradient %}gradient{% endif %}">
+    <div class="container">
+      <header class="post-header">
+        {% include header.html %}
         <h1>{{ page.title }}</h1>
-        {% if page.cover %}
-        <p>{{ page.summary }}</p>
-        {% endif %}
-        <p class="date">{{ page.location }} <time>{% assign d = page.date | date: "%-d"  %}{{ page.date | date: "%B" }}, {{ page.date | date: "%Y" }}</time>
-        </p>
+        <p>{{ page.subtitle }}</p>
+      </header>
+      <div class="container narrow article-content">
+        {{ content }}
       </div>
-    </header>
-    <div class="container narrow">
-      {% if page.cover %}
-      {% else %}
-      <p>{{ page.summary }}</p>
-      {% endif %}
-      {{ content }}
     </div>
   </article>
 
-
-{% include footer.html %}
+  {% include footer.html %}
 
 </body>
 
