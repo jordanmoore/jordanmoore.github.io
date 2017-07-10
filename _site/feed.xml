@@ -6,9 +6,61 @@
 </description>
     <link>http://jordanm.co.uk/</link>
     <atom:link href="http://jordanm.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 10 Jul 2017 20:26:47 +0100</pubDate>
-    <lastBuildDate>Mon, 10 Jul 2017 20:26:47 +0100</lastBuildDate>
+    <pubDate>Mon, 10 Jul 2017 20:51:38 +0100</pubDate>
+    <lastBuildDate>Mon, 10 Jul 2017 20:51:38 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Thoughts on human vs AI narration</title>
+        <description>&lt;p&gt;My Instapaper feed looks a lot like my Steam account. I have gathered many items with the good intention of making use of them on a rainy day, but they eventually gather dust on their virtual shelves.&lt;/p&gt;
+
+&lt;p&gt;Occasionally I’ll try and blast through a set of articles that I considered at one point to have potential value to me. When I’m strapped for time I’ll try Instapaper’s “speak” feature, which is effectively a shortcut to iOS’ dictation feature. I usually end up cancelling the dictation after it reads a few paragraphs. Perhaps I forget how bad it is or maybe I’m expecting some advances in the technology since I last used it that make it sound more natural and human-like.&lt;/p&gt;
+
+&lt;p&gt;With AI being applied to more and more tasks, fields and entire industries I notice how far it falls short of key human traits such as empathy and storytelling, and empathy within storytelling for that matter. We have thousands of years of experience on the robots when it comes to communicating oral wisdom from campfires and passing ideas down through generations.&lt;/p&gt;
+
+&lt;p&gt;AI narration is improving, however, services like Narro offer bots with various dialects that have fairly accurate speech patterns and rhythm. But ultimately the narration ends up having a passive effect as AI hasn’t managed to emulate the human capability of captivating an audience to deliver a message. Robots rely on punctuation like a musical score to inform the pace at which they communicate text, though we lack punctuation for instinctive human storytelling tools like drama and the pause to allow certain ideas to simmer in the minds of the listener. This is why uninteresting speakers often fail to communicate their idea — the audience becomes disengaged from the message.&lt;/p&gt;
+
+&lt;p&gt;On a relevant note, another key human trait in storytelling is context. With a contextual understanding of the topic, humans know when to employ the storytelling tools mentioned previously. Consider this example from a recent opinion piece in the New York Times about the dangers of relying on Google rather than investing in deep understanding:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Google is good at finding information, but the brain beats it in two essential ways. Champions of Google underestimate how much the meaning of words and sentences changes with context. Consider vocabulary. Every teacher knows that a sixth grader, armed with a thesaurus, will often submit a paper studded with words used in not-quite-correct ways, like the student who looked up “meticulous,” saw it meant “very careful,” and wrote “I was meticulous when I fell off the cliff.”&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;https://www.nytimes.com/2017/05/19/opinion/sunday/you-still-need-your-brain.html&quot;&gt;From You Still Need Your Brain&lt;/a&gt; by Daniel T. Willingham&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A classic example of schoolchildren discovering a tool like a thesaurus and employing the technology incorrectly. With AI dictation we are cutting out the middleman leaving it open for potential missteps like this not necessarily with words, but the in the power of those words.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;P.S If you are looking for a startup idea, please feel free to design a subscription service with great human storytellers willing to read my Instapaper feed for me, thanks!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 04 Jun 2017 10:12:00 +0100</pubDate>
+        <link>http://jordanm.co.uk/2017/06/04/thoughts-on-human-vs-ai-narration.html</link>
+        <guid isPermaLink="true">http://jordanm.co.uk/2017/06/04/thoughts-on-human-vs-ai-narration.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>The power of awkward silence in user testing sessions</title>
+        <description>&lt;p&gt;Looking back over the vast majority of user testing sessions I have conducted, I noticed a pattern in where I felt I got the most value from each individual session.&lt;/p&gt;
+
+&lt;p&gt;I’m talking about the moment where the room is silent and there’s that awkward pause where the user is struggling and everything in your being is telling you to help them. It’s the moment in the session when they’ve been struck by genuine confusion that causes a gap in the person articulating thoughts back to you as they move through the prototype. If you cave and give into your inherent human desire to help then you risk losing highly valuable insights. You’ll know that moment is happening because you’ll feel it in your gut. You’ll see the obvious on screen where the person sees something else. You’ll see it in their eyes and you’ll want to help by telling them the answer or even ask them something like “What did you expect to happen here?”&lt;/p&gt;
+
+&lt;p&gt;Exercise restraint and give that moment time to breathe.&lt;/p&gt;
+
+&lt;p&gt;Wait for the silence to become uncomfortable and then keep waiting. If you speak first, you lose. Whatever they say first will be an insight. Even if it’s simply “I’m stuck…” or an “I don’t know what to do here…” that gives you a foundation upon which to build a line of questioning to dig deeper. Or they’ll tell you the answer and it will be gold.&lt;/p&gt;
+
+&lt;p&gt;Another thing that I’ve noticed is that after that moment in the session it’s generally the point at which the person loosens up a bit more and talks more candidly about their thought process and becomes more openly critical about your work. For me, this is what defines a useful user testing session versus a session resulting in a blank page with a lack of insights. Otherwise, we could end up going through the motions in a session where you both know the person isn’t being entirely honest because they don’t want to offend people and you end up receiving low-quality feedback, or some of the feedback simply isn’t communicated because that barrier hasn’t been removed.&lt;/p&gt;
+
+&lt;p&gt;I believe it’s still important to lay the groundwork in making them feel at ease, like reassuring them that you didn’t design this thing and that it was the team back in the office (even though you totally designed it), and the fact that you’re helping us make this thing better (which is true) — it’s in that moment of awkwardness where they struggle and you exercise restraint — that’s where the real value lies.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 26 May 2017 10:12:00 +0100</pubDate>
+        <link>http://jordanm.co.uk/2017/05/26/the-power-of-awkward-silence-during-user-testing-sessions.html</link>
+        <guid isPermaLink="true">http://jordanm.co.uk/2017/05/26/the-power-of-awkward-silence-during-user-testing-sessions.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Method UX</title>
@@ -308,91 +360,6 @@
         <guid isPermaLink="true">http://jordanm.co.uk/2014/07/10/emmets-hidden-power-features.html</guid>
         
         <category>Coding</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>View full site - the worst anti-pattern</title>
-        <description>&lt;p&gt;The “view full site” link has fostered a negative behavioural trait. When faced with problems on a dedicated mobile site users have a tendency to look for the full site link like some sort of safety net.&lt;/p&gt;
-
-&lt;p&gt;How often have you arrived on a broken link on a dedicated mobile site from a search engine and looked for the full site link in an attempt to solve the problem? It’s instinctive among web savvy people, but I have witnessed people outside of our industry perform the same behavioural trait in a similar unconscious manner.&lt;/p&gt;
-
-&lt;p&gt;The sad truth is “view full site” can also be used by web developers as a safety net if the small screen experience isn’t good enough. The pinch-to-zoom fallback is there when a poor implementation fails and lazy web developers capitalise on the user’s newfound habits of correcting such website issues by clicking this magical link.&lt;/p&gt;
-
-&lt;p&gt;This leaves responsive designers in a difficult position. We are already on the back foot when the user arrives at our lovingly tailored responsive experience — we have to convince the user that our responsive design &lt;strong&gt;is&lt;/strong&gt; the full experience after years of being misled to think they are getting half a product by dedicated mobile sites overzealous in removing content and stripping back features&lt;/p&gt;
-
-&lt;p&gt;Part of the problem is that from the average user’s perspective a dedicated mobile site may not look too different to a responsive site on the surface. If they run into problems with our design or perhaps they expected to see some content that is missing because it was simply overlooked, do they feel misled by default?&lt;/p&gt;
-
-&lt;p&gt;So how do we fix this problem? By continuing to fight the good fight with ubiquitous experiences and earning back the user’s trust over time — it’s not going to be a quick fix. Bad habits take time to eradicate. The great content swindle needs to stop.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 19 Dec 2013 07:24:00 +0000</pubDate>
-        <link>http://jordanm.co.uk/2013/12/19/view-full-site-the-worst-anti-pattern.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2013/12/19/view-full-site-the-worst-anti-pattern.html</guid>
-        
-        <category>RWD</category>
-        
-        <category>Design Patterns</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>What we can learn from game designers</title>
-        <description>&lt;p&gt;After watching Indie Game: The Movie during Channel 4’s video games night I couldn’t help but notice the parallels between game design and web design. There are elements of this that I have noticed before, but I thought I’d share some of the facets of video games that aren’t spoken about so often in relation to our industry.&lt;/p&gt;
-
-&lt;p&gt;Note that this isn’t a discussion about &lt;a href=&quot;http://en.wikipedia.org/wiki/Gamification&quot;&gt;gamification&lt;/a&gt;, rather a look at how game &lt;em&gt;design&lt;/em&gt; applies to the web.&lt;/p&gt;
-
-&lt;h3&gt;Video games are usability success stories&lt;/h3&gt;
-
-&lt;p&gt;Pong is perhaps one of the greatest examples of usability for a digital product. The original Pong arcade box featured two knobs. A knob on one side of the box for player one and one on the other side for player two. Twisting the knob on the either side moved the corresponding on screen paddle up and down.&lt;/p&gt;
-
-&lt;p&gt;The box had no instructions. The player was left to learn the behaviour and play.&lt;/p&gt;
-
-&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3743/11189802263_36d1eb76a4_o.png&quot;/&gt;&lt;figcaption&gt;The original Pong machine deserves credit for being a usability success&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
-
-&lt;p&gt;More complex games that require extra behaviours to progress (let’s use Tomb Raider as an example) produce scenarios where environmental situations encourage you to recall certain behaviours, perform the input combination on the controller to trigger the behaviour and progress. In fact most games are essentially sequences of pattern recognition.&lt;/p&gt;
-
-&lt;p&gt;One of the most enjoyable facets of gaming is when the player is in a state of flow&lt;sup id=&quot;fnref:p68879624841-1&quot;&gt;&lt;a href=&quot;#fn:p68879624841-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; and they perform the actions almost instinctively. The game then feels more rewarding to play because the player is progressing at the ideal pacing and feels more at one with the game when difficulty level and ability level are in perfect synergy.&lt;/p&gt;
-
-&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3793/11189680715_eb10fb7e66_o.jpg&quot;/&gt;&lt;figcaption&gt;In Tomb Raider the player quickly learns to apply input combinations in relation to environmental features. Some ledges require a running jump rather than a regular jump to progress to the next area&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
-
-&lt;p&gt;Repetition plays a key role in establishing these actions in the user’s mind. If you strip the surface texture graphics and reduce the polygon count in Tomb Raider, you would notice that the environments would look quite similar in that they can all be traversed using the same character behaviours but in varied and more challenging ways — the foundations remain the same from the first level through to the end.&lt;/p&gt;
-
-&lt;p&gt;There are many lessons we can learn from how games are designed and built and apply the findings to the web. Input combinations that trigger specific actions could appear in the form of &lt;strong&gt;gestures&lt;/strong&gt; or even as part of a &lt;strong&gt;visual language&lt;/strong&gt;. Think about how games teach you to subconsciously perform such actions using techniques like &lt;strong&gt;pacing&lt;/strong&gt; and &lt;strong&gt;repetition&lt;/strong&gt; to help engrain them in the user’s intuition.&lt;/p&gt;
-
-&lt;p&gt;You might think that kind of thinking could lead to a deviation from established web design patterns” - it all depends on the implementation. Imagine a first person shooter that didn’t bind the fire action to the right shoulder button on a controller or the left mouse button and instead required you to press a button like ’x’. It would be infuriating because it simply doesn’t feel right. Design patterns occur in games too, they’re just sometimes hard to spot because they almost feel like second nature — which is a very good thing.&lt;/p&gt;
-
-&lt;h3&gt;Storytelling and narratives&lt;/h3&gt;
-
-&lt;p&gt;We can learn a lot from point-and-click adventure games. Not even in regards to the nature of the input for the genre — my favourite point-and-click adventure was Grim Fandango which was labelled a point-and-click adventure even though it was controlled entirely by keyboard — I’m talking about how they are structured in terms of their narratives.&lt;/p&gt;
-
-&lt;p&gt;All good stories have a beginning, a middle and an end. Point-and-click adventures are (mostly) linear stories made up of &lt;strong&gt;sequences&lt;/strong&gt; that require item collection and puzzle solving to advance to the next sequence. The difference between the web and point-and-click adventures is that the latter wants you to struggle to advance, but not too much. In &lt;em&gt;most&lt;/em&gt; cases on the web, that’s not what we want to do, but there are certainly elements from this genre that we can learn from and apply to the web. Adventure games are trying to funnel the user down the linear story without leaving you &lt;em&gt;completely&lt;/em&gt; stuck, otherwise the user is less likely to feel compelled to finish the game. It’s the in-between bits that hold this narrative flow together that interests me the most — when the player starts to struggle the game has a job on its hands to keep the player interested and help them back into the narrative so the game can tell its story.&lt;/p&gt;
-
-&lt;p&gt;Characters respond to changes in the dynamics of the game. If you are looking for a specific item to proceed to the next sequence and you’re having a hard time doing so, some specific characters will become aware of the situation at hand and perhaps provide help or hints when spoken to.&lt;/p&gt;
-
-&lt;p&gt;&lt;figure&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7290/11189654275_7470acb045_o.png&quot;/&gt;&lt;figcaption&gt;In Grim Fandango speaking to characters you have already met can often provide clues as to how to proceed to the next sequence&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
-
-&lt;p&gt;This sense of situational awareness can apply to the web too. As a user progresses through our own narrative, situational awareness can help the user progress to the next scene. Imagine a user adds an item to their cart in an e-commerce website — the dynamics of the situation have changed from when the user began on their journey and we can help them through to the end of the story. Perhaps the user digresses from the shop after deciding to read a rather interesting article on the store’s blog about how the store has been donating a portion of profits to charity. What if the blog post had a helpful block at the end to inform the user of the change in dynamics? Something to the effect of: “And you can help us donate too by buying that t-shirt in your cart. Would you like to do that now?”&lt;/p&gt;
-
-&lt;p&gt;Games speak to the players in plain English. No technical jargon like “Your session has expired” — something informative, clear and to the point, but not abrupt and not too long so that it wastes time either. Narrative content is hard.&lt;/p&gt;
-
-&lt;p&gt;We really should listen to video game designers and developers a lot more. I would love to see people like &lt;a href=&quot;http://www.raphkoster.com&quot;&gt;Raph Koster&lt;/a&gt; speak at web design conferences and talk about flow theory, establishing core gameplay and environmental mechanics and the similar challenges we face in both industries. When it comes to telling compelling stories and teaching users to perform instinctual reactions to scenarios, the games industry has been doing this for a long time and have left a lot of good examples for us to learn from.&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-&lt;hr&gt;&lt;ol&gt;&lt;li id=&quot;fn:p68879624841-1&quot;&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.ccs.neu.edu/home/lieber/courses/cs4500/sp09/resources/p31-chen-flow-in-games.pdf%C2%A0&quot;&gt;http://www.ccs.neu.edu/home/lieber/courses/cs4500/sp09/resources/p31-chen-flow-in-games.pdf &lt;/a&gt;&lt;a href=&quot;#fnref:p68879624841-1&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;/ol&gt;&lt;/div&gt;
-</description>
-        <pubDate>Wed, 04 Dec 2013 01:04:00 +0000</pubDate>
-        <link>http://jordanm.co.uk/2013/12/04/what-we-can-learn-from-game-designers.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2013/12/04/what-we-can-learn-from-game-designers.html</guid>
-        
-        <category>Design Patterns</category>
-        
-        <category>Game Design</category>
         
         
       </item>
