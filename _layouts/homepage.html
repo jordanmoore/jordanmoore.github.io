@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html class="bd-home">
+{% include head.html %}
 
-  {% include homehead.html %}
+<body class="bd-home">
 
-  <body class="bd-home">
+  <p class="introduction-text">Jordan Moore. Designer &amp; maker.</p>
 
-    <p class="introduction-text">Jordan Moore. Designer &amp; maker.</p>
-
-    <ul class="post-list">
+  <ul class="post-list">
     {% for post in site.posts %}
-      <li>
-        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-        <p>{{ post.date | date: "%B %e, %Y" }}</p>
-      </li>
+    <li>
+      <h1><a href="{{ post.url }}" accesskey="{{ forloop.index }}">{{ post.title }}</a></h1>
+      <p>{{ post.date | date: "%B %e, %Y" }}</p>
+    </li>
     {% endfor %}
-    </ul>
+  </ul>
 
+  {% include footer.html %}
 
-    {% include footer.html %}
-
-  </body>
+</body>
 
 </html>

@@ -1,14 +1,14 @@
 ---
-# Front matter comment to ensure Jekyll properly reads file.
----
-
-// Imports
+# Hey Jekyll.
+--- 
+@import  "typographic-elements";
 @import "components/post-list";
 @import "components/post-header";
 @import "components/article-content";
 @import "components/main-nav";
 @import "components/introduction-text";
 @import "components/footer";
+@import "components/container";
 
 * {
   box-sizing: border-box;
@@ -19,13 +19,14 @@
 }
 
 body {
-  font-family: Merriweather, serif;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.7;
   margin: 0;
   padding: 1.6em 1.6em 1em;
   color: #111;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: greyscale;
+
   &.bd-home {
     text-align: center;
   }
@@ -42,27 +43,4 @@ a {
   &:hover {
     text-decoration: none;
   }
-}
-
-.container {
-  max-width: 58.5em;
-  margin: 0 auto;
-  &.narrow {
-    max-width: 698px;
-  }
-}
-
-hr {
-  border: none;
-  border-bottom: 1px solid fade-out(#979797, 0.8);
-}
-
-blockquote {
-  font-style: italic;
-}
-
-figcaption {
-  opacity: 0.6;
-  text-transform: uppercase;
-  font-size: 0.88em;
 }

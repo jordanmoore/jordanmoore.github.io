@@ -1,0 +1,8 @@
+.container {
+  max-width: 58.5em;
+  margin: 0 auto;
+
+  &.narrow {
+    max-width: 698px;
+  }
+}
