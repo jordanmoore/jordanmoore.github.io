@@ -1,6 +1,6 @@
 ---
 # Hey Jekyll.
---- 
+---
 @import  "typographic-elements";
 @import "components/post-list";
 @import "components/post-header";
@@ -14,14 +14,11 @@
   box-sizing: border-box;
 }
 
-::selection {
-  background-color: fade-out(yellow,0.7);
-}
-
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: Georgia, serif;
   line-height: 1.7;
   margin: 0;
+  font-size: 1.15em;
   padding: 1.6em 1.6em 1em;
   color: #111;
   -webkit-font-smoothing: antialiased;

@@ -7,15 +7,23 @@
    > h5,
    > h6,
    > h1 {
-    font-size: 1.25em;
+    font-size: 1.5em;
     color: #000;
-    font-weight: 700;
+    font-weight: normal;
   }
 
   > p {
     margin-bottom: 1.8em;
     @media screen and (max-width:746px) {
       text-align: justify;
+    }
+  }
+
+  > hr {
+    &:before {
+      content: '• • •';
+      display: block;
+      text-align: center;
     }
   }
 
