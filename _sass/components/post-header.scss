@@ -1,14 +1,105 @@
+.bd-post {
+  background: #181818 url(../img/bg.png) center 0 no-repeat;
+  background-size: 389px 306px;
+}
+
 .post-header {
+  text-align: center;
+  border-bottom: 1px solid fade-out(#979797,0.8);
+  margin-bottom: 6.18em;
+  padding-bottom: 2em;
   > h1 {
-    @extend .introduction-text;
     margin-bottom: 0;
-    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.13em;
+    letter-spacing: 2.25px;
+    line-height: 1.44em;
+    max-width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+    &.phase {
+      &-waxing-cresent, &-waning-cresent {
+        &:before {
+          content: "";
+          background: url(../img/phase/waxing-cresent.png) center center no-repeat;
+          background-size: 28px;
+          width: 52px;
+          height: 52px;
+          display: block;
+          margin: 0 auto 1em;
+        }
+      }
+      &-waning-cresent {
+        &:before {
+          background: url(../img/phase/waning-cresent.png) center center no-repeat;
+          background-size: 28px;
+        }
+      }
+      &-waxing-gibbous, &-waning-gibbous {
+        &:before {
+          content: "";
+          background: url(../img/phase/waxing-gibbous.png) center center no-repeat;
+          background-size: 35px;
+          width: 52px;
+          height: 52px;
+          display: block;
+          margin: 0 auto 1em;
+        }
+      }
+      &-waning-gibbous {
+        &:before {
+          background: url(../img/phase/waning-gibbous.png) center center no-repeat;
+          background-size: 35px;
+        }
+      }
+      &-first-quarter, &-last-quarter {
+        &:before {
+          content: "";
+          background: url(../img/phase/first-quarter.png) center center no-repeat;
+          background-size: 30px;
+          width: 52px;
+          height: 52px;
+          display: block;
+          margin: 0 auto 1em;
+        }
+      }
+      &-last-quarter {
+        &:before {
+          background: url(../img/phase/last-quarter.png) center center no-repeat;
+          background-size: 30px;
+        }
+      }
+      &-new {
+        &:before {
+          content: "";
+          background: url(../img/phase/new.png) center center no-repeat;
+          background-size: 38px;
+          width: 52px;
+          height: 52px;
+          display: block;
+          margin: 0 auto 1em;
+        }
+      }
+      &-full {
+        &:before {
+          content: "";
+          background: url(../img/phase/full.png) center center no-repeat;
+          background-size: 52px;
+          width: 52px;
+          height: 52px;
+          display: block;
+          margin: 0 auto 1em;
+        }
+      }
+    }
   }
 
   > p {
-    margin-top: 0.6em;
     opacity: 0.5;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-style: italic;
+    font-size: 0.88em;
     margin-bottom: 1.6em;
   }
 }

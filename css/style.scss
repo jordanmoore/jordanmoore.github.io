@@ -1,7 +1,7 @@
 ---
 # Hey Jekyll.
 ---
-@import  "typographic-elements";
+@import "typographic-elements";
 @import "components/post-list";
 @import "components/post-header";
 @import "components/article-content";
@@ -15,12 +15,12 @@
 }
 
 body {
-  font-family: Georgia, serif;
-  line-height: 1.7;
+  font-family: "Libre Baskerville", serif;
+  background-color: #181818;
+  line-height: 1.9;
   margin: 0;
-  font-size: 1.15em;
   padding: 1.6em 1.6em 1em;
-  color: #111;
+  color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: greyscale;
 
@@ -35,7 +35,7 @@ img {
 }
 
 a {
-  color: #2756ED;
+  color: #fff;
 
   &:hover {
     text-decoration: none;

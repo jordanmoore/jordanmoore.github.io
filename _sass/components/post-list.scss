@@ -1,18 +1,46 @@
+.bd-home {
+  > .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: left;
+    > .post-header {
+      text-align: left;
+      padding: 1em;
+      > h1 {
+        text-align: left;
+        margin: 0;
+        + p {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
 .post-list {
   list-style-type: none;
-  margin-bottom: 6.18em;
-  margin-left: auto;
-  padding-left: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 1em;
   > li {
-    margin-bottom: 2.6em;
+    margin: 0;
+    padding-bottom: 2.6em;
+    max-width: 260px;
 
     > h1 {
-      font-size: 1.1em;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      text-transform: uppercase;
+      font-size: 1em;
+      line-height: 1.4;
       margin-bottom: 0.1em;
+      margin-top: 0;
+      > a {
+        text-decoration: none;
+      }
     }
 
     > P {
+      margin: 0;
       margin-top: 0;
       opacity: 0.6;
       font-size: 0.88em;

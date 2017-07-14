@@ -3,9 +3,7 @@ layout: post
 title: What I learned transitioning from agency to freelance
 date: '2015-10-18T09:12:00+00:00'
 summary: It has been just over six months since I left agency life behind and started a new chapter in my career as a freelance designer.  Now is the perfect time to stop and reflect on what the last six months have been like and share my journey.
-cover: '/img/freelance.jpeg'
-location: <strong>Bangor</strong>, Northern Ireland —
-gradient: yes
+phase: waxing-cresent
 ---
 
 Before I made the leap I read blog articles of other freelancers who did the same. People like [Stuart Robson](http://www.alwaystwisted.com/), [Chris Allwood](http://cdja.co.uk/), people who have made it work. I also called a **lot** of people - [Chris Armstrong](http://chris-armstrong.com/), [Chris Murphy](http://www.christophermurphy.org/), [Andrew Fulton](https://theturf.io/) - without their advice I probably would have talked myself out of it because before you actually do it your mind finds plenty of reasons not to do it.

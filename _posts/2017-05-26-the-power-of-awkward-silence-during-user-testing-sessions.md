@@ -2,6 +2,7 @@
 layout: post
 title: The power of awkward silence in user testing sessions
 date: '2017-05-26T09:12:00+00:00'
+phase: new
 ---
 
 Looking back over the vast majority of user testing sessions I have conducted, I noticed a pattern in where I felt I got the most value from each individual session.

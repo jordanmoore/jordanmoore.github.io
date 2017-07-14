@@ -3,6 +3,7 @@ layout: post
 title: Thoughts on human vs AI narration
 date: '2017-06-04T09:12:00+00:00'
 summary: It has been just over six months since I left agency life behind and started a new chapter in my career as a freelance designer.  Now is the perfect time to stop and reflect on what the last six months have been like and share my journey.
+phase: waxing-gibbous
 ---
 
 My Instapaper feed looks a lot like my Steam account. I have gathered many items with the good intention of making use of them on a rainy day, but they eventually gather dust on their virtual shelves.
