@@ -1,53 +1,16 @@
-.bd-home {
-  > .container {
-    margin: 0 auto;
-    > .post-header {
-      text-align: center;
-      padding: 1em;
-      > h1 {
-        margin-bottom: 0;
-        &:before {
-          content: "";
-          background: url(../img/phase/eclipse.png) center center no-repeat;
-          background-size: 72px 65px;
-          width: 72px;
-          height: 65px;
-          display: block;
-          margin: 0 auto 1em;
-        }
-        + p {
-          margin-top: 0;
-        }
-      }
-    }
-  }
-}
 .post-list {
-  list-style-type: none;
-  max-width: 260px;
-  margin: 0 auto;
-  padding: 1em;
+  margin: 0;
+  padding: 0;
   > li {
-    margin: 0;
-    padding-bottom: 2.6em;
-
-    > h1 {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-      text-transform: uppercase;
-      font-size: 1em;
-      line-height: 1.4;
-      margin-bottom: 0.1em;
-      margin-top: 0;
-      > a {
-        text-decoration: none;
-      }
-    }
-
-    > P {
-      margin: 0;
+    list-style-type: none;
+    margin-bottom: 2.618em;
+  }
+  > li > h1 {
+    font-size: 1.2em;
+    margin-bottom: 0;
+    + p {
       margin-top: 0;
       opacity: 0.6;
-      font-size: 0.88em;
     }
   }
 }

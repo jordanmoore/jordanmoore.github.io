@@ -20,8 +20,14 @@ figure {
 figcaption {
   opacity: 0.6;
   text-transform: uppercase;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 0.88em;
+  font-size: 0.84em;
+}
+
+pre {
+  font-size: 1.1em;
+  background: black;
+  padding: 1em;
+  color: white;
 }
 
 pre {

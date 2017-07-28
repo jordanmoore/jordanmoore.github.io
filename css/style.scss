@@ -1,6 +1,6 @@
----
-# Hey Jekyll.
----
+--- 
+# Hey Jekyll. 
+--- 
 @import "typographic-elements";
 @import "components/post-list";
 @import "components/post-header";
@@ -9,24 +9,17 @@
 @import "components/introduction-text";
 @import "components/footer";
 @import "components/container";
-
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Libre Baskerville', serif;
-  background-color: #181818;
-  line-height: 1.9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.5;
   margin: 0;
   padding: 1.6em 1.6em 1em;
-  color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: greyscale;
-
-  &.bd-home {
-    text-align: center;
-  }
 }
 
 img {
@@ -35,8 +28,6 @@ img {
 }
 
 a {
-  color: #fff;
-
   &:hover {
     text-decoration: none;
   }

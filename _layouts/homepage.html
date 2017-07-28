@@ -4,21 +4,23 @@
 
 <body class="bd-home">
 
-<div class="container">
-  <div class="post-header">
-    <h1>Jordan Moore</h1>
-    <p>Designer &amp; maker</p>
+  <div class="container">
+    <div class="post-header">
+      <h1>Jordan Moore</h1>
+      <p>Designer &amp; maker</p>
+    </div>
   </div>
-</div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-    <li>
-      <h1><a href="{{ post.url }}" accesskey="{{ forloop.index }}">{{ post.title }}</a></h1>
-      <p>{{ post.date | date: "%B %e, %Y" }}</p>
-    </li>
-    {% endfor %}
-  </ul>
+  <div class="container">
+    <ul class="post-list">
+      {% for post in site.posts %}
+      <li>
+        <h1><a href="{{ post.url }}" accesskey="{{ forloop.index }}">{{ post.title }}</a></h1>
+        <p>{{ post.date | date: "%B %e, %Y" }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 
   {% include footer.html %}
 
