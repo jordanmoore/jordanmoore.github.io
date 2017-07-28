@@ -1,4 +1,4 @@
-.post-header {
+.header {
   padding-bottom: 2em;
   >h1 {
     margin-bottom: 0;
@@ -9,7 +9,7 @@
     opacity: 0.5;
     font-size: 0.88em;
     margin-bottom: 1.6em;
-    .bd-home & {
+    .homepage & {
       margin-top: 0;
     }
   }

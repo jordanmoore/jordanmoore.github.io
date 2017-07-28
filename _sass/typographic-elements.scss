@@ -3,6 +3,10 @@ blockquote {
   margin-bottom: 2.6em;
   border-left: 1px solid fade-out(#979797, 0.8);
   margin-left: 0;
+  @media screen and (max-width: 459px) {
+    padding-left: 1em;
+    margin-right: 0.6em;
+  }
   padding-left: 2.6em;
   opacity: 0.6;
 }
@@ -25,7 +29,7 @@ figcaption {
 
 pre {
   font-size: 1.1em;
-  background: black;
+  background: darkslategrey;
   padding: 1em;
   color: white;
 }
