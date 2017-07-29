@@ -31,7 +31,11 @@ img {
 }
 
 a {
+  color: black;
   &:hover {
     text-decoration: none;
+  }
+  &:visited {
+    color: #888;
   }
 }

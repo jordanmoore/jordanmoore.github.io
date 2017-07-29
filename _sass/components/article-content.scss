@@ -19,12 +19,16 @@
   }
   >hr {
     &:before {
-      content: '• • •';
+      content: '';
       display: block;
       text-align: center;
+      border-bottom: 1px solid #000;
+      width: 41px;
+      margin: 0 auto 1.6em;
     }
   }
   >p>img+em {
+    // TODO just extend figcaption?
     text-transform: uppercase;
     opacity: 0.6;
     font-style: normal;
