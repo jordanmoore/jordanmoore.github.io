@@ -13,6 +13,9 @@
   }
   >p {
     margin-bottom: 1.8em;
+    &:first-child {
+        font-size: 1.26em;
+    }
     @media screen and (max-width: 746px) {
       text-align: justify;
     }
