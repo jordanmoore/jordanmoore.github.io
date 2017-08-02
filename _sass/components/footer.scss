@@ -1,5 +1,8 @@
 footer {
   font-size: 0.88em;
+  p {
+    opacity: 0.5;
+  }
   hr {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     max-width: 41px;
