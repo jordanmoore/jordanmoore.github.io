@@ -1,3 +1,12 @@
+.homepage .header {
+  padding-bottom: 2em;
+  &:after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    width: 41px;
+  }
+}
 .header {
   >h1 {
     margin-bottom: 0;
@@ -10,7 +19,7 @@
   >p {
     opacity: 0.5;
     font-size: 0.88em;
-    margin-bottom: 4.236em;
+     margin-bottom: 4.236em;
     margin-top: 0.4236em;
     .homepage & {
       margin-top: 0;
