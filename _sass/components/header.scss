@@ -1,4 +1,8 @@
 .homepage .header {
+  padding-bottom: 2em;
+  >p {
+    margin-bottom:1.6em;
+  }
   &:after {
     content: '';
     display: block;
@@ -18,10 +22,7 @@
   >p {
     opacity: 0.5;
     font-size: 0.88em;
-     margin-bottom: 4.236em;
+    margin-bottom: 4.236em;
     margin-top: 0.4236em;
-    .homepage & {
-      margin-top: 0;
-    }
   }
 }
