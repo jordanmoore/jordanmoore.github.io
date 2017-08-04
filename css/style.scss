@@ -46,9 +46,13 @@ a:hover {
   h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     letter-spacing: 2px;
-    // font-weight: bold;
     font-size: 0.9em;
     margin-top: 2.6em;
+  }
+  @media screen and (max-width: 568px) {
+    p {
+      text-align: justify;
+    }
   }
 }
 
