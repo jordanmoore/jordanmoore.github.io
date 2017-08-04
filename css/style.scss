@@ -1,28 +1,16 @@
 --- 
 # Hey Jekyll. 
 --- 
-@import "typographic-elements";
-@import "components/header";
-@import "components/post-list";
-@import "components/article-content";
-@import "components/main-nav";
-@import "components/introduction-text";
-@import "components/footer";
-@import "components/container";
 * {
   box-sizing: border-box;
 }
 
 body {
-  @media screen and (max-width: 635px) {
-    font-size: 14px;
-  }
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.5;
   margin: 0;
   padding: 1.6em 1.6em 1em;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: greyscale;
 }
 
 img {
@@ -30,9 +18,105 @@ img {
   height: auto;
 }
 
-a {
+a:hover {
   text-decoration: none;
-  &:hover {
-    text-decoration: underline;
+}
+
+.container {
+  max-width: 42em;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 6.18em;
+  h1 {
+    font-weight: normal;
+    font-size: 1em;
+    margin-bottom: 0;
   }
+  p {
+    margin-top: 0;
+  }
+}
+
+.article-content {
+  h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    // font-weight: bold;
+    font-size: 0.9em;
+    margin-top: 2.6em;
+  }
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+hr {
+  margin: 2.6em 0;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+blockquote {
+  font-style: italic;
+  opacity: 0.6;
+  margin-top: 2.6em;
+  margin-bottom: 2.6em;
+}
+
+figcaption, img em {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  letter-spacing: 0.5px;
+  opacity: 0.6;
+  display: block;
+  margin-bottom: 2.6em;
+}
+
+.dim {
+  opacity: 0.4;
+}
+
+.post-list {
+  margin: 0;
+  padding: 0;
+    h1 {
+      font-size: 1em;
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+    p {
+      opacity: 0.4;
+      margin-top: 0;
+      font-size: 0.88em;
+    }
+}
+
+.main-nav {
+  a {
+    font-size: 1.6em;
+    padding: 1em;
+    color: initial;
+    opacity: 0.4;
+    text-decoration: none;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.post-list {
+  h1 {
+    font-weight: normal;
+  }
+}
+
+article {
+  padding-top: 6.4em;
+}
+
+footer {
+  padding: 4em 0;
 }
