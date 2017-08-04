@@ -30,20 +30,20 @@ a:hover {
   margin: 0 auto;
 }
 
-.header {
+h1 {
+  font-weight: normal;
+  font-size: 1em;
+  margin-bottom: 0;
+}
+header {
   margin-bottom: 6.18em;
-  h1 {
-    font-weight: normal;
-    font-size: 1em;
-    margin-bottom: 0;
-  }
   p {
     margin-top: 0;
   }
 }
 
-.article-content {
-  h1, h2, h3, h4, h5, h6 {
+.content {
+  h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 0.9em;
@@ -105,7 +105,7 @@ figcaption, img em {
   }
 }
 
-.main-nav {
+nav {
   a {
     font-size: 1.6em;
     padding: 1em;
