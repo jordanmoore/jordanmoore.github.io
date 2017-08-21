@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.png">
+  <title>👋 Wipe Screen</title>
+  <style media="screen">
+    html {
+      height: 100%;
+    }
+
+    body {
+      height: 100%;
+      background-color: black;
+      color: white;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+     :-webkit-full-screen {
+      background: black;
+    }
+
+     :-moz-full-screen {
+      background: black;
+    }
+
+     :-ms-fullscreen {
+      background: black;
+    }
+
+     :full-screen {
+      /*pre-spec */
+      background: black;
+    }
+
+     :fullscreen {
+      /* spec */
+      background: black;
+    }
+
+     :-webkit-full-screen button {
+      display: none;
+    }
+
+     :-moz-full-screen button {
+      display: none;
+    }
+
+     :-ms-fullscreen button {
+      display: none;
+    }
+
+     :full-screen button {
+      display: none;
+    }
+
+     :fullscreen button {
+      display: none;
+    }
+
+    button {
+      -webkit-appearance: none;
+      border: none;
+      background: none;
+      color: white;
+      line-height: 1.5;
+      font-size: 16px;
+    }
+
+    button span {
+      display: block;
+      font-size: 2em;
+      transform: rotate(-25deg)
+    }
+
+    button small {
+      display: block;
+      opacity: 0.6;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+
+    button:hover span {
+      animation: wiggle 0.4s infinite;
+    }
+
+    @keyframes wiggle {
+      50% {
+        transform: rotate(45deg) translate(-1em, -1em);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <button onclick="launchFullscreen(document.documentElement);"><span>👋</span> Start wiping <small>(press Esc to exit)</small></button>
+
+  <script>
+    function launchFullscreen(element) {
+      if (element.requestFullscreen) {
+        element.requestFullscreen();
+      } else if (element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();
+      } else if (element.webkitRequestFullscreen) {
+        element.webkitRequestFullscreen();
+      } else if (element.msRequestFullscreen) {
+        element.msRequestFullscreen();
+      }
+    }
+  </script>
+</body>
+
+</html>
