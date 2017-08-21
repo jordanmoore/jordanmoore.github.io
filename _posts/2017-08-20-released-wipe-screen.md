@@ -4,7 +4,7 @@ title: Released&#58; Wipe Screen
 date: '2017-08-20T09:12:00+00:00'
 ---
 
-Wipe Screen attempts to solve the following problems:
+[Wipe Screen](http://jordanm.co.uk) attempts to solve the following problems:
 
 - Cleaning a dirty display
 - Keeping the device switched on without having to log out and log back in again
