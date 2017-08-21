@@ -6,9 +6,32 @@
 </description>
     <link>http://jordanm.co.uk/</link>
     <atom:link href="http://jordanm.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 20 Aug 2017 22:49:35 -0400</pubDate>
-    <lastBuildDate>Sun, 20 Aug 2017 22:49:35 -0400</lastBuildDate>
+    <pubDate>Sun, 20 Aug 2017 23:06:36 -0400</pubDate>
+    <lastBuildDate>Sun, 20 Aug 2017 23:06:36 -0400</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Released&amp;#58; Wipe Screen</title>
+        <description>&lt;p&gt;Wipe Screen attempts to solve the following problems:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Cleaning a dirty display&lt;/li&gt;
+  &lt;li&gt;Keeping the device switched on without having to log out and log back in again&lt;/li&gt;
+  &lt;li&gt;Keeping you in flow&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It’s a fullscreen black screen app designed to show up dirt. Grab a screen wipe and wipe your laptop screen or your touch device.&lt;/p&gt;
+
+&lt;p&gt;Touch support is patchy for now as the fullscreen API isn’t reliable on smaller displays. Rotating your iOS device will have the same effect for the meantime.&lt;/p&gt;
+
+&lt;p&gt;Next steps: turn into a bookmarklet rather than a bookmark.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 20 Aug 2017 05:12:00 -0400</pubDate>
+        <link>http://jordanm.co.uk/2017/08/20/released-wipe-screen.html</link>
+        <guid isPermaLink="true">http://jordanm.co.uk/2017/08/20/released-wipe-screen.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Thoughts on human vs AI narration</title>
@@ -297,69 +320,6 @@
         <category>RWD</category>
         
         <category>Typography</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Emmet's hidden power features</title>
-        <description>&lt;p&gt;&lt;a href=&quot;http://emmet.io/&quot;&gt;Emmet&lt;/a&gt; (formerly known as Zen Coding) is a plugin for text editors helping you create CSS and HTML faster by using abbreviations to write common values saving ridiculous amounts of time along the way.&lt;/p&gt;
-
-&lt;p&gt;There are heaps of really useful features alongside Emmet&amp;#8217;s primary text-expanding function. Here are a few of the hidden gems that I frequently use when coding&lt;sup id=&quot;fnref:p91335536701-1&quot;&gt;&lt;a href=&quot;#fn:p91335536701-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;h2&gt;Inline Calculation&lt;/h2&gt;
-
-&lt;p&gt;Emmet has a built-in calculator which allows you to solve equations directly in your code. I use this daily to solve EM values in CSS, particularly for nested EM values simply by pressing&lt;sup id=&quot;fnref:p91335536701-2&quot;&gt;&lt;a href=&quot;#fn:p91335536701-2&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;kbd&gt;Cmd&lt;/kbd&gt; &lt;kbd&gt;Shift&lt;/kbd&gt; &lt;kbd&gt;Y&lt;/kbd&gt; beside an equation like: 24/16 (desired pixel value/base pixel value).&lt;/p&gt;
-
-&lt;p&gt;You can also chain this with abbreviations, so typing: &lt;code&gt;mb24/16&lt;/code&gt; and pressing &lt;kbd&gt;Cmd&lt;/kbd&gt; &lt;kbd&gt;Shift&lt;/kbd&gt; &lt;kbd&gt;Y&lt;/kbd&gt; then &lt;kbd&gt;tab&lt;/kbd&gt; would output: &lt;code&gt;margin-bottom: 1.5em&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2&gt;Jump to Matching Pair&lt;/h2&gt;
-
-&lt;p&gt;Sometimes when coding HTML I might find a closing tag and it&amp;#8217;s not always quick and easy to trace back to where the opening tag exists. Pressing &lt;kbd&gt;Ctrl&lt;/kbd&gt; &lt;kbd&gt;Shift&lt;/kbd&gt; &lt;kbd&gt;T&lt;/kbd&gt; when the cursor is in the closing (or opening) tag jumps to the opening (or closing) tag pair.&lt;/p&gt;
-
-&lt;h2&gt;Code comments&lt;/h2&gt;
-
-&lt;p&gt;To prevent running into the situation in the previous tip, I recommend placing comments beside your closing tags. But writing the class name of the element for a second time and wrapping it in comments can take up time, and it&amp;#8217;s extra effort that won&amp;#8217;t be beneficial until you run into scenarios where you need to revisit that code, so it&amp;#8217;s often forgotten about or left out completely.&lt;/p&gt;
-
-&lt;p&gt;Thankfully Emmet makes it easier to write comments beneath closing tags by adding a tiny snippet to the end of an abbreviation. Typing: &lt;code&gt;.container&amp;gt;ul&amp;gt;li*5&amp;gt;a|c&lt;/code&gt; expands to:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&quot;container&quot;&amp;gt;
-    &amp;lt;ul&amp;gt;
-        &amp;lt;li&amp;gt;&amp;lt;a href=&quot;&quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-        &amp;lt;li&amp;gt;&amp;lt;a href=&quot;&quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-        &amp;lt;li&amp;gt;&amp;lt;a href=&quot;&quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-        &amp;lt;li&amp;gt;&amp;lt;a href=&quot;&quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-        &amp;lt;li&amp;gt;&amp;lt;a href=&quot;&quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-    &amp;lt;/ul&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;!-- /.container --&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;So writing comments where elements close is as easy as writing &lt;code&gt;|c&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2&gt;Convert image to Data URI&lt;/h2&gt;
-
-&lt;p&gt;One of the most underused features of Emmet is it&amp;#8217;s built-in ability to convert images to data:URI schemes. Using a data:URI instead of linking to an external image saves an extra HTTP request which ultimately improves the performance of your site by reducing latency.&lt;/p&gt;
-
-&lt;p&gt;To convert an image to a data:URI, place your cursor in the image tag and press &lt;kbd&gt;Ctrl&lt;/kbd&gt; &lt;kbd&gt;Shift&lt;/kbd&gt; &lt;kbd&gt;D&lt;/kbd&gt;.&lt;/p&gt;
-
-&lt;hr&gt;&lt;p&gt;Emmet can be as powerful as you want it to be. It&amp;#8217;s worth using for its text-expansion capabilities alone saving huge amounts of coding time, but beyond that lies a very powerful suite of development tools.&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-&lt;hr&gt;&lt;ol&gt;&lt;li id=&quot;fn:p91335536701-1&quot;&gt;
-&lt;p&gt;This article assumes you are familiar with Emmet. If you haven&amp;#8217;t tried it out yet &lt;a href=&quot;http://emmet.io/&quot;&gt;you absolutely must&lt;/a&gt;. &lt;a href=&quot;#fnref:p91335536701-1&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li id=&quot;fn:p91335536701-2&quot;&gt;
-&lt;p&gt;The keyboard shortcuts shown here work for my Mac installation of Sublime Text and Emmet. From what I can tell they may differ between installations, Windows installs will obviously have different shortcuts too. Bring up the Go To Anything menu and start typing the name of the command you wish to use to see the shortcut key. &lt;a href=&quot;#fnref:p91335536701-2&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;/ol&gt;&lt;/div&gt;
-</description>
-        <pubDate>Thu, 10 Jul 2014 03:22:00 -0400</pubDate>
-        <link>http://jordanm.co.uk/2014/07/10/emmets-hidden-power-features.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2014/07/10/emmets-hidden-power-features.html</guid>
-        
-        <category>Coding</category>
         
         
       </item>

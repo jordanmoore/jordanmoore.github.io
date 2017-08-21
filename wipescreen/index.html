@@ -93,6 +93,25 @@
       animation: wiggle 0.4s infinite;
     }
 
+    button small.touch {
+      display: none;
+    }
+
+    @media all and (orientation: landscape) and (pointer: coarse) {
+      button {
+        display: none;
+      }
+    }
+
+    @media all and (orientation: portrait) and (pointer: coarse) {
+      button small.laptop {
+        display: none;
+      }
+      button small.touch {
+        display: block;
+      }
+    }
+
     @keyframes wiggle {
       50% {
         transform: rotate(45deg) translate(-1em, -1em);
@@ -102,7 +121,7 @@
 </head>
 
 <body>
-  <button onclick="launchFullscreen(document.documentElement);"><span>👋</span> Start wiping <small>(press Esc to exit)</small></button>
+  <button onclick="launchFullscreen(document.documentElement);"><span>👋</span> Start wiping <small class="laptop">(press Esc to exit)</small><small class="touch">Rotate your device</small></button>
 
   <script>
     function launchFullscreen(element) {
