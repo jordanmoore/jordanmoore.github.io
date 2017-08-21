@@ -14,4 +14,7 @@ It's a fullscreen black screen app designed to show up dirt. Grab a screen wipe 
 
 Touch support is patchy for now as the fullscreen API isn't reliable on smaller displays. Rotating your iOS device will have the same effect for the meantime.
 
-Next steps: turn into a bookmarklet rather than a bookmark.
+Next steps:
+
+- Turn into a bookmarklet rather than a bookmark
+- Offer white alternative colour for stubborn stains
