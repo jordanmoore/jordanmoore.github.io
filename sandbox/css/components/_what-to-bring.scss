@@ -1,0 +1,12 @@
+.what-to-bring {
+  @extend .marginBottom-large;
+  p {
+    display: inline-block;
+    max-width: 250px;
+    vertical-align: middle;
+  }
+  .or-circle {
+    @extend .marginRight-medium;
+    @extend .marginLeft-medium;
+  }
+}

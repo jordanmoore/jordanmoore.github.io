@@ -1,0 +1,15 @@
+.heading-set {
+  >h1 {
+    color: $tru-blue;
+    font-size: 2em;
+    line-height: 1.1;
+    +p {
+      font-size: 18px;
+    }
+  }
+  >hr {
+    border: none;
+    border-bottom: 1px solid #F3F3F3;
+    @extend .marginBottom-large;
+  }
+}

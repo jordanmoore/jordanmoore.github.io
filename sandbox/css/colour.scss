@@ -1,0 +1,56 @@
+$tru-blue: #004ebc;
+$secondary-blue: #009ddb;
+$dusty-orange: #ea7125;
+$grey: #666;
+$light-grey: #d2d2d2;
+
+.color-tru-blue,
+.tru-blue {
+  color: $tru-blue;
+}
+
+.color-secondary-blue,
+.secondary-blue {
+  color: $secondary-blue;
+}
+
+.color-dusty-orange,
+.dusty-orange {
+  color: $dusty-orange;
+}
+
+.color-grey,
+.grey {
+  color: $grey;
+}
+
+.color-light-grey,
+.light-grey {
+  color: $light-grey;
+}
+
+.background {
+  &-tru-blue {
+    background-color: $tru-blue;
+  }
+
+  &-secondary-blue {
+    background-color: $secondary-blue;
+  }
+
+  &-dusty-orange {
+    background-color: $dusty-orange;
+  }
+
+  &-grey {
+    background-color: $grey;
+  }
+
+  &-light-grey {
+    background-color: $light-grey;
+  }
+
+  &-utility {
+    background: #f3f3f3;
+  }
+}

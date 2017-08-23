@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="225px" viewBox="0 0 5 225" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Returns" transform="translate(-681.000000, -867.000000)" fill="#D7D7D7">
+            <g id="Group" transform="translate(681.000000, 867.000000)">
+                <circle id="Oval" cx="2.5" cy="2.5" r="2.5"></circle>
+                <circle id="Oval" cx="2.5" cy="22.5" r="2.5"></circle>
+                <circle id="Oval" cx="2.5" cy="42.5" r="2.5"></circle>
+                <circle id="Oval" cx="2.5" cy="62.5" r="2.5"></circle>
+                <circle id="Oval" cx="2.5" cy="82.5" r="2.5"></circle>
+                <circle id="Oval" cx="2.5" cy="102.5" r="2.5"></circle>
+                <circle id="Oval" cx="2.5" cy="122.5" r="2.5"></circle>
+                <circle id="Oval" cx="2.5" cy="142.5" r="2.5"></circle>
+                <circle id="Oval" cx="2.5" cy="162.5" r="2.5"></circle>
+                <circle id="Oval" cx="2.5" cy="182.5" r="2.5"></circle>
+                <circle id="Oval" cx="2.5" cy="202.5" r="2.5"></circle>
+                <circle id="Oval" cx="2.5" cy="222.5" r="2.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

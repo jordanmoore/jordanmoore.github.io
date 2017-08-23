@@ -1,0 +1,11 @@
+.count {
+  border: 2px solid #D2D2D2;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  color: $tru-blue;
+  line-height: 40px;
+  border-radius: 100%;
+  @extend .fontWeight-demi;
+}

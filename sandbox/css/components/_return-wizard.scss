@@ -1,0 +1,267 @@
+//
+// Contents
+//
+// 1. Return Wizard frame
+// 2. Return Wizard controls
+// 3. Return Wizard Steps
+// 4. Return Wizard Options
+// 5. Return Wizard Icons
+//
+@mixin transitionOpacity {
+  transition: opacity 2s ease;
+}
+
+//
+// 1. Return Wizard frame
+//
+@media screen and (min-height:756px) {
+  // Fixes nav and breadcrumb for elevator style sliding
+  // TODO Replace .placeholder with nav class
+  body.bd-returns {
+    padding-top: 132px;
+    overflow: hidden;
+    >.placeholder {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+    }
+    >.breadcrumb {
+      position: fixed;
+      padding: 1.3em 1em 1em;
+      top: 98px;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      opacity: 1;
+      @include transitionOpacity;
+      &.-fade {
+        opacity: 0;
+      }
+      >ul {
+        max-width: 1008px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.return-wizard {
+  text-align: center;
+  @extend .marginTop-extra-large;
+  @extend .marginBottom-extra-large;
+  >.step>h1 {
+    @extend .tru-blue;
+    @extend .marginBottom-large;
+    @include transitionOpacity;
+    opacity: 1;
+  }
+  >.step>p {
+    @extend .grey;
+    @include transitionOpacity;
+    opacity: 1;
+  }
+}
+
+//
+// 2. Return Wizard controls
+//
+.return-wizard-controls {
+  position: fixed;
+  z-index: 9999;
+  right: 2em;
+  top: 50%;
+  a {
+    background: $secondary-blue;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 100%;
+    &.-disabled {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+    >i {
+      display: inline-block;
+      width: 15px;
+      height: 9px;
+      position: relative;
+      top: 9px;
+    }
+    &.up {
+      @extend .marginBottom;
+      >i {
+        top: 7px;
+      }
+    }
+  }
+}
+
+//
+// 3. Return Wizard Steps
+//
+.step {
+  position: relative;
+  overflow: hidden;
+  &:after {
+    content: '';
+    background: url(../img/step-trail.svg) center top no-repeat;
+    height: 225px;
+    display: block;
+  }
+  >.count {
+    border: 2px dotted $tru-blue;
+    border-radius: 100%;
+    width: 83px;
+    height: 83px;
+    font-family: Archer-Book;
+    font-size: 42px;
+    color: $tru-blue;
+    letter-spacing: 0;
+    display: inline-block;
+    line-height: 73px;
+    @include transitionOpacity;
+    @extend .marginBottom;
+  }
+  &.-current {
+    &:after {
+      background: none;
+    }
+  }
+  &:first-of-type {
+    overflow: visible;
+    &:before {
+      content: '';
+      background: url("../img/geoffrey-returns.svg") 0 0 no-repeat;
+      width: 120px;
+      height: 265px;
+      position: absolute;
+      left: -104px;
+      top: 100px;
+    }
+  }
+  &.-disabled {
+    height: 0;
+    >p,
+    >h1,
+    >.count {
+      opacity: 0;
+    }
+  }
+}
+
+//
+// 4. Return Wizard Options
+//
+.options {
+  @media screen and (min-width: 769px) {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+  }
+  @extend .marginBottom-large;
+  >.option {
+    opacity: 0;
+    display: inline-block;
+    max-width: 300px;
+    @media screen and (min-width: 769px) {
+      display: block;
+      width: 33.3%;
+    }
+    text-align: left;
+    @extend .margin;
+    @extend .fontWeight-demi;
+    &.animated {
+      opacity: 1;
+    }
+    >a {
+      border-radius: 10px;
+      height: 250px;
+      display: block;
+      overflow: hidden;
+      background: #FFFFFF;
+      border: 1px solid rgba(151, 151, 151, 0.39);
+      border-radius: 6px;
+      color: #333;
+      transition: all 0.09s ease-in;
+      padding: 1.1em;
+      position: relative;
+      &.selected {
+        border-color: $secondary-blue;
+        box-shadow: 0 0 0 3px $secondary-blue;
+        &:after {
+          opacity: 0;
+        }
+      }
+      >i {
+        position: absolute;
+        bottom: -1.1em;
+        right: -1.1em;
+        width: 100px;
+        height: 100px;
+        &.ico-delivery {
+          width: 120px;
+          height: 85px;
+        }
+      }
+      &:after {
+        content: '';
+        display: block;
+        height: 3px;
+        background: $secondary-blue;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      &:hover {
+        transform: scale(1.0125);
+        box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
+      }
+      >h2 {
+        font-family: Archer-Semibold;
+        font-size: 1.63em;
+        color: #373737;
+        line-height: 1.2;
+        @extend .marginBottom-small;
+      }
+      >p {
+        font-size: 0.81em;
+        color: #666;
+      }
+    }
+    &.-orange {
+      >a:after {
+        background: $dusty-orange;
+      }
+    }
+    &.-red {
+      >a:after {
+        background: #FF000D;
+      }
+    }
+  }
+}
+
+//
+// 5. Return Wizard Icons
+//
+.option>a>svg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  path {
+    fill: $secondary-blue;
+  }
+}
+
+.option.-orange>a>svg path {
+  fill: $dusty-orange;
+}
+
+.option.-red>a>svg path {
+  fill: #FF000D
+}

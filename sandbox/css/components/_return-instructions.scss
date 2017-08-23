@@ -1,0 +1,29 @@
+.bd-return-instructions {
+  @media screen and (min-width: 1040px) {
+    section {
+      display: inline-block;
+      max-width: 64%;
+      padding-right: 2.6em;
+      border-right: 2px solid #F3F3F3;
+    }
+    aside {
+      display: inline-block;
+      vertical-align: top;
+      max-width: 31%;
+      margin-left: 2.6em;
+    }
+  }
+}
+
+.return-instructions {
+  >li {
+    >.count {
+      margin-right: 0.4em;
+    }
+    >.content {
+      display: inline-block;
+      vertical-align: middle;
+      max-width: 300px;
+    }
+  }
+}
