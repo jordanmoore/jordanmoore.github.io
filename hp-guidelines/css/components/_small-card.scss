@@ -1,0 +1,62 @@
+.small-cards {
+  display: flex;
+  @media screen and (min-width:$a-spot-max) {
+    max-width: 38%;
+    display: block;
+  }
+}
+
+.small-card {
+  color: #666666;
+  position: relative;
+
+  > .content {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5em 0.5em 1em;
+    text-align: center;
+    @media screen and (min-width:$a-spot-medium) {
+      padding: 1.5em 11.5em 0 1.5em;
+      top: 0;
+      text-align: left;
+    }
+
+    .button {
+      display: none;
+      @media screen and (min-width:420px) {
+        display: inline-block;
+      }
+    }
+  }
+
+  p {
+    font-family: AvenirNext-DemiBold;
+    font-size: 1.13em;
+    line-height: 1.22em;
+    margin-bottom: 1em;
+  }
+
+  &.-barbie {
+    background: #F3BEF4;
+    color: #FF269B;
+  }
+
+  &.-monopoly {
+    color: #EA7125;
+    @media screen and (min-width:$a-spot-medium) {
+      img {
+        right: -2.6em;
+        bottom: -0.6em;
+      }
+    }
+  }
+}

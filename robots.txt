@@ -4,3 +4,4 @@ sitemap: false
 ---
 User-agent: *
 Disallow: /sandbox/
+Disallow: /hp-guidelines/
