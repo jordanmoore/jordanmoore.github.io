@@ -32,7 +32,7 @@
 
     .button {
       display: none;
-      @media screen and (min-width:420px) {
+      @media screen and (min-width:$a-spot-medium) {
         display: inline-block;
       }
     }
