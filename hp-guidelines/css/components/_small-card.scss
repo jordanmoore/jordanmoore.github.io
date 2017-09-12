@@ -33,6 +33,9 @@
       top: 0;
       text-align: left;
     }
+    @media screen and (min-width:$a-spot-full) {
+      padding: 3.5em 11.5em 0 2.5em;
+    }
 
     .button {
       display: none;
