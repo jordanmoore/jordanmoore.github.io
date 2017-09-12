@@ -8,8 +8,10 @@
 
   .background {
     background-size: cover;
-    max-height: 435px;
-    background-position: 0;
+    @media screen and (min-width:$a-spot-max) {
+      max-height: 435px;
+      background-position: 0;
+    }
   }
 
   .content {
