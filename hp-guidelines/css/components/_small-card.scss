@@ -10,6 +10,10 @@
   color: #666666;
   position: relative;
 
+  .background {
+    background-size: cover;
+  }
+
   > .content {
     display: flex;
     -webkit-box-orient: vertical;

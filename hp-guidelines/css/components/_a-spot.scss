@@ -1,11 +1,15 @@
 $a-spot-medium: 630px;
 $a-spot-max: 920px;
+$a-spot-full: 1140px;
 
 .a-spot {
   margin: 0 auto;
   @media screen and (min-width:$a-spot-max) {
     max-width: none;
-    display: flex;
+
+    .container {
+      display: flex;
+    }
   }
 
   .button {
@@ -18,9 +22,18 @@ $a-spot-max: 920px;
       }
     }
   }
+  @media screen and (min-width:$a-spot-full) {
+    .container {
+      max-width: 1366px;
+    }
+  }
 }
 
 picture {
+  @media screen and (min-width:$a-spot-full) {
+    visibility: hidden;
+  }
+
   img {
     display: block;
   }
