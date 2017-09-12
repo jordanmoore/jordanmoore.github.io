@@ -1,8 +1,11 @@
 .small-cards {
   display: flex;
   @media screen and (min-width:$a-spot-max) {
-    max-width: 38%;
+    max-width: 35.6%;
     display: block;
+  }
+  @media screen and (min-width:$a-spot-full) {
+    max-width: 36%;
   }
 }
 
@@ -14,6 +17,7 @@
     background-size: cover;
     @media screen and (min-width:$a-spot-max) {
       max-height: 218px;
+      background-position: 0;
     }
   }
 
@@ -46,6 +50,7 @@
         display: inline-block;
       }
     }
+    display: none;
   }
 
   p {

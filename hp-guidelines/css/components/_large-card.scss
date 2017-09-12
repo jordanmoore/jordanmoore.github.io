@@ -3,14 +3,22 @@
   width: 100%;
   position: relative;
   @media screen and (min-width:$a-spot-max) {
-    max-width: 66.6%;
+    max-width: 64.4%;
+  }
+  @media screen and (min-width:$a-spot-full) {
+    max-width: 64%;
   }
 
   .background {
     background-size: cover;
     @media screen and (min-width:$a-spot-max) {
-      max-height: 435px;
+      max-height: 436px;
+      height: 100%;
       background-position: 0;
+    }
+    @media screen and (min-width:1282px) {
+      min-height: 436px;
+      max-height: 436px;
     }
   }
 
@@ -34,6 +42,7 @@
     @media screen and (min-width:$a-spot-full) {
       padding: 16% 6.6em 0;
     }
+    display: none;
   }
 
   p {
