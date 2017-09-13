@@ -11,9 +11,6 @@
   }
   .background {
     background-size: auto 100%;
-    @media screen and (max-width: $a-spot-max) {
-      background-image: none !important;
-    }
     @media screen and (min-width: $a-spot-max) {
       height: 436px;
       background-position: center center;
