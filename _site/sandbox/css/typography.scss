@@ -1,0 +1,123 @@
+//
+// Base type rules
+//
+h1 {
+  font-family: 'Archer', serif;
+  font-weight: 600;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  // @extend .marginBottom;
+}
+
+p {
+  // @extend .marginBottom;
+}
+
+//
+// Font Sizes
+//
+.fontSize {
+  font-size: 1em;
+  &-extra-small {
+    // 12px
+    font-size: 0.75em;
+  }
+  &-small {
+    // 14px
+    font-size: 0.88em;
+  }
+  &-default,
+  &-normal {
+    // 16px
+    font-size: 1em;
+  }
+  &-medium {
+    // 20px
+    font-size: 1.25em;
+  }
+  &-extra-large {
+    // 32px
+    font-size: 2em;
+  }
+}
+
+//
+// Font Weights
+//
+.fontWeight {
+  &-normal {
+    font-weight: 500;
+  }
+  &-demi,
+  &-demi-bold {
+    font-weight: 600;
+  }
+  &-bold {
+    font-weight: 700;
+  }
+  &-black {
+    font-weight: 900;
+  }
+}
+
+//
+// Font Families
+//
+.fontFamily {
+  &-archer {
+    font-family: 'Archer', serif;
+  }
+}
+
+//
+// Lists
+//
+.listStyle {
+  &-normal,
+  &-default {
+    list-style: disc;
+    >li {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+//
+// Tables
+//
+table {
+  border-collapse: collapse;
+  th,
+  td {
+    padding: 1em;
+  }
+  th {
+    background: #D8F0F9;
+    @extend .fontWeight-demi;
+    @extend .fontSize-default;
+  }
+  tr:nth-child(even) {
+    td {
+      background: #F3F3F3;
+    }
+  }
+  td {
+    @extend .fontSize-small;
+  }
+}
+
+.heading-medium {
+  @extend .fontSize-default;
+  @extend .fontWeight-demi;
+}
+
+.heading-small {
+  @extend .fontSize-small;
+  @extend .fontWeight-demi;
+}

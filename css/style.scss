@@ -1,6 +1,14 @@
---- 
-# Hey Jekyll. 
---- 
+---
+# Hey Jekyll.
+---
+
+@mixin bold-heading {
+  font-size: 1.6em;
+  margin-bottom: 0;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -34,6 +42,13 @@ h1 {
   font-weight: normal;
   font-size: 1em;
   margin-bottom: 0;
+  > a {
+    color: #0C090D;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 header {
   margin-bottom: 6.18em;
@@ -91,19 +106,24 @@ figcaption, img em {
   padding: 0;
   list-style: none;
   li {
-    margin-bottom: 1.6em;
+    margin-bottom: 2.6em;
   }
   h1 {
-    font-size: 1em;
-    margin-bottom: 0;
-    font-weight: normal;
+    @include bold-heading;
   }
   p {
     opacity: 0.4;
     margin-top: 0;
-    font-size: 0.88em;
+    // font-size: 0.88em;
   }
 }
+
+.header {
+  h1 {
+    @include bold-heading;
+  }
+}
+
 
 nav {
   a {
