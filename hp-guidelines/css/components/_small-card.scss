@@ -1,6 +1,7 @@
 .small-cards {
   display: flex;
-  @media screen and (min-width:$a-spot-max) {
+  @media screen and (min-width: $a-spot-max) {
+    width: 100%;
     max-width: 35.6%;
     display: block;
   }
@@ -12,16 +13,14 @@
 .small-card {
   color: #666666;
   position: relative;
-
   .background {
-    background-size: cover;
-    @media screen and (min-width:$a-spot-max) {
-      max-height: 218px;
-      background-position: 0;
+    background-size: auto 100%;
+    @media screen and (min-width: $a-spot-max) {
+      height: 218px;
+      background-position: center center;
     }
   }
-
-  > .content {
+  >.content {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -35,7 +34,7 @@
     right: 0;
     padding: 1.5em 0.5em 1em;
     text-align: center;
-    @media screen and (min-width:$a-spot-medium) {
+    @media screen and (min-width: $a-spot-medium) {
       padding: 1.5em 11.5em 0 1.5em;
       top: 0;
       text-align: left;
@@ -43,31 +42,27 @@
     @media screen and (min-width:$a-spot-full) {
       padding: 3.5em 11.5em 0 2.5em;
     }
-
     .button {
       display: none;
-      @media screen and (min-width:$a-spot-medium) {
+      @media screen and (min-width: $a-spot-medium) {
         display: inline-block;
       }
     }
     display: none;
   }
-
   p {
     font-family: AvenirNext-DemiBold;
     font-size: 1.13em;
     line-height: 1.22em;
     margin-bottom: 1em;
   }
-
   &.-barbie {
     background: #F3BEF4;
     color: #FF269B;
   }
-
   &.-monopoly {
     color: #EA7125;
-    @media screen and (min-width:$a-spot-medium) {
+    @media screen and (min-width: $a-spot-medium) {
       img {
         right: -2.6em;
         bottom: -0.6em;

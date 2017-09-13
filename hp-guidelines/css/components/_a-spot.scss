@@ -1,22 +1,18 @@
 $a-spot-medium: 630px;
 $a-spot-max: 920px;
 $a-spot-full: 1140px;
-
 .a-spot {
   margin: 0 auto;
-  @media screen and (min-width:$a-spot-max) {
+  @media screen and (min-width: $a-spot-max) {
     max-width: none;
-
     .container {
       display: flex;
     }
   }
-
   .button {
     margin: 0 auto;
-    @media screen and (min-width:$a-spot-medium) {
+    @media screen and (min-width: $a-spot-medium) {
       margin: 0;
-
       &.-large {
         margin: 0 auto;
       }
@@ -24,16 +20,15 @@ $a-spot-full: 1140px;
   }
   @media screen and (min-width:$a-spot-full) {
     .container {
-      max-width: 1476px;
+      max-width: 1378px;
     }
   }
 }
 
 picture {
-  @media screen and (min-width:$a-spot-full) {
-    visibility: hidden;
+  @media screen and (min-width: $a-spot-max) {
+    display: none;
   }
-
   img {
     display: block;
   }
