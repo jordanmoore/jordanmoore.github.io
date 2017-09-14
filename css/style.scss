@@ -64,11 +64,6 @@ header {
     font-size: 0.9em;
     margin-top: 2.6em;
   }
-  @media screen and (max-width: 568px) {
-    p {
-      text-align: justify;
-    }
-  }
 }
 
 pre {
@@ -84,8 +79,7 @@ hr {
 blockquote {
   font-style: italic;
   opacity: 0.6;
-  margin-top: 2.6em;
-  margin-bottom: 2.6em;
+  margin: 2.6em 1em;
 }
 
 figcaption, img em {
