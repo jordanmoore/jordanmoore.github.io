@@ -16,6 +16,7 @@ gems:
   - jekyll-redirect-from
   - jekyll-paginate
   - jekyll-haml
+  - octopress-minify-html
 
 # Build settings
 markdown: kramdown
