@@ -37,12 +37,10 @@
     require(["mojo/signup-forms/Loader"], function (L) { L.start({ "baseUrl": "mc.us5.list-manage.com", "uuid": "3e0b1d25a7ba2bbb8c0c979ae", "lid": "945f5fe5fb" }) })
     document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
   };
-  window.onload = function () {
-    document.getElementById("open-popup").onclick = function () { 
+    document.getElementById("open-popup").addEventListener("click", function () {
       showMailingPopUp(); 
       return false;
-    };
-  }
+    });
 </script>
 
 
