@@ -5,20 +5,45 @@
 <body class="homepage">
   <div class="container">
     <header>
-      <h1>Jordan Moore</h1>
-      <p class="dim">Designer &amp; maker</p>
+      {% include nav.html %}
     </header>
-    <ul class="post-list">
-      {% for post in site.posts %}
-      <li>
-        <h1><a href="{{ post.url }}" accesskey="{{ forloop.index }}">{{ post.title }}</a></h1>
-        <p>{{ post.date | date: "%B %e, %Y" }}</p>
-      </li>
-      {% endfor %}
-    </ul>
+    <section class="latest">
+      <div class="content">
+        <h1 class="content-header">Void - the Intersection of Bookmarks &amp; Read Later</h1>
+        <p>Currently writing a case study and entering beta soon. Want to <a id="open-popup" href="">join the beta list?</a></p>
+      </div>
+      <div class="image">
+        <img src="img/void-preview.jpg" alt="A preview of the Void app interface">
+      </div>
+    </section>
   </div>
+  <section class="recent">
+    <div class="container">
+      <h2 class="section-header">Recently Published</h2>
+      {% for post in site.posts limit:1 %}
+      <div class="content">
+          <h1 class="content-header"><a href="{{ post.url }}" accesskey="{{ forloop.index }}">{{ post.title }}</a></h1>
+          <p>{{ post.summary }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    {% include footer.html %}
+  </section>
 
-  {% include footer.html %}
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+<script>
+  function showMailingPopUp() {
+    require(["mojo/signup-forms/Loader"], function (L) { L.start({ "baseUrl": "mc.us5.list-manage.com", "uuid": "3e0b1d25a7ba2bbb8c0c979ae", "lid": "945f5fe5fb" }) })
+    document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+  };
+
+  document.getElementById("open-popup").onclick = function () { 
+    showMailingPopUp(); 
+    return false;
+  };
+</script>
+
 
 </body>
 

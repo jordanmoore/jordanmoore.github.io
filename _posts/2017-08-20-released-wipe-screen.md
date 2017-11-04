@@ -2,6 +2,7 @@
 layout: post
 title: Released&#58; Wipe Screen
 date: '2017-08-20T09:12:00+00:00'
+summary: A silly little tool to help you clean crap off your screen without switching off or logging out. Makes use of the fullscreen API for big screens and just rotate to clean small screens.
 ---
 
 [Wipe Screen](http://jordanm.co.uk/wipescreen) attempts to solve the following problems:
