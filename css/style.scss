@@ -179,6 +179,9 @@ margin-bottom: 0;
       content: ' →';
     }
   }
+  .latest & {
+    margin-top: 0;
+  }
   article & {
     margin-bottom: 2em;
   }
