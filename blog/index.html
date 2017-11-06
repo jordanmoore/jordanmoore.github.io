@@ -14,7 +14,7 @@ layout: post-list
           {% case d %}
             {% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ post.date | date: "%Y" }}
           </time></p>
-          <h1 class="content-header"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+          <h1 class="content-header -small"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
           <p>{{ post.summary }}</p>
         </li>
       {% endfor %}

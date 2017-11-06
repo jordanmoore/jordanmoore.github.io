@@ -22,7 +22,7 @@
       <h2 class="section-header">Recently Published</h2>
       {% for post in site.posts limit:1 %}
       <div class="content">
-          <h1 class="content-header"><a href="{{ post.url }}" accesskey="{{ forloop.index }}">{{ post.title }}</a></h1>
+          <h1 class="content-header -small"><a href="{{ post.url }}" accesskey="{{ forloop.index }}">{{ post.title }}</a></h1>
           <p>{{ post.summary }}</p>
       </div>
       {% endfor %}

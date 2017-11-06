@@ -6,6 +6,7 @@
 $dark: #1D1C1C;
 $sans: "Source Sans Pro", sans-serif;
 $serif: "Source Serif Pro", serif;
+$green: #50E3C2;
 
 ::selection {
   background: #ffb783; /* WebKit/Blink Browsers */
@@ -15,6 +16,14 @@ $serif: "Source Serif Pro", serif;
   font-weight: bold;
   font-size: 2.8em;
   line-height: 1;
+}
+
+@mixin tall-text {
+  /* VOID - Bookmarking f: */
+font-family: Oswald;
+font-weight: 300;
+font-size: 3.0625em;
+line-height: 1.183673469em;
 }
 
 * {
@@ -38,7 +47,7 @@ body {
     color: #fff;
     overflow-x: hidden;
     a {
-      color: #fff;
+      color: $green;
     }
   }
 }
@@ -97,6 +106,9 @@ section {
   list-style: none;
   > li {
     margin-bottom: 6em;
+    a {
+      color: $green;
+    }
   }
 }
 
@@ -128,6 +140,10 @@ nav {
       font-size: 1.0625em;
       a {
         text-decoration: none;
+        color: $dark;
+        .homepage & {
+          color: $green;
+        }
       }
     }
   }
@@ -138,6 +154,9 @@ opacity: 0.4;
 font-family: $sans;
 font-size: 0.9375em;
 margin-bottom: 0;
++ .content-header {
+  margin-top: 0;
+}
 }
 
 .section-header {
@@ -147,13 +166,20 @@ margin-bottom: 0;
 }
 
 .content-header {
-  font-size: 1.875em;
-  letter-spacing: 0;
-  line-height: 1.233333333em;
-  .post & {
-    font-size: 2.625em;
-    line-height: 1em;
-    margin-top: 0.3em;
+  @include tall-text;
+  text-transform: uppercase;
+  color: $green;
+  &.-small {
+    font-size: 2.1875em;
+    color: #50E3C2;
+    letter-spacing: 0;
+    line-height: 1.2em;
+    margin-bottom: 0em;
+    a:after {
+      content: ' →';
+    }
+  }
+  article & {
     margin-bottom: 2em;
   }
 }
@@ -169,7 +195,7 @@ margin-bottom: 0;
   position: relative;
   padding-bottom: 0;
   @media screen and (min-width: 721px) {
-    padding-bottom: 14em;
+    padding-bottom: 6em;
   }
   > .content {
     max-width: 368px;
@@ -216,9 +242,10 @@ margin-bottom: 0;
     margin-top: 2.6em;
   }
   h3, h4, h5, h6 {
-    font-size: 1.125em;
+    font-size: 1.058823529em;
     font-style: italic;
     margin-bottom: 0;
+    font-weight: 700;
     +p {
       margin-top: 0;
     }
