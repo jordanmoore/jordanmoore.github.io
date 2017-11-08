@@ -270,7 +270,13 @@ pre {
 hr {
   margin: 2.6em 0;
   border: none;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
+  &:after {
+    content: '• • •';
+    display: block;
+    text-align: center;
+    opacity: 0.2;
+    letter-spacing: 0.5em;
+  }
 }
 
 blockquote {
