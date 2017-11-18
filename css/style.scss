@@ -42,12 +42,7 @@ body {
   padding-top: 4.2em;
   -webkit-font-smoothing: antialiased;
   &.homepage {
-    background: $dark;
-    color: #fff;
     overflow-x: hidden;
-    a {
-      color: $green;
-    }
   }
 }
 
@@ -140,14 +135,16 @@ nav {
     list-style: none;
     li {
       display: inline-block;
-      font-family: $sans;
+      font-family: 'Oswald';
       margin-left: 1em;
+      text-transform: uppercase;
       font-size: 1.0625em;
+      letter-spacing: 0.5px;
       a {
         text-decoration: none;
         color: $dark;
-        .homepage & {
-          color: $green;
+        &:hover {
+          text-decoration: underline;
         }
       }
     }
@@ -218,6 +215,7 @@ margin-bottom: 0;
     height: 240px;
     overflow: hidden;
     margin: 0 auto;
+    filter: drop-shadow(20px 29px 17px rgba(0,0,0,0.05));
     @media screen and (min-width: 721px) {
       position: absolute;
       right: -200px;
@@ -236,8 +234,12 @@ margin-bottom: 0;
 
 .recent {
   background-color: #242323;
+  color: #fff;
   .section-header {
     margin-bottom: 3.2em;
+  }
+  a {
+    color: $green;
   }
   .content {
     max-width: 505px;
@@ -320,6 +322,7 @@ figcaption, img em {
   background-size: cover;
   text-align: center;
   padding: 2.6em 0;
+  color: #fff;
   footer {
     padding-bottom: 0;
   }
