@@ -4,9 +4,7 @@
 
 
 $dark: #1D1C1C;
-$sans: "Source Sans Pro", sans-serif;
-$serif: "Source Serif Pro", serif;
-$green: #50E3C2;
+$sans: -apple-system, BlinkMacSystemFont, "myriad-pro", sans-serif;
 
 ::selection {
   background: #ffb783; /* WebKit/Blink Browsers */
@@ -19,10 +17,13 @@ $green: #50E3C2;
 }
 
 @mixin tall-text {
-font-family: Oswald;
-font-weight: 300;
-font-size: 2.882352941em;
-line-height: 1.183673469em;
+  font-size: 2.4em;
+  @media screen and (min-width:460px) {
+    font-size: 4.23em;
+  }
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
 }
 
 * {
@@ -33,9 +34,9 @@ body {
   @media screen and (max-width: 568px) {
     font-size: 14px;
   }
-  font-size: 17px;
+  font-size: 16px;
   color: $dark;
-  font-family: 'Source Serif Pro', serif;
+  font-family: $sans;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -83,7 +84,11 @@ header {
 }
 
 p {
-  font-size: 1.0625em;
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 1.6em;
+  letter-spacing: 0.002em;
+  opacity: 0.8;
 }
 
 section {
@@ -107,8 +112,11 @@ section {
   > li {
     margin-bottom: 6em;
     a {
-      color: $green;
+      color: $dark;
     }
+  }
+  p {
+    opacity: 0.8;
   }
 }
 
@@ -135,11 +143,9 @@ nav {
     list-style: none;
     li {
       display: inline-block;
-      font-family: 'Oswald';
       margin-left: 1em;
-      text-transform: uppercase;
       font-size: 1.0625em;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.002em;
       a {
         text-decoration: none;
         color: $dark;
@@ -152,13 +158,20 @@ nav {
 }
 
 .date {
-opacity: 0.4;
-font-family: $sans;
-font-size: 0.9375em;
-margin-bottom: 0;
-+ .content-header {
-  margin-top: 0;
-}
+  opacity: 1;
+  font-family: $sans;
+  font-size: 1.6em;
+  margin-bottom: 2.6em;
+  + .content-header {
+    margin-top: 0;
+  }
+  .post-list & {
+    font-size: 1.2em;
+    letter-spacing: 0;
+    margin-top: 0.6em;
+    opacity: 1;
+    margin-bottom: 0;
+  }
 }
 
 .section-header {
@@ -169,20 +182,24 @@ margin-bottom: 0;
 
 .content-header {
   @include tall-text;
-  text-transform: uppercase;
-  color: $green;
   &.-small {
-    font-size: 2.1875em;
-    color: #50E3C2;
+    font-size: 2.4em;
+    @media screen and (min-width:460px) {
+      font-size: 2.875em;
+    }
     letter-spacing: 0;
     line-height: 1.2em;
     margin-bottom: 0em;
-    a:after {
-      content: ' →';
+    &:hover {
+      a:after {
+        content: ' →';
+        position: absolute;
+        padding-left: 0.2em;
+      }
     }
   }
   article & {
-    margin-bottom: 2em;
+    margin-bottom: 0;
   }
 }
 
@@ -239,7 +256,7 @@ margin-bottom: 0;
     margin-bottom: 3.2em;
   }
   a {
-    color: $green;
+    color: #fff;
   }
   .content {
     max-width: 505px;
@@ -318,7 +335,8 @@ figcaption, img em {
 }
 
 .newsletter {
-  background: url(../../img/logs.jpg) center center no-repeat;
+  // background: url(../../img/logs.jpg) center center no-repeat;
+  background: $dark;
   background-size: cover;
   text-align: center;
   padding: 2.6em 0;
@@ -339,16 +357,16 @@ figcaption, img em {
   #mc_embed_signup form {
     text-align: center;
     input[type=email] {
-      background: #181818;
+      background: #111;
       border-radius: 3px;
       color: #fff;
       border: none;
-      font-family: $serif;
+      font-family: $sans;
       font-size: 1rem;
       color: #FFFFFF;
       padding: 1.45em 1em;
       max-width: 490px;
-      margin: 0 auto;
+      margin: 0 auto 1em;
       width: 100%;
       &:focus {
         outline: none;
@@ -356,15 +374,16 @@ figcaption, img em {
     }
     input[type=submit] {
       -webkit-appearance: none;
-      background: #50E3C2;
+      background: #fff;
       border-radius: 2px;
       border: none;
-      text-transform: uppercase;
-      font-family: Oswald;
       font-size: 1em;
-      letter-spacing: 1px;
-      padding: 0.6em 1.2em;
+      letter-spacing: 0.002em;
+      padding: 1em 2em;
+      border-radius: 10em;
+      font-weight: 700;
       height: auto;
+      cursor: pointer;
       width: auto;
     }
   }
