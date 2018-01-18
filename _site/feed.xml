@@ -6,9 +6,32 @@
 </description>
     <link>http://jordanm.co.uk/</link>
     <atom:link href="http://jordanm.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 09 Jan 2018 18:06:52 +0000</pubDate>
-    <lastBuildDate>Tue, 09 Jan 2018 18:06:52 +0000</lastBuildDate>
+    <pubDate>Thu, 18 Jan 2018 11:05:20 +0000</pubDate>
+    <lastBuildDate>Thu, 18 Jan 2018 11:05:20 +0000</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Response to Criticisms of RSS</title>
+        <description>&lt;p&gt;In response to: &lt;a href=&quot;https://twitter.com/Cennydd/status/953896132551368704&quot;&gt;https://twitter.com/Cennydd/status/953896132551368704&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Tl;dr: current understandings and implementations of RSS are terrible. The underlying idea and tech isn’t so bad.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Podcasts are way ahead of content publishers in utilising RSS in a much more mainstream user-friendly manner. I don’t have to care that I receive updates from my favourite podcasts because of RSS, nor do I have to worry about hunting for obscure, meaningless orange icons that sort of looks like the WiFi icon but not quite, and equally useless variations on the call to action of “Subscribe to my RSS feed”. Yes, the podcast app interpreting the feed falls into the gatekeeper category, but they are recent evidence that UX concerns around RSS can be overcome.&lt;/p&gt;
+
+&lt;p&gt;The current model for RSS in content publication is terribly outdated and is rooted in a web that had no concept of “follow”. Solutions for subscribing and reading were built and settled upon in a time where we spoke differently telling users that are pages were “W3C XHTML 1.1 valid” and RSS subscription buttons would sit alongside these badges. So I’m with you on the criticisms of our current solutions for subscribing and interpreting RSS such as terrible UX, filter bubbles, weak value props, partial feeds, clickbait, gatekeeping - all valid.&lt;/p&gt;
+
+&lt;p&gt;Hypothetically speaking if RSS treated with the same regard as bookmarking in that it’s light, meaningful and at a browser level provides understandable consequences then it arguably solves the weak value proposition concern. Depending on the implementation, it mitigates the UX concern. As with social media, the books you read, and pretty much &lt;em&gt;anything&lt;/em&gt; you consume - your filter bubble is as big as you make it, social media shapes this heavier than most examples, but again depending on implementation, you can make steps towards fixing that. I’m not saying I have solutions and I don’t want to try and invent them on the spot, but broadly speaking the less software in the chain of user, OS, browser, RSS reader - the better.&lt;/p&gt;
+
+&lt;p&gt;I doubt we’d arrive at the same failed outcomes we have today if RSS was introduced in 2018 as new tech now that we have a better understanding of online social interactions, making awkward things accessible along with a desire for decentralisation. I know users voted for centralisation, but I refuse to believe the answer is simply to cave in to centralisation and accept that this is how it must be. &lt;strong&gt;The web is wider than that&lt;/strong&gt; and it’s unfortunate that mainstream users don’t know that. For me, that’s the greater social good I’d like to chase. There are genuinely useful things out there that forward the human experience outside of the heavily skewed discovery offered by these centralised hubs.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 18 Jan 2018 09:12:00 +0000</pubDate>
+        <link>http://jordanm.co.uk/2018/01/18/rss.html</link>
+        <guid isPermaLink="true">http://jordanm.co.uk/2018/01/18/rss.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Released&amp;#58; Wipe Screen</title>
@@ -277,56 +300,6 @@
         <guid isPermaLink="true">http://jordanm.co.uk/2014/10/08/a-silent-web.html</guid>
         
         <category>User Experience</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>How I test type and layout</title>
-        <description>&lt;p&gt;I thought I&amp;#8217;d elaborate on my testing strategy that I introduced during a talk I gave recently for &lt;a href=&quot;http://www.typecast.com/seminars&quot;&gt;Typecast&amp;#8217;s seminar series&lt;/a&gt;. I described how I use two different testing methods for typography and responsive layouts.&lt;/p&gt;
-
-&lt;p&gt;Both are two very different facets of the same overall system and subsequently require different test conditions. In essence, I test typography on devices and I test layout in the browser.&lt;/p&gt;
-
-&lt;h2&gt;Mobile devices aren&amp;#8217;t great for layout testing&lt;/h2&gt;
-
-&lt;p&gt;Device stands may look pretty on your desk, but they&amp;#8217;re not going to cover all the possible states of a responsive layout. In fact, testing layouts purely on a set of devices is no different than designing for a set of predefined weights and heights — devices let you see how a layout will act at a particular size, but that&amp;#8217;s the only size you&amp;#8217;ll see on that screen&lt;sup id=&quot;fnref:p93444774181-1&quot;&gt;&lt;a href=&quot;#fn:p93444774181-1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;p&gt;This is why I do the majority of my layout testing in the browser. A browser will let you see all the in-between states that a set of devices won&amp;#8217;t let you see. Expanding and collapsing the browser window from the small compressed state to an uncompressed wide state like an accordion allows you to see your elements actively respond and helps identify any potential gaps or problem areas.&lt;/p&gt;
-
-&lt;p&gt;Of course the actual device will show you the definitive state for that particular device - but what about every other permutation of the responsive layout?&lt;/p&gt;
-
-&lt;p&gt;The desktop browser helps paint the complete layout picture. No modern mobile browser gets the basic fundamentals of CSS layout so wrong that it requires you to refresh and investigate every layout change[^1].&lt;/p&gt;
-
-&lt;h2&gt;Desktop browsers aren&amp;#8217;t great for testing type&lt;/h2&gt;
-
-&lt;p&gt;Where a desktop browser excels at showing you the difference in screen sizes, shapes and dimensions - it fails to account for the potential differences in type rendering between browsers and operating systems. A single browser window can only show you how type renders for that individual display and configuration.&lt;/p&gt;
-
-&lt;p&gt;The vast array of different mobile device displays requires a testing setup that caters for the variance in different screen densities, resolutions and screen types to give an indication of how type renders in these different environments.&lt;/p&gt;
-
-&lt;p&gt;An electronic ink display might render the type blurry compared to the display of a crisp high density screen. This is where a broad set of devices comes in handy - it pays to stress test your fonts across the often unforgiving and varied display properties of mobile devices. A single desktop browser won&amp;#8217;t let you know about any of these potential issues.&lt;/p&gt;
-
-&lt;h2&gt;The best of both worlds&lt;/h2&gt;
-
-&lt;p&gt;I still reference mobile browsers during layout testing from time to time - functional testing is a different matter where I test heavily on all devices - but primarily my &lt;em&gt;layout&lt;/em&gt; testing happens in the browser and my type testing happens on mobile displays.&lt;/p&gt;
-
-&lt;p&gt;The speed and efficiency of scaling a desktop browser window from small to large for building &lt;em&gt;truly&lt;/em&gt; responsive layouts met with a set of devices that represent as much of the potential difference in display types is the sweet spot that works for me.&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-&lt;hr&gt;&lt;ol&gt;&lt;li id=&quot;fn:p93444774181-1&quot;&gt;
-&lt;p&gt;Apart from different orientations if the device allows it. &lt;a href=&quot;#fnref:p93444774181-1&quot; rev=&quot;footnote&quot;&gt;↩&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;/ol&gt;&lt;/div&gt;
-</description>
-        <pubDate>Fri, 01 Aug 2014 00:13:00 +0100</pubDate>
-        <link>http://jordanm.co.uk/2014/08/01/how-i-test-type-and-layout.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2014/08/01/how-i-test-type-and-layout.html</guid>
-        
-        <category>Testing</category>
-        
-        <category>RWD</category>
-        
-        <category>Typography</category>
         
         
       </item>
