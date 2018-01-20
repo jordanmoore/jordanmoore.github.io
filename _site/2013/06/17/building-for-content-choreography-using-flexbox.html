@@ -13,8 +13,8 @@
 
 
 <body class="post">
-  <div class="container">
-    <header>
+  <header>
+    <div class="container">
       <h1 class="logo"><a href="/"></a></h1>
 
 <nav>
@@ -25,16 +25,20 @@
     </ul>
 </nav>
 
-    </header>
-    <article>
-        <h1 class="content-header">Building for Content Choreography using Flexbox</h1>
+    </div>
+  </header>
+  <article>
+    <div class="container">
+      <div class="text-align--center">
         <p class="date"><time>
           
           June
           17th, 2013
         </time></p>
-        <div class="content">
-          <p>On July 14th 2011 Trent Walton published an article introducing the concept of <a href="http://trentwalton.com/2011/07/14/content-choreography/">Content Choreography</a>. The article opened my mind and made me question some of the limitations we face in how we build responsive experiences. At the time content reordering and reflow hadn&#8217;t been widely explored beyond JavaScript-based solutions and I had been experimenting a lot with flexbox to reorder and arrange items horizontally for <a href="http://www.typecast.com">Typecast&#8217;s</a> UI. When Trent spoke about content stacking, I started to think what was achievable for reordering content along the y-axis in a single column layout.</p>
+        <h1 class="content-header">Building for Content Choreography using Flexbox</h1>
+      </div>
+      <div class="content">
+        <p>On July 14th 2011 Trent Walton published an article introducing the concept of <a href="http://trentwalton.com/2011/07/14/content-choreography/">Content Choreography</a>. The article opened my mind and made me question some of the limitations we face in how we build responsive experiences. At the time content reordering and reflow hadn&#8217;t been widely explored beyond JavaScript-based solutions and I had been experimenting a lot with flexbox to reorder and arrange items horizontally for <a href="http://www.typecast.com">Typecast&#8217;s</a> UI. When Trent spoke about content stacking, I started to think what was achievable for reordering content along the y-axis in a single column layout.</p>
 
 <h3>A tale of two syntaxes</h3>
 
@@ -108,9 +112,9 @@ flex-direction: column;
 
 </ol></div>
 
-        </div>
-    </article>
-  </div>
+      </div>
+    </div>
+  </article>
   <footer>
   <div class="container">
     <p class="small-sans">Jordan Moore &copy; 2018</p>

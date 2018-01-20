@@ -3,13 +3,16 @@
 {% include head.html %}
 
 <body class="homepage">
-  <div class="container">
     <header>
-      {% include nav.html %}
+      <div class="container">
+        {% include nav.html %}
+      </div>
     </header>
+
+    <div class="container">
     <section class="latest">
       <div class="content">
-        <h1 class="content-header -small">Void - the Intersection of Bookmarks &amp; Read Later</h1>
+        <h1 class="content-header">Void - the Intersection of Bookmarks &amp; Read Later</h1>
         <p>Currently writing a case study and entering beta soon. Want to <a href="http://eepurl.com/c-b3TT">join the beta list?</a></p>
       </div>
       <div class="image">
@@ -22,7 +25,7 @@
       <h2 class="section-header">Recently Published</h2>
       {% for post in site.posts limit:1 %}
       <div class="content">
-          <h1 class="content-header -small"><a href="{{ post.url }}" accesskey="{{ forloop.index }}">{{ post.title }}</a></h1>
+          <h1 class="content-header"><a href="{{ post.url }}" accesskey="{{ forloop.index }}">{{ post.title }}</a></h1>
           <p>{{ post.summary }}</p>
       </div>
       {% endfor %}
