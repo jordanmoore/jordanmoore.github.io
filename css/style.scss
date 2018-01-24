@@ -53,6 +53,41 @@ img {
   height: auto;
 }
 
+.books {
+  a {
+    text-decoration: none;
+  }
+  ul {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1440px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+    @media screen and (min-width:475px) {
+      grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
+    }
+    grid-gap: 2em 0.6em;
+    li {
+      text-align: center;
+      font-size: 0.88em;
+      vertical-align: bottom;
+      p {
+        line-height: 1.4;
+        font-weight: 700;
+      }
+      span {
+        display: block;
+        font-size: 0.88em;
+        font-weight: normal;
+      }
+    }
+  }
+  img {
+    height: 260px;
+  }
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -61,6 +96,12 @@ a:hover {
   max-width: 49.5625em;
   margin: 0 auto;
   padding: 0 1.6em;
+  &.books {
+    max-width: none;
+    @media screen and (min-width:1100px) {
+      padding: 0 4.23em;
+    }
+  }
 }
 
 h1 {
