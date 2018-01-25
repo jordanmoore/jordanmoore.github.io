@@ -183,8 +183,8 @@ section {
 .logo a {
   display: block;
   background: url(../img/avatar.png) center center no-repeat;
-  width: 64px;
-  height: 64px;
+  width: 54px;
+  height: 54px;
   background-size: contain;
 }
 
@@ -244,9 +244,13 @@ article {
 }
 
 .article-header {
-  font-size: 3.31em;
+  font-size: 2.2em;
+  letter-spacing: 0.6px;
+  @media screen and (min-width:570px) {
+    font-size: 3.31em;
+    letter-spacing: -1.7px;
+  }
   line-height: 1.2;
-  letter-spacing: -1.7px;
 }
 
 .small-header {
