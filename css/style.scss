@@ -57,6 +57,7 @@ img {
 .books {
   a {
     text-decoration: none;
+    color:$dark;
   }
   ul {
     margin: 0 auto;
@@ -76,6 +77,7 @@ img {
       p {
         line-height: 1.4;
         font-weight: 700;
+        font-family: $sans;
       }
       span {
         display: block;
@@ -168,9 +170,6 @@ section {
       color: $dark;
     }
   }
-  p {
-    opacity: 0.8;
-  }
 }
 
 .pagination {
@@ -202,7 +201,7 @@ nav {
       a {
         text-decoration: none;
         color: $dark;
-        &:hover {
+        &:hover, &.active {
           color: $link;
         }
       }
@@ -358,9 +357,12 @@ article {
   }
 }
 
+.footnotes {
+    font-size: 13px;
+}
+
 .content {
   h2, h3, h4, h5, h6 {
-    font-family: "Source Sans Pro", sans-serif;
     margin-top: 2.6em;
   }
   h3, h4, h5, h6 {
@@ -373,11 +375,8 @@ article {
     }
   }
   li {
-    font-size: 1.0625em;
-  }
-  p:first-of-type {
-    font-size: 1.11em;
-    line-height: 1.67em;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.19em;
   }
 }
 

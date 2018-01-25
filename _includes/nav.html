@@ -1,10 +1,11 @@
+{% assign current = page.url | downcase | split: '/' %}
+
 <h1 class="logo"><a href="/"></a></h1>
 
 <nav>
     <ul>
-        <!-- <li><a href="/" class="coming-soon" title="Coming Soon">Projects</a></li> -->
-        <li><a href="/blog">Writing</a></li>
-        <li><a href="/bookshelf">Bookshelf</a></li>
+        <li><a href="/blog" {% if current[1] == 'blog' %}class='active'{% endif %}>Writing</a></li>
+        <li><a href="/bookshelf" {% if current[1] == 'bookshelf' %}class='active'{% endif %}>Bookshelf</a></li>
         <li><a href="http://jordanm.co.uk/#newsletter">Newsletter</a></li>
     </ul>
 </nav>

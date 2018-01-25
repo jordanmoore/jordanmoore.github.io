@@ -4,6 +4,7 @@ title: Going Freelance
 date: '2015-03-03T09:12:00+00:00'
 summary: I am delighted to announce that after 7 years working in web agencies I have decided to leave and start a new adventure as a freelance web designer.
 phase: waxing-gibbous
+reading-time: 2 minutes
 ---
 
 I am delighted to announce that after 7 years working in web agencies I have decided to leave and start a new adventure as a freelance web designer.
