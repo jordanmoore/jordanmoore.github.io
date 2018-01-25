@@ -10,14 +10,21 @@
   </header>
   <article>
     <div class="container">
-      <div class="text-align--center">
-        <p class="date"><time>
-          {% assign d = page.date | date: "%-d"  %}
-          {{ page.date | date: "%B" }}
-          {% case d %}
-          {% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ page.date | date: "%Y" }}
-        </time></p>
-        <h1 class="content-header">{{ page.title }}</h1>
+      <h1 class="article-header">{{ page.title }}</h1>
+      <div class="article-meta">
+        <div>
+          <h2 class="small-header">Published</h2>
+          <p><time>
+            {% assign d = page.date | date: "%-d"  %}
+            {{ page.date | date: "%B" }}
+            {% case d %}
+            {% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ page.date | date: "%Y" }}
+          </time></p>
+        </div>
+        <div>
+          <h2 class="small-header">Reading time</h2>
+          <p>{{ page.reading-time }}</p>
+        </div>
       </div>
       <div class="content">
         {{ content }}

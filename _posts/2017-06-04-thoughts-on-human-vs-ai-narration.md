@@ -4,6 +4,7 @@ title: Thoughts on human vs AI narration
 date: '2017-06-04T09:12:00+00:00'
 summary: My Instapaper feed looks a lot like my Steam account. I have gathered many items with the good intention of making use of them on a rainy day, but they eventually gather dust on their virtual shelves.
 phase: waxing-gibbous
+reading-time: 5 minutes
 ---
 
 My Instapaper feed looks a lot like my Steam account. I have gathered many items with the good intention of making use of them on a rainy day, but they eventually gather dust on their virtual shelves.

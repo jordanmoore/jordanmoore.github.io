@@ -3,7 +3,8 @@
 ---
 
 
-$dark: #1D1C1C;
+$dark: #333;
+$link: #D98B5A;
 $sans: -apple-system, BlinkMacSystemFont, "myriad-pro", sans-serif;
 
 ::selection {
@@ -31,21 +32,21 @@ body {
   @media screen and (max-width: 568px) {
     font-size: 14px;
   }
-  background: #f3f3f3;
+  background: fade-out(#DDD4CC, 0.8);
   font-size: 16px;
   color: $dark;
   font-family: $sans;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  -webkit-font-smoothing: antialiased;
+  // -webkit-font-smoothing: antialiased;
   &.homepage {
     overflow-x: hidden;
   }
 }
 
 a {
-  color: $dark;
+  color: #D98B5A;
 }
 
 img {
@@ -76,6 +77,7 @@ h1 {
 header {
   margin-bottom: 6.18em;
   background: #fff;
+  border-bottom: 1px solid fade-out(#D2D2D2, 0.6);
   > .container {
     display: flex;
     justify-content: space-between;
@@ -160,7 +162,7 @@ nav {
         text-decoration: none;
         color: $dark;
         &:hover {
-          text-decoration: underline;
+          color: $link;
         }
       }
     }
@@ -176,10 +178,58 @@ nav {
   }
 }
 
+article {
+  p {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.19em;
+    line-height: 1.68em;
+  }
+  .container {
+    @media screen and (min-width:1412px) {
+      position: relative;
+      .article-meta {
+        position: absolute;
+        display: block;
+        left: -240px;
+        margin-top: -0.5em;
+      }
+    }
+  }
+}
+
 .section-header {
   font-family: $sans;
   font-weight: 400;
   font-size: 1.4375em;
+}
+
+.article-header {
+  font-size: 3.31em;
+  line-height: 1.2;
+  letter-spacing: -1.7px;
+}
+
+.small-header {
+  font-family: SFUIText-Bold;
+  font-size: 0.88em;
+  color: $link;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 0.2em;
+  + p {
+    margin-top: 0;
+  }
+}
+
+.article-meta {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  border-bottom: 1px solid fade-out(#D2D2D2, 0.6);
+  margin-bottom: 2.6em;
+  div {
+    margin-right: 2.6em;
+  }
 }
 
 .content-header {
@@ -284,6 +334,10 @@ nav {
   li {
     font-size: 1.0625em;
   }
+  p:first-of-type {
+    font-size: 1.11em;
+    line-height: 1.67em;
+  }
 }
 
 pre {
@@ -303,7 +357,6 @@ hr {
 }
 
 blockquote {
-  opacity: 0.6;
   margin: 2.6em 1em;
 }
 
