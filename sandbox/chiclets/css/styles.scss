@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  margin-bottom: 2em;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  &.-mobile {
+    max-width: 375px;
+    padding: 15px;
+    border-left: 1px dotted rgba(0,0,0,0.2);
+    border-right: 1px dotted rgba(0,0,0,0.2);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  td, th {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-weight: normal;
+  }
+}
+
+.textAlign {
+  &--left {
+    text-align: left;
+  }
+  &--right {
+    text-align: right;
+  }
+  &--center {
+    text-align: center;
+  }
+}
+
+.status {
+  font-family: AvenirNext-DemiBold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #fff;
+  background: #009DDB;
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 1px 5px;
+}
+
+.qty {
+  width: 19px;
+  height: 19px;
+  line-height: 16px;
+  background: #66BC29;
+  border: 2px solid #66BC29;
+  color: #fff;
+  font-family: AvenirNext-DemiBold;
+  font-size: 12px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.product-thumbnail {
+  position: relative;
+  max-width: 40px;
+  display: inline-block;
+  .qty {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.chiclet {
+  background: #FFFFFF;
+  border: 1px solid #D2D2D2;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.06);
+  border-radius: 4px;
+  font-size: 14px;
+  color: #666;
+  overflow: hidden;
+  max-width: 355px;
+  table {
+    font-family: AvenirNext-Medium;
+  }
+  &.margin-10 {
+    .chiclet__header, .chiclet__body {
+      padding: 10px;
+    }
+  }
+  &.border-4 {
+    border-radius: 4px;
+  }
+  &.border-5 {
+    border-radius: 5px;
+  }
+  &.border-8 {
+    border-radius: 8px;
+  }
+  &.shadow-low {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.06);
+  }
+  &.shadow-med {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.16);
+  }
+  &.shadow-high {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.26);
+  }
+}
+
+.chiclet__header {
+  background: #F5F5F5;
+  padding: 10px 15px;
+  table {
+    font-family: AvenirNext-DemiBold;
+  }
+}
+
+.chiclet__body {
+  padding: 10px 15px;
+}
+
+.variation-selector {
+  margin-top: 2.6em;
+  &--row {
+    display: inline-block;
+    padding: 0.3em 1em;
+  }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="dist/css/minified.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <title>TRU Chiclet Variations</title>
+</head>
+<body>
+  <div class="container -mobile">
+    <h1>Chiclet Variations</h1>
+
+    <div class="chiclet">
+      <div class="chiclet__header">
+        <table>
+          <tr>
+            <th>Order#</th>
+            <td>872276392</td>
+            <td class="textAlign--right">$59.97</td>
+          </tr>
+          <tr>
+            <th>Order date</th>
+            <td>11/30/2017</td>
+            <td class="textAlign--right">&nbsp;</td>
+          </tr>
+        </table>
+      </div>
+      <div class="chiclet__body">
+        <div class="chiclet__row">
+          <table>
+            <tr>
+              <th>Est. Delivery</th>
+              <td>12/16/2017</td>
+              <td class="textAlign--right"><span class="status">Processing</span></td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <a href="" class="product-thumbnail"><img src="img/eg1.png" alt=""></a><a href="" class="product-thumbnail"><img src="img/eg2.png" alt=""></a>
+              </td>
+            </tr>
+            <tr>
+              <th>Est. Delivery</th>
+              <td>12/14/2017</td>
+              <td class="textAlign--right"><span class="status">Shipped</span></td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <a href="" class="product-thumbnail"><img src="img/eg3.png" alt=""><span class="qty">2</span></a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="variation-selector">
+      <h5>Margins</h5>
+      <div class="variation-selector--row">
+        <label for="">10px <input type="radio" name="margin-value" value="margin-10"></label>
+      </div>
+      <div class="variation-selector--row">
+        <label for="">15px <input type="radio" name="margin-value" value="margin-15" checked="checked"></label>
+      </div>
+      <h5>Border Radius</h5>
+      <div class="variation-selector--row">
+        <label for="">4px <input type="radio" name="border-value" value="border-4" checked="checked"></label>
+      </div>
+      <div class="variation-selector--row">
+        <label for="">5px <input type="radio" name="border-value" value="border-5"></label>
+      </div>
+      <div class="variation-selector--row">
+        <label for="">8px <input type="radio" name="border-value" value="border-8"></label>
+      </div>
+      <h5>Shadow</h5>
+      <div class="variation-selector--row">
+        <label for="">Low <input type="radio" name="shadow-value" value="shadow-low" checked="checked"></label>
+      </div>
+      <div class="variation-selector--row">
+        <label for="">Medium <input type="radio" name="shadow-value" value="shadow-med"></label>
+      </div>
+      <div class="variation-selector--row">
+        <label for="">High <input type="radio" name="shadow-value" value="shadow-high"></label>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    $(function(){
+      $('.variation-selector input[name=margin-value]').click(function(e){
+        var marginSelected = $(this).val();
+        $('.chiclet').removeClass('margin-10');
+        $('.chiclet').removeClass('margin-15');
+        $('.chiclet').addClass(marginSelected);
+      });
+      $('.variation-selector input[name=border-value]').click(function(e){
+        var borderSelected = $(this).val();
+        $('.chiclet').removeClass('border-4');
+        $('.chiclet').removeClass('border-5');
+        $('.chiclet').removeClass('border-8');
+        $('.chiclet').addClass(borderSelected);
+      });
+      $('.variation-selector input[name=shadow-value]').click(function(e){
+        var shadowSelected = $(this).val();
+        $('.chiclet').removeClass('shadow-low');
+        $('.chiclet').removeClass('shadow-med');
+        $('.chiclet').removeClass('shadow-high');
+        $('.chiclet').addClass(shadowSelected);
+      });
+    });
+  </script>
+</body>
+</html>
