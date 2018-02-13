@@ -83,6 +83,21 @@
       <div class="variation-selector--row">
         <label for="">High <input type="radio" name="shadow-value" value="shadow-high"></label>
       </div>
+      <hr>
+      <h5>Device Width</h5>
+      <div class="variation-selector--row">
+        <label for="">iPhone 5 <input type="radio" name="device-value" value="iphone-5"></label>
+      </div>
+      <div class="variation-selector--row">
+        <label for="">iPhone 6/7/8+ <input type="radio" name="device-value" value="iphone-6" checked="checked"></label>
+      </div>
+      <h5>Page Padding</h5>
+      <div class="variation-selector--row">
+        <label for="">10px <input type="radio" name="padding-value" value="padding-10"></label>
+      </div>
+      <div class="variation-selector--row">
+        <label for="">15px <input type="radio" name="padding-value" value="padding-15" checked="checked"></label>
+      </div>
     </div>
 
   </div>
@@ -108,6 +123,18 @@
         $('.chiclet').removeClass('shadow-med');
         $('.chiclet').removeClass('shadow-high');
         $('.chiclet').addClass(shadowSelected);
+      });
+      $('.variation-selector input[name=device-value]').click(function(e){
+        var deviceSelected = $(this).val();
+        $('.container').removeClass('iphone-5');
+        $('.container').removeClass('iphone-6');
+        $('.container').addClass(deviceSelected);
+      });
+      $('.variation-selector input[name=padding-value]').click(function(e){
+        var paddingSelected = $(this).val();
+        $('.container').removeClass('padding-10');
+        $('.container').removeClass('padding-15');
+        $('.container').addClass(paddingSelected);
       });
     });
   </script>
