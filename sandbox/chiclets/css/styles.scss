@@ -5,12 +5,42 @@
 body {
   margin: 0;
   padding: 0;
+  color: #666;
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 h1 {
-  margin-bottom: 2em;
+  font-family: AvenirNext-Medium;
+  font-size: 23px;
+  color: #252525;
+  font-weight: normal;
+  letter-spacing: -0.06px;
+  margin-bottom: 0;
+  + p {
+    margin-top: 6px;
+  }
+}
+
+h2 {
+  font-family: AvenirNext-Medium;
+  font-size: 18px;
+  color: #252525;
+  font-weight: normal;
+  letter-spacing: -0.05px;
+  margin-top: 1.6em;
+}
+
+p {
+  font-family: AvenirNext-Medium;
+  font-size: 14px;
+  letter-spacing: -0.04px;
+}
+
+.color {
+  &-dark {
+    color: #252525;
+  }
 }
 
 .container {
@@ -27,6 +57,28 @@ h1 {
   }
   &.padding-10 {
     padding: 10px;
+  }
+}
+
+.breadcrumb {
+  font-family: AvenirNext-DemiBold;
+  font-size: 14px;
+  // letter-spacing: -0.34px;
+  a {
+    color: #004EBC;
+    text-decoration: none;
+  }
+  a:first-child {
+    &:before {
+      content: "";
+      background: url(../../img/ico-back.svg) center center no-repeat;
+      display: inline-block;
+      position: relative;
+      width: 10px;
+      top: 3px;
+      height: 16px;
+      margin-right: 7px;
+    }
   }
 }
 
@@ -101,9 +153,9 @@ table {
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.06);
   border-radius: 4px;
   font-size: 14px;
-  color: #666;
   overflow: hidden;
   max-width: 355px;
+  margin-bottom: 1em;
   table {
     font-family: AvenirNext-Medium;
   }
