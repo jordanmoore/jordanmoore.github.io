@@ -147,6 +147,41 @@ table {
   }
 }
 
+.form-row {
+  position: relative;
+  label {
+    font-family: AvenirNext-DemiBold;
+    font-size: 16px;
+    color: #9B9B9B;
+    position: absolute;
+    left: 11px;
+    top: 13px;
+    transition: all 0.1s ease;
+  }
+  input {
+    width: 100%;
+    font-family: AvenirNext-DemiBold;
+    font-size: 16px;
+    color: #252525;
+    letter-spacing: 0;
+    padding: 11px 10px;
+    &:focus {
+      outline: none;
+    }
+    &:focus + label {
+      font-family: AvenirNext-Medium;
+      font-size: 14px;
+      top: -10px;
+      left: 8px;
+      background: #fff;
+      padding: 0 3px;
+    }
+    &.padding-15 {
+      padding: 11px 15px;
+    }
+  }
+}
+
 .chiclet {
   background: #FFFFFF;
   border: 1px solid #D2D2D2;
