@@ -14,51 +14,39 @@
       <h1 class="logo"><a href="/"></a></h1>
       <p class="byline"><b>Jordan Moore</b> is a product designer in pursuit of purpose, meaning and truth in new technology.</p>
 
-      <section class="contents">
-        <h2>Method</h2>
-        <ul>
-          <li><a href="/2017/05/26/the-power-of-awkward-silence-during-user-testing-sessions.html">The power of awkward silence in user testing sessions</a></li>
-          <li><a href="/2016/07/13/method-ux.html">Method UX</a></li>
-          <li><a href="/2014/08/01/how-i-test-type-and-layout.html">How I test type and layout</a></li>
-          <li><a href="/2013/03/02/responding-to-language.html">Responding to Language</a></li>
-          <li><a href="/2012/10/04/the-airfix-responsive-workflow.html">The Airfix Responsive Workflow</a></li>
-          <li><a href="/2012/08/27/where-print-fits-in-responsive-web-design.html">Where print fits in responsive web design</a></li>
-          <li><a href="/2012/04/26/building-with-content-choreography.html">Content choreography with Flexbox</a></li>
-        </ul>
-      </section>
+      <div class="blog-posts">
 
-      <hr>
+          <ul class="post-list">
+            {% for post in site.posts %}
+              <li>
+                <p class="date"><time>
+                  {% assign d = post.date | date: "%-d"  %}
+                  {{ post.date | date: "%B" }}
+                  {% case d %}
+                  {% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ post.date | date: "%Y" }}
+                </time></p>
+                <h1 class="content-header"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+                <article>
+                  <p>{{ post.summary }}</p>
+                </article>
+              </li>
+            {% endfor %}
+          </ul>
 
-      <section class="contents">
+          <!-- Pagination links -->
+          <div class="pagination marginBottom">
+            {% if paginator.previous_page %}
+              <a href="{{ paginator.previous_page_path }}" class="previous">&larr; Newer Articles</a>
+            {% endif %}
+            {% if paginator.next_page %}
+              <a href="{{ paginator.next_page_path }}" class="next">Older Articles &rarr;</a>
+            {% endif %}
+          </div>
+        <!-- /.container -->
+      </div>
 
-        <h2>Ethos</h2>
-        <ul>
-          <li><a href="/2018/03/21/content-context.html">Content &amp; Context</a></li>
-          <li><a href="/2018/03/21/reject-false-icons.html">Reject False Icons</a></li>
-        </ul>
-      </section>
 
-      <hr>
 
-      <section class="contents">
-
-        <h2>Tactics &amp; Habits</h2>
-        <ul>
-          <li><a href="/2018/03/23/managing-daily-tasks.html">Managing Daily Tasks</a></li>
-
-        </ul>
-      </section>
-
-      <hr>
-
-      <section class="contents">
-
-        <h2>Observations</h2>
-        <ul>
-          <li><a href="/2017/06/04/thoughts-on-human-vs-ai-narration.html">Thoughts on human vs AI narration</a></li>
-          <li><a href="/2015/01/21/a-modern-default.html">A modern default</a></li>
-        </ul>
-      </section>
   </div>
 
       {% include footer.html %}
