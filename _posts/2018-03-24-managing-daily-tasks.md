@@ -25,6 +25,6 @@ Such apps allow you to set due dates and notifications, but I find they take me 
 
 ## Why pen and paper?
 
-*The great thing about pen and paper is its inefficiency*. It takes time to write the list, and that’s the beauty of it! Editing is clunky and it gets annoying when you have to rewrite tasks that you need to move from day to day. For that reason, it encourages taking time to write better, more realistic goals. is too forgiving in that regard, pen and paper hold you more accountable and it promotes thinking through big tasks and breaking them down into achievable subtasks that can be done today.
+**The great thing about pen and paper is its inefficiency**. It takes time to write the list, and that’s the beauty of it! Editing is clunky and it gets annoying when you have to rewrite tasks that you need to move from day to day. For that reason, it encourages taking time to write better, more realistic goals. is too forgiving in that regard, pen and paper hold you more accountable and it promotes thinking through big tasks and breaking them down into achievable subtasks that can be done today.
 
 Using a good old fashioned notebook has the additional advantage of taking your eyes off the screen. That pause enforces a small step back and seeing the bigger picture. It’s therapeutic.
