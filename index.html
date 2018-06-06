@@ -2,29 +2,41 @@
 layout: homepage
 ---
 
-<div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <div class="blog-posts">
+        {% for post in paginator.posts %}
+          <article class="marginBottom-l">
+                <div class="container wide  textAlign-center">
+                  <p class="date color-grey"><time>
+                    {% assign d = post.date | date: "%-d"  %}
+                    {{ post.date | date: "%B" }}
+                    {% case d %}
+                    {% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ post.date | date: "%Y" }}
+                  </time></p>
 
-  <div class="container">
-    <ul class="post-list">
-      {% for post in site.posts %}
-        <li>
-          <span class="post-meta">{{ page.date | date: "%-d" }}{% case d %}
-      {% when '1' or '21' or '31' %}{{ d }}st
-      {% when '2' or '22' %}{{ d }}nd
-      {% when '3' or '23' %}{{ d }}rd
-      {% else %}{{ d }}th
-      {% endcase %}{{ page.date | date: "%B" }} {{ page.date | date: "%Y" }}</span>
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><h1 class="article-header">{{ post.title }}</h1></a>
+                </div>
+            <div class="container">
+              <div class="article-content">
+                {{ post.content }}
+              </div>
+            </div>
+          </article>
+        {% endfor %}
 
-          <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </h2>
-        </li>
-      {% endfor %}
-    </ul>
+
+      <!-- Pagination links -->
+      <div class="container pagination marginBottom">
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path }}" class="previous">&larr; Newer Articles</a>
+        {% endif %}
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path }}" class="next">Older Articles &rarr;</a>
+        {% endif %}
+      </div>
+    <!-- /.container -->
   </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
 
 </div>

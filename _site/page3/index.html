@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Product Design, Responsive Web Design, UX Design, Belfast Northern Ireland | Jordan Moore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10, user-scalable=1">
+  <meta name="description" content="Product designer, responsive web designer and UX designer in Belfast, Northern Ireland, specialising in user experience and accessible design
+">
+  <link href="https://fonts.googleapis.com/css?family=Faustina" rel="stylesheet">
+
+  <link rel="stylesheet" href="http://jordanm.co.uk/css/style.css">
+  <link rel="canonical" href="http://jordanm.co.uk/page3/">
+  <link rel="alternate" type="application/rss+xml" title="Product Design, Responsive Web Design, UX Design, Belfast Northern Ireland | Jordan Moore" href="http://jordanm.co.uk /feed.xml " />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+</head>
+
+
+<body class="homepage">
+    <header>
+      <div class="container">
+        
+
+<h1 class="logo"><a href="/"><span>Jordan Moore</span></a></h1>
+
+<nav>
+    <ul>
+        <li><a href="/" >Home</a></li>
+        <li><a href="/bookshelf" >Bookshelf</a></li>
+        <li><a href="http://jordanm.co.uk/#newsletter">Newsletter</a></li>
+    </ul>
+</nav>
+
+
+      </div>
+    </header>
+
+      <div class="blog-posts">
+        
+          <article class="marginBottom-l">
+                <div class="container wide  textAlign-center">
+                  <p class="date color-grey"><time>
+                    
+                    October
+                    8th, 2014
+                  </time></p>
+
+                  <a class="post-link" href="/2014/10/08/a-silent-web.html"><h1 class="article-header">A silent web</h1></a>
+                </div>
+            <div class="container">
+              <div class="article-content">
+                <p>Sometime during the last decade the web fell silent. There was a time when Flash-based websites with autoplaying background music were commonplace and the Internet felt like a lively, noisy place to be.</p>
+
+<p>Fast forward to the present day and websites have turned quiet apart from certain media elements like video where the user can give explicit permission to play.</p>
+
+<p>Whilst I believe this is better than websites that continuously sing at the user on an autoplaying loop, I think we maybe went too far in the condemnation of <em>all</em> forms of audio on the web.</p>
+
+<p>Consider audio as component of the user interface for a moment: what&#8217;s wrong with using a sound like pips to represent hovering on menu options?</p>
+
+<h2>Advantages</h2>
+
+<ul><li>Potentially good for accessibility where blind and partially sighted users might struggle to see a hover state</li>
+<li>The sound could form part of the look and <em>feel</em> of the experience</li>
+<li>And additionally it can help with other facets of the experience like helping a user feel a sense of achievement after completing a task</li>
+</ul><h2>Disadvantages</h2>
+
+<ul><li>The user is accustomed to a quiet web and the sound could come as an unwelcome shock</li>
+<li>From an accessibility standpoint - there would need to be some sort of standard to indicate hover states which could confuse blind and partially sighted users</li>
+</ul><p>When audio was mainstream on many websites it was during a time where volume controls were disconnected from the device - potentially hidden on part of a CRT monitor or detached on external speakers. This was likely a source of frustration where you would have to move from a comfortable position to turn down the volume. Today we are well accustomed to use devices with mute buttons when we don&#8217;t want our apps to make any noise - the same applies to desktop for the most part where mute buttons are part of the keyboard functions. Audio has a definitive off switch should the user choose to opt out of all audio, and I&#8217;d wager that most folks know that if they want their device to be quiet - they&#8217;ll put it in silent mode (or mute for laptops and desktops).</p>
+
+<p>Why should apps get all the fun of satisfying interface chirps and clicks when flowing through the experience? What if the games industry decided to go quiet in regards to their main menu systems? Both industries are trying achieve the same goal: to facilitate the user in completing a task. The game and app industries have audio as an integral part of UX whereas our industry opted to avoid it in recent years.</p>
+
+<p>I think we wrote off audio too soon.</p>
+
+              </div>
+            </div>
+          </article>
+        
+          <article class="marginBottom-l">
+                <div class="container wide  textAlign-center">
+                  <p class="date color-grey"><time>
+                    
+                    August
+                    1st, 2014
+                  </time></p>
+
+                  <a class="post-link" href="/2014/08/01/how-i-test-type-and-layout.html"><h1 class="article-header">How I test type and layout</h1></a>
+                </div>
+            <div class="container">
+              <div class="article-content">
+                <p>I thought I&#8217;d elaborate on my testing strategy that I introduced during a talk I gave recently for <a href="http://www.typecast.com/seminars">Typecast&#8217;s seminar series</a>. I described how I use two different testing methods for typography and responsive layouts.</p>
+
+<p>Both are two very different facets of the same overall system and subsequently require different test conditions. In essence, I test typography on devices and I test layout in the browser.</p>
+
+<h2>Mobile devices aren&#8217;t great for layout testing</h2>
+
+<p>Device stands may look pretty on your desk, but they&#8217;re not going to cover all the possible states of a responsive layout. In fact, testing layouts purely on a set of devices is no different than designing for a set of predefined weights and heights — devices let you see how a layout will act at a particular size, but that&#8217;s the only size you&#8217;ll see on that screen<sup id="fnref:p93444774181-1"><a href="#fn:p93444774181-1" rel="footnote">1</a></sup>.</p>
+
+<p>This is why I do the majority of my layout testing in the browser. A browser will let you see all the in-between states that a set of devices won&#8217;t let you see. Expanding and collapsing the browser window from the small compressed state to an uncompressed wide state like an accordion allows you to see your elements actively respond and helps identify any potential gaps or problem areas.</p>
+
+<p>Of course the actual device will show you the definitive state for that particular device - but what about every other permutation of the responsive layout?</p>
+
+<p>The desktop browser helps paint the complete layout picture. No modern mobile browser gets the basic fundamentals of CSS layout so wrong that it requires you to refresh and investigate every layout change[^1].</p>
+
+<h2>Desktop browsers aren&#8217;t great for testing type</h2>
+
+<p>Where a desktop browser excels at showing you the difference in screen sizes, shapes and dimensions - it fails to account for the potential differences in type rendering between browsers and operating systems. A single browser window can only show you how type renders for that individual display and configuration.</p>
+
+<p>The vast array of different mobile device displays requires a testing setup that caters for the variance in different screen densities, resolutions and screen types to give an indication of how type renders in these different environments.</p>
+
+<p>An electronic ink display might render the type blurry compared to the display of a crisp high density screen. This is where a broad set of devices comes in handy - it pays to stress test your fonts across the often unforgiving and varied display properties of mobile devices. A single desktop browser won&#8217;t let you know about any of these potential issues.</p>
+
+<h2>The best of both worlds</h2>
+
+<p>I still reference mobile browsers during layout testing from time to time - functional testing is a different matter where I test heavily on all devices - but primarily my <em>layout</em> testing happens in the browser and my type testing happens on mobile displays.</p>
+
+<p>The speed and efficiency of scaling a desktop browser window from small to large for building <em>truly</em> responsive layouts met with a set of devices that represent as much of the potential difference in display types is the sweet spot that works for me.</p>
+
+<div class="footnotes">
+<hr><ol><li id="fn:p93444774181-1">
+<p>Apart from different orientations if the device allows it. <a href="#fnref:p93444774181-1" rev="footnote">↩</a></p>
+</li>
+
+</ol></div>
+
+              </div>
+            </div>
+          </article>
+        
+          <article class="marginBottom-l">
+                <div class="container wide  textAlign-center">
+                  <p class="date color-grey"><time>
+                    
+                    July
+                    10th, 2014
+                  </time></p>
+
+                  <a class="post-link" href="/2014/07/10/emmets-hidden-power-features.html"><h1 class="article-header">Emmet's hidden power features</h1></a>
+                </div>
+            <div class="container">
+              <div class="article-content">
+                <p><a href="http://emmet.io/">Emmet</a> (formerly known as Zen Coding) is a plugin for text editors helping you create CSS and HTML faster by using abbreviations to write common values saving ridiculous amounts of time along the way.</p>
+
+<p>There are heaps of really useful features alongside Emmet&#8217;s primary text-expanding function. Here are a few of the hidden gems that I frequently use when coding<sup id="fnref:p91335536701-1"><a href="#fn:p91335536701-1" rel="footnote">1</a></sup>.</p>
+
+<h2>Inline Calculation</h2>
+
+<p>Emmet has a built-in calculator which allows you to solve equations directly in your code. I use this daily to solve EM values in CSS, particularly for nested EM values simply by pressing<sup id="fnref:p91335536701-2"><a href="#fn:p91335536701-2" rel="footnote">2</a></sup><kbd>Cmd</kbd> <kbd>Shift</kbd> <kbd>Y</kbd> beside an equation like: 24/16 (desired pixel value/base pixel value).</p>
+
+<p>You can also chain this with abbreviations, so typing: <code>mb24/16</code> and pressing <kbd>Cmd</kbd> <kbd>Shift</kbd> <kbd>Y</kbd> then <kbd>tab</kbd> would output: <code>margin-bottom: 1.5em</code>.</p>
+
+<h2>Jump to Matching Pair</h2>
+
+<p>Sometimes when coding HTML I might find a closing tag and it&#8217;s not always quick and easy to trace back to where the opening tag exists. Pressing <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>T</kbd> when the cursor is in the closing (or opening) tag jumps to the opening (or closing) tag pair.</p>
+
+<h2>Code comments</h2>
+
+<p>To prevent running into the situation in the previous tip, I recommend placing comments beside your closing tags. But writing the class name of the element for a second time and wrapping it in comments can take up time, and it&#8217;s extra effort that won&#8217;t be beneficial until you run into scenarios where you need to revisit that code, so it&#8217;s often forgotten about or left out completely.</p>
+
+<p>Thankfully Emmet makes it easier to write comments beneath closing tags by adding a tiny snippet to the end of an abbreviation. Typing: <code>.container&gt;ul&gt;li*5&gt;a|c</code> expands to:</p>
+
+<pre><code>&lt;div class="container"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- /.container --&gt;</code></pre>
+
+<p>So writing comments where elements close is as easy as writing <code>|c</code>.</p>
+
+<h2>Convert image to Data URI</h2>
+
+<p>One of the most underused features of Emmet is it&#8217;s built-in ability to convert images to data:URI schemes. Using a data:URI instead of linking to an external image saves an extra HTTP request which ultimately improves the performance of your site by reducing latency.</p>
+
+<p>To convert an image to a data:URI, place your cursor in the image tag and press <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>D</kbd>.</p>
+
+<hr><p>Emmet can be as powerful as you want it to be. It&#8217;s worth using for its text-expansion capabilities alone saving huge amounts of coding time, but beyond that lies a very powerful suite of development tools.</p>
+
+<div class="footnotes">
+<hr><ol><li id="fn:p91335536701-1">
+<p>This article assumes you are familiar with Emmet. If you haven&#8217;t tried it out yet <a href="http://emmet.io/">you absolutely must</a>. <a href="#fnref:p91335536701-1" rev="footnote">↩</a></p>
+</li>
+
+<li id="fn:p91335536701-2">
+<p>The keyboard shortcuts shown here work for my Mac installation of Sublime Text and Emmet. From what I can tell they may differ between installations, Windows installs will obviously have different shortcuts too. Bring up the Go To Anything menu and start typing the name of the command you wish to use to see the shortcut key. <a href="#fnref:p91335536701-2" rev="footnote">↩</a></p>
+</li>
+
+</ol></div>
+
+              </div>
+            </div>
+          </article>
+        
+          <article class="marginBottom-l">
+                <div class="container wide  textAlign-center">
+                  <p class="date color-grey"><time>
+                    
+                    December
+                    19th, 2013
+                  </time></p>
+
+                  <a class="post-link" href="/2013/12/19/view-full-site-the-worst-anti-pattern.html"><h1 class="article-header">View full site - the worst anti-pattern</h1></a>
+                </div>
+            <div class="container">
+              <div class="article-content">
+                <p>The “view full site” link has fostered a negative behavioural trait. When faced with problems on a dedicated mobile site users have a tendency to look for the full site link like some sort of safety net.</p>
+
+<p>How often have you arrived on a broken link on a dedicated mobile site from a search engine and looked for the full site link in an attempt to solve the problem? It’s instinctive among web savvy people, but I have witnessed people outside of our industry perform the same behavioural trait in a similar unconscious manner.</p>
+
+<p>The sad truth is “view full site” can also be used by web developers as a safety net if the small screen experience isn’t good enough. The pinch-to-zoom fallback is there when a poor implementation fails and lazy web developers capitalise on the user’s newfound habits of correcting such website issues by clicking this magical link.</p>
+
+<p>This leaves responsive designers in a difficult position. We are already on the back foot when the user arrives at our lovingly tailored responsive experience — we have to convince the user that our responsive design <strong>is</strong> the full experience after years of being misled to think they are getting half a product by dedicated mobile sites overzealous in removing content and stripping back features</p>
+
+<p>Part of the problem is that from the average user’s perspective a dedicated mobile site may not look too different to a responsive site on the surface. If they run into problems with our design or perhaps they expected to see some content that is missing because it was simply overlooked, do they feel misled by default?</p>
+
+<p>So how do we fix this problem? By continuing to fight the good fight with ubiquitous experiences and earning back the user’s trust over time — it’s not going to be a quick fix. Bad habits take time to eradicate. The great content swindle needs to stop.</p>
+
+              </div>
+            </div>
+          </article>
+        
+          <article class="marginBottom-l">
+                <div class="container wide  textAlign-center">
+                  <p class="date color-grey"><time>
+                    
+                    December
+                    4th, 2013
+                  </time></p>
+
+                  <a class="post-link" href="/2013/12/04/what-we-can-learn-from-game-designers.html"><h1 class="article-header">What we can learn from game designers</h1></a>
+                </div>
+            <div class="container">
+              <div class="article-content">
+                <p>After watching Indie Game: The Movie during Channel 4’s video games night I couldn’t help but notice the parallels between game design and web design. There are elements of this that I have noticed before, but I thought I’d share some of the facets of video games that aren’t spoken about so often in relation to our industry.</p>
+
+<p>Note that this isn’t a discussion about <a href="http://en.wikipedia.org/wiki/Gamification">gamification</a>, rather a look at how game <em>design</em> applies to the web.</p>
+
+<h3>Video games are usability success stories</h3>
+
+<p>Pong is perhaps one of the greatest examples of usability for a digital product. The original Pong arcade box featured two knobs. A knob on one side of the box for player one and one on the other side for player two. Twisting the knob on the either side moved the corresponding on screen paddle up and down.</p>
+
+<p>The box had no instructions. The player was left to learn the behaviour and play.</p>
+
+<p><figure><img src="http://farm4.staticflickr.com/3743/11189802263_36d1eb76a4_o.png"/><figcaption>The original Pong machine deserves credit for being a usability success</figcaption></figure></p>
+
+<p>More complex games that require extra behaviours to progress (let’s use Tomb Raider as an example) produce scenarios where environmental situations encourage you to recall certain behaviours, perform the input combination on the controller to trigger the behaviour and progress. In fact most games are essentially sequences of pattern recognition.</p>
+
+<p>One of the most enjoyable facets of gaming is when the player is in a state of flow<sup id="fnref:p68879624841-1"><a href="#fn:p68879624841-1" rel="footnote">1</a></sup> and they perform the actions almost instinctively. The game then feels more rewarding to play because the player is progressing at the ideal pacing and feels more at one with the game when difficulty level and ability level are in perfect synergy.</p>
+
+<p><figure><img src="http://farm4.staticflickr.com/3793/11189680715_eb10fb7e66_o.jpg"/><figcaption>In Tomb Raider the player quickly learns to apply input combinations in relation to environmental features. Some ledges require a running jump rather than a regular jump to progress to the next area</figcaption></figure></p>
+
+<p>Repetition plays a key role in establishing these actions in the user’s mind. If you strip the surface texture graphics and reduce the polygon count in Tomb Raider, you would notice that the environments would look quite similar in that they can all be traversed using the same character behaviours but in varied and more challenging ways — the foundations remain the same from the first level through to the end.</p>
+
+<p>There are many lessons we can learn from how games are designed and built and apply the findings to the web. Input combinations that trigger specific actions could appear in the form of <strong>gestures</strong> or even as part of a <strong>visual language</strong>. Think about how games teach you to subconsciously perform such actions using techniques like <strong>pacing</strong> and <strong>repetition</strong> to help engrain them in the user’s intuition.</p>
+
+<p>You might think that kind of thinking could lead to a deviation from established web design patterns” - it all depends on the implementation. Imagine a first person shooter that didn’t bind the fire action to the right shoulder button on a controller or the left mouse button and instead required you to press a button like ’x’. It would be infuriating because it simply doesn’t feel right. Design patterns occur in games too, they’re just sometimes hard to spot because they almost feel like second nature — which is a very good thing.</p>
+
+<h3>Storytelling and narratives</h3>
+
+<p>We can learn a lot from point-and-click adventure games. Not even in regards to the nature of the input for the genre — my favourite point-and-click adventure was Grim Fandango which was labelled a point-and-click adventure even though it was controlled entirely by keyboard — I’m talking about how they are structured in terms of their narratives.</p>
+
+<p>All good stories have a beginning, a middle and an end. Point-and-click adventures are (mostly) linear stories made up of <strong>sequences</strong> that require item collection and puzzle solving to advance to the next sequence. The difference between the web and point-and-click adventures is that the latter wants you to struggle to advance, but not too much. In <em>most</em> cases on the web, that’s not what we want to do, but there are certainly elements from this genre that we can learn from and apply to the web. Adventure games are trying to funnel the user down the linear story without leaving you <em>completely</em> stuck, otherwise the user is less likely to feel compelled to finish the game. It’s the in-between bits that hold this narrative flow together that interests me the most — when the player starts to struggle the game has a job on its hands to keep the player interested and help them back into the narrative so the game can tell its story.</p>
+
+<p>Characters respond to changes in the dynamics of the game. If you are looking for a specific item to proceed to the next sequence and you’re having a hard time doing so, some specific characters will become aware of the situation at hand and perhaps provide help or hints when spoken to.</p>
+
+<p><figure><img src="http://farm8.staticflickr.com/7290/11189654275_7470acb045_o.png"/><figcaption>In Grim Fandango speaking to characters you have already met can often provide clues as to how to proceed to the next sequence</figcaption></figure></p>
+
+<p>This sense of situational awareness can apply to the web too. As a user progresses through our own narrative, situational awareness can help the user progress to the next scene. Imagine a user adds an item to their cart in an e-commerce website — the dynamics of the situation have changed from when the user began on their journey and we can help them through to the end of the story. Perhaps the user digresses from the shop after deciding to read a rather interesting article on the store’s blog about how the store has been donating a portion of profits to charity. What if the blog post had a helpful block at the end to inform the user of the change in dynamics? Something to the effect of: “And you can help us donate too by buying that t-shirt in your cart. Would you like to do that now?”</p>
+
+<p>Games speak to the players in plain English. No technical jargon like “Your session has expired” — something informative, clear and to the point, but not abrupt and not too long so that it wastes time either. Narrative content is hard.</p>
+
+<p>We really should listen to video game designers and developers a lot more. I would love to see people like <a href="http://www.raphkoster.com">Raph Koster</a> speak at web design conferences and talk about flow theory, establishing core gameplay and environmental mechanics and the similar challenges we face in both industries. When it comes to telling compelling stories and teaching users to perform instinctual reactions to scenarios, the games industry has been doing this for a long time and have left a lot of good examples for us to learn from.</p>
+
+<div class="footnotes">
+<hr><ol><li id="fn:p68879624841-1">
+<p><a href="http://www.ccs.neu.edu/home/lieber/courses/cs4500/sp09/resources/p31-chen-flow-in-games.pdf%C2%A0">http://www.ccs.neu.edu/home/lieber/courses/cs4500/sp09/resources/p31-chen-flow-in-games.pdf </a><a href="#fnref:p68879624841-1" rev="footnote">↩</a></p>
+</li>
+
+</ol></div>
+
+              </div>
+            </div>
+          </article>
+        
+
+
+      <!-- Pagination links -->
+      <div class="container pagination marginBottom">
+        
+          <a href="/page2" class="previous">&larr; Newer Articles</a>
+        
+        
+          <a href="/page4" class="next">Older Articles &rarr;</a>
+        
+      </div>
+    <!-- /.container -->
+  </div>
+
+
+
+</div>
+
+
+      <section class="newsletter" id="newsletter">
+  <footer>
+    <div class="container">
+      <div class="footer-col">
+        <h4 class="small-header">About</h4>
+        <p>I am currently Director of Design at <a href="https://dawsonandrews.com">Dawson Andrews</a> and in the process of building the Research and Development part of the company. We'll explore interesting things like purpose, meaning and truth through technology. <a href="mailto:jm@dawsonandrews.com">Want to join?</a></p>
+        <h4 class="small-header">Newsletter</h4>
+        <p>Sometimes I publish a newsletter called <strong>The Logbook</strong> which you can subscribe to here.</p>
+        <div id="mc_embed_signup" class="marginBottom">
+          <form action="https://jordanm.us5.list-manage.com/subscribe/post?u=3e0b1d25a7ba2bbb8c0c979ae&amp;id=4932254eb1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <div class="mc-field-group">
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email address">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+              </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3e0b1d25a7ba2bbb8c0c979ae_4932254eb1" tabindex="-1" value=""></div>
+            </div>
+          </form>
+        </div>
+        <!--End mc_embed_signup-->
+      </div>
+
+      <div class="footer-col copyright">
+          <p><span>&copy; Jordan Moore 2018</span> <a href="/feed.xml">RSS</a></p>
+
+      </div>
+
+    </div>
+  </footer>
+</section>
+
+
+</body>
+
+</html>

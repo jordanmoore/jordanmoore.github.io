@@ -9,12 +9,11 @@ url: "http://jordanm.co.uk" # the base hostname & protocol for your site
 github: [metadata]
 twitter_username: jordanmoore
 github_username:  jordanmoore
-paginate: 9
+paginate: 5
 exclude: [node_modules]
-paginate_path: "/blog/page:num/"
 gems:
-  - jekyll-redirect-from
   - jekyll-paginate
+  - jekyll-redirect-from
   - jekyll-haml
   - jekyll-livereload
   - octopress-minify-html

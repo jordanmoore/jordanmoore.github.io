@@ -5,48 +5,12 @@
 <body class="homepage">
     <header>
       <div class="container">
+        {% include nav.html %}
+
       </div>
     </header>
 
-    <div class="container marginBottom">
-
-      <h1 class="logo"><a href="/"></a></h1>
-      <p class="byline"><b>Jordan Moore</b> is a product designer in pursuit of purpose, meaning and truth in new technology.</p>
-
-      <div class="blog-posts">
-
-          <ul class="post-list">
-            {% for post in site.posts %}
-              <li>
-                <p class="date"><time>
-                  {% assign d = post.date | date: "%-d"  %}
-                  {{ post.date | date: "%B" }}
-                  {% case d %}
-                  {% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ post.date | date: "%Y" }}
-                </time></p>
-                <h1 class="content-header"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-                <article>
-                  <p>{{ post.summary }}</p>
-                </article>
-              </li>
-            {% endfor %}
-          </ul>
-
-          <!-- Pagination links -->
-          <div class="pagination marginBottom">
-            {% if paginator.previous_page %}
-              <a href="{{ paginator.previous_page_path }}" class="previous">&larr; Newer Articles</a>
-            {% endif %}
-            {% if paginator.next_page %}
-              <a href="{{ paginator.next_page_path }}" class="next">Older Articles &rarr;</a>
-            {% endif %}
-          </div>
-        <!-- /.container -->
-      </div>
-
-
-
-  </div>
+    {{ content }}
 
       {% include footer.html %}
 
