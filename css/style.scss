@@ -74,6 +74,18 @@ img {
     text-decoration: none;
     color: $dark;
     display: block;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 244px;
+      left: 36px;
+      right: 36px;
+      height: 16px;
+      background: transparent;
+      z-index: -1;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
     &:hover {
       img {
         transform: scale(1.06);
