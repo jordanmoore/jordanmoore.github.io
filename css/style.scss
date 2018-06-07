@@ -93,15 +93,18 @@ img {
       vertical-align: bottom;
 
       p {
-        line-height: 1.4;
-        font-weight: 700;
-        font-family: $sans;
+        font-weight: 600;
+        font-size: 15px;
+        letter-spacing: -0.45px;
+        line-height: 1.2;
       }
 
       span {
         display: block;
         font-size: 0.88em;
         font-weight: normal;
+        color: $grey;
+        margin-top: 0.2em;
       }
     }
   }
