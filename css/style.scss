@@ -74,7 +74,6 @@ img {
     text-decoration: none;
     color: $dark;
     display: block;
-    transition: all 0.16s ease;
     &:hover {
       img {
         transform: scale(1.06);
@@ -120,6 +119,7 @@ img {
   img {
     height: 260px;
     box-shadow: 0 0 0 1px rgba(47,49,53,0.06),0 1px 3px rgba(47,49,53,0.2),4px 5px 5px rgba(47,49,53,0.06),-4px 5px 5px rgba(47,49,53,0.06);
+    transition: all 0.16s ease;
   }
 }
 
