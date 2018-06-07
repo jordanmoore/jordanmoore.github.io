@@ -73,6 +73,12 @@ img {
   a {
     text-decoration: none;
     color: $dark;
+    &:hover {
+      img {
+        transform: scale(1.06);
+        box-shadow: 0 0 0 1px rgba(47,49,53,0.06),0 1px 3px rgba(47,49,53,0.2),4px 5px 10px rgba(47,49,53,0.26),-4px 5px 10px rgba(47,49,53,0.26);
+      }
+    }
   }
 
   ul {
@@ -111,6 +117,7 @@ img {
 
   img {
     height: 260px;
+    box-sizing: 0 0 0 1px rgba(47,49,53,0.06),0 1px 3px rgba(47,49,53,0.2),4px 5px 5px rgba(47,49,53,0.06),-4px 5px 5px rgba(47,49,53,0.06);
   }
 }
 
