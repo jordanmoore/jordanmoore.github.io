@@ -113,7 +113,7 @@ img {
 
 
 .container {
-  max-width: 593px;
+  max-width: 606px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1.6em;
@@ -131,13 +131,10 @@ img {
 }
 
 header {
-  background: fade-out($grey, 0.96);
   margin-bottom: 6em;
-  > .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
-  }
 }
 
 nav {
@@ -174,22 +171,42 @@ h2 {
   margin-top: 2em;
 }
 
+.article-header {
+  font-weight: 600;
+  font-size: 1.6em;
+  @media screen and (min-width:520px) {
+    font-size: 2.38em;
+    font-size: 3em;
+    line-height: 1.08365;
+    font-weight: 600;
+    letter-spacing: -.003em;
+  }
+  line-height: 1.4;
+  letter-spacing: -1.22px;
+  margin-top: 0.3em;
+}
+
+
 .article-content {
+  h2 {
+    font-weight: 600;
+  }
   p {
-    // font-family: $serif;
-    line-height: 1.5em;
+    font-size: 1.06em;
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: .011em;
     @media screen and (min-width:520px) {
       font-size: 1em;
       &:first-of-type {
-        font-size: 1.16em;
+        font-size: 1.31em;
       }
     }
   }
   li {
-    // font-family: $serif;
     line-height: 1.5em;
     @media screen and (min-width:520px) {
-      font-size: 1em;
+      font-size: 1.06em;
     }
   }
   ul {
@@ -253,16 +270,6 @@ h2 {
 .post-link {
   text-decoration: none;
   color: $dark;
-}
-.article-header {
-  font-weight: 700;
-  font-size: 1.6em;
-  @media screen and (min-width:520px) {
-    font-size: 2.38em;
-  }
-  line-height: 1.4;
-  letter-spacing: -1.22px;
-  margin-top: 0.3em;
 }
 
 .logo a {
