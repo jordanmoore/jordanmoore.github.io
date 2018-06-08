@@ -14,11 +14,11 @@ Each of the five factors (O,C,E,A,N) are scored between 1-100 according to the i
 
 The five factors are:
 
-- **Openness** - this trait describes someone's appreciation for art, adventure, inventiveness, creativity, sensitivity to beauty, likely to hold unconventional beliefs - things of an abstract nature. I personally sit on the 95th percentile for openness which seems abnormally high, but most people in the design industry tend to rank quite highly in this factor
-- **Conscientiousness** - a sense of self-discipline, desire for achievement, tendency to defy measures impeding the route to success, orderly, attention to detail
-- **Extraversion** - mostly describes what kind of social animal you are, the ability to start conversations, talking to a variety of people at a party, ability to assert themselves, extraverts rather than introverts
-- **Agreeableness** - sensitivity towards others, empathy for the emotions of others, interested in people and the desire to make people feel at ease, giving up time for others, kind, generous, trusting, optimistic about the intentions of others
-- **Neuroticism** - negative emotions such as anger, anxiety, depression, easily stressed and irritated, worrying, prone to mood swings
+- <span class="small-caps color-red">Openness</span> - this trait describes someone's appreciation for art, adventure, inventiveness, creativity, sensitivity to beauty, likely to hold unconventional beliefs - things of an abstract nature. I personally sit on the 95th percentile for openness which seems abnormally high, but most people in the design industry tend to rank quite highly in this factor
+- <span class="small-caps color-red">Conscientiousness</span> - a sense of self-discipline, desire for achievement, tendency to defy measures impeding the route to success, orderly, attention to detail
+- <span class="small-caps color-red">Extraversion</span> - mostly describes what kind of social animal you are, the ability to start conversations, talking to a variety of people at a party, ability to assert themselves, extraverts rather than introverts
+- <span class="small-caps color-red">Agreeableness</span> - sensitivity towards others, empathy for the emotions of others, interested in people and the desire to make people feel at ease, giving up time for others, kind, generous, trusting, optimistic about the intentions of others
+- <span class="small-caps color-red">Neuroticism</span> - negative emotions such as anger, anxiety, depression, easily stressed and irritated, worrying, prone to mood swings
 
 Every person maps differently to each of the OCEAN personality traits, and having an understanding of how others around you correlate is beneficial to your interactions with them. Not everybody is comfortable being open about the specific scores on each of the factors, particularly as some indicate socially negative traits such as anxiety and depression. Before co-founding our product design studio, each of the directors took the Big Five Personality test as a means to a) see how aligned/unaligned we were in our own individual personalities and b) as a means of empathising with each other in recognising our strengths and supporting our weaknesses. I understand that not everybody would be comfortable sharing something that is so personal to the individual, but we found this exercise has eradicated any talk of <em>"I don't understand [person]'s point of view"</em> and <em>"I don't get where [person] coming from"</em>.
 
@@ -45,7 +45,7 @@ Then there's the question of how you store this information and what exactly you
 > If ethics is about the question of how to act, and designers help to shape how technologies mediate action, designing should be considered ‘ethics by other means.’
 > Every technological artefact that is used will mediate human actions, and every act of design, therefore, helps to constitute moral practices.
 >
-> P. P. Verbeek, What Things Do, 2009 [^2]
+> <span class="small-caps">P. P. Verbeek, What Things Do</span> [^2]
 
 In other words, every design decision you make is loaded with your intent and bias. We're already knee deep in the danger game whether you have realised this sobering fact already or not. Another one of the major challenges is engineering objectivity into this process, and whether this field is explored further or not, we should look to engineer objectivity into our work regardless.
 

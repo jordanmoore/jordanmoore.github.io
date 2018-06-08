@@ -6,8 +6,8 @@
 </description>
     <link>http://jordanm.co.uk/</link>
     <atom:link href="http://jordanm.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 07 Jun 2018 11:02:20 +0100</pubDate>
-    <lastBuildDate>Thu, 07 Jun 2018 11:02:20 +0100</lastBuildDate>
+    <pubDate>Fri, 08 Jun 2018 21:41:43 +0100</pubDate>
+    <lastBuildDate>Fri, 08 Jun 2018 21:41:43 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -21,11 +21,11 @@
 &lt;p&gt;The five factors are:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Openness&lt;/strong&gt; - this trait describes someone’s appreciation for art, adventure, inventiveness, creativity, sensitivity to beauty, likely to hold unconventional beliefs - things of an abstract nature. I personally sit on the 95th percentile for openness which seems abnormally high, but most people in the design industry tend to rank quite highly in this factor&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Conscientiousness&lt;/strong&gt; - a sense of self-discipline, desire for achievement, tendency to defy measures impeding the route to success, orderly, attention to detail&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Extraversion&lt;/strong&gt; - mostly describes what kind of social animal you are, the ability to start conversations, talking to a variety of people at a party, ability to assert themselves, extraverts rather than introverts&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Agreeableness&lt;/strong&gt; - sensitivity towards others, empathy for the emotions of others, interested in people and the desire to make people feel at ease, giving up time for others, kind, generous, trusting, optimistic about the intentions of others&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Neuroticism&lt;/strong&gt; - negative emotions such as anger, anxiety, depression, easily stressed and irritated, worrying, prone to mood swings&lt;/li&gt;
+  &lt;li&gt;&lt;span class=&quot;small-caps color-red&quot;&gt;Openness&lt;/span&gt; - this trait describes someone’s appreciation for art, adventure, inventiveness, creativity, sensitivity to beauty, likely to hold unconventional beliefs - things of an abstract nature. I personally sit on the 95th percentile for openness which seems abnormally high, but most people in the design industry tend to rank quite highly in this factor&lt;/li&gt;
+  &lt;li&gt;&lt;span class=&quot;small-caps color-red&quot;&gt;Conscientiousness&lt;/span&gt; - a sense of self-discipline, desire for achievement, tendency to defy measures impeding the route to success, orderly, attention to detail&lt;/li&gt;
+  &lt;li&gt;&lt;span class=&quot;small-caps color-red&quot;&gt;Extraversion&lt;/span&gt; - mostly describes what kind of social animal you are, the ability to start conversations, talking to a variety of people at a party, ability to assert themselves, extraverts rather than introverts&lt;/li&gt;
+  &lt;li&gt;&lt;span class=&quot;small-caps color-red&quot;&gt;Agreeableness&lt;/span&gt; - sensitivity towards others, empathy for the emotions of others, interested in people and the desire to make people feel at ease, giving up time for others, kind, generous, trusting, optimistic about the intentions of others&lt;/li&gt;
+  &lt;li&gt;&lt;span class=&quot;small-caps color-red&quot;&gt;Neuroticism&lt;/span&gt; - negative emotions such as anger, anxiety, depression, easily stressed and irritated, worrying, prone to mood swings&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Every person maps differently to each of the OCEAN personality traits, and having an understanding of how others around you correlate is beneficial to your interactions with them. Not everybody is comfortable being open about the specific scores on each of the factors, particularly as some indicate socially negative traits such as anxiety and depression. Before co-founding our product design studio, each of the directors took the Big Five Personality test as a means to a) see how aligned/unaligned we were in our own individual personalities and b) as a means of empathising with each other in recognising our strengths and supporting our weaknesses. I understand that not everybody would be comfortable sharing something that is so personal to the individual, but we found this exercise has eradicated any talk of &lt;em&gt;“I don’t understand [person]’s point of view”&lt;/em&gt; and &lt;em&gt;“I don’t get where [person] coming from”&lt;/em&gt;.&lt;/p&gt;
@@ -54,7 +54,7 @@
   &lt;p&gt;If ethics is about the question of how to act, and designers help to shape how technologies mediate action, designing should be considered ‘ethics by other means.’
 Every technological artefact that is used will mediate human actions, and every act of design, therefore, helps to constitute moral practices.&lt;/p&gt;
 
-  &lt;p&gt;P. P. Verbeek, What Things Do, 2009 &lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;span class=&quot;small-caps&quot;&gt;P. P. Verbeek, What Things Do&lt;/span&gt; &lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;In other words, every design decision you make is loaded with your intent and bias. We’re already knee deep in the danger game whether you have realised this sobering fact already or not. Another one of the major challenges is engineering objectivity into this process, and whether this field is explored further or not, we should look to engineer objectivity into our work regardless.&lt;/p&gt;
