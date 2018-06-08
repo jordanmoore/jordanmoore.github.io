@@ -312,6 +312,9 @@ strong, b {
     padding-top: 1.6em;
     li {
       font-size: 0.8em;
+      a {
+        word-break: break-word;
+      }
       p {
         margin: 0 0 0.3em;
       }
