@@ -128,6 +128,9 @@ img {
       }
     }
   }
+  .article-content ul li:before {
+    display: none;
+  }
 
   img {
     height: 260px;
