@@ -40,6 +40,40 @@
                 <div class="container wide  textAlign-center">
                   <p class="date color-grey"><time>
                     
+                    May
+                    6th, 2013
+                  </time></p>
+
+                  <a class="post-link" href="/2013/05/06/beyond-the-canvas.html"><h1 class="article-header">Beyond the Canvas</h1></a>
+                </div>
+            <div class="container">
+              <div class="article-content">
+                <p>When we design we generally do so in two dimensions — length and width. They are the physical constraints of what our technology is currently capable of. Our dimensional restraints are then realised on the devices used to experience our design.</p>
+
+<p>Beyond the two dimensional screen exists the third dimension (and many other theorised dimensions) — the physical space in which our designs exist beyond the canvas. Here, all sorts of physical parameters affect how a person uses our design.</p>
+
+<p>Consider the user&#8217;s physical space around them — perhaps they are lying on their side on the sofa or in bed and holding a mobile device with one hand. Can the design be enjoyed when a user&#8217;s is physically restricted from using two hands? Luke Wroblewski further elaborates on this idea in his <a href="http://www.lukew.com/ff/entry.asp?1664">Testing One Thumb, One Eyeball article</a> detailing the test procedure for Polar.</p>
+
+<blockquote>
+  <p>If people can get things done in time sensitive, limited dexterity situations, they&#8217;ll be even more efficient when we have their full attention and two-hands focused on our designs.</p>
+</blockquote>
+
+<p>In a <a href="http://www.lukew.com/ff/entry.asp?1649">separate article</a> Luke details the reach of one thumb with the diagram below to show the considerations for positioning navigation. This is relevant to anything you want people to reach easily, for example if you had a single purpose web app, you might want to position the primary action in the safe zone just like Instagram does with their primary action (take picture).</p>
+
+<p><figure><img src="http://static.lukew.com/tnav-touch-phones2.png" alt=""/><figcaption>Image from Luke Wroblewski&#8217;s <a href="http://www.lukew.com/ff/entry.asp?1649">Responsive Navigation: Optimizing for Touch Across Devices</a> article</figcaption></figure></p>
+
+<p>Beyond the canvas take into account where the thumb might hover while the device is in use. Sometimes people rest their thumb along the ridge of the hardware while others hover it over a portion of the screen poised to press something. This emphasises the importance of testing with real devices. Real hardware considers space in three dimensions whereas on-screen emulators put themselves into the two dimensional canvas free from physical distractions — it&#8217;s not really representative of the physical world we live in <strong>beyond the canvas</strong>.</p>
+
+<p><a href="http://static.tumblr.com/jdwzxqr/Jzvmoh6ie/canvas.jpg" class="cover" data-credit="© Patrick Feller" data-link="http://www.flickr.com/photos/nakrnsm"></a></p>
+
+              </div>
+            </div>
+          </article>
+        
+          <article class="marginBottom-l">
+                <div class="container wide  textAlign-center">
+                  <p class="date color-grey"><time>
+                    
                     April
                     26th, 2013
                   </time></p>
@@ -196,48 +230,6 @@
 </li>
 
 </ol></div>
-
-              </div>
-            </div>
-          </article>
-        
-          <article class="marginBottom-l">
-                <div class="container wide  textAlign-center">
-                  <p class="date color-grey"><time>
-                    
-                    March
-                    2nd, 2013
-                  </time></p>
-
-                  <a class="post-link" href="/2013/03/02/responding-to-language.html"><h1 class="article-header">Responding to Language</h1></a>
-                </div>
-            <div class="container">
-              <div class="article-content">
-                <p>Recently Vasilis van Gemert authored a very useful article on Smashing Magazine about <a href="http://www.smashingmagazine.com/2013/03/01/logical-breakpoints-responsive-design/">Logical Breakpoints For Your Responsive Design</a>. The article touches on how it you could theoretically produce different reading lengths and breakpoints for different languages. To support this idea Vasilis introduces an insightful little tool showing how the contrasting word length between different languages influences reading length.</p>
-
-<p><img src="http://static.tumblr.com/jdwzxqr/bx5mj0xoa/screen_shot_2013-03-02_at_08.16.28.png" alt="Cropped screenshot of The International Measure Slider"/></p>
-
-<p>This tool is worth bookmarking if you are designing multi-lingual layouts. You can take it a step further by <strong>responding to the user’s language using CSS</strong>.</p>
-
-<p>The language of an HTML document is defined by the ‘lang’ attribute in the ‘&lt;html&gt;’ tag at the root of the document. This gives us a hook that we can use in CSS to apply globally to the document.</p>
-
-<p>Imagine a scenario where we had a blog that has a language switcher between English and German. Generally German words are longer than English so we might want to set the reading length on the German version of our article to a slightly wider value.</p>
-
-<p>The CSS might look something like this:</p>
-
-<pre><code>article {
-   max-width:33em;
-}
-:lang(de) article {
-  max-width:40em;
-}
-</code></pre>
-
-<p>As soon as the ‘lang’ attribute is changed from the default ‘en’ to ‘de’ (through a mechanism like a language select dropdown) the width of the ‘&lt;article&gt;’ changes to a wider reading length making a (potentially) easier read for our German readers.</p>
-
-<p>You could extend this technique to tweak the rest of the layout to adapt to the changing line-length. The fact that the language attribute is at the root of the document makes for a nice and clean base to apply global rules that respond to different languages.</p>
-
-<p><a href="http://static.tumblr.com/jdwzxqr/u82moh7s5/language.jpg" class="cover" data-credit="© alangrlane" data-link="http://www.flickr.com/photos/53914298@N07"></a></p>
 
               </div>
             </div>

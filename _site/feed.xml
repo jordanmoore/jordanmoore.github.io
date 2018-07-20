@@ -6,9 +6,75 @@
 </description>
     <link>http://jordanm.co.uk/</link>
     <atom:link href="http://jordanm.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 19 Jul 2018 20:21:21 +0100</pubDate>
-    <lastBuildDate>Thu, 19 Jul 2018 20:21:21 +0100</lastBuildDate>
+    <pubDate>Fri, 20 Jul 2018 10:17:04 +0100</pubDate>
+    <lastBuildDate>Fri, 20 Jul 2018 10:17:04 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Industry Fatigue</title>
+        <description>&lt;p&gt;A &lt;a href=&quot;https://twitter.com/shylands/status/1019302186554200064&quot;&gt;Tweet from Steven Hylands&lt;/a&gt; caught my attention and got me thinking about my outlook on the digital design landscape, or more specifically my approach to learning new things in this space.&lt;/p&gt;
+
+&lt;p&gt;I have spent the last year or so avoiding any sources of design news aggregators including dedicated sites, Twitter accounts and various Medium publications. It wasn’t an overly conscious decision, it just sort of happened that I fell out of the loop, realised later that I fell out of the loop and then decided it wasn’t a loop I was interested in getting back into.&lt;/p&gt;
+
+&lt;p&gt;My honest opinion is that I don’t feel like I’d miss any monumental leaps in our industry if I stopped checking design news or missed out on some new framework or build tool.&lt;/p&gt;
+
+&lt;p&gt;There are of course things worth your time and deep consideration, and there are distractions. Profound new thinking and movements within our industry - the kind that fundamentally shifts the way we work in a positive new direction &lt;em&gt;are&lt;/em&gt; worth your time and attention. Other things are distractions. I put new industry gossip, frameworks, software and tools firmly in the distractions category. This is the sort of content that exists in the padding between big movements. It’s the kind of stuff that doesn’t break new ground and it doesn’t make or break your ability to do your job.&lt;/p&gt;
+
+&lt;p&gt;Here is an over-simplified timeline of the industry movements that I have witnessed:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Web standards&lt;/strong&gt; (1998)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Web 2.0&lt;/strong&gt; (~2002)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Responsive design&lt;/strong&gt; (2010)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Design Systems&lt;/strong&gt; (~2015)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;The Next Big Thing™&lt;/strong&gt; (20××) &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These are the big fundamental leaps in how we make and how we have made things and lots of time in between them. If you have been in the industry during any of these movements, it was hard to miss any one of them. My reassuring message is that &lt;strong&gt;the important stuff finds you&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;New tools&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;, software, frameworks and hot takes on design matters dominate feed aggregators and I secretly think a lot of authors consciously utilise FOMO - not in the sense that you’re missing out on something important, but the idea that you’ll fall behind in how to do your job. This is simply not true.&lt;/p&gt;
+
+&lt;h2 id=&quot;a-side-note-on-future-design-jobs&quot;&gt;A side note on future design jobs&lt;/h2&gt;
+
+&lt;p&gt;The truth is if you dedicate yourself to keeping up with these tools, or worse, dedicating yourself to &lt;strong&gt;specialising&lt;/strong&gt; in them, you will be replaced by the next thing. In fact, when design becomes so formulaic that it paves the way for automation and then for artificially intelligent design unless you bring something innately human to the table, you too will be replaced.&lt;/p&gt;
+
+&lt;p&gt;Nothing about that concerns me though. You could spend your time trying to fight the machines (the systems, the automation, the artificial intelligence) but the reality is that it works faster than you, it works harder than you and it’s going to be cheaper than you. It’s a pointless fight. Choose instead a different battlefield - one that isn’t about low-value, replaceable design and that is about high-value problem solving for deep human needs.&lt;/p&gt;
+
+&lt;h2 id=&quot;structured-serendipity&quot;&gt;Structured serendipity&lt;/h2&gt;
+
+&lt;p&gt;I used to feel bad for not keeping up with design matters. My interests drifted towards big, broad topics that I have spent my life avoiding such as psychology, philosophy and economics. I am consuming a lot of material across each of these topics and many others in my personal time, not for any other reason other than a quest for knowledge. I’m nowhere near an expert or a beginner for that matter in any of the aforementioned topics, but what I did start to notice over time was that I was finding concepts from these completely separate fields started manifesting in my design work.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/jasonzweigwsj&quot;&gt;Jason Zweig&lt;/a&gt;, a journalist for the Wall Street Journal wrote about varying what you learn and varying where you learn it:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;New associations often leap out of the air at me this way. More intriguing, others seem to form covertly and lie in wait for the opportune moment when they can click into place. I do not try to force these associations out into the open; they are like the shrinking mimosa plants that crumple if you touch them but bloom if you leave them alone.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Serendipity is a human concept that can’t/won’t be easily replicable by machines. Exploring new ground outside of our industry is fuel for serendipity, and thankfully my interests beyond acquiring new design knowledge are proving very useful in that regard.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;My industry fatigue didn’t reveal itself through my work (I actually enjoy what I do a lot). It came about because I felt that there wasn’t anything new to learn within the field. Purposefully branching out into other fields has got me excited about designing with new perspectives on things and different approaches from beyond our bubble. I can’t say that I miss industry news… I actually feel like a better designer because of the choice to consciously sidestep it.&lt;/p&gt;
+
+&lt;p&gt;Just give me a nudge when the next big movement happens, okay?&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;My guess is Automated Design &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;I reckon there is a Moore’s Law of design tools. The number of design tools probably doubles every two years. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 20 Jul 2018 01:00:01 +0100</pubDate>
+        <link>http://jordanm.co.uk/2018/07/20/industry-fatigue.html</link>
+        <guid isPermaLink="true">http://jordanm.co.uk/2018/07/20/industry-fatigue.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Mapping User Experiences to Individuals Using the Big 5 OCEAN Personality Traits</title>
@@ -322,32 +388,6 @@ Every technological artefact that is used will mediate human actions, and every 
         <guid isPermaLink="true">http://jordanm.co.uk/2015/02/07/i-am-the-fold.html</guid>
         
         <category>Viewports</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>A Modern Default</title>
-        <description>&lt;p&gt;There are few things on the Web that excite me more than a new HTML document its raw form and the possibilities it brings. In an unstyled HTML document the contents are laid bare for all to see. Out-of-the-box HTML comes with an established typographic hierarchy and elements are distinguishable like the different variations of lists that we seem to have a strange habit of resetting and stripping of the characteristics that make it a list.&lt;/p&gt;
-
-&lt;p&gt;The default styles for HTML are sensible defaults. The type is legible, the layout is functional — in fact it&amp;#8217;s almost entirely responsive, &lt;a href=&quot;https://github.com/jordanmoore/Modern-Default-HTML&quot;&gt;with a few small tweaks&lt;/a&gt; it &lt;strong&gt;can&lt;/strong&gt; be completely responsive.&lt;/p&gt;
-
-&lt;p&gt;I have &lt;a href=&quot;https://github.com/jordanmoore/Modern-Default-HTML&quot;&gt;shared a project on GitHub called Modern Default HTML&lt;/a&gt;. It&amp;#8217;s nothing overly remarkable, nothing fancy and it didn&amp;#8217;t take very long to make. But I felt the need to publish it to show the few changes necessary to make the default web page accessible on all devices. There are a few similar projects out there, but perhaps this is a more focused effort at addressing the initial tweaks necessary for a completely accessible starting point.&lt;/p&gt;
-
-&lt;p&gt;My project goals were simple:&lt;/p&gt;
-
-&lt;ul&gt;&lt;li&gt;Stay true to the default and do the minimum required to make the default web page work anywhere&lt;/li&gt;
-&lt;li&gt;Don&amp;#8217;t impose any solutions to common design problems (and there are plenty like responsive tables for example — the same solution may not apply to all types of data)&lt;/li&gt;
-&lt;li&gt;On a related note - there shouldn&amp;#8217;t be anything in the default you will need to undo&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;I&amp;#8217;ve been meditating on the idea that as designers we owe it to ourselves and anyone who comes into contact with the things we make that we stay as true to the sensible defaults as we possibly can within the typical constraints of a web project. The default web page is fast, functional and founded upon a clear typographic hierarchy. Any design decisions we make thereafter will either enhance this experience or tarnish it.&lt;/p&gt;
-
-&lt;p&gt;I&amp;#8217;m asking myself more challenging questions in this mindset when designing even the smallest change: &amp;#8220;Why is this better than the default?&amp;#8221;, &amp;#8220;What does this bring to the table?&amp;#8221;, &amp;#8220;Is this feature so critical to the goals of this page that the performance hit is necessary?&amp;#8221;, &amp;#8220;Does it break the default or is it loading a completely redundant asset?&amp;#8221;&lt;/p&gt;
-
-&lt;p&gt;As designers we are in the position of power where we can both make and break the Web. We have a great foundation to work with by default, it&amp;#8217;s up to us where we go with it.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 21 Jan 2015 00:46:00 +0000</pubDate>
-        <link>http://jordanm.co.uk/2015/01/21/a-modern-default.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2015/01/21/a-modern-default.html</guid>
         
         
       </item>

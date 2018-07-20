@@ -1,6 +1,6 @@
 ---
 layout: post
-title: On Industry Fatigue
+title: Industry Fatigue
 date: '2018-07-20T00:00:01+00:00'
 summary: Writing my todo list for the day is a key part of my morning routine and essential to state setting and priming
 label: Tactics &amp; Habits
