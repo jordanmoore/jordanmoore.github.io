@@ -6,7 +6,9 @@ summary: Writing my todo list for the day is a key part of my morning routine an
 label: Tactics &amp; Habits
 ---
 
-I returned to meditation practice this morning for the first time in a long time. I felt that I'd be more experienced, know to expect a rough start and not to chase foolish goals. The mind chatter was much louder and more ridiculous than I anticipated. Here is a log of probably what is a small percentage of thoughts that appeared during the session. I used Kevin Rose's [Oak Meditation app](https://www.oakmeditation.com) for the first time. I've had it installed and on my homescreen for a quite a while as a visual reminder to return to the practice.
+I returned to meditation practice this morning for the first time in a long time. I felt that I'd be more experienced, know to expect a rough start and not to chase foolish goals. The mind chatter was much louder and more ridiculous than I anticipated. Here is a log of probably what is a small percentage of thoughts that appeared during the session.
+
+I used Kevin Rose's [Oak Meditation app](https://www.oakmeditation.com) for the first time. I've had it on my iPhone homescreen for a quite a while as a visual reminder to return to the practice.
 
 - Thought about past failures with meditation and my shallow breathing making it difficult to pick a point to focus on
 - Thought about whether the narrator was human or synthesised voice
