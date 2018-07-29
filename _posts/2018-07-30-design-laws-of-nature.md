@@ -99,6 +99,6 @@ Biomimicry is a lens through which to learn from nature as well as build purpose
 
 [^1]: [Using Nature's Genius in Architecture](https://www.ted.com/talks/michael_pawlyn_using_nature_s_genius_in_architecture)
 [^2]: [https://biomimicry.org/what-is-biomimicry/](https://biomimicry.org/what-is-biomimicry/)
-[^3]: http://www.bbc.co.uk/earth/story/20141111-plants-have-a-hidden-internet
-[^4]: https://en.wikipedia.org/wiki/Pareto_principle
-[^5]: https://betterexplained.com/articles/understanding-the-pareto-principle-the-8020-rule/
+[^3]: [http://www.bbc.co.uk/earth/story/20141111-plants-have-a-hidden-internet](http://www.bbc.co.uk/earth/story/20141111-plants-have-a-hidden-internet)
+[^4]: [https://en.wikipedia.org/wiki/Pareto_principle](https://en.wikipedia.org/wiki/Pareto_principle)
+[^5]: [https://betterexplained.com/articles/understanding-the-pareto-principle-the-8020-rule/](https://betterexplained.com/articles/understanding-the-pareto-principle-the-8020-rule/)
