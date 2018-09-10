@@ -514,3 +514,14 @@ footer {
   }
 
 }
+
+.info {
+  @extend .date;
+  font-family: $sans;
+  text-align: center;
+  border: 1px solid fade-out($grey, 0.8);
+  border-radius: 4px;
+  margin-bottom: 2.6em;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.045);
+  padding: 0.6em;
+}
