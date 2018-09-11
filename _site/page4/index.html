@@ -40,6 +40,57 @@
                 <div class="container wide  textAlign-center">
                   <p class="date color-grey"><time>
                     
+                    August
+                    1st, 2014
+                  </time></p>
+
+                  <a class="post-link" href="/2014/08/01/how-i-test-type-and-layout.html"><h1 class="article-header">How I test type and layout</h1></a>
+                </div>
+            <div class="container">
+              <div class="article-content">
+                <p>I thought I&#8217;d elaborate on my testing strategy that I introduced during a talk I gave recently for <a href="http://www.typecast.com/seminars">Typecast&#8217;s seminar series</a>. I described how I use two different testing methods for typography and responsive layouts.</p>
+
+<p>Both are two very different facets of the same overall system and subsequently require different test conditions. In essence, I test typography on devices and I test layout in the browser.</p>
+
+<h2>Mobile devices aren&#8217;t great for layout testing</h2>
+
+<p>Device stands may look pretty on your desk, but they&#8217;re not going to cover all the possible states of a responsive layout. In fact, testing layouts purely on a set of devices is no different than designing for a set of predefined weights and heights — devices let you see how a layout will act at a particular size, but that&#8217;s the only size you&#8217;ll see on that screen<sup id="fnref:p93444774181-1"><a href="#fn:p93444774181-1" rel="footnote">1</a></sup>.</p>
+
+<p>This is why I do the majority of my layout testing in the browser. A browser will let you see all the in-between states that a set of devices won&#8217;t let you see. Expanding and collapsing the browser window from the small compressed state to an uncompressed wide state like an accordion allows you to see your elements actively respond and helps identify any potential gaps or problem areas.</p>
+
+<p>Of course the actual device will show you the definitive state for that particular device - but what about every other permutation of the responsive layout?</p>
+
+<p>The desktop browser helps paint the complete layout picture. No modern mobile browser gets the basic fundamentals of CSS layout so wrong that it requires you to refresh and investigate every layout change[^1].</p>
+
+<h2>Desktop browsers aren&#8217;t great for testing type</h2>
+
+<p>Where a desktop browser excels at showing you the difference in screen sizes, shapes and dimensions - it fails to account for the potential differences in type rendering between browsers and operating systems. A single browser window can only show you how type renders for that individual display and configuration.</p>
+
+<p>The vast array of different mobile device displays requires a testing setup that caters for the variance in different screen densities, resolutions and screen types to give an indication of how type renders in these different environments.</p>
+
+<p>An electronic ink display might render the type blurry compared to the display of a crisp high density screen. This is where a broad set of devices comes in handy - it pays to stress test your fonts across the often unforgiving and varied display properties of mobile devices. A single desktop browser won&#8217;t let you know about any of these potential issues.</p>
+
+<h2>The best of both worlds</h2>
+
+<p>I still reference mobile browsers during layout testing from time to time - functional testing is a different matter where I test heavily on all devices - but primarily my <em>layout</em> testing happens in the browser and my type testing happens on mobile displays.</p>
+
+<p>The speed and efficiency of scaling a desktop browser window from small to large for building <em>truly</em> responsive layouts met with a set of devices that represent as much of the potential difference in display types is the sweet spot that works for me.</p>
+
+<div class="footnotes">
+<hr><ol><li id="fn:p93444774181-1">
+<p>Apart from different orientations if the device allows it. <a href="#fnref:p93444774181-1" rev="footnote">↩</a></p>
+</li>
+
+</ol></div>
+
+              </div>
+            </div>
+          </article>
+        
+          <article class="marginBottom-l">
+                <div class="container wide  textAlign-center">
+                  <p class="date color-grey"><time>
+                    
                     July
                     10th, 2014
                   </time></p>
@@ -321,64 +372,6 @@
 </li>
 
 </ol></div>
-
-              </div>
-            </div>
-          </article>
-        
-          <article class="marginBottom-l">
-                <div class="container wide  textAlign-center">
-                  <p class="date color-grey"><time>
-                    
-                    November
-                    2nd, 2013
-                  </time></p>
-
-                  <a class="post-link" href="/2013/11/02/responding-to-environmental-lighting-with-css.html"><h1 class="article-header">Responding to environmental lighting with CSS Media Queries Level 4</h1></a>
-                </div>
-            <div class="container">
-              <div class="article-content">
-                <p><a href="http://dev.w3.org/csswg/mediaqueries4/">Media Queries Level 4</a> builds upon the <a href="http://www.w3.org/TR/css3-mediaqueries/">existing media queries specification</a> that many of us use when we build responsive designs today. The Media Queries Level 4 specification introduces four interesting new media features: <strong>script</strong>, <strong>hover</strong>, <strong>pointer</strong> and <strong>luminosity</strong>. At the time of writing the specification has yet to be implemented in a browser, but that shouldn&#8217;t stop us from exploring the potential use cases.</p>
-
-<p>The luminosity media feature has garnered interest from the web community, it will allow developers to make CSS adjustments based on changes in the ambient lighting in which the device is used. The user&#8217;s device must be equipped with a light sensor to trigger this new media feature.</p>
-
-<p>The most obvious use case for the luminosity media feature is to adapt a design depending on whether the user is reading the page during the day where ambient lighting is brighter or during the night where ambient lighting is darker. We already see this behaviour in a few native apps.</p>
-
-<p><figure><img src="http://farm8.staticflickr.com/7352/10715274745_2bb3cf0db0_o.png"/><figcaption><a href="http://digg.com/reader">Digg Reader</a> on iOS can change its theme depending on the brightness of the environmental lighting</figcaption></figure></p>
-
-<p>The thing about designing for the web is we don&#8217;t have the same prior knowledge of the destination device that designers for native apps do. The light sensor&#8217;s sensitivity on an iOS device might be different than an Android device, and the light sensor&#8217;s sensitivity on an Android device might be different to the light sensor of <em>another</em> Android device, so we would need to be careful with the degree of change we make as it could be jarring to devices that have an overly keen light sensor.</p>
-
-<p>The code looks something like this:
-<code></code></p>
-
-<pre>
-@media (luminosity: normal) {
-    body {
-        background: #f5f5f5;
-        color: #262626;
-    }
-}
-@media (luminosity: dim) {
-    body {
-        background: #e9e4e3;
-    }
-}
-@media (luminosity: washed) {
-    body {
-        background: #ffffff;
-    }
-}
-</pre>
-
-
-
-<p>A <strong>normal</strong> luminosity level represents the screen being viewed in ideal lighting conditions. I would recommend working from this level as your default — and rather than wrapping those styles in a media query targeted for normal luminosity levels it would probably be best to leave those styles unwrapped so browsers and devices that haven&#8217;t got the capability of seeing the luminosity media feature can see the page in it&#8217;s ideal condition. You can then use the <strong>dim</strong> value to make adjustments for darker environments and <strong>washed</strong> to adjust styles for brighter environments leaving the default styles accessible to all devices whether they are equipped with a light sensor or not.</p>
-
-<p>I mentioned earlier about the potential differences in the light sensor hardware sensitivity — I think this is a key reason not to go over the top with the changes we make within luminosity media queries. Can we definitively say that a cloud passing on front of the sun will not trigger the <strong>dim</strong> luminosity media feature? The last thing I&#8217;d imagine the user wants is a harsh change between light and dark designs that is too easily triggered.</p>
-
-<p><figure><img src="http://farm3.staticflickr.com/2882/10715357844_0ec5fc935b_o.jpg"/><figcaption>Potential stylesheet changes from dark to light environments (left to right). Subtle changes in contrast are key for avoiding a jarring user experience when environmental changes occur</figcaption></figure></p>
-
-<p>As with other facets of web design, we should strive to stay out of the user&#8217;s way when they are trying to enjoy our design. The luminosity media feature has the potential to be the most annoying media query at our disposal, it could be responsible for ushering in a new era of glow in the dark websites — let&#8217;s just be careful with it when it arrives.</p>
 
               </div>
             </div>

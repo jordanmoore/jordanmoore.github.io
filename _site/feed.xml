@@ -6,9 +6,97 @@
 </description>
     <link>http://jordanm.co.uk/</link>
     <atom:link href="http://jordanm.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 10 Sep 2018 23:29:22 +0100</pubDate>
-    <lastBuildDate>Mon, 10 Sep 2018 23:29:22 +0100</lastBuildDate>
+    <pubDate>Wed, 12 Sep 2018 00:27:11 +0100</pubDate>
+    <lastBuildDate>Wed, 12 Sep 2018 00:27:11 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Unpacking Design Problems</title>
+        <description>&lt;div class=&quot;info&quot;&gt;Originally published on &lt;a href=&quot;https://www.invisionapp.com/blog/unpacking-design-problems/&quot;&gt;InVision's blog&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;The best puzzles are the ones that demand more of you. When the answer appears obvious, but you second guess yourself. When you know there’s more to it than meets the eye.&lt;/p&gt;
+
+&lt;p&gt;Nob Yoshigahara’s infamous number tree puzzle is certainly one of my personal favourites for just these reasons. It gives you a set of information and asks, What do you make of this?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://jordanm.co.uk/img/puzzle.png&quot; alt=&quot;Nob Yoshigahara's infamous number tree puzzle&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Puzzles are a great tool for strengthening mental muscles that can help unpack design problems. They push you to adopt a different mindset and perspective, challenge assumptions, study intently, and look closely. Like a puzzle, difficult design problems evoke that same moment of epiphany when you peel back the layers to find hidden truths.&lt;/p&gt;
+
+&lt;p&gt;But design challenges are not quite as easy as puzzles, which have the answers hidden in plain sight. With puzzles, all the pieces are available to you: You just need to put it together. With design problems, you need to find the pieces first, then put everything together.&lt;/p&gt;
+
+&lt;p&gt;This can be daunting, but there are methods, tactics, and techniques you can reach for to help facilitate these discoveries.&lt;/p&gt;
+
+&lt;h2 id=&quot;first-principles&quot;&gt;First principles&lt;/h2&gt;
+
+&lt;p&gt;Although used heavily in the field of physics, Aristotle’s method of reasoning known as “first principles” originated as a means for organic reasoning (as opposed to looking at analogies, which are often riddled with errors).&lt;/p&gt;
+
+&lt;p&gt;When applied to design problems, you start with an observation, such as a requirement in a project brief. Then you ask why until you arrive at the most basic understanding of the truth of the problem. This provides a solid foundation to build upon.&lt;/p&gt;
+
+&lt;p&gt;First principles force you to look at the problem without using other people’s preconceived ideas and attempts on how to solve it. When you use this approach, you automatically generate new value. It’s certainly cognitively more intense, but in my experience it produces more original and valuable results.&lt;/p&gt;
+
+&lt;p&gt;What happens if you arrive at the same conclusion others have already reached? Is this method a waste of time?&lt;/p&gt;
+
+&lt;p&gt;Mike Bithell, an independent game developer, sums this up nicely:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Oftentimes, when trying to reinvent the wheel, you end up with a wheel. But there is a nice moment of ‘huh, I guess that’s why people just use wheels’… that process of justifying the standard is satisfying, if massively wasteful. Still. Cool wheel.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;For a good example of first principles in action, try this Wikipedia experiment. Click on the first non-parenthesized link in any random article and follow the chain. It will lead you down a path toward the most basic understanding of any concept. Strangely, approximately 80% of articles deconstructed in this manner bring you back to the Wikipedia article about philosophy.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://jordanm.co.uk/img/wikipedia-trail.png&quot; alt=&quot;A screenshot of Wikipedia&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;question-everything&quot;&gt;Question everything&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Judge a man by his questions rather than by his answers.” –Voltaire&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A design problem is only as difficult as the questions you ask of it.&lt;/p&gt;
+
+&lt;p&gt;Good questions don’t necessarily lead to definitive answers, but rather further questions. The amount of additional questions tends to correlate with the value hidden within the problem. If a question is easily snuffed out and the conversation cut short, it might not be as provocative as you originally suspected.&lt;/p&gt;
+
+&lt;p&gt;Some good starting points for exploratory questioning are:
+* Why is this a problem?
+* What makes you believe this is true?
+* What is your biggest challenge?
+* Who does this well?
+* What question did I not ask that would be valuable to know?&lt;/p&gt;
+
+&lt;p&gt;Feel free to use why liberally. Why is like a jackhammer for drilling through a problem’s layers. Why is flexible enough to get to the basic fundamentals (see: first principles), but can also be used to dig deeper into the problem you’re facing.&lt;/p&gt;
+
+&lt;p&gt;Sometimes, the best follow-up question is no question at all. A tactical silence can encourage your client to fill in the gap and reveal additional knowledge that might have otherwise been overlooked.&lt;/p&gt;
+
+&lt;h2 id=&quot;collaborative-understanding&quot;&gt;Collaborative understanding&lt;/h2&gt;
+
+&lt;p&gt;Your strength as a product designer is determined by your ability to provide valuable solutions that address your client’s business goals and objectives. This can only be achieved if you deeply understand the original problem.&lt;/p&gt;
+
+&lt;p&gt;I find it beneficial to collaborate intensely with the client to define the problem(s) you’re going to address. Don’t take the version defined in the brief as the be all, end all. Explore it completely, break it down to first principles, build it back up, and communicate the problem back to the client.&lt;/p&gt;
+
+&lt;p&gt;This demonstrates your understanding of your client’s problems, your ability to grapple with problems, and your client’s understanding of their own problems. It creates a good starting point, and it’s the perfect time to demonstrate exactly how you’re going to test assumptions and measure success.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“A design lives and dies by its designer’s understanding of the problem. Understand the problem.” –&lt;a href=&quot;https://twitter.com/erondu/status/987354283883446272&quot;&gt;Jared Erondu&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;a-few-more-back-pocket-methods&quot;&gt;A few more back-pocket methods&lt;/h2&gt;
+
+&lt;p&gt;There are always more ways to test your solutions.&lt;/p&gt;
+
+&lt;p&gt;For example, Occam’s Razor is a mental model that suggests that the simplest solution—the path of least resistance—tends to be the right one. Although it isn’t always indicative of the truth, it’s a good technique to help avoid assumptions and analogies.&lt;/p&gt;
+
+&lt;p&gt;It’s also worth implementing techniques that help remove biases and ensure objectivity. One of my particular favourites is “steelmanning,” or building the strongest possible counter-argument to your solution. Adopting both for- and against-mindsets as you pursue a solution is hugely valuable; it not only produces a better solution, but arms you with a defence against the alternative.&lt;/p&gt;
+
+&lt;p&gt;The path to delivering value in product design isn’t through shiny user interfaces. Like a good puzzle, it lies in your ability to approach the problem from an inquisitive perspective, assemble the pieces of information you need, explore fundamentals and truths, and build back up to the definitive solution.&lt;/p&gt;
+
+&lt;p&gt;No one said it would be easy.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 11 Sep 2018 01:00:01 +0100</pubDate>
+        <link>http://jordanm.co.uk/2018/09/11/unpacking-design-problems.html</link>
+        <guid isPermaLink="true">http://jordanm.co.uk/2018/09/11/unpacking-design-problems.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Design Laws in Nature</title>
@@ -469,53 +557,6 @@ Every technological artefact that is used will mediate human actions, and every 
         <pubDate>Wed, 13 Jul 2016 10:12:00 +0100</pubDate>
         <link>http://jordanm.co.uk/2016/07/13/method-ux.html</link>
         <guid isPermaLink="true">http://jordanm.co.uk/2016/07/13/method-ux.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>What I learned transitioning from agency to freelance</title>
-        <description>&lt;p&gt;Before I made the leap I read blog articles of other freelancers who did the same. People like &lt;a href=&quot;http://www.alwaystwisted.com/&quot;&gt;Stuart Robson&lt;/a&gt;, &lt;a href=&quot;http://cdja.co.uk/&quot;&gt;Chris Allwood&lt;/a&gt;, people who have made it work. I also called a &lt;strong&gt;lot&lt;/strong&gt; of people - &lt;a href=&quot;http://chris-armstrong.com/&quot;&gt;Chris Armstrong&lt;/a&gt;, &lt;a href=&quot;http://www.christophermurphy.org/&quot;&gt;Chris Murphy&lt;/a&gt;, &lt;a href=&quot;https://theturf.io/&quot;&gt;Andrew Fulton&lt;/a&gt; - without their advice I probably would have talked myself out of it because before you actually do it your mind finds plenty of reasons not to do it.&lt;/p&gt;
-
-&lt;p&gt;To cut to the chase: it’s working for me too, and I want to give that reassurance to people are considering making a similar move that it can work for you.&lt;/p&gt;
-
-&lt;p&gt;I thought I’d start by discussing a few of the worries I had after I handed in my notice:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;What if there isn’t enough work out there?&lt;/li&gt;
-  &lt;li&gt;What about all that paperwork?&lt;/li&gt;
-  &lt;li&gt;Running my own business sounds scary&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Firstly there is always work out there. This comes from a place of reassurance rather than any sort of attempt at bragging but my diary has been full since I began. I haven’t needed to advertise my services,apart from the initial announcement in March that I was going freelance. Since then I’ve found traditional word of mouth is still the most effective form of advertising.&lt;/p&gt;
-
-&lt;p&gt;The best way to let word of mouth do the work for you is to turn up every day and do the best job you can do. One of the biggest differences between agency and freelance work is that in an agency environment I would plan out how the next day or in some cases how the next week would look. Now that I work for myself I need to know what the next 3 months look like to ensure the pipeline is healthy and that I can continue to work for a variety of different people on different design problems.&lt;/p&gt;
-
-&lt;p&gt;Paperwork was strangely my biggest worry. I’ve never owned a business, I’ve produced invoices and estimates before in both of my previous agencies, but not for my own business. I worried that there might have been other paperwork that I hadn’t been exposed to before and that perhaps the amount of paperwork would have been overwhelming.&lt;/p&gt;
-
-&lt;p&gt;Luckily clever companies have been solving this problem. I bought a subscription to &lt;a href=&quot;http://fre.ag/44l7su5c&quot;&gt;FreeAgent&lt;/a&gt; which handles my accounts including estimates, changing estimates into invoices, sending out invoice reminders, it keeps everything in check for things like tax returns and expenses. Without it, I’d be putting so much more time into this side of the business rather than concentrating on the fun, rewarding stuff.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;One of the most exciting aspects of working for myself has been applying the knowledge I’ve gained after over 7 years of industry experience. I’ve learned from some great people like Paul May how could apply analytical thinking to design problems and could lead effective workshops with stakeholders and get the most out of people’s time. I’ve learned from Paul McKeever’s ability to find, create and deliver value for users and clients alike, and I’ve also borrowed heavily from Jamie Neely’s design theory and reasoning to ensure everything I make serves a purpose and fulfills a need.&lt;/p&gt;
-
-&lt;p&gt;By observing and working with great people, it’s easier to deliver great work.&lt;/p&gt;
-
-&lt;p&gt;The same is true today, if I take on a project where I know someone can specialise on a particular component, I have the flexibility to hire people in and apply their skills. Working with be best helps you keep performing to your best.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Aside from the work itself I have adapted to the freelance lifestyle pretty quickly. I have taken the time to study when I’m most productive and shape my working day around those hours. This means I know when I can do my best work rather than working within a set period of hours that the rest of a team works within.&lt;/p&gt;
-
-&lt;p&gt;That flexibility extends to the working environment. If I’m bored of working at my desk I can take my office with me to somewhere else like a coffee shop, or another studio, the library - wherever I want to work.&lt;/p&gt;
-
-&lt;p&gt;I’ve even worked a few evenings during my summer holidays - I wouldn’t recommend it for most people if you want to unwind, but I rather enjoy the novelty of working in a different country on the same projects I’ve been working on from home. It means the holidays themselves can be more flexible too - next year I’m considering working from the US for a couple of months and making the most of the school holidays with my family.&lt;/p&gt;
-
-&lt;p&gt;The last point I want to make is the most important factor in my decision to go freelance. I went from seeing my kids for 1-2 hours a day to being able to drop them to school, pick them up from school, attend sports days, I’ve been able to &lt;strong&gt;be there&lt;/strong&gt;. That’s the kind of freedom that I enjoy most aside from all the other benefits. I can watch my young family grow up much more closely than I have before, and the best part is they don’t grow up so fast anymore because I’m there to see so more of it and spend time with them. It’s our most precious commodity and now I can shape my time to fit however I want rather than being told how to spend it.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 18 Oct 2015 10:12:00 +0100</pubDate>
-        <link>http://jordanm.co.uk/2015/10/18/freelance-vs-agency.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2015/10/18/freelance-vs-agency.html</guid>
         
         
       </item>
