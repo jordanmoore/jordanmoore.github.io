@@ -10,8 +10,24 @@
   <link rel="stylesheet" href="http://jordanm.co.uk/css/style.css">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-  <link rel="icon" type="image/png" href="/favicon.png" />
 
+  <link rel="shortcut icon" href="http://jordanm.co.uk/img/tinytype/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="http://jordanm.co.uk/img/tinytype/apple-touch-icon-precomposed.png">
+
+  <meta property="og:site_name" content="tinytype">
+  <meta property="og:url" content="http://jordanm.co.uk/tinytype">
+  <meta property="og:type" content="website">
+
+  <meta property="og:title" content="tinytype">
+  <meta property="og:description" content="A list of default system fonts on Apple iOS 12 and Android Pie for your digital projects">
+  <meta property="og:image" content="http://jordanm.co.uk/img/tinytype/apple-touch-icon-precomposed.png">
+
+  <meta property="twitter:title" content="Tinytype">
+  <meta property="twitter:description" content="A list of default system fonts on Apple iOS 12 and Android Pie for your digital projects">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="http://jordanm.co.uk/img/tinytype/apple-touch-icon-precomposed.png">
+  <meta name="twitter:site" content="@jordanmoore">
+  <meta name="twitter:creator" content="@jordanmoore">
 
 
   <style media="screen">
@@ -23,6 +39,9 @@
       margin: 0;
       padding: 0;
       -webkit-font-smoothing: antialiased;
+    }
+    .tinytype-logo {
+      margin-bottom: 1.6em;
     }
     footer {
       text-align: left;
@@ -127,7 +146,7 @@
 
 
 <div class="container">
-    <h2 class="article-header">tinytype</h2>
+    <img src="../img/tinytype-logo.svg" alt="Tinytype logo" class="tinytype-logo">
     <p class="opacity-60">A handy list of default, pre-installed system fonts on Apple iOS 12 and Android Pie and Windows Phone (WP) for good measure</p>
     <hr>
   </div>
