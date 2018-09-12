@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body class="post">
+  <div class="container">
+  <header>
+      {% include nav.html %}
+  </header>
+</div>
+  <article class="marginBottom-l">
+    <div class="container lab">
+      <div class="textAlign-center">
+        <h1 class="article-header">{{ page.title }}</h1>
+      </div>
+      <div class="article-content">
+        {{ content }}
+      </div>
+    </div>
+  </article>
+  {% include footer.html %}
+
+
+
+
+</body>
+
+</html>
