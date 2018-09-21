@@ -1,116 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta http-equiv="cleartype" content="on">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width">
-	<meta http-equiv="x-dns-prefetch-control" content="off">
+  <meta charset="UTF-8">
+	<title>Palm Reader | What media queries can my device see right now?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10, user-scalable=1">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <link href="https://fonts.googleapis.com/css?family=Faustina:400,400i,600i" rel="stylesheet">
 
-	<title>Palm Reader &mdash; What media queries can my device see right now?</title>
+  <link rel="stylesheet" href="http://jordanm.co.uk/css/style.css">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+  <link rel="shortcut icon" href="http://jordanm.co.uk/img/palmreader/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="http://jordanm.co.uk/img/palmreader/apple-touch-icon-precomposed.png">
+
+  <meta property="og:site_name" content="Palm Reader">
+  <meta property="og:url" content="http://jordanm.co.uk/palmreader">
+  <meta property="og:type" content="website">
+
+  <meta property="og:title" content="Palm Reader">
+  <meta property="og:description" content="What media queries can my device see right now?">
+  <meta property="og:image" content="http://jordanm.co.uk/img/palmreader/apple-touch-icon-precomposed.png">
+
+  <meta property="twitter:title" content="Palm Reader">
+  <meta property="twitter:description" content="What media queries can my device see right now?">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="http://jordanm.co.uk/img/palmreader/apple-touch-icon-precomposed.png">
+  <meta name="twitter:site" content="@jordanmoore">
+  <meta name="twitter:creator" content="@jordanmoore">
+
 
 	<style>
-	/* Tiny reset */
-	h1, h2, h3, p, li, ul, body {
-		padding: 0;
+	body {
+		font-family: -apple-system, BlinkMacSystemFont, "myriad-pro", sans-serif;
+		color: #252525;
+		line-height: 1.4;
 		margin: 0;
-		font-weight: normal;
+		padding: 0;
 		-webkit-font-smoothing: antialiased;
 	}
-	body {
-		background: #f1f1f1;
-		font-family: monospace;
-		color: #343434;
-		font-size: 16px;
+	h1 {
+		position: relative;
 	}
-	.container {
-		padding: 1.618em;
-		max-width: 1200px;
-		margin: 0 auto;
+	h1:before, h1:after {
+		transition: all 1.6s ease;
+		content: '🖐';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		text-align: center;
+		opacity: 0;
+	}
+	h1:hover:before {
+		transform: scale(1.5);
+		opacity: 0.4;
+	}
+	h1:hover:after {
+		opacity: 0.6;
+		transform: scale(1.2);
+	}
+	code {
+		font-family: -apple-system, BlinkMacSystemFont, "myriad-pro", sans-serif;
 	}
 	.bar {
 		background: #2e2f2f;
 		color: #fff;
 		overflow: hidden;
 	}
-	h1 {
-		padding: 0.6em 0.6em 0.6em 1em;
-		font-size: 1.2em;
-		margin-bottom: 0;
-		letter-spacing: 8px;
+	.opacity-60 {
+		opacity: 0.6;
+	}
+	.page-header {
+		padding: 0 0 1.6em;
+		margin-bottom: 4.236em;
+		background: #fff;
+		box-shadow: 0 0 36px rgba(0,0,0,0.1);
+	}
+	.page-header {
+		text-align: center;
 	}
 	.bar p {
 		margin-bottom: 1em;
 		padding: 0 1.6em;
 		font-size: 14px;
 	}
-	h1, h2 {
-		font-weight: normal;
-		text-transform: uppercase;
+	.test-area ul {
+		border: 1px solid rgba(130,131,134,0.2);
+		list-style: none;
+		border-radius: 4px;
+		margin: 1.6em;
+		padding: 1.6em;
 	}
-	h2 {
-		font-size: 0.95em;
-	}
-	p {
-		text-align: center;
-		margin-bottom: 2.618em;
-	}
-	p.test, #byline p {
-		font-size:0.85em;
-	}
-	hr {
-		border: none;
-		border-top: 1px solid rgba(255,255,255,0.4);
-		clear: both;
-		margin-top: 0;
-		margin-bottom: 2.618em;
-	}
-	ul {
-
-	}
-	@media (min-width:36.25em) {
-		ul {
-			columns: 2;
-		}
-	}
-	@media (min-width:64em) {
-		ul {
-			columns: 3;
-		}
-	}
-	li {
+	.test-area li {
 		margin-bottom: 0.65em;
 		break-inside: avoid;
 	}
-	p {
-		color: #757575;
+	.test-area li h2 {
+		margin-top: 0;
+		padding-bottom: 0.5em;
+		border-bottom: 1px solid rgba(130,131,134,0.2);
+
 	}
+	.container.test-area {
+		max-width: 1440px;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(24em, 1fr));
+		grid-gap: 0.6em;
+		margin-bottom: 4.236em;
+	}
+
 	ul li.active {
 		display: none;
+		font-weight: 600;
+	}
+	ul li.active:before {
+		content: '✓ ';
+		font-family: -apple-system, BlinkMacSystemFont, "myriad-pro", sans-serif;
 	}
 	ul li.inactive {
 		display: block;
+		opacity: 0.4;
 	}
-	a {
-		color: #d14836;
+	ul li.inactive:before {
+		content: '× ';
+		font-family: -apple-system, BlinkMacSystemFont, "myriad-pro", sans-serif;
 	}
-	span {
-		padding-left: 0.5em;
-		font-size: 0.8em;
-		color: #757575;
-	}
-	code {
-		background: black;
-		color: white;
-		display: block;
-		padding: 5px;
-		text-transform: uppercase;
-	}
-	.inactive code {
-		background: #ccc;
-	}
-	#byline {
-		text-align: center;
-	}
+
 	@media screen {
 		li.active.screen {display:block}
 		li.inactive.what-screen {display:none}
@@ -239,45 +255,72 @@
 		li.active.hover {display:block}
 		li.inactive.what-hover {display:none}
 	}
-	@media (min-width:36.25em) {
-		.bar {
-			text-align: center;
-			padding: 0.4em 0 0;
-		}
-	}
+
 	</style>
 
 </head>
 <body>
 
-	<div class="bar">
-		<h1>Palm Reader</h1>
-		<p>Showing what @media features your device can and can't see</p>
+	<div class="page-header">
+
+	  <div class="container">
+	    <header>
+
+
+	<h1 class="logo"><a href="/"><span>Jordan Moore</span></a></h1>
+
+	<nav>
+	    <ul>
+	        <li><a href="/">Home</a></li>
+	        <li><a href="/bookshelf">Bookshelf</a></li>
+	        <li><a href="/lab" class="active">Lab</a></li>
+	        <li><a href="http://jordanm.co.uk/#newsletter">Newsletter</a></li>
+	    </ul>
+	</nav>
+	</header>
 	</div>
 
+
 	<div class="container">
-		<p class="test">All the media query tests are listed below, the darker ones are currently active on this device</p>
+	    <h1>🖐<br>Palm Reader</h1>
+			<p class="opacity-60">All the media query tests are listed below, the darker ones are currently active on this device</p>
+	    <hr>
+	  </div>
+
+	</div>
+
+	<div class="container test-area">
 		<ul>
+			<li><h2>Screen Type</h2></li>
 			<li class="active screen"><code>screen</code></li>
 			<li class="inactive what-screen"><code>screen</code></li>
 			<li class="active print"><code>print</code></li>
 			<li class="inactive what-print"><code>print</code></li>
 			<li class="active tv"><code>tv</code></li>
 			<li class="inactive what-tv"><code>tv</code></li>
+			<li class="active handheld"><code>handheld</code></li>
+			<li class="inactive what-handheld"><code>handheld</code></li>
+			<li class="active projection"><code>projection</code></li>
+			<li class="inactive what-projection"><code>projection</code></li>
+		</ul>
+		<ul>
+			<li><h2>Colour</h2></li>
 			<li class="active color"><code>color</code></li>
 			<li class="inactive what-color"><code>color</code></li>
 			<li class="active color-index"><code>(color-index)</code></li>
 			<li class="inactive what-color-index"><code>(color-index)</code></li>
 			<li class="active monochrome"><code>monochrome</code></li>
 			<li class="inactive what-monochrome"><code>monochrome</code></li>
-			<li class="active handheld"><code>handheld</code></li>
-			<li class="inactive what-handheld"><code>handheld</code></li>
-			<li class="active projection"><code>projection</code></li>
-			<li class="inactive what-projection"><code>projection</code></li>
+		</ul>
+		<ul>
+			<li><h2>Orientation</h2></li>
 			<li class="active portrait"><code>(orientation : portrait)</code></li>
 			<li class="inactive what-portrait"><code>(orientation : portrait)</code></li>
 			<li class="active landscape"><code>(orientation : landscape)</code></li>
 			<li class="inactive what-landscape"><code>(orientation : landscape)</code></li>
+		</ul>
+		<ul>
+			<li><h2>Display Density &amp; Dynamics</h2></li>
 			<li class="active retina"><code>(-webkit-min-device-pixel-ratio: 2)</code></li>
 			<li class="inactive what-retina"><code>(-webkit-min-device-pixel-ratio: 2)</code></li>
 			<li class="active scan-progressive"><code>(scan:progressive)</code></li>
@@ -286,6 +329,9 @@
 			<li class="inactive what-scan-interlace"><code>(scan:interlace)</code></li>
 			<li class="active grid"><code>(grid)</code></li>
 			<li class="inactive what-grid"><code>(grid)</code></li>
+		</ul>
+		<ul>
+			<li><h2>Device and Viewport Properties</h2></li>
 			<li class="active min-device-width"><code>(min-device-width)</code></li>
 			<li class="inactive what-min-device-width"><code>(min-device-width)</code></li>
 			<li class="active max-device-width"><code>(max-device-width)</code></li>
@@ -302,10 +348,16 @@
 			<li class="inactive what-min-height"><code>(min-height)</code></li>
 			<li class="active max-height"><code>(max-height)</code></li>
 			<li class="inactive what-max-height"><code>(max-height)</code></li>
+		</ul>
+		<ul>
+			<li><h2>Resolution</h2></li>
 			<li class="active min-resolution"><code>(min-resolution)</code></li>
 			<li class="inactive what-min-resolution"><code>(min-resolution)</code></li>
 			<li class="active max-resolution"><code>(max-resolution)</code></li>
 			<li class="inactive what-max-resolution"><code>(max-resolution)</code></li>
+		</ul>
+		<ul>
+			<li><h2>Experimental Media Features</h2></li>
 			<li class="active fine"><code>(pointer:fine) [MQ Level 4]</code></li>
 			<li class="inactive what-fine"><code>(pointer:fine) [MQ Level 4]</code></li>
 			<li class="active coarse"><code>(pointer:coarse) [MQ Level 4]</code></li>
@@ -325,17 +377,56 @@
 		</ul>
 	</div>
 
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	<section class="newsletter" id="newsletter">
+		<footer>
+			<div class="container">
+				<div class="footer-col">
+					<h4 class="small-header">About</h4>
+					<p>I am currently Director of Design at <a href="https://dawsonandrews.com">Dawson Andrews</a> and in the process of building the Research and Development part of the company. We'll explore interesting things like purpose, meaning and truth through technology. <a href="mailto:jm@dawsonandrews.com">Let's talk</a>.</p>
+					<h4 class="small-header">Newsletter</h4>
+					<p>Sometimes I publish a newsletter called <strong>The Logbook</strong> which you can subscribe to here.</p>
+					<div id="mc_embed_signup" class="marginBottom">
+						<form action="https://jordanm.us5.list-manage.com/subscribe/post?u=3e0b1d25a7ba2bbb8c0c979ae&amp;id=4932254eb1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+							<div id="mc_embed_signup_scroll">
+								<div class="mc-field-group">
+									<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email address">
+									<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+								<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3e0b1d25a7ba2bbb8c0c979ae_4932254eb1" tabindex="-1" value=""></div>
+							</div>
+						</form>
+					</div>
+					<!--End mc_embed_signup-->
+				</div>
 
-    ga('create', 'UA-46278682-2', 'auto');
-    ga('send', 'pageview');
+				<div class="footer-col copyright">
+						<p><span>&copy; Jordan Moore 2018</span> <span><a href="https://www.twitter.com/jordanmoore">@jordanmoore</a> • <a href="http://jordanm.co.uk/feed.xml">RSS</a></span></p>
 
-  </script>
+				</div>
 
+			</div>
+		</footer>
+	</section>
+
+
+
+	<script type="text/javascript">
+
+	 var _gaq = _gaq || [];
+	 _gaq.push(['_setAccount', 'UA-7180140-5']);
+	 _gaq.push(['_trackPageview']);
+
+	 (function() {
+	 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	 })();
+
+	</script>
 
 </body>
 </html>
