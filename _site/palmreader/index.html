@@ -110,6 +110,15 @@
 		margin-bottom: 4.236em;
 	}
 
+	span.level {
+		font-size: 0.7em;
+		text-transform: uppercase;
+		background-color: rgba(130,131,134,0.2);
+		border-radius: 2px;
+		padding: 2px 4px;
+		border: 1px solid rgba(130,131,134,0.4);
+	}
+
 	ul li.active {
 		display: none;
 		font-weight: 600;
@@ -138,6 +147,10 @@
 	@media projection {
 		li.active.projection {display:block}
 		li.inactive.what-projection {display:none}
+	}
+	@media speech {
+		li.active.speech {display:block}
+		li.inactive.what-speech {display:none}
 	}
 	@media handheld {
 		li.active.handheld {display:block}
@@ -187,6 +200,14 @@
 		li.active.max-device-height {display:block}
 		li.inactive.what-max-device-height {display:none}
 	}
+	@media (device-aspect-ratio)  {
+		li.active.device-aspect-ratio {display:block}
+		li.inactive.what-device-aspect-ratio {display:none}
+	}
+	@media (aspect-ratio) {
+		li.active.aspect-ratio {display:block}
+		li.inactive.what-aspect-ratio {display:none}
+	}
 	@media (min-width:1px) {
 		li.active.min-width {display:block}
 		li.inactive.what-min-width {display:none}
@@ -219,6 +240,54 @@
 		li.active.scan-interlace {display:block}
 		li.inactive.what-scan-interlace {display:none}
 	}
+	@media (update:none) {
+		li.active.update-none {display:block}
+		li.inactive.what-update-none {display:none}
+	}
+	@media (update:slow) {
+		li.active.update-slow {display:block}
+		li.inactive.what-update-slow {display:none}
+	}
+	@media (update:fast) {
+		li.active.update-fast {display:block}
+		li.inactive.what-update-fast {display:none}
+	}
+	@media (overflow-block:none) {
+		li.active.overflow-block-none {display:block}
+		li.inactive.what-overflow-block-none {display:none}
+	}
+	@media (overflow-block:scroll) {
+		li.active.overflow-block-scroll {display:block}
+		li.inactive.what-overflow-block-scroll {display:none}
+	}
+	@media (overflow-block:paged) {
+		li.active.overflow-block-paged {display:block}
+		li.inactive.what-overflow-block-paged {display:none}
+	}
+	@media (overflow-block:optional-paged) {
+		li.active.overflow-block-optional-paged {display:block}
+		li.inactive.what-overflow-block-optional-paged {display:none}
+	}
+	@media (overflow-inline:none) {
+		li.active.overflow-inline-none {display:block}
+		li.inactive.what-overflow-inline-none {display:none}
+	}
+	@media (overflow-inline:scroll) {
+		li.active.overflow-inline-scroll {display:block}
+		li.inactive.what-overflow-inline-scroll {display:none}
+	}
+	@media (color-gamut:srgb) {
+		li.active.color-gamut-srgb {display:block}
+		li.inactive.what-color-gamut-srgb {display:none}
+	}
+	@media (color-gamut:p3) {
+		li.active.color-gamut-p3 {display:block}
+		li.inactive.what-color-gamut-p3 {display:none}
+	}
+	@media (color-gamut:rec2020) {
+		li.active.color-gamut-rec2020 {display:block}
+		li.inactive.what-color-gamut-rec2020 {display:none}
+	}
 	@media (grid) {
 		li.active.grid {display:block}
 		li.inactive.what-grid {display:none}
@@ -247,13 +316,77 @@
 		li.active.pointer-none {display:block}
 		li.inactive.what-pointer-none {display:none}
 	}
-	@media (script) {
-		li.active.script {display:block}
-		li.inactive.what-script {display:none}
+	@media (any-pointer:coarse) {
+		li.active.any-coarse {display:block}
+		li.inactive.what-any-coarse {display:none}
+	}
+	@media (any-pointer:fine) {
+		li.active.any-fine {display:block}
+		li.inactive.what-any-fine {display:none}
+	}
+	@media (any-pointer:none) {
+		li.active.any-pointer-none {display:block}
+		li.inactive.what-any-pointer-none {display:none}
+	}
+	@media (scripting) {
+		li.active.scripting {display:block}
+		li.inactive.what-scripting {display:none}
 	}
 	@media (hover) {
 		li.active.hover {display:block}
 		li.inactive.what-hover {display:none}
+	}
+	@media (any-hover) {
+		li.active.any-hover {display:block}
+		li.inactive.what-any-hover {display:none}
+	}
+	@media (prefers-reduced-motion:no-preference) {
+		li.active.prefers-reduced-motion-no-preference {display:block}
+		li.inactive.what-prefers-reduced-motion-no-preference {display:none}
+	}
+	@media (prefers-reduced-motion:reduce) {
+		li.active.prefers-reduced-motion-reduce {display:block}
+		li.inactive.what-prefers-reduced-motion-reduce {display:none}
+	}
+	@media (prefers-reduced-transparency:no-preference) {
+		li.active.prefers-reduced-transparency-no-preference {display:block}
+		li.inactive.what-prefers-reduced-transparency-no-preference {display:none}
+	}
+	@media (prefers-reduced-transparency:reduce) {
+		li.active.prefers-reduced-transparency-reduce {display:block}
+		li.inactive.what-prefers-reduced-transparency-reduce {display:none}
+	}
+	@media (prefers-contrast:no-preference) {
+		li.active.prefers-contrast-no-preference {display:block}
+		li.inactive.what-prefers-contrast-no-preference {display:none}
+	}
+	@media (prefers-contrast:high) {
+		li.active.prefers-contrast-high {display:block}
+		li.inactive.what-prefers-contrast-high {display:none}
+	}
+	@media (prefers-contrast:low) {
+		li.active.prefers-contrast-low {display:block}
+		li.inactive.what-prefers-contrast-low {display:none}
+	}
+	@media (prefers-color-scheme:no-preference) {
+		li.active.prefers-color-scheme-no-preference {display:block}
+		li.inactive.what-prefers-color-scheme-no-preference {display:none}
+	}
+	@media (prefers-color-scheme:light) {
+		li.active.prefers-color-scheme-light {display:block}
+		li.inactive.what-prefers-color-scheme-light {display:none}
+	}
+	@media (prefers-color-scheme:dark) {
+		li.active.prefers-color-scheme-dark {display:block}
+		li.inactive.what-prefers-color-scheme-dark {display:none}
+	}
+	@media (inverted-colors:none) {
+		li.active.inverted-colors-none {display:block}
+		li.inactive.what-inverted-colors-none {display:none}
+	}
+	@media (inverted-colors:inverted) {
+		li.active.inverted-colors-inverted {display:block}
+		li.inactive.what-inverted-colors-inverted {display:none}
 	}
 
 	</style>
@@ -291,7 +424,9 @@
 
 	<div class="container test-area">
 		<ul>
-			<li><h2>Screen Type</h2></li>
+			<li>
+				<h2>Media Types</h2>
+			</li>
 			<li class="active screen"><code>screen</code></li>
 			<li class="inactive what-screen"><code>screen</code></li>
 			<li class="active print"><code>print</code></li>
@@ -302,6 +437,57 @@
 			<li class="inactive what-handheld"><code>handheld</code></li>
 			<li class="active projection"><code>projection</code></li>
 			<li class="inactive what-projection"><code>projection</code></li>
+			<li class="active speech"><code>speech</code></li>
+			<li class="inactive what-speech"><code>speech</code></li>
+		</ul>
+		<ul>
+			<li><h2>Viewport/Page Dimensions</h2></li>
+			<li class="active min-width"><code>(min-width)</code></li>
+			<li class="inactive what-min-width"><code>(min-width)</code></li>
+			<li class="active max-width"><code>(max-width)</code></li>
+			<li class="inactive what-max-width"><code>(max-width)</code></li>
+			<li class="active min-height"><code>(min-height)</code></li>
+			<li class="inactive what-min-height"><code>(min-height)</code></li>
+			<li class="active max-height"><code>(max-height)</code></li>
+			<li class="inactive what-max-height"><code>(max-height)</code></li>
+			<li class="active aspect-ratio"><code>(aspect-ratio)</code></li>
+			<li class="inactive what-aspect-ratio"><code>(aspect-ratio)</code></li>
+			<li class="active portrait"><code>(orientation : portrait)</code></li>
+			<li class="inactive what-portrait"><code>(orientation : portrait)</code></li>
+			<li class="active landscape"><code>(orientation : landscape)</code></li>
+			<li class="inactive what-landscape"><code>(orientation : landscape)</code></li>
+
+		</ul>
+		<ul>
+			<li><h2>Display Quality</h2></li>
+			<li class="active min-resolution"><code>(min-resolution)</code></li>
+			<li class="inactive what-min-resolution"><code>(min-resolution)</code></li>
+			<li class="active max-resolution"><code>(max-resolution)</code></li>
+			<li class="inactive what-max-resolution"><code>(max-resolution)</code></li>
+			<li class="active scan-progressive"><code>(scan:progressive)</code></li>
+			<li class="inactive what-scan-progressive"><code>(scan:progressive)</code></li>
+			<li class="active scan-interlace"><code>(scan:interlace)</code></li>
+			<li class="inactive what-scan-interlace"><code>(scan:interlace)</code></li>
+			<li class="active grid"><code>(grid)</code></li>
+			<li class="inactive what-grid"><code>(grid)</code></li>
+			<li class="active update-none"><code>(update:none)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="inactive what-update-none"><code>(update:none)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="active update-slow"><code>(update:slow)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="inactive what-update-slow"><code>(update:slow)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="active update-fast"><code>(update:fast)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="inactive what-update-fast"><code>(update:fast)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="active overflow-block-none"><code>(overflow-block:none)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="inactive what-overflow-block-none"><code>(overflow-block:none)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="active overflow-block-scroll"><code>(overflow-block:scroll)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="inactive what-overflow-block-scroll"><code>(overflow-block:scroll)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="active overflow-block-optional-paged"><code>(overflow-block:optional-paged)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="inactive what-overflow-block-optional-paged"><code>(overflow-block:optional-paged)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="active overflow-block-paged"><code>(overflow-block:paged)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="inactive what-overflow-block-paged"><code>(overflow-block:paged)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="active overflow-inline-none"><code>(overflow-inline:none)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="inactive what-overflow-inline-none"><code>(overflow-inline:none)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="active overflow-inline-scroll"><code>(overflow-inline:scroll)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="inactive what-overflow-inline-scroll"><code>(overflow-inline:scroll)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
 		</ul>
 		<ul>
 			<li><h2>Colour</h2></li>
@@ -311,27 +497,90 @@
 			<li class="inactive what-color-index"><code>(color-index)</code></li>
 			<li class="active monochrome"><code>monochrome</code></li>
 			<li class="inactive what-monochrome"><code>monochrome</code></li>
+			<li class="active color-gamut-srgb"><code>(color-gamut:srgb)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="inactive what-color-gamut-srgb"><code>(color-gamut:srgb)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="active color-gamut-p3"><code>(color-gamut:p3)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="inactive what-color-gamut-p3"><code>(color-gamut:p3)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="active color-gamut-rec2020"><code>(color-gamut:rec2020)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+<li class="inactive what-color-gamut-rec2020"><code>(color-gamut:rec2020)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
 		</ul>
+
 		<ul>
-			<li><h2>Orientation</h2></li>
-			<li class="active portrait"><code>(orientation : portrait)</code></li>
-			<li class="inactive what-portrait"><code>(orientation : portrait)</code></li>
-			<li class="active landscape"><code>(orientation : landscape)</code></li>
-			<li class="inactive what-landscape"><code>(orientation : landscape)</code></li>
+			<li><h2>Interaction</h2></li>
+			<li class="active fine"><code>(pointer:fine)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="inactive what-fine"><code>(pointer:fine)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="active coarse"><code>(pointer:coarse)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="inactive what-coarse"><code>(pointer:coarse)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="active pointer-none"><code>(pointer:none)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="inactive what-pointer-none"><code>(pointer:none)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+
+			<li class="active hover"><code>(hover)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="inactive what-hover"><code>(hover)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+
+			<li class="active any-fine"><code>(any-pointer:fine)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="inactive what-any-fine"><code>(pany-ointer:fine)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="active any-coarse"><code>(any-pointer:coarse)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="inactive what-any-coarse"><code>(any-pointer:coarse)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="active any-pointer-none"><code>(any-pointer:none)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="inactive what-any-pointer-none"><code>(any-pointer:none)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+
+			<li class="active any-hover"><code>(any-hover)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+			<li class="inactive what-any-hover"><code>(any-hover)</code> <span class="level" title="Part of the proposed Media Queries Level 4 spec">Level 4</span></li>
+
 		</ul>
+
 		<ul>
-			<li><h2>Display Density &amp; Dynamics</h2></li>
-			<li class="active retina"><code>(-webkit-min-device-pixel-ratio: 2)</code></li>
-			<li class="inactive what-retina"><code>(-webkit-min-device-pixel-ratio: 2)</code></li>
-			<li class="active scan-progressive"><code>(scan:progressive)</code></li>
-			<li class="inactive what-scan-progressive"><code>(scan:progressive)</code></li>
-			<li class="active scan-interlace"><code>(scan:interlace)</code></li>
-			<li class="inactive what-scan-interlace"><code>(scan:interlace)</code></li>
-			<li class="active grid"><code>(grid)</code></li>
-			<li class="inactive what-grid"><code>(grid)</code></li>
+			<li>
+				<h2>Level 5 Draft Media Features</h2>
+			</li>
+
+			<li class="active lightlevel-normal"><code>(light-level:normal)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="inactive what-lightlevel-normal"><code>(light-level:normal)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="active lightlevel-dim"><code>(light-level:dim)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="inactive what-lightlevel-dim"><code>(light-level:dim)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="active lightlevel-washed"><code>(light-level:washed)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="inactive what-lightlevel-washed"><code>(light-level:washed)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+
+
+			<li class="active scripting"><code>(scripting)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="inactive what-scripting"><code>(scripting)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="active prefers-reduced-motion-no-preference"><code>(prefers-reduced-motion:no-preference)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="inactive what-prefers-reduced-motion-no-preference"><code>(prefers-reduced-motion:no-preference)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="active prefers-reduced-motion-reduce"><code>(prefers-reduced-motion:reduce)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="inactive what-prefers-reduced-motion-reduce"><code>(prefers-reduced-motion:reduce)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+
+
+			<li class="active prefers-reduced-transparency-no-preference"><code>(prefers-reduced-transparency:no-preference)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="inactive what-prefers-reduced-transparency-no-preference"><code>(prefers-reduced-transparency:no-preference)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="active prefers-reduced-transparency-reduce"><code>(prefers-reduced-transparency:reduce)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="inactive what-prefers-reduced-transparency-reduce"><code>(prefers-reduced-transparency:reduce)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+
+
+			<li class="active prefers-contrast-no-preference"><code>(prefers-contrast:no-preference)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="inactive what-prefers-contrast-no-preference"><code>(prefers-contrast:no-preference)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="active prefers-contrast-high"><code>(prefers-contrast:high)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="inactive what-prefers-contrast-high"><code>(prefers-contrast:high)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="active prefers-contrast-low"><code>(prefers-contrast:low)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="inactive what-prefers-contrast-low"><code>(prefers-contrast:low)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+
+
+
+			<li class="active prefers-color-scheme-no-preference"><code>(prefers-color-scheme:no-preference)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="inactive what-prefers-color-scheme-no-preference"><code>(prefers-color-scheme:no-preference)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="active prefers-color-scheme-light"><code>(prefers-color-scheme:light)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="inactive what-prefers-color-scheme-light"><code>(prefers-color-scheme:light)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="active prefers-color-scheme-dark"><code>(prefers-color-scheme:dark)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="inactive what-prefers-color-scheme-dark"><code>(prefers-color-scheme:dark)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+
+			<li class="active inverted-colors-none"><code>(inverted-colors:none)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="inactive what-inverted-colors-none"><code>(inverted-colors:none)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="active inverted-colors-inverted"><code>(inverted-colors:inverted)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="inactive what-inverted-colors-inverted"><code>(inverted-colors:inverted)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+
 		</ul>
+
 		<ul>
-			<li><h2>Device and Viewport Properties</h2></li>
+			<li><h2>Deprecated</h2></li>
 			<li class="active min-device-width"><code>(min-device-width)</code></li>
 			<li class="inactive what-min-device-width"><code>(min-device-width)</code></li>
 			<li class="active max-device-width"><code>(max-device-width)</code></li>
@@ -340,41 +589,10 @@
 			<li class="inactive what-min-device-height"><code>(min-device-height)</code></li>
 			<li class="active max-device-height"><code>(max-device-height)</code></li>
 			<li class="inactive what-max-device-height"><code>(max-device-height)</code></li>
-			<li class="active min-width"><code>(min-width)</code></li>
-			<li class="inactive what-min-width"><code>(min-width)</code></li>
-			<li class="active max-width"><code>(max-width)</code></li>
-			<li class="inactive what-max-width"><code>(max-width)</code></li>
-			<li class="active min-height"><code>(min-height)</code></li>
-			<li class="inactive what-min-height"><code>(min-height)</code></li>
-			<li class="active max-height"><code>(max-height)</code></li>
-			<li class="inactive what-max-height"><code>(max-height)</code></li>
+			<li class="active device-aspect-ratio"><code>(device-aspect-ratio)</code></li>
+			<li class="inactive what-device-aspect-ratio"><code>(device-aspect-ratio)</code></li>
 		</ul>
-		<ul>
-			<li><h2>Resolution</h2></li>
-			<li class="active min-resolution"><code>(min-resolution)</code></li>
-			<li class="inactive what-min-resolution"><code>(min-resolution)</code></li>
-			<li class="active max-resolution"><code>(max-resolution)</code></li>
-			<li class="inactive what-max-resolution"><code>(max-resolution)</code></li>
-		</ul>
-		<ul>
-			<li><h2>Experimental Media Features</h2></li>
-			<li class="active fine"><code>(pointer:fine) [MQ Level 4]</code></li>
-			<li class="inactive what-fine"><code>(pointer:fine) [MQ Level 4]</code></li>
-			<li class="active coarse"><code>(pointer:coarse) [MQ Level 4]</code></li>
-			<li class="inactive what-coarse"><code>(pointer:coarse) [MQ Level 4]</code></li>
-			<li class="active pointer-none"><code>(pointer:none) [MQ Level 4]</code></li>
-			<li class="inactive what-pointer-none"><code>(pointer:none) [MQ Level 4]</code></li>
-			<li class="active lightlevel-normal"><code>(light-level:normal) [MQ Level 4]</code></li>
-			<li class="inactive what-lightlevel-normal"><code>(light-level:normal) [MQ Level 4]</code></li>
-			<li class="active lightlevel-dim"><code>(light-level:dim) [MQ Level 4]</code></li>
-			<li class="inactive what-lightlevel-dim"><code>(light-level:dim) [MQ Level 4]</code></li>
-			<li class="active lightlevel-washed"><code>(light-level:washed) [MQ Level 4]</code></li>
-			<li class="inactive what-lightlevel-washed"><code>(light-level:washed) [MQ Level 4]</code></li>
-			<li class="active hover"><code>(hover) [MQ Level 4]</code></li>
-			<li class="inactive what-hover"><code>(hover) [MQ Level 4]</code></li>
-			<li class="active script"><code>(script) [MQ Level 4]</code></li>
-			<li class="inactive what-script"><code>(script) [MQ Level 4]</code></li>
-		</ul>
+
 	</div>
 
 	<section class="newsletter" id="newsletter">
