@@ -389,6 +389,10 @@
 		li.active.inverted-colors-inverted {display:block}
 		li.inactive.what-inverted-colors-inverted {display:none}
 	}
+  @supports (text-decoration: underline) {
+    li.active.supports {display:block}
+		li.inactive.what-supports {display:none}
+  }
 
 	</style>
 
@@ -579,6 +583,12 @@
 			<li class="inactive what-inverted-colors-inverted"><code>(inverted-colors:inverted)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
 
 		</ul>
+
+    <ul>
+			<li><h2>Other at-rules</h2></li>
+			<li class="active supports"><code>@supports</code></li>
+			<li class="inactive what-supports"><code>@supports</code></li>
+    </ul>
 
 		<ul>
 			<li><h2>Deprecated</h2></li>
