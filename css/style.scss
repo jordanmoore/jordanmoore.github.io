@@ -65,10 +65,10 @@ img {
   margin: 0;
   padding: 0;
 }
-
 //
 // Bookshelf
 //
+
 .books {
   a {
     text-decoration: none;
@@ -76,6 +76,7 @@ img {
     display: block;
     position: relative;
     font-family: $sans;
+
     &:after {
       content: '';
       position: absolute;
@@ -87,6 +88,7 @@ img {
       z-index: -1;
       box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     }
+
     &:hover {
       img {
         transform: scale(1.06);
@@ -112,7 +114,8 @@ img {
       font-size: 0.88em;
       vertical-align: bottom;
 
-      p, p:first-of-type {
+      p,
+      p:first-of-type {
         font-weight: 600;
         font-size: 15px;
         letter-spacing: -0.45px;
@@ -128,6 +131,7 @@ img {
       }
     }
   }
+
   .article-content ul li:before {
     display: none;
   }
@@ -138,7 +142,6 @@ img {
     transition: all 0.16s ease;
   }
 }
-
 
 .container {
   max-width: 606px;
@@ -160,10 +163,10 @@ img {
 
 header {
   margin-bottom: 6em;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-family: $sans;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $sans;
 }
 
 nav {
@@ -173,23 +176,27 @@ nav {
   letter-spacing: -0.45px;
   margin: 0.7em 0 0;
   padding: 0;
+
   ul {
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
-    li {
 
+    li {
       display: inline;
+
       a {
         display: inline-block;
         text-decoration: none;
         margin-left: 1em;
+
         &.nav-mb-hide {
           display: none;
           @media screen and (min-width:414px) {
             display: inline-block;
           }
         }
+
         &:hover {
           text-decoration: underline;
         }
@@ -202,7 +209,12 @@ header {
   border-bottom: 1px solid fade-out($grey, 0.8);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $sans;
   line-height: 1.2;
 }
@@ -223,7 +235,8 @@ h2 {
   }
 }
 
-strong, b {
+b,
+strong {
   font-weight: 600;
 }
 
@@ -232,42 +245,47 @@ strong, b {
 }
 
 .small-caps {
-    font-size: 1.16em;
-    font-variant: small-caps;
-    font-style: normal;
-    text-transform: lowercase;
-    letter-spacing: 0.03em;
+  font-size: 1.16em;
+  font-variant: small-caps;
+  font-style: normal;
+  text-transform: lowercase;
+  letter-spacing: 0.03em;
 }
 
 .books .article-content ul {
   padding-left: 0;
 }
 
-
 .article-content {
   h2 {
     font-weight: 600;
   }
+
   p {
     font-size: 1.16em;
     line-height: 1.45;
     font-weight: 400;
-    letter-spacing: .011em;
+    letter-spacing: 0.011em;
     margin-bottom: 1.6em;
   }
+
   > p:first-of-type {
     font-size: 1.31em;
   }
+
   li {
     line-height: 1.45em;
     font-size: 1.16em;
   }
+
   ul {
     list-style: none;
     margin-left: 0;
     padding-left: 1.6em;
+
     li {
       position: relative;
+
       &:before {
         content: "– ";
         left: -1em;
@@ -276,10 +294,12 @@ strong, b {
       }
     }
   }
+
   ol {
     margin-left: 0;
     padding-left: 1.6em;
   }
+
   blockquote {
     padding: 1em;
     @media screen and (min-width:520px) {
@@ -306,6 +326,7 @@ strong, b {
   article {
     padding-bottom: 8em;
     border-bottom: 1px solid fade-out($grey, 0.8);
+
     &:last-of-type {
       padding-bottom: 0;
       border-bottom: none;
@@ -315,15 +336,19 @@ strong, b {
 
 .footnotes {
   font-family: $sans;
+
   ol {
     margin-top: 4.236em;
     border-top: 1px solid fade-out($grey, 0.8);
     padding-top: 1.6em;
+
     li {
       font-size: 0.8em;
+
       a {
         word-break: break-word;
       }
+
       p {
         margin: 0 0 0.3em;
       }
@@ -342,12 +367,14 @@ strong, b {
   color: $dark;
   letter-spacing: -0.48px;
   text-decoration: none;
+
   span {
     display: none;
     @media screen and (min-width:496px) {
       display: inline;
     }
   }
+
   &:before {
     content: '';
     transition: all 0.2s ease;
@@ -363,13 +390,13 @@ strong, b {
     border-radius: 4px;
     background-size: contain;
   }
+
   &:hover {
     &:before {
       box-shadow: 0 0 0 1px rgba(47,49,53,0.26), 0 2px 5px fade-out(#2F3135, 0.8), 0 3px 5px fade-out(#2F3135, 0.9), inset 0 1px 0 fade-out(white, 0.7);
     }
   }
 }
-
 
 pre {
   white-space: pre-wrap;
@@ -417,19 +444,20 @@ img em {
   a {
     text-decoration: none;
   }
+
   h1 {
     font-size: 1.6em;
     max-width: 33rem;
     line-height: 1.4;
     margin-top: 0;
   }
+
   .date {
     margin-bottom: 0;
   }
 }
 
 .newsletter {
-
   h1 {
     margin-bottom: 0;
     font-weight: 500;
@@ -452,10 +480,9 @@ img em {
       padding: 0.9em 1em;
       max-width: 320px;
       width: 100%;
-background: #FFFFFF;
-border: 1px solid rgba(47,49,53,0.26);
-border-radius: 4px;
-
+      background: #FFFFFF;
+      border: 1px solid rgba(47,49,53,0.26);
+      border-radius: 4px;
     }
 
     input[type=submit] {
@@ -518,7 +545,6 @@ footer {
     padding: 0;
     list-style: none;
   }
-
 }
 
 .info {
@@ -540,18 +566,23 @@ footer {
   margin-bottom: 2.6em;
   box-shadow: 0 1px 4px rgba(0,0,0,0.045);
   text-align: center;
+  display: inline-block;
+  padding: 1.6em;
   @media screen and (min-width:430px) {
     text-align: left;
     display: flex;
     align-items: center;
     max-height: 152px;
     overflow: hidden;
+    padding: 0;
   }
+
   .link-card__image {
     width: 100%;
     max-width: 120px;
     margin: 0 auto;
     border-radius: 4px;
+
     img {
       display: block;
       border-radius: 4px;
@@ -561,16 +592,18 @@ footer {
     @media screen and (min-width:430px) {
       overflow: hidden;
       border-radius: 0;
+
       img {
         border-radius: 0;
         box-shadow: none;
-margin-bottom: 0;
+        margin-bottom: 0;
       }
     }
     @media screen and (min-width:515px) {
       max-width: 152px;
     }
   }
+
   .link-card__description {
     @media screen and (min-width:430px) {
       border-left: 1px solid fade-out($grey, 0.8);
@@ -579,10 +612,12 @@ margin-bottom: 0;
     @media screen and (min-width:515px) {
       width: calc(100% - 152px);
     }
+
     h2 {
       margin-top: 0;
       margin-bottom: 0;
     }
+
     p {
       font-family: $sans;
       font-size: 0.94em;
