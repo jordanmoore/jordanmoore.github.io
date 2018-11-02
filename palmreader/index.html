@@ -39,6 +39,11 @@
 		padding: 0;
 		-webkit-font-smoothing: antialiased;
 	}
+  @media (prefers-color-scheme:dark) {
+    body {
+      color: #fff;
+    }
+  }
 	h1 {
 		position: relative;
 	}
@@ -77,6 +82,12 @@
 		background: #fff;
 		box-shadow: 0 0 36px rgba(0,0,0,0.1);
 	}
+  @media (prefers-color-scheme:dark) {
+    .page-header {
+      background: #252525;
+      color: #fff;
+    }
+  }
 	.page-header {
 		text-align: center;
 	}
@@ -92,6 +103,12 @@
 		margin: 1.6em;
 		padding: 1.6em;
 	}
+  @media (prefers-color-scheme:dark) {
+    .test-area ul {
+      background: rgba(255,255,255, 0.08);
+      color: #fff;
+    }
+  }
 	.test-area li {
 		margin-bottom: 0.65em;
 		break-inside: avoid;

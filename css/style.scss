@@ -27,6 +27,10 @@ body {
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
+  @media (prefers-color-scheme:dark) {
+    background: $dark;
+    color: #fff;
+  }
 
   &.homepage {
     overflow-x: hidden;
@@ -76,6 +80,9 @@ img {
     display: block;
     position: relative;
     font-family: $sans;
+    @media (prefers-color-scheme:dark) {
+      color: #fff;
+    }
 
     &:after {
       content: '';
@@ -388,6 +395,9 @@ strong {
 .post-link {
   text-decoration: none;
   color: $dark;
+  @media (prefers-color-scheme:dark) {
+    color: #fff;
+  }
 }
 
 .logo a {
@@ -396,6 +406,9 @@ strong {
   color: $dark;
   letter-spacing: -0.48px;
   text-decoration: none;
+  @media (prefers-color-scheme:dark) {
+    color: #fff;
+  }
 
   span {
     display: none;
@@ -597,6 +610,10 @@ footer {
   text-align: center;
   display: inline-block;
   padding: 1.6em;
+  @media (prefers-color-scheme:dark) {
+    color: #fff;
+    background: fade-out(#fff, 0.92);
+  }
   @media screen and (min-width:430px) {
     text-align: left;
     display: flex;
