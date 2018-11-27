@@ -433,6 +433,7 @@ strong {
     background-size: contain;
     @media (prefers-color-scheme:dark) {
       background: url("../img/dark-avatar.jpg") center center no-repeat;
+      background-size: contain;
     }
   }
 
