@@ -4,3 +4,4 @@ sitemap: false
 ---
 User-agent: *
 Disallow: /hp-guidelines/
+Disallow: /bd4sg-demo/

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>ion-android-arrow-dropright-circle - Ionicons</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Themes-Copy-3" transform="translate(-1161.000000, -2795.000000)" fill="#212121">
+            <path d="M1171.40039,2805.68164 C1170.20898,2806.87305 1168.77345,2807.46875 1167.09375,2807.46875 C1165.41405,2807.46875 1163.97852,2806.87305 1162.78711,2805.68164 C1161.5957,2804.49023 1161,2803.0547 1161,2801.375 C1161,2799.6953 1161.5957,2798.25977 1162.78711,2797.06836 C1163.97852,2795.87695 1165.41405,2795.28125 1167.09375,2795.28125 C1168.77345,2795.28125 1170.20898,2795.87695 1171.40039,2797.06836 C1172.5918,2798.25977 1173.1875,2799.6953 1173.1875,2801.375 C1173.1875,2803.0547 1172.5918,2804.49023 1171.40039,2805.68164 Z M1166.15625,2804.1875 L1168.96875,2801.375 L1166.15625,2798.5625 L1166.15625,2804.1875 Z" id="ion-android-arrow-dropright-circle---Ionicons"></path>
+        </g>
+    </g>
+</svg>
