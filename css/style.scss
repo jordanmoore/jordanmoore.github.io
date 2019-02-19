@@ -220,8 +220,20 @@ nav {
 
     li {
       display: inline;
+      ul {
+        display: none;
+        li {
+          display: block;
+        }
+      }
 
-      a {
+      span:hover {
+        + ul {
+          display: block;
+        }
+      }
+
+      a, span {
         display: inline-block;
         text-decoration: none;
         margin-left: 1em;
