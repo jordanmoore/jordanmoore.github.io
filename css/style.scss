@@ -350,10 +350,11 @@ strong {
 
   blockquote {
     padding: 1em;
+    color: $red;
     @media screen and (min-width:520px) {
-      border-left: 2px solid fade-out($grey, 0.8);
-      margin: 4.2em 0;
-      padding: 1.6em 1.6em 1.6em 2.6em;
+      border-left: 2px solid $red;
+      margin: 3.2em 0;
+      padding: 0 1.6em 0 2em;
     }
   }
 }
