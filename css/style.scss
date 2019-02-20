@@ -491,11 +491,16 @@ figure {
 
 figcaption,
 img em {
-  opacity: 0.4;
+  color: fade-out($dark, 0.6);
   display: block;
   margin-bottom: 2.6em;
   font-family: $sans;
-  font-size: 0.9375em;
+  text-transform: uppercase;
+  font-size: 0.75em;
+}
+
+.article-content figcaption p {
+  font-weight: 500;
 }
 
 .post-list {

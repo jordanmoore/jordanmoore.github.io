@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Product Design, Responsive Web Design, UX Design, Belfast Northern Ireland | Jordan Moore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10, user-scalable=1">
+  <meta name="description" content="Product designer, responsive web designer and UX designer in Belfast, Northern Ireland, specialising in user experience and accessible design
+">
+  <link href="https://fonts.googleapis.com/css?family=Faustina:400,400i,600i" rel="stylesheet">
+
+  <link rel="stylesheet" href="http://jordanm.co.uk/css/style.css">
+  <link rel="canonical" href="http://jordanm.co.uk/page8/">
+  <link rel="alternate" type="application/rss+xml" title="Product Design, Responsive Web Design, UX Design, Belfast Northern Ireland | Jordan Moore" href="http://jordanm.co.uk/feed.xml" />
+
+  <link rel="shortcut icon" href="http://jordanm.co.uk/img/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="http://jordanm.co.uk/img/apple-touch-icon-precomposed.png">
+
+  <meta property="og:site_name" content="Jordan Moore, Product Designer">
+  <meta property="og:url" content="http://jordanm.co.uk/">
+  <meta property="og:type" content="website">
+
+  <meta property="og:title" content="Product Design, Responsive Web Design, UX Design, Belfast Northern Ireland | Jordan Moore">
+  <meta property="og:description" content="Product designer, responsive web designer and UX designer in Belfast, Northern Ireland, specialising in user experience and accessible design
+">
+  <meta property="og:image" content="http://jordanm.co.uk/img/apple-touch-icon-precomposed.png">
+
+  <meta property="twitter:title" content="Product Design, Responsive Web Design, UX Design, Belfast Northern Ireland | Jordan Moore">
+  <meta property="twitter:description" content="Product designer, responsive web designer and UX designer in Belfast, Northern Ireland, specialising in user experience and accessible design
+">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="http://jordanm.co.uk/img/apple-touch-icon-precomposed.png">
+  <meta name="twitter:site" content="@jordanmoore">
+  <meta name="twitter:creator" content="@jordanmoore">
+</head>
+
+
+<body class="homepage">
+  <div class="container">
+    <header>
+        
+
+<h1 class="logo"><a href="/"><span>Jordan Moore</span></a></h1>
+
+<nav>
+    <ul>
+        <li><a href="/" >Home</a></li>
+        <li><a href="/bookshelf" >Bookshelf</a></li>
+        <li><a href="/lab" >Lab</a></li>
+        <li><a href="http://jordanm.co.uk/#newsletter" class="nav-mb-hide">Newsletter</a></li>
+    </ul>
+</nav>
+
+
+    </header>
+  </div>
+
+      <div class="blog-posts">
+        
+          <article class="marginBottom-l">
+                <div class="container wide  textAlign-center">
+                  <p class="date color-grey"><time>
+                    
+                    April
+                    26th, 2012
+                  </time></p>
+
+                  <a class="post-link" href="/2012/04/26/building-with-content-choreography.html"><h1 class="article-header">Building with Content Choreography</h1></a>
+                </div>
+            <div class="container">
+              <div class="article-content">
+                <p>Responsive Web Design allows us to change layouts and element appearance based upon the width and/or height of the destination device. It&#8217;s the ideal scenario for users, coders and content coordinators alike - same site, same code, same content, just optimised for your experience depending on the display properties of the device you are using.</p>
+
+<p>There can be stumbling blocks along the way to a beautiful unified site that runs perfectly on all platforms, which I&#8217;ll not go into as they are well documented (think, responsive images, page weight and so-on). The one that has been teasing me for a while is Content Choreography. Trent Walton <a href="http://trentwalton.com/2011/07/14/content-choreography/">wrote a great article on the matter</a>. My key takeaway from his article was that when it comes to the narrow width single column view, content stacking is unavoidable and the approach the majority of us take is to simply stack the page elements in the order they appear in our document order.</p>
+
+<p><img src="http://media.tumblr.com/tumblr_m33rrog1f71qcjdi5.jpg" alt=""/></p>
+
+<p>What happens when this order isn&#8217;t ideal for a narrow single column viewport but it works as we want it to for others? We want to make the most of the confined space and let key content and components flourish, but sometimes our hierarchy of elements can prevent that from happening. Say for example we want to present an article in the narrow single column view, but before the article appears in the stacking order we have: a header (containing site name etc), navigation, maybe even a banner advertisement, then the article. The heart of the page is buried beneath items that may be less important in this context. Rather than brutally hiding these items with a display:none property we can reorder them using another CSS property - <strong>flexbox</strong>.</p>
+
+<p>The flexible box layout module allows us to do more interesting things than our current box model allows for producing layouts, <strong>including the ability to reorder elements</strong>. Sounds exactly like what we wanted to do with the article example mentioned earlier, right? The flexbox property <strong>box-ordinal-group</strong> let&#8217;s us reorder elements based on a group number assigned to elements in our CSS. They appear in the order you specify starting from 1. So in our example we would priortise the elements on the page:</p>
+
+<ul><li>Header (1) - Contains the site name, most important</li>
+<li>Navigation (4) - While a key element, it&#8217;s not crucial in our example - we just want to present an article</li>
+<li>Banner advertisement (3) - Important for our advertisers, we are compromising for our example and dropping them below the article</li>
+<li>Article (2) - The second most important thing on the page apart from the site&#8217;s name.</li>
+</ul><p>When we apply those values to box-ordinal-group for each of the elements, the browser would render them in this order:</p>
+
+<ul><li>Header (1)</li>
+<li>Article (2)</li>
+<li>Banner advertisement (3)</li>
+<li>Navigation (4)</li>
+</ul><p>All this happens with minimal fuss - in your single column media query you apply display:box to the parent container which houses the elements you wish to re-order, assign the box-ordinal-group values according to the order in which you want them to appear, save, refresh and - ah-ha! They appear as if they have been floated horizontally, what happened? Flexbox arranges elements horizontally by default, because we <strong>only</strong> want to apply this at the single column view (I&#8217;ll explain why later), we need to add one more property to the container alongside display:box, and that property is - box-orient:vertical. Now we are working with our familiar stacked block-level elements only this time we have the delicious power to re-order them as we please.</p>
+
+<p>I mentioned briefly that we would only want to do this when our layout is viewed in a single column, allow me to explore this a little further - there are advantages to applying flexbox at a single column level. One is that it is easier to get your head around moving objects up and down rather than horizontally moving and stretching and filling and stacking. Another is that by aiming to do this at a single column media query (I hate associating devices with viewport widths but for the sake of illustrating this point this would be the mobile view) we can enjoy the <a href="http://caniuse.com/flexbox" title="When can I use Flexible Box Layout Module?">incredible support for flexbox</a> on mobile devices. In addition it is (arguably) mobile devices that feel the pain of the need to re-arrange elements for optimal presentation in that context. Also if a mobile browser can&#8217;t recognise flexbox (IE9 Mobile is the only major one missing from <a href="http://caniuse.com/flexbox" title="When can I use Flexible Box Layout Module?">the list</a> so I&#8217;m assuming it can&#8217;t), then it will simply fallback to the default document order which isn&#8217;t the worst outcome.</p>
+
+<p>So unless anybody points out some fundamental flaws in this technique, and <a href="http://twitter.com/jordanmoore">please feel free to do so</a> if there are any, then I plan to use this a lot when building responsive sites. I can see it causing some extra foresight when building for mobile first although I don&#8217;t think that&#8217;s an entirely bad thing, you would essentially build for mobile fallbacks and the larger context&#8217;s document order first, then re-order to the ideal choreographed scenario when finished. To be honest, I&#8217;m still figuring that part out, the best way to approach this, as with everything else in responsive web design is to build and refine and repeat.</p>
+
+<p><a href="http://www.jordanm.co.uk/contentchoreography">View demo</a> (resize your browser window to see the narrow column reordering)
+<a href="http://www.jordanm.co.uk/contentchoreographydemo">View explanation demo</a></p>
+
+<h2>Update</h2>
+
+<p>Thanks to the good work of <a href="http://twitter.com/irishstu">Stewart Curry</a> and <a href="http://twitter.com/sturobson">Stuart Robson</a>, this technique has a mixin for your favourite CSS pre-processor:</p>
+
+<ul><li><a href="http://www.alwaystwisted.com/post.php?s=2012-05-17-content-choreography-mixins-in-less">Content Choreography LESS mixin</a> by Stu Robson</li>
+<li><a href="http://blog.woop.ie/post/23227066135/content-choreography-mixin">Content Choreography SASS mixin</a> by Stewart Curry</li>
+</ul><p><a href="http://farm9.staticflickr.com/8368/8405185756_3578971882_h.jpg" class="cover" data-credit="© Kryziz Bonny" data-link="http://www.flickr.com/photos/kryziz"></a></p>
+
+              </div>
+            </div>
+          </article>
+        
+
+
+      <!-- Pagination links -->
+      <div class="container pagination marginBottom">
+        
+          <a href="/page7" class="previous">&larr; Newer Articles</a>
+        
+        
+      </div>
+    <!-- /.container -->
+  </div>
+
+
+
+</div>
+
+
+      <section class="newsletter" id="newsletter">
+  <footer>
+    <div class="container">
+      <div class="footer-col">
+        <h4 class="small-header">About</h4>
+        <p>I am currently Director of Design at <a href="https://dawsonandrews.com">Dawson Andrews</a> and in the process of building the Research and Development part of the company. We'll explore interesting things like purpose, meaning and truth through technology. <a href="mailto:jm@dawsonandrews.com">Let's talk</a>.</p>
+        <h4 class="small-header">Newsletter</h4>
+        <p>Sometimes I publish a newsletter called <strong>The Logbook</strong> which you can subscribe to here.</p>
+        <div id="mc_embed_signup" class="marginBottom">
+          <form action="https://jordanm.us5.list-manage.com/subscribe/post?u=3e0b1d25a7ba2bbb8c0c979ae&amp;id=4932254eb1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <div class="mc-field-group">
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email address">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+              </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3e0b1d25a7ba2bbb8c0c979ae_4932254eb1" tabindex="-1" value=""></div>
+            </div>
+          </form>
+        </div>
+        <!--End mc_embed_signup-->
+      </div>
+
+      <div class="footer-col copyright">
+          <p><span>&copy; Jordan Moore 2018</span> <span><a href="https://www.twitter.com/jordanmoore">@jordanmoore</a> • <a href="/feed.xml">RSS</a></span></p>
+
+      </div>
+
+    </div>
+  </footer>
+</section>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46278682-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-46278682-2');
+</script>
+
+</body>
+
+</html>

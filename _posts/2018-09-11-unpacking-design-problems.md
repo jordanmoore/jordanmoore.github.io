@@ -6,8 +6,6 @@ summary: Writing my todo list for the day is a key part of my morning routine an
 label: Tactics &amp; Habits
 ---
 
-<div class="info">Originally published on <a href="https://www.invisionapp.com/blog/unpacking-design-problems/">InVision's blog</a></div>
-
 The best puzzles are the ones that demand more of you. When the answer appears obvious, but you second guess yourself. When you know there’s more to it than meets the eye.
 
 Nob Yoshigahara's infamous number tree puzzle is certainly one of my personal favourites for just these reasons. It gives you a set of information and asks, What do you make of this?
@@ -78,3 +76,5 @@ It’s also worth implementing techniques that help remove biases and ensure obj
 The path to delivering value in product design isn't through shiny user interfaces. Like a good puzzle, it lies in your ability to approach the problem from an inquisitive perspective, assemble the pieces of information you need, explore fundamentals and truths, and build back up to the definitive solution.
 
 No one said it would be easy.
+
+<div class="info">Originally published on <a href="https://www.invisionapp.com/blog/unpacking-design-problems/">InVision's blog</a></div>
