@@ -10,7 +10,7 @@ label: Tactics &amp; Habits
 
 One of the biggest challenges in any creative endeavour is manifesting ideas as close to the speed they form in the mind as possible. Ideas tend to have a half-life in that the longer we hold on to them without expressing or capturing them, the more fragmented they become from the original concept.
 
-In general, the faster you can express and capture ideas, the more they stay true and intact. Therefore, verbalising your ideas is the fastest route to expressing and capturing.
+In general, the faster you can express and capture ideas, the more they stay true and intact. Therefore, verbalising your ideas is the fastest route to expressing and capturing them. It's the current benchmark.
 
 Writing down ideas, whether by pen or by typing, increases idea friction but enjoys the retrieval benefit. Sketching, drawing or visualising through design tools has a much higher rate of idea friction but enjoys the benefit of higher fidelity.
 
