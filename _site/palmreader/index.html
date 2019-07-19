@@ -47,7 +47,7 @@
 	h1 {
 		position: relative;
 	}
-	h1:before, h1:after {
+	.page-header .container>h1:before, .page-header .container>h1:after {
 		transition: all 1.6s ease;
 		content: '🖐';
 		position: absolute;
@@ -57,11 +57,11 @@
 		text-align: center;
 		opacity: 0;
 	}
-	h1:hover:before {
+	.page-header .container>h1:hover:before {
 		transform: scale(1.5);
 		opacity: 0.4;
 	}
-	h1:hover:after {
+	.page-header .container>h1:hover:after {
 		opacity: 0.6;
 		transform: scale(1.2);
 	}
@@ -102,6 +102,7 @@
 		border-radius: 4px;
 		margin: 1.6em;
 		padding: 1.6em;
+		box-shadow: 0 3px 8px rgba(0,0,0,0.06);
 	}
   @media (prefers-color-scheme:dark) {
     .test-area ul {
@@ -322,6 +323,18 @@
 		li.active.lightlevel-washed {display:block}
 		li.inactive.what-lightlevel-washed {display:none}
 	}
+	@media(environment-blending: opaque) {
+		li.active.environment-blending-opaque {display: block;}
+		li.inactive.what-environment-blending-opaque {display: none;}
+	}
+	@media(environment-blending: additive) {
+		li.active.environment-blending-additive {display: block;}
+		li.inactive.what-environment-blending-additive {display: none;}
+	}
+	@media(environment-blending: subtractive) {
+		li.active.environment-blending-subtractive {display: block;}
+		li.inactive.what-environment-blending-subtractive {display: none;}
+	}
 	@media (pointer:coarse) {
 		li.active.coarse {display:block}
 		li.inactive.what-coarse {display:none}
@@ -405,6 +418,14 @@
 	@media (inverted-colors:inverted) {
 		li.active.inverted-colors-inverted {display:block}
 		li.inactive.what-inverted-colors-inverted {display:none}
+	}
+	@media (forced-colors:none) {
+		li.active.forced-colors-none {display:block}
+		li.inactive.what-forced-colors-none {display:none}
+	}
+	@media (forced-colors:active) {
+		li.active.forced-colors-active {display:block}
+		li.inactive.what-forced-colors-active {display:none}
 	}
   @supports (text-decoration: underline) {
     li.active.supports {display:block}
@@ -564,6 +585,13 @@
 			<li class="inactive what-lightlevel-washed"><code>(light-level:washed)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
 
 
+			<li class="active environment-blending-opaque"><code>(environment-blending:opaque)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="inactive what-environment-blending-opaque"><code>(environment-blending:opaque)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="active environment-blending-additive"><code>(environment-blending:additive)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="inactive what-environment-blending-additive"><code>(environment-blending:additive)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="active environment-blending-subtractive"><code>(environment-blending:subtractive)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="inactive what-environment-blending-subtractive"><code>(environment-blending:subtractive)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+
 			<li class="active scripting"><code>(scripting)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
 			<li class="inactive what-scripting"><code>(scripting)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
 			<li class="active prefers-reduced-motion-no-preference"><code>(prefers-reduced-motion:no-preference)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
@@ -598,6 +626,11 @@
 			<li class="inactive what-inverted-colors-none"><code>(inverted-colors:none)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
 			<li class="active inverted-colors-inverted"><code>(inverted-colors:inverted)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
 			<li class="inactive what-inverted-colors-inverted"><code>(inverted-colors:inverted)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+
+			<li class="active forced-colors-none"><code>(forced-colors:none)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="inactive what-forced-colors-none"><code>(forced-colors:none)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="active forced-colors-active"><code>(forced-colors:active)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
+			<li class="inactive what-forced-colors-active"><code>(forced-colors:active)</code> <span class="level" title="Part of the proposed Media Queries Level 5 Draft spec">Level 5 Draft</span></li>
 
 		</ul>
 
