@@ -59,6 +59,96 @@
                 <div class="container wide  textAlign-center">
                   <p class="date color-grey"><time>
                     
+                    June
+                    17th, 2013
+                  </time></p>
+
+                  <a class="post-link" href="/2013/06/17/building-for-content-choreography-using-flexbox.html"><h1 class="article-header">Building for Content Choreography using Flexbox</h1></a>
+                </div>
+            <div class="container">
+              <div class="article-content">
+                <p>On July 14th 2011 Trent Walton published an article introducing the concept of <a href="http://trentwalton.com/2011/07/14/content-choreography/">Content Choreography</a>. The article opened my mind and made me question some of the limitations we face in how we build responsive experiences. At the time content reordering and reflow hadn&#8217;t been widely explored beyond JavaScript-based solutions and I had been experimenting a lot with flexbox to reorder and arrange items horizontally for <a href="http://www.typecast.com">Typecast&#8217;s</a> UI. When Trent spoke about content stacking, I started to think what was achievable for reordering content along the y-axis in a single column layout.</p>
+
+<h3>A tale of two syntaxes</h3>
+
+<p>The flexible box model landscape has been through a series of fundamental changes since its introduction in 2009. The original syntax for declaring the property in CSS is still recognised in a lot of today&#8217;s popular browsers. The following 3 years brought two significant changes to the syntax mainly around the language used to specify flexbox properties.</p>
+
+<p>The flexbox specification has been finalised since <a href="http://www.jordanm.co.uk/2012/04/26/building-with-content-choreography.html">I wrote about using flexbox to tackle content choreography concerns in May 2012</a> so it&#8217;s a good time to revisit the approach. Although the new flexbox syntax has been agreed it has not been widely implemented. Since the spec was settled we have witnessed the release of new mobile operating systems like iOS 6 that boasted numerous updates to Safari - one of which <a href="http://bgr.com/2012/08/06/ios-6-beta-4-change-log-now-available/">refrained from implementing the new syntax</a> and reverted to the old 2009 syntax. At the time of writing it is unclear whether iOS 7 will feature the updated syntax. Android&#8217;s default browser still uses the old syntax although Chrome on Android uses the new syntax like its desktop counterpart. That leaves us in some sort of syntax-purgatory between the final specification and the 2009 syntax.</p>
+
+<p>Luckily the changes between old and new flexbox won&#8217;t affect how we use it to reorder blocks of content, just how we write the code. Some repetition is required, much like writing vendor prefixes.</p>
+
+<p>The bottom line is that flexbox <strong>is safe to use on the web today</strong> for content choreography. According to <a href="http://caniuse.com/flexbox">caniuse.com&#8217;s</a> global browser usage statistics 76.52% of users would be able to view a flexbox-based solution to content choreography at the time of writing. 23.48% might seem like a considerable amount of people, but when we break that figure down further it&#8217;s not quite so big. 23.48% takes the desktop versions of Internet Explorer into consideration and we don&#8217;t intend to use this solution that demographic.</p>
+
+<p>Content choreography using flexbox is most reliable at the <strong>first major breakpoint</strong> (usually in a single column). It&#8217;s also easiest at this level because we are (largely) dealing with moving element blocks around vertically on the y-axis. When we approach content choreography from this angle we can <em>assume</em> most desktop browsers won&#8217;t see our reordered page. Looking again at the browser statistics for flexbox support among mobile browsers only 14.4% of users won&#8217;t see choreographed content.</p>
+
+<p>I don&#8217;t usually make decisions based on browser statistics, especially project-specific decisions, but for gauging a general sense of browser support for something previously thought of as an edge-case CSS property, I think it&#8217;s worth pointing out that it is as safe to use in this context as something trivial like the text-shadow property.</p>
+
+<h3>A note about screenreaders</h3>
+
+<p>Before we dive into code specifics, we need to talk about accessibility. Screen readers will not read an altered source order changed by flexbox. Instead they will read the original document order which makes for a jarring and confusing experience for users requiring a service like VoiceOver.</p>
+
+<p>Some feel that for this reason it <a href="https://twitter.com/smashingmag/status/335302203218735104">is better to make source order changes in JavaScript</a> rather than CSS although others counter that <a href="https://twitter.com/codepo8/status/335303118982103040">this hinders innovation</a> and screen readers simply must follow our lead in pushing the web forward as a platform.</p>
+
+<p>I am firmly in favour of a CSS-based approach as this is fundamentally a layout change after the effect. Using JavaScript instead of CSS to achieve a layout goal that can otherwise be achieved in CSS feels like a Frankenstein approach. I feel it&#8217;s dragging us back to the dark ages instead of helping our platform mature. If we choose to remain stagnant on issues like this then it would be like encouraging the use of JavaScript for rollover states in 2013. The fact is we have flexbox at our disposal and specced for use in CSS, avoiding it is only going to encourage the makers of screen reading software to do the same.</p>
+
+<h3>A solution for past, present and future</h3>
+
+<p>Now that we have covered the fundamentals, there are a few simple considerations to account for when building with flexbox to achieve content choreography. I have found the following mindset helps:</p>
+
+<ul><li>Start designing and building for mobile first (no-brainer)</li>
+<li>Your DOM order is your <em>definitive</em> order. Build for this order first <em>before</em> addressing content choreography concerns. If you are unsure about your definitive source order, this is the DOM order shown when your layout <strong>has enough space</strong> to show everything you want to show in a sensible hierarchy. </li>
+<li>This requires <strong>foresight</strong> — one of the most difficult skills in a responsive designer&#8217;s arsenal. The DOM order will act as the fallback order on devices with limited screen space and where flexbox doesn&#8217;t work (Opera Mini, Opera Mobile &lt; 12.0 etc). Use content choreography only if your layout <strong>needs</strong> it in your first breakpoint.</li>
+<li>Address the past, present and future devices by using both flexbox syntaxes.</li>
+</ul><p>All things considered the revised flexbox code for a definitive specification looks like something this<sup id="fnref:p53179333055-1"><a href="#fn:p53179333055-1" rel="footnote">1</a></sup>:</p>
+
+<pre>
+<code>
+.container {
+display: -moz-box;
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-moz-box-orient: vertical;
+-webkit-box-orient: vertical;
+-ms-flex-direction: column;
+-webkit-flex-direction: column;
+flex-direction: column;
+}
+
+.nav {
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  -ms-flex-order: 1;
+  -webkit-order: 1;
+  order: 1;
+}
+
+...
+</code>
+</pre>
+
+<p>I have updated the <a href="http://www.jordanm.co.uk/lab/contentchoreography">original demo</a> so it considers the new syntax.</p>
+
+<p>Flexbox is no longer the volatile experimental property it once was, now that we have a final specification in place and widespread support on mobile devices flexbox is a robust solution for content choreography exactly where we want it to be — where space is confined and some layout adjustment is required.</p>
+
+<p><a href="http://static.tumblr.com/jdwzxqr/iZUmoi6mb/newcc.jpg" class="cover" data-credit="© Peter Voerman" data-link="http://www.flickr.com/photos/oudeschool"></a></p>
+
+<div class="footnotes">
+<hr><ol><li id="fn:p53179333055-1">
+<p>Inspiration heavily borrowed from Chris Coyier&#8217;s excellent <a href="http://css-tricks.com/using-flexbox/">Using Flexbox article</a> <a href="#fnref:p53179333055-1" rev="footnote">↩</a></p>
+</li>
+
+</ol></div>
+
+              </div>
+            </div>
+          </article>
+        
+          <article class="marginBottom-l">
+                <div class="container wide  textAlign-center">
+                  <p class="date color-grey"><time>
+                    
                     May
                     6th, 2013
                   </time></p>
@@ -194,58 +284,6 @@
 <div class="footnotes">
 <hr><ol><li id="fn:p45185035075-1">
 <p>Aside: responsive design doesn&#8217;t <em>just</em> mean making things work on small displays. <a href="#fnref:p45185035075-1" rev="footnote">↩</a></p>
-</li>
-
-</ol></div>
-
-              </div>
-            </div>
-          </article>
-        
-          <article class="marginBottom-l">
-                <div class="container wide  textAlign-center">
-                  <p class="date color-grey"><time>
-                    
-                    March
-                    3rd, 2013
-                  </time></p>
-
-                  <a class="post-link" href="/2013/03/03/the-scourge-of-social-plug-ins.html"><h1 class="article-header">The Scourge of Social Plug-Ins</h1></a>
-                </div>
-            <div class="container">
-              <div class="article-content">
-                <p>Maybe I am a bit of a control freak. When I make something, I want full editorial control over the visuals and the content. And maybe it&#8217;s the minimalist in me thinking &#8220;if it doesn&#8217;t add any value — remove it. Everything else is distraction&#8221;. I just can&#8217;t bring myself to switch on comments or social sharing buttons on this website — I can&#8217;t do it. I&#8217;ll start with those shiny little not-quite-visually-similar-enough social buttons that tally up how many times your page has been shared on their networks via their JavaScript generated buttons.</p>
-
-<p>First of all, unless you are The Next Web, Mashable or another web giant attracting heaps of traffic on a daily basis, a social count button isn&#8217;t going to do you or your brand any favours. Picture this scenario: you arrive at a random article on this website, you notice social buttons and note that the article has been shared 0 times on Facebook, 1 time on Twitter and 0 on Google Plus. What is your first instinctive thought? Here&#8217;s what I think — if I spot the buttons before reading the content and notice that it hasn&#8217;t been shared, I immediately doubt the integrity of the author and the trust of the message from the website as a whole. I read a lot of articles on a daily basis and sometimes I&#8217;ll gauge the usefulness of article on the recency of the post vs the share count. Yes, it&#8217;s shallow, like judging a book by it&#8217;s cover although in my defence, there are a lot of &#8220;books&#8221; to get through, whether intentional or not a social button can read like a <strong>review</strong>.</p>
-
-<p>I don&#8217;t want to tread over any ground that Oliver Reichenstein has already covered in his fantastic <a href="http://informationarchitects.net/blog/sweep-the-sleaze/">Sweep the Sleaze</a> article and  follow up (and you should read it next if you haven&#8217;t already) so I&#8217;ll talk about things from user perceptions rather than usage and mechanics<sup id="fnref:p44447032290-1"><a href="#fn:p44447032290-1" rel="footnote">1</a></sup>. A low button count is <em>damaging</em>. That&#8217;s my opinion and you&#8217;ll have trouble convincing me otherwise. The low count can be a result of people sharing the article by other means, like using the native sharing options in an operating system like iOS or just through good old fashioned manual sharing by copying and pasting a link into your preferred social network. These methods aren&#8217;t going to add anything to the button count, it&#8217;ll remain embarrassingly low like a poor review. According to Oliver Reichenstein&#8217;s piece around 20% links shared on websites he surveyed were completed via a social button, the other 80% were manual shares. So we can conclude that the ROI is poor.</p>
-
-<p>As I mentioned before, if you are a running high traffic site and you want to use the buttons as some sort of demonstration of  popularity, then I guess that&#8217;s a viable use case albeit a bit egotistical. I would wager though that the people that use them are passive sharers and wouldn&#8217;t add any value to the piece you want them to share and they probably don&#8217;t have the influence you would like to spread your message further and to the right people.</p>
-
-<p>Social buttons are tools created by social networks to benefit… social networks. They want to take the conversation off your page and onto their network. I&#8217;m fine with that because I made the conscious decision to leave comments off on my website, but just think about that for your project.</p>
-
-<p>Speaking of comments, they can be as damaging and in some cases more damaging than a poor share count. For comments to work right you need to stay out of the user&#8217;s way and that means leaving them completely unfiltered and moderating later. Obviously this leaves your site open to trolling — but that&#8217;s the nature of the beast, the danger of comment roulette.</p>
-
-<p>Think about it this way — we are publishers. Would the New York Times let someone wander into their offices off the street and write an unsolicited remark at the end of one of their articles? Imagine reading the front page of the New York Times and at the end of a finely written piece you find the words &#8220;First!&#8221; or &#8220;Great article thanks!&#8221;. It just looks trashy. Compliments are nice to receive but to publicly display them amongst a list of generic back-pats just doesn&#8217;t sit right with me. I don&#8217;t need someone to essentially say &#8220;Good hustle Moore!&#8221; after my content.</p>
-
-<p>By now you have probably guessed my opinion of comment models on the web — it&#8217;s not that I think the standard comments model is broken, I just feel like it&#8217;s not a one-size-fits-all solution. If I wanted to open up a commenting system for my website, I would potentially do something like this:</p>
-
-<ol><li>Write the article (no brainer)</li>
-<li>Associate a hashtag with the article (or all articles) — a hook that I can look for on social networks</li>
-<li>Make the effort to find people&#8217;s opinions on the piece on social networks (if they use the hashtag, then this is step is easy, if not, so what — just keep looking. Valuable opinions are worth mining for)</li>
-<li>Revisit the article having gathered opinions and use the insightful thoughts to add value to my original content and credit the necessary people</li>
-<li>Profit</li>
-</ol><p>You might be thinking, that sounds like a lot of work — it is. But take note that while digging for opinions, I&#8217;m engaging with my audience, maybe asking them to elaborate on some comments, while building trust and integrity with my work. The beauty of an approach like this is that if something you write is completely wrong or you have missed a crucial point then you can find people that disagree (trolls or otherwise) engage with them and maybe even correct the original article with their views. The important part is you maintain <strong>full editorial control</strong>, not by altering their comments, but building upon their input and giving credit where it&#8217;s due.</p>
-
-<p>People can add value to an article without the article being incorrect, they can elaborate on points which you can add to the end of the piece and improve it. I call it <strong>editorial comments</strong>.</p>
-
-<p>When talking to clients about this stance on social interactions, I talk about it as part of a larger social media strategy. The old/common approach is a plug-in social media strategy — shiny buttons won&#8217;t carry out your social media strategy for you. You need to do that, it requires effort to do it properly. It&#8217;s not enough to slap some cheap JavaScript buttons onto your page and mark off the social media box of your project goals. A social button cannot become the voice of your brand, that&#8217;s a human&#8217;s job.</p>
-
-<p><a href="http://static.tumblr.com/jdwzxqr/eSYmoh7jm/social.jpg" class="cover" data-credit="© François" data-link="http://www.flickr.com/photos/88943939@N00"></a></p>
-
-<div class="footnotes">
-<hr><ol><li id="fn:p44447032290-1">
-<p>They&#8217;re a performance hog too. In general a web page gains around 100kb of useless bloat  with social media buttons (depending on how many networks you add). <strong>Update</strong> — in the spirit of editorial comments <a href="http://twitter.com/jake_bresnehan">Jake Bresnehan</a> mentioned on Twitter that Nicolas Gallagher has <a href="https://gist.github.com/necolas/1025811">produced a lightweight social plugin script</a> that weighs in at 4kb minified — a great deal lighter than the official editions. <a href="#fnref:p44447032290-1" rev="footnote">↩</a></p>
 </li>
 
 </ol></div>
