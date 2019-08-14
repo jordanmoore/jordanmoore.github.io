@@ -6,8 +6,8 @@
 </description>
     <link>http://jordanm.co.uk/</link>
     <atom:link href="http://jordanm.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 03 Aug 2019 15:05:27 +0100</pubDate>
-    <lastBuildDate>Sat, 03 Aug 2019 15:05:27 +0100</lastBuildDate>
+    <pubDate>Wed, 14 Aug 2019 10:22:59 +0100</pubDate>
+    <lastBuildDate>Wed, 14 Aug 2019 10:22:59 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -21,7 +21,7 @@
 &lt;p&gt;I have a few concerns with this way of working with design systems. Front-loading design and/or build with the pieces you believe you’ll eventually need to arrive at a solution creates a limited set of outcomes. Any attempt to create more pieces in anticipation of generating a greater number of outcomes results in conjectural bloat – a cost offset to the user paid for in unnecessary data and time.&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;img/intentionalds.jpg&quot; /&gt;
+    &lt;img src=&quot;http://jordanm.co.uk/img/intentionalds.jpg&quot; /&gt;
     &lt;figcaption&gt;Simplified flow of an intentional design system (building blocks first)&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -34,7 +34,7 @@
 &lt;p&gt;This approach is much closer to the user needs end of the scale by beginning with creative solutions before deriving patterns and systems (i.e the system emerges from real, coded scenarios).&lt;/p&gt;
 
 &lt;figure&gt;
-    &lt;img src=&quot;img/emergentds.jpg&quot; /&gt;
+    &lt;img src=&quot;http://jordanm.co.uk/img/emergentds.jpg&quot; /&gt;
     &lt;figcaption&gt;Simplified flow of an emergent design system (solution first, derive systems)&lt;/figcaption&gt;
 &lt;/figure&gt;
 

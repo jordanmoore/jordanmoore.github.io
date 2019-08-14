@@ -15,7 +15,7 @@ This appears to be the default methodology in design circles. The flavour and fr
 I have a few concerns with this way of working with design systems. Front-loading design and/or build with the pieces you believe you’ll eventually need to arrive at a solution creates a limited set of outcomes. Any attempt to create more pieces in anticipation of generating a greater number of outcomes results in conjectural bloat – a cost offset to the user paid for in unnecessary data and time.
 
 <figure>
-    <img src="img/intentionalds.jpg">
+    <img src="{{ site.url }}/img/intentionalds.jpg">
     <figcaption>Simplified flow of an intentional design system (building blocks first)</figcaption>
 </figure>
 
@@ -29,7 +29,7 @@ This approach is much closer to the user needs end of the scale by beginning wit
 
 
 <figure>
-    <img src="img/emergentds.jpg">
+    <img src="{{ site.url }}/img/emergentds.jpg">
     <figcaption>Simplified flow of an emergent design system (solution first, derive systems)</figcaption>
 </figure>
 

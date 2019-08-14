@@ -482,7 +482,10 @@ blockquote {
 }
 
 figure {
-  margin: 2.6em -5.375em;
+  margin: 2.6em 0;
+  @media screen and (min-width: 768px) {
+    margin: 2.6em -5.375em;
+  }
   text-align: center;
 
   img {
