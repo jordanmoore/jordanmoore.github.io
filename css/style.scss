@@ -470,10 +470,10 @@ strong {
     margin-top: -5px;
     margin-right: 0.6em;
     background: url("../img/avatar.jpg") center center no-repeat;
-    width: 32px;
-    height: 32px;
-    box-shadow: inset 0 0 0 1px rgba(47,49,53,0.26),0 2px 4px rgba(47,49,53,0.16),inset 0 1px 0 rgba(255,255,255,0.3);
-    border-radius: 3px;
+    width: 36px;
+    height: 36px;
+    box-shadow: inset 0 0 0 1px rgba(47, 49, 53, 0.26), inset 0 2px 3px rgba(47, 49, 53, 0.06);
+    border-radius: 23px;
     background-size: contain;
     @media (prefers-color-scheme:dark) {
       background: url("../img/dark-avatar.jpg") center center no-repeat;
@@ -483,7 +483,7 @@ strong {
 
   &:hover {
     &:before {
-      box-shadow: inset 0 0 0 1px rgba(47,49,53,0.26), 0 2px 5px fade-out(#2F3135, 0.8), 0 3px 5px fade-out(#2F3135, 0.9), inset 0 1px 0 fade-out(white, 0.7);
+      box-shadow: inset 0 0 0 1px rgba(47, 49, 53, 0.62), inset 0 2px 3px rgba(47, 49, 53, 0.06);
     }
   }
 }
