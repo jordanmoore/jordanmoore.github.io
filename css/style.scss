@@ -253,6 +253,37 @@ nav {
   }
 }
 
+.button {
+  background-image: linear-gradient(179deg, #CF5547 0%, #B63324 100%);
+  border: 1px solid #A23121;
+  box-shadow: 0 1px 3px 0 rgba(192, 79, 65, 0.16);
+  border-radius: 16px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-shadow: 0 1px 0 #A23121;
+  display: inline-block;
+  padding: 0.3em 1em;
+  &:hover {
+    text-decoration: none;
+    box-shadow: 0 2px 5px 0 rgba(192, 79, 65, 0.26);
+  }
+  .ico-rss {
+    position: relative;
+    top: -2px;
+    margin-right: -2px;
+    right: -2px;
+  }
+}
+
+.ico-rss {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url(../../img/ico-rss.svg) center center no-repeat;
+}
+
 header {
   border-bottom: 1px solid fade-out($grey, 0.8);
 }
@@ -554,18 +585,11 @@ img em {
 
     input[type=submit] {
       -webkit-appearance: none;
-      background: $red;
-      font-family: $sans;
-      color: #fff;
-      border: none;
-      font-size: 0.8em;
-      letter-spacing: 0.002em;
-      padding: 0.8em 1.6em;
-      border-radius: 10em;
-      font-weight: 700;
-      height: auto;
+      display: inline-block;
       cursor: pointer;
-      width: auto;
+      font-size: 1em;
+      padding: 0.8em 1.7em;
+      border-radius: 32px;
     }
   }
 

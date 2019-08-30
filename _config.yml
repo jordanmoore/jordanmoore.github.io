@@ -4,8 +4,8 @@ email: jm@dawsonandrews.com
 description: > # this means to ignore newlines until "baseurl:"
   Product designer, responsive web designer and UX designer in Belfast, Northern Ireland, specialising in user experience and accessible design
 baseurl: "" # the subpath of your site, e.g. /blog/
-# url: "http://127.0.0.1:4000"
-url: "http://jordanm.co.uk"
+url: "http://127.0.0.1:4000"
+# url: "http://jordanm.co.uk"
 github: [metadata]
 twitter_username: jordanmoore
 github_username:  jordanmoore
