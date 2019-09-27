@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Product Design, Responsive Web Design, UX Design, Belfast Northern Ireland | Jordan Moore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10, user-scalable=1">
+  <meta name="description" content="Product designer, responsive web designer and UX designer in Belfast, Northern Ireland, specialising in user experience and accessible design
+">
+  <link href="https://fonts.googleapis.com/css?family=Faustina:400,400i,600i" rel="stylesheet">
+
+  <link rel="stylesheet" href="http://127.0.0.1:4000/dist/styles/style.css">
+  <link rel="canonical" href="http://127.0.0.1:4000/page37/">
+  <link rel="alternate" type="application/rss+xml" title="Product Design, Responsive Web Design, UX Design, Belfast Northern Ireland | Jordan Moore" href="http://127.0.0.1:4000/feed.xml" />
+
+  <link rel="shortcut icon" href="http://jordanm.co.uk/img/favicon.png">
+  <link rel="apple-touch-icon-precomposed" href="http://jordanm.co.uk/img/apple-touch-icon-precomposed.png">
+
+  <meta property="og:site_name" content="Jordan Moore, Product Designer">
+  <meta property="og:url" content="http://jordanm.co.uk/">
+  <meta property="og:type" content="website">
+
+  <meta property="og:title" content="Product Design, Responsive Web Design, UX Design, Belfast Northern Ireland | Jordan Moore">
+  <meta property="og:description" content="Product designer, responsive web designer and UX designer in Belfast, Northern Ireland, specialising in user experience and accessible design
+">
+  <meta property="og:image" content="http://jordanm.co.uk/img/apple-touch-icon-precomposed.png">
+
+  <meta property="twitter:title" content="Product Design, Responsive Web Design, UX Design, Belfast Northern Ireland | Jordan Moore">
+  <meta property="twitter:description" content="Product designer, responsive web designer and UX designer in Belfast, Northern Ireland, specialising in user experience and accessible design
+">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="http://jordanm.co.uk/img/apple-touch-icon-precomposed.png">
+  <meta name="twitter:site" content="@jordanmoore">
+  <meta name="twitter:creator" content="@jordanmoore">
+</head>
+
+<body class="homepage">
+  <header>
+    <div class="container">
+      
+
+<h1 class="logo"><a href="/"><span>Jordan Moore</span></a></h1>
+
+<nav>
+    <ul>
+        <li><a href="/" >Home</a></li>
+        <li><a href="/bookshelf" >Bookshelf</a></li>
+        <li><a href="/lab" >Lab</a></li>
+        <li><a href="http://jordanm.co.uk/feed.xml" class="-rss nav-mb-hide">Subscribe <i class="ico-rss"></i></a></li>
+    </ul>
+</nav>
+
+    </div>
+  </header>
+
+    <div class="blog-posts">
+        
+        <div class="container">
+          <article class="marginBottom-l">
+                  <p class="date"><time>
+                    
+                    May
+                    13th, 2012
+                  </time></p>
+
+                  <a class="post-link" href="/2012/05/13/source-shuffling-responsive-images-based-on.html"><h1 class="article-header">Source shuffling - responsive images based on media queries</h1></a>
+              <div class="article-content">
+                <p>There are lots of solutions to address the problem of responsive images. The solutions share a similar set of requirements, some meet the majority of the requirements, some don&#8217;t and specialise in doing one thing well.</p>
+
+<p>I recently read <a href="http://blog.cloudfour.com/a-framework-for-discussing-responsive-images-solutions/" title="a framework for discussing responsive images solutions">a framework for discussing responsive images solutions</a> by Jason Grigsby and his first point really hit home with me. Scaling a large image for mobile devices may not produce the desired results every time, content authors should be allowed to specify different images for different contexts.</p>
+
+<p><img src="http://media.tumblr.com/tumblr_m5adg5oTi61qcjdi5.jpg" alt=""/></p>
+
+<p>Most solutions offer this approach including the <a href="http://www.w3.org/community/respimg/2012/05/11/respimg-proposal/" title="Responsive image element proposed by the WHATWG | Responsive Images Community Group">picture tag proposal</a>. Where this falls short, in my opinion, is that there is still a disconnect between the picture tag breakpoint values and the media query values specified in your CSS. Each time a picture tag is written you need to specify your breakpoints again. In a templating environment you would use variables to take care of this but you will still be setting your breakpoints in different places.</p>
+
+<p>Then I recently read Jeremy Keith&#8217;s fantastic <a href="http://adactio.com/journal/5429/" title="Adactio: Journal—Conditional CSS">Conditional CSS</a> article which helps connect your CSS media queries to JavaScript to perform actions based on breakpoints. The possibilities are endless with this little gem. One of those possibilities is using it for specifying breakpoints for responsive images that are set in our HTML.</p>
+
+<p>Here&#8217;s the approach I am proposing:</p>
+
+<pre><code>&lt;img src="mobilefirst.jpg" data-medium="tabletfriendlyversion.jpg" data-large="desktopfriendlyversion.jpg" /&gt;
+</code></pre>
+
+<p>We can store image URLs in data attributes to ensure they aren&#8217;t loaded initially, only the original src is loaded. This approach borrows from Josh Emerson&#8217;s <a href="https://github.com/joshje/Responsive-Enhance" title="joshje/Responsive-Enhance · GitHub">Responsive-Enhance</a> technique where you load the fastest image you can for mobile and replace on the fly where it&#8217;s suitable to do so for the end device. By combining this philosophy with Jeremy Keith&#8217;s Conditional CSS, then we have responsive images based on our media queries.</p>
+
+<p>CSS:</p>
+
+<pre><code>@media all and (min-width: 45em) {
+body:after {
+    content: 'desktop';
+    display: none;
+}
+}
+</code></pre>
+
+<p>As outlined by Jeremy&#8217;s Conditional CSS technique, this sets a string of text we can detect using JavaScript to determine when the media query is active. You would then repeat the above code for your other contexts eg &#8220;tablet&#8221;, you could extend it for a 2x retina display with the -webkit-device-pixel-ratio media query.</p>
+
+<p>JavaScript:</p>
+
+<pre><code>var size = window.getComputedStyle(document.body,':after').getPropertyValue('content');
+
+if (size == 'desktop') {
+        $('img').each(function(index) {
+            var large = $(this).data('large');
+            $(this).attr('src',large);
+            }
+}
+if (size == tablet') {...
+</code></pre>
+
+<p>So to recap on the code above, it&#8217;s checking that when the desktop media query is active by checking the existence of the content in the &#8220;body:after&#8221; element, then it swaps the src with the value of the data attribute &#8220;data-large&#8221;. And of course you would repeat this for the other media queries too. Note I&#8217;m using jQuery above, you (the smarter one in this dialogue) could do this without a framework, I&#8217;m just proposing an approach. Users without JavaScript enabled get the low resolution, compressed mobile image specified in the img src, I&#8217;m fine with this as users without JS are getting a lo-fi version of the web anyway.</p>
+
+<p>So now we have an approach that ticks a few important boxes:</p>
+
+<ul><li>Breakpoints defined in CSS <em>and only</em> in the CSS </li>
+<li>Images can be whatever the content author specifies (no automatic resizing)</li>
+<li>No bandwidth hit for mobile devices</li>
+<li>No code repetition </li>
+<li>Fallback for users without JS</li>
+</ul><p>I would love to hear your thoughts on the approach above and any improvements you can think of.</p>
+
+<p><a href="http://www.jordanm.co.uk/sourceshuffling">View demo</a></p>
+
+<script type="text/javascript" src="http://dl.dropbox.com/u/12091580/responsiveimages/js/onmediaquery.min.js"></script><script>
+var queries = [
+    {
+        context: 'global',
+        callback: function() {
+            $('img').each(function(index) {
+                var small = $(this).attr('src');
+                $(this).attr('src',small);
+            });
+        }
+    },
+    {
+        context: 'tablet',
+        callback: function() {
+            $('img').each(function(index) {
+                var medium = $(this).data('medium');
+                $(this).attr('src',medium);
+            });
+        }
+    },
+    {
+        context: 'desktop',
+        callback: function() {
+            $('img').each(function(index) {
+                var large = $(this).data('large');
+                $(this).attr('src',large);
+            });
+        }
+    }
+];
+MQ.init(queries);
+</script><p><a href="http://static.tumblr.com/jdwzxqr/hm8mohcyk/shuffling.jpg" class="cover" data-credit="© Anthony Abbott" data-link="http://www.flickr.com/photos/antsnaps"></a></p>
+
+              </div>
+            </article>
+            <div class="sidebar">
+    <h4 class="sidebar__header">Start Here</h4>
+    <ul class="links">
+        <li><a href="http://jordanm.co.uk/2018/07/30/design-laws-of-nature.html">Design Laws in Nature &rarr;</a></li>
+        <li><a href="http://jordanm.co.uk/2019/02/20/experience-gaps.html">Experience Gaps &rarr;</a></li>
+        <li><a href="http://jordanm.co.uk/2018/06/06/intro-ocean-ux.html">Mapping User Experiences to Individuals Using
+                the Big 5 OCEAN Personality Traits &rarr;</a></li>
+    </ul>
+    <hr>
+    <h4 class="sidebar__header">About</h4>
+    <p>Co-founder &amp; Director of Design at <a href="https://www.dawsonandrews.com">Dawson Andrews</a>. A product
+        design studio in Belfast.</p>
+    <p>He is interested in exploring the intersection of product design, psychology, aesthetics, and economics. Value
+        over vanity.</p>
+    <hr>
+    <h4 class="sidebar__header">Newsletter</h4>
+    <p>I publish a newsletter called <strong>The Logbook</strong> when I feel like it.
+    </p>
+    <div id="mc_embed_signup" class="marginBottom">
+        <form action="https://jordanm.us5.list-manage.com/subscribe/post?u=3e0b1d25a7ba2bbb8c0c979ae&amp;id=4932254eb1"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+            target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+                <div class="mc-field-group">
+                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"
+                        placeholder="Email address">
+                    <input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="button">
+                </div>
+                <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                        name="b_3e0b1d25a7ba2bbb8c0c979ae_4932254eb1" tabindex="-1" value=""></div>
+            </div>
+        </form>
+    </div>
+    <!--End mc_embed_signup-->
+</div>
+          </div>
+        
+
+
+      <!-- Pagination links -->
+      <div class="container pagination marginBottom">
+        
+          <a href="/page36" class="previous">&larr; Previous</a>
+        
+        
+          <a href="/page38" class="next">Next &rarr;</a>
+        
+      </div>
+    <!-- /.container -->
+  </div>
+
+
+
+</div>
+
+
+  <section>
+  <footer>
+    <div class="container">
+     
+
+      <div class="footer-col copyright">
+          <p><span>&copy; Jordan Moore 2019</span></p>
+      </div>
+
+    </div>
+  </footer>
+</section>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46278682-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-46278682-2');
+</script>
+
+</body>
+
+</html>

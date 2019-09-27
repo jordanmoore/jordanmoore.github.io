@@ -5,9 +5,9 @@ layout: homepage
 
   <div class="blog-posts">
         {% for post in paginator.posts %}
+        <div class="container">
           <article class="marginBottom-l">
-                <div class="container wide  textAlign-center">
-                  <p class="date color-grey"><time>
+                  <p class="date"><time>
                     {% assign d = post.date | date: "%-d"  %}
                     {{ post.date | date: "%B" }}
                     {% case d %}
@@ -15,23 +15,22 @@ layout: homepage
                   </time></p>
 
                   <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><h1 class="article-header">{{ post.title }}</h1></a>
-                </div>
-            <div class="container">
               <div class="article-content">
                 {{ post.content }}
               </div>
-            </div>
-          </article>
+            </article>
+            {% include sidebar.html %}
+          </div>
         {% endfor %}
 
 
       <!-- Pagination links -->
       <div class="container pagination marginBottom">
         {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path }}" class="previous">&larr; Newer Articles</a>
+          <a href="{{ paginator.previous_page_path }}" class="previous">&larr; Previous</a>
         {% endif %}
         {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path }}" class="next">Older Articles &rarr;</a>
+          <a href="{{ paginator.next_page_path }}" class="next">Next &rarr;</a>
         {% endif %}
       </div>
     <!-- /.container -->

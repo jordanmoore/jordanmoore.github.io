@@ -8,9 +8,9 @@
 ">
   <link href="https://fonts.googleapis.com/css?family=Faustina:400,400i,600i" rel="stylesheet">
 
-  <link rel="stylesheet" href="http://jordanm.co.uk/css/style.css">
-  <link rel="canonical" href="http://jordanm.co.uk/">
-  <link rel="alternate" type="application/rss+xml" title="Product Design, Responsive Web Design, UX Design, Belfast Northern Ireland | Jordan Moore" href="http://jordanm.co.uk/feed.xml" />
+  <link rel="stylesheet" href="http://127.0.0.1:4000/dist/styles/style.css">
+  <link rel="canonical" href="http://127.0.0.1:4000/">
+  <link rel="alternate" type="application/rss+xml" title="Product Design, Responsive Web Design, UX Design, Belfast Northern Ireland | Jordan Moore" href="http://127.0.0.1:4000/feed.xml" />
 
   <link rel="shortcut icon" href="http://jordanm.co.uk/img/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="http://jordanm.co.uk/img/apple-touch-icon-precomposed.png">
@@ -34,9 +34,9 @@
 </head>
 
 <body class="homepage">
-  <div class="container">
-    <header>
-        
+  <header>
+    <div class="container">
+      
 
 <h1 class="logo"><a href="/"><span>Jordan Moore</span></a></h1>
 
@@ -45,27 +45,24 @@
         <li><a href="/" >Home</a></li>
         <li><a href="/bookshelf" >Bookshelf</a></li>
         <li><a href="/lab" >Lab</a></li>
-        <li><a href="http://jordanm.co.uk/feed.xml" class="button -rss nav-mb-hide">Subscribe <i class="ico-rss"></i></a></li>
+        <li><a href="http://jordanm.co.uk/feed.xml" class="-rss nav-mb-hide">Subscribe <i class="ico-rss"></i></a></li>
     </ul>
 </nav>
 
+    </div>
+  </header>
 
-    </header>
-  </div>
-
-      <div class="blog-posts">
+    <div class="blog-posts">
         
+        <div class="container">
           <article class="marginBottom-l">
-                <div class="container wide  textAlign-center">
-                  <p class="date color-grey"><time>
+                  <p class="date"><time>
                     
                     July
                     30th, 2019
                   </time></p>
 
                   <a class="post-link" href="/2019/07/30/intentional-and-emergent-design-systems.html"><h1 class="article-header">Intentional and Emergent Design Systems</h1></a>
-                </div>
-            <div class="container">
               <div class="article-content">
                 <p>There appears to be two competing approaches in designing design systems. I’m going to call these approaches intentional design systems and emergent design systems to create a clear distinction between both.</p>
 
@@ -76,7 +73,7 @@
 <p>I have a few concerns with this way of working with design systems. Front-loading design and/or build with the pieces you believe you’ll eventually need to arrive at a solution creates a limited set of outcomes. Any attempt to create more pieces in anticipation of generating a greater number of outcomes results in conjectural bloat – a cost offset to the user paid for in unnecessary data and time.</p>
 
 <figure>
-    <img src="http://jordanm.co.uk/img/intentionalds.jpg" />
+    <img src="http://127.0.0.1:4000/img/intentionalds.jpg" />
     <figcaption>Simplified flow of an intentional design system (building blocks first)</figcaption>
 </figure>
 
@@ -89,7 +86,7 @@
 <p>This approach is much closer to the user needs end of the scale by beginning with creative solutions before deriving patterns and systems (i.e the system emerges from real, coded scenarios).</p>
 
 <figure>
-    <img src="http://jordanm.co.uk/img/emergentds.jpg" />
+    <img src="http://127.0.0.1:4000/img/emergentds.jpg" />
     <figcaption>Simplified flow of an emergent design system (solution first, derive systems)</figcaption>
 </figure>
 
@@ -100,330 +97,48 @@
 <p>Waiting for systems to emerge, through a continuous process of building and deconstructing, goes some way towards remedying the assumptions of the alternative technique.</p>
 
               </div>
-            </div>
-          </article>
-        
-          <article class="marginBottom-l">
-                <div class="container wide  textAlign-center">
-                  <p class="date color-grey"><time>
-                    
-                    April
-                    13th, 2019
-                  </time></p>
-
-                  <a class="post-link" href="/2019/04/13/idea-friction.html"><h1 class="article-header">Idea Friction</h1></a>
+            </article>
+            <div class="sidebar">
+    <h4 class="sidebar__header">Start Here</h4>
+    <ul class="links">
+        <li><a href="http://jordanm.co.uk/2018/07/30/design-laws-of-nature.html">Design Laws in Nature &rarr;</a></li>
+        <li><a href="http://jordanm.co.uk/2019/02/20/experience-gaps.html">Experience Gaps &rarr;</a></li>
+        <li><a href="http://jordanm.co.uk/2018/06/06/intro-ocean-ux.html">Mapping User Experiences to Individuals Using
+                the Big 5 OCEAN Personality Traits &rarr;</a></li>
+    </ul>
+    <hr>
+    <h4 class="sidebar__header">About</h4>
+    <p>Co-founder &amp; Director of Design at <a href="https://www.dawsonandrews.com">Dawson Andrews</a>. A product
+        design studio in Belfast.</p>
+    <p>He is interested in exploring the intersection of product design, psychology, aesthetics, and economics. Value
+        over vanity.</p>
+    <hr>
+    <h4 class="sidebar__header">Newsletter</h4>
+    <p>I publish a newsletter called <strong>The Logbook</strong> when I feel like it.
+    </p>
+    <div id="mc_embed_signup" class="marginBottom">
+        <form action="https://jordanm.us5.list-manage.com/subscribe/post?u=3e0b1d25a7ba2bbb8c0c979ae&amp;id=4932254eb1"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+            target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+                <div class="mc-field-group">
+                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"
+                        placeholder="Email address">
+                    <input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="button">
                 </div>
-            <div class="container">
-              <div class="article-content">
-                <p><em>The time between idea cogitation in the mind to manifestation in a sharable form.</em></p>
-
-<p>One of the biggest challenges in any creative endeavour is manifesting ideas as close to the speed they form in the mind as possible. Ideas tend to have a half-life in that the longer we hold on to them without expressing or capturing them, the more fragmented they become from the original concept.</p>
-
-<p>In general, the faster you can express and capture ideas, the more they stay true and intact. Therefore, verbalising your ideas is the fastest route to expressing and capturing them. It’s the current benchmark.</p>
-
-<p>Writing down ideas, whether by pen or by typing, increases idea friction but enjoys the retrieval benefit of finding them again at a later point in time. Sketching, drawing or visualising through design tools has a much greater rate of idea friction but enjoys the benefit of higher fidelity than other methods.</p>
-
-<p>Idea friction is especially true of any <strong>collaborative</strong> endeavour where you have an exchange of ideas. If the ideas are being discussed verbally you need to bank your idea, wait your turn, listen and understand ideas from other parties, contribute, notice how it affects your idea, then communicate.</p>
-
-<p>It is therefore desirable where possible to reduce idea friction by shortening the time between idea conception internally and manifestation externally so ideas can be captured and acted upon.</p>
-
-              </div>
-            </div>
-          </article>
-        
-          <article class="marginBottom-l">
-                <div class="container wide  textAlign-center">
-                  <p class="date color-grey"><time>
-                    
-                    February
-                    20th, 2019
-                  </time></p>
-
-                  <a class="post-link" href="/2019/02/20/experience-gaps.html"><h1 class="article-header">Experience Gaps</h1></a>
+                <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
                 </div>
-            <div class="container">
-              <div class="article-content">
-                <p>I hold a special place in my heart for Pearl Jam’s Yield album, released in 1998. It’s a remarkable album, easily overlooked. At first glance, the cover is pretty forgettable and not unlike something you would find scrolling through Unsplash, searching for the word ‘road’. Yet I’ve heard fellow fans gushing about how the yield sign in the middle of a road that has no junction to yield to and no traffic to give way to is actually a message saying to just yield to experience and let go.</p>
-
-<p>I don’t buy it. Nor did I buy the black and white photos in the booklet taken by the bassist, Jeff Ament. They were dull and uninspiring. Nevertheless, they were my access to the lyrics and the personnel involved with each song, the instruments they played, the sound engineers and producers. These details matter when you obsess about music.</p>
-
-<p><img src="/img/yield.jpg" alt="Spot the hidden Yield sign" /></p>
-
-<p>Over a series of listens with headphones on, the album booklet spread out on the floor in front of me, as I often did in the late ’90s before the days of streaming music, I started to notice some unusual things with this once trivial booklet. It started when I was listening to the song ‘Given to Fly’. I took notice of the accompanying photo as it looked like a photo of a statue gazing towards the sky, spreading its wings. The strange thing was that this was the only photo in the booklet that clearly depicted the track, whereas the rest of them didn’t. I flipped through the booklet towards one of my favourite tracks, ‘Faithfull’. I was met with a photo of a concrete building viewed from the ground. Did the building represent something? It wasn’t a church or somewhere you would practice your faith. As I contemplated the meaning behind the image, I noticed that one of the windows near the top was clearly shaped like a triangle, not a rectangle like the others.</p>
-
-<p>I flipped the album closed to reveal the boring cover shot of the triangular yield sign. Was this a clue of some sort? I pored over the other shots in the booklet. The next track, ‘No Way’, had a photo of birds perched on telephone wires with a backdrop of clouds. Again, uninspiring at first glance, but there it was again, hiding in plain sight – an unnaturally shaped cloud in the shape of a triangle! I searched online for ‘Pearl Jam yield signs in booklet’ and didn’t get any useful results. I kept looking and found hidden yield signs in every photo of the book, some more obvious than others; some might even have been my imagination seeing something that wasn’t there.</p>
-
-<p>The band deny all knowledge of hidden signs in the album artwork. Someone was playing a game. And I loved the thrill of the chase. World-renowned computer adventure game designer Brian Moriarty calls attributing personal meaning to sequences of things ‘constellation’, as in the verb to constellate, just as ancient civilizations would have looked up at the stars and grouped them into patterns, drawing connections between points and giving them meaning.</p>
-
-<figure>
-<img src="/img/na-geri.jpg" alt="New Adventures Paper artwork" />
-<figcaption><p>New Adventures 2019 Paper artwork by <a href="http://hellogeri.com">Geri Coady</a></p></figcaption>
-</figure>
-
-<p>In today’s digitally transformed music industry with streaming on demand, Yield feels one-dimensional. There is no companion booklet to tell me who wrote the words and music for each song; I don’t know what the lyrics are or the visual representation of the lyrics from the artist; I don’t know how the album artwork feels to touch; I don’t know the personnel involved; I can’t see any of the hidden yield signs within the booklet; I can’t see the album in relation to the rest of my collection; and I can’t talk my friends through my collection.</p>
-
-<p><a href="https://kneelingbus.net">Drew Austin</a> notes in his article ‘<a href="https://reallifemag.com/cold-discovery/">Cold Discovery</a>’ for Real Life magazine that physical record collections are tools for people to ‘publically signal their identities’ and</p>
-
-<blockquote>
-  <p>[…] covers are part of a whole regime of organizing information and space that is now in danger of disappearing. While the design of libraries and bookstores prioritizes the coherent visual display of book covers and spines so that people can navigate collections and find the singular physical objects the covers signify, the endlessly rewritable surface of the screen dispenses with that arrangement.</p>
-</blockquote>
-
-<p>In some sense, record collections were regarded as an extension of ourselves.</p>
-
-<p>Digital streaming favours speed over the old process, which was accidentally meditative in that it was slow and it coerced you into being present in the experience. Perhaps digital is also hampered by the limitations of the screen eliminating the other senses that played supporting roles in this experience, such as touch and smell. As a result, streaming music feels shallow, a little like 360° panoramic photos of a landmark. It looks great for a moment, the novelty of the technology excites you for a moment, but you’re not really there.</p>
-
-<h2 id="new-adventures-in-wi-fi">New adventures in Wi-Fi</h2>
-
-<p>I try not to be a back-in-my-day kind of guy. I’m actually quite optimistic that digital lowers the barrier for creators to make meaningful experiences, and we are yet to see the full array of possibilities in front of us. Brendan Dawes has been exploring such possibilities. His Plastic Player project is a wooden box with purpose-built slots along the top to house a series of slides containing album art, similar to how vinyl is displayed in a record store, and a space to place your chosen card.</p>
-
-<p>Dropping a slide in place triggers a sequence of events beginning with the internal Arduino Yun with an NFC (near-field communication) shield read the NFC sticker on the back of the slide. Once the tag is identified over Wi-Fi, the Pi MusicBox API plays the selected album from Spotify through the connected speakers. To me, Brendan’s Plastic Player is the perfect example of analogue and digital music experiences coexisting in balance and harmony with each other. Other senses are brought back into play – the speed of digital (as a bug, not a feature) is eliminated by the time it takes you to leaf through the collection of slides, select one, and play. It’s not easy to skip tracks, browse, and add thousands to your collection by design. It’s thoughtfully paced; it leaves room for meaning. Decisions are slower and more deliberate.</p>
-
-<figure>
-<img src="/img/plastic-player.png" alt="A photo of Brendan's contraption" />
-<figcaption><p>Brendan Dawes' <a href="http://www.brendandawes.com/projects/plasticplayer">Plastic Player project</a></p></figcaption>
-</figure>
-
-<p>Brendan’s creation makes a screen look like a limitation rather than an optimal interface in this more considered approach to digital music. It’s easy to imagine how we could take the idea further – you could trade the physical slides with your friends and family; you would be able to gift them, as they’re a tangible analogue interface to a digital medium; you could even imagine music clubs sending you random slides each month with the kind of excitement and anticipation experienced when opening Panini football stickers. Best of all, the slides themselves could enable the yield triangles to exist and set up opportunities for another person to constellate and find personal meaning in an analogue space. All of these offshoots let the listener spend time with the complete work of the artist rather than skipping through it or past it. This thought experiment makes room beyond the screen for new ideas.</p>
-
-<hr />
-
-<p>If we don’t look beyond the screen, we get the benefit of instantaneous delivery but we are left with experience gaps: Areas of potential where digital transformation left behind the meaning and soul of something. I haven’t come here with ready-made tips or techniques for plugging these experience gaps, and if I did I’m not sure I’d want to give them to you either. I’d rather see what you come up with, reasoning from first principles rather than by analogy, through creative invention rather than imitation.</p>
-
-<div class="info">Originally published in <a href="https://newadventuresconf.com/2019/fringe/publication/">New Adventures Paper 2019</a></div>
-
-              </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                        name="b_3e0b1d25a7ba2bbb8c0c979ae_4932254eb1" tabindex="-1" value=""></div>
             </div>
-          </article>
-        
-          <article class="marginBottom-l">
-                <div class="container wide  textAlign-center">
-                  <p class="date color-grey"><time>
-                    
-                    September
-                    11th, 2018
-                  </time></p>
-
-                  <a class="post-link" href="/2018/09/11/unpacking-design-problems.html"><h1 class="article-header">Unpacking Design Problems</h1></a>
-                </div>
-            <div class="container">
-              <div class="article-content">
-                <p>The best puzzles are the ones that demand more of you. When the answer appears obvious, but you second guess yourself. When you know there’s more to it than meets the eye.</p>
-
-<p>Nob Yoshigahara’s infamous number tree puzzle is certainly one of my personal favourites for just these reasons. It gives you a set of information and asks, What do you make of this?</p>
-
-<p><img src="http://jordanm.co.uk/img/puzzle.png" alt="Nob Yoshigahara's infamous number tree puzzle" /></p>
-
-<p>Puzzles are a great tool for strengthening mental muscles that can help unpack design problems. They push you to adopt a different mindset and perspective, challenge assumptions, study intently, and look closely. Like a puzzle, difficult design problems evoke that same moment of epiphany when you peel back the layers to find hidden truths.</p>
-
-<p>But design challenges are not quite as easy as puzzles, which have the answers hidden in plain sight. With puzzles, all the pieces are available to you: You just need to put it together. With design problems, you need to find the pieces first, then put everything together.</p>
-
-<p>This can be daunting, but there are methods, tactics, and techniques you can reach for to help facilitate these discoveries.</p>
-
-<h2 id="first-principles">First principles</h2>
-
-<p>Although used heavily in the field of physics, Aristotle’s method of reasoning known as “first principles” originated as a means for organic reasoning (as opposed to looking at analogies, which are often riddled with errors).</p>
-
-<p>When applied to design problems, you start with an observation, such as a requirement in a project brief. Then you ask why until you arrive at the most basic understanding of the truth of the problem. This provides a solid foundation to build upon.</p>
-
-<p>First principles force you to look at the problem without using other people’s preconceived ideas and attempts on how to solve it. When you use this approach, you automatically generate new value. It’s certainly cognitively more intense, but in my experience it produces more original and valuable results.</p>
-
-<p>What happens if you arrive at the same conclusion others have already reached? Is this method a waste of time?</p>
-
-<p>Mike Bithell, an independent game developer, sums this up nicely:</p>
-
-<blockquote>
-  <p>“Oftentimes, when trying to reinvent the wheel, you end up with a wheel. But there is a nice moment of ‘huh, I guess that’s why people just use wheels’… that process of justifying the standard is satisfying, if massively wasteful. Still. Cool wheel.”</p>
-</blockquote>
-
-<p>For a good example of first principles in action, try this Wikipedia experiment. Click on the first non-parenthesized link in any random article and follow the chain. It will lead you down a path toward the most basic understanding of any concept. Strangely, approximately 80% of articles deconstructed in this manner bring you back to the Wikipedia article about philosophy.</p>
-
-<p><img src="http://jordanm.co.uk/img/wikipedia-trail.png" alt="A screenshot of Wikipedia" /></p>
-
-<h2 id="question-everything">Question everything</h2>
-
-<blockquote>
-  <p>“Judge a man by his questions rather than by his answers.” –Voltaire</p>
-</blockquote>
-
-<p>A design problem is only as difficult as the questions you ask of it.</p>
-
-<p>Good questions don’t necessarily lead to definitive answers, but rather further questions. The amount of additional questions tends to correlate with the value hidden within the problem. If a question is easily snuffed out and the conversation cut short, it might not be as provocative as you originally suspected.</p>
-
-<p>Some good starting points for exploratory questioning are:
-* Why is this a problem?
-* What makes you believe this is true?
-* What is your biggest challenge?
-* Who does this well?
-* What question did I not ask that would be valuable to know?</p>
-
-<p>Feel free to use why liberally. Why is like a jackhammer for drilling through a problem’s layers. Why is flexible enough to get to the basic fundamentals (see: first principles), but can also be used to dig deeper into the problem you’re facing.</p>
-
-<p>Sometimes, the best follow-up question is no question at all. A tactical silence can encourage your client to fill in the gap and reveal additional knowledge that might have otherwise been overlooked.</p>
-
-<h2 id="collaborative-understanding">Collaborative understanding</h2>
-
-<p>Your strength as a product designer is determined by your ability to provide valuable solutions that address your client’s business goals and objectives. This can only be achieved if you deeply understand the original problem.</p>
-
-<p>I find it beneficial to collaborate intensely with the client to define the problem(s) you’re going to address. Don’t take the version defined in the brief as the be all, end all. Explore it completely, break it down to first principles, build it back up, and communicate the problem back to the client.</p>
-
-<p>This demonstrates your understanding of your client’s problems, your ability to grapple with problems, and your client’s understanding of their own problems. It creates a good starting point, and it’s the perfect time to demonstrate exactly how you’re going to test assumptions and measure success.</p>
-
-<blockquote>
-  <p>“A design lives and dies by its designer’s understanding of the problem. Understand the problem.” –<a href="https://twitter.com/erondu/status/987354283883446272">Jared Erondu</a></p>
-</blockquote>
-
-<h2 id="a-few-more-back-pocket-methods">A few more back-pocket methods</h2>
-
-<p>There are always more ways to test your solutions.</p>
-
-<p>For example, Occam’s Razor is a mental model that suggests that the simplest solution—the path of least resistance—tends to be the right one. Although it isn’t always indicative of the truth, it’s a good technique to help avoid assumptions and analogies.</p>
-
-<p>It’s also worth implementing techniques that help remove biases and ensure objectivity. One of my particular favourites is “steelmanning,” or building the strongest possible counter-argument to your solution. Adopting both for- and against-mindsets as you pursue a solution is hugely valuable; it not only produces a better solution, but arms you with a defence against the alternative.</p>
-
-<p>The path to delivering value in product design isn’t through shiny user interfaces. Like a good puzzle, it lies in your ability to approach the problem from an inquisitive perspective, assemble the pieces of information you need, explore fundamentals and truths, and build back up to the definitive solution.</p>
-
-<p>No one said it would be easy.</p>
-
-<div class="info">Originally published on <a href="https://www.invisionapp.com/blog/unpacking-design-problems/">InVision's blog</a></div>
-
-              </div>
-            </div>
-          </article>
-        
-          <article class="marginBottom-l">
-                <div class="container wide  textAlign-center">
-                  <p class="date color-grey"><time>
-                    
-                    July
-                    30th, 2018
-                  </time></p>
-
-                  <a class="post-link" href="/2018/07/30/design-laws-of-nature.html"><h1 class="article-header">Design Laws in Nature</h1></a>
-                </div>
-            <div class="container">
-              <div class="article-content">
-                <p>Living in Ireland I have become accustomed to rain as our weather system’s default setting. Umbrellas are dispensable in the Moore family as wind and rain have proved too worthy an opponent for many a shelter device across varying price brackets. When Managing Director of Their Capital, <a href="https://tim.blog/2016/01/13/eric-weinstein/">Eric Weinstein, spoke to Tim Ferris</a> about the lack of innovation in umbrella design, hinting that the answer might be in Origami or perhaps nature, my interest piqued and sent me down a rabbit hole.</p>
-
-<p>The rabbit hole confirmed my suspicions that we borrow from nature all the time, particularly in physical product design. The borrowing is often conscious, and sometimes we arrive at the same conclusions for problems that nature has been resolving over vast periods of time. Initially, I took Eric’s challenge on as a thought experiment, and like any good thought experiment, I got lost down an avenue leading to ideas beyond the original scope - even completely separate to the original problem. Distractions like this excite me. I enjoy seeing how deep the rabbit hole goes particularly when the journey is peppered with little epiphanies along the way - a process I call “mining for truths” much to the groans of anyone around me when I verbalise this process.</p>
-
-<h2 id="evolution-natures-rd-department">Evolution: nature’s R&amp;D department</h2>
-
-<blockquote>
-  <p>“You could look at nature as being a catalogue of products all of which have benefitted from a 3.8 billion year research and development period”<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.</p>
-
-  <p>Michael Pawlyn, Using Nature’s Genius in Architecture</p>
-</blockquote>
-
-<p>Nature’s creations are rooted in <strong>purpose</strong>. Look around your natural environment and you’ll observe that everything that exists for a specific reason, purpose or function for the benefit of something else within the broader system, and quite likely that entity is good at the thing it is supposed to do. Now look around at human creation on the other hand. You don’t need to look any further than architecture to find that in the vast majority of cases - particularly in inner cities filled with office blocks, the environment crafted by human hands go beyond purpose towards posturing and signalling power and money. Expensive materials serve the purpose of looking expensive compared to nature’s purpose-driven habitats. You might be thinking, “So what?”, “What’s the point in worrying about it?” I’m just observing the fact that nature out-designs us as it has figured out its “why” and is pursuing iterations upon its user-tested design.</p>
-
-<p>Let’s look at a very basic example. Nature might look at a honey bee as its persona (nature needs personas to divide audiences as job stories would provide the same outcome for rabbits and other animals outside of scope. I’m half-joking). The bee’s motivations are to make honey, but it’s a secondary goal beyond its nectar and pollen collecting duties. It has a penchant for bright colours. The plants know this too. Their motivations are to reproduce and they require the honey bee to transfer pollen and spread. So nature designs brightly coloured plants full of delicious nectar with pollen that sticks to the honey bee’s limbs (there is some sort of cookie/tracker metaphor here) and pollination occurs when coming into contact with another plant. Mutual survival goals are met through an evolutionary purpose-driven design process.</p>
-
-<p>Taking into consideration the fact that nature designs with ridiculously long-term goals in mind that benefit the greater whole with system-wide collaborative design decisions, it’s probably worth asking the same of our approach to digital projects.</p>
-
-<h2 id="biomimicry">Biomimicry</h2>
-
-<p>The act of borrowing ideas from nature has been recently dubbed “biomimicry”. According to biomimicry.org<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>:</p>
-
-<blockquote>
-  <p>Biomimicry is an approach to innovation that seeks sustainable solutions to human challenges by emulating nature’s time-tested patterns and strategies.</p>
-</blockquote>
-
-<p>Examples of biomimicry in mechanics include the Shinkansen Bullet Train, the world’s fastest train at 200 miles per hour. If the Shinkansen Bullet Train was built in the form of traditional trains, it would have created thunderclaps when exiting tunnels due to the sheer speed of the machine. To counteract this unfortunate side-effect, the engineers looked towards the beak of a kingfisher.</p>
-
-<blockquote>
-  <p>“This shape has enabled the new 500-series to reduce air pressure by 30% and electricity use by 15%, even though speeds have increased by 10% over the former series. Another benefit has been confirmed through a favourable reputation among customers that these trains give a comfortable ride. This is due to the fact that changes in pressure when the trains enter tunnels are smaller.”
-(Kobayashi: 2005)</p>
-</blockquote>
-
-<p><img src="https://www.thehindubusinessline.com/migration_catalog/article19809491.ece/alternates/WIDE_660/train" alt="The Shinkansen Bullet Train's distinctive nose inspired by the beak of a kingfisher" /></p>
-
-<p>NASA has several biomimicry projects in development including bio-inspired exercise equipment helping astronauts maintain fitness during spaceflight, solar propulsion mechanisms and glider technology inspired by a seagull’s wingspan that saves on the need for continuous thrust and fuel costs.</p>
-
-<p>Beyond physical features, certain characteristics of digital systems can be found in nature. The internet bears striking similarities with fungal bio-systems in regards to how they pass information and exchange nutrients<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup>. It isn’t clear whether the nature of the web was a result of learning from nature itself, or a case of humans and nature reaching the same conclusion, or a complete coincidence, but noteworthy nonetheless that there are potentially many metaphors we can call upon from 3.8 billion years of evolution.</p>
-
-<h2 id="what-can-we-learn-from-it-in-digital-product-design">What can we learn from it in digital product design?</h2>
-
-<p>Here’s the kicker: digital design virtually rules out all physical aspects of lessons from nature. The adaptability of our screens in being able to display images, text, art, film, games - that open range of uses is its downfall when looking for like clues in nature. Where does nature project images onto a surface as a means of guiding a subject? We could point towards the fact that birds can visualise elements of the earth’s magnetic fields to aid migration flight paths, or that bats and dolphins make use of sonar to sense the environment around them as wayfinding techniques, but that’s not going to be any useful model for a human in any sort of meaningful way.</p>
-
-<p>In addition to that, I think we’ve been down the skeuomorphic route before in regards to the affordance of digital things where past visual cues inform the use of interface elements within new contexts. Maybe we threw the baby out with the bathwater on that one. Ditching skeuomorphism for a flatter, “purer”, native digital user interfaces seems more like a stylistic decision rather than one that is overly beneficial considering we’ve torn out a massive but hard to quantify familiarity and meaning piece between user and interface. Nature didn’t have a major role to play in such interfaces, even though I would have liked to explore how certain instincts such as fire = burn, snake = fear and prickly surfaces = stingy. Then there is a measuring exercise in seeing how effective these visual cues are over time when the suggested texture doesn’t provide the expected touch feedback as all current touchscreen glass produces the same feeling. If texture’s function in nature is to provide useful function, it certainly doesn’t have any functional application in digital products beyond visual cues.</p>
-
-<p>Apart from animal instincts, natural systems and textures beyond our emulation capabilities, perhaps there are deeper truths within nature that <em>do</em> resonate with humans. What fundamental laws of nature act as guiding rulesets to allow design to emerge and iterate upon itself through evolutionary processes to give some sort of significance in the eyes of humans?</p>
-
-<p>All of a sudden this little rabbit hole is getting a bit deep and asking challenging questions that I am certainly not qualified to definitively answer, but I do have some observations. There are two universal laws (and I’ll use the word “law” loosely here) that improve design and that evolution has deemed worthy of keeping over time.</p>
-
-<h3 id="the-pareto-principle">The Pareto Principle</h3>
-
-<p>The Italian economist Vilfredo Pareto stated in his first published paper in 1896 that approximately 80% of the land in Italy was owned by 20% of the population. One of the common axioms of business management is that 80% of the work comes from 20% of your clients as demonstrated by Richard Koch in his book the 80/20 Principle (an alias for the Pareto Principle). Some attribute this observation back to Biblical times, specifically Matthew 25:29 where it reads: “For unto every one that hath shall be given, and he shall have abundance: but from him that hath not shall be taken away even that which he hath.” This seems to align with the with the observation that the richest 20% of the world’s population controls just shy of 83% of the world’s income<sup id="fnref:4"><a href="#fn:4" class="footnote">4</a></sup>.</p>
-
-<p>The basic structure of a Pareto statement is that 80% of the effects originate from 20% of the causes.</p>
-
-<p>It’s a useful lens to look at everyday things in your life, your work and even your design decisions. For example, 20% of project effort in building out a design system might cater for 80% of the interface decisions required. 80% of the value you deliver in a particular project might come from 20% of the product.</p>
-
-<p>I’ve had conflicting thoughts as to whether to include the Pareto Principle as part of this article. It appears to be a law that transcends time, culture and government pointing it towards being categorised as a Natural Law but the majority of its examples (some of which covered below) seem to reveal more about the nature of human influence rather than Nature itself. I lean towards the notion that the Pareto Principle is an observation rather than a law of nature<sup id="fnref:5"><a href="#fn:5" class="footnote">5</a></sup>, and there is a nuanced difference between Nature and what constitutes a natural law, so it would be rather clumsy to conflate the two without pointing out this discrepancy. That isn’t to say that the Pareto Principle as an observation isn’t true, it’s a consistency that seems to house a deeper truth about <em>human</em> nature which will at least have its uses rather than discounting it as part of the discussion.</p>
-
-<h2 id="fibonacci-and-the-golden-ratio">Fibonacci and the Golden Ratio</h2>
-
-<p>Let’s start with the obvious one - this seemingly universal rule appears out of mathematics, the much-dubbed language of the universe.</p>
-
-<p>The Fibonacci sequence was introduced in the Italian mathematician Fibonacci’s book <em>Liber Abaci</em> (Book of Calculation) as a means for solving a problem regarding the growth of rabbit populations based upon ideal conditions (a boy and a girl born at each birth). The sequence of numbers from the solution became known as Fibonacci numbers. As these numbers grow the ratio between two adjacent terms resolves neatly at 1.618, also known as the Golden Mean, the Golden Ratio, Phi or the Divine Proportion.</p>
-
-<p>This measurement exists throughout nature, from small scales such as the arrangement of sunflower seed heads, the fractal-like spirals of seashells, to larger scales such as the breaking waves of the ocean to the dizzyingly large proportions of spiral arms of galaxies. More immediately, these measurements appear throughout the human body between joints, the proportions of the eyes, nose and mouth on the human face - these eerily omnipresent ratios permeate nature and appear to indicate some sort of universal beauty and truth that speaks to human observers.</p>
-
-<p>Artists such as Leonardo Da Vinci and Salvador Dali have utilised this rule in their works. Da Vinci was a close personal friend of Luca Pacioli, author of <em>Divina Proportione</em>, a three-volume treatise on the Golden Ratio in 1509. Was this friendship the source of Da Vinci’s implementation of the rule in his paintings? Whether he did or did not utilise the Golden Ratio to paint the Mona Lisa or consciously employ it in the Last Supper is subject to much debate. The Vitruvian Man however clearly illustrates Da Vinci’s fascination and understanding of the phenomenon which appears to predate both the Mona Lisa and the Last Supper, make of that what you will.</p>
-
-<p>There have been experiments in digital design to utilise the Golden Ratio. This seemingly algorithmic property of nature feels like a good candidate for systematisation on mathematically-based platforms. When Tim Brown introduced his  <a href="https://modularscale.com">Modular Scale</a> at Belfast’s Build Conference in 2010 I was struck by his emphasis on <em>meaning</em> when defining harmonious typographic scales. Here Tim presented a replicable formula (1:1.618) and adapted it for a medium beyond Greek architecture and growth patterns in plants resulting in a series of numbers that when applied produced harmonious digital typographic hierarchies and layouts.</p>
-
-<p>Tim’s talk had such a profound effect on my work that I threw out my old methods of picking numbers out of the air for things like element widths, font sizes and vertical rhythms and instead explored a more meaningful set of measurements true to nature, born out of maths, the language of the universe.</p>
-
-<p><img src="http://wp.production.patheos.com/blogs/billykangas/files/2014/11/dali-last-supper.jpg" alt="https://en.m.wikipedia.org/wiki/File:Dali_-_The_Sacrament_of_the_Last_Supper_-_lowres.jpg" /></p>
-
-<p>Back to traditional art for a moment. One of my favourite paintings is Salvador Dali’s 1955 piece The Sacrament of the Last Supper. It is by far the lesser known of the two famous Last Supper paintings, and like Da Vinci’s, Dali unapologetically employs the Golden Ratio in the altar that dominates the centrepiece of this remarkable union of religious imagery and surrealism. Here Dali had a reproducible algorithm for beauty, harnessed from nature, communicated back through his medium, the canvas, stirring the soul through the eyes of the viewer.</p>
-
-<h2 id="constellation">Constellation</h2>
-
-<p>Brian Moriarty is one of my heroes in the gaming industry. He is best known for adventure games such as Loom and The Dig as well as his infamous lecture “The Secret of Psalm 46” which has been adapted into a dramatic production, a graphic novel and plays a role in my favourite video game, The Witness (no spoilers here, sorry).</p>
-
-<p>In another one of his lectures titled “Who Buried Paul?”, a deep dive into the Paul McCartney death hoax, he outlined human propensity for projecting meaning and significance where there is none. Moriarty points out that seemingly meaningless artefacts in Beatles album art led fans to believe that the band were trying to tell them of the death of their friend and bandmate Paul through a series of clues such as the floral arrangement on the Sgt. Pepper’s Lonely Hearts Club cover that appears to spell “Paul?”. Also, the backwards messages that seem to say “Turn me on dead man”, and “Paul is dead man, miss him, miss him”.</p>
-
-<blockquote>
-  <p>“Humans project meaning and significance where there is none, particularly in cases where none exists. The meanings we expect to see. The significance we WANT to see. Constellation is a form of self-recognition.”</p>
-</blockquote>
-
-<p>Moriarty calls this phenomenon “constellation”, a human desire to see patterns and make connections between points. Looking up to the stars in the night sky, our ancestors created many images through self-recognition and seeing meaning and significance between points of light across a dark expanse. These connections appear to be stimulated where novelty exists rather than manifesting from the mundane. Look at the Beatles For Sale album cover juxtaposed with the Sgt. Pepper’s Lonely Hearts Club artwork. One generated meaning and a multitude of interpretations in the eye of the beholder where the other just framed four guys from Liverpool ready to sing a few songs for you, the listener.</p>
-
-<p><img src="http://jordanm.co.uk/img/beatles.jpg" alt="" /></p>
-
-<p>So how does constellation, or the act of constellating help us design better digital products? Firstly your product needs to serve a purpose beyond a utility, particularly if that purpose leads to meaning or reveals greater truths. Constellating is a quick means to meaning, what red herrings give rise to speculation and new interpretations? Why do some of the great films such as Donny Darko leave parts of the story untold? People fill in the gaps with personal significance which means that somewhat counterintuitively, incompleteness by design encourages constellation which creates greater personal meaning rather than pre-prescribed, one-size-fits-all meaning.</p>
-
-<h2 id="conclusions">Conclusions</h2>
-
-<p>Nature is our outsourced research and development department. Observing problems solved by nature can help inform how we approach problems in digital design. Nature doesn’t like arbitrary features. It finds a way to shed unnecessary elements in advancing long-term goals over vast systems.</p>
-
-<p>Biomimicry is a lens through which to learn from nature as well as build purposeful things. Beyond physical features, nature appears to hold a series of deep truths that evoke some sort of meaning in humans. The Golden Ratio, the Pareto Principle, affordance, constellation, intention - design with these tools and you are using frameworks built upon deep human and universal truths encoded into nature.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p><a href="https://www.ted.com/talks/michael_pawlyn_using_nature_s_genius_in_architecture">Using Nature’s Genius in Architecture</a> <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:2">
-      <p><a href="https://biomimicry.org/what-is-biomimicry/">https://biomimicry.org/what-is-biomimicry/</a> <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:3">
-      <p><a href="http://www.bbc.co.uk/earth/story/20141111-plants-have-a-hidden-internet">http://www.bbc.co.uk/earth/story/20141111-plants-have-a-hidden-internet</a> <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:4">
-      <p><a href="https://en.wikipedia.org/wiki/Pareto_principle">https://en.wikipedia.org/wiki/Pareto_principle</a> <a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:5">
-      <p><a href="https://betterexplained.com/articles/understanding-the-pareto-principle-the-8020-rule/">https://betterexplained.com/articles/understanding-the-pareto-principle-the-8020-rule/</a> <a href="#fnref:5" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
+        </form>
+    </div>
+    <!--End mc_embed_signup-->
 </div>
-
-              </div>
-            </div>
-          </article>
+          </div>
         
 
 
@@ -431,7 +146,7 @@
       <div class="container pagination marginBottom">
         
         
-          <a href="/page2" class="next">Older Articles &rarr;</a>
+          <a href="/page2" class="next">Next &rarr;</a>
         
       </div>
     <!-- /.container -->
@@ -442,42 +157,20 @@
 </div>
 
 
-      <section class="newsletter" id="newsletter">
+  <section>
   <footer>
     <div class="container">
-      <div class="footer-col">
-        <h4 class="small-header">About</h4>
-        <p>I am currently Director of Design at <a href="https://dawsonandrews.com">Dawson Andrews</a> and in the process of building the Research and Development part of the company. We'll explore interesting things like purpose, meaning and truth through technology. <a href="mailto:jm@dawsonandrews.com">Let's talk</a>.</p>
-        <h4 class="small-header">Newsletter</h4>
-        <p>Sometimes I publish a newsletter called <strong>The Logbook</strong> which you can subscribe to here.</p>
-        <div id="mc_embed_signup" class="marginBottom">
-          <form action="https://jordanm.us5.list-manage.com/subscribe/post?u=3e0b1d25a7ba2bbb8c0c979ae&amp;id=4932254eb1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-              <div class="mc-field-group">
-                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email address">
-                <input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="button">
-              </div>
-              <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3e0b1d25a7ba2bbb8c0c979ae_4932254eb1" tabindex="-1" value=""></div>
-            </div>
-          </form>
-        </div>
-        <!--End mc_embed_signup-->
-      </div>
+     
 
       <div class="footer-col copyright">
-          <p><span>&copy; Jordan Moore 2019</span> <span><a href="https://www.twitter.com/jordanmoore">Twitter (@jordanmoore)</a></span></p>
-
+          <p><span>&copy; Jordan Moore 2019</span></p>
       </div>
 
     </div>
   </footer>
 </section>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46278682-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

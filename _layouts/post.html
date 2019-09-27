@@ -3,14 +3,14 @@
 {% include head.html %}
 
 <body class="post">
-  <div class="container">
   <header>
+  <div class="container">
       {% include nav.html %}
+    </div>
   </header>
-</div>
   <div class="blog-posts">
+    <div class="container">
     <article class="marginBottom-l">
-          <div class="container wide  textAlign-center">
             <p class="date color-grey"><time>
               {% assign d = page.date | date: "%-d"  %}
               {{ page.date | date: "%B" }}
@@ -19,13 +19,13 @@
             </time></p>
 
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><h1 class="article-header">{{ page.title }}</h1></a>
-          </div>
-      <div class="container">
+
         <div class="article-content">
           {{ content }}
         </div>
+      </article>
+      {% include sidebar.html %}
       </div>
-    </article>
   </div>
   {% include footer.html %}
 {% include ga.html %}

@@ -34,7 +34,7 @@ In some sense, record collections were regarded as an extension of ourselves.
 
 Digital streaming favours speed over the old process, which was accidentally meditative in that it was slow and it coerced you into being present in the experience. Perhaps digital is also hampered by the limitations of the screen eliminating the other senses that played supporting roles in this experience, such as touch and smell. As a result, streaming music feels shallow, a little like 360° panoramic photos of a landmark. It looks great for a moment, the novelty of the technology excites you for a moment, but you’re not really there.
 
-## New adventures in Wi-Fi
+### New adventures in Wi-Fi
 
 I try not to be a back-in-my-day kind of guy. I’m actually quite optimistic that digital lowers the barrier for creators to make meaningful experiences, and we are yet to see the full array of possibilities in front of us. Brendan Dawes has been exploring such possibilities. His Plastic Player project is a wooden box with purpose-built slots along the top to house a series of slides containing album art, similar to how vinyl is displayed in a record store, and a space to place your chosen card.
 

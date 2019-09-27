@@ -8,9 +8,9 @@
 ">
   <link href="https://fonts.googleapis.com/css?family=Faustina:400,400i,600i" rel="stylesheet">
 
-  <link rel="stylesheet" href="http://jordanm.co.uk/css/style.css">
-  <link rel="canonical" href="http://jordanm.co.uk/page4/">
-  <link rel="alternate" type="application/rss+xml" title="Product Design, Responsive Web Design, UX Design, Belfast Northern Ireland | Jordan Moore" href="http://jordanm.co.uk/feed.xml" />
+  <link rel="stylesheet" href="http://127.0.0.1:4000/dist/styles/style.css">
+  <link rel="canonical" href="http://127.0.0.1:4000/page4/">
+  <link rel="alternate" type="application/rss+xml" title="Product Design, Responsive Web Design, UX Design, Belfast Northern Ireland | Jordan Moore" href="http://127.0.0.1:4000/feed.xml" />
 
   <link rel="shortcut icon" href="http://jordanm.co.uk/img/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="http://jordanm.co.uk/img/apple-touch-icon-precomposed.png">
@@ -34,9 +34,9 @@
 </head>
 
 <body class="homepage">
-  <div class="container">
-    <header>
-        
+  <header>
+    <div class="container">
+      
 
 <h1 class="logo"><a href="/"><span>Jordan Moore</span></a></h1>
 
@@ -45,263 +45,157 @@
         <li><a href="/" >Home</a></li>
         <li><a href="/bookshelf" >Bookshelf</a></li>
         <li><a href="/lab" >Lab</a></li>
-        <li><a href="http://jordanm.co.uk/feed.xml" class="button -rss nav-mb-hide">Subscribe <i class="ico-rss"></i></a></li>
+        <li><a href="http://jordanm.co.uk/feed.xml" class="-rss nav-mb-hide">Subscribe <i class="ico-rss"></i></a></li>
     </ul>
 </nav>
 
+    </div>
+  </header>
 
-    </header>
-  </div>
-
-      <div class="blog-posts">
+    <div class="blog-posts">
         
+        <div class="container">
           <article class="marginBottom-l">
-                <div class="container wide  textAlign-center">
-                  <p class="date color-grey"><time>
+                  <p class="date"><time>
                     
-                    February
-                    7th, 2015
+                    September
+                    11th, 2018
                   </time></p>
 
-                  <a class="post-link" href="/2015/02/07/i-am-the-fold.html"><h1 class="article-header">I am the Fold</h1></a>
-                </div>
-            <div class="container">
+                  <a class="post-link" href="/2018/09/11/unpacking-design-problems.html"><h1 class="article-header">Unpacking Design Problems</h1></a>
               <div class="article-content">
-                <p>I don&#8217;t usually keep my cards close my chest, but I was very excited about building a little web app to counter the <a href="http://www.nngroup.com/articles/page-fold-manifesto/">recent, and in my opinion, misinformed</a> talk of the importance of &#8220;the fold&#8221; in web pages.</p>
+                <p>The best puzzles are the ones that demand more of you. When the answer appears obvious, but you second guess yourself. When you know there’s more to it than meets the eye.</p>
 
-<h2>Update</h2>
+<p>Nob Yoshigahara’s infamous number tree puzzle is certainly one of my personal favourites for just these reasons. It gives you a set of information and asks, What do you make of this?</p>
 
-<p><a href="http://twitter.com/_iest">Iestyn Williams</a> has made it happen at <a href="http://www.iamthefold.com/">iamthefold.com</a>!</p>
+<p><img src="http://jordanm.co.uk/img/puzzle.png" alt="Nob Yoshigahara's infamous number tree puzzle" /></p>
 
-<p>I&#8217;m not going to get the opportunity to build this thing any time soon so please feel free to take the idea and run with it because I&#8217;d love to see it come to life rather than sink into the abyss of my Someday list.</p>
+<p>Puzzles are a great tool for strengthening mental muscles that can help unpack design problems. They push you to adopt a different mindset and perspective, challenge assumptions, study intently, and look closely. Like a puzzle, difficult design problems evoke that same moment of epiphany when you peel back the layers to find hidden truths.</p>
 
-<h2>The idea</h2>
+<p>But design challenges are not quite as easy as puzzles, which have the answers hidden in plain sight. With puzzles, all the pieces are available to you: You just need to put it together. With design problems, you need to find the pieces first, then put everything together.</p>
 
-<p>A one page website that saves the height of the user&#8217;s viewport on page load to a database, draws a line at this value (in the form of an HTML element — a 1px high div will do) and that&#8217;s it.</p>
+<p>This can be daunting, but there are methods, tactics, and techniques you can reach for to help facilitate these discoveries.</p>
 
-<p>The cool part is that it will show you the lines drawn by <strong>every user to have visited that page</strong><sup id="fnref:p110325451951-1"><a href="#fn:p110325451951-1" rel="footnote">1</a></sup>.</p>
+<h2 id="first-principles">First principles</h2>
 
-<p>That&#8217;ll prove in a nice visual way if there is such a thing as the common fold, let&#8217;s leave it up to science!</p>
+<p>Although used heavily in the field of physics, Aristotle’s method of reasoning known as “first principles” originated as a means for organic reasoning (as opposed to looking at analogies, which are often riddled with errors).</p>
 
-<h2>Added fun</h2>
+<p>When applied to design problems, you start with an observation, such as a requirement in a project brief. Then you ask why until you arrive at the most basic understanding of the truth of the problem. This provides a solid foundation to build upon.</p>
 
-<p>Feel free to ditch this part. I thought about a tongue in cheek Spartacus analogy calling the app &#8220;I am the Fold&#8221; with a searchable Twitter hashtag #iamthefold which would show a list of Tweets containing the user&#8217;s screen height and a link to the app.</p>
+<p>First principles force you to look at the problem without using other people’s preconceived ideas and attempts on how to solve it. When you use this approach, you automatically generate new value. It’s certainly cognitively more intense, but in my experience it produces more original and valuable results.</p>
 
-<p>It would be an effective way of demoing to clients and others that there is no such thing as a common page fold. The array of Tweets with different pixel values and the page itself with lines sporadically drawn depicting different viewport heights through the power of random will hopefully make the point.</p>
+<p>What happens if you arrive at the same conclusion others have already reached? Is this method a waste of time?</p>
 
-<p>So take it or leave it. I&#8217;m certainly not going to get a chance to make it happen any time soon and I&#8217;d feel bad letting the idea rot when it could be of some use to others.</p>
+<p>Mike Bithell, an independent game developer, sums this up nicely:</p>
 
-<div class="footnotes">
-<hr><ol><li id="fn:p110325451951-1">
-<p>If it becomes a performance concern I had considering capping this at the last 100 or 200 users. <a href="#fnref:p110325451951-1" rev="footnote">↩</a></p>
-</li>
+<blockquote>
+  <p>“Oftentimes, when trying to reinvent the wheel, you end up with a wheel. But there is a nice moment of ‘huh, I guess that’s why people just use wheels’… that process of justifying the standard is satisfying, if massively wasteful. Still. Cool wheel.”</p>
+</blockquote>
 
-</ol></div>
+<p>For a good example of first principles in action, try this Wikipedia experiment. Click on the first non-parenthesized link in any random article and follow the chain. It will lead you down a path toward the most basic understanding of any concept. Strangely, approximately 80% of articles deconstructed in this manner bring you back to the Wikipedia article about philosophy.</p>
+
+<p><img src="http://jordanm.co.uk/img/wikipedia-trail.png" alt="A screenshot of Wikipedia" /></p>
+
+<h2 id="question-everything">Question everything</h2>
+
+<blockquote>
+  <p>“Judge a man by his questions rather than by his answers.” –Voltaire</p>
+</blockquote>
+
+<p>A design problem is only as difficult as the questions you ask of it.</p>
+
+<p>Good questions don’t necessarily lead to definitive answers, but rather further questions. The amount of additional questions tends to correlate with the value hidden within the problem. If a question is easily snuffed out and the conversation cut short, it might not be as provocative as you originally suspected.</p>
+
+<p>Some good starting points for exploratory questioning are:
+* Why is this a problem?
+* What makes you believe this is true?
+* What is your biggest challenge?
+* Who does this well?
+* What question did I not ask that would be valuable to know?</p>
+
+<p>Feel free to use why liberally. Why is like a jackhammer for drilling through a problem’s layers. Why is flexible enough to get to the basic fundamentals (see: first principles), but can also be used to dig deeper into the problem you’re facing.</p>
+
+<p>Sometimes, the best follow-up question is no question at all. A tactical silence can encourage your client to fill in the gap and reveal additional knowledge that might have otherwise been overlooked.</p>
+
+<h2 id="collaborative-understanding">Collaborative understanding</h2>
+
+<p>Your strength as a product designer is determined by your ability to provide valuable solutions that address your client’s business goals and objectives. This can only be achieved if you deeply understand the original problem.</p>
+
+<p>I find it beneficial to collaborate intensely with the client to define the problem(s) you’re going to address. Don’t take the version defined in the brief as the be all, end all. Explore it completely, break it down to first principles, build it back up, and communicate the problem back to the client.</p>
+
+<p>This demonstrates your understanding of your client’s problems, your ability to grapple with problems, and your client’s understanding of their own problems. It creates a good starting point, and it’s the perfect time to demonstrate exactly how you’re going to test assumptions and measure success.</p>
+
+<blockquote>
+  <p>“A design lives and dies by its designer’s understanding of the problem. Understand the problem.” –<a href="https://twitter.com/erondu/status/987354283883446272">Jared Erondu</a></p>
+</blockquote>
+
+<h2 id="a-few-more-back-pocket-methods">A few more back-pocket methods</h2>
+
+<p>There are always more ways to test your solutions.</p>
+
+<p>For example, Occam’s Razor is a mental model that suggests that the simplest solution—the path of least resistance—tends to be the right one. Although it isn’t always indicative of the truth, it’s a good technique to help avoid assumptions and analogies.</p>
+
+<p>It’s also worth implementing techniques that help remove biases and ensure objectivity. One of my particular favourites is “steelmanning,” or building the strongest possible counter-argument to your solution. Adopting both for- and against-mindsets as you pursue a solution is hugely valuable; it not only produces a better solution, but arms you with a defence against the alternative.</p>
+
+<p>The path to delivering value in product design isn’t through shiny user interfaces. Like a good puzzle, it lies in your ability to approach the problem from an inquisitive perspective, assemble the pieces of information you need, explore fundamentals and truths, and build back up to the definitive solution.</p>
+
+<p>No one said it would be easy.</p>
+
+<div class="info">Originally published on <a href="https://www.invisionapp.com/blog/unpacking-design-problems/">InVision's blog</a></div>
 
               </div>
-            </div>
-          </article>
-        
-          <article class="marginBottom-l">
-                <div class="container wide  textAlign-center">
-                  <p class="date color-grey"><time>
-                    
-                    January
-                    21st, 2015
-                  </time></p>
-
-                  <a class="post-link" href="/2015/01/21/a-modern-default.html"><h1 class="article-header">A Modern Default</h1></a>
+            </article>
+            <div class="sidebar">
+    <h4 class="sidebar__header">Start Here</h4>
+    <ul class="links">
+        <li><a href="http://jordanm.co.uk/2018/07/30/design-laws-of-nature.html">Design Laws in Nature &rarr;</a></li>
+        <li><a href="http://jordanm.co.uk/2019/02/20/experience-gaps.html">Experience Gaps &rarr;</a></li>
+        <li><a href="http://jordanm.co.uk/2018/06/06/intro-ocean-ux.html">Mapping User Experiences to Individuals Using
+                the Big 5 OCEAN Personality Traits &rarr;</a></li>
+    </ul>
+    <hr>
+    <h4 class="sidebar__header">About</h4>
+    <p>Co-founder &amp; Director of Design at <a href="https://www.dawsonandrews.com">Dawson Andrews</a>. A product
+        design studio in Belfast.</p>
+    <p>He is interested in exploring the intersection of product design, psychology, aesthetics, and economics. Value
+        over vanity.</p>
+    <hr>
+    <h4 class="sidebar__header">Newsletter</h4>
+    <p>I publish a newsletter called <strong>The Logbook</strong> when I feel like it.
+    </p>
+    <div id="mc_embed_signup" class="marginBottom">
+        <form action="https://jordanm.us5.list-manage.com/subscribe/post?u=3e0b1d25a7ba2bbb8c0c979ae&amp;id=4932254eb1"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+            target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+                <div class="mc-field-group">
+                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"
+                        placeholder="Email address">
+                    <input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="button">
                 </div>
-            <div class="container">
-              <div class="article-content">
-                <p>There are few things on the Web that excite me more than a new HTML document its raw form and the possibilities it brings. In an unstyled HTML document the contents are laid bare for all to see. Out-of-the-box HTML comes with an established typographic hierarchy and elements are distinguishable like the different variations of lists that we seem to have a strange habit of resetting and stripping of the characteristics that make it a list.</p>
-
-<p>The default styles for HTML are sensible defaults. The type is legible, the layout is functional — in fact it&#8217;s almost entirely responsive, <a href="https://github.com/jordanmoore/Modern-Default-HTML">with a few small tweaks</a> it <strong>can</strong> be completely responsive.</p>
-
-<p>I have <a href="https://github.com/jordanmoore/Modern-Default-HTML">shared a project on GitHub called Modern Default HTML</a>. It&#8217;s nothing overly remarkable, nothing fancy and it didn&#8217;t take very long to make. But I felt the need to publish it to show the few changes necessary to make the default web page accessible on all devices. There are a few similar projects out there, but perhaps this is a more focused effort at addressing the initial tweaks necessary for a completely accessible starting point.</p>
-
-<p>My project goals were simple:</p>
-
-<ul><li>Stay true to the default and do the minimum required to make the default web page work anywhere</li>
-<li>Don&#8217;t impose any solutions to common design problems (and there are plenty like responsive tables for example — the same solution may not apply to all types of data)</li>
-<li>On a related note - there shouldn&#8217;t be anything in the default you will need to undo</li>
-</ul><p>I&#8217;ve been meditating on the idea that as designers we owe it to ourselves and anyone who comes into contact with the things we make that we stay as true to the sensible defaults as we possibly can within the typical constraints of a web project. The default web page is fast, functional and founded upon a clear typographic hierarchy. Any design decisions we make thereafter will either enhance this experience or tarnish it.</p>
-
-<p>I&#8217;m asking myself more challenging questions in this mindset when designing even the smallest change: &#8220;Why is this better than the default?&#8221;, &#8220;What does this bring to the table?&#8221;, &#8220;Is this feature so critical to the goals of this page that the performance hit is necessary?&#8221;, &#8220;Does it break the default or is it loading a completely redundant asset?&#8221;</p>
-
-<p>As designers we are in the position of power where we can both make and break the Web. We have a great foundation to work with by default, it&#8217;s up to us where we go with it.</p>
-
-              </div>
-            </div>
-          </article>
-        
-          <article class="marginBottom-l">
-                <div class="container wide  textAlign-center">
-                  <p class="date color-grey"><time>
-                    
-                    October
-                    8th, 2014
-                  </time></p>
-
-                  <a class="post-link" href="/2014/10/08/a-silent-web.html"><h1 class="article-header">A silent web</h1></a>
+                <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
                 </div>
-            <div class="container">
-              <div class="article-content">
-                <p>Sometime during the last decade the web fell silent. There was a time when Flash-based websites with autoplaying background music were commonplace and the Internet felt like a lively, noisy place to be.</p>
-
-<p>Fast forward to the present day and websites have turned quiet apart from certain media elements like video where the user can give explicit permission to play.</p>
-
-<p>Whilst I believe this is better than websites that continuously sing at the user on an autoplaying loop, I think we maybe went too far in the condemnation of <em>all</em> forms of audio on the web.</p>
-
-<p>Consider audio as component of the user interface for a moment: what&#8217;s wrong with using a sound like pips to represent hovering on menu options?</p>
-
-<h2>Advantages</h2>
-
-<ul><li>Potentially good for accessibility where blind and partially sighted users might struggle to see a hover state</li>
-<li>The sound could form part of the look and <em>feel</em> of the experience</li>
-<li>And additionally it can help with other facets of the experience like helping a user feel a sense of achievement after completing a task</li>
-</ul><h2>Disadvantages</h2>
-
-<ul><li>The user is accustomed to a quiet web and the sound could come as an unwelcome shock</li>
-<li>From an accessibility standpoint - there would need to be some sort of standard to indicate hover states which could confuse blind and partially sighted users</li>
-</ul><p>When audio was mainstream on many websites it was during a time where volume controls were disconnected from the device - potentially hidden on part of a CRT monitor or detached on external speakers. This was likely a source of frustration where you would have to move from a comfortable position to turn down the volume. Today we are well accustomed to use devices with mute buttons when we don&#8217;t want our apps to make any noise - the same applies to desktop for the most part where mute buttons are part of the keyboard functions. Audio has a definitive off switch should the user choose to opt out of all audio, and I&#8217;d wager that most folks know that if they want their device to be quiet - they&#8217;ll put it in silent mode (or mute for laptops and desktops).</p>
-
-<p>Why should apps get all the fun of satisfying interface chirps and clicks when flowing through the experience? What if the games industry decided to go quiet in regards to their main menu systems? Both industries are trying achieve the same goal: to facilitate the user in completing a task. The game and app industries have audio as an integral part of UX whereas our industry opted to avoid it in recent years.</p>
-
-<p>I think we wrote off audio too soon.</p>
-
-              </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                        name="b_3e0b1d25a7ba2bbb8c0c979ae_4932254eb1" tabindex="-1" value=""></div>
             </div>
-          </article>
-        
-          <article class="marginBottom-l">
-                <div class="container wide  textAlign-center">
-                  <p class="date color-grey"><time>
-                    
-                    August
-                    1st, 2014
-                  </time></p>
-
-                  <a class="post-link" href="/2014/08/01/how-i-test-type-and-layout.html"><h1 class="article-header">How I test type and layout</h1></a>
-                </div>
-            <div class="container">
-              <div class="article-content">
-                <p>I thought I&#8217;d elaborate on my testing strategy that I introduced during a talk I gave recently for <a href="http://www.typecast.com/seminars">Typecast&#8217;s seminar series</a>. I described how I use two different testing methods for typography and responsive layouts.</p>
-
-<p>Both are two very different facets of the same overall system and subsequently require different test conditions. In essence, I test typography on devices and I test layout in the browser.</p>
-
-<h2>Mobile devices aren&#8217;t great for layout testing</h2>
-
-<p>Device stands may look pretty on your desk, but they&#8217;re not going to cover all the possible states of a responsive layout. In fact, testing layouts purely on a set of devices is no different than designing for a set of predefined weights and heights — devices let you see how a layout will act at a particular size, but that&#8217;s the only size you&#8217;ll see on that screen<sup id="fnref:p93444774181-1"><a href="#fn:p93444774181-1" rel="footnote">1</a></sup>.</p>
-
-<p>This is why I do the majority of my layout testing in the browser. A browser will let you see all the in-between states that a set of devices won&#8217;t let you see. Expanding and collapsing the browser window from the small compressed state to an uncompressed wide state like an accordion allows you to see your elements actively respond and helps identify any potential gaps or problem areas.</p>
-
-<p>Of course the actual device will show you the definitive state for that particular device - but what about every other permutation of the responsive layout?</p>
-
-<p>The desktop browser helps paint the complete layout picture. No modern mobile browser gets the basic fundamentals of CSS layout so wrong that it requires you to refresh and investigate every layout change[^1].</p>
-
-<h2>Desktop browsers aren&#8217;t great for testing type</h2>
-
-<p>Where a desktop browser excels at showing you the difference in screen sizes, shapes and dimensions - it fails to account for the potential differences in type rendering between browsers and operating systems. A single browser window can only show you how type renders for that individual display and configuration.</p>
-
-<p>The vast array of different mobile device displays requires a testing setup that caters for the variance in different screen densities, resolutions and screen types to give an indication of how type renders in these different environments.</p>
-
-<p>An electronic ink display might render the type blurry compared to the display of a crisp high density screen. This is where a broad set of devices comes in handy - it pays to stress test your fonts across the often unforgiving and varied display properties of mobile devices. A single desktop browser won&#8217;t let you know about any of these potential issues.</p>
-
-<h2>The best of both worlds</h2>
-
-<p>I still reference mobile browsers during layout testing from time to time - functional testing is a different matter where I test heavily on all devices - but primarily my <em>layout</em> testing happens in the browser and my type testing happens on mobile displays.</p>
-
-<p>The speed and efficiency of scaling a desktop browser window from small to large for building <em>truly</em> responsive layouts met with a set of devices that represent as much of the potential difference in display types is the sweet spot that works for me.</p>
-
-<div class="footnotes">
-<hr><ol><li id="fn:p93444774181-1">
-<p>Apart from different orientations if the device allows it. <a href="#fnref:p93444774181-1" rev="footnote">↩</a></p>
-</li>
-
-</ol></div>
-
-              </div>
-            </div>
-          </article>
-        
-          <article class="marginBottom-l">
-                <div class="container wide  textAlign-center">
-                  <p class="date color-grey"><time>
-                    
-                    July
-                    10th, 2014
-                  </time></p>
-
-                  <a class="post-link" href="/2014/07/10/emmets-hidden-power-features.html"><h1 class="article-header">Emmet's hidden power features</h1></a>
-                </div>
-            <div class="container">
-              <div class="article-content">
-                <p><a href="http://emmet.io/">Emmet</a> (formerly known as Zen Coding) is a plugin for text editors helping you create CSS and HTML faster by using abbreviations to write common values saving ridiculous amounts of time along the way.</p>
-
-<p>There are heaps of really useful features alongside Emmet&#8217;s primary text-expanding function. Here are a few of the hidden gems that I frequently use when coding<sup id="fnref:p91335536701-1"><a href="#fn:p91335536701-1" rel="footnote">1</a></sup>.</p>
-
-<h2>Inline Calculation</h2>
-
-<p>Emmet has a built-in calculator which allows you to solve equations directly in your code. I use this daily to solve EM values in CSS, particularly for nested EM values simply by pressing<sup id="fnref:p91335536701-2"><a href="#fn:p91335536701-2" rel="footnote">2</a></sup><kbd>Cmd</kbd> <kbd>Shift</kbd> <kbd>Y</kbd> beside an equation like: 24/16 (desired pixel value/base pixel value).</p>
-
-<p>You can also chain this with abbreviations, so typing: <code>mb24/16</code> and pressing <kbd>Cmd</kbd> <kbd>Shift</kbd> <kbd>Y</kbd> then <kbd>tab</kbd> would output: <code>margin-bottom: 1.5em</code>.</p>
-
-<h2>Jump to Matching Pair</h2>
-
-<p>Sometimes when coding HTML I might find a closing tag and it&#8217;s not always quick and easy to trace back to where the opening tag exists. Pressing <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>T</kbd> when the cursor is in the closing (or opening) tag jumps to the opening (or closing) tag pair.</p>
-
-<h2>Code comments</h2>
-
-<p>To prevent running into the situation in the previous tip, I recommend placing comments beside your closing tags. But writing the class name of the element for a second time and wrapping it in comments can take up time, and it&#8217;s extra effort that won&#8217;t be beneficial until you run into scenarios where you need to revisit that code, so it&#8217;s often forgotten about or left out completely.</p>
-
-<p>Thankfully Emmet makes it easier to write comments beneath closing tags by adding a tiny snippet to the end of an abbreviation. Typing: <code>.container&gt;ul&gt;li*5&gt;a|c</code> expands to:</p>
-
-<pre><code>&lt;div class="container"&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;
-&lt;!-- /.container --&gt;</code></pre>
-
-<p>So writing comments where elements close is as easy as writing <code>|c</code>.</p>
-
-<h2>Convert image to Data URI</h2>
-
-<p>One of the most underused features of Emmet is it&#8217;s built-in ability to convert images to data:URI schemes. Using a data:URI instead of linking to an external image saves an extra HTTP request which ultimately improves the performance of your site by reducing latency.</p>
-
-<p>To convert an image to a data:URI, place your cursor in the image tag and press <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>D</kbd>.</p>
-
-<hr><p>Emmet can be as powerful as you want it to be. It&#8217;s worth using for its text-expansion capabilities alone saving huge amounts of coding time, but beyond that lies a very powerful suite of development tools.</p>
-
-<div class="footnotes">
-<hr><ol><li id="fn:p91335536701-1">
-<p>This article assumes you are familiar with Emmet. If you haven&#8217;t tried it out yet <a href="http://emmet.io/">you absolutely must</a>. <a href="#fnref:p91335536701-1" rev="footnote">↩</a></p>
-</li>
-
-<li id="fn:p91335536701-2">
-<p>The keyboard shortcuts shown here work for my Mac installation of Sublime Text and Emmet. From what I can tell they may differ between installations, Windows installs will obviously have different shortcuts too. Bring up the Go To Anything menu and start typing the name of the command you wish to use to see the shortcut key. <a href="#fnref:p91335536701-2" rev="footnote">↩</a></p>
-</li>
-
-</ol></div>
-
-              </div>
-            </div>
-          </article>
+        </form>
+    </div>
+    <!--End mc_embed_signup-->
+</div>
+          </div>
         
 
 
       <!-- Pagination links -->
       <div class="container pagination marginBottom">
         
-          <a href="/page3" class="previous">&larr; Newer Articles</a>
+          <a href="/page3" class="previous">&larr; Previous</a>
         
         
-          <a href="/page5" class="next">Older Articles &rarr;</a>
+          <a href="/page5" class="next">Next &rarr;</a>
         
       </div>
     <!-- /.container -->
@@ -312,42 +206,20 @@
 </div>
 
 
-      <section class="newsletter" id="newsletter">
+  <section>
   <footer>
     <div class="container">
-      <div class="footer-col">
-        <h4 class="small-header">About</h4>
-        <p>I am currently Director of Design at <a href="https://dawsonandrews.com">Dawson Andrews</a> and in the process of building the Research and Development part of the company. We'll explore interesting things like purpose, meaning and truth through technology. <a href="mailto:jm@dawsonandrews.com">Let's talk</a>.</p>
-        <h4 class="small-header">Newsletter</h4>
-        <p>Sometimes I publish a newsletter called <strong>The Logbook</strong> which you can subscribe to here.</p>
-        <div id="mc_embed_signup" class="marginBottom">
-          <form action="https://jordanm.us5.list-manage.com/subscribe/post?u=3e0b1d25a7ba2bbb8c0c979ae&amp;id=4932254eb1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-              <div class="mc-field-group">
-                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email address">
-                <input type="submit" value="Sign up" name="subscribe" id="mc-embedded-subscribe" class="button">
-              </div>
-              <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3e0b1d25a7ba2bbb8c0c979ae_4932254eb1" tabindex="-1" value=""></div>
-            </div>
-          </form>
-        </div>
-        <!--End mc_embed_signup-->
-      </div>
+     
 
       <div class="footer-col copyright">
-          <p><span>&copy; Jordan Moore 2019</span> <span><a href="https://www.twitter.com/jordanmoore">Twitter (@jordanmoore)</a></span></p>
-
+          <p><span>&copy; Jordan Moore 2019</span></p>
       </div>
 
     </div>
   </footer>
 </section>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46278682-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
