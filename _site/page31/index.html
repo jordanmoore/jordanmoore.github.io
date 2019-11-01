@@ -59,46 +59,36 @@
                   <p class="date"><time>
                     
                     March
-                    3rd, 2013
+                    2nd, 2013
                   </time></p>
 
-                  <a class="post-link" href="/2013/03/03/the-scourge-of-social-plug-ins.html"><h1 class="article-header">The Scourge of Social Plug-Ins</h1></a>
+                  <a class="post-link" href="/2013/03/02/responding-to-language.html"><h1 class="article-header">Responding to Language</h1></a>
               <div class="article-content">
-                <p>Maybe I am a bit of a control freak. When I make something, I want full editorial control over the visuals and the content. And maybe it&#8217;s the minimalist in me thinking &#8220;if it doesn&#8217;t add any value — remove it. Everything else is distraction&#8221;. I just can&#8217;t bring myself to switch on comments or social sharing buttons on this website — I can&#8217;t do it. I&#8217;ll start with those shiny little not-quite-visually-similar-enough social buttons that tally up how many times your page has been shared on their networks via their JavaScript generated buttons.</p>
+                <p>Recently Vasilis van Gemert authored a very useful article on Smashing Magazine about <a href="http://www.smashingmagazine.com/2013/03/01/logical-breakpoints-responsive-design/">Logical Breakpoints For Your Responsive Design</a>. The article touches on how it you could theoretically produce different reading lengths and breakpoints for different languages. To support this idea Vasilis introduces an insightful little tool showing how the contrasting word length between different languages influences reading length.</p>
 
-<p>First of all, unless you are The Next Web, Mashable or another web giant attracting heaps of traffic on a daily basis, a social count button isn&#8217;t going to do you or your brand any favours. Picture this scenario: you arrive at a random article on this website, you notice social buttons and note that the article has been shared 0 times on Facebook, 1 time on Twitter and 0 on Google Plus. What is your first instinctive thought? Here&#8217;s what I think — if I spot the buttons before reading the content and notice that it hasn&#8217;t been shared, I immediately doubt the integrity of the author and the trust of the message from the website as a whole. I read a lot of articles on a daily basis and sometimes I&#8217;ll gauge the usefulness of article on the recency of the post vs the share count. Yes, it&#8217;s shallow, like judging a book by it&#8217;s cover although in my defence, there are a lot of &#8220;books&#8221; to get through, whether intentional or not a social button can read like a <strong>review</strong>.</p>
+<p><img src="http://static.tumblr.com/jdwzxqr/bx5mj0xoa/screen_shot_2013-03-02_at_08.16.28.png" alt="Cropped screenshot of The International Measure Slider"/></p>
 
-<p>I don&#8217;t want to tread over any ground that Oliver Reichenstein has already covered in his fantastic <a href="http://informationarchitects.net/blog/sweep-the-sleaze/">Sweep the Sleaze</a> article and  follow up (and you should read it next if you haven&#8217;t already) so I&#8217;ll talk about things from user perceptions rather than usage and mechanics<sup id="fnref:p44447032290-1"><a href="#fn:p44447032290-1" rel="footnote">1</a></sup>. A low button count is <em>damaging</em>. That&#8217;s my opinion and you&#8217;ll have trouble convincing me otherwise. The low count can be a result of people sharing the article by other means, like using the native sharing options in an operating system like iOS or just through good old fashioned manual sharing by copying and pasting a link into your preferred social network. These methods aren&#8217;t going to add anything to the button count, it&#8217;ll remain embarrassingly low like a poor review. According to Oliver Reichenstein&#8217;s piece around 20% links shared on websites he surveyed were completed via a social button, the other 80% were manual shares. So we can conclude that the ROI is poor.</p>
+<p>This tool is worth bookmarking if you are designing multi-lingual layouts. You can take it a step further by <strong>responding to the user’s language using CSS</strong>.</p>
 
-<p>As I mentioned before, if you are a running high traffic site and you want to use the buttons as some sort of demonstration of  popularity, then I guess that&#8217;s a viable use case albeit a bit egotistical. I would wager though that the people that use them are passive sharers and wouldn&#8217;t add any value to the piece you want them to share and they probably don&#8217;t have the influence you would like to spread your message further and to the right people.</p>
+<p>The language of an HTML document is defined by the ‘lang’ attribute in the ‘&lt;html&gt;’ tag at the root of the document. This gives us a hook that we can use in CSS to apply globally to the document.</p>
 
-<p>Social buttons are tools created by social networks to benefit… social networks. They want to take the conversation off your page and onto their network. I&#8217;m fine with that because I made the conscious decision to leave comments off on my website, but just think about that for your project.</p>
+<p>Imagine a scenario where we had a blog that has a language switcher between English and German. Generally German words are longer than English so we might want to set the reading length on the German version of our article to a slightly wider value.</p>
 
-<p>Speaking of comments, they can be as damaging and in some cases more damaging than a poor share count. For comments to work right you need to stay out of the user&#8217;s way and that means leaving them completely unfiltered and moderating later. Obviously this leaves your site open to trolling — but that&#8217;s the nature of the beast, the danger of comment roulette.</p>
+<p>The CSS might look something like this:</p>
 
-<p>Think about it this way — we are publishers. Would the New York Times let someone wander into their offices off the street and write an unsolicited remark at the end of one of their articles? Imagine reading the front page of the New York Times and at the end of a finely written piece you find the words &#8220;First!&#8221; or &#8220;Great article thanks!&#8221;. It just looks trashy. Compliments are nice to receive but to publicly display them amongst a list of generic back-pats just doesn&#8217;t sit right with me. I don&#8217;t need someone to essentially say &#8220;Good hustle Moore!&#8221; after my content.</p>
+<pre><code>article {
+   max-width:33em;
+}
+:lang(de) article {
+  max-width:40em;
+}
+</code></pre>
 
-<p>By now you have probably guessed my opinion of comment models on the web — it&#8217;s not that I think the standard comments model is broken, I just feel like it&#8217;s not a one-size-fits-all solution. If I wanted to open up a commenting system for my website, I would potentially do something like this:</p>
+<p>As soon as the ‘lang’ attribute is changed from the default ‘en’ to ‘de’ (through a mechanism like a language select dropdown) the width of the ‘&lt;article&gt;’ changes to a wider reading length making a (potentially) easier read for our German readers.</p>
 
-<ol><li>Write the article (no brainer)</li>
-<li>Associate a hashtag with the article (or all articles) — a hook that I can look for on social networks</li>
-<li>Make the effort to find people&#8217;s opinions on the piece on social networks (if they use the hashtag, then this is step is easy, if not, so what — just keep looking. Valuable opinions are worth mining for)</li>
-<li>Revisit the article having gathered opinions and use the insightful thoughts to add value to my original content and credit the necessary people</li>
-<li>Profit</li>
-</ol><p>You might be thinking, that sounds like a lot of work — it is. But take note that while digging for opinions, I&#8217;m engaging with my audience, maybe asking them to elaborate on some comments, while building trust and integrity with my work. The beauty of an approach like this is that if something you write is completely wrong or you have missed a crucial point then you can find people that disagree (trolls or otherwise) engage with them and maybe even correct the original article with their views. The important part is you maintain <strong>full editorial control</strong>, not by altering their comments, but building upon their input and giving credit where it&#8217;s due.</p>
+<p>You could extend this technique to tweak the rest of the layout to adapt to the changing line-length. The fact that the language attribute is at the root of the document makes for a nice and clean base to apply global rules that respond to different languages.</p>
 
-<p>People can add value to an article without the article being incorrect, they can elaborate on points which you can add to the end of the piece and improve it. I call it <strong>editorial comments</strong>.</p>
-
-<p>When talking to clients about this stance on social interactions, I talk about it as part of a larger social media strategy. The old/common approach is a plug-in social media strategy — shiny buttons won&#8217;t carry out your social media strategy for you. You need to do that, it requires effort to do it properly. It&#8217;s not enough to slap some cheap JavaScript buttons onto your page and mark off the social media box of your project goals. A social button cannot become the voice of your brand, that&#8217;s a human&#8217;s job.</p>
-
-<p><a href="http://static.tumblr.com/jdwzxqr/eSYmoh7jm/social.jpg" class="cover" data-credit="© François" data-link="http://www.flickr.com/photos/88943939@N00"></a></p>
-
-<div class="footnotes">
-<hr><ol><li id="fn:p44447032290-1">
-<p>They&#8217;re a performance hog too. In general a web page gains around 100kb of useless bloat  with social media buttons (depending on how many networks you add). <strong>Update</strong> — in the spirit of editorial comments <a href="http://twitter.com/jake_bresnehan">Jake Bresnehan</a> mentioned on Twitter that Nicolas Gallagher has <a href="https://gist.github.com/necolas/1025811">produced a lightweight social plugin script</a> that weighs in at 4kb minified — a great deal lighter than the official editions. <a href="#fnref:p44447032290-1" rev="footnote">↩</a></p>
-</li>
-
-</ol></div>
+<p><a href="http://static.tumblr.com/jdwzxqr/u82moh7s5/language.jpg" class="cover" data-credit="© alangrlane" data-link="http://www.flickr.com/photos/53914298@N07"></a></p>
 
               </div>
             </article>

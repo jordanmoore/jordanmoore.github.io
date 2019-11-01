@@ -58,57 +58,31 @@
           <article class="marginBottom-l">
                   <p class="date"><time>
                     
-                    August
-                    27th, 2012
+                    June
+                    30th, 2012
                   </time></p>
 
-                  <a class="post-link" href="/2012/08/27/where-print-fits-in-responsive-web-design.html"><h1 class="article-header">Where print fits in responsive web design</h1></a>
+                  <a class="post-link" href="/2012/06/30/pattern-translations.html"><h1 class="article-header">Pattern Translations</h1></a>
               <div class="article-content">
-                <p>A stub<sup id="fnref:p30308855354-1"><a href="#fn:p30308855354-1" rel="footnote">1</a></sup> is the part of a document torn off and kept as a record, it usually resides at the end of documents like cheques, receipts and tickets.</p>
+                <p>We are accustomed to the phrase &#8220;design patterns&#8221; which encompasses an established solution to a design problem consisting of purpose, function and appearance. There are lots of libraries cataloging these solutions to help designers and developers make sensible decisions when designing and building a product.</p>
 
-<p>I can&#8217;t think of a more apt description of this handy little technique I am about to share with you to show you how I would approach <strong>print styles</strong> in responsive projects.</p>
+<p>Two years ago Ethan Marcotte introduced <a href="http://www.alistapart.com/articles/responsive-web-design/" title="A List Apart: Articles: Responsive Web Design">Responsive Web Design</a>, which has become the biggest movement on the web since The Web Standards movement. With Responsive Web Design we changed the way we make websites, our tools remain largely the same but our approach is different.</p>
 
-<p>Print layouts are limiting. There isn&#8217;t much you can do in the sense of advanced layouts, even floats can cause problems. For print it&#8217;s a matter of <strong>reducing the visual noise</strong>, <strong>extracting the content</strong> and determining useful supplementary information.</p>
+<p>At a component level I believe we are still learning the ropes. A design pattern established for one device may not translate so well for another. It&#8217;s easy when designing and building responsively to ignore design pattern functionality problems lost in translation and concentrate solely on layout issues. For example a large multicolumn dropdown built for navigating multiple sections within a site may provide a good user experience on a desktop machine - it may translate poorly on smaller screens and harm the user experience.</p>
 
-<p>Lucky for us if we are developing from a mobile first standpoint we can involve print styles at this level too so that most of our layout resets for the print media type are already taken care for us before horizontal layout occurs.</p>
+<p><img src="http://f.cl.ly/items/1T2u1k0435123S2Y3S2z/Untitled.png" alt="http://f.cl.ly/items/1T2u1k0435123S2Y3S2z/Untitled.png"/></p>
 
-<pre><code>&lt;link rel="stylesheet" href="css/global.css" media="all"&gt;
-&lt;link rel="stylesheet" href="css/layout.css" media="all and (min-width: 33.236em)"&gt;
-&lt;!-- Floats and horizontal layout techniques live within layout.css where there is room, global.css contains all styles apart from horizontal layout and any adjustments for large contexts --&gt;
-</code></pre>
+<p>Another example would be the lightbox design pattern. The purpose of a lightbox is to display a larger image corresponding to the selected thumbnail version while keeping the user on the same page instead of linking directly to a page showing the full image. Again, there are an abundance of solutions for solving this problem but the vast majority of existing patterns translate poorly to smaller displays. In fact you may argue that a lightbox shouldn&#8217;t even exist on small displays, the image may already be displayed at full width, and where do you go from there on a narrow viewport? These are the questions we need to ask ourselves when translating design patterns across devices and viewports.</p>
 
-<p>I’m going to generalize for a moment: mobile first <em>layouts</em> are mostly full-width blocks that contain the full set of styles (minus horizontal layout specific styles like floats and widths) with a harmonious vertical rhythm. When making a print stylesheet, we usually cancel floats, reset widths and hide the unnecessary interactive elements like navigation and video. The floats and widths (generally) aren&#8217;t set in our global stylesheet so it makes perfect sense for a print media query to live at this level, so at the <strong>bottom of your single column stylesheet</strong>, you could have:</p>
+<p>We should challenge our current arsenal of patterns, ask difficult questions of them - how will this work on a narrow screen? On a huge screen? A TV? A touch screen? For a user with low bandwidth? I try to ask these questions at the wireframing stage so I can quickly test what works and what doesn&#8217;t, then refine and iterate. Even with a <a href="http://www.lukew.com/ff/entry.asp?933" title="LukeW | Mobile First">Mobile First</a> mentality I found that you still need foresight to cover all eventualities - planning, documenting<sup id="fnref:p26207088124-1"><a href="#fn:p26207088124-1" rel="footnote">1</a></sup> and getting sign-off on your pattern behaviours pays off so you have a reference for testing and controlling project scope.</p>
 
-<pre><code>/* Print stub */
+<p>We are dealing with an entirely different beast in that we are building experiences that users will be touching with their bare hands - there is <strong>nothing</strong> between them and the interface. We need to ensure our tried and tested design patterns translate appropriately for all scenarios so that we can build a new library of responsive patterns that will assist us in making great things for the web. Don&#8217;t be afraid to hack or invent, re-invent and re-invent again.</p>
 
-@media only print {
-    header, footer, nav, video, .etc, .and-so-forth {
-        display: none;
-    }
-}
-</code></pre>
-
-<p>Then you would change how you reference your stylesheets in HTML by changing the media type referencing your CSS file for layouts greater than a single column to this:</p>
-
-<pre><code>&lt;link rel="stylesheet" href="css/global.css" media="all"&gt;
-&lt;link rel="stylesheet" href="css/layout.css" media="screen and (min-width: 33.236em)"&gt;
-&lt;!-- changed media="all and.." to media="screen and..." so when printing, the device won't look in layout.css for print styles --&gt;
-</code></pre>
-
-<p>For more fine grain control over the quality over printed material from your project, you can make use of <a href="http://www.w3.org/TR/css3-mediaqueries/#resolution">print media query values</a> to map styles to printers with certain levels of detail:</p>
-
-<pre><code>@media print and (min-resolution: 300dpi) {
-    /* Styles for printers with a print resolution greater than 300 dots per inch */
-}
-</code></pre>
-
-<p>Putting your print styles at the bottom of your single column stylesheet means you are only pruning the styles set at a this level before horizontal layouts occur meaning they are will be <strong>quicker to produce</strong>, <strong>easier to maintain</strong> and <strong>lightweight</strong>. Responsive web design has a knack for traversing mediums, lets take advantage of that.</p>
-
-<p><a href="http://static.tumblr.com/jdwzxqr/yN4mohbb0/print.jpg" class="cover" data-credit="© Tom Garnett" data-link="http://www.flickr.com/photos/fatedenied"></a></p>
+<p><a href="http://static.tumblr.com/jdwzxqr/QcPmohbo0/pattern.jpg" class="cover" data-credit="© Ashleigh Jarvis" data-link="http://www.flickr.com/photos/50366743@N06"></a></p>
 
 <div class="footnotes">
-<hr><ol><li id="fn:p30308855354-1">
-<p>Ironically if this short article resided on Wikipedia, it would be classed as a stub <a href="#fnref:p30308855354-1" rev="footnote">↩</a></p>
+<hr><ol><li id="fn:p26207088124-1">
+<p>I find it helps to allow this documentation to evolve with the project. Locking it down at a wireframing stage can lock you into building functionality you later realise doesn&#8217;t work during prototyping or with the content. <a href="#fnref:p26207088124-1" rev="footnote">↩</a></p>
 </li>
 
 </ol></div>

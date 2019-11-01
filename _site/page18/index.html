@@ -58,34 +58,46 @@
           <article class="marginBottom-l">
                   <p class="date"><time>
                     
-                    October
-                    8th, 2014
+                    August
+                    1st, 2014
                   </time></p>
 
-                  <a class="post-link" href="/2014/10/08/a-silent-web.html"><h1 class="article-header">A silent web</h1></a>
+                  <a class="post-link" href="/2014/08/01/how-i-test-type-and-layout.html"><h1 class="article-header">How I test type and layout</h1></a>
               <div class="article-content">
-                <p>Sometime during the last decade the web fell silent. There was a time when Flash-based websites with autoplaying background music were commonplace and the Internet felt like a lively, noisy place to be.</p>
+                <p>I thought I&#8217;d elaborate on my testing strategy that I introduced during a talk I gave recently for <a href="http://www.typecast.com/seminars">Typecast&#8217;s seminar series</a>. I described how I use two different testing methods for typography and responsive layouts.</p>
 
-<p>Fast forward to the present day and websites have turned quiet apart from certain media elements like video where the user can give explicit permission to play.</p>
+<p>Both are two very different facets of the same overall system and subsequently require different test conditions. In essence, I test typography on devices and I test layout in the browser.</p>
 
-<p>Whilst I believe this is better than websites that continuously sing at the user on an autoplaying loop, I think we maybe went too far in the condemnation of <em>all</em> forms of audio on the web.</p>
+<h2>Mobile devices aren&#8217;t great for layout testing</h2>
 
-<p>Consider audio as component of the user interface for a moment: what&#8217;s wrong with using a sound like pips to represent hovering on menu options?</p>
+<p>Device stands may look pretty on your desk, but they&#8217;re not going to cover all the possible states of a responsive layout. In fact, testing layouts purely on a set of devices is no different than designing for a set of predefined weights and heights — devices let you see how a layout will act at a particular size, but that&#8217;s the only size you&#8217;ll see on that screen<sup id="fnref:p93444774181-1"><a href="#fn:p93444774181-1" rel="footnote">1</a></sup>.</p>
 
-<h2>Advantages</h2>
+<p>This is why I do the majority of my layout testing in the browser. A browser will let you see all the in-between states that a set of devices won&#8217;t let you see. Expanding and collapsing the browser window from the small compressed state to an uncompressed wide state like an accordion allows you to see your elements actively respond and helps identify any potential gaps or problem areas.</p>
 
-<ul><li>Potentially good for accessibility where blind and partially sighted users might struggle to see a hover state</li>
-<li>The sound could form part of the look and <em>feel</em> of the experience</li>
-<li>And additionally it can help with other facets of the experience like helping a user feel a sense of achievement after completing a task</li>
-</ul><h2>Disadvantages</h2>
+<p>Of course the actual device will show you the definitive state for that particular device - but what about every other permutation of the responsive layout?</p>
 
-<ul><li>The user is accustomed to a quiet web and the sound could come as an unwelcome shock</li>
-<li>From an accessibility standpoint - there would need to be some sort of standard to indicate hover states which could confuse blind and partially sighted users</li>
-</ul><p>When audio was mainstream on many websites it was during a time where volume controls were disconnected from the device - potentially hidden on part of a CRT monitor or detached on external speakers. This was likely a source of frustration where you would have to move from a comfortable position to turn down the volume. Today we are well accustomed to use devices with mute buttons when we don&#8217;t want our apps to make any noise - the same applies to desktop for the most part where mute buttons are part of the keyboard functions. Audio has a definitive off switch should the user choose to opt out of all audio, and I&#8217;d wager that most folks know that if they want their device to be quiet - they&#8217;ll put it in silent mode (or mute for laptops and desktops).</p>
+<p>The desktop browser helps paint the complete layout picture. No modern mobile browser gets the basic fundamentals of CSS layout so wrong that it requires you to refresh and investigate every layout change[^1].</p>
 
-<p>Why should apps get all the fun of satisfying interface chirps and clicks when flowing through the experience? What if the games industry decided to go quiet in regards to their main menu systems? Both industries are trying achieve the same goal: to facilitate the user in completing a task. The game and app industries have audio as an integral part of UX whereas our industry opted to avoid it in recent years.</p>
+<h2>Desktop browsers aren&#8217;t great for testing type</h2>
 
-<p>I think we wrote off audio too soon.</p>
+<p>Where a desktop browser excels at showing you the difference in screen sizes, shapes and dimensions - it fails to account for the potential differences in type rendering between browsers and operating systems. A single browser window can only show you how type renders for that individual display and configuration.</p>
+
+<p>The vast array of different mobile device displays requires a testing setup that caters for the variance in different screen densities, resolutions and screen types to give an indication of how type renders in these different environments.</p>
+
+<p>An electronic ink display might render the type blurry compared to the display of a crisp high density screen. This is where a broad set of devices comes in handy - it pays to stress test your fonts across the often unforgiving and varied display properties of mobile devices. A single desktop browser won&#8217;t let you know about any of these potential issues.</p>
+
+<h2>The best of both worlds</h2>
+
+<p>I still reference mobile browsers during layout testing from time to time - functional testing is a different matter where I test heavily on all devices - but primarily my <em>layout</em> testing happens in the browser and my type testing happens on mobile displays.</p>
+
+<p>The speed and efficiency of scaling a desktop browser window from small to large for building <em>truly</em> responsive layouts met with a set of devices that represent as much of the potential difference in display types is the sweet spot that works for me.</p>
+
+<div class="footnotes">
+<hr><ol><li id="fn:p93444774181-1">
+<p>Apart from different orientations if the device allows it. <a href="#fnref:p93444774181-1" rev="footnote">↩</a></p>
+</li>
+
+</ol></div>
 
               </div>
             </article>
