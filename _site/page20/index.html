@@ -58,39 +58,79 @@
           <article class="marginBottom-l">
                   <p class="date"><time>
                     
-                    December
-                    19th, 2013
+                    July
+                    10th, 2014
                   </time></p>
 
-                  <a class="post-link" href="/2013/12/19/view-full-site-the-worst-anti-pattern.html"><h1 class="article-header">View full site - the worst anti-pattern</h1></a>
+                  <a class="post-link" href="/2014/07/10/emmets-hidden-power-features.html"><h1 class="article-header">Emmet's hidden power features</h1></a>
               <div class="article-content">
-                <p>The “view full site” link has fostered a negative behavioural trait. When faced with problems on a dedicated mobile site users have a tendency to look for the full site link like some sort of safety net.</p>
+                <p><a href="http://emmet.io/">Emmet</a> (formerly known as Zen Coding) is a plugin for text editors helping you create CSS and HTML faster by using abbreviations to write common values saving ridiculous amounts of time along the way.</p>
 
-<p>How often have you arrived on a broken link on a dedicated mobile site from a search engine and looked for the full site link in an attempt to solve the problem? It’s instinctive among web savvy people, but I have witnessed people outside of our industry perform the same behavioural trait in a similar unconscious manner.</p>
+<p>There are heaps of really useful features alongside Emmet&#8217;s primary text-expanding function. Here are a few of the hidden gems that I frequently use when coding<sup id="fnref:p91335536701-1"><a href="#fn:p91335536701-1" rel="footnote">1</a></sup>.</p>
 
-<p>The sad truth is “view full site” can also be used by web developers as a safety net if the small screen experience isn’t good enough. The pinch-to-zoom fallback is there when a poor implementation fails and lazy web developers capitalise on the user’s newfound habits of correcting such website issues by clicking this magical link.</p>
+<h2>Inline Calculation</h2>
 
-<p>This leaves responsive designers in a difficult position. We are already on the back foot when the user arrives at our lovingly tailored responsive experience — we have to convince the user that our responsive design <strong>is</strong> the full experience after years of being misled to think they are getting half a product by dedicated mobile sites overzealous in removing content and stripping back features</p>
+<p>Emmet has a built-in calculator which allows you to solve equations directly in your code. I use this daily to solve EM values in CSS, particularly for nested EM values simply by pressing<sup id="fnref:p91335536701-2"><a href="#fn:p91335536701-2" rel="footnote">2</a></sup><kbd>Cmd</kbd> <kbd>Shift</kbd> <kbd>Y</kbd> beside an equation like: 24/16 (desired pixel value/base pixel value).</p>
 
-<p>Part of the problem is that from the average user’s perspective a dedicated mobile site may not look too different to a responsive site on the surface. If they run into problems with our design or perhaps they expected to see some content that is missing because it was simply overlooked, do they feel misled by default?</p>
+<p>You can also chain this with abbreviations, so typing: <code>mb24/16</code> and pressing <kbd>Cmd</kbd> <kbd>Shift</kbd> <kbd>Y</kbd> then <kbd>tab</kbd> would output: <code>margin-bottom: 1.5em</code>.</p>
 
-<p>So how do we fix this problem? By continuing to fight the good fight with ubiquitous experiences and earning back the user’s trust over time — it’s not going to be a quick fix. Bad habits take time to eradicate. The great content swindle needs to stop.</p>
+<h2>Jump to Matching Pair</h2>
+
+<p>Sometimes when coding HTML I might find a closing tag and it&#8217;s not always quick and easy to trace back to where the opening tag exists. Pressing <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>T</kbd> when the cursor is in the closing (or opening) tag jumps to the opening (or closing) tag pair.</p>
+
+<h2>Code comments</h2>
+
+<p>To prevent running into the situation in the previous tip, I recommend placing comments beside your closing tags. But writing the class name of the element for a second time and wrapping it in comments can take up time, and it&#8217;s extra effort that won&#8217;t be beneficial until you run into scenarios where you need to revisit that code, so it&#8217;s often forgotten about or left out completely.</p>
+
+<p>Thankfully Emmet makes it easier to write comments beneath closing tags by adding a tiny snippet to the end of an abbreviation. Typing: <code>.container&gt;ul&gt;li*5&gt;a|c</code> expands to:</p>
+
+<pre><code>&lt;div class="container"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- /.container --&gt;</code></pre>
+
+<p>So writing comments where elements close is as easy as writing <code>|c</code>.</p>
+
+<h2>Convert image to Data URI</h2>
+
+<p>One of the most underused features of Emmet is it&#8217;s built-in ability to convert images to data:URI schemes. Using a data:URI instead of linking to an external image saves an extra HTTP request which ultimately improves the performance of your site by reducing latency.</p>
+
+<p>To convert an image to a data:URI, place your cursor in the image tag and press <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>D</kbd>.</p>
+
+<hr><p>Emmet can be as powerful as you want it to be. It&#8217;s worth using for its text-expansion capabilities alone saving huge amounts of coding time, but beyond that lies a very powerful suite of development tools.</p>
+
+<div class="footnotes">
+<hr><ol><li id="fn:p91335536701-1">
+<p>This article assumes you are familiar with Emmet. If you haven&#8217;t tried it out yet <a href="http://emmet.io/">you absolutely must</a>. <a href="#fnref:p91335536701-1" rev="footnote">↩</a></p>
+</li>
+
+<li id="fn:p91335536701-2">
+<p>The keyboard shortcuts shown here work for my Mac installation of Sublime Text and Emmet. From what I can tell they may differ between installations, Windows installs will obviously have different shortcuts too. Bring up the Go To Anything menu and start typing the name of the command you wish to use to see the shortcut key. <a href="#fnref:p91335536701-2" rev="footnote">↩</a></p>
+</li>
+
+</ol></div>
 
               </div>
             </article>
             <div class="sidebar">
     <h4 class="sidebar__header">Start Here</h4>
     <ul class="links">
+        <li><a href="http://jordanm.co.uk/2019/07/30/intentional-and-emergent-design-systems.html">Intentional and
+                Emergent Design Systems &rarr;</a></li>
         <li><a href="http://jordanm.co.uk/2018/07/30/design-laws-of-nature.html">Design Laws in Nature &rarr;</a></li>
         <li><a href="http://jordanm.co.uk/2019/02/20/experience-gaps.html">Experience Gaps &rarr;</a></li>
-        <li><a href="http://jordanm.co.uk/2018/06/06/intro-ocean-ux.html">Mapping User Experiences to Individuals Using
-                the Big 5 OCEAN Personality Traits &rarr;</a></li>
     </ul>
     <hr>
     <h4 class="sidebar__header">About</h4>
     <p>Co-founder &amp; Director of Design at <a href="https://www.dawsonandrews.com">Dawson Andrews</a>. A product
         design studio in Belfast.</p>
-    <p>He is interested in exploring the intersection of product design, psychology, aesthetics, and economics. Value
+    <p>Interested in exploring the intersection of product design, psychology, aesthetics, and economics. Value
         over vanity.</p>
     <hr>
     <h4 class="sidebar__header">Newsletter</h4>

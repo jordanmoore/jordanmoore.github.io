@@ -6,17 +6,127 @@
 </description>
     <link>http://jordanm.co.uk/</link>
     <atom:link href="http://jordanm.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 07 Feb 2020 17:33:22 +0000</pubDate>
-    <lastBuildDate>Fri, 07 Feb 2020 17:33:22 +0000</lastBuildDate>
+    <pubDate>Fri, 07 Feb 2020 21:58:24 +0000</pubDate>
+    <lastBuildDate>Fri, 07 Feb 2020 21:58:24 +0000</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
+        <title>Intentional and Emergent Design Systems II</title>
+        <description>&lt;p&gt;I believe Robin Rendle’s &lt;a href=&quot;https://www.robinrendle.com/essays/systems-mistakes-and-the-sea&quot;&gt;Systems, Mistakes, and the Sea&lt;/a&gt; was a catalyst for several enjoyable articles on design systems since the beginning of the year. Notably Jeremy Keith’s &lt;a href=&quot;https://adactio.com/journal/16342&quot;&gt;Web standards, dictionaries, and design systems&lt;/a&gt;, Frank Chimero’s &lt;a href=&quot;https://frankchimero.com/blog/2020/gardening-vs-architecture/&quot;&gt;Gardening vs Architecture&lt;/a&gt;, a subsequent, deeper dive in Jeremy’s &lt;a href=&quot;https://adactio.com/journal/16369&quot;&gt;Architects, gardeners, and design systems&lt;/a&gt;, and Dave Rupert’s &lt;a href=&quot;https://daverupert.com/2020/01/the-web-is-industrialized-and-i-helped-industrialize-it/&quot;&gt;The Web is Industrialized and I helped industrialize it&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;What follows is a contribution to this discussion. I’m still unpacking it but it feels timely to push some thoughts out into the open whether they’re ready or not.&lt;/p&gt;
+
+&lt;p&gt;I believe that we are collectively tapping into something important within the design system discourse. Something felt, but difficult to uncover and put into words. However, it is gaining shape with some common themes around the role of &lt;strong&gt;humans and machines&lt;/strong&gt;, &lt;strong&gt;order and chaos&lt;/strong&gt;, &lt;strong&gt;industry and liberty&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’m going to dive deeper into the conversation through the framing I believe helps me most by elaborating on &lt;a href=&quot;http://jordanm.co.uk/2019/07/30/intentional-and-emergent-design-systems.html&quot;&gt;Intentional and Emergent Design Systems&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;reach-amp-scope&quot;&gt;Reach &amp;amp; Scope&lt;/h2&gt;
+
+&lt;p&gt;As far as I am aware, there is no collective understanding of the desirable reach of a design system. The intentional camp believes that everything must come from the system. By default, the system permeates the entire product.&lt;/p&gt;
+
+&lt;p&gt;In an intentional design system, there is no room for chaos. Only order. If something doesn’t fit the system it doesn’t belong in the system. If something cannot be born out of the system, it will not belong in the system. Intentional systems are authoritarian by nature.&lt;/p&gt;
+
+&lt;p&gt;Their liberal counterpart, the emergent design system, begins with creativity and chaos deriving patterns for the system later. Decisions start from user outcomes (the sum of all parts) and work backwards to find reusable parts. It’s hard to quantify the reach of emergent systems. It may cover a small amount of the product, and it may cover a lot of the product. It’s not all-encompassing. There is likely a correlation between the number of unique user problems encountered and the overall coverage of the system.&lt;/p&gt;
+
+&lt;p&gt;The scope of an intentional design system is large by default and requires some degree of conjectural bloat. When components are front-loaded into the process you get wastage as a byproduct. In contrast, emergent design systems require &lt;a href=&quot;https://frankchimero.com/blog/2020/gardening-vs-architecture/&quot;&gt;gardening&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-sunk-cost-fallacy-of-design-systems&quot;&gt;The Sunk Cost Fallacy of Design Systems&lt;/h2&gt;
+
+&lt;p&gt;An intentional design system assumes that your design work is done. You can maintain it, of course, but making changes to the system becomes a bureaucratic process.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We’ve industrialized design and are relegated to squeezing efficiencies out of it through our design systems. All CSS changes must now have a business value and user story ticket attached to it.&lt;/p&gt;
+
+  &lt;p&gt;Dave Rupert — &lt;a href=&quot;https://daverupert.com/2020/01/the-web-is-industrialized-and-i-helped-industrialize-it/&quot;&gt;The Web is Industrialized and I helped industrialize it&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I remember coming up against design bureaucracy during my time working as part of a large scale product team. We were faced with many new user problems in need of solutions. The team were hellbent on shaping the solution to the problem out of the prebuilt pieces of the design system. Reasoning by analogy. The method of thinking that rarely leads to new solutions for new problems. First-principles reasoning was deemed too expensive.&lt;/p&gt;
+
+&lt;p&gt;I was met with arguments like “That means we’re going to have to create a new rule for this component, we’ll have to get internal sign-off, the developers will have to invest extra effort, it’ll need to go through testing, do you seriously want to go through all those steps?”&lt;/p&gt;
+
+&lt;p&gt;It was clear that we had been designed into a corner by our design system or at least our organisation’s ideology. What if our initial assumptions were wrong? What if we didn’t have the pieces to address these new problems?&lt;/p&gt;
+
+&lt;p&gt;I noticed a pattern. If a problem could be easily solved, low-effort, low value, or if it had already been solved - defer to the system. Watch out for when the system pushes back. If the design system pushes back, it’s time for human intervention and invention.&lt;/p&gt;
+
+&lt;p&gt;Useful questions to ask when the system pushes back:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Do we need to amend the system?&lt;/li&gt;
+  &lt;li&gt;Is it a unique case that should sit outside the system?&lt;/li&gt;
+  &lt;li&gt;Is it likely to reoccur in different variations?&lt;/li&gt;
+  &lt;li&gt;Is it something that &lt;strong&gt;should&lt;/strong&gt; be governed by a design system?&lt;/li&gt;
+  &lt;li&gt;Does the system bake in more assumptions than a different approach? (Occam’s Razor is a good guide for software decisions)&lt;/li&gt;
+  &lt;li&gt;Does building the best thing involve building it out of the things we’ve already built? Or does it require building something new?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can tell what type of design system you’re working with if it biases solutions towards pre-existing components or if the system gives you the freedom to invent.&lt;/p&gt;
+
+&lt;h2 id=&quot;leaving-room-for-creativity&quot;&gt;Leaving Room for Creativity&lt;/h2&gt;
+
+&lt;p&gt;The majority of systems I hear people advocate for &lt;em&gt;appear&lt;/em&gt; to subscribe to intentional design systems. Because of this, one of my overriding fears is that design systems are designing designers out of the picture. For years we’ve pushed against the idea of design as a commodity, yet here we are commoditising design down to atomic levels.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Sometimes you load up a show on Netflix or a song on Spotify and you can feel the algorithm in it.”&lt;/p&gt;
+
+  &lt;p&gt;Frank Chimero — &lt;a href=&quot;https://frankchimero.com/blog/2020/gardening-vs-architecture/&quot;&gt;Gardening vs Architecture&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If I could give an artificial intelligence the keys to fully automating modern design, I’d point it towards an intentional design system. An emergent approach leaves room for mystery, chaos, intuition, creativity and expression&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; - the unpredictable, unique, innately human elements.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Do design systems limit creativity?&lt;/strong&gt; The answer rests on what type of system you subscribe to.&lt;/p&gt;
+
+&lt;p&gt;The worst incarnation of a design system designs designers out of the picture. If I were building an AI tool to displace designers, I’d point them towards an all-encompassing, intentional design system. I fear that we’re blindly running towards automation and we’re giving the algorithms the template our jobs. It’s not hard to imagine a world where No Code technology complements No Design. By contrast, the best incarnation of a design system leaves room for creativity, invention, the &lt;strong&gt;human&lt;/strong&gt; elements.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Jeremy Keith recently added colour to the idea of intentional and emergent design systems drawing ideological comparisons with language prescriptivists and language descriptivists.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Language prescriptivists attempt to define rules about what’s right or right or wrong in a language. Rules like “never end a sentence with a preposition.” Prescriptivists are generally fighting a losing battle and spend most of their time bemoaning the decline of their language because people aren’t following the rules.&lt;/p&gt;
+
+  &lt;p&gt;Language descriptivists work the exact opposite way. They see their job as documenting existing language usage instead of defining it. Lexicographers—like Merriam-Webster or the Oxford English Dictionary—receive complaints from angry prescriptivists when dictionaries document usage like “literally” meaning “figuratively”.&lt;/p&gt;
+
+  &lt;p&gt;Jeremy Keith - &lt;a href=&quot;https://adactio.com/journal/16342&quot;&gt;Web standards, dictionaries, and design systems&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;When I first read the article, I quietly took issue with where Jeremy’s interpretation landed. The reasoning up until the ending resonated, but I believed his conclusion put intentional design systems on the side of beauty at odds with the emergent design systems - accurate but not beautiful.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I think we can learn from the worlds of web standards and dictionaries here. A prescriptive approach might give you a beautiful design system, but if it doesn’t reflect the actual product, it’s fiction. A descriptive approach might give a design system with imperfections and annoying flaws, but at least it will be accurate.&lt;/p&gt;
+
+  &lt;p&gt;I think it’s more important for a design system to be accurate than beautiful.&lt;/p&gt;
+
+  &lt;p&gt;Jeremy Keith - &lt;a href=&quot;https://adactio.com/journal/16342&quot;&gt;Web standards, dictionaries, and design systems&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;How can front-loaded design systems result in more beautiful products than design systems that begin with the end in mind and work backwards?&lt;/p&gt;
+
+&lt;p&gt;Then I realised the flaw in my thinking. Jeremy was describing the design system &lt;em&gt;itself&lt;/em&gt;, not the fruits of the system. (The irony of my flawed thinking further highlights my own biases towards the emergent end of the spectrum!)&lt;/p&gt;
+
+&lt;p&gt;I feel that one further elaboration is required: an intentional design system can create beautiful design systems, an emergent design system can be created from beautiful products.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;I used to poke fun at the websites of the early 2010s claiming to be “handcrafted”. Now I’m thinking they were on to something. Perhaps “handcrafted” was the wrong adjective, but I think they were trying to describe something else. Something made through more effort, deliberateness, craft, and creativity. These experiences placed more of an emphasis on the importance of aesthetics, they spoke to human ideals such as affordance, familiarity, and metaphor. Flat design lends itself towards low-effort commoditisation and malleability in a design system - perhaps leading to the ideology of “everything that can be systemised, will be systemised” &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 07 Feb 2020 00:00:01 +0000</pubDate>
+        <link>http://jordanm.co.uk/2020/02/07/intentional-and-emergent-design-systems-ii.html</link>
+        <guid isPermaLink="true">http://jordanm.co.uk/2020/02/07/intentional-and-emergent-design-systems-ii.html</guid>
+        
+        
+      </item>
+    
+      <item>
         <title>Intentional and Emergent Design Systems</title>
-        <description>&lt;p&gt;There appears to be two competing approaches in designing design systems. I’m going to call these approaches intentional design systems and emergent design systems to create a clear distinction between both.&lt;/p&gt;
+        <description>&lt;p&gt;There are two competing approaches in designing design systems. I’m going to call these approaches intentional design systems and emergent design systems to create a clear distinction between both.&lt;/p&gt;
 
 &lt;h3 id=&quot;an-intentional-design-system&quot;&gt;An intentional design system&lt;/h3&gt;
 
-&lt;p&gt;This appears to be the default methodology in design circles. The flavour and framework may vary, but the approach generally consists of: design system first → design/build solutions.&lt;/p&gt;
+&lt;p&gt;This seems to be the default methodology in design circles. The flavour and framework may vary, but the approach generally consists of: design system first → design/build solutions.&lt;/p&gt;
 
 &lt;p&gt;I have a few concerns with this way of working with design systems. Front-loading design and/or build with the pieces you believe you’ll eventually need to arrive at a solution creates a limited set of outcomes. Any attempt to create more pieces in anticipation of generating a greater number of outcomes results in conjectural bloat – a cost offset to the user paid for in unnecessary data and time.&lt;/p&gt;
 
@@ -542,37 +652,6 @@ Every technological artefact that is used will mediate human actions, and every 
         <pubDate>Sun, 20 Aug 2017 10:12:00 +0100</pubDate>
         <link>http://jordanm.co.uk/2017/08/20/released-wipe-screen.html</link>
         <guid isPermaLink="true">http://jordanm.co.uk/2017/08/20/released-wipe-screen.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Thoughts on human vs AI narration</title>
-        <description>&lt;p&gt;My Instapaper feed looks a lot like my Steam account. I have gathered many items with the good intention of making use of them on a rainy day, but they eventually gather dust on their virtual shelves.&lt;/p&gt;
-
-&lt;p&gt;Occasionally I’ll try and blast through a set of articles that I considered at one point to have potential value to me. When I’m strapped for time I’ll try Instapaper’s “speak” feature, which is effectively a shortcut to iOS’ dictation feature. I usually end up cancelling the dictation after it reads a few paragraphs. Perhaps I forget how bad it is or maybe I’m expecting some advances in the technology since I last used it that make it sound more natural and human-like.&lt;/p&gt;
-
-&lt;p&gt;With AI being applied to more and more tasks, fields and entire industries I notice how far it falls short of key human traits such as empathy and storytelling, and empathy within storytelling for that matter. We have thousands of years of experience on the robots when it comes to communicating oral wisdom from campfires and passing ideas down through generations.&lt;/p&gt;
-
-&lt;p&gt;AI narration is improving, however, services like Narro offer bots with various dialects that have fairly accurate speech patterns and rhythm. But ultimately the narration ends up having a passive effect as AI hasn’t managed to emulate the human capability of captivating an audience to deliver a message. Robots rely on punctuation like a musical score to inform the pace at which they communicate text, though we lack punctuation for instinctive human storytelling tools like drama and the pause to allow certain ideas to simmer in the minds of the listener. This is why uninteresting speakers often fail to communicate their idea — the audience becomes disengaged from the message.&lt;/p&gt;
-
-&lt;p&gt;On a relevant note, another key human trait in storytelling is context. With a contextual understanding of the topic, humans know when to employ the storytelling tools mentioned previously. Consider this example from a recent opinion piece in the New York Times about the dangers of relying on Google rather than investing in deep understanding:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Google is good at finding information, but the brain beats it in two essential ways. Champions of Google underestimate how much the meaning of words and sentences changes with context. Consider vocabulary. Every teacher knows that a sixth grader, armed with a thesaurus, will often submit a paper studded with words used in not-quite-correct ways, like the student who looked up “meticulous,” saw it meant “very careful,” and wrote “I was meticulous when I fell off the cliff.”&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;https://www.nytimes.com/2017/05/19/opinion/sunday/you-still-need-your-brain.html&quot;&gt;From You Still Need Your Brain&lt;/a&gt; by Daniel T. Willingham&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;A classic example of schoolchildren discovering a tool like a thesaurus and employing the technology incorrectly. With AI dictation we are cutting out the middleman leaving it open for potential missteps like this not necessarily with words, but the in the power of those words.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;P.S If you are looking for a startup idea, please feel free to design a subscription service with great human storytellers willing to read my Instapaper feed for me, thanks!&lt;/p&gt;
-</description>
-        <pubDate>Sun, 04 Jun 2017 10:12:00 +0100</pubDate>
-        <link>http://jordanm.co.uk/2017/06/04/thoughts-on-human-vs-ai-narration.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2017/06/04/thoughts-on-human-vs-ai-narration.html</guid>
         
         
       </item>

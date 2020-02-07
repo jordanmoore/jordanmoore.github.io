@@ -2,8 +2,8 @@
 layout: post
 title: Design Laws in Nature
 date: '2018-07-30T00:00:01+00:00'
-summary: Writing my todo list for the day is a key part of my morning routine and essential to state setting and priming
-label: Tactics &amp; Habits
+
+
 ---
 
 Living in Ireland I have become accustomed to rain as our weather system's default setting. Umbrellas are dispensable in the Moore family as wind and rain have proved too worthy an opponent for many a shelter device across varying price brackets. When Managing Director of Their Capital, [Eric Weinstein, spoke to Tim Ferris](https://tim.blog/2016/01/13/eric-weinstein/) about the lack of innovation in umbrella design, hinting that the answer might be in Origami or perhaps nature, my interest piqued and sent me down a rabbit hole.

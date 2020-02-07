@@ -2,8 +2,8 @@
 layout: post
 title: Mapping User Experiences to Individuals Using the Big 5 OCEAN Personality Traits
 date: '2018-06-06T09:12:00+00:00'
-summary: Writing my todo list for the day is a key part of my morning routine and essential to state setting and priming
-label: Tactics &amp; Habits
+
+
 ---
 
 The Big Five Personality Traits, sometimes referred to as the five factor model (FFM), is a model commonly used by psychologists to describe individual personalities. The original model was constructed by Ernest Tupes and Raymond Christal in 1961[^1] but it didn't reach mainstream academic audiences until the 1980s and early 90s.

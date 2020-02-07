@@ -2,8 +2,8 @@
 layout: post
 title: Experience Gaps
 date: '2019-02-20T00:00:01+00:00'
-summary: Writing my todo list for the day is a key part of my morning routine and essential to state setting and priming
-label: Tactics &amp; Habits
+
+
 ---
 
 I hold a special place in my heart for Pearl Jam’s Yield album, released in 1998. It’s a remarkable album, easily overlooked. At first glance, the cover is pretty forgettable and not unlike something you would find scrolling through Unsplash, searching for the word ‘road’. Yet I’ve heard fellow fans gushing about how the yield sign in the middle of a road that has no junction to yield to and no traffic to give way to is actually a message saying to just yield to experience and let go.

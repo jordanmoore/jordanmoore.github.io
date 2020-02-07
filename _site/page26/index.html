@@ -58,45 +58,101 @@
           <article class="marginBottom-l">
                   <p class="date"><time>
                     
-                    May
-                    6th, 2013
+                    June
+                    17th, 2013
                   </time></p>
 
-                  <a class="post-link" href="/2013/05/06/beyond-the-canvas.html"><h1 class="article-header">Beyond the Canvas</h1></a>
+                  <a class="post-link" href="/2013/06/17/building-for-content-choreography-using-flexbox.html"><h1 class="article-header">Building for Content Choreography using Flexbox</h1></a>
               <div class="article-content">
-                <p>When we design we generally do so in two dimensions — length and width. They are the physical constraints of what our technology is currently capable of. Our dimensional restraints are then realised on the devices used to experience our design.</p>
+                <p>On July 14th 2011 Trent Walton published an article introducing the concept of <a href="http://trentwalton.com/2011/07/14/content-choreography/">Content Choreography</a>. The article opened my mind and made me question some of the limitations we face in how we build responsive experiences. At the time content reordering and reflow hadn&#8217;t been widely explored beyond JavaScript-based solutions and I had been experimenting a lot with flexbox to reorder and arrange items horizontally for <a href="http://www.typecast.com">Typecast&#8217;s</a> UI. When Trent spoke about content stacking, I started to think what was achievable for reordering content along the y-axis in a single column layout.</p>
 
-<p>Beyond the two dimensional screen exists the third dimension (and many other theorised dimensions) — the physical space in which our designs exist beyond the canvas. Here, all sorts of physical parameters affect how a person uses our design.</p>
+<h3>A tale of two syntaxes</h3>
 
-<p>Consider the user&#8217;s physical space around them — perhaps they are lying on their side on the sofa or in bed and holding a mobile device with one hand. Can the design be enjoyed when a user&#8217;s is physically restricted from using two hands? Luke Wroblewski further elaborates on this idea in his <a href="http://www.lukew.com/ff/entry.asp?1664">Testing One Thumb, One Eyeball article</a> detailing the test procedure for Polar.</p>
+<p>The flexible box model landscape has been through a series of fundamental changes since its introduction in 2009. The original syntax for declaring the property in CSS is still recognised in a lot of today&#8217;s popular browsers. The following 3 years brought two significant changes to the syntax mainly around the language used to specify flexbox properties.</p>
 
-<blockquote>
-  <p>If people can get things done in time sensitive, limited dexterity situations, they&#8217;ll be even more efficient when we have their full attention and two-hands focused on our designs.</p>
-</blockquote>
+<p>The flexbox specification has been finalised since <a href="http://www.jordanm.co.uk/2012/04/26/building-with-content-choreography.html">I wrote about using flexbox to tackle content choreography concerns in May 2012</a> so it&#8217;s a good time to revisit the approach. Although the new flexbox syntax has been agreed it has not been widely implemented. Since the spec was settled we have witnessed the release of new mobile operating systems like iOS 6 that boasted numerous updates to Safari - one of which <a href="http://bgr.com/2012/08/06/ios-6-beta-4-change-log-now-available/">refrained from implementing the new syntax</a> and reverted to the old 2009 syntax. At the time of writing it is unclear whether iOS 7 will feature the updated syntax. Android&#8217;s default browser still uses the old syntax although Chrome on Android uses the new syntax like its desktop counterpart. That leaves us in some sort of syntax-purgatory between the final specification and the 2009 syntax.</p>
 
-<p>In a <a href="http://www.lukew.com/ff/entry.asp?1649">separate article</a> Luke details the reach of one thumb with the diagram below to show the considerations for positioning navigation. This is relevant to anything you want people to reach easily, for example if you had a single purpose web app, you might want to position the primary action in the safe zone just like Instagram does with their primary action (take picture).</p>
+<p>Luckily the changes between old and new flexbox won&#8217;t affect how we use it to reorder blocks of content, just how we write the code. Some repetition is required, much like writing vendor prefixes.</p>
 
-<p><figure><img src="http://static.lukew.com/tnav-touch-phones2.png" alt=""/><figcaption>Image from Luke Wroblewski&#8217;s <a href="http://www.lukew.com/ff/entry.asp?1649">Responsive Navigation: Optimizing for Touch Across Devices</a> article</figcaption></figure></p>
+<p>The bottom line is that flexbox <strong>is safe to use on the web today</strong> for content choreography. According to <a href="http://caniuse.com/flexbox">caniuse.com&#8217;s</a> global browser usage statistics 76.52% of users would be able to view a flexbox-based solution to content choreography at the time of writing. 23.48% might seem like a considerable amount of people, but when we break that figure down further it&#8217;s not quite so big. 23.48% takes the desktop versions of Internet Explorer into consideration and we don&#8217;t intend to use this solution that demographic.</p>
 
-<p>Beyond the canvas take into account where the thumb might hover while the device is in use. Sometimes people rest their thumb along the ridge of the hardware while others hover it over a portion of the screen poised to press something. This emphasises the importance of testing with real devices. Real hardware considers space in three dimensions whereas on-screen emulators put themselves into the two dimensional canvas free from physical distractions — it&#8217;s not really representative of the physical world we live in <strong>beyond the canvas</strong>.</p>
+<p>Content choreography using flexbox is most reliable at the <strong>first major breakpoint</strong> (usually in a single column). It&#8217;s also easiest at this level because we are (largely) dealing with moving element blocks around vertically on the y-axis. When we approach content choreography from this angle we can <em>assume</em> most desktop browsers won&#8217;t see our reordered page. Looking again at the browser statistics for flexbox support among mobile browsers only 14.4% of users won&#8217;t see choreographed content.</p>
 
-<p><a href="http://static.tumblr.com/jdwzxqr/Jzvmoh6ie/canvas.jpg" class="cover" data-credit="© Patrick Feller" data-link="http://www.flickr.com/photos/nakrnsm"></a></p>
+<p>I don&#8217;t usually make decisions based on browser statistics, especially project-specific decisions, but for gauging a general sense of browser support for something previously thought of as an edge-case CSS property, I think it&#8217;s worth pointing out that it is as safe to use in this context as something trivial like the text-shadow property.</p>
+
+<h3>A note about screenreaders</h3>
+
+<p>Before we dive into code specifics, we need to talk about accessibility. Screen readers will not read an altered source order changed by flexbox. Instead they will read the original document order which makes for a jarring and confusing experience for users requiring a service like VoiceOver.</p>
+
+<p>Some feel that for this reason it <a href="https://twitter.com/smashingmag/status/335302203218735104">is better to make source order changes in JavaScript</a> rather than CSS although others counter that <a href="https://twitter.com/codepo8/status/335303118982103040">this hinders innovation</a> and screen readers simply must follow our lead in pushing the web forward as a platform.</p>
+
+<p>I am firmly in favour of a CSS-based approach as this is fundamentally a layout change after the effect. Using JavaScript instead of CSS to achieve a layout goal that can otherwise be achieved in CSS feels like a Frankenstein approach. I feel it&#8217;s dragging us back to the dark ages instead of helping our platform mature. If we choose to remain stagnant on issues like this then it would be like encouraging the use of JavaScript for rollover states in 2013. The fact is we have flexbox at our disposal and specced for use in CSS, avoiding it is only going to encourage the makers of screen reading software to do the same.</p>
+
+<h3>A solution for past, present and future</h3>
+
+<p>Now that we have covered the fundamentals, there are a few simple considerations to account for when building with flexbox to achieve content choreography. I have found the following mindset helps:</p>
+
+<ul><li>Start designing and building for mobile first (no-brainer)</li>
+<li>Your DOM order is your <em>definitive</em> order. Build for this order first <em>before</em> addressing content choreography concerns. If you are unsure about your definitive source order, this is the DOM order shown when your layout <strong>has enough space</strong> to show everything you want to show in a sensible hierarchy. </li>
+<li>This requires <strong>foresight</strong> — one of the most difficult skills in a responsive designer&#8217;s arsenal. The DOM order will act as the fallback order on devices with limited screen space and where flexbox doesn&#8217;t work (Opera Mini, Opera Mobile &lt; 12.0 etc). Use content choreography only if your layout <strong>needs</strong> it in your first breakpoint.</li>
+<li>Address the past, present and future devices by using both flexbox syntaxes.</li>
+</ul><p>All things considered the revised flexbox code for a definitive specification looks like something this<sup id="fnref:p53179333055-1"><a href="#fn:p53179333055-1" rel="footnote">1</a></sup>:</p>
+
+<pre>
+<code>
+.container {
+display: -moz-box;
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-moz-box-orient: vertical;
+-webkit-box-orient: vertical;
+-ms-flex-direction: column;
+-webkit-flex-direction: column;
+flex-direction: column;
+}
+
+.nav {
+  -webkit-box-ordinal-group: 1;
+  -moz-box-ordinal-group: 1;
+  -ms-flex-order: 1;
+  -webkit-order: 1;
+  order: 1;
+}
+
+...
+</code>
+</pre>
+
+<p>I have updated the <a href="http://www.jordanm.co.uk/lab/contentchoreography">original demo</a> so it considers the new syntax.</p>
+
+<p>Flexbox is no longer the volatile experimental property it once was, now that we have a final specification in place and widespread support on mobile devices flexbox is a robust solution for content choreography exactly where we want it to be — where space is confined and some layout adjustment is required.</p>
+
+<p><a href="http://static.tumblr.com/jdwzxqr/iZUmoi6mb/newcc.jpg" class="cover" data-credit="© Peter Voerman" data-link="http://www.flickr.com/photos/oudeschool"></a></p>
+
+<div class="footnotes">
+<hr><ol><li id="fn:p53179333055-1">
+<p>Inspiration heavily borrowed from Chris Coyier&#8217;s excellent <a href="http://css-tricks.com/using-flexbox/">Using Flexbox article</a> <a href="#fnref:p53179333055-1" rev="footnote">↩</a></p>
+</li>
+
+</ol></div>
 
               </div>
             </article>
             <div class="sidebar">
     <h4 class="sidebar__header">Start Here</h4>
     <ul class="links">
+        <li><a href="http://jordanm.co.uk/2019/07/30/intentional-and-emergent-design-systems.html">Intentional and
+                Emergent Design Systems &rarr;</a></li>
         <li><a href="http://jordanm.co.uk/2018/07/30/design-laws-of-nature.html">Design Laws in Nature &rarr;</a></li>
         <li><a href="http://jordanm.co.uk/2019/02/20/experience-gaps.html">Experience Gaps &rarr;</a></li>
-        <li><a href="http://jordanm.co.uk/2018/06/06/intro-ocean-ux.html">Mapping User Experiences to Individuals Using
-                the Big 5 OCEAN Personality Traits &rarr;</a></li>
     </ul>
     <hr>
     <h4 class="sidebar__header">About</h4>
     <p>Co-founder &amp; Director of Design at <a href="https://www.dawsonandrews.com">Dawson Andrews</a>. A product
         design studio in Belfast.</p>
-    <p>He is interested in exploring the intersection of product design, psychology, aesthetics, and economics. Value
+    <p>Interested in exploring the intersection of product design, psychology, aesthetics, and economics. Value
         over vanity.</p>
     <hr>
     <h4 class="sidebar__header">Newsletter</h4>

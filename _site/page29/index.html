@@ -59,43 +59,54 @@
                   <p class="date"><time>
                     
                     March
-                    12th, 2013
+                    25th, 2013
                   </time></p>
 
-                  <a class="post-link" href="/2013/03/12/under-the-microscope.html"><h1 class="article-header">Under the Microscope</h1></a>
+                  <a class="post-link" href="/2013/03/25/thoughts-on-toggling-a-responsive-design-on-and.html"><h1 class="article-header">Thoughts on Toggling a Responsive Design On and Off</h1></a>
               <div class="article-content">
-                <p>When designing for small screens keep in mind that everything you do is under the microscope - design patterns, interactions, usability, speed — everything. These wonderful little devices that we cup in our hands offer a small, personal and intimate window in which to enjoy the web.</p>
+                <p>Earlier today Roger Johansson posted an article about potential scenarios for <a href="http://www.456bereastreet.com/archive/201303/letting_users_disable_responsive_layout/">disabling a responsive design</a> along with <a href="http://www.456bereastreet.com/lab/disable-responsive-layout/">a demo</a>. As noted in the article, this isn&#8217;t new thinking as both <a href="http://www.brucelawson.co.uk/2013/turning-off-responsive-web-design/">Bruce Lawson</a>, <a href="http://css-tricks.com/user-opt-out-responsive-design/">Chris Coyier</a> and various others have spoken about it before — the purpose was to introduce the demo along with scenarios where it would be useful.</p>
 
-<p>It is more important than ever that we get the little details right. A small screen space is limited in what we can show at any particular moment - and that&#8217;s what we are dealing with here, lots of tiny <strong>moments</strong>. By contrast a large screen offers plenty of room for design problems to hide or go mostly unnoticed. Small displays don&#8217;t allow that. They are unforgiving to poor design decisions which is why a lot of designers are quick to scrutinise and attack a poorly implemented responsive design. This type of scrutiny is more often than not about the design and technical aspects whereas users scrutinise with a different lens which generally concerns more important aspects content and value.</p>
+<p>I can&#8217;t figure out what my stance is on the approach. I&#8217;m leaning more towards thinking that this is a good idea. Some view the inclusion of an off-switch as an admission of failure in the implementation of a responsive design — I&#8217;m not so sure it is. <a href="http://chris-armstrong.com/">Chris Armstrong</a> put it nicely on Twitter:</p>
 
-<p>I suggest looking at a confined layout as a series of moments. Ask difficult questions of it: <em>"Does this moment achieve what I want it to achieve?"</em>, <em>"Does this particular moment offer any value?</em>&#8221;, <em>"Does this moment facilitate or distract from the overall message/objective/goal?"</em>, <em>"Does this moment make sense independently or does it require the bigger picture to give it context?"</em></p>
+<blockquote>
+  <p>RWD involves making assumptions on the user&#8217;s behalf, why not allow them to be overriden?</p>
+</blockquote>
 
-<p>Our design decisions are magnified in this personal space. It&#8217;s a rewarding space that can offer intimacy and undivided attention - small screens deserve good experiences and a responsive approach<sup id="fnref:p45185035075-1"><a href="#fn:p45185035075-1" rel="footnote">1</a></sup> can allow that good experience to permeate any device or dynamic that it is faced with.</p>
+<p>I wish I had a toggle for the bad responsive designs, the ones that &#8220;don&#8217;t get it&#8221; (i.e they hide content and bastardise the experience rather than adapt it appropriately). Even if we have examined and tested our assumptions thoroughly, there is always a chance that we&#8217;ll get something wrong and I think users deserve a chance to undo something we impose on them (with good intent).</p>
 
-<p><a href="http://static.tumblr.com/jdwzxqr/EKCmoh7vf/microscope.jpg" class="cover" data-credit="© Marianne Williams" data-link="http://www.flickr.com/photos/machineproject"></a></p>
+<p>Roger&#8217;s article discusses the language around the toggle switch:</p>
 
-<div class="footnotes">
-<hr><ol><li id="fn:p45185035075-1">
-<p>Aside: responsive design doesn&#8217;t <em>just</em> mean making things work on small displays. <a href="#fnref:p45185035075-1" rev="footnote">↩</a></p>
-</li>
+<blockquote>
+  <p>The trickiest part is probably what to call the switch. Phrases like “View desktop layout”, “Go to desktop version” and “View full site” seem like saying that what you’re currently viewing is missing something. So instead I called it “View fixed width layout” (and “View flexible width layout” to toggle back). I don’t really know if it helps end users understand the difference, but I think it’s a more accurate description than using “desktop” and “mobile”. Someone’s browser window being narrower than 960 pixels, or 1200 pixels, or wherever you choose to draw the line, does not necessarily mean they’re using a “mobile” device.</p>
+</blockquote>
 
-</ol></div>
+<p>After years of m-dot websites users have been conditioned to feel that &#8220;View desktop site&#8221; means that the page is hiding something from them. That&#8217;s why I think trying to add language to the switch won&#8217;t work, it may create the feeling of deception that exists with many m-dot sites. Also using terms like &#8220;fluid&#8221; and &#8220;fixed&#8221; will mean <strong>nothing</strong> to the average user. The language would need to feel familiar and create an expectation — although in this situation, the user&#8217;s expectation is that the button will reveal a &#8220;full version&#8221; revealing the stuff that the page is hiding.</p>
+
+<p>I think we could do something visually rather than give it confusing and misguided terms. I&#8217;m not saying this suggestion is the definitive approach, it&#8217;s more of a rough idea. The image below gives you an idea of what an icon might look like before and after it is toggled.</p>
+
+<p><img src="http://media.tumblr.com/b2f8ea92bc83bb949336d808e5cf0c06/tumblr_inline_mk8mcutqUY1qz4rgp.png" alt=""/></p>
+
+<p>The left icon shows what it might look like in a standard responsive layout with the option to toggle a fixed width layout, the right shows how it would look from the fixed width layout if the user wanted to switch back to a responsive layout.</p>
+
+<p>Again — this is just a rough idea using a couple of <a href="http://dribbble.com/shots/928458-80-Shades-of-White-Icons">repurposed icons</a>, if you do decide to implement an off switch, then I suggest trying a visual reference rather than potentially confusing wording.</p>
+
+<p><a href="http://static.tumblr.com/jdwzxqr/euhmoh793/switch.jpg" class="cover" data-credit="© Yutaka Tsutano" data-link="http://www.flickr.com/photos/ivyfield"></a></p>
 
               </div>
             </article>
             <div class="sidebar">
     <h4 class="sidebar__header">Start Here</h4>
     <ul class="links">
+        <li><a href="http://jordanm.co.uk/2019/07/30/intentional-and-emergent-design-systems.html">Intentional and
+                Emergent Design Systems &rarr;</a></li>
         <li><a href="http://jordanm.co.uk/2018/07/30/design-laws-of-nature.html">Design Laws in Nature &rarr;</a></li>
         <li><a href="http://jordanm.co.uk/2019/02/20/experience-gaps.html">Experience Gaps &rarr;</a></li>
-        <li><a href="http://jordanm.co.uk/2018/06/06/intro-ocean-ux.html">Mapping User Experiences to Individuals Using
-                the Big 5 OCEAN Personality Traits &rarr;</a></li>
     </ul>
     <hr>
     <h4 class="sidebar__header">About</h4>
     <p>Co-founder &amp; Director of Design at <a href="https://www.dawsonandrews.com">Dawson Andrews</a>. A product
         design studio in Belfast.</p>
-    <p>He is interested in exploring the intersection of product design, psychology, aesthetics, and economics. Value
+    <p>Interested in exploring the intersection of product design, psychology, aesthetics, and economics. Value
         over vanity.</p>
     <hr>
     <h4 class="sidebar__header">Newsletter</h4>

@@ -2,8 +2,8 @@
 layout: post
 title: Managing Daily Tasks
 date: '2018-03-23T09:12:00+00:00'
-summary: Writing my todo list for the day is a key part of my morning routine and essential to state setting and priming
-label: Tactics &amp; Habits
+
+
 ---
 
 

@@ -2,15 +2,15 @@
 layout: post
 title: Intentional and Emergent Design Systems
 date: '2019-07-30T00:00:01+00:00'
-summary: Writing my todo list for the day is a key part of my morning routine and essential to state setting and priming
-label: Tactics &amp; Habits
+
+
 ---
 
-There appears to be two competing approaches in designing design systems. I’m going to call these approaches intentional design systems and emergent design systems to create a clear distinction between both.
+There are two competing approaches in designing design systems. I’m going to call these approaches intentional design systems and emergent design systems to create a clear distinction between both.
 
 ### An intentional design system
 
-This appears to be the default methodology in design circles. The flavour and framework may vary, but the approach generally consists of: design system first → design/build solutions.
+This seems to be the default methodology in design circles. The flavour and framework may vary, but the approach generally consists of: design system first → design/build solutions.
 
 I have a few concerns with this way of working with design systems. Front-loading design and/or build with the pieces you believe you’ll eventually need to arrive at a solution creates a limited set of outcomes. Any attempt to create more pieces in anticipation of generating a greater number of outcomes results in conjectural bloat – a cost offset to the user paid for in unnecessary data and time.
 

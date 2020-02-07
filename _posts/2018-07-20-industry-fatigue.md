@@ -2,8 +2,8 @@
 layout: post
 title: Industry Fatigue
 date: '2018-07-20T00:00:01+00:00'
-summary: Writing my todo list for the day is a key part of my morning routine and essential to state setting and priming
-label: Tactics &amp; Habits
+
+
 ---
 
 A [Tweet from Steven Hylands](https://twitter.com/shylands/status/1019302186554200064) caught my attention and got me thinking about my outlook on the digital design landscape, or more specifically my approach to learning new things in this space.

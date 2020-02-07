@@ -47,6 +47,7 @@ body {
 
 a {
   color: $red;
+  text-decoration-color: fade-out($red, 0.8);
 }
 
 a:hover {
@@ -291,29 +292,28 @@ nav {
   background: $red;
   background-image: linear-gradient(179deg, $red 0%, #B80C09 100%);
   border: 1px solid #B80C09;
-  box-shadow: 0 1px 1px fade-out($dark, 0.88),
-  0 2px 2px fade-out($dark, 0.88),
-  0 4px 4px fade-out($dark, 0.88),
-  0 8px 8px fade-out($dark, 0.88);
+  box-shadow: 0 1px 1px fade-out($dark, 0.92),
+  0 2px 2px fade-out($dark, 0.92),
+  0 4px 4px fade-out($dark, 0.92),
+  0 8px 8px fade-out($dark, 0.92);
   border-radius: 3px;
-  transition: all 0.26s ease;
   color: #fff;
   font-size: 13px;
   font-weight: 500;
   color: $white;
   display: inline-block;
   @media (min-width: 760px) {
-    padding: 0.6em 1.7em;
+    padding: 0.7em 1.7em;
   }
   padding: 0.9em 1.7em;
   &:hover {
     text-decoration: none;
     background: $red;
-    background-image: linear-gradient(179deg, darken($red, 6) 0%, darken(#B80C09, 6) 100%);
-      box-shadow: 0 1px 1px fade-out($dark, 0.88),
-      0 2px 2px fade-out($dark, 0.88),
-      0 4px 4px fade-out($dark, 0.88),
-      0 8px 8px fade-out($dark, 0.88);
+    background-image: linear-gradient(179deg, lighten($red, 2) 0%, lighten(#B80C09, 2) 100%);
+      box-shadow: 0 1px 1px fade-out($dark, 0.94),
+      0 2px 2px fade-out($dark, 0.94),
+      0 4px 4px fade-out($dark, 0.94),
+      0 8px 8px fade-out($dark, 0.94);
   }
   .ico-rss {
     position: relative;
@@ -495,27 +495,29 @@ strong {
     line-height: 1.45em;
     font-size: 1em;
     margin-bottom: 0.4em;
-    color: fade-out(white, 0.4);
+    color: fade-out($dark, 0.4);
   }
 
   ul {
     list-style: none;
     margin-left: 0;
+    margin-bottom: 1.6em;
     padding-left: 1.6em;
-
+    
     li {
       position: relative;
-
+      
       &:before {
         content: "→ ";
         left: -1.6em;
         position: absolute;
-        color: fade-out(white, 0.6);
+        color: $red;
       }
     }
   }
-
+  
   ol {
+    margin-bottom: 1.6em;
     margin-left: 0;
     padding-left: 1.6em;
   }
@@ -523,7 +525,7 @@ strong {
   blockquote {
     padding: 1em;
     @media screen and (min-width:520px) {
-      border-left: 2px solid fade-out(white, 0.9);
+      border-left: 2px solid fade-out($dark, 0.9);
       margin: 3.2em 0;
       padding: 0 1.6em 0 2em;
     }
@@ -562,11 +564,11 @@ strong {
 
   ol {
     margin-top: 4.236em;
-    border-top: 1px solid fade-out($grey, 0.8);
+    border-top: 1px solid fade-out($dark, 0.94);
     padding-top: 1.6em;
 
     li {
-      font-size: 0.8em;
+      font-size: 0.88em;
 
       a {
         word-break: break-word;

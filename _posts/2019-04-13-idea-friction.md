@@ -2,8 +2,8 @@
 layout: post
 title: Idea Friction
 date: '2019-04-13T00:00:01+00:00'
-summary: Writing my todo list for the day is a key part of my morning routine and essential to state setting and priming
-label: Tactics &amp; Habits
+
+
 ---
 
 *The time between idea cogitation in the mind to manifestation in a sharable form.*

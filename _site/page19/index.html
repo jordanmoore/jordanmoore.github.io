@@ -58,60 +58,43 @@
           <article class="marginBottom-l">
                   <p class="date"><time>
                     
-                    July
-                    10th, 2014
+                    August
+                    1st, 2014
                   </time></p>
 
-                  <a class="post-link" href="/2014/07/10/emmets-hidden-power-features.html"><h1 class="article-header">Emmet's hidden power features</h1></a>
+                  <a class="post-link" href="/2014/08/01/how-i-test-type-and-layout.html"><h1 class="article-header">How I test type and layout</h1></a>
               <div class="article-content">
-                <p><a href="http://emmet.io/">Emmet</a> (formerly known as Zen Coding) is a plugin for text editors helping you create CSS and HTML faster by using abbreviations to write common values saving ridiculous amounts of time along the way.</p>
+                <p>I thought I&#8217;d elaborate on my testing strategy that I introduced during a talk I gave recently for <a href="http://www.typecast.com/seminars">Typecast&#8217;s seminar series</a>. I described how I use two different testing methods for typography and responsive layouts.</p>
 
-<p>There are heaps of really useful features alongside Emmet&#8217;s primary text-expanding function. Here are a few of the hidden gems that I frequently use when coding<sup id="fnref:p91335536701-1"><a href="#fn:p91335536701-1" rel="footnote">1</a></sup>.</p>
+<p>Both are two very different facets of the same overall system and subsequently require different test conditions. In essence, I test typography on devices and I test layout in the browser.</p>
 
-<h2>Inline Calculation</h2>
+<h2>Mobile devices aren&#8217;t great for layout testing</h2>
 
-<p>Emmet has a built-in calculator which allows you to solve equations directly in your code. I use this daily to solve EM values in CSS, particularly for nested EM values simply by pressing<sup id="fnref:p91335536701-2"><a href="#fn:p91335536701-2" rel="footnote">2</a></sup><kbd>Cmd</kbd> <kbd>Shift</kbd> <kbd>Y</kbd> beside an equation like: 24/16 (desired pixel value/base pixel value).</p>
+<p>Device stands may look pretty on your desk, but they&#8217;re not going to cover all the possible states of a responsive layout. In fact, testing layouts purely on a set of devices is no different than designing for a set of predefined weights and heights — devices let you see how a layout will act at a particular size, but that&#8217;s the only size you&#8217;ll see on that screen<sup id="fnref:p93444774181-1"><a href="#fn:p93444774181-1" rel="footnote">1</a></sup>.</p>
 
-<p>You can also chain this with abbreviations, so typing: <code>mb24/16</code> and pressing <kbd>Cmd</kbd> <kbd>Shift</kbd> <kbd>Y</kbd> then <kbd>tab</kbd> would output: <code>margin-bottom: 1.5em</code>.</p>
+<p>This is why I do the majority of my layout testing in the browser. A browser will let you see all the in-between states that a set of devices won&#8217;t let you see. Expanding and collapsing the browser window from the small compressed state to an uncompressed wide state like an accordion allows you to see your elements actively respond and helps identify any potential gaps or problem areas.</p>
 
-<h2>Jump to Matching Pair</h2>
+<p>Of course the actual device will show you the definitive state for that particular device - but what about every other permutation of the responsive layout?</p>
 
-<p>Sometimes when coding HTML I might find a closing tag and it&#8217;s not always quick and easy to trace back to where the opening tag exists. Pressing <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>T</kbd> when the cursor is in the closing (or opening) tag jumps to the opening (or closing) tag pair.</p>
+<p>The desktop browser helps paint the complete layout picture. No modern mobile browser gets the basic fundamentals of CSS layout so wrong that it requires you to refresh and investigate every layout change[^1].</p>
 
-<h2>Code comments</h2>
+<h2>Desktop browsers aren&#8217;t great for testing type</h2>
 
-<p>To prevent running into the situation in the previous tip, I recommend placing comments beside your closing tags. But writing the class name of the element for a second time and wrapping it in comments can take up time, and it&#8217;s extra effort that won&#8217;t be beneficial until you run into scenarios where you need to revisit that code, so it&#8217;s often forgotten about or left out completely.</p>
+<p>Where a desktop browser excels at showing you the difference in screen sizes, shapes and dimensions - it fails to account for the potential differences in type rendering between browsers and operating systems. A single browser window can only show you how type renders for that individual display and configuration.</p>
 
-<p>Thankfully Emmet makes it easier to write comments beneath closing tags by adding a tiny snippet to the end of an abbreviation. Typing: <code>.container&gt;ul&gt;li*5&gt;a|c</code> expands to:</p>
+<p>The vast array of different mobile device displays requires a testing setup that caters for the variance in different screen densities, resolutions and screen types to give an indication of how type renders in these different environments.</p>
 
-<pre><code>&lt;div class="container"&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;
-&lt;!-- /.container --&gt;</code></pre>
+<p>An electronic ink display might render the type blurry compared to the display of a crisp high density screen. This is where a broad set of devices comes in handy - it pays to stress test your fonts across the often unforgiving and varied display properties of mobile devices. A single desktop browser won&#8217;t let you know about any of these potential issues.</p>
 
-<p>So writing comments where elements close is as easy as writing <code>|c</code>.</p>
+<h2>The best of both worlds</h2>
 
-<h2>Convert image to Data URI</h2>
+<p>I still reference mobile browsers during layout testing from time to time - functional testing is a different matter where I test heavily on all devices - but primarily my <em>layout</em> testing happens in the browser and my type testing happens on mobile displays.</p>
 
-<p>One of the most underused features of Emmet is it&#8217;s built-in ability to convert images to data:URI schemes. Using a data:URI instead of linking to an external image saves an extra HTTP request which ultimately improves the performance of your site by reducing latency.</p>
-
-<p>To convert an image to a data:URI, place your cursor in the image tag and press <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>D</kbd>.</p>
-
-<hr><p>Emmet can be as powerful as you want it to be. It&#8217;s worth using for its text-expansion capabilities alone saving huge amounts of coding time, but beyond that lies a very powerful suite of development tools.</p>
+<p>The speed and efficiency of scaling a desktop browser window from small to large for building <em>truly</em> responsive layouts met with a set of devices that represent as much of the potential difference in display types is the sweet spot that works for me.</p>
 
 <div class="footnotes">
-<hr><ol><li id="fn:p91335536701-1">
-<p>This article assumes you are familiar with Emmet. If you haven&#8217;t tried it out yet <a href="http://emmet.io/">you absolutely must</a>. <a href="#fnref:p91335536701-1" rev="footnote">↩</a></p>
-</li>
-
-<li id="fn:p91335536701-2">
-<p>The keyboard shortcuts shown here work for my Mac installation of Sublime Text and Emmet. From what I can tell they may differ between installations, Windows installs will obviously have different shortcuts too. Bring up the Go To Anything menu and start typing the name of the command you wish to use to see the shortcut key. <a href="#fnref:p91335536701-2" rev="footnote">↩</a></p>
+<hr><ol><li id="fn:p93444774181-1">
+<p>Apart from different orientations if the device allows it. <a href="#fnref:p93444774181-1" rev="footnote">↩</a></p>
 </li>
 
 </ol></div>
@@ -121,16 +104,16 @@
             <div class="sidebar">
     <h4 class="sidebar__header">Start Here</h4>
     <ul class="links">
+        <li><a href="http://jordanm.co.uk/2019/07/30/intentional-and-emergent-design-systems.html">Intentional and
+                Emergent Design Systems &rarr;</a></li>
         <li><a href="http://jordanm.co.uk/2018/07/30/design-laws-of-nature.html">Design Laws in Nature &rarr;</a></li>
         <li><a href="http://jordanm.co.uk/2019/02/20/experience-gaps.html">Experience Gaps &rarr;</a></li>
-        <li><a href="http://jordanm.co.uk/2018/06/06/intro-ocean-ux.html">Mapping User Experiences to Individuals Using
-                the Big 5 OCEAN Personality Traits &rarr;</a></li>
     </ul>
     <hr>
     <h4 class="sidebar__header">About</h4>
     <p>Co-founder &amp; Director of Design at <a href="https://www.dawsonandrews.com">Dawson Andrews</a>. A product
         design studio in Belfast.</p>
-    <p>He is interested in exploring the intersection of product design, psychology, aesthetics, and economics. Value
+    <p>Interested in exploring the intersection of product design, psychology, aesthetics, and economics. Value
         over vanity.</p>
     <hr>
     <h4 class="sidebar__header">Newsletter</h4>
