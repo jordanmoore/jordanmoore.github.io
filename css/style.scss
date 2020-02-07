@@ -1,6 +1,8 @@
-$dark: #0D0D0D;
+$dark: #160404;
+$white: #FFF9F9;
 $grey: #828386;
-$red: #CF5547;
+$red: #EF0300;
+$dark-red: #B80C09;
 $serif: "Faustina", serif;
 $sans: 'Inter', -apple-system, BlinkMacSystemFont, "myriad-pro", sans-serif;
 
@@ -34,23 +36,17 @@ body {
     font-size: 14px;
   }
   font-size: 15px;
-  color: white;
+  color: $dark;
   font-family: $sans;
   line-height: 1.6;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
-  background: $dark;
-  color: #fff;
-
-
-  &.homepage {
-    overflow-x: hidden;
-  }
+  background: $white;
 }
 
 a {
-  color: #fff;
+  color: $red;
 }
 
 a:hover {
@@ -221,9 +217,6 @@ img {
 
 header {
   margin-bottom: 6em;
-  .bd-bookshelf &, .bd-lab & {
-    background-color: $dark;
-  }
   > .container {
     display: flex;
     justify-content: space-between;
@@ -234,7 +227,7 @@ header {
 nav {
   font-family: 500;
   font-size: 0.933333333em;
-  color: #FFFFFF;
+  color: $white;
   text-align: right;
   margin: 0;
   padding: 0;
@@ -295,19 +288,19 @@ nav {
 }
 
 .button {
-  background: #0D0D0D;
-  background-image: linear-gradient(179deg, #4D4C4C 0%, #2E2E2E 100%);
-  border: 1px solid rgba(151, 151, 151, 0.12);
-  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.50),
-  0 1px 4px 0 rgba(0, 0, 0, 0.30),
-  0 1px 7px 0 rgba(0, 0, 0, 0.50),
-  inset 0 1px 0 0 rgba(255, 255, 255, 0.16);
+  background: $red;
+  background-image: linear-gradient(179deg, $red 0%, #B80C09 100%);
+  border: 1px solid #B80C09;
+  box-shadow: 0 1px 1px fade-out($dark, 0.88),
+  0 2px 2px fade-out($dark, 0.88),
+  0 4px 4px fade-out($dark, 0.88),
+  0 8px 8px fade-out($dark, 0.88);
   border-radius: 3px;
-  border-radius: 3px;
+  transition: all 0.26s ease;
   color: #fff;
   font-size: 13px;
   font-weight: 500;
-  color: #FFFFFF;
+  color: $white;
   display: inline-block;
   @media (min-width: 760px) {
     padding: 0.6em 1.7em;
@@ -315,15 +308,12 @@ nav {
   padding: 0.9em 1.7em;
   &:hover {
     text-decoration: none;
-    background: #0D0D0D;
-    background-image: linear-gradient(179deg, #636363 0%, #3F3E3E 100%);
-    border: 1px solid rgba(151, 151, 151, 0.12);
-    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.50),
-    0 1px 4px 0 rgba(0, 0, 0, 0.30),
-    0 1px 7px 0 rgba(0, 0, 0, 0.50),
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.16);
-    border-radius: 3px;
-    border-radius: 3px;
+    background: $red;
+    background-image: linear-gradient(179deg, darken($red, 6) 0%, darken(#B80C09, 6) 100%);
+      box-shadow: 0 1px 1px fade-out($dark, 0.88),
+      0 2px 2px fade-out($dark, 0.88),
+      0 4px 4px fade-out($dark, 0.88),
+      0 8px 8px fade-out($dark, 0.88);
   }
   .ico-rss {
     position: relative;
@@ -341,7 +331,13 @@ nav {
 }
 
 header {
-  border-bottom: 1px solid fade-out($grey, 0.8);
+  &:after {
+    content: '';
+    display: block;
+    max-width: 859px;
+    border-bottom: 1px solid fade-out($dark, 0.96);
+    margin: 0 auto;
+  }
 }
 
 h1,
@@ -369,7 +365,7 @@ h2, h3 {
 .article-header {
   font-weight: 500;
   font-size: 1.266666667em;
-  color: #FFFFFF;
+  color: $dark;
   letter-spacing: -0.12px;
   max-width: 18em;
   line-height: 1.4;
@@ -381,7 +377,7 @@ strong {
 }
 
 .color-red {
-  color: white;
+  color: $white;
 }
 
 .small-caps {
@@ -402,7 +398,7 @@ strong {
       content: '- JM';
       display: block;
       margin-top: 4.2em;
-      color: #fff;
+      color: $dark;
       font-weight: 700;
       font-size: 13px;
     }
@@ -421,17 +417,17 @@ strong {
     }
     hr {
       margin: 2em 0 2em;
-      border-bottom: 1px solid fade-out(white, 0.8);
+      border-bottom: 1px solid fade-out($dark, 0.96);
       &:after {
         display: none;
       }
     }
     p {
       font-size: 0.866666667em;
-      color: rgba(255, 255, 255, 0.60);
+      color: fade-out($dark, 0.2);
       line-height: 1.61538462em;
       a {
-        color: #fff;
+        color: $red;
         text-decoration: underline;
         &:hover {
           text-decoration: none;
@@ -488,7 +484,7 @@ strong {
   max-width: 528px;
 
   p {
-    color: fade-out(white, 0.4);
+    color: fade-out($dark, 0.4);
     font-size: 1em;
     letter-spacing: -0.09px;
     line-height: 1.6em;
@@ -595,6 +591,7 @@ strong {
   letter-spacing: -0.1px;
   a {
     text-decoration: none;
+    color: $dark;
 
   span {
     display: none;
@@ -738,12 +735,11 @@ img em {
         max-width: 320px;
         width: 100%;
         background: none;
-        color: white;
-        border: 1px solid fade-out(white, 0.8);
+        color: $dark;
+        border: 1px solid fade-out($dark, 0.9);
+        background: fade-out($dark, 0.94);
         border-radius: 3px;
-        &:focus {
-          outline-color: #3C7AFF;
-        }
+        box-shadow: inset 0 1px 3px fade-out($dark, 0.94);
       }
   
       input[type=submit] {
@@ -778,10 +774,6 @@ img em {
 
 footer {
   padding: 1em 0 4em;
-
-.bd-bookshelf &, .bd-lab & {
-  color: $dark;
-}
 
   p {
     font-size: 0.866666667em;
