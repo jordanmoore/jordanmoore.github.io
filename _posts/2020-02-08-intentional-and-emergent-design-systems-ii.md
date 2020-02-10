@@ -22,7 +22,13 @@ In an intentional design system, there is no room for chaos. Only order. If some
 
 Their liberal counterpart, the emergent design system, begins with creativity and chaos deriving patterns for the system later. Decisions start from user outcomes (the sum of all parts) and work backwards to find reusable parts. It's hard to quantify the reach of emergent systems. It may cover a small amount of the product, and it may cover a lot of the product. It's not all-encompassing. There is likely a correlation between the number of unique user problems encountered and the overall coverage of the system.
 
-The scope of an intentional design system is large by default and requires some degree of conjectural bloat. When components are front-loaded into the process you get wastage as a byproduct. In contrast, emergent design systems require [gardening](https://frankchimero.com/blog/2020/gardening-vs-architecture/).
+The scope of an intentional design system is large by default and requires some degree of conjectural bloat (code for scenarios that have yet to occur). When components are front-loaded into the process you get wastage as a byproduct. Guesswork and assumptions are part of the product's DNA. I don't blame anyone in thinking that this approach is the sensible direction. We've been conditioned to believe the next new thing should come first in the chain of events, whether it's mobile-first, content first, users first - when it comes to building products in design and code, you can be forgiven for adopting a design system first approach.
+
+Although not a like-for-like comparison, it's interesting to see that the same voices who would bemoan libraries such as jQuery and Bootstrap - two libraries full to the brim of conjectural bloat - haven't noticed the hypocrisy in advocating for design system first approaches before building up to more complex components. The same voices who evangelise for accessibility damning jQuery for adverse effects on performance and page weight are happy to tax users for a speculative design system[^1].
+
+In contrast, emergent design systems require only accepting evidence-based patterns and components into its system. It flips everything on its head asking the parts to prove themselves to be replicable and have sufficient utility. They need [the gardeners Frank Chimero alluded to](https://frankchimero.com/blog/2020/gardening-vs-architecture/).
+
+A useful lens for drawing that difficult line around the scope and reach of a design system might be around the value of tasks the UI components will provide to users. Low-value tasks (the type that provides limited utility such as a terms and conditions page) are perfect for design systems to do the heavy lifting - if not **all** of the lifting. High-value tasks (such as a search box on an e-commerce product) should require more human attention and deservedly so. Think of a pilot flying a plane full of passengers - the most critical (and therefore high-value) parts of a flight are: taxiing, takeoff, and landing. Autopilot can take care of the rest. You want your pilot at his or her sharpest for those key moments. Your design system is no different.
 
 ## The Sunk Cost Fallacy of Design Systems
 
@@ -32,7 +38,7 @@ An intentional design system assumes that your design work is done. You can main
 > 
 > Dave Rupert &mdash; [The Web is Industrialized and I helped industrialize it](https://daverupert.com/2020/01/the-web-is-industrialized-and-i-helped-industrialize-it/)
 
-I remember coming up against design bureaucracy during my time working as part of a large scale product team. We were faced with many new user problems in need of solutions. The team were hellbent on shaping the solution to the problem out of the prebuilt pieces of the design system. Reasoning by analogy. The method of thinking that rarely leads to new solutions for new problems. First-principles reasoning was deemed too expensive. 
+I remember coming up against design bureaucracy during my time working as part of a large scale product team. We were faced with many new user problems in need of solutions. The team were hellbent on shaping the solution to the problem out of the prebuilt pieces of the design system. Reasoning by analogy. The method of thinking rarely leads to new solutions for new problems. First-principles reasoning was deemed too expensive. 
 
 I was met with arguments like "That means we’re going to have to create a new rule for this component, we’ll have to get internal sign-off, the developers will have to invest extra effort, it’ll need to go through testing, do you seriously want to go through all those steps?"
 
@@ -60,11 +66,19 @@ The majority of systems I hear people advocate for *appear* to subscribe to inte
 > 
 > Frank Chimero &mdash; [Gardening vs Architecture](https://frankchimero.com/blog/2020/gardening-vs-architecture/)
 
-If I could give an artificial intelligence the keys to fully automating modern design, I’d point it towards an intentional design system. An emergent approach leaves room for mystery, chaos, intuition, creativity and expression[^1] - the unpredictable, unique, innately human elements.
+I used to poke fun at the websites of the early 2010s claiming to be "handcrafted". Now I'm thinking they were on to something. Perhaps "handcrafted" was the wrong adjective, but I think they were trying to describe something else. Something made through more effort, deliberateness, craft, and creativity. These experiences placed more of an emphasis on the importance of aesthetics, they spoke to human ideals such as affordance, familiarity, and metaphor. Flat design lends itself towards low-effort commoditisation and malleability in a design system - perhaps leading to the ideology of "everything that can be systemised, will be systemised". 
+
+There is a certain coldness in the algorithms. You can feel the algorithm in a rigid design system that spans every corner of a product. You don't want a design system that feels "automated" - well, **you** might but your users certainly don't. Your users would rather a product designed with care (dare I say, "handcrafted?").
+
+The benchmark must surely be what resonates with users - and if that is an amalgamation of predefined components and rules that must work because the system says so, then fine, so be it. I firmly believe that it makes much more sense to start from resonance and work backwards treating users first and systems second.
+
+If I could give an artificial intelligence the keys to fully automating modern design, I’d point it towards an intentional design system. An emergent approach leaves room for mystery, chaos, intuition, creativity and expression - the unpredictable, unique, innately human elements.
 
 **Do design systems limit creativity?** The answer rests on what type of system you subscribe to.
 
 The worst incarnation of a design system designs designers out of the picture. If I were building an AI tool to displace designers, I'd point them towards an all-encompassing, intentional design system. I fear that we're blindly running towards automation and we're giving the algorithms the template our jobs. It's not hard to imagine a world where No Code technology complements No Design. By contrast, the best incarnation of a design system leaves room for creativity, invention, the **human** elements.
+
+And my argument is exactly that - we should safeguard the human elements of the design process. There will always be a need for human intervention, the kind of which requires a human eye to correct for optical alignment when the machines produce rounding errors, or perhaps it is our all too human flaws that produce the rounding errors, either way, the goal should be to prioritise people over rules, algorithms, and automation. Ultimately you want to design systems that liberate creative teams rather than systems that constrain creative teams.
 
 ---
 
@@ -90,4 +104,6 @@ Then I realised the flaw in my thinking. Jeremy was describing the design system
 
 I feel that one further elaboration is required: an intentional design system can create beautiful design systems, an emergent design system can be created from beautiful products.
 
-[^1]: I used to poke fun at the websites of the early 2010s claiming to be "handcrafted". Now I'm thinking they were on to something. Perhaps "handcrafted" was the wrong adjective, but I think they were trying to describe something else. Something made through more effort, deliberateness, craft, and creativity. These experiences placed more of an emphasis on the importance of aesthetics, they spoke to human ideals such as affordance, familiarity, and metaphor. Flat design lends itself towards low-effort commoditisation and malleability in a design system - perhaps leading to the ideology of "everything that can be systemised, will be systemised"
+
+
+[^1]: I've been told that a speculative design system makes the point that I'm trying to make with "intentional" design systems much clearer. I really don't care what label anyone wants to use as I mentioned in the previous article, I'm not trying to make this a "thing". I seek no such fame. All I want to do is outline there are two competing approaches here which people aren't talking about.
