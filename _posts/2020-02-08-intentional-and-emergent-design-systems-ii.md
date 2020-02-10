@@ -14,7 +14,15 @@ I believe that we are collectively tapping into something important within the d
 
 I'm going to dive deeper into the conversation through the framing I believe helps me most by elaborating on [Intentional and Emergent Design Systems](http://jordanm.co.uk/2019/07/30/intentional-and-emergent-design-systems.html).
 
-## Reach &amp; Scope
+## Recapping Intentional and Emergent Design Systems
+
+It helps to read [the original, short article first](http://jordanm.co.uk/2019/07/30/intentional-and-emergent-design-systems.html), but as a brief summary:
+
+**Intentional** design systems are the typical approach to building design systems: design system first → design/build solutions from the system.
+
+**Emergent** design systems start from solutions and work backwards to find reusable patterns for the system.
+
+## The Reach &amp; Scope of Design Systems
 
 As far as I am aware, there is no collective understanding of the desirable reach of a design system. The intentional camp believes that everything must come from the system. By default, the system permeates the entire product.
 
