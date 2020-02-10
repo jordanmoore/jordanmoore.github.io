@@ -18,9 +18,9 @@ I'm going to dive deeper into the conversation through the framing I believe hel
 
 It helps to read [the original, short article first](http://jordanm.co.uk/2019/07/30/intentional-and-emergent-design-systems.html), but as a brief summary:
 
-**Intentional** design systems are the typical approach to building design systems: design system first → design/build solutions from the system.
+**Intentional** design systems are the typical approach to building design systems: design system first → design/build solutions from the system, i.e intentionally designing a system regardless of the solution.
 
-**Emergent** design systems start from solutions and work backwards to find reusable patterns for the system.
+**Emergent** design systems start from solutions and work backwards to find emerging, reusable patterns for the system.
 
 ## The Reach &amp; Scope of Design Systems
 
@@ -62,6 +62,8 @@ Useful questions to ask when the system pushes back:
 - Is it something that **should** be governed by a design system?
 - Does the system bake in more assumptions than a different approach? (Occam's Razor is a good guide for software decisions)
 - Does building the best thing involve building it out of the things we’ve already built? Or does it require building something new?
+
+Individuals commit the sunk cost fallacy when they continue a behaviour or endeavour as a result of previously invested resources (time, money or effort) (Arkes & Blumer, 1985). The same is true for design systems that grow in scope beyond a team's ability to become dynamic to the system and its user's needs. Decisions are deferred to the system by default, and anything that requires the system to change is met with often insurmountable objections because of the time, money, and/or effort to change the system.
 
 You can tell what type of design system you're working with if it biases solutions towards pre-existing components or if the system gives you the freedom to invent.
 

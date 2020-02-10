@@ -6,8 +6,8 @@
 </description>
     <link>http://jordanm.co.uk/</link>
     <atom:link href="http://jordanm.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 10 Feb 2020 20:38:20 +0000</pubDate>
-    <lastBuildDate>Mon, 10 Feb 2020 20:38:20 +0000</lastBuildDate>
+    <pubDate>Mon, 10 Feb 2020 20:48:55 +0000</pubDate>
+    <lastBuildDate>Mon, 10 Feb 2020 20:48:55 +0000</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -24,9 +24,9 @@
 
 &lt;p&gt;It helps to read &lt;a href=&quot;http://jordanm.co.uk/2019/07/30/intentional-and-emergent-design-systems.html&quot;&gt;the original, short article first&lt;/a&gt;, but as a brief summary:&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Intentional&lt;/strong&gt; design systems are the typical approach to building design systems: design system first → design/build solutions from the system.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Intentional&lt;/strong&gt; design systems are the typical approach to building design systems: design system first → design/build solutions from the system, i.e intentionally designing a system regardless of the solution.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Emergent&lt;/strong&gt; design systems start from solutions and work backwards to find reusable patterns for the system.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Emergent&lt;/strong&gt; design systems start from solutions and work backwards to find emerging, reusable patterns for the system.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-reach-amp-scope-of-design-systems&quot;&gt;The Reach &amp;amp; Scope of Design Systems&lt;/h2&gt;
 
@@ -72,6 +72,8 @@
   &lt;li&gt;Does the system bake in more assumptions than a different approach? (Occam’s Razor is a good guide for software decisions)&lt;/li&gt;
   &lt;li&gt;Does building the best thing involve building it out of the things we’ve already built? Or does it require building something new?&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;Individuals commit the sunk cost fallacy when they continue a behaviour or endeavour as a result of previously invested resources (time, money or effort) (Arkes &amp;amp; Blumer, 1985). The same is true for design systems that grow in scope beyond a team’s ability to become dynamic to the system and its user’s needs. Decisions are deferred to the system by default, and anything that requires the system to change is met with often insurmountable objections because of the time, money, and/or effort to change the system.&lt;/p&gt;
 
 &lt;p&gt;You can tell what type of design system you’re working with if it biases solutions towards pre-existing components or if the system gives you the freedom to invent.&lt;/p&gt;
 
