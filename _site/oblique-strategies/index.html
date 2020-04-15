@@ -184,15 +184,12 @@ if (navigator.getUserMedia) {
     function(err) {
         console.log("The following error occured: " + err.name)
         if(err.name == 'NotAllowedError') {
-            $('.button').addClass('enabled');
-            const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-            $('#strategy').text(randomQuote)
+            $('#strategy').text('You will need to use Chrome with microphone enabled to access the deck')
         }
     });
     } else {
         $('#strategy').text('You will need to use Chrome with microphone enabled to access the deck')
     }
-
     // var pressTimer;  
     // $(".button").on('touchend', function (e) {
     // clearTimeout(pressTimer);
@@ -204,11 +201,6 @@ if (navigator.getUserMedia) {
     //         $('#strategy').text(randomQuote)
     //     }, 600)
     // });
-        $('.button').click(function(e){
-            e.preventDefault();
-            const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-            $('#strategy').text(randomQuote)
-        });
     </script>
 </body>
 </html>
