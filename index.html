@@ -5,34 +5,27 @@ layout: homepage
 
   <div class="blog-posts">
         {% for post in paginator.posts %}
-        <div class="container">
-          <article class="marginBottom-l">
-                  <p class="date"><time>
-                    {% assign d = post.date | date: "%-d"  %}
-                    {{ post.date | date: "%B" }}
-                    {% case d %}
-                    {% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ post.date | date: "%Y" }}
-                  </time></p>
-
-                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><h1 class="article-header">{{ post.title }}</h1></a>
+        {% if forloop.first == true %}
+        <header>
+            {% include home-nav.html %}
+        </header>
+        <div id="start"></div>
+        {% endif %}
+            <article>  
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><h1 class="article-header">{{ post.title }}</h1></a>
+              <p class="date"><time>
+                  {% assign d = post.date | date: "%-d"  %}
+                  {{ post.date | date: "%B" }}
+                  {% case d %}
+                  {% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+                  {{ post.date | date: "%Y" }}
+                </time></p>
               <div class="article-content">
                 {{ post.content }}
               </div>
             </article>
-            {% include sidebar.html %}
-          </div>
         {% endfor %}
 
-
-      <!-- Pagination links -->
-      <div class="container pagination marginBottom">
-        {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path }}" class="previous">&larr; Previous</a>
-        {% endif %}
-        {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path }}" class="next">Next &rarr;</a>
-        {% endif %}
-      </div>
     <!-- /.container -->
   </div>
 

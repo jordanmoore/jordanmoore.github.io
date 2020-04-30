@@ -3,7 +3,7 @@ $white: #FFF9F9;
 $grey: #828386;
 $red: #EF0300;
 $dark-red: #B80C09;
-$serif: "Faustina", serif;
+$serif: "Libre Caslon Text", serif;
 $sans: 'Inter', -apple-system, BlinkMacSystemFont, "myriad-pro", sans-serif;
 
 @import url('https://rsms.me/inter/inter.css');
@@ -35,19 +35,20 @@ body {
   @media screen and (max-width: 568px) {
     font-size: 14px;
   }
-  font-size: 15px;
+  font-size: 14px;
   color: $dark;
   font-family: $sans;
   line-height: 1.6;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
-  background: $white;
+  background: white;
 }
 
 a {
   color: $red;
   text-decoration-color: fade-out($red, 0.8);
+  font-weight: 600;
 }
 
 a:hover {
@@ -150,6 +151,7 @@ img {
       a > span {
         display: inline-block;
         position: relative;
+        margin-bottom: 1.2em;
         &:before {
           content: '';
           position: absolute;
@@ -217,7 +219,7 @@ img {
 }
 
 header {
-  margin-bottom: 6em;
+  margin-bottom: 3.2em;
   > .container {
     display: flex;
     justify-content: space-between;
@@ -338,6 +340,11 @@ header {
     border-bottom: 1px solid fade-out($dark, 0.96);
     margin: 0 auto;
   }
+  .homepage & {
+    &:after {
+      display: none;
+    }
+  }
 }
 
 h1,
@@ -393,16 +400,6 @@ strong {
 }
 
 .blog-posts {
-  .article-content > p:last-of-type {
-    &:after {
-      content: '- JM';
-      display: block;
-      margin-top: 4.2em;
-      color: $dark;
-      font-weight: 700;
-      font-size: 13px;
-    }
-  }
   > .container {
     @media screen and (min-width: 760px) {
       display: flex;
@@ -480,15 +477,79 @@ strong {
   }
 }
 
+html, body {
+  &::-webkit-scrollbar,
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.blog-posts {
+  padding-top: 62px;
+  padding: 1.6em;
+  max-width: 528px;
+  margin: 0 auto;
+
+  @media screen and (min-width:720px) and (min-height: 720px) {
+    max-width: none;
+    padding-left: 2em;
+    column-width: 320px;
+    column-gap: 3.6em;
+    // column-rule: 1px solid fade-out($dark, 0.96);
+    white-space: nowrap;
+    overflow: auto;
+    // max-height: calc(100vh - 122px);
+    max-height: calc(100vh - 92px);
+    padding-top: 2.6em;
+  }
+  @media screen and (min-width:920px) and (min-height: 720px) {
+    padding-left: calc((100vw - 907px + 3.2em) / 2);  
+  }
+  padding-bottom: 1.6em;
+  margin-bottom: 1.6em;
+  &::-webkit-scrollbar, ::-webkit-scrollbar {
+    display: none;
+  }
+  article {
+    white-space: normal;
+    margin-bottom: 2.6em;
+    padding-bottom: 5.2em;
+    break-after: always;
+  }
+  .date {
+    margin-bottom: 4.2em;
+    font-size: 1em;
+    // text-indent: 1.6em;
+    margin-top: 0;
+  }
+  h1 {
+    margin-top: 4.2em;
+    margin-bottom: 0.5em;
+    font-size: 1.4em;
+  }
+}
+
 .article-content {
   max-width: 528px;
-
   p {
-    color: fade-out($dark, 0.4);
+    .homepage & {
+      text-align: justify;
+      hyphens: auto;
+    }
+    color: fade-out($dark, 0.2);
     font-size: 1em;
     letter-spacing: -0.09px;
     line-height: 1.6em;
-    margin-bottom: 1.6em;
+    margin: 0;
+    text-indent: 1.6em;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    + p {
+      text-indent: 0;
+    }
+  }
+  p:first-of-type {
+    text-indent: 0;
   }
   
   li {
@@ -545,16 +606,33 @@ strong {
   font-weight: 500;
   font-size: 0.866666667em;
   letter-spacing: -0.08px;
+  margin-top: 0;
 }
 
 .blog-posts {
   article {
-    padding-bottom: 8em;
-    border-bottom: 1px solid fade-out($grey, 0.8);
-
     &:last-of-type {
       padding-bottom: 0;
       border-bottom: none;
+    }
+    figure {
+      margin: 1.6em 0;
+      padding: 1em;
+      img {
+        border-radius: 0;
+      }
+      figcaption {
+        margin-bottom: 0;
+        opacity: 0.6;
+        font-weight: 400;
+      }
+    }
+    p > img {
+      padding: 1em;
+      margin-left: -1.6em;
+      margin-right: 1.6em;
+      margin-bottom: 1.6em;
+      margin-top: 1.6em;
     }
   }
 }
@@ -591,6 +669,27 @@ strong {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.1px;
+  .homepage & {
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      margin-right: 0.6em;
+      background: url("../../img/avatar.jpg") center center no-repeat;
+      width: 36px;
+      height: 36px;
+      border-radius: 23px;
+      background-size: contain;
+      margin-left: 0;
+      box-shadow: inset 0 0 0 1px #dcd3cb;
+      &:hover {
+        box-shadow: inset 0 0 0 1px #D6CCC3;
+      }
+    }
+    &:before {
+      display: none;
+    }
+  }
   a {
     text-decoration: none;
     color: $dark;
@@ -786,6 +885,14 @@ footer {
     margin: 0;
     padding: 0;
     list-style: none;
+  }
+}
+.homepage footer {
+  padding: 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 

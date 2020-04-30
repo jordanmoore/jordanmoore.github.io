@@ -9,7 +9,7 @@ url: "http://jordanm.co.uk"
 github: [metadata]
 twitter_username: jordanmoore
 github_username:  jordanmoore
-paginate: 1
+paginate: 30
 exclude: [node_modules]
 gems:
   - jekyll-paginate
