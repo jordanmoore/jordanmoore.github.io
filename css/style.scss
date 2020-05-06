@@ -529,9 +529,14 @@ html, body {
   }
 }
 
+.blog-posts article p>img.gardening {
+  margin-top: -1em;
+  margin-bottom: -1em;
+}
 .blog-posts article p>img.pillar {
   max-height: 42vh;
   margin: 0 auto;
+  display: block;
   @media screen and (min-width:720px) and (min-height: 720px) {
     margin: 0;
     float: right;
