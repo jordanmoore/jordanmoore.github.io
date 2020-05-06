@@ -6,8 +6,8 @@
 </description>
     <link>http://jordanm.co.uk/</link>
     <atom:link href="http://jordanm.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 30 Apr 2020 20:11:59 +0100</pubDate>
-    <lastBuildDate>Thu, 30 Apr 2020 20:11:59 +0100</lastBuildDate>
+    <pubDate>Wed, 06 May 2020 23:38:29 +0100</pubDate>
+    <lastBuildDate>Wed, 06 May 2020 23:38:29 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -35,6 +35,8 @@
 &lt;p&gt;In an intentional design system, there is no room for chaos. Only order. If something doesn’t fit the system it doesn’t belong in the system. If something cannot be born out of the system, it will not belong in the system. Intentional systems are authoritarian by nature.&lt;/p&gt;
 
 &lt;p&gt;Their liberal counterpart, the emergent design system, begins with creativity and chaos deriving patterns for the system later. Decisions start from user outcomes (the sum of all parts) and work backwards to find reusable parts. It’s hard to quantify the reach of emergent systems. It may cover a small amount of the product, and it may cover a lot of the product. It’s not all-encompassing. There is likely a correlation between the number of unique user problems encountered and the overall coverage of the system.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;img/pillar.jpg&quot; class=&quot;pillar&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The scope of an intentional design system is large by default and requires some degree of conjectural bloat (code for scenarios that have yet to occur). When components are front-loaded into the process you get wastage as a byproduct. Guesswork and assumptions are part of the product’s DNA. I don’t blame anyone in thinking that this approach is the sensible direction. We’ve been conditioned to believe the next new thing should come first in the chain of events, whether it’s mobile-first, content first, users first - when it comes to building products in design and code, you can be forgiven for adopting a design system first approach.&lt;/p&gt;
 

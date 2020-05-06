@@ -529,6 +529,16 @@ html, body {
   }
 }
 
+.blog-posts article p>img.pillar {
+  max-height: 42vh;
+  @media screen and (min-width:720px) and (min-height: 720px) {
+    margin: 0;
+    float: right;
+    margin-right: -6.6em;
+    shape-outside: polygon(77% 0%, 40% 15%, 25% 37%, 47% 53%, 28% 42%, 24% 88%, 96% 101%, 98% 1%);
+  }
+}
+
 .article-content {
   max-width: 528px;
   p {
