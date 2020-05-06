@@ -30,11 +30,11 @@ In an intentional design system, there is no room for chaos. Only order. If some
 
 Their liberal counterpart, the emergent design system, begins with creativity and chaos deriving patterns for the system later. Decisions start from user outcomes (the sum of all parts) and work backwards to find reusable parts. It's hard to quantify the reach of emergent systems. It may cover a small amount of the product, and it may cover a lot of the product. It's not all-encompassing. There is likely a correlation between the number of unique user problems encountered and the overall coverage of the system.
 
-<img src="{{ siteUrl }}img/pillar.jpg" class="pillar">
-
 The scope of an intentional design system is large by default and requires some degree of conjectural bloat (code for scenarios that have yet to occur). When components are front-loaded into the process you get wastage as a byproduct. Guesswork and assumptions are part of the product's DNA. I don't blame anyone in thinking that this approach is the sensible direction. We've been conditioned to believe the next new thing should come first in the chain of events, whether it's mobile-first, content first, users first - when it comes to building products in design and code, you can be forgiven for adopting a design system first approach.
 
 Although not a like-for-like comparison, it's interesting to see that the same voices who would bemoan libraries such as jQuery and Bootstrap - two libraries full to the brim of conjectural bloat - haven't noticed the hypocrisy in advocating for design system first approaches before building up to more complex components. The same voices who evangelise for accessibility damning jQuery for adverse effects on performance and page weight are happy to tax users for a speculative design system[^1].
+
+<img src="{{ siteUrl }}img/pillar.jpg" class="pillar">
 
 In contrast, emergent design systems require only accepting evidence-based patterns and components into its system. It flips everything on its head asking the parts to prove themselves to be replicable and have sufficient utility. They need [the gardeners Frank Chimero alluded to](https://frankchimero.com/blog/2020/gardening-vs-architecture/).
 
