@@ -6,8 +6,8 @@
 </description>
     <link>http://jordanm.co.uk/</link>
     <atom:link href="http://jordanm.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 06 May 2020 23:41:29 +0100</pubDate>
-    <lastBuildDate>Wed, 06 May 2020 23:41:29 +0100</lastBuildDate>
+    <pubDate>Wed, 06 May 2020 23:46:44 +0100</pubDate>
+    <lastBuildDate>Wed, 06 May 2020 23:46:44 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -100,6 +100,8 @@
 &lt;p&gt;&lt;strong&gt;Do design systems limit creativity?&lt;/strong&gt; The answer rests on what type of system you subscribe to.&lt;/p&gt;
 
 &lt;p&gt;The worst incarnation of a design system designs designers out of the picture. If I were building an AI tool to displace designers, I’d point them towards an all-encompassing, intentional design system. I fear that we’re blindly running towards automation and we’re giving the algorithms the template our jobs. It’s not hard to imagine a world where No Code technology complements No Design. By contrast, the best incarnation of a design system leaves room for creativity, invention, the &lt;strong&gt;human&lt;/strong&gt; elements.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;img/gardening.jpg&quot; class=&quot;gardening&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;And my argument is exactly that - we should safeguard the human elements of the design process. There will always be a need for human intervention, the kind of which requires a human eye to correct for optical alignment when the machines produce rounding errors, or perhaps it is our all too human flaws that produce the rounding errors, either way, the goal should be to prioritise people over rules, algorithms, and automation. Ultimately you want to design systems that liberate creative teams rather than systems that constrain creative teams.&lt;/p&gt;
 
