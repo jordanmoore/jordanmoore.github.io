@@ -76,5 +76,3 @@ It’s also worth implementing techniques that help remove biases and ensure obj
 The path to delivering value in product design isn't through shiny user interfaces. Like a good puzzle, it lies in your ability to approach the problem from an inquisitive perspective, assemble the pieces of information you need, explore fundamentals and truths, and build back up to the definitive solution.
 
 No one said it would be easy.
-
-<div class="info">Originally published on <a href="https://www.invisionapp.com/blog/unpacking-design-problems/">InVision's blog</a></div>

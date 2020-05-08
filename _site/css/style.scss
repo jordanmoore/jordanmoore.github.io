@@ -383,10 +383,6 @@ strong {
   font-weight: 600;
 }
 
-.color-red {
-  color: $white;
-}
-
 .small-caps {
   font-size: 1.16em;
   font-variant: small-caps;
@@ -512,9 +508,24 @@ html, body {
   }
   article {
     white-space: normal;
-    margin-bottom: 2.6em;
+    // margin-bottom: 2.6em;
     padding-bottom: 5.2em;
-    break-after: always;
+    @media screen and (min-width:920px) and (min-height: 720px) {
+      padding-bottom: 0;
+      break-before: column;
+    }
+    &:first-of-type {
+      break-before: auto;
+    }
+    @media screen and (min-width:920px) and (min-height: 720px) {
+      &:last-of-type:after {
+        content: '';
+        display: block;
+        width: 426px;
+        padding: 1em;
+        break-before: column;
+      }
+    }
   }
   .date {
     margin-bottom: 4.2em;
@@ -529,14 +540,29 @@ html, body {
   }
 }
 
+.blog-posts article p>img.gardening {
+  margin-top: -1em;
+  margin-bottom: -1em;
+}
 .blog-posts article p>img.pillar {
   max-height: 42vh;
   margin: 0 auto;
+  display: block;
   @media screen and (min-width:720px) and (min-height: 720px) {
     margin: 0;
     float: right;
     margin-right: -6.6em;
     shape-outside: polygon(77% 0%, 40% 15%, 25% 37%, 47% 53%, 28% 42%, 24% 88%, 96% 101%, 98% 1%);
+  }
+}
+.blog-posts article p>img.yield {
+  @media screen and (min-width:720px) and (min-height: 720px) {
+    float: right;
+    max-width: 210px;
+    margin-left: 1em;
+    margin-right: -4.85em;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 }
 

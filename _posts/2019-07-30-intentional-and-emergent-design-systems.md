@@ -14,10 +14,10 @@ This seems to be the default methodology in design circles. The flavour and fram
 
 I have a few concerns with this way of working with design systems. Front-loading design and/or build with the pieces you believe you’ll eventually need to arrive at a solution creates a limited set of outcomes. Any attempt to create more pieces in anticipation of generating a greater number of outcomes results in conjectural bloat – a cost offset to the user paid for in unnecessary data and time.
 
-<figure>
+<!-- <figure>
     <img src="{{ site.url }}/img/intentionalds.jpg">
     <figcaption>Simplified flow of an intentional design system (building blocks first)</figcaption>
-</figure>
+</figure> -->
 
 Assuming the pieces will arrange themselves into answers means that you begin by painting yourself into a corner with something yet to prove its worth. This variety of design systems thinking usually finds its authors and gatekeepers consulting with the system over answers rather than thinking from first principles. Intentional design system advocates focus primarily on the what and how rather than the why.
 
@@ -28,10 +28,10 @@ Then there is the opposing approach, the unashamedly cart before horse way of lo
 This approach is much closer to the user needs end of the scale by beginning with creative solutions before deriving patterns and systems (i.e the system emerges from real, coded scenarios).
 
 
-<figure>
+<!-- <figure>
     <img src="{{ site.url }}/img/emergentds.jpg">
     <figcaption>Simplified flow of an emergent design system (solution first, derive systems)</figcaption>
-</figure>
+</figure> -->
 
 Emergent design systems are typically more liberal and agnostic to predefined ideas and pieces. The rules are written as the game is played, not before, which opens up more creative possibilities. The rules committed to code have been proven in the wild and earned their place in the system.
 

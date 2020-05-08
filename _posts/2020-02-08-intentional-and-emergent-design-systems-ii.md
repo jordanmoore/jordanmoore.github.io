@@ -88,9 +88,10 @@ If I could give an artificial intelligence the keys to fully automating modern d
 
 **Do design systems limit creativity?** The answer rests on what type of system you subscribe to.
 
+<img src="{{ siteUrl }}img/gardening.jpg" class="gardening">
+
 The worst incarnation of a design system designs designers out of the picture. If I were building an AI tool to displace designers, I'd point them towards an all-encompassing, intentional design system. I fear that we're blindly running towards automation and we're giving the algorithms the template our jobs. It's not hard to imagine a world where No Code technology complements No Design. By contrast, the best incarnation of a design system leaves room for creativity, invention, the **human** elements.
 
-<img src="{{ siteUrl }}img/gardening.jpg" class="gardening">
 
 And my argument is exactly that - we should safeguard the human elements of the design process. There will always be a need for human intervention, the kind of which requires a human eye to correct for optical alignment when the machines produce rounding errors, or perhaps it is our all too human flaws that produce the rounding errors, either way, the goal should be to prioritise people over rules, algorithms, and automation. Ultimately you want to design systems that liberate creative teams rather than systems that constrain creative teams.
 

@@ -6,8 +6,8 @@
 </description>
     <link>http://jordanm.co.uk/</link>
     <atom:link href="http://jordanm.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 06 May 2020 23:46:44 +0100</pubDate>
-    <lastBuildDate>Wed, 06 May 2020 23:46:44 +0100</lastBuildDate>
+    <pubDate>Fri, 08 May 2020 12:38:00 +0100</pubDate>
+    <lastBuildDate>Fri, 08 May 2020 12:38:00 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -99,9 +99,9 @@
 
 &lt;p&gt;&lt;strong&gt;Do design systems limit creativity?&lt;/strong&gt; The answer rests on what type of system you subscribe to.&lt;/p&gt;
 
-&lt;p&gt;The worst incarnation of a design system designs designers out of the picture. If I were building an AI tool to displace designers, I’d point them towards an all-encompassing, intentional design system. I fear that we’re blindly running towards automation and we’re giving the algorithms the template our jobs. It’s not hard to imagine a world where No Code technology complements No Design. By contrast, the best incarnation of a design system leaves room for creativity, invention, the &lt;strong&gt;human&lt;/strong&gt; elements.&lt;/p&gt;
-
 &lt;p&gt;&lt;img src=&quot;img/gardening.jpg&quot; class=&quot;gardening&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The worst incarnation of a design system designs designers out of the picture. If I were building an AI tool to displace designers, I’d point them towards an all-encompassing, intentional design system. I fear that we’re blindly running towards automation and we’re giving the algorithms the template our jobs. It’s not hard to imagine a world where No Code technology complements No Design. By contrast, the best incarnation of a design system leaves room for creativity, invention, the &lt;strong&gt;human&lt;/strong&gt; elements.&lt;/p&gt;
 
 &lt;p&gt;And my argument is exactly that - we should safeguard the human elements of the design process. There will always be a need for human intervention, the kind of which requires a human eye to correct for optical alignment when the machines produce rounding errors, or perhaps it is our all too human flaws that produce the rounding errors, either way, the goal should be to prioritise people over rules, algorithms, and automation. Ultimately you want to design systems that liberate creative teams rather than systems that constrain creative teams.&lt;/p&gt;
 
@@ -158,10 +158,10 @@
 
 &lt;p&gt;I have a few concerns with this way of working with design systems. Front-loading design and/or build with the pieces you believe you’ll eventually need to arrive at a solution creates a limited set of outcomes. Any attempt to create more pieces in anticipation of generating a greater number of outcomes results in conjectural bloat – a cost offset to the user paid for in unnecessary data and time.&lt;/p&gt;
 
-&lt;figure&gt;
-    &lt;img src=&quot;http://jordanm.co.uk/img/intentionalds.jpg&quot; /&gt;
+&lt;!-- &lt;figure&gt;
+    &lt;img src=&quot;http://jordanm.co.uk/img/intentionalds.jpg&quot;&gt;
     &lt;figcaption&gt;Simplified flow of an intentional design system (building blocks first)&lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;/figure&gt; --&gt;
 
 &lt;p&gt;Assuming the pieces will arrange themselves into answers means that you begin by painting yourself into a corner with something yet to prove its worth. This variety of design systems thinking usually finds its authors and gatekeepers consulting with the system over answers rather than thinking from first principles. Intentional design system advocates focus primarily on the what and how rather than the why.&lt;/p&gt;
 
@@ -171,10 +171,10 @@
 
 &lt;p&gt;This approach is much closer to the user needs end of the scale by beginning with creative solutions before deriving patterns and systems (i.e the system emerges from real, coded scenarios).&lt;/p&gt;
 
-&lt;figure&gt;
-    &lt;img src=&quot;http://jordanm.co.uk/img/emergentds.jpg&quot; /&gt;
+&lt;!-- &lt;figure&gt;
+    &lt;img src=&quot;http://jordanm.co.uk/img/emergentds.jpg&quot;&gt;
     &lt;figcaption&gt;Simplified flow of an emergent design system (solution first, derive systems)&lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;/figure&gt; --&gt;
 
 &lt;p&gt;Emergent design systems are typically more liberal and agnostic to predefined ideas and pieces. The rules are written as the game is played, not before, which opens up more creative possibilities. The rules committed to code have been proven in the wild and earned their place in the system.&lt;/p&gt;
 
@@ -216,18 +216,13 @@
 
 &lt;p&gt;I don’t buy it. Nor did I buy the black and white photos in the booklet taken by the bassist, Jeff Ament. They were dull and uninspiring. Nevertheless, they were my access to the lyrics and the personnel involved with each song, the instruments they played, the sound engineers and producers. These details matter when you obsess about music.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/img/yield.jpg&quot; alt=&quot;Spot the hidden Yield sign&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/yield2.jpg&quot; class=&quot;yield&quot; alt=&quot;Pearl Jam's 1998 album, Yield&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Over a series of listens with headphones on, the album booklet spread out on the floor in front of me, as I often did in the late ’90s before the days of streaming music, I started to notice some unusual things with this once trivial booklet. It started when I was listening to the song ‘Given to Fly’. I took notice of the accompanying photo as it looked like a photo of a statue gazing towards the sky, spreading its wings. The strange thing was that this was the only photo in the booklet that clearly depicted the track, whereas the rest of them didn’t. I flipped through the booklet towards one of my favourite tracks, ‘Faithfull’. I was met with a photo of a concrete building viewed from the ground. Did the building represent something? It wasn’t a church or somewhere you would practice your faith. As I contemplated the meaning behind the image, I noticed that one of the windows near the top was clearly shaped like a triangle, not a rectangle like the others.&lt;/p&gt;
 
 &lt;p&gt;I flipped the album closed to reveal the boring cover shot of the triangular yield sign. Was this a clue of some sort? I pored over the other shots in the booklet. The next track, ‘No Way’, had a photo of birds perched on telephone wires with a backdrop of clouds. Again, uninspiring at first glance, but there it was again, hiding in plain sight – an unnaturally shaped cloud in the shape of a triangle! I searched online for ‘Pearl Jam yield signs in booklet’ and didn’t get any useful results. I kept looking and found hidden yield signs in every photo of the book, some more obvious than others; some might even have been my imagination seeing something that wasn’t there.&lt;/p&gt;
 
 &lt;p&gt;The band deny all knowledge of hidden signs in the album artwork. Someone was playing a game. And I loved the thrill of the chase. World-renowned computer adventure game designer Brian Moriarty calls attributing personal meaning to sequences of things ‘constellation’, as in the verb to constellate, just as ancient civilizations would have looked up at the stars and grouped them into patterns, drawing connections between points and giving them meaning.&lt;/p&gt;
-
-&lt;figure&gt;
-&lt;img src=&quot;/img/na-geri.jpg&quot; alt=&quot;New Adventures Paper artwork&quot; /&gt;
-&lt;figcaption&gt;&lt;p&gt;New Adventures 2019 Paper artwork by &lt;a href=&quot;http://hellogeri.com&quot;&gt;Geri Coady&lt;/a&gt;&lt;/p&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
 
 &lt;p&gt;In today’s digitally transformed music industry with streaming on demand, Yield feels one-dimensional. There is no companion booklet to tell me who wrote the words and music for each song; I don’t know what the lyrics are or the visual representation of the lyrics from the artist; I don’t know how the album artwork feels to touch; I don’t know the personnel involved; I can’t see any of the hidden yield signs within the booklet; I can’t see the album in relation to the rest of my collection; and I can’t talk my friends through my collection.&lt;/p&gt;
 
@@ -258,7 +253,7 @@
 
 &lt;p&gt;If we don’t look beyond the screen, we get the benefit of instantaneous delivery but we are left with experience gaps: Areas of potential where digital transformation left behind the meaning and soul of something. I haven’t come here with ready-made tips or techniques for plugging these experience gaps, and if I did I’m not sure I’d want to give them to you either. I’d rather see what you come up with, reasoning from first principles rather than by analogy, through creative invention rather than imitation.&lt;/p&gt;
 
-&lt;div class=&quot;info&quot;&gt;Originally published in &lt;a href=&quot;https://newadventuresconf.com/2019/fringe/publication/&quot;&gt;New Adventures Paper 2019&lt;/a&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;Originally published in &lt;a href=&quot;https://newadventuresconf.com/2019/fringe/publication/&quot;&gt;New Adventures Paper 2019&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 20 Feb 2019 00:00:01 +0000</pubDate>
         <link>http://jordanm.co.uk/2019/02/20/experience-gaps.html</link>
@@ -345,8 +340,6 @@
 &lt;p&gt;The path to delivering value in product design isn’t through shiny user interfaces. Like a good puzzle, it lies in your ability to approach the problem from an inquisitive perspective, assemble the pieces of information you need, explore fundamentals and truths, and build back up to the definitive solution.&lt;/p&gt;
 
 &lt;p&gt;No one said it would be easy.&lt;/p&gt;
-
-&lt;div class=&quot;info&quot;&gt;Originally published on &lt;a href=&quot;https://www.invisionapp.com/blog/unpacking-design-problems/&quot;&gt;InVision's blog&lt;/a&gt;&lt;/div&gt;
 </description>
         <pubDate>Tue, 11 Sep 2018 01:00:01 +0100</pubDate>
         <link>http://jordanm.co.uk/2018/09/11/unpacking-design-problems.html</link>
@@ -655,31 +648,32 @@ Every technological artefact that is used will mediate human actions, and every 
       </item>
     
       <item>
-        <title>Released&amp;#58; Wipe Screen</title>
-        <description>&lt;p&gt;&lt;img src=&quot;http://jordanm.co.uk/img/wipe-screen.png&quot; alt=&quot;Wipe Screen screenshot&quot; /&gt;&lt;/p&gt;
+        <title>Thoughts on human vs AI narration</title>
+        <description>&lt;p&gt;My Instapaper feed looks a lot like my Steam account. I have gathered many items with the good intention of making use of them on a rainy day, but they eventually gather dust on their virtual shelves.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://jordanm.co.uk/wipescreen&quot;&gt;Wipe Screen&lt;/a&gt; attempts to solve the following problems:&lt;/p&gt;
+&lt;p&gt;Occasionally I’ll try and blast through a set of articles that I considered at one point to have potential value to me. When I’m strapped for time I’ll try Instapaper’s “speak” feature, which is effectively a shortcut to iOS’ dictation feature. I usually end up cancelling the dictation after it reads a few paragraphs. Perhaps I forget how bad it is or maybe I’m expecting some advances in the technology since I last used it that make it sound more natural and human-like.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Cleaning a dirty display&lt;/li&gt;
-  &lt;li&gt;Keeping the device switched on without having to log out and log back in again&lt;/li&gt;
-  &lt;li&gt;Keeping you in flow&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;With AI being applied to more and more tasks, fields and entire industries I notice how far it falls short of key human traits such as empathy and storytelling, and empathy within storytelling for that matter. We have thousands of years of experience on the robots when it comes to communicating oral wisdom from campfires and passing ideas down through generations.&lt;/p&gt;
 
-&lt;p&gt;It’s a fullscreen black screen app designed to show up dirt. Grab a screen wipe and wipe your laptop screen or your touch device.&lt;/p&gt;
+&lt;p&gt;AI narration is improving, however, services like Narro offer bots with various dialects that have fairly accurate speech patterns and rhythm. But ultimately the narration ends up having a passive effect as AI hasn’t managed to emulate the human capability of captivating an audience to deliver a message. Robots rely on punctuation like a musical score to inform the pace at which they communicate text, though we lack punctuation for instinctive human storytelling tools like drama and the pause to allow certain ideas to simmer in the minds of the listener. This is why uninteresting speakers often fail to communicate their idea — the audience becomes disengaged from the message.&lt;/p&gt;
 
-&lt;p&gt;Touch support is patchy for now as the fullscreen API isn’t reliable on smaller displays. Rotating your iOS device will have the same effect for the meantime.&lt;/p&gt;
+&lt;p&gt;On a relevant note, another key human trait in storytelling is context. With a contextual understanding of the topic, humans know when to employ the storytelling tools mentioned previously. Consider this example from a recent opinion piece in the New York Times about the dangers of relying on Google rather than investing in deep understanding:&lt;/p&gt;
 
-&lt;p&gt;Next steps:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Google is good at finding information, but the brain beats it in two essential ways. Champions of Google underestimate how much the meaning of words and sentences changes with context. Consider vocabulary. Every teacher knows that a sixth grader, armed with a thesaurus, will often submit a paper studded with words used in not-quite-correct ways, like the student who looked up “meticulous,” saw it meant “very careful,” and wrote “I was meticulous when I fell off the cliff.”&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Turn into a bookmarklet rather than a bookmark&lt;/li&gt;
-  &lt;li&gt;Offer white alternative colour for stubborn stains&lt;/li&gt;
-&lt;/ul&gt;
+  &lt;p&gt;&lt;a href=&quot;https://www.nytimes.com/2017/05/19/opinion/sunday/you-still-need-your-brain.html&quot;&gt;From You Still Need Your Brain&lt;/a&gt; by Daniel T. Willingham&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A classic example of schoolchildren discovering a tool like a thesaurus and employing the technology incorrectly. With AI dictation we are cutting out the middleman leaving it open for potential missteps like this not necessarily with words, but the in the power of those words.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;P.S If you are looking for a startup idea, please feel free to design a subscription service with great human storytellers willing to read my Instapaper feed for me, thanks!&lt;/p&gt;
 </description>
-        <pubDate>Sun, 20 Aug 2017 10:12:00 +0100</pubDate>
-        <link>http://jordanm.co.uk/2017/08/20/released-wipe-screen.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2017/08/20/released-wipe-screen.html</guid>
+        <pubDate>Sun, 04 Jun 2017 10:12:00 +0100</pubDate>
+        <link>http://jordanm.co.uk/2017/06/04/thoughts-on-human-vs-ai-narration.html</link>
+        <guid isPermaLink="true">http://jordanm.co.uk/2017/06/04/thoughts-on-human-vs-ai-narration.html</guid>
         
         
       </item>
