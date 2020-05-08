@@ -6,7 +6,7 @@ date: '2019-04-13T00:00:01+00:00'
 
 ---
 
-*The time between idea cogitation in the mind to manifestation in a sharable form.*
+<span class="small-caps">Noun</span> *The time between idea cogitation in the mind to manifestation in a sharable form.*
 
 One of the biggest challenges in any creative endeavour is manifesting ideas as close to the speed they form in the mind as possible. Ideas tend to have a half-life in that the longer we hold on to them without expressing or capturing them, the more fragmented they become from the original concept.
 

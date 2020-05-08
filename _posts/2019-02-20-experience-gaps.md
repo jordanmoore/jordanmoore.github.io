@@ -10,9 +10,9 @@ I hold a special place in my heart for Pearl Jam’s Yield album, released in 19
 
 I don’t buy it. Nor did I buy the black and white photos in the booklet taken by the bassist, Jeff Ament. They were dull and uninspiring. Nevertheless, they were my access to the lyrics and the personnel involved with each song, the instruments they played, the sound engineers and producers. These details matter when you obsess about music.
 
-<img src="{{ siteUrl }}/img/yield2.jpg" class="yield" alt="Pearl Jam's 1998 album, Yield" />
-
 Over a series of listens with headphones on, the album booklet spread out on the floor in front of me, as I often did in the late ’90s before the days of streaming music, I started to notice some unusual things with this once trivial booklet. It started when I was listening to the song ‘Given to Fly’. I took notice of the accompanying photo as it looked like a photo of a statue gazing towards the sky, spreading its wings. The strange thing was that this was the only photo in the booklet that clearly depicted the track, whereas the rest of them didn’t. I flipped through the booklet towards one of my favourite tracks, ‘Faithfull’. I was met with a photo of a concrete building viewed from the ground. Did the building represent something? It wasn’t a church or somewhere you would practice your faith. As I contemplated the meaning behind the image, I noticed that one of the windows near the top was clearly shaped like a triangle, not a rectangle like the others.
+
+<img src="{{ siteUrl }}/img/yield2.jpg" class="yield" alt="Pearl Jam's 1998 album, Yield" />
 
 I flipped the album closed to reveal the boring cover shot of the triangular yield sign. Was this a clue of some sort? I pored over the other shots in the booklet. The next track, ‘No Way’, had a photo of birds perched on telephone wires with a backdrop of clouds. Again, uninspiring at first glance, but there it was again, hiding in plain sight – an unnaturally shaped cloud in the shape of a triangle! I searched online for ‘Pearl Jam yield signs in booklet’ and didn’t get any useful results. I kept looking and found hidden yield signs in every photo of the book, some more obvious than others; some might even have been my imagination seeing something that wasn’t there.
 

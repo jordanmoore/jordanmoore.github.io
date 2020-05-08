@@ -545,6 +545,12 @@ html, body {
   margin-bottom: -1em;
 }
 @media screen and (min-width:720px) and (min-height: 720px) {
+  .blog-posts article p>img.idea {
+    float: left;
+    max-width: 210px;
+    margin: 0 0 0 -4em;
+    shape-outside: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  }
   .blog-posts article p>img.peacock {
     float: right;
     max-width: 280px;
