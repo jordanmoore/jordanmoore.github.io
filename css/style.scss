@@ -544,6 +544,22 @@ html, body {
   margin-top: -1em;
   margin-bottom: -1em;
 }
+@media screen and (min-width:720px) and (min-height: 720px) {
+  .blog-posts article p>img.peacock {
+    float: right;
+    max-width: 280px;
+    margin-left: 0;
+    margin-right: -4.7em;
+    shape-outside: polygon(63% 0, 19% 11%, 8% 24%, 15% 50%, 14% 69%, 46% 59%, 84% 100%, 99% 100%, 100% 0);
+  }
+}
+.blog-posts article p>img.levelling {
+    @media screen and (min-width:720px) and (min-height: 720px) {
+      max-height: 8.3vw;
+    }
+  margin: 0 auto;
+  display: block;
+}
 .blog-posts article p>img.pillar {
   max-height: 42vh;
   margin: 0 auto;

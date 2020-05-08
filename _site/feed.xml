@@ -6,8 +6,8 @@
 </description>
     <link>http://jordanm.co.uk/</link>
     <atom:link href="http://jordanm.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 08 May 2020 14:31:16 +0100</pubDate>
-    <lastBuildDate>Fri, 08 May 2020 14:31:16 +0100</lastBuildDate>
+    <pubDate>Fri, 08 May 2020 14:38:46 +0100</pubDate>
+    <lastBuildDate>Fri, 08 May 2020 14:38:46 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -294,7 +294,7 @@
 
 &lt;p&gt;For a good example of first principles in action, try this Wikipedia experiment. Click on the first non-parenthesized link in any random article and follow the chain. It will lead you down a path toward the most basic understanding of any concept. Strangely, approximately 80% of articles deconstructed in this manner bring you back to the Wikipedia article about philosophy.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://jordanm.co.uk/img/levelling.jpg&quot; alt=&quot;Levelling&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/levelling.jpg&quot; alt=&quot;Levelling&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;question-everything&quot;&gt;Question everything&lt;/h2&gt;
 
