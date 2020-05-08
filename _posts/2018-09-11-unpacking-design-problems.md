@@ -34,7 +34,7 @@ Mike Bithell, an independent game developer, sums this up nicely:
 
 For a good example of first principles in action, try this Wikipedia experiment. Click on the first non-parenthesized link in any random article and follow the chain. It will lead you down a path toward the most basic understanding of any concept. Strangely, approximately 80% of articles deconstructed in this manner bring you back to the Wikipedia article about philosophy.
 
-<img src="{{ siteUrl }}/img/levelling.jpg" alt="Levelling" class="levelling>
+<img src="{{ siteUrl }}/img/levelling.jpg" alt="Levelling" class="levelling">
 
 ## Question everything
 
