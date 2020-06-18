@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon</title>
+    <style>
+        body {
+            background: #000 url(bg.jpg) center bottom no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            font-family: sans-serif;
+            padding: 2.6em;
+            -webkit-font-smoothing: antialiased;
+        }
+        body:before {
+            background: #000;
+            content: '';
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0.6;
+        }
+        .container {
+            padding: 5.2em;
+            position: relative;
+            height: 100vh;
+        }
+        .icon-timeline {
+            height: 1px;
+            width: 104000px;
+            border-top: 1px dotted #fff;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            margin-right: 2.6em;
+        }
+        span {
+            position: absolute;
+            left: 0;
+            top: 1em;
+        }
+        .today {
+            left: auto;
+            right: 0;
+        }
+        
+        .century-20 {
+            right: 40px;
+            width: 200px;
+        }
+        .century-21 {
+            right: 0;
+            width: 40px;
+        }
+        
+        .icon-timeline div {
+            border: 1px solid;
+            height: 8px;
+            border-top: none;
+            position: absolute; 
+            top: 4px;
+        }
+        .icon-timeline div:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 0.88em;
+            white-space: nowrap;
+            transform: translateX(-50%);
+            top: 2.6em;
+        }
+        .icon-timeline div:before {
+            content: '';
+            position: absolute;
+            top: 0.6em;
+            left: 0;
+            right: 0;
+            height: 1em;
+            border-left: 1px solid white;
+            transform: translateX(50%);
+        }
+        .icon-timeline div.century-20:after {
+            content: '20th Century';
+            transform: none;
+        }
+        .icon-timeline div.century-21:after {
+            content: '21st Century';
+        }
+        .icon-timeline div.jesus {
+            right: 4066px;
+            width: 66px;
+            left: auto;
+        }
+        .icon-timeline div.ww2 {
+            right: 150px;
+            width: 12px;
+            left: auto;
+            top: -14px;
+            border-bottom: none;
+            border-top: 1px solid white;
+        }
+        .icon-timeline div.ww2:before {
+            top: -1em;
+        }
+        .icon-timeline div.ww2:after {
+            content: 'World War II';
+            top: -3.2em;
+            left: -100%;
+        }
+        .icon-timeline div.jesus:after {
+            content: 'The life of Jesus Christ';
+        }
+        .title {
+            text-align: center;
+            position: fixed;
+            bottom: 1em;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon-timeline">
+            <span class="beginning">
+                52,000 years ago
+            </span>
+            <div class="jesus"></div>
+            <div class="century-20"></div>
+            <div class="ww2"></div>
+            <div class="century-21">
+            </div>
+            <!-- <span class="today">Today in 2020</span> -->
+        </div>
+    </div>
+    <h1 class="title">Every Pixel, a Year</h1>
+</body>
+</html>

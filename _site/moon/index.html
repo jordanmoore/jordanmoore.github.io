@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon</title>
+    <style>
+        body {
+            background: #000;
+            text-align: center;
+        }
+        .moon {
+            background: url(img/moon.jpeg) center center no-repeat;
+            display: block;
+            width: 800px;
+            background-size: contain;
+            height: 800px;
+            margin: 0 auto;
+            position: relative;
+            mix-blend-mode: lighten;
+        }
+        .moon:after {
+            content: '';
+            position: absolute;
+            border: 1px dashed white;
+            width: 850px;
+            height: 850px;
+            border-radius: 100%;
+            right: 0;
+            bottom: 0;
+            top: 144px;
+            left: -32px;
+            opacity: 0.2;
+        }
+        .moon:before {
+            content: '•';
+            color: white;
+            width: 850px;
+            height: 850px;
+            position: absolute;
+            line-height: 0;
+            top: 144px;
+            left: -32px;
+            font-size: 1.4em;
+            bottom: 0;
+            right: 0;
+        }
+        @keyframes rotating {
+            from {
+                -ms-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            to {
+                -ms-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        .moon:before {
+            -webkit-animation: rotating 42s linear infinite;
+            -moz-animation: rotating 42s linear infinite;
+            -ms-animation: rotating 42s linear infinite;
+            -o-animation: rotating 42s linear infinite;
+            animation: rotating 42s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="moon"></div>
+</body>
+</html>
