@@ -12,7 +12,7 @@ I don’t buy it. Nor did I buy the black and white photos in the booklet taken 
 
 Over a series of listens with headphones on, the album booklet spread out on the floor in front of me, as I often did in the late ’90s before the days of streaming music, I started to notice some unusual things with this once trivial booklet. It started when I was listening to the song ‘Given to Fly’. I took notice of the accompanying photo as it looked like a photo of a statue gazing towards the sky, spreading its wings. The strange thing was that this was the only photo in the booklet that clearly depicted the track, whereas the rest of them didn’t. I flipped through the booklet towards one of my favourite tracks, ‘Faithfull’. I was met with a photo of a concrete building viewed from the ground. Did the building represent something? It wasn’t a church or somewhere you would practice your faith. As I contemplated the meaning behind the image, I noticed that one of the windows near the top was clearly shaped like a triangle, not a rectangle like the others.
 
-<img src="{{ siteUrl }}/img/yield2.jpg" class="yield" alt="Pearl Jam's 1998 album, Yield" />
+<img src="/img/yield2.jpg" class="yield" alt="Pearl Jam's 1998 album, Yield" />
 
 I flipped the album closed to reveal the boring cover shot of the triangular yield sign. Was this a clue of some sort? I pored over the other shots in the booklet. The next track, ‘No Way’, had a photo of birds perched on telephone wires with a backdrop of clouds. Again, uninspiring at first glance, but there it was again, hiding in plain sight – an unnaturally shaped cloud in the shape of a triangle! I searched online for ‘Pearl Jam yield signs in booklet’ and didn’t get any useful results. I kept looking and found hidden yield signs in every photo of the book, some more obvious than others; some might even have been my imagination seeing something that wasn’t there.
 
@@ -35,7 +35,7 @@ I try not to be a back-in-my-day kind of guy. I’m actually quite optimistic th
 Dropping a slide in place triggers a sequence of events beginning with the internal Arduino Yun with an NFC (near-field communication) shield read the NFC sticker on the back of the slide. Once the tag is identified over Wi-Fi, the Pi MusicBox API plays the selected album from Spotify through the connected speakers. To me, Brendan’s Plastic Player is the perfect example of analogue and digital music experiences coexisting in balance and harmony with each other. Other senses are brought back into play – the speed of digital (as a bug, not a feature) is eliminated by the time it takes you to leaf through the collection of slides, select one, and play. It’s not easy to skip tracks, browse, and add thousands to your collection by design. It’s thoughtfully paced; it leaves room for meaning. Decisions are slower and more deliberate.
 
 <figure>
-<img src="{{ siteUrl }}/img/plastic-player.png" alt="A photo of Brendan's contraption" />
+<img src="/img/plastic-player.png" alt="A photo of Brendan's contraption" />
 <figcaption><p>Brendan Dawes' <a href="http://www.brendandawes.com/projects/plasticplayer">Plastic Player project</a></p></figcaption>
 </figure>
 

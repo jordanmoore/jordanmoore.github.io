@@ -14,7 +14,7 @@ In general, the faster you can express and capture ideas, the more they stay tru
 
 Writing down ideas, whether by pen or by typing, increases idea friction but enjoys the retrieval benefit of finding them again at a later point in time. Sketching, drawing or visualising through design tools has a much greater rate of idea friction but enjoys the benefit of higher fidelity than other methods.
 
-<img src="{{ siteUrl }}/img/idea.jpg" class="idea" />
+<img src="/img/idea.jpg" class="idea" />
 
 Idea friction is especially true of any **collaborative** endeavour where you have an exchange of ideas. If the ideas are being discussed verbally you need to bank your idea, wait your turn, listen and understand ideas from other parties, contribute, notice how it affects your idea, then communicate. 
 

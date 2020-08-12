@@ -33,7 +33,7 @@ Examples of biomimicry in mechanics include the Shinkansen Bullet Train, the wor
 > "This shape has enabled the new 500-series to reduce air pressure by 30% and electricity use by 15%, even though speeds have increased by 10% over the former series. Another benefit has been confirmed through a favourable reputation among customers that these trains give a comfortable ride. This is due to the fact that changes in pressure when the trains enter tunnels are smaller."
 (Kobayashi: 2005)
 
-<img src="{{ siteUrl }}img/peacock.jpg" alt="A peacock" class="peacock">
+<img src="/img/peacock.jpg" alt="A peacock" class="peacock">
 
 NASA has several biomimicry projects in development including bio-inspired exercise equipment helping astronauts maintain fitness during spaceflight, solar propulsion mechanisms and glider technology inspired by a seagull's wingspan that saves on the need for continuous thrust and fuel costs.
 
