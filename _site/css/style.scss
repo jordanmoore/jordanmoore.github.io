@@ -4,7 +4,7 @@ $grey: #828386;
 $red: #EF0300;
 $dark-red: #B80C09;
 $serif: "Libre Caslon Text", serif;
-$sans: 'Inter', -apple-system, BlinkMacSystemFont, "myriad-pro", sans-serif;
+$sans: "SF Pro Display", -apple-system, BlinkMacSystemFont, "myriad-pro", sans-serif;
 
 @import url('https://rsms.me/inter/inter.css');
 
@@ -32,9 +32,6 @@ html {
 }
 
 body {
-  @media screen and (max-width: 568px) {
-    font-size: 14px;
-  }
   font-size: 14px;
   color: $dark;
   font-family: $sans;
@@ -358,7 +355,7 @@ h6 {
 }
 
 h2, h3 {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.133333333em;
   letter-spacing: -0.11px;
   line-height: 1.411764706em;
@@ -370,8 +367,8 @@ h2, h3 {
 }
 
 .article-header {
-  font-weight: 500;
-  font-size: 1.266666667em;
+  font-weight: 600;
+  font-size: 1.5em;
   color: $dark;
   letter-spacing: -0.12px;
   max-width: 18em;
@@ -967,21 +964,25 @@ footer {
 }
 
 .link-cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1.6em;
+
 }
 
 .link-card {
   text-decoration: none;
+  background: white;
   color: $dark;
-  border: 1px solid fade-out($grey, 0.8);
-  border-radius: 4px;
+  background: $dark;
+    color: white;
+  border-radius: 10px;
   margin-bottom: 2.6em;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.045);
   text-align: center;
   display: inline-block;
   padding: 1.6em;
+  // border: 6px solid $dark;
+  transition: all 0.26s ease;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0215656), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0178832), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.015), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0121168), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.00843437);
+  background-size: 100% !important;
+
   @media screen and (min-width:430px) {
     text-align: left;
     display: flex;
@@ -996,20 +997,19 @@ footer {
     width: 100%;
     max-width: 120px;
     margin: 0 auto;
-    border-radius: 4px;
+    // border-radius: 5px;
 
     img {
       display: block;
-      border-radius: 4px;
+      // border-radius: 5px;
       margin-bottom: 0.6em;
-      box-shadow: 0 2px 6px fade-out(#2F3135, 0.8), inset 0 1px 0 fade-out(white, 0.7);
     }
     @media screen and (min-width:430px) {
       overflow: hidden;
       border-radius: 0;
 
       img {
-        border-radius: 0;
+        // border-radius: 0;
         box-shadow: none;
         margin-bottom: 0;
       }
@@ -1023,7 +1023,7 @@ footer {
     @media screen and (min-width:430px) {
       border-left: 1px solid fade-out($grey, 0.8);
     }
-    padding: 0.6em 1.6em;
+    padding: 0.6em 2.6em;
     @media screen and (min-width:515px) {
       width: calc(100% - 152px);
     }
@@ -1032,14 +1032,49 @@ footer {
       margin-top: 0;
       margin-bottom: 0;
       padding-top: 0;
+      font-size: 1.5em;
+      border: none;
     }
 
     p {
       font-family: $sans;
-      font-size: 0.94em;
+      font-weight: normal;
       opacity: 0.6;
       margin-bottom: 0;
+      margin-top: 0;
       max-width: none !important;
+    }
+  }
+}
+
+
+.bd-lab article .article-content p {
+  text-align: left;
+  max-width: none;
+}
+
+.bd-lab {
+  background: rgb(245, 245, 247);
+  hr {
+    visibility: hidden;
+  }
+  header {
+    background: white;
+    margin-bottom: 5.2em;
+  }
+  h2 {
+    font-size: 1.4em;
+    border-bottom: 1px solid fade-out($dark, 0.9);
+    padding-bottom: 0.6em;
+    margin-bottom: 1.6em;
+  }
+  article {
+    h1 {
+      margin-bottom: 0.26em;
+      + p {
+        opacity: 0.6;
+        margin-top: 0;
+      }
     }
   }
 }

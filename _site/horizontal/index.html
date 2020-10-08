@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Play</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+    .stage {
+      white-space: nowrap;
+      scroll-snap-type: x mandatory;
+      overflow-x: scroll;
+    }
+    .channel {
+      white-space: normal;
+      display: inline-block;
+      border:2px solid red;
+      padding: 1.6em;
+      height: 100vh;
+      width: 100vw;
+      scroll-snap-align: start;
+    }
+    .channel-inner {
+      margin-left: -2.6em;
+    }
+  </style>
+</head>
+<body>
+  <div class="stage">
+    <div class="channel">
+      <div class="channel-inner">
+        test
+      </div>
+    </div>
+    <div class="channel">
+      <div class="channel-inner">
+      	two
+      </div>
+    </div>
+    <div class="channel">
+      <div class="channel-inner">
+        test
+      </div>
+    </div>
+    <div class="channel">
+      <div class="channel-inner">
+        test
+      </div>
+    </div>
+  </div>
+  <script>
+    var windowWidth = $('.stage').width(),
+    gridTop = windowWidth * .3,
+    gridBottom = windowWidth * .6;
+    $(window).scroll(function(){
+      $('.channel').each(function() {
+      var thisLeft = $(this).offset().left - $(window).scrollLeft(); // Get the `top` of this `li`
+
+      // Check if this element is in the interested viewport
+      if (thisLeft >= gridTop && (thisLeft + $(this).height()) <= gridBottom) {
+        $(this).css('background', 'red');
+      } else {
+        $(this).css('background', 'gray');
+      }
+    });
+    });
+  </script>
+</body>
+</html>

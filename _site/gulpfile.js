@@ -1,80 +1,61 @@
 // Required components
-var gulp = require('gulp'); // Core gulp file required to run... well all of this stuff
-var gulpif = require('gulp-if'); // For making decisions based on file types
-var plumber = require('gulp-plumber'); // For keeping watch tasks running when syntax errors occur
-var uglify = require('gulp-uglify'); // For minifying JS files
-var concat = require('gulp-concat'); // For pulling together multiple files
-var sass = require('gulp-sass'); // For compiling Scss files
-var minifycss = require('gulp-minify-css'); // For minifying CSS files
-var autoprefixer = require('gulp-autoprefixer'); // For writing cleaner CSS saving the need to write vendor prefixes
-var notify = require('gulp-notify'); // For notifying your operating system after tasks have successfully run - like an 'everything is ok' alarm
-var imagemin = require('gulp-imagemin'); // For image compression and optimisation
-var livereload = require('gulp-livereload'); // For reloading changes live in the browser
-var browserSync = require('browser-sync'); // For reloading changes live in the browser
-var reload = browserSync.reload; // For reloading changes live in the browser
-var del = require('del'); // For cleaning up leftovers
+const { src, dest, watch, series, parallel } = require('gulp');
+const browsersync = require('browser-sync').create();
+const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
+const plumber = require('gulp-plumber');
+const notify = require('gulp-notify');
 
-// Running the default gulp command from the command line runs the following tasks with a dependency on the clean task running first
-gulp.task('default', function() {
-    gulp.start('styles', 'scripts', 'watch');
-});
-
-var paths = {
-	images: 'images/',
-  css: 'css/',
-	html: '*.html',
-	js: 'js/'
+// Compile CSS from Sass.
+function buildStyles() {
+  return src('css/style.scss')
+    .pipe(plumbError()) // Global error handler through all pipes.
+    .pipe(sass({ outputStyle: 'compressed' }))
+    .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7']))
+    .pipe(dest('dist/styles/'))
+    .pipe(browsersync.stream());
 }
 
-// Run concatenation and minification on JS files
-gulp.task('scripts', function() {
-	gulp.src(paths.js + '*.js')
-  	.pipe(plumber())
-	.pipe(concat('all.min.js'))
-	.pipe(uglify())
-	.pipe(gulp.dest('dist/js'))
-    .pipe(notify({ message: 'JavaScript compiled' }));
-});
+// Watch changes on all *.scss files, lint them and
+// trigger buildStyles() at the end.
+function watchFiles() {
+  watch(
+    ['css/*.scss'],
+    { events: 'all', ignoreInitial: false },
+    series(buildStyles)
+  );
+}
 
-// Run concatenation, compile Sass, minifcation, sourcemaps and autoprefixes
-gulp.task('styles', function () {
-	gulp.src(paths.css + '**/*.scss')
-  .pipe(plumber())
-	.pipe(sass({ style: 'expanded' }))
-	.pipe(autoprefixer())
-	.pipe(minifycss())
-	.pipe(gulp.dest('dist/styles'))
-	.pipe(gulp.dest('_site/dist/styles'))
-  .pipe(reload({stream: true}))
-  .pipe(notify({ message: 'CSS Compiled' }));
-});
+// Init BrowserSync.
+function browserSync(done) {
+  browsersync.init({
+    server: {
+      baseDir: '_site'
+    },
+    reloadDelay: 600
+  });
+  done();
+}
 
-// Image optimisations
-gulp.task('images', function() {
-  return gulp.src([paths.images + '**/*', '!' + paths.images + 'avatars', '!' + paths.images + 'captchas', '!' + paths.images + 'member_photos', '!' + paths.images + 'pm_attachments', '!' + paths.images + 'signature_attachments', '!' + paths.images + 'smileys', '!' + paths.images + 'uploads'])
-  	.pipe(plumber())
-    .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
-    .pipe(gulp.dest('dist/images'))
-    .pipe(notify({ message: 'Images optimised' }));
-});
+// Error handler.
+function plumbError() {
+  return plumber({
+    errorHandler: function(err) {
+      notify.onError({
+        templateOptions: {
+          date: new Date()
+        },
+        title: "Gulp error in " + err.plugin,
+        message:  err.formatted
+      })(err);
+      beeper();
+      this.emit('end');
+    }
+  })
+}
 
-// Cleanups
-gulp.task('clean', function(cb) {
-    del(['dist/css', 'dist/js', 'dist/img'], cb)
-});
-
-gulp.task('browser-sync', function() {
-    browserSync({
-      server: {
-          baseDir: '_site'
-      }
-    });
-});
-
-// Run gulp watch to auto reload with livereload browser plugin
-gulp.task('watch', ['browser-sync'], function() {
-  gulp.watch(paths.css + '*.scss', ['styles']);
-  gulp.watch(paths.js + '*.js', ['scripts']);
-  gulp.watch(paths.images + '**/*', ['images']);
-  gulp.watch(paths.html + '**/*.html', browserSync.reload);
-});
+// Export commands.
+exports.default = parallel(browserSync, watchFiles); // $ gulp
+exports.sass = buildStyles; // $ gulp sass
+exports.watch = watchFiles; // $ gulp watch
+exports.build = series(buildStyles); // $ gulp build
