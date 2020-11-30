@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,31 +22,45 @@
             padding: 0;
             font-size: 15px;
         }
+
+        .note-content h1 {
+            font-size: 20px;
+        }
+
+        .note-content p {
+            font-size: 14px;
+        }
+
         .note-canvas {
             white-space: nowrap;
             overflow: auto;
             scroll-snap-type: x mandatory;
         }
+
         .note-channel {
-            max-width: 640px;
+            max-width: 500px;
             width: 100%;
             overflow-y: scroll;
             display: inline-block;
             vertical-align: top;
             height: 100vh;
-            scroll-snap-type: y mandatory;
+            /* scroll-snap-type: y mandatory; */
         }
+
         .note-content.-image {
-            margin: -3.2em;
+            margin: -2.6em;
         }
+
         .note-content.-image img {
             max-width: 100%;
             height: auto;
             display: block;
+            mix-blend-mode: darken;
         }
+
         .note {
-            margin: 1em 1em 2em;
-            padding: 3.2em;
+            margin: 0.6em 0.6em 1.6em;
+            padding: 2.6em;
             background: white;
             white-space: normal;
             position: relative;
@@ -53,14 +68,17 @@
             margin-right: 6px;
             scroll-snap-align: start;
         }
+
         .note.ui-sortable-placeholder {
             background: #f3f3f3;
             visibility: visible !important;
         }
+
         .note.ui-sortable-helper {
             cursor: grab;
-            box-shadow: 0 0 42px rgba(0,0,0,0.03);
+            box-shadow: 0 0 42px rgba(0, 0, 0, 0.03);
         }
+
         .note-id {
             position: absolute;
             top: 1.6em;
@@ -69,44 +87,107 @@
             font-size: 0.88em;
             cursor: pointer;
         }
+
         .note-content:focus {
             outline: none;
         }
+
         .note p,
         .note li {
             color: #484848;
         }
+
         .note a {
             color: #0074D9;
         }
+
+        .note.-color1 {
+            background-color: #FFFDB5;
+        }
+
+        .note.-color2 {
+            background-color: #FFCCB6;
+        }
+
+        .note.-color3 {
+            background-color: #F3B0C3;
+        }
+
+        .note.-color4 {
+            background-color: #CBAACB;
+        }
+
+        .note.-color5 {
+            background-color: #B6CFB6;
+        }
+
+        .note.-color6 {
+            background-color: #55CBCD;
+        }
+
+        .note.-color7 {
+            background-color: #ABDEE6;
+        }
+
+        .note.-color8 {
+            background-color: #FFC8A2;
+        }
+
+        .note.-color9 {
+            background-color: #333;
+            color: #FFF;
+        }
+
+        .note.-color9 li,
+        .note.-color9 p {
+            color: #FFF;
+        }
+
+        .note.-color9 a {
+            color: #fff;
+        }
+
+        .note.-color0 {
+            background-color: white;
+        }
+
         .note a:hover {
             text-decoration: none;
         }
+
         .press-w .note a:hover {
             cursor: n-resize;
         }
+
         .press-s .note a:hover {
             cursor: s-resize;
         }
+
         .press-a .note a:hover {
             cursor: w-resize;
         }
+
         .press-d .note a:hover {
             cursor: e-resize;
         }
+
         /* To be mapped */
         .press-a.press-w .note a:hover {
             cursor: nw-resize;
         }
+
         .press-a.press-s .note a:hover {
             cursor: sw-resize;
         }
+
         .press-d.press-w .note a:hover {
             cursor: ne-resize;
         }
+
         .press-d.press-s .note a:hover {
             cursor: se-resize;
         }
+
         .press-e .note a:hover {
             cursor: alias;
         }
@@ -117,14 +198,17 @@
             margin-top: 2.6em;
             font-size: 0.88em;
         }
+
         u {
             text-decoration: none;
             background-color: #FFDC00;
         }
+
         h4 {
             font-weight: 500;
             opacity: 0.4;
         }
+
         .source-location {
             background: #f6f6f6;
             padding: 0.6em 1em;
@@ -132,6 +216,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="note-canvas">
         <div class="note-channel">
@@ -141,24 +226,28 @@
     </div>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
-    $( function() {
-        $( ".note-channel" ).sortable({
-        connectWith: ".note-channel"
-        }).disableSelection();
-    } );
-    </script>
-    <script>
-        function makeChannel(){
-            if ($('.note-channel:last-of-type:not(:empty)')){
+        $(function () {
+            $(".note-channel").sortable({
+                connectWith: ".note-channel"
+            }).disableSelection();
+        });
+        $.fn.removeClassStartingWith = function (filter) {
+            $(this).removeClass(function (index, className) {
+                return (className.match(new RegExp("\\S*" + filter + "\\S*", 'g')) || []).join(' ')
+            });
+            return this;
+        };
+        function makeChannel() {
+            if ($('.note-channel:last-of-type:not(:empty)')) {
                 $('.note-channel:last-of-type').parent().append('<div class="note-channel"></div');
-                $( function() {
-                    $( ".note-channel" ).sortable({
-                    connectWith: ".note-channel"
+                $(function () {
+                    $(".note-channel").sortable({
+                        connectWith: ".note-channel"
                     }).disableSelection();
-                } );
+                });
             }
         }
-        $(function(){
+        $(function () {
             // Load the initial note (whatever you want your starting html file to be)
             $('.note-canvas .note:first-of-type').load('zettlekasten.html');
 
@@ -168,7 +257,15 @@
             var aPressed = false;
             var dPressed = false;
             var ePressed = false;
-            $(window).keydown(function(evt) {
+            var hoveredNote;
+            var onePressed = false;
+            $('.note-canvas').on('mouseenter', '.note', function (e) {
+                $(this).addClass('hovered');
+            });
+            $('.note-canvas').on('mouseleave', '.note', function (e) {
+                $('.note').removeClass('hovered');
+            });
+            $(window).keydown(function (evt) {
                 if (evt.which == 83) {
                     sPressed = true;
                     $('body').addClass('press-s');
@@ -189,7 +286,47 @@
                     ePressed = true;
                     $('body').addClass('press-e');
                 }
-            }).keyup(function(evt) {
+                else if (evt.which == 49) {
+                    $(".note.hovered").removeClassStartingWith('color');
+                    $('.note.hovered').addClass('-color1');
+                }
+                else if (evt.which == 50) {
+                    $(".note.hovered").removeClassStartingWith('color');
+                    $('.note.hovered').addClass('-color2');
+                }
+                else if (evt.which == 51) {
+                    $(".note.hovered").removeClassStartingWith('color');
+                    $('.note.hovered').addClass('-color3');
+                }
+                else if (evt.which == 52) {
+                    $(".note.hovered").removeClassStartingWith('color');
+                    $('.note.hovered').addClass('-color4');
+                }
+                else if (evt.which == 53) {
+                    $(".note.hovered").removeClassStartingWith('color');
+                    $('.note.hovered').addClass('-color5');
+                }
+                else if (evt.which == 54) {
+                    $(".note.hovered").removeClassStartingWith('color');
+                    $('.note.hovered').addClass('-color6');
+                }
+                else if (evt.which == 55) {
+                    $(".note.hovered").removeClassStartingWith('color');
+                    $('.note.hovered').addClass('-color7');
+                }
+                else if (evt.which == 56) {
+                    $(".note.hovered").removeClassStartingWith('color');
+                    $('.note.hovered').addClass('-color8');
+                }
+                else if (evt.which == 57) {
+                    $(".note.hovered").removeClassStartingWith('color');
+                    $('.note.hovered').addClass('-color9');
+                }
+                else if (evt.which == 48) {
+                    $(".note.hovered").removeClassStartingWith('color');
+                    $('.note.hovered').addClass('-color0');
+                }
+            }).keyup(function (evt) {
                 sPressed = false;
                 wPressed = false;
                 aPressed = false;
@@ -204,7 +341,7 @@
 
 
             // This takes care of note retrieval from HTML files as long as the link matches the HTML file name
-            $('.note-canvas').on('click', '.note a', function(e){
+            $('.note-canvas').on('click', '.note a', function (e) {
                 var noteToLoad = $(this).attr('href');
                 $('.note-channel').removeClass('-active');
                 $('.note').removeClass('-active-note');
@@ -236,4 +373,5 @@
         });
     </script>
 </body>
+
 </html>

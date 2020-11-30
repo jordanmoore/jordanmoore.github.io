@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📝 Notes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        @import url('https://rsms.me/inter/inter.css');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            overflow: auto;
+        }
+
+        body {
+            font-family: Inter, sans-serif;
+            background: #f6f6f6;
+            line-height: 1.6;
+            color: #252525;
+            margin: 0;
+            padding: 0;
+            font-size: 15px;
+        }
+
+        .note-content h1 {
+            font-size: 20px;
+        }
+
+        .note-content p {
+            font-size: 14px;
+        }
+
+        .note-canvas {
+            white-space: nowrap;
+            overflow: auto;
+            scroll-snap-type: x mandatory;
+            transition: transform 0.6s ease;
+        }
+
+        .note-channel {
+            /* max-width: 500px; */
+            width: 100%;
+            overflow-y: scroll;
+            display: inline-block;
+            vertical-align: top;
+            height: 100vh;
+            /* scroll-snap-type: y mandatory; */
+        }
+
+        .note-content.-image {
+            margin: -2.6em;
+        }
+
+        .note-content.-image img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            mix-blend-mode: darken;
+        }
+
+        .note {
+            transition: none;
+            margin: 0.6em 0.6em 1.6em;
+            padding: 2.6em;
+            background: white;
+            white-space: normal;
+            position: relative;
+            scroll-snap-align: start;
+            margin-right: 6px;
+            scroll-snap-align: start;
+            width: 500px;
+            box-shadow: 0px 33px 80px rgba(0, 0, 0, 0.07), 0px 13.7866px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 7.37098px 17.869px rgba(0, 0, 0, 0.0417275), 0px 4.13211px 10.0172px rgba(0, 0, 0, 0.035), 0px 2.19453px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 0.913195px 2.21381px rgba(0, 0, 0, 0.0196802);
+
+        }
+
+        .note.ui-sortable-placeholder {
+            background: #f3f3f3;
+            visibility: visible !important;
+        }
+
+        .note.ui-sortable-helper {
+            cursor: grab;
+            box-shadow: 0 0 42px rgba(0, 0, 0, 0.03);
+        }
+
+        .note-id {
+            position: absolute;
+            top: 1.6em;
+            right: 1.6em;
+            opacity: 0.3;
+            font-size: 0.88em;
+            cursor: pointer;
+        }
+
+        .note-content:focus {
+            outline: none;
+        }
+
+        .note p,
+        .note li {
+            color: #484848;
+        }
+
+        .note a {
+            color: #0074D9;
+        }
+
+        .note.-color1 {
+            background-color: #FFFDB5;
+        }
+
+        .note.-color2 {
+            background-color: #FFCCB6;
+        }
+
+        .note.-color3 {
+            background-color: #F3B0C3;
+        }
+
+        .note.-color4 {
+            background-color: #CBAACB;
+        }
+
+        .note.-color5 {
+            background-color: #B6CFB6;
+        }
+
+        .note.-color6 {
+            background-color: #55CBCD;
+        }
+
+        .note.-color7 {
+            background-color: #ABDEE6;
+        }
+
+        .note.-color8 {
+            background-color: #FFC8A2;
+        }
+
+        .note.-color9 {
+            background-color: #333;
+            color: #FFF;
+        }
+
+        .note.-color9 li,
+        .note.-color9 p {
+            color: #FFF;
+        }
+
+        .note.-color9 a {
+            color: #fff;
+        }
+
+        .note.-color0 {
+            background-color: white;
+        }
+
+        .note a:hover {
+            text-decoration: none;
+        }
+
+        .press-w .note a:hover {
+            cursor: n-resize;
+        }
+
+        .press-s .note a:hover {
+            cursor: s-resize;
+        }
+
+        .press-a .note a:hover {
+            cursor: w-resize;
+        }
+
+        .press-d .note a:hover {
+            cursor: e-resize;
+        }
+
+        /* To be mapped */
+        .press-a.press-w .note a:hover {
+            cursor: nw-resize;
+        }
+
+        .press-a.press-s .note a:hover {
+            cursor: sw-resize;
+        }
+
+        .press-d.press-w .note a:hover {
+            cursor: ne-resize;
+        }
+
+        .press-d.press-s .note a:hover {
+            cursor: se-resize;
+        }
+
+        .press-e .note a:hover {
+            cursor: alias;
+        }
+
+
+        .note-references {
+            border-top: 1px solid rgba(0, 0, 0, 0.07);
+            margin-top: 2.6em;
+            font-size: 0.88em;
+        }
+
+        .note.-color9 .note-references {
+            border-top-color: rgba(255, 255, 255, 0.16);
+        }
+
+        .note.-color9 .source-location {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+        }
+
+        u {
+            text-decoration: none;
+            background-color: #FFDC00;
+        }
+
+        h4 {
+            font-weight: 500;
+            opacity: 0.4;
+        }
+
+        .source-location {
+            background: rgba(0, 0, 0, 0.04);
+            border: 1px solid rgba(0, 0, 0, 0.07);
+            padding: 0.6em 1em;
+            border-radius: 3px;
+        }
+
+        .zoom {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="note-canvas">
+        <div class="note-channel">
+            <div class="note"></div>
+        </div>
+    </div>
+    <div class="zoom">
+        <input type="range" id="zoom" min="0.25" max="1" value="1" step="0.25">
+    </div>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        // $(function () {
+        //     $(".note-channel").sortable({
+        //         connectWith: ".note-channel"
+        //     }).disableSelection();
+        // });
+        $('#zoom').on('input', function (e) {
+            var zoomValue = $(this).val();
+            $('.note-canvas').css('transform', 'scale(' + zoomValue + ')');
+        });
+        let rotated = [-3, -2, -1, 1, 2, 3];
+        let pageSound = ['pop.mp3', 'pop2.mp3', 'pop3.mp3'];
+        $.fn.removeClassStartingWith = function (filter) {
+            $(this).removeClass(function (index, className) {
+                return (className.match(new RegExp("\\S*" + filter + "\\S*", 'g')) || []).join(' ')
+            });
+            return this;
+        };
+        function makeChannel() {
+            // $('.note-channel:last-of-type').parent().append('<div class="note-channel"></div');
+            $(function () {
+                $(".note").draggable({
+                    stack: ".note"
+                });
+            });
+        }
+        $(function () {
+            // Load the initial note (whatever you want your starting html file to be)
+            $('.note-canvas .note:first-of-type').load('zettlekasten.html');
+
+            // Detect keypress
+            var sPressed = false;
+            var wPressed = false;
+            var aPressed = false;
+            var dPressed = false;
+            var ePressed = false;
+            var delPressed = false;
+            var hoveredNote;
+            var onePressed = false;
+            $('.note-canvas').on('mouseenter', '.note', function (e) {
+                $(this).addClass('hovered');
+            });
+            $('.note-canvas').on('mouseleave', '.note', function (e) {
+                $('.note').removeClass('hovered');
+            });
+            $(window).keydown(function (evt) {
+                if (evt.which == 83) {
+                    sPressed = true;
+                    $('body').addClass('press-s');
+                }
+                else if (evt.which == 87) {
+                    wPressed = true;
+                    $('body').addClass('press-w');
+                }
+                else if (evt.which == 65) {
+                    aPressed = true;
+                    $('body').addClass('press-a');
+                }
+                else if (evt.which == 68) {
+                    dPressed = true;
+                    $('body').addClass('press-d');
+                }
+                else if (evt.which == 69) {
+                    ePressed = true;
+                    $('body').addClass('press-e');
+                }
+                else if (evt.which == 49) {
+                    $(".note.hovered").removeClassStartingWith('color');
+                    $('.note.hovered').addClass('-color1');
+                }
+                else if (evt.which == 50) {
+                    $(".note.hovered").removeClassStartingWith('color');
+                    $('.note.hovered').addClass('-color2');
+                }
+                else if (evt.which == 51) {
+                    $(".note.hovered").removeClassStartingWith('color');
+                    $('.note.hovered').addClass('-color3');
+                }
+                else if (evt.which == 52) {
+                    $(".note.hovered").removeClassStartingWith('color');
+                    $('.note.hovered').addClass('-color4');
+                }
+                else if (evt.which == 53) {
+                    $(".note.hovered").removeClassStartingWith('color');
+                    $('.note.hovered').addClass('-color5');
+                }
+                else if (evt.which == 54) {
+                    $(".note.hovered").removeClassStartingWith('color');
+                    $('.note.hovered').addClass('-color6');
+                }
+                else if (evt.which == 55) {
+                    $(".note.hovered").removeClassStartingWith('color');
+                    $('.note.hovered').addClass('-color7');
+                }
+                else if (evt.which == 56) {
+                    $(".note.hovered").removeClassStartingWith('color');
+                    $('.note.hovered').addClass('-color8');
+                }
+                else if (evt.which == 57) {
+                    $(".note.hovered").removeClassStartingWith('color');
+                    $('.note.hovered').addClass('-color9');
+                }
+                else if (evt.which == 48) {
+                    $(".note.hovered").removeClassStartingWith('color');
+                    $('.note.hovered').addClass('-color0');
+                }
+                else if (evt.which == 8) {
+                    $(".note.hovered").remove();
+                }
+            }).keyup(function (evt) {
+                sPressed = false;
+                wPressed = false;
+                aPressed = false;
+                dPressed = false;
+                ePressed = false;
+                $('body').removeClass('press-s');
+                $('body').removeClass('press-w');
+                $('body').removeClass('press-a');
+                $('body').removeClass('press-d');
+                $('body').removeClass('press-e');
+            });
+
+            $(function () {
+                $(".note").draggable({
+                    stack: ".note"
+                });
+            });
+            function play() {
+                var audio = document.getElementById("audio");
+                audio.play();
+            }
+
+            // This takes care of note retrieval from HTML files as long as the link matches the HTML file name
+            $('.note-canvas').on('click', '.note a', function (e) {
+                var noteToLoad = $(this).attr('href');
+                $('.note').removeClass('-active-note');
+                $(this).parent().parent().parent().parent().addClass('-active');
+                $(this).parent().parent().parent().addClass('-active-note');
+                $('#audio').attr('src', pageSound[Math.floor(Math.random() * 3)]);
+                play();
+                if (sPressed) {
+                    // Load below
+                    var positionTo = $('body').find('.-active-note').position();
+                    var positionToTop = positionTo.top + $('body').find('.-active-note').height() + 20;
+                    $('.note-channel').append('<div class="note" style="transform: rotate(' + rotated[Math.floor(Math.random() * 6) + 1] + 'deg); z-index: 99999; position: absolute; top:' + positionToTop + 'px; left:' + positionTo.left + 'px"></div>')
+                    $('.note-channel .note:last-of-type').load(noteToLoad);
+                    makeChannel();
+                } else if (wPressed) {
+                    // Load above
+                    var positionTo = $('body').find('.-active-note').position();
+                    var positionToTop = positionTo.top - 260;
+                    $('.note-channel').append('<div class="note" style="transform: rotate(' + rotated[Math.floor(Math.random() * 6) + 1] + 'deg); z-index: 99999; position: absolute; top:' + positionToTop + 'px; left:' + positionTo.left + 'px"></div>')
+                    $('.note-channel .note:last-of-type').load(noteToLoad);
+                    makeChannel();
+                } else if (aPressed) {
+                    // Load left
+                    var positionTo = $('body').find('.-active-note').position();
+                    var positionToLeft = positionTo.left - 520;
+                    $('.note-channel').append('<div class="note" style="transform: rotate(' + rotated[Math.floor(Math.random() * 6) + 1] + 'deg); z-index: 99999; position: absolute; top:' + positionTo.top + 'px; left:' + positionToLeft + 'px"></div>')
+                    $('.note-channel .note:last-of-type').load(noteToLoad);
+                    makeChannel();
+                } else {
+                    var positionTo = $('body').find('.-active-note').position();
+                    var positionToLeft = positionTo.left + 520;
+                    $('.note-channel').append('<div class="note" style="transform: rotate(' + rotated[Math.floor(Math.random() * 6) + 1] + 'deg); z-index: 99999; position: absolute; top:' + positionTo.top + 'px; left:' + positionToLeft + 'px"></div>')
+                    $('.note-channel .note:last-of-type').load(noteToLoad);
+                    makeChannel();
+                }
+                e.preventDefault();
+            });
+        });
+    </script>
+
+    <audio id="audio" src="pop.mp3"></audio>
+
+</body>
+
+</html>
