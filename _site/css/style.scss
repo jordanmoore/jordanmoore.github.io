@@ -40,6 +40,10 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   background: white;
+  @media (prefers-color-scheme: dark) {
+    background: $dark;
+    color: white;
+  }
 }
 
 a {
@@ -143,6 +147,9 @@ img {
         letter-spacing: -0.45px;
         line-height: 1.2;
         color: $dark;
+        @media (prefers-color-scheme: dark) {
+          color: white;
+        }
       }
 
       a > span {
@@ -370,6 +377,9 @@ h2, h3 {
   font-weight: 600;
   font-size: 1.5em;
   color: $dark;
+  @media (prefers-color-scheme: dark) {
+    color: white;
+  }
   letter-spacing: -0.12px;
   max-width: 18em;
   line-height: 1.4;
@@ -458,11 +468,20 @@ strong {
 
 .bd-bookshelf, .bd-lab {
   background-color: #fff;
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark;
+  }
   .article-header,
   article {
     color: $dark;
+    @media (prefers-color-scheme: dark) {
+      color: white;
+    }
     .article-content p {
       color: fade-out($dark, 0.4);
+      @media (prefers-color-scheme: dark) {
+        color: fade-out(white, 0.4);
+      }
       max-width: 528px;
       margin-left: auto;
       margin-right: auto;
@@ -593,6 +612,9 @@ html, body {
       hyphens: auto;
     }
     color: fade-out($dark, 0.2);
+    @media (prefers-color-scheme: dark) {
+      color: fade-out(white, 0.2);
+    }
     font-size: 1em;
     letter-spacing: -0.09px;
     line-height: 1.6em;
@@ -613,6 +635,9 @@ html, body {
     font-size: 1em;
     margin-bottom: 0.4em;
     color: fade-out($dark, 0.4);
+    @media (prefers-color-scheme: dark) {
+      color: fade-out(white, 0.2);
+    }
   }
 
   ul {
@@ -689,6 +714,11 @@ html, body {
       margin-right: 1.6em;
       margin-bottom: 1.6em;
       margin-top: 1.6em;
+      @media (prefers-color-scheme: dark) {
+        filter: invert(100%) grayscale(100%);
+        mix-blend-mode: lighten;
+        background-blend-mode: lighten;
+      }
     }
   }
 }
@@ -749,6 +779,9 @@ html, body {
   a {
     text-decoration: none;
     color: $dark;
+    @media (prefers-color-scheme: dark) {
+      color: white;
+    }
 
   span {
     display: none;
@@ -969,9 +1002,11 @@ footer {
 
 .link-card {
   text-decoration: none;
-  background: white;
   color: $dark;
   background: $dark;
+  @media (prefers-color-scheme: dark) {
+    border: 1px solid rgba(255,255,255,0.16);
+  }
     color: white;
   border-radius: 10px;
   margin-bottom: 2.6em;
@@ -1055,11 +1090,18 @@ footer {
 
 .bd-lab {
   background: rgb(245, 245, 247);
+  @media (prefers-color-scheme: dark) {
+    background: $dark;
+  }
   hr {
     visibility: hidden;
   }
   header {
     background: white;
+    @media (prefers-color-scheme: dark) {
+      background: $dark;
+      color: white;
+    }
     margin-bottom: 5.2em;
   }
   h2 {
