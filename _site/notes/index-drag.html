@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>📝 Notes</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <style>
         @import url('https://rsms.me/inter/inter.css');
 
@@ -26,6 +28,94 @@
             margin: 0;
             padding: 0;
             font-size: 15px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .search {
+            position: absolute;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .search input {
+            border: 2px solid #ddd;
+            background: transparent;
+            font-size: 1em;
+            padding: 0.9em 1.3em;
+            border-radius: 8px;
+            margin-top: 2.6em;
+            font-family: Inter, sans-serif;
+            transition: all 0.26s ease;
+            width: 284px;
+        }
+        .search input:focus {
+            outline: none;
+            border: 2px solid #999;
+            background: #f6f6f6;
+            width: 460px;
+        }
+        .search-wrap {
+            position: relative;
+        }
+        .search-wrap:after {
+            position: absolute;
+            right: 0.8em;
+            top: 3.3em;
+            content: '⌘K';
+            border: 1px solid #000;
+            border-radius: 4px;
+            display: inline-block;
+            padding: 0.1em 0.4em;
+            opacity: 0.2;
+        }
+        .ui-widget.ui-widget-content {
+            margin-top: 0.6em;
+            background: #000;
+            border: 1px solid #000;
+            color: white;
+            border-radius: 6px;
+            padding: 0.3em;
+            font-size: 1em;
+            font-family: 'Inter', sans-serif;
+        }
+        .ui-widget.ui-widget-content .ui-menu-item-wrapper.ui-state-active {
+            background: #007AFF;
+            color: white;
+            border-radius: 3px;
+            border-color: #007AFF;
+        }
+        /* .ui-menu .ui-menu-item-wrapper,  */
+        .ui-menu .ui-menu-item a {
+            padding: 0.5em 1em 0.45em;
+            display: block;
+            color: white;
+        }
+        .ui-menu .ui-menu-item a span {
+            display: inline-block;
+            vertical-align: middle;
+            height: 1em;
+            width: 1em;
+            border-radius: 2em;
+            background: white;
+            border: 2px solid white;
+            margin-right: 0.6em;
+        }
+        .search-heading {
+            text-transform: uppercase;
+            color: white;
+            pointer-events: none;
+            margin: 0.5em 0 0 0.5em;
+            font-size: 0.85em;
+            letter-spacing: 0.5px;
+        }
+        .ui-widget.ui-widget-content h4.ui-menu-item-wrapper.ui-state-active {
+            background: transparent;
+            border: none;
+            margin: 0.5em 0 0 0.5em;
+        }
+        li.colors ~ li.colors .search-heading{
+            display: none;
         }
 
         .note-content h1 {
@@ -42,6 +132,20 @@
             scroll-snap-type: x mandatory;
             transition: transform 0.6s ease;
         }
+        .note-canvas.--unstacked {
+            margin-top: 9.2em;
+            columns: 4;
+            height: 100vh;
+            overflow: visible;
+            padding: 0.6em;
+        }
+        .note-canvas.--unstacked .note {
+            transform: none !important;
+            position: static !important;
+            break-inside: avoid;
+            margin: 0 0 1.6em;
+            box-shadow: none;
+        }
 
         .note-channel {
             /* max-width: 500px; */
@@ -51,6 +155,10 @@
             vertical-align: top;
             height: 100vh;
             /* scroll-snap-type: y mandatory; */
+        }
+        .note-canvas.--unstacked .note-channel {
+            overflow: visible;
+            display: block;
         }
 
         .note-content.-image {
@@ -65,7 +173,7 @@
         }
 
         .note {
-            transition: none;
+            transition: opacity 0.26s ease, transform 0.26s ease, background-color 0.26s ease;
             margin: 0.6em 0.6em 1.6em;
             padding: 2.6em;
             background: white;
@@ -76,7 +184,10 @@
             scroll-snap-align: start;
             width: 500px;
             box-shadow: 0px 33px 80px rgba(0, 0, 0, 0.07), 0px 13.7866px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 7.37098px 17.869px rgba(0, 0, 0, 0.0417275), 0px 4.13211px 10.0172px rgba(0, 0, 0, 0.035), 0px 2.19453px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 0.913195px 2.21381px rgba(0, 0, 0, 0.0196802);
-
+        }
+        .note.--searched {
+            transform: rotate(0deg) scale(1.16) !important;
+            z-index: 99999 !important;
         }
 
         .note.ui-sortable-placeholder {
@@ -111,39 +222,39 @@
             color: #0074D9;
         }
 
-        .note.-color1 {
+        .note.-color1, .ui-menu .ui-menu-item a span.-color1 {
             background-color: #FFFDB5;
         }
 
-        .note.-color2 {
+        .note.-color2, .ui-menu .ui-menu-item a span.-color2 {
             background-color: #FFCCB6;
         }
 
-        .note.-color3 {
+        .note.-color3, .ui-menu .ui-menu-item a span.-color3 {
             background-color: #F3B0C3;
         }
 
-        .note.-color4 {
+        .note.-color4, .ui-menu .ui-menu-item a span.-color4 {
             background-color: #CBAACB;
         }
 
-        .note.-color5 {
+        .note.-color5, .ui-menu .ui-menu-item a span.-color5 {
             background-color: #B6CFB6;
         }
 
-        .note.-color6 {
+        .note.-color6, .ui-menu .ui-menu-item a span.-color6 {
             background-color: #55CBCD;
         }
 
-        .note.-color7 {
+        .note.-color7, .ui-menu .ui-menu-item a span.-color7 {
             background-color: #ABDEE6;
         }
 
-        .note.-color8 {
+        .note.-color8, .ui-menu .ui-menu-item a span.-color8 {
             background-color: #FFC8A2;
         }
 
-        .note.-color9 {
+        .note.-color9, .ui-menu .ui-menu-item a span.-color9 {
             background-color: #333;
             color: #FFF;
         }
@@ -242,10 +353,32 @@
             bottom: 0;
             padding: 1em;
         }
+
+        .js-create {
+            position: fixed;
+            bottom: 1em;
+            right: 1em;
+            z-index: 9999;
+        }
+
+        .note.--creating {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+        }
+
     </style>
 </head>
 
 <body>
+    <div class="search">
+        <div class="search-wrap">
+            <input id="search" type="text" placeholder="Search for anything">
+        </div>
+    </div>
+    <a href="#" class="js-create">Create note</a>
     <div class="note-canvas">
         <div class="note-channel">
             <div class="note"></div>
@@ -282,6 +415,125 @@
             });
         }
         $(function () {
+            var searchTitles = [
+                {
+                    value: "Zettlekasten",
+                    label: "Zettlekasten",
+                    origin: "Title",
+                },
+                {
+                    value: "Fugues",
+                    label: "Fugues",
+                    origin: "Title",
+                },
+                {
+                    value: "Godel Escher Bach",
+                    label: "Godel Escher Bach",
+                    origin: "Title",
+                },
+                {
+                    value: "The shared experience of GEB",
+                    label: "The shared experience of GEB",
+                    origin: "Title",
+                },
+                {
+                    value: "Experience",
+                    label: "Experience",
+                    origin: "Title",
+                },
+                {
+                    value: "Strange Loops",
+                    label: "Strange Loops",
+                    origin: "Title",
+                },
+                {
+                    value: "Discussing Ideas",
+                    label: "Discussing Ideas",
+                    origin: "Title",
+                },
+            ];
+            var searchColors = [
+                {
+                    value: "-color0",
+                    label: "White",
+                    origin: "Color",
+                },
+                {
+                    value: "-color1",
+                    label: "Yellow",
+                    origin: "Color",
+                },
+                {
+                    value: "-color2",
+                    label: "Peach",
+                    origin: "Color",
+                },
+                {
+                    value: "-color3",
+                    label: "Pink",
+                    origin: "Color",
+                },
+                {
+                    value: "-color4",
+                    label: "Purple",
+                    origin: "Color",
+                },
+                {
+                    value: "-color5",
+                    label: "Green",
+                    origin: "Color",
+                },
+                {
+                    value: "-color6",
+                    label: "Teal",
+                    origin: "Color",
+                },
+                {
+                    value: "-color7",
+                    label: "Blue",
+                    origin: "Color",
+                },
+                {
+                    value: "-color8",
+                    label: "Orange",
+                    origin: "Color",
+                },
+                {
+                    value: "-color9",
+                    label: "Black",
+                    origin: "Color",
+                },
+            ];
+            var suggest = searchTitles.concat(searchColors);
+            $("#search").autocomplete({
+                source: suggest,
+                select: function( event, ui ) {
+                    $('.note').css('opacity', '0.2');
+                    $('.note').removeClass('--searched');
+                    $('.note h1').filter(function(){
+                        return $(this).text() == ui.item.value;
+                    }).parent().parent().css('opacity', '1').addClass('--searched');
+                    $('.note').filter('.'+ui.item.value).addClass('--searched').css('opacity', '1');
+                    event.preventDefault();
+                    $('#search').val(ui.item.label);
+                },
+                focus: function ( event, ui) {
+                    event.preventDefault();
+                    $('#search').val(ui.item.label);
+                }
+            }).data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+                if ( item.origin == 'Title') {
+                    return $( "<li class='titles'>" )
+                    .append( "<a>" + item.label + "</a>" ) 
+                    .appendTo( ul );
+                }
+                else {
+                    return $( "<li class='colors'>" )
+                        .append( "<a><span class="+ item.value +"></span>" + item.label + "</a>" )
+                        .appendTo( ul )
+                        .prepend("<h4 class='search-heading'>Colours</h4>");
+                    }
+            };
             // Load the initial note (whatever you want your starting html file to be)
             $('.note-canvas .note:first-of-type').load('zettlekasten.html');
 
@@ -291,7 +543,11 @@
             var aPressed = false;
             var dPressed = false;
             var ePressed = false;
+            var uPressed = false;
+            var cmdPressed = false;
+            var cmdKPressed = false;
             var delPressed = false;
+            var escPressed = false;
             var hoveredNote;
             var onePressed = false;
             $('.note-canvas').on('mouseenter', '.note', function (e) {
@@ -301,7 +557,18 @@
                 $('.note').removeClass('hovered');
             });
             $(window).keydown(function (evt) {
-                if (evt.which == 83) {
+                if (evt.which == 27) {
+                    escPressed = true;
+                    $('body').addClass('press-esc');
+                    $('.note').css('opacity', '1');
+                    $('#search').val('');
+                    $('#search').trigger('blur');
+                    $('.note').removeClass('--searched');
+                }
+                else if (evt.metaKey && evt.which == 75) {
+                    $('#search').focus();
+                }
+                else if (evt.which == 83) {
                     sPressed = true;
                     $('body').addClass('press-s');
                 }
@@ -320,6 +587,10 @@
                 else if (evt.which == 69) {
                     ePressed = true;
                     $('body').addClass('press-e');
+                }
+                else if (evt.which == 85) {
+                    uPressed = true;
+                    $('.note-canvas').addClass('--unstacked');
                 }
                 else if (evt.which == 49) {
                     $(".note.hovered").removeClassStartingWith('color');
@@ -370,11 +641,13 @@
                 aPressed = false;
                 dPressed = false;
                 ePressed = false;
+                uPressed = false;
                 $('body').removeClass('press-s');
                 $('body').removeClass('press-w');
                 $('body').removeClass('press-a');
                 $('body').removeClass('press-d');
                 $('body').removeClass('press-e');
+                $('.note-canvas').removeClass('--unstacked');
             });
 
             $(function () {
@@ -387,6 +660,21 @@
                 audio.play();
             }
 
+            // Create Note
+            $('.js-create').click(function(e){
+                $('body').addClass('creating-note');
+                $('.note-channel').append('<div class="note --creating"><div class="note-content"><h1 contenteditable="true">Placeholder</h1><div class="note-id">001.001</div><p contenteditable="true">Type here</p><span class="js-create-add">Add note</span></div>');
+                e.preventDefault();
+            });
+            $('body').on('click', '.js-create-add', function(e){
+                $('.note.--creating').css('transform', 'rotate(' + rotated[Math.floor(Math.random() * 6) + 1] + 'deg); z-index: 99999;"></div>')
+                $('.note').removeClass('--creating');
+                $('.js-create-add').remove();
+                $('body').removeClass('creating-note');
+                makeChannel();
+                e.preventDefault();
+            });
+            
             // This takes care of note retrieval from HTML files as long as the link matches the HTML file name
             $('.note-canvas').on('click', '.note a', function (e) {
                 var noteToLoad = $(this).attr('href');

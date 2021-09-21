@@ -4,10 +4,10 @@
     <title>Product Design, Responsive Web Design, UX Design, Belfast Northern Ireland | Jordan Moore</title>
     <description>Product designer, responsive web designer and UX designer in Belfast, Northern Ireland, specialising in user experience and accessible design
 </description>
-    <link>http://jordanm.co.uk/</link>
-    <atom:link href="http://jordanm.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 09 Mar 2021 19:53:27 +0000</pubDate>
-    <lastBuildDate>Tue, 09 Mar 2021 19:53:27 +0000</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 21 Sep 2021 15:53:14 +0100</pubDate>
+    <lastBuildDate>Tue, 21 Sep 2021 15:53:14 +0100</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -38,7 +38,7 @@
 
 &lt;p&gt;The scope of an intentional design system is large by default and requires some degree of conjectural bloat (code for scenarios that have yet to occur). When components are front-loaded into the process you get wastage as a byproduct. Guesswork and assumptions are part of the product’s DNA. I don’t blame anyone in thinking that this approach is the sensible direction. We’ve been conditioned to believe the next new thing should come first in the chain of events, whether it’s mobile-first, content first, users first - when it comes to building products in design and code, you can be forgiven for adopting a design system first approach.&lt;/p&gt;
 
-&lt;p&gt;Although not a like-for-like comparison, it’s interesting to see that the same voices who would bemoan libraries such as jQuery and Bootstrap - two libraries full to the brim of conjectural bloat - haven’t noticed the hypocrisy in advocating for design system first approaches before building up to more complex components. The same voices who evangelise for accessibility damning jQuery for adverse effects on performance and page weight are happy to tax users for a speculative design system&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Although not a like-for-like comparison, it’s interesting to see that the same voices who would bemoan libraries such as jQuery and Bootstrap - two libraries full to the brim of conjectural bloat - haven’t noticed the hypocrisy in advocating for design system first approaches before building up to more complex components. The same voices who evangelise for accessibility damning jQuery for adverse effects on performance and page weight are happy to tax users for a speculative design system&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/pillar.jpg&quot; class=&quot;pillar&quot; /&gt;&lt;/p&gt;
 
@@ -142,8 +142,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Fri, 07 Feb 2020 00:00:01 +0000</pubDate>
-        <link>http://jordanm.co.uk/2020/02/07/intentional-and-emergent-design-systems-ii.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2020/02/07/intentional-and-emergent-design-systems-ii.html</guid>
+        <link>http://localhost:4000/2020/02/07/intentional-and-emergent-design-systems-ii.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/02/07/intentional-and-emergent-design-systems-ii.html</guid>
         
         
       </item>
@@ -159,7 +159,7 @@
 &lt;p&gt;I have a few concerns with this way of working with design systems. Front-loading design and/or build with the pieces you believe you’ll eventually need to arrive at a solution creates a limited set of outcomes. Any attempt to create more pieces in anticipation of generating a greater number of outcomes results in conjectural bloat – a cost offset to the user paid for in unnecessary data and time.&lt;/p&gt;
 
 &lt;!-- &lt;figure&gt;
-    &lt;img src=&quot;http://jordanm.co.uk/img/intentionalds.jpg&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/img/intentionalds.jpg&quot;&gt;
     &lt;figcaption&gt;Simplified flow of an intentional design system (building blocks first)&lt;/figcaption&gt;
 &lt;/figure&gt; --&gt;
 
@@ -172,7 +172,7 @@
 &lt;p&gt;This approach is much closer to the user needs end of the scale by beginning with creative solutions before deriving patterns and systems (i.e the system emerges from real, coded scenarios).&lt;/p&gt;
 
 &lt;!-- &lt;figure&gt;
-    &lt;img src=&quot;http://jordanm.co.uk/img/emergentds.jpg&quot;&gt;
+    &lt;img src=&quot;http://localhost:4000/img/emergentds.jpg&quot;&gt;
     &lt;figcaption&gt;Simplified flow of an emergent design system (solution first, derive systems)&lt;/figcaption&gt;
 &lt;/figure&gt; --&gt;
 
@@ -183,8 +183,8 @@
 &lt;p&gt;Waiting for systems to emerge, through a continuous process of building and deconstructing, goes some way towards remedying the assumptions of the alternative technique.&lt;/p&gt;
 </description>
         <pubDate>Tue, 30 Jul 2019 01:00:01 +0100</pubDate>
-        <link>http://jordanm.co.uk/2019/07/30/intentional-and-emergent-design-systems.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2019/07/30/intentional-and-emergent-design-systems.html</guid>
+        <link>http://localhost:4000/2019/07/30/intentional-and-emergent-design-systems.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/07/30/intentional-and-emergent-design-systems.html</guid>
         
         
       </item>
@@ -206,8 +206,8 @@
 &lt;p&gt;It is therefore desirable where possible to reduce idea friction by shortening the time between idea conception internally and manifestation externally so ideas can be captured and acted upon.&lt;/p&gt;
 </description>
         <pubDate>Sat, 13 Apr 2019 01:00:01 +0100</pubDate>
-        <link>http://jordanm.co.uk/2019/04/13/idea-friction.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2019/04/13/idea-friction.html</guid>
+        <link>http://localhost:4000/2019/04/13/idea-friction.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/04/13/idea-friction.html</guid>
         
         
       </item>
@@ -220,7 +220,7 @@
 
 &lt;p&gt;Over a series of listens with headphones on, the album booklet spread out on the floor in front of me, as I often did in the late ’90s before the days of streaming music, I started to notice some unusual things with this once trivial booklet. It started when I was listening to the song ‘Given to Fly’. I took notice of the accompanying photo as it looked like a photo of a statue gazing towards the sky, spreading its wings. The strange thing was that this was the only photo in the booklet that clearly depicted the track, whereas the rest of them didn’t. I flipped through the booklet towards one of my favourite tracks, ‘Faithfull’. I was met with a photo of a concrete building viewed from the ground. Did the building represent something? It wasn’t a church or somewhere you would practice your faith. As I contemplated the meaning behind the image, I noticed that one of the windows near the top was clearly shaped like a triangle, not a rectangle like the others.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/img/yield2.jpg&quot; class=&quot;yield&quot; alt=&quot;Pearl Jam's 1998 album, Yield&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/yield2.jpg&quot; class=&quot;yield&quot; alt=&quot;Pearl Jam&apos;s 1998 album, Yield&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I flipped the album closed to reveal the boring cover shot of the triangular yield sign. Was this a clue of some sort? I pored over the other shots in the booklet. The next track, ‘No Way’, had a photo of birds perched on telephone wires with a backdrop of clouds. Again, uninspiring at first glance, but there it was again, hiding in plain sight – an unnaturally shaped cloud in the shape of a triangle! I searched online for ‘Pearl Jam yield signs in booklet’ and didn’t get any useful results. I kept looking and found hidden yield signs in every photo of the book, some more obvious than others; some might even have been my imagination seeing something that wasn’t there.&lt;/p&gt;
 
@@ -245,8 +245,8 @@
 &lt;p&gt;Dropping a slide in place triggers a sequence of events beginning with the internal Arduino Yun with an NFC (near-field communication) shield read the NFC sticker on the back of the slide. Once the tag is identified over Wi-Fi, the Pi MusicBox API plays the selected album from Spotify through the connected speakers. To me, Brendan’s Plastic Player is the perfect example of analogue and digital music experiences coexisting in balance and harmony with each other. Other senses are brought back into play – the speed of digital (as a bug, not a feature) is eliminated by the time it takes you to leaf through the collection of slides, select one, and play. It’s not easy to skip tracks, browse, and add thousands to your collection by design. It’s thoughtfully paced; it leaves room for meaning. Decisions are slower and more deliberate.&lt;/p&gt;
 
 &lt;figure&gt;
-&lt;img src=&quot;/img/plastic-player.png&quot; alt=&quot;A photo of Brendan's contraption&quot; /&gt;
-&lt;figcaption&gt;&lt;p&gt;Brendan Dawes' &lt;a href=&quot;http://www.brendandawes.com/projects/plasticplayer&quot;&gt;Plastic Player project&lt;/a&gt;&lt;/p&gt;&lt;/figcaption&gt;
+&lt;img src=&quot;/img/plastic-player.png&quot; alt=&quot;A photo of Brendan&apos;s contraption&quot; /&gt;
+&lt;figcaption&gt;&lt;p&gt;Brendan Dawes&apos; &lt;a href=&quot;http://www.brendandawes.com/projects/plasticplayer&quot;&gt;Plastic Player project&lt;/a&gt;&lt;/p&gt;&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Brendan’s creation makes a screen look like a limitation rather than an optimal interface in this more considered approach to digital music. It’s easy to imagine how we could take the idea further – you could trade the physical slides with your friends and family; you would be able to gift them, as they’re a tangible analogue interface to a digital medium; you could even imagine music clubs sending you random slides each month with the kind of excitement and anticipation experienced when opening Panini football stickers. Best of all, the slides themselves could enable the yield triangles to exist and set up opportunities for another person to constellate and find personal meaning in an analogue space. All of these offshoots let the listener spend time with the complete work of the artist rather than skipping through it or past it. This thought experiment makes room beyond the screen for new ideas.&lt;/p&gt;
@@ -258,8 +258,8 @@
 &lt;p&gt;&lt;em&gt;Originally published in &lt;a href=&quot;https://newadventuresconf.com/2019/fringe/publication/&quot;&gt;New Adventures Paper 2019&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 20 Feb 2019 00:00:01 +0000</pubDate>
-        <link>http://jordanm.co.uk/2019/02/20/experience-gaps.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2019/02/20/experience-gaps.html</guid>
+        <link>http://localhost:4000/2019/02/20/experience-gaps.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/02/20/experience-gaps.html</guid>
         
         
       </item>
@@ -270,7 +270,7 @@
 
 &lt;p&gt;Nob Yoshigahara’s infamous number tree puzzle is certainly one of my personal favourites for just these reasons. It gives you a set of information and asks, What do you make of this?&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://jordanm.co.uk/img/puzzle.png&quot; alt=&quot;Nob Yoshigahara's infamous number tree puzzle&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://jordanm.co.uk/img/puzzle.png&quot; alt=&quot;Nob Yoshigahara&apos;s infamous number tree puzzle&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Puzzles are a great tool for strengthening mental muscles that can help unpack design problems. They push you to adopt a different mindset and perspective, challenge assumptions, study intently, and look closely. Like a puzzle, difficult design problems evoke that same moment of epiphany when you peel back the layers to find hidden truths.&lt;/p&gt;
 
@@ -346,8 +346,8 @@
 &lt;p&gt;No one said it would be easy.&lt;/p&gt;
 </description>
         <pubDate>Tue, 11 Sep 2018 01:00:01 +0100</pubDate>
-        <link>http://jordanm.co.uk/2018/09/11/unpacking-design-problems.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2018/09/11/unpacking-design-problems.html</guid>
+        <link>http://localhost:4000/2018/09/11/unpacking-design-problems.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/09/11/unpacking-design-problems.html</guid>
         
         
       </item>
@@ -361,7 +361,7 @@
 &lt;h2 id=&quot;evolution-natures-rd-department&quot;&gt;Evolution: nature’s R&amp;amp;D department&lt;/h2&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;“You could look at nature as being a catalogue of products all of which have benefitted from a 3.8 billion year research and development period”&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+  &lt;p&gt;“You could look at nature as being a catalogue of products all of which have benefitted from a 3.8 billion year research and development period”&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
   &lt;p&gt;Michael Pawlyn, Using Nature’s Genius in Architecture&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -374,7 +374,7 @@
 
 &lt;h2 id=&quot;biomimicry&quot;&gt;Biomimicry&lt;/h2&gt;
 
-&lt;p&gt;The act of borrowing ideas from nature has been recently dubbed “biomimicry”. According to biomimicry.org&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+&lt;p&gt;The act of borrowing ideas from nature has been recently dubbed “biomimicry”. According to biomimicry.org&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Biomimicry is an approach to innovation that seeks sustainable solutions to human challenges by emulating nature’s time-tested patterns and strategies.&lt;/p&gt;
@@ -391,7 +391,7 @@
 
 &lt;p&gt;NASA has several biomimicry projects in development including bio-inspired exercise equipment helping astronauts maintain fitness during spaceflight, solar propulsion mechanisms and glider technology inspired by a seagull’s wingspan that saves on the need for continuous thrust and fuel costs.&lt;/p&gt;
 
-&lt;p&gt;Beyond physical features, certain characteristics of digital systems can be found in nature. The internet bears striking similarities with fungal bio-systems in regards to how they pass information and exchange nutrients&lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. It isn’t clear whether the nature of the web was a result of learning from nature itself, or a case of humans and nature reaching the same conclusion, or a complete coincidence, but noteworthy nonetheless that there are potentially many metaphors we can call upon from 3.8 billion years of evolution.&lt;/p&gt;
+&lt;p&gt;Beyond physical features, certain characteristics of digital systems can be found in nature. The internet bears striking similarities with fungal bio-systems in regards to how they pass information and exchange nutrients&lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. It isn’t clear whether the nature of the web was a result of learning from nature itself, or a case of humans and nature reaching the same conclusion, or a complete coincidence, but noteworthy nonetheless that there are potentially many metaphors we can call upon from 3.8 billion years of evolution.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-can-we-learn-from-it-in-digital-product-design&quot;&gt;What can we learn from it in digital product design?&lt;/h2&gt;
 
@@ -405,13 +405,13 @@
 
 &lt;h3 id=&quot;the-pareto-principle&quot;&gt;The Pareto Principle&lt;/h3&gt;
 
-&lt;p&gt;The Italian economist Vilfredo Pareto stated in his first published paper in 1896 that approximately 80% of the land in Italy was owned by 20% of the population. One of the common axioms of business management is that 80% of the work comes from 20% of your clients as demonstrated by Richard Koch in his book the 80/20 Principle (an alias for the Pareto Principle). Some attribute this observation back to Biblical times, specifically Matthew 25:29 where it reads: “For unto every one that hath shall be given, and he shall have abundance: but from him that hath not shall be taken away even that which he hath.” This seems to align with the with the observation that the richest 20% of the world’s population controls just shy of 83% of the world’s income&lt;sup id=&quot;fnref:4&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;The Italian economist Vilfredo Pareto stated in his first published paper in 1896 that approximately 80% of the land in Italy was owned by 20% of the population. One of the common axioms of business management is that 80% of the work comes from 20% of your clients as demonstrated by Richard Koch in his book the 80/20 Principle (an alias for the Pareto Principle). Some attribute this observation back to Biblical times, specifically Matthew 25:29 where it reads: “For unto every one that hath shall be given, and he shall have abundance: but from him that hath not shall be taken away even that which he hath.” This seems to align with the with the observation that the richest 20% of the world’s population controls just shy of 83% of the world’s income&lt;sup id=&quot;fnref:4&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
 &lt;p&gt;The basic structure of a Pareto statement is that 80% of the effects originate from 20% of the causes.&lt;/p&gt;
 
 &lt;p&gt;It’s a useful lens to look at everyday things in your life, your work and even your design decisions. For example, 20% of project effort in building out a design system might cater for 80% of the interface decisions required. 80% of the value you deliver in a particular project might come from 20% of the product.&lt;/p&gt;
 
-&lt;p&gt;I’ve had conflicting thoughts as to whether to include the Pareto Principle as part of this article. It appears to be a law that transcends time, culture and government pointing it towards being categorised as a Natural Law but the majority of its examples (some of which covered below) seem to reveal more about the nature of human influence rather than Nature itself. I lean towards the notion that the Pareto Principle is an observation rather than a law of nature&lt;sup id=&quot;fnref:5&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:5&quot; class=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;, and there is a nuanced difference between Nature and what constitutes a natural law, so it would be rather clumsy to conflate the two without pointing out this discrepancy. That isn’t to say that the Pareto Principle as an observation isn’t true, it’s a consistency that seems to house a deeper truth about &lt;em&gt;human&lt;/em&gt; nature which will at least have its uses rather than discounting it as part of the discussion.&lt;/p&gt;
+&lt;p&gt;I’ve had conflicting thoughts as to whether to include the Pareto Principle as part of this article. It appears to be a law that transcends time, culture and government pointing it towards being categorised as a Natural Law but the majority of its examples (some of which covered below) seem to reveal more about the nature of human influence rather than Nature itself. I lean towards the notion that the Pareto Principle is an observation rather than a law of nature&lt;sup id=&quot;fnref:5&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:5&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;, and there is a nuanced difference between Nature and what constitutes a natural law, so it would be rather clumsy to conflate the two without pointing out this discrepancy. That isn’t to say that the Pareto Principle as an observation isn’t true, it’s a consistency that seems to house a deeper truth about &lt;em&gt;human&lt;/em&gt; nature which will at least have its uses rather than discounting it as part of the discussion.&lt;/p&gt;
 
 &lt;h2 id=&quot;fibonacci-and-the-golden-ratio&quot;&gt;Fibonacci and the Golden Ratio&lt;/h2&gt;
 
@@ -474,8 +474,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Mon, 30 Jul 2018 01:00:01 +0100</pubDate>
-        <link>http://jordanm.co.uk/2018/07/30/design-laws-of-nature.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2018/07/30/design-laws-of-nature.html</guid>
+        <link>http://localhost:4000/2018/07/30/design-laws-of-nature.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/07/30/design-laws-of-nature.html</guid>
         
         
       </item>
@@ -497,12 +497,12 @@
   &lt;li&gt;&lt;strong&gt;Web 2.0&lt;/strong&gt; (~2002)&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Responsive design&lt;/strong&gt; (2010)&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Design Systems&lt;/strong&gt; (~2015)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;The Next Big Thing™&lt;/strong&gt; (20××) &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;The Next Big Thing™&lt;/strong&gt; (20××) &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;These are the big fundamental leaps in how we make and how we have made things and lots of time in between them. If you have been in the industry during any of these movements, it was hard to miss any one of them. My reassuring message is that &lt;strong&gt;the important stuff finds you&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;New tools&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;, software, frameworks and hot takes on design matters dominate feed aggregators and I secretly think a lot of authors consciously utilise FOMO - not in the sense that you’re missing out on something important, but the idea that you’ll fall behind in how to do your job. This is simply not true.&lt;/p&gt;
+&lt;p&gt;New tools&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;, software, frameworks and hot takes on design matters dominate feed aggregators and I secretly think a lot of authors consciously utilise FOMO - not in the sense that you’re missing out on something important, but the idea that you’ll fall behind in how to do your job. This is simply not true.&lt;/p&gt;
 
 &lt;h2 id=&quot;a-side-note-on-future-design-jobs&quot;&gt;A side note on future design jobs&lt;/h2&gt;
 
@@ -540,15 +540,15 @@
 &lt;/div&gt;
 </description>
         <pubDate>Fri, 20 Jul 2018 01:00:01 +0100</pubDate>
-        <link>http://jordanm.co.uk/2018/07/20/industry-fatigue.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2018/07/20/industry-fatigue.html</guid>
+        <link>http://localhost:4000/2018/07/20/industry-fatigue.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/07/20/industry-fatigue.html</guid>
         
         
       </item>
     
       <item>
         <title>Mapping User Experiences to Individuals Using the Big 5 OCEAN Personality Traits</title>
-        <description>&lt;p&gt;The Big Five Personality Traits, sometimes referred to as the five factor model (FFM), is a model commonly used by psychologists to describe individual personalities. The original model was constructed by Ernest Tupes and Raymond Christal in 1961&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; but it didn’t reach mainstream academic audiences until the 1980s and early 90s.&lt;/p&gt;
+        <description>&lt;p&gt;The Big Five Personality Traits, sometimes referred to as the five factor model (FFM), is a model commonly used by psychologists to describe individual personalities. The original model was constructed by Ernest Tupes and Raymond Christal in 1961&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; but it didn’t reach mainstream academic audiences until the 1980s and early 90s.&lt;/p&gt;
 
 &lt;p&gt;Multiple sets of independent researchers on human personality arrived at the same conclusion in naming the five factors that generally predict and explain behaviour which indicates the factors are valid as far as we know today.&lt;/p&gt;
 
@@ -590,14 +590,14 @@
   &lt;p&gt;If ethics is about the question of how to act, and designers help to shape how technologies mediate action, designing should be considered ‘ethics by other means.’
 Every technological artefact that is used will mediate human actions, and every act of design, therefore, helps to constitute moral practices.&lt;/p&gt;
 
-  &lt;p&gt;&lt;span class=&quot;small-caps&quot;&gt;P. P. Verbeek, What Things Do&lt;/span&gt; &lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;span class=&quot;small-caps&quot;&gt;P. P. Verbeek, What Things Do&lt;/span&gt; &lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;In other words, every design decision you make is loaded with your intent and bias. We’re already knee deep in the danger game whether you have realised this sobering fact already or not. Another one of the major challenges is engineering objectivity into this process, and whether this field is explored further or not, we should look to engineer objectivity into our work regardless.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-next&quot;&gt;What next?&lt;/h2&gt;
 
-&lt;p&gt;I’m at the mystery stage of the knowledge funnel as described by Roger Martin in his 2009 book The Design of Business&lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. I have identified that this is an area with great potential and the next steps are to build heuristics to see if we can mine the mystery for insights with the eventual hope of turning the research into a reliable, replicable algorithm give us the capability to create and resonate with the people who use the things we make.&lt;/p&gt;
+&lt;p&gt;I’m at the mystery stage of the knowledge funnel as described by Roger Martin in his 2009 book The Design of Business&lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. I have identified that this is an area with great potential and the next steps are to build heuristics to see if we can mine the mystery for insights with the eventual hope of turning the research into a reliable, replicable algorithm give us the capability to create and resonate with the people who use the things we make.&lt;/p&gt;
 
 &lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
   &lt;ol&gt;
@@ -614,8 +614,8 @@ Every technological artefact that is used will mediate human actions, and every 
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 06 Jun 2018 10:12:00 +0100</pubDate>
-        <link>http://jordanm.co.uk/2018/06/06/intro-ocean-ux.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2018/06/06/intro-ocean-ux.html</guid>
+        <link>http://localhost:4000/2018/06/06/intro-ocean-ux.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/06/06/intro-ocean-ux.html</guid>
         
         
       </item>
@@ -645,8 +645,8 @@ Every technological artefact that is used will mediate human actions, and every 
 &lt;p&gt;Using a good old fashioned notebook has the additional advantage of taking your eyes off the screen. That pause enforces a small step back and seeing the bigger picture. It’s therapeutic.&lt;/p&gt;
 </description>
         <pubDate>Fri, 23 Mar 2018 09:12:00 +0000</pubDate>
-        <link>http://jordanm.co.uk/2018/03/23/managing-daily-tasks.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2018/03/23/managing-daily-tasks.html</guid>
+        <link>http://localhost:4000/2018/03/23/managing-daily-tasks.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/03/23/managing-daily-tasks.html</guid>
         
         
       </item>
@@ -676,8 +676,8 @@ Every technological artefact that is used will mediate human actions, and every 
 &lt;p&gt;P.S If you are looking for a startup idea, please feel free to design a subscription service with great human storytellers willing to read my Instapaper feed for me, thanks!&lt;/p&gt;
 </description>
         <pubDate>Sun, 04 Jun 2017 10:12:00 +0100</pubDate>
-        <link>http://jordanm.co.uk/2017/06/04/thoughts-on-human-vs-ai-narration.html</link>
-        <guid isPermaLink="true">http://jordanm.co.uk/2017/06/04/thoughts-on-human-vs-ai-narration.html</guid>
+        <link>http://localhost:4000/2017/06/04/thoughts-on-human-vs-ai-narration.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/06/04/thoughts-on-human-vs-ai-narration.html</guid>
         
         
       </item>
