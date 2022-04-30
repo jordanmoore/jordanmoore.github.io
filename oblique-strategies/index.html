@@ -192,8 +192,7 @@
     
     let is_running = false;
     let demo_button = document.getElementById("start_demo");
-    demo_button.onclick = function(e) {
-      e.preventDefault();
+    
       
       // Request permission for iOS 13+ devices
       if (
@@ -218,7 +217,6 @@
         demo_button.classList.add('btn-danger');
         is_running = true;
       }
-    };
     
     </script>
     
