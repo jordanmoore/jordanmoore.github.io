@@ -143,6 +143,7 @@
         Tilt for an Oblique Strategy
 
     </div>
+    <div id="motion">0.00</div>
     <hr>
     
     <a id="start_demo" class="button" href="#" role="button">Start demo</a>
@@ -158,6 +159,7 @@
     updateFieldIfNotNull('Orientation_b', event.beta);
     updateFieldIfNotNull('Orientation_g', event.gamma);
     incrementEventCount();
+    document.getElementById('motion').innerHTML = event.alpha.toFixed(precision);
     if(event.alpha.toFixed(precision) > 350) {
         const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
         $('#strategy').text(randomQuote);
