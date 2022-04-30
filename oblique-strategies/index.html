@@ -154,10 +154,6 @@
         e.preventDefault();
         
     });
-    </script>
-   
-    <script>
-    
     function handleOrientation(event) {
       updateFieldIfNotNull('Orientation_a', event.alpha);
       updateFieldIfNotNull('Orientation_b', event.beta);
@@ -212,13 +208,8 @@
     
     
     $(function(e) {
-      
-      if (
-        DeviceMotionEvent &&
-        typeof DeviceMotionEvent.requestPermission === "function"
-      ) {
+
         DeviceMotionEvent.requestPermission();
-      }
       
       if (is_running){
         window.removeEventListener("devicemotion", handleMotion);
@@ -230,25 +221,6 @@
         is_running = true;
       }
     });
-    
-    /*
-    Light and proximity are not supported anymore by mainstream browsers.
-    window.addEventListener('devicelight', function(e) {
-       document.getElementById("DeviceLight").innerHTML="AmbientLight current Value: "+e.value+" Max: "+e.max+" Min: "+e.min;
-    });
-    
-    window.addEventListener('lightlevel', function(e) {
-       document.getElementById("Lightlevel").innerHTML="Light level: "+e.value;
-    });
-    
-    window.addEventListener('deviceproximity', function(e) {
-       document.getElementById("DeviceProximity").innerHTML="DeviceProximity current Value: "+e.value+" Max: "+e.max+" Min: "+e.min;
-    });
-    
-    window.addEventListener('userproximity', function(event) {
-       document.getElementById("UserProximity").innerHTML="UserProximity: "+event.near;
-    });
-    */
     
     </script>
 </body>
