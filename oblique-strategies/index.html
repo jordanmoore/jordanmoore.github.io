@@ -44,7 +44,7 @@
             flex-direction: column;
             justify-content: space-around;
             -webkit-font-smoothing: antialised;
-            /* overflow: hidden; */
+            overflow: hidden;
         }
         h1 {
             font-family: 'Libre Baskerville', serif;
@@ -144,156 +144,17 @@
 
     </div>
     <hr>
-    <a href="" class="button" id="button">Random Strategy</a>
+    <a href="" class="button">Random Strategy</a>
     <p>Oblique Strategies by Brian Eno and Peter Schmidt.<br>Generator by <a href="https://twitter.com/jordanmoore">@jordanmoore</a> and Stackoverlow</p>
 <script>
     const quotes = ["Abandon normal instruments", "Accept advice", "Accretion", "A line has two sides", "Allow an easement (an easement is the abandonment of a stricture)", "Are there sections? Consider transitions", "Ask people to work against their better judgement", "Ask your body", "Assemble some of the instruments in a group and treat the group", "Balance the consistency principle with the inconsistency principle", "Be dirty", "Breathe more deeply", "Build Bridges", "Burn Bridges", "Cascades", "Change instrument roles", "Change nothing and continue with immaculate consistency", "Children's voices speaking ", "Children's voices singing", "Cluster analysis", "Consider different fading systems", "Consult other sources promising", "Consult other sources unpromising", "Convert a melodic element into a rhythmic element", "Courage!", "Cut a vital connection", "Decorate, decorate", "Define an area as 'safe' and use it as an anchor", "Destroy nothing", "Destroy the most important thing", "Discard an axiom", "Disconnect from desire", "Discover the recipes you are using and abandon them", "Distorting time", "Do nothing for as long as possible", "Don't be afraid of things because they're easy to do", "Don't be frightened of cliches", "Don't be frightened to display your talents", "Don't break the silence", "Don't stress one thing more than another", "Do something boring", "Do the washing up", "Do the words need changing?", "Do we need holes?", "Emphasize differences", "Emphasize repetitions", "Emphasize the flaws", "Faced with a choice, do both (given by Dieter Rot)", "Feedback recordings into an acoustic situation", "Fill every beat with something", "Get your neck massaged", "Ghost echoes", "Give the game away", "Give way to your worst impulse", "Go slowly all the way round the outside", "Honor thy error as a hidden intention", "How would you have done it?", "Humanize something free of error", "Imagine the music as a moving chain or caterpillar", "Imagine the music as a set of disconnected events", "Infinitesimal gradations", "Intentions -credibility of", "Intentions -nobility of", "Intentions -humility of", "Into the impossible", "Is it finished?", "Is there something missing?", "Is the tuning appropriate?", "Just carry on", "Left channel, right channel, centre channel", "Listen in total darkness, or in a very large room, very quietly", "Listen to the quiet voice", "Look at a very small object, look at its centre", "Look at the order in which you do things", "Look closely at the most embarrassing details and amplify them", "Lowest common denominator check: single beat", "Lowest common denominator check: single note", "Lowest common denominator check: single riff", "Make a blank valuable by putting it in an exquisite frame", "Make an exhaustive list of everything you might do and do the last", "thing on the list", "Make a sudden, destructive unpredictable action; incorporate", "Mechanicalize something idiosyncratic", "Mute and continue", "Only one element of each kind", "(Organic) machinery", "Overtly resist change", "Put in earplugs", "Remember those quiet evenings", "Remove ambiguities and convert to specifics", "Remove specifics and convert to ambiguities", "Repetition is a form of change", "Reverse", "Short circuit (example: a man eating peas with the idea that they will", "improve his virility shovels them straight into his lap)", "Shut the door and listen from outside", "Simple subtraction", "Spectrum analysis", "Take a break", "Take away the elements in order of apparent non-importance", "Tape your mouth (given by Ritva Saarikko)", "The inconsistency principle", "The tape is now the music", "Think of the radio", "Tidy up", "Trust in the you of now", "Turn it upside down", "Twist the spine", "Use an old idea", "Use an unacceptable color", "Use fewer notes", "Use filters", "Use 'unqualified' people", "Water", "What are you really thinking about just now? Incorporate", "What is the reality of the situation?", "What mistakes did you make last time?", "What would your closest friend do?", "What wouldn't you do?", "Work at a different speed", "You are an engineer", "You can only make one dot at a time", "You don't have to be ashamed of using your own ideas"];
     const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
     $('#strategy').text(randomQuote)
-    
-    </script>
-   
-   
-   
-<main role="main" class="container">
-    
-    <h1 align="left">JavaScript Sensor Access Demo</h1>
-    <p><b>This demo page should be run from a mobile phone or a tablet.</b></p>
-    <p>This demo page shows how websites can access sensor data from mobile devices using <a href="https://developer.mozilla.org/en-US/docs/Web/Events/deviceorientation"><i>deviceorientation</i></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/Events/devicemotion"><i>devicemotion</i></a> events.</p>
-    
-    <p><i>deviceorientation</i> provides <i>alpha</i>, <i>beta</i> and <i>gamma</i> components which correspond to orientation along the Z, X and Y axes, respectively.</p><p><i>devicemotion</i> provides acceleration and rotation rate along three axes using MEMS accelerometers and gyroscopes.</p>
-    
-    <p>The sensor data shown below does not leave your browser: it is not collected, shared or transmitted. However this may not be true for other websites that you visit. For more information, see the companion page for our study: <a href="https://sensor-js.xyz/">"The Web's Sixth Sense: A Study of Scripts Accessing Smartphone Sensors"</a>.</p>
-    
-    <div class="p-3 mb-2 bg-secondary" id="demo-div">
-    <a id="start_demo" class="btn btn-lg btn-success py-1" href="#" role="button">Start the demo</a>
-    <p style="margin-top:1rem;">Num. of datapoints: <span class="badge badge-warning" id="num-observed-events">0</span></p>
-    
-    
-    <h4 style="margin-top:0.75rem;">Orientation</h4>
-    <ul>
-      <li>X-axis (&beta;): <span id="Orientation_b">0</span><span>&deg;</span></li>
-      <li>Y-axis (&gamma;): <span id="Orientation_g">0</span><span>&deg;</span></li>
-      <li>Z-axis (&alpha;): <span id="Orientation_a">0</span><span>&deg;</span></li>
-    </ul>
-    
-    <h4>Accelerometer</h4>
-    <ul>
-      <li>X-axis: <span id="Accelerometer_x">0</span><span> m/s<sup>2</sup></span></li>
-      <li>Y-axis: <span id="Accelerometer_y">0</span><span> m/s<sup>2</sup></span></li>
-      <li>Z-axis: <span id="Accelerometer_z">0</span><span> m/s<sup>2</sup></span></li>
-      <li>Data Interval: <span id="Accelerometer_i">0</span><span> ms</span></li>
-    </ul>
-    
-    <h4>Accelerometer including gravity</h4>
-    
-    <ul>
-      <li>X-axis: <span id="Accelerometer_gx">0</span><span> m/s<sup>2</sup></span></li>
-      <li>Y-axis: <span id="Accelerometer_gy">0</span><span> m/s<sup>2</sup></span></li>
-      <li>Z-axis: <span id="Accelerometer_gz">0</span><span> m/s<sup>2</sup></span></li>
-    </ul>
-    
-    <h4>Gyroscope</h4>
-    <ul>
-      <li>X-axis: <span id="Gyroscope_x">0</span><span>&deg;/s</span></li>
-      <li>Y-axis: <span id="Gyroscope_y">0</span><span>&deg;/s</span></li>
-      <li>Z-axis: <span id="Gyroscope_z">0</span><span>&deg;/s</span></li>
-    </ul>
-    
-    </div>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <span class="text-muted small">This page is hosted on GitHub Pages, please see GitHub's privacy statement
-        <a href="https://help.github.com/articles/github-privacy-statement/">here</a>.</span>
-      </div>
-    </footer>
-    <script>
-    
-    function handleOrientation(event) {
-      updateFieldIfNotNull('Orientation_a', event.alpha);
-      updateFieldIfNotNull('Orientation_b', event.beta);
-      updateFieldIfNotNull('Orientation_g', event.gamma);
-      incrementEventCount();
-    }
-    
-    function incrementEventCount(){
-      let counterElement = document.getElementById("num-observed-events")
-      let eventCount = parseInt(counterElement.innerHTML)
-      counterElement.innerHTML = eventCount + 1;
-    }
-    
-    function updateFieldIfNotNull(fieldName, value, precision=10){
-      if (value != null)
-        document.getElementById(fieldName).innerHTML = value.toFixed(precision);
-    }
-    
-    function handleMotion(event) {
-      updateFieldIfNotNull('Accelerometer_gx', event.accelerationIncludingGravity.x);
-      updateFieldIfNotNull('Accelerometer_gy', event.accelerationIncludingGravity.y);
-      updateFieldIfNotNull('Accelerometer_gz', event.accelerationIncludingGravity.z);
-    
-      updateFieldIfNotNull('Accelerometer_x', event.acceleration.x);
-      updateFieldIfNotNull('Accelerometer_y', event.acceleration.y);
-      updateFieldIfNotNull('Accelerometer_z', event.acceleration.z);
-    
-      updateFieldIfNotNull('Accelerometer_i', event.interval, 2);
-    
-      updateFieldIfNotNull('Gyroscope_z', event.rotationRate.alpha);
-      updateFieldIfNotNull('Gyroscope_x', event.rotationRate.beta);
-      updateFieldIfNotNull('Gyroscope_y', event.rotationRate.gamma);
-      incrementEventCount();
-    }
-    
-    let is_running = false;
-    let demo_button = document.getElementById("start_demo");
-    demo_button.onclick = function(e) {
-      e.preventDefault();
-      
-      // Request permission for iOS 13+ devices
-      if (
-        DeviceMotionEvent &&
-        typeof DeviceMotionEvent.requestPermission === "function"
-      ) {
-        DeviceMotionEvent.requestPermission();
-      }
-      
-      if (is_running){
-        window.removeEventListener("devicemotion", handleMotion);
-        window.removeEventListener("deviceorientation", handleOrientation);
-        demo_button.innerHTML = "Start demo";
-        demo_button.classList.add('btn-success');
-        demo_button.classList.remove('btn-danger');
-        is_running = false;
-      }else{
-        window.addEventListener("devicemotion", handleMotion);
-        window.addEventListener("deviceorientation", handleOrientation);
-        document.getElementById("start_demo").innerHTML = "Stop demo";
-        demo_button.classList.remove('btn-success');
-        demo_button.classList.add('btn-danger');
-        is_running = true;
-      }
-    };
-    
-    /*
-    Light and proximity are not supported anymore by mainstream browsers.
-    window.addEventListener('devicelight', function(e) {
-       document.getElementById("DeviceLight").innerHTML="AmbientLight current Value: "+e.value+" Max: "+e.max+" Min: "+e.min;
+    $('.button').click(function(e){
+        e.preventDefault();
+        const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+        $('#strategy').text(randomQuote)
     });
-    
-    window.addEventListener('lightlevel', function(e) {
-       document.getElementById("Lightlevel").innerHTML="Light level: "+e.value;
-    });
-    
-    window.addEventListener('deviceproximity', function(e) {
-       document.getElementById("DeviceProximity").innerHTML="DeviceProximity current Value: "+e.value+" Max: "+e.max+" Min: "+e.min;
-    });
-    
-    window.addEventListener('userproximity', function(event) {
-       document.getElementById("UserProximity").innerHTML="UserProximity: "+event.near;
-    });
-    */
-    
     </script>
 </body>
 </html>
