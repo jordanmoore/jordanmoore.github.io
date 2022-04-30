@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leader-line-new@1.1.9/leader-line.min.js"></script>
     <style>
         @import url('https://rsms.me/inter/inter.css');
 
@@ -409,9 +410,25 @@
         function makeChannel() {
             // $('.note-channel:last-of-type').parent().append('<div class="note-channel"></div');
             $(function () {
-                $(".note").draggable({
-                    stack: ".note"
-                });
+                var startElement = document.getElementById('start'),
+                line = new LeaderLine(startElement, document.getElementById('end'),
+                  {startPlug: 'disc', endPlug: 'disc', color: 'black', path: 'straight'});
+                var line2 = new LeaderLine(startElement, document.getElementById('end2'),{startPlug: 'disc', endPlug: 'disc', color: 'black', path: 'straight'});
+                  line.position();
+                  line2.position();
+                if((document.getElementById('start')) !== 'null') {
+                    $(".note").draggable({
+                        stack: ".note",
+                        drag: function() {
+                            line.position();  
+                            line2.position();
+                        }
+                    });
+                } else {
+                    $(".note").draggable({
+                        stack: ".note"
+                    });
+                }
             });
         }
         $(function () {

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📝 Notes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <style>
+        @import url('https://rsms.me/inter/inter.css');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            overflow: auto;
+        }
+
+        body {
+            font-family: Inter, sans-serif;
+            background: #f6f6f6;
+            line-height: 1.6;
+            color: #252525;
+            margin: 0;
+            padding: 0;
+            font-size: 15px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .search {
+            position: absolute;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .search input {
+            border: 2px solid #ddd;
+            background: transparent;
+            font-size: 1em;
+            padding: 0.9em 1.3em;
+            border-radius: 8px;
+            margin-top: 2.6em;
+            font-family: Inter, sans-serif;
+            transition: all 0.26s ease;
+            width: 284px;
+        }
+        .search input:focus {
+            outline: none;
+            border: 2px solid #999;
+            background: #f6f6f6;
+            width: 460px;
+        }
+        .search-wrap {
+            position: relative;
+        }
+        .search-wrap:after {
+            position: absolute;
+            right: 0.8em;
+            top: 3.3em;
+            content: '⌘K';
+            border: 1px solid #000;
+            border-radius: 4px;
+            display: inline-block;
+            padding: 0.1em 0.4em;
+            opacity: 0.2;
+        }
+        .ui-widget.ui-widget-content {
+            margin-top: 0.6em;
+            background: #000;
+            border: 1px solid #000;
+            color: white;
+            border-radius: 6px;
+            padding: 0.3em;
+            font-size: 1em;
+            font-family: 'Inter', sans-serif;
+        }
+        .ui-widget.ui-widget-content .ui-menu-item-wrapper.ui-state-active {
+            background: #007AFF;
+            color: white;
+            border-radius: 3px;
+            border-color: #007AFF;
+        }
+        /* .ui-menu .ui-menu-item-wrapper,  */
+        .ui-menu .ui-menu-item a {
+            padding: 0.5em 1em 0.45em;
+            display: block;
+            color: white;
+        }
+        .ui-menu .ui-menu-item a span {
+            display: inline-block;
+            vertical-align: middle;
+            height: 1em;
+            width: 1em;
+            border-radius: 2em;
+            background: white;
+            border: 2px solid white;
+            margin-right: 0.6em;
+        }
+        .search-heading {
+            text-transform: uppercase;
+            color: white;
+            pointer-events: none;
+            margin: 0.5em 0 0 0.5em;
+            font-size: 0.85em;
+            letter-spacing: 0.5px;
+        }
+        .ui-widget.ui-widget-content h4.ui-menu-item-wrapper.ui-state-active {
+            background: transparent;
+            border: none;
+            margin: 0.5em 0 0 0.5em;
+        }
+        li.colors ~ li.colors .search-heading{
+            display: none;
+        }
+
+        .note-content h1 {
+            font-size: 20px;
+        }
+
+        .note-content p {
+            font-size: 14px;
+        }
+
+        .note-canvas {
+            white-space: nowrap;
+            overflow: auto;
+            scroll-snap-type: x mandatory;
+            transition: transform 0.6s ease;
+        }
+        .note-canvas.--unstacked {
+            margin-top: 9.2em;
+            columns: 4;
+            height: 100vh;
+            overflow: visible;
+            padding: 0.6em;
+        }
+        .note-canvas.--unstacked .note {
+            transform: none !important;
+            position: static !important;
+            break-inside: avoid;
+            margin: 0 0 1.6em;
+            box-shadow: none;
+        }
+
+        .note-channel {
+            /* max-width: 500px; */
+            width: 100%;
+            overflow-y: scroll;
+            display: inline-block;
+            vertical-align: top;
+            height: 60vh;
+            /* scroll-snap-type: y mandatory; */
+        }
+        .note-canvas.--unstacked .note-channel {
+            overflow: visible;
+            display: block;
+        }
+
+        .note-content.-image {
+            margin: -2.6em;
+        }
+
+        .note-content.-image img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            mix-blend-mode: darken;
+        }
+
+        .note {
+            transition: opacity 0.26s ease, transform 0.26s ease, background-color 0.26s ease;
+            margin: 0.6em 0.6em 1.6em;
+            background: white;
+            white-space: normal;
+            position: relative;
+            scroll-snap-align: start;
+            margin-right: 6px;
+            scroll-snap-align: start;
+            width: 594px;
+            border-radius: 10px;
+            padding: 1em 0 0.2em;
+            box-shadow: 0px 33px 80px rgba(0, 0, 0, 0.07), 0px 13.7866px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 7.37098px 17.869px rgba(0, 0, 0, 0.0417275), 0px 4.13211px 10.0172px rgba(0, 0, 0, 0.035), 0px 2.19453px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 0.913195px 2.21381px rgba(0, 0, 0, 0.0196802);
+        }
+        .note.--searched {
+            transform: rotate(0deg) scale(1.16) !important;
+            z-index: 99999 !important;
+        }
+
+        .note.ui-sortable-placeholder {
+            background: #f3f3f3;
+            visibility: visible !important;
+        }
+
+        .note.ui-sortable-helper {
+            cursor: grab;
+            box-shadow: 0 0 42px rgba(0, 0, 0, 0.03);
+        }
+
+        .note-id {
+            position: absolute;
+            top: 1.6em;
+            right: 1.6em;
+            opacity: 0.3;
+            font-size: 0.88em;
+            cursor: pointer;
+        }
+
+
+        u {
+            text-decoration: none;
+            background-color: #FFDC00;
+        }
+
+        h4 {
+            font-weight: 500;
+            opacity: 0.4;
+        }
+
+        .source-location {
+            background: rgba(0, 0, 0, 0.04);
+            border: 1px solid rgba(0, 0, 0, 0.07);
+            padding: 0.6em 1em;
+            border-radius: 3px;
+        }
+        .note.--creating {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+        }
+        .note img {
+            max-width: 100%;
+        }
+        .drop {
+            height: 40vh;
+            display: flex;
+            justify-content: space-between;
+            padding: 2em;
+        }
+        .drop-area {
+            border: 1px dashed rgba(0, 0, 0, 0.305);
+            width: 620px;
+            padding: .6em;
+            border-radius: 20px;
+            overflow: auto;
+        }
+        .drop-area .note {
+            margin: 0 0 1em;
+            transform: none !important;
+        }
+        .note-channel .note {
+            position: absolute;
+            left: 50%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="note-canvas">
+        <div class="note-channel">
+            <div class="note"></div>
+            <div class="note">
+                <img src="/img/rival1.png" alt="">
+            </div>
+            <div class="note" style="transform: rotate(-2deg)">
+                <img src="/img/rival2.png" alt="">
+            </div>
+            <div class="note" style="transform: rotate(1deg)">
+                <img src="/img/rival3.png" alt="">
+            </div>
+            <div class="note" style="transform: rotate(-1deg)">
+                <img src="/img/rival4.png" alt="">
+            </div>
+        </div>
+        <div class="drop">
+            <div class="drop-area">
+                <div class="drop-area__title">Social Media</div>
+            </div>
+            <div class="drop-area"></div>
+            <div class="drop-area"></div>
+            <div class="drop-area"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $(".drop-area").sortable({
+                connectWith: ".drop-area",
+                beforeStop: function (event, ui) {
+                    //$(ui.placeholder).parent()[0] gives target sort element
+                    //If this is current element revert sort
+                    if ($(ui.placeholder).parent()[0] == this) {
+                        $(this).sortable('cancel');
+                    }
+                }
+            }).disableSelection();
+    
+            $(".note").draggable({
+                connectToSortable: '.drop-area',
+                revert: 'invalid'
+            });
+            
+        });
+            
+    </script>
+
+</body>
+
+</html>
