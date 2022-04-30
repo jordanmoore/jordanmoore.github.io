@@ -191,7 +191,7 @@
       updateFieldIfNotNull('Gyroscope_x', event.rotationRate.beta);
       updateFieldIfNotNull('Gyroscope_y', event.rotationRate.gamma);
       incrementEventCount();
-      if(event.rorationRate.alpha > 350) {
+      if(event.rotationRate.alpha > 350) {
           const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
           $('#strategy').text(randomQuote)
       }
