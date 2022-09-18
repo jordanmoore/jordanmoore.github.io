@@ -1,0 +1,97 @@
+---
+layout: post
+title: Working Backwards from Magic
+date: '2022-09-19T00:00:01+00:00'
+
+
+---
+
+I have wanted to write about working backwards from magic for quite a while now, partially from a place of laying claim to the idea as [some smart minds are taking note of the idea](https://twitter.com/jordanmoore/status/1480897225333133317?s=20&t=Gtc62GVa9EhQ302FHzA0LA), but I didn’t want to rush out a half-baked take on a concept that I truly believe has the power to change the world.
+
+My ego temporarily entertained the idea of writing a book about the concept, however, even though I believe that working backwards from magic is an extremely powerful approach to creative problem-solving, it would be disingenuous to package a relatively simple idea with 200+ pages of padding to make a quick buck in the self-help/productivity niche. The concept really doesn't need that much unpacking, it's almost laughably simple and it has the capacity (at least in my experience) to make conventional approaches to problem-solving look ridiculously convoluted by comparison.
+
+I feel that as an industry (and I’d perhaps extend this towards society as a whole) that we are sleepwalking into a level of comfort where big, bold, radical thinking has made way for safe, tried and tested systems and processes that produce reliably similar results and more of what the world already has. The industry seems as though it is short on new ideas and bravery, and big on conventional thinking and mass-producing more of the same. It's anti-progress. Working backwards from magic is the pushback against this mode of thinking.
+
+## What is Working Backwards from Magic?
+
+Put simply: working backwards from magic is an approach to creative problems by using the suspension of belief and any limiting factors to unlock new value.
+
+It is a tool that can be turned towards design and development problems, product ideas and/or improvements, essentially anything that would benefit from thinking from new directions and perspectives. It’s an incredibly simple process to describe and, in my opinion, easier to apply than the prescribed templates of conventional creative processes and approaches.
+
+### Step 1: Identify the Problem
+
+In order to know where we’re going, we need to understand the problem we’re trying to solve. How deeply you understand it doesn’t necessarily matter, this is more about having something to aim at rather than nothing.
+
+### Step 2: Remove all limitations
+
+<img src="/img/imac.png" class="imac">
+
+Leave conventional thinking at the door. It’s of no use to us in this process. Removes all limitations from the problem, all assumptions, all technical restrictions, all preconceived notions and concepts, get all of that out of the way and start from this point because by default, you’re making something new and therefore more valuable. What you won’t want to do is see how others are solving the problem - this gets you back into conventional thinking and solving problems with existing solutions.
+
+Let’s look at the problem Uber were faced with. It didn’t require any deeper definition other than “how do we get people from A to B?”
+
+If Uber looked at what everyone else was doing (reasoning by analogy/conventional thinking using preexisting ideas) they would just have a shinier interface on top of a regular taxi firm website offering a contact form and/or a phone number to call a taxi.
+
+Instead, Uber decided to work backwards from magic and started from impossible. How could you get someone from A to B if this worked like magic? “Teleportation!” Obviously that’s not doable, yet at least, so if not teleportation then what? You would have a personal driver to take you from A to B. You wouldn’t need to be somewhere in particular, this service would know where you are, and you would know how long it would be until your driver gets here - etc etc, and so Uber is born.
+
+By moving all of the limitations out of the way (current understanding of how taxis work, technical limitations, society’s expectations of what a taxi does), Uber was able to create something new and of significantly greater value than the existing solutions to the problem.
+
+The world is full of secrets like this left to discover. We’re lucky we are in software because most of the hardware secrets have been discovered. The web is just getting started and there are millions of life-changing ideas in waiting.
+
+### Step 3: Introduce Reality and Meet Magic in the Middle
+
+As we’ve just discussed in the Uber example, it’s not enough to start from magic and leave it at that. There is a need to get real which involves remaining disciplined about keeping conventional thinking at arm’s length. 
+
+Working backwards from magic requires you to start from impossible and slowly introduce just enough reality until your solution is as close to magic as possible.
+
+Before Apple took over the world, the old saying was “nobody gets fired for choosing IBM”. Risk-averse people and conformists get left for dust in the long run.
+
+## Conventional Thinking vs Working Backwards From Magic
+
+My intention isn't to encourage a complete rejection of conventional thinking altogether. Tried and tested solutions have their time and place, but at a time where design is self-commoditising in software I can't help but feel that the industry is declaring "mission complete" and [systemising too soon](http://localhost:3000/2020/02/07/intentional-and-emergent-design-systems-ii-copy.html). 
+
+Conventional thinking in digital design adopts the generic process of discovery through to completion by passing through all the usual stops along the way: user stories, competitive analysis, personas, wireframes and so on. Such processes are rapidly becoming checklists, or worse - ass-covering exercises so that the designer can blame the process if their work doesn't quite return on the investment.
+
+<table>
+<tr>
+<th>&nbsp;</th>
+<th>Conventional Thinking</th>
+<th>Working Backwards from Magic</th>
+</tr>
+<tr>
+<th>Starting Point</th>
+<td>Find existing examples</td>
+<td>Start from impossible</td>
+</tr>
+<tr>
+<th>Process</th>
+<td>Pre-planned, detailed</td>
+<td>Whatever it requires</td>
+</tr>
+<tr>
+<th>Solutions</th>
+<td>Already exist, may be remixes/combinations of existing solutions</td>
+<td>Typically new, unlikely to exist</td>
+</tr>
+<tr>
+<th>Worldview</th>
+<td>No secrets left to find</td>
+<td>The world is full of secrets left to be discovered</td>
+</tr>
+</table>
+
+The issue with conventional thinking is that it often involves an abundance of rules and processes that rarely produce the insanely valuable outcomes. The possibility set is artificially limited from the start. Ideas that create companies like Uber are left for other daring adventurers and the conventional thinker can only watch from the sidelines and wait for ideas to become mainstream before integrating them.
+
+Working backwards from magic starts from a completely different possibility space. It begins with the simple question: "if this worked like magic, what would that look like?"
+
+<img src="/img/spacex.png" class="spacex">
+
+---
+
+## "It'll never work"
+
+For this approach to work, it needs to live in a culture that is open to risk, making mistakes, and learning from failure quickly. We are taught from an early age that mistakes are bad and that learning to repeat answers from books is how to progress in life. I can't help but think that this leads to the type of ass-covering through a plethora of rules, conventions and processes that have become the norm in creative work.
+
+I have found that, in my experience, working backwards from magic democratises design more than existing approaches which seem to revel in the authority of a UX leader type bringing the naive client through the dangerous world of design. Asking a client "if this worked like magic, what would that look like?" brings them to the table without the need to worry about saying the right technical terms or whether something can or can't be achieved. 
+
+I have also started to become comfortable with the idea that "it'll never work" is a good indication that I'm on the right track towards creating new value. "It'll never work" simply means that it doesn't exist (yet) and you're firmly in working backwards from magic territory. Your possibility space is infinitely bigger.

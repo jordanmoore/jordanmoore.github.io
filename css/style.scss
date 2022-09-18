@@ -563,12 +563,20 @@ html, body {
   margin-top: -1em;
   margin-bottom: -1em;
 }
+.blog-posts article p>img.spacex {
+  display: none;
+}
 @media screen and (min-width:720px) and (min-height: 720px) {
   .blog-posts article p>img.idea {
     float: left;
     max-width: 210px;
     margin: 0 0 0 -4em;
     shape-outside: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  }
+  .blog-posts article p>img.spacex {
+    display: inline-block;
+    float: left;
+    max-height: 75vh;
   }
   .blog-posts article p>img.peacock {
     float: right;
@@ -577,7 +585,44 @@ html, body {
     margin-right: -4.7em;
     shape-outside: polygon(63% 0, 19% 11%, 8% 24%, 15% 50%, 14% 69%, 46% 59%, 84% 100%, 99% 100%, 100% 0);
   }
+  .blog-posts article p img.imac {
+    float: right;
+    max-width: 280px;
+    margin-left: 0;
+    margin-right: -4em;
+    shape-outside: circle(43% at 50% 50%);
+  }
+  .blog-posts article p img.hand {
+    float: right;
+    max-width: 280px;
+    margin-left: 0;
+    margin-right: -4.7em;
+    shape-outside: polygon(34% 4%, 30% 12%, 23% 17%, 11% 23%, 6% 46%, 9% 66%, 11% 79%, 14% 89%, 20% 95%, 35% 96%, 62% 97%, 74% 95%, 78% 85%, 86% 70%, 94% 57%, 88% 37%, 71% 32%, 69% 15%, 57% 7%, 45% 2%);
+  }
 }
+
+.blog-posts article table {
+  width: 100%;
+  table-layout: fixed;
+  padding: 2.6em 0;
+  th {
+    font-weight: 600;
+  }
+  th, td {
+    opacity: 0.6;
+    text-align: left;
+    line-height: 1.2;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.6em 0.4em;
+    font-size: 0.88em;
+  }
+  tr:last-of-type {
+    th, td {
+      border-bottom: none;
+    }
+  }
+}
+
 .blog-posts article p>img.levelling {
     @media screen and (min-width:720px) and (min-height: 720px) {
       max-height: 8.3vw;
@@ -724,6 +769,11 @@ html, body {
         filter: invert(100%) grayscale(100%);
         mix-blend-mode: lighten;
         background-blend-mode: lighten;
+        &.imac, &.spacex {
+          filter: none;
+          mix-blend-mode: normal;
+          background-blend-mode: normal;
+        }
       }
     }
   }
