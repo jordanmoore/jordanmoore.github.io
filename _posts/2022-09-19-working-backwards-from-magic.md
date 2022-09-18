@@ -3,7 +3,6 @@ layout: post
 title: Working Backwards from Magic
 date: '2022-09-19T00:00:01+00:00'
 
-
 ---
 
 I have wanted to write about working backwards from magic for quite a while now, partially from a place of laying claim to the idea as [some smart minds are taking note of the idea](https://twitter.com/jordanmoore/status/1480897225333133317?s=20&t=Gtc62GVa9EhQ302FHzA0LA), but I didn’t want to rush out a half-baked take on a concept that I truly believe has the power to change the world.
