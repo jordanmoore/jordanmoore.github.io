@@ -9,7 +9,7 @@ I have wanted to write about working backwards from magic for quite a while now,
 
 My ego temporarily entertained the idea of writing a book about the concept, however, even though I believe that working backwards from magic is an extremely powerful approach to creative problem-solving, it would be disingenuous to package a relatively simple idea with 200+ pages of padding to make a quick buck in the self-help/productivity niche. The concept really doesn't need that much unpacking, it's almost laughably simple and it has the capacity (at least in my experience) to make conventional approaches to problem-solving look ridiculously convoluted by comparison.
 
-I feel that as an industry (and I’d perhaps extend this towards society as a whole) that we are sleepwalking into a level of comfort where big, bold, radical thinking has made way for safe, tried and tested systems and processes that produce reliably similar results and more of what the world already has. The industry seems as though it is short on new ideas and bravery, and big on conventional thinking and mass-producing more of the same. It's anti-progress. Working backwards from magic is the pushback against this mode of thinking.
+I feel that as an industry (and I’d perhaps extend this towards society as a whole) that we are sleepwalking into a level of comfort where big, bold, radical thinking has made way for safe, tried and tested systems and processes that produce reliably similar results and more of what the world already has. The industry seems as though it is short on new ideas and bravery, and big on conventional thinking and mass-producing more of the same. It's tilting towards anti-progress. Working backwards from magic is the pushback against this mode of thinking.
 
 ## What is Working Backwards from Magic?
 
@@ -79,9 +79,9 @@ Conventional thinking in digital design adopts the generic process of discovery 
 </tr>
 </table>
 
-The issue with conventional thinking is that it often involves an abundance of rules and processes that rarely produce the insanely valuable outcomes. The possibility set is artificially limited from the start. Ideas that create companies like Uber are left for other daring adventurers and the conventional thinker can only watch from the sidelines and wait for ideas to become mainstream before integrating them.
+The issue with conventional thinking is that it often involves an abundance of rules and processes that rarely produce the insanely valuable outcomes. The possibility space is artificially limited from the start. Ideas that create companies like Uber are left for other daring adventurers and the conventional thinker can only watch from the sidelines and wait for ideas to become mainstream before integrating them.
 
-Working backwards from magic starts from a completely different possibility space. It begins with the simple question: "if this worked like magic, what would that look like?"
+Working backwards from magic starts from a completely different and grander possibility space. It begins with the simple question: "if this worked like magic, what would that look like?"
 
 <img src="/img/spacex.png" class="spacex">
 
@@ -89,8 +89,8 @@ Working backwards from magic starts from a completely different possibility spac
 
 ## "It'll never work"
 
-For this approach to work, it needs to live in a culture that is open to risk, making mistakes, and learning from failure quickly. We are taught from an early age that mistakes are bad and that learning to repeat answers from books is how to progress in life. I can't help but think that this leads to the type of ass-covering through a plethora of rules, conventions and processes that have become the norm in creative work.
+For this approach to work, it needs to live in a culture that is open to risk, making mistakes, and learning from failure quickly. We are taught from an early age that mistakes are bad and that learning to repeat answers from books is how to progress in life - in essence: do what everybody else is doing, DON'T think different. I can't help but think that this leads to the type of ass-covering through a plethora of rules, conventions and processes that have become the norm in creative work.
 
-I have found that, in my experience, working backwards from magic democratises design more than existing approaches which seem to revel in the authority of a UX leader type bringing the naive client through the dangerous world of design. Asking a client "if this worked like magic, what would that look like?" brings them to the table without the need to worry about saying the right technical terms or whether something can or can't be achieved. 
+I have found that, in my experience, working backwards from magic democratises design more than existing approaches which seem to revel in the authority of a UX leader type bringing the timid, naive client and others through the dangerous world of design. In contrast, asking a client "if this worked like magic, what would that look like?" brings them to the table without the need to jump through hoops, or worry about saying the right technical terms or have concerns about whether something can or can't be achieved. 
 
 I have also started to become comfortable with the idea that "it'll never work" is a good indication that I'm on the right track towards creating new value. "It'll never work" simply means that it doesn't exist (yet) and you're firmly in working backwards from magic territory. Your possibility space is infinitely bigger.
