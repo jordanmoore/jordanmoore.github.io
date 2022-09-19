@@ -87,7 +87,7 @@ In another one of his lectures titled "Who Buried Paul?", a deep dive into the P
 
 Moriarty calls this phenomenon "constellation", a human desire to see patterns and make connections between points. Looking up to the stars in the night sky, our ancestors created many images through self-recognition and seeing meaning and significance between points of light across a dark expanse. These connections appear to be stimulated where novelty exists rather than manifesting from the mundane. Look at the Beatles For Sale album cover juxtaposed with the Sgt. Pepper's Lonely Hearts Club artwork. One generated meaning and a multitude of interpretations in the eye of the beholder where the other just framed four guys from Liverpool ready to sing a few songs for you, the listener.
 
-![](http://jordanm.co.uk/img/beatles.jpg)
+![](https://jordanm.co.uk/img/beatles.jpg)
 
 So how does constellation, or the act of constellating help us design better digital products? Firstly your product needs to serve a purpose beyond a utility, particularly if that purpose leads to meaning or reveals greater truths. Constellating is a quick means to meaning, what red herrings give rise to speculation and new interpretations? Why do some of the great films such as Donny Darko leave parts of the story untold? People fill in the gaps with personal significance which means that somewhat counterintuitively, incompleteness by design encourages constellation which creates greater personal meaning rather than pre-prescribed, one-size-fits-all meaning.
 

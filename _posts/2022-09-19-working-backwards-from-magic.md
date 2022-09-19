@@ -47,7 +47,7 @@ Before Apple took over the world, the old saying was “nobody gets fired for ch
 
 ## Conventional Thinking vs Working Backwards From Magic
 
-My intention isn't to encourage a complete rejection of conventional thinking altogether. Tried and tested solutions have their time and place, but at a time where design is self-commoditising in software I can't help but feel that the industry is declaring "mission complete" and [systemising too soon](http://localhost:3000/2020/02/07/intentional-and-emergent-design-systems-ii-copy.html). 
+My intention isn't to encourage a complete rejection of conventional thinking altogether. Tried and tested solutions have their time and place, but at a time where design is self-commoditising in software I can't help but feel that the industry is declaring "mission complete" and [systemising too soon](https://jordanm.co.uk/2020/02/07/intentional-and-emergent-design-systems-ii-copy.html). 
 
 Conventional thinking in digital design adopts the generic process of discovery through to completion by passing through all the usual stops along the way: user stories, competitive analysis, personas, wireframes and so on. Such processes are rapidly becoming checklists, or worse - ass-covering exercises so that the designer can blame the process if their work doesn't quite return on the investment.
 

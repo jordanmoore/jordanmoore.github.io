@@ -10,7 +10,7 @@ The best puzzles are the ones that demand more of you. When the answer appears o
 
 Nob Yoshigahara's infamous number tree puzzle is certainly one of my personal favourites for just these reasons. It gives you a set of information and asks, What do you make of this?
 
-![Nob Yoshigahara's infamous number tree puzzle](http://jordanm.co.uk/img/puzzle.png)
+![Nob Yoshigahara's infamous number tree puzzle](https://jordanm.co.uk/img/puzzle.png)
 
 Puzzles are a great tool for strengthening mental muscles that can help unpack design problems. They push you to adopt a different mindset and perspective, challenge assumptions, study intently, and look closely. Like a puzzle, difficult design problems evoke that same moment of epiphany when you peel back the layers to find hidden truths.
 
