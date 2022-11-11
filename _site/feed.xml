@@ -4,10 +4,10 @@
     <title>Product Design, Responsive Web Design, UX Design, Belfast Northern Ireland | Jordan Moore</title>
     <description>Product designer, responsive web designer and UX designer in Belfast, Northern Ireland, specialising in user experience and accessible design
 </description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 19 Sep 2022 10:41:27 +0100</pubDate>
-    <lastBuildDate>Mon, 19 Sep 2022 10:41:27 +0100</lastBuildDate>
+    <link>https://jordanm.co.uk/</link>
+    <atom:link href="https://jordanm.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 11 Nov 2022 11:53:39 +0000</pubDate>
+    <lastBuildDate>Fri, 11 Nov 2022 11:53:39 +0000</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -103,8 +103,8 @@
 &lt;p&gt;I have also started to become comfortable with the idea that “it’ll never work” is a good indication that I’m on the right track towards creating new value. “It’ll never work” simply means that it doesn’t exist (yet) and you’re firmly in working backwards from magic territory. Your possibility space is infinitely bigger.&lt;/p&gt;
 </description>
         <pubDate>Mon, 19 Sep 2022 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2022/09/19/working-backwards-from-magic.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2022/09/19/working-backwards-from-magic.html</guid>
+        <link>https://jordanm.co.uk/2022/09/19/working-backwards-from-magic.html</link>
+        <guid isPermaLink="true">https://jordanm.co.uk/2022/09/19/working-backwards-from-magic.html</guid>
         
         
       </item>
@@ -241,8 +241,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Fri, 07 Feb 2020 00:00:01 +0000</pubDate>
-        <link>http://localhost:4000/2020/02/07/intentional-and-emergent-design-systems-ii-copy.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/02/07/intentional-and-emergent-design-systems-ii-copy.html</guid>
+        <link>https://jordanm.co.uk/2020/02/07/intentional-and-emergent-design-systems-ii-copy.html</link>
+        <guid isPermaLink="true">https://jordanm.co.uk/2020/02/07/intentional-and-emergent-design-systems-ii-copy.html</guid>
         
         
       </item>
@@ -258,7 +258,7 @@
 &lt;p&gt;I have a few concerns with this way of working with design systems. Front-loading design and/or build with the pieces you believe you’ll eventually need to arrive at a solution creates a limited set of outcomes. Any attempt to create more pieces in anticipation of generating a greater number of outcomes results in conjectural bloat – a cost offset to the user paid for in unnecessary data and time.&lt;/p&gt;
 
 &lt;!-- &lt;figure&gt;
-    &lt;img src=&quot;http://localhost:4000/img/intentionalds.jpg&quot;&gt;
+    &lt;img src=&quot;https://jordanm.co.uk/img/intentionalds.jpg&quot;&gt;
     &lt;figcaption&gt;Simplified flow of an intentional design system (building blocks first)&lt;/figcaption&gt;
 &lt;/figure&gt; --&gt;
 
@@ -271,7 +271,7 @@
 &lt;p&gt;This approach is much closer to the user needs end of the scale by beginning with creative solutions before deriving patterns and systems (i.e the system emerges from real, coded scenarios).&lt;/p&gt;
 
 &lt;!-- &lt;figure&gt;
-    &lt;img src=&quot;http://localhost:4000/img/emergentds.jpg&quot;&gt;
+    &lt;img src=&quot;https://jordanm.co.uk/img/emergentds.jpg&quot;&gt;
     &lt;figcaption&gt;Simplified flow of an emergent design system (solution first, derive systems)&lt;/figcaption&gt;
 &lt;/figure&gt; --&gt;
 
@@ -282,8 +282,8 @@
 &lt;p&gt;Waiting for systems to emerge, through a continuous process of building and deconstructing, goes some way towards remedying the assumptions of the alternative technique.&lt;/p&gt;
 </description>
         <pubDate>Tue, 30 Jul 2019 01:00:01 +0100</pubDate>
-        <link>http://localhost:4000/2019/07/30/intentional-and-emergent-design-systems.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/07/30/intentional-and-emergent-design-systems.html</guid>
+        <link>https://jordanm.co.uk/2019/07/30/intentional-and-emergent-design-systems.html</link>
+        <guid isPermaLink="true">https://jordanm.co.uk/2019/07/30/intentional-and-emergent-design-systems.html</guid>
         
         
       </item>
@@ -305,8 +305,8 @@
 &lt;p&gt;It is therefore desirable where possible to reduce idea friction by shortening the time between idea conception internally and manifestation externally so ideas can be captured and acted upon.&lt;/p&gt;
 </description>
         <pubDate>Sat, 13 Apr 2019 01:00:01 +0100</pubDate>
-        <link>http://localhost:4000/2019/04/13/idea-friction.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/04/13/idea-friction.html</guid>
+        <link>https://jordanm.co.uk/2019/04/13/idea-friction.html</link>
+        <guid isPermaLink="true">https://jordanm.co.uk/2019/04/13/idea-friction.html</guid>
         
         
       </item>
@@ -357,8 +357,8 @@
 &lt;p&gt;&lt;em&gt;Originally published in &lt;a href=&quot;https://newadventuresconf.com/2019/fringe/publication/&quot;&gt;New Adventures Paper 2019&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 20 Feb 2019 00:00:01 +0000</pubDate>
-        <link>http://localhost:4000/2019/02/20/experience-gaps.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/02/20/experience-gaps.html</guid>
+        <link>https://jordanm.co.uk/2019/02/20/experience-gaps.html</link>
+        <guid isPermaLink="true">https://jordanm.co.uk/2019/02/20/experience-gaps.html</guid>
         
         
       </item>
@@ -445,8 +445,8 @@
 &lt;p&gt;No one said it would be easy.&lt;/p&gt;
 </description>
         <pubDate>Tue, 11 Sep 2018 01:00:01 +0100</pubDate>
-        <link>http://localhost:4000/2018/09/11/unpacking-design-problems.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/09/11/unpacking-design-problems.html</guid>
+        <link>https://jordanm.co.uk/2018/09/11/unpacking-design-problems.html</link>
+        <guid isPermaLink="true">https://jordanm.co.uk/2018/09/11/unpacking-design-problems.html</guid>
         
         
       </item>
@@ -573,8 +573,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Mon, 30 Jul 2018 01:00:01 +0100</pubDate>
-        <link>http://localhost:4000/2018/07/30/design-laws-of-nature.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/07/30/design-laws-of-nature.html</guid>
+        <link>https://jordanm.co.uk/2018/07/30/design-laws-of-nature.html</link>
+        <guid isPermaLink="true">https://jordanm.co.uk/2018/07/30/design-laws-of-nature.html</guid>
         
         
       </item>
@@ -639,8 +639,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Fri, 20 Jul 2018 01:00:01 +0100</pubDate>
-        <link>http://localhost:4000/2018/07/20/industry-fatigue.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/07/20/industry-fatigue.html</guid>
+        <link>https://jordanm.co.uk/2018/07/20/industry-fatigue.html</link>
+        <guid isPermaLink="true">https://jordanm.co.uk/2018/07/20/industry-fatigue.html</guid>
         
         
       </item>
@@ -713,8 +713,8 @@ Every technological artefact that is used will mediate human actions, and every 
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 06 Jun 2018 10:12:00 +0100</pubDate>
-        <link>http://localhost:4000/2018/06/06/intro-ocean-ux.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/06/06/intro-ocean-ux.html</guid>
+        <link>https://jordanm.co.uk/2018/06/06/intro-ocean-ux.html</link>
+        <guid isPermaLink="true">https://jordanm.co.uk/2018/06/06/intro-ocean-ux.html</guid>
         
         
       </item>
@@ -744,8 +744,8 @@ Every technological artefact that is used will mediate human actions, and every 
 &lt;p&gt;Using a good old fashioned notebook has the additional advantage of taking your eyes off the screen. That pause enforces a small step back and seeing the bigger picture. It’s therapeutic.&lt;/p&gt;
 </description>
         <pubDate>Fri, 23 Mar 2018 09:12:00 +0000</pubDate>
-        <link>http://localhost:4000/2018/03/23/managing-daily-tasks.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/03/23/managing-daily-tasks.html</guid>
+        <link>https://jordanm.co.uk/2018/03/23/managing-daily-tasks.html</link>
+        <guid isPermaLink="true">https://jordanm.co.uk/2018/03/23/managing-daily-tasks.html</guid>
         
         
       </item>
