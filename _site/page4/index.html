@@ -7,7 +7,7 @@
   <meta name="description" content="Product designer, responsive web designer and UX designer in Belfast, Northern Ireland, specialising in user experience and accessible design
 ">
 
-  <link rel="stylesheet" href="https://jordanm.co.uk/dist/styles/style.css">
+  <link rel="stylesheet" href="https://jordanm.co.uk/css/main.css">
   <link rel="canonical" href="https://jordanm.co.uk/page4/">
   <link rel="alternate" type="application/rss+xml" title="Product Design, Responsive Web Design, UX Design, Belfast Northern Ireland | Jordan Moore" href="https://jordanm.co.uk/feed.xml" />
 
@@ -37,26 +37,99 @@
 
 <body class="homepage">
 
-    <div class="blog-posts">
-        
-        
-        <header>
-            
+  <div class="blog-posts-wrapper">
+      <div class="blog-posts">
+          <header>
+              
 
-<h1 class="logo"><a href="/"></a></h1>
-        </header>
-        <div id="start"></div>
-        
-            <article>  
-              <a class="post-link" href="/2013/03/03/the-scourge-of-social-plug-ins.html"><h1 class="article-header">The Scourge of Social Plug-Ins</h1></a>
-              <p class="date"><time>
-                  
-                  March
-                  3rd,
-                  2013
-                </time></p>
-              <div class="article-content">
-                <p>Maybe I am a bit of a control freak. When I make something, I want full editorial control over the visuals and the content. And maybe it&#8217;s the minimalist in me thinking &#8220;if it doesn&#8217;t add any value — remove it. Everything else is distraction&#8221;. I just can&#8217;t bring myself to switch on comments or social sharing buttons on this website — I can&#8217;t do it. I&#8217;ll start with those shiny little not-quite-visually-similar-enough social buttons that tally up how many times your page has been shared on their networks via their JavaScript generated buttons.</p>
+<h1 class="logo">
+	<a href="/"></a>
+	<div>
+		<span class="name">Jordan Moore</span>
+		<span class="role">Intuition-led Designer</span>
+	</div>
+</h1>
+          </header>
+          
+              <article>  
+                <div class="article-content">
+                  <a class="post-link" href="/2013/03/25/thoughts-on-toggling-a-responsive-design-on-and.html"><h1 class="article-header">Thoughts on Toggling a Responsive Design On and Off</h1></a>
+                  <p class="date"><time>
+                      
+                      March
+                      25th,
+                      2013
+                    </time></p>
+                  <p>Earlier today Roger Johansson posted an article about potential scenarios for <a href="http://www.456bereastreet.com/archive/201303/letting_users_disable_responsive_layout/">disabling a responsive design</a> along with <a href="http://www.456bereastreet.com/lab/disable-responsive-layout/">a demo</a>. As noted in the article, this isn&#8217;t new thinking as both <a href="http://www.brucelawson.co.uk/2013/turning-off-responsive-web-design/">Bruce Lawson</a>, <a href="http://css-tricks.com/user-opt-out-responsive-design/">Chris Coyier</a> and various others have spoken about it before — the purpose was to introduce the demo along with scenarios where it would be useful.</p>
+
+<p>I can&#8217;t figure out what my stance is on the approach. I&#8217;m leaning more towards thinking that this is a good idea. Some view the inclusion of an off-switch as an admission of failure in the implementation of a responsive design — I&#8217;m not so sure it is. <a href="http://chris-armstrong.com/">Chris Armstrong</a> put it nicely on Twitter:</p>
+
+<blockquote>
+  <p>RWD involves making assumptions on the user&#8217;s behalf, why not allow them to be overriden?</p>
+</blockquote>
+
+<p>I wish I had a toggle for the bad responsive designs, the ones that &#8220;don&#8217;t get it&#8221; (i.e they hide content and bastardise the experience rather than adapt it appropriately). Even if we have examined and tested our assumptions thoroughly, there is always a chance that we&#8217;ll get something wrong and I think users deserve a chance to undo something we impose on them (with good intent).</p>
+
+<p>Roger&#8217;s article discusses the language around the toggle switch:</p>
+
+<blockquote>
+  <p>The trickiest part is probably what to call the switch. Phrases like “View desktop layout”, “Go to desktop version” and “View full site” seem like saying that what you’re currently viewing is missing something. So instead I called it “View fixed width layout” (and “View flexible width layout” to toggle back). I don’t really know if it helps end users understand the difference, but I think it’s a more accurate description than using “desktop” and “mobile”. Someone’s browser window being narrower than 960 pixels, or 1200 pixels, or wherever you choose to draw the line, does not necessarily mean they’re using a “mobile” device.</p>
+</blockquote>
+
+<p>After years of m-dot websites users have been conditioned to feel that &#8220;View desktop site&#8221; means that the page is hiding something from them. That&#8217;s why I think trying to add language to the switch won&#8217;t work, it may create the feeling of deception that exists with many m-dot sites. Also using terms like &#8220;fluid&#8221; and &#8220;fixed&#8221; will mean <strong>nothing</strong> to the average user. The language would need to feel familiar and create an expectation — although in this situation, the user&#8217;s expectation is that the button will reveal a &#8220;full version&#8221; revealing the stuff that the page is hiding.</p>
+
+<p>I think we could do something visually rather than give it confusing and misguided terms. I&#8217;m not saying this suggestion is the definitive approach, it&#8217;s more of a rough idea. The image below gives you an idea of what an icon might look like before and after it is toggled.</p>
+
+<p><img src="http://media.tumblr.com/b2f8ea92bc83bb949336d808e5cf0c06/tumblr_inline_mk8mcutqUY1qz4rgp.png" alt=""/></p>
+
+<p>The left icon shows what it might look like in a standard responsive layout with the option to toggle a fixed width layout, the right shows how it would look from the fixed width layout if the user wanted to switch back to a responsive layout.</p>
+
+<p>Again — this is just a rough idea using a couple of <a href="http://dribbble.com/shots/928458-80-Shades-of-White-Icons">repurposed icons</a>, if you do decide to implement an off switch, then I suggest trying a visual reference rather than potentially confusing wording.</p>
+
+<p><a href="http://static.tumblr.com/jdwzxqr/euhmoh793/switch.jpg" class="cover" data-credit="© Yutaka Tsutano" data-link="http://www.flickr.com/photos/ivyfield"></a></p>
+
+                </div>
+              </article>
+          
+              <article>  
+                <div class="article-content">
+                  <a class="post-link" href="/2013/03/12/under-the-microscope.html"><h1 class="article-header">Under the Microscope</h1></a>
+                  <p class="date"><time>
+                      
+                      March
+                      12th,
+                      2013
+                    </time></p>
+                  <p>When designing for small screens keep in mind that everything you do is under the microscope - design patterns, interactions, usability, speed — everything. These wonderful little devices that we cup in our hands offer a small, personal and intimate window in which to enjoy the web.</p>
+
+<p>It is more important than ever that we get the little details right. A small screen space is limited in what we can show at any particular moment - and that&#8217;s what we are dealing with here, lots of tiny <strong>moments</strong>. By contrast a large screen offers plenty of room for design problems to hide or go mostly unnoticed. Small displays don&#8217;t allow that. They are unforgiving to poor design decisions which is why a lot of designers are quick to scrutinise and attack a poorly implemented responsive design. This type of scrutiny is more often than not about the design and technical aspects whereas users scrutinise with a different lens which generally concerns more important aspects content and value.</p>
+
+<p>I suggest looking at a confined layout as a series of moments. Ask difficult questions of it: <em>"Does this moment achieve what I want it to achieve?"</em>, <em>"Does this particular moment offer any value?</em>&#8221;, <em>"Does this moment facilitate or distract from the overall message/objective/goal?"</em>, <em>"Does this moment make sense independently or does it require the bigger picture to give it context?"</em></p>
+
+<p>Our design decisions are magnified in this personal space. It&#8217;s a rewarding space that can offer intimacy and undivided attention - small screens deserve good experiences and a responsive approach<sup id="fnref:p45185035075-1"><a href="#fn:p45185035075-1" rel="footnote">1</a></sup> can allow that good experience to permeate any device or dynamic that it is faced with.</p>
+
+<p><a href="http://static.tumblr.com/jdwzxqr/EKCmoh7vf/microscope.jpg" class="cover" data-credit="© Marianne Williams" data-link="http://www.flickr.com/photos/machineproject"></a></p>
+
+<div class="footnotes">
+<hr><ol><li id="fn:p45185035075-1">
+<p>Aside: responsive design doesn&#8217;t <em>just</em> mean making things work on small displays. <a href="#fnref:p45185035075-1" rev="footnote">↩</a></p>
+</li>
+
+</ol></div>
+
+                </div>
+              </article>
+          
+              <article>  
+                <div class="article-content">
+                  <a class="post-link" href="/2013/03/03/the-scourge-of-social-plug-ins.html"><h1 class="article-header">The Scourge of Social Plug-Ins</h1></a>
+                  <p class="date"><time>
+                      
+                      March
+                      3rd,
+                      2013
+                    </time></p>
+                  <p>Maybe I am a bit of a control freak. When I make something, I want full editorial control over the visuals and the content. And maybe it&#8217;s the minimalist in me thinking &#8220;if it doesn&#8217;t add any value — remove it. Everything else is distraction&#8221;. I just can&#8217;t bring myself to switch on comments or social sharing buttons on this website — I can&#8217;t do it. I&#8217;ll start with those shiny little not-quite-visually-similar-enough social buttons that tally up how many times your page has been shared on their networks via their JavaScript generated buttons.</p>
 
 <p>First of all, unless you are The Next Web, Mashable or another web giant attracting heaps of traffic on a daily basis, a social count button isn&#8217;t going to do you or your brand any favours. Picture this scenario: you arrive at a random article on this website, you notice social buttons and note that the article has been shared 0 times on Facebook, 1 time on Twitter and 0 on Google Plus. What is your first instinctive thought? Here&#8217;s what I think — if I spot the buttons before reading the content and notice that it hasn&#8217;t been shared, I immediately doubt the integrity of the author and the trust of the message from the website as a whole. I read a lot of articles on a daily basis and sometimes I&#8217;ll gauge the usefulness of article on the recency of the post vs the share count. Yes, it&#8217;s shallow, like judging a book by it&#8217;s cover although in my defence, there are a lot of &#8220;books&#8221; to get through, whether intentional or not a social button can read like a <strong>review</strong>.</p>
 
@@ -92,20 +165,19 @@
 
 </ol></div>
 
-              </div>
-            </article>
-        
-        
-            <article>  
-              <a class="post-link" href="/2013/03/02/responding-to-language.html"><h1 class="article-header">Responding to Language</h1></a>
-              <p class="date"><time>
-                  
-                  March
-                  2nd,
-                  2013
-                </time></p>
-              <div class="article-content">
-                <p>Recently Vasilis van Gemert authored a very useful article on Smashing Magazine about <a href="http://www.smashingmagazine.com/2013/03/01/logical-breakpoints-responsive-design/">Logical Breakpoints For Your Responsive Design</a>. The article touches on how it you could theoretically produce different reading lengths and breakpoints for different languages. To support this idea Vasilis introduces an insightful little tool showing how the contrasting word length between different languages influences reading length.</p>
+                </div>
+              </article>
+          
+              <article>  
+                <div class="article-content">
+                  <a class="post-link" href="/2013/03/02/responding-to-language.html"><h1 class="article-header">Responding to Language</h1></a>
+                  <p class="date"><time>
+                      
+                      March
+                      2nd,
+                      2013
+                    </time></p>
+                  <p>Recently Vasilis van Gemert authored a very useful article on Smashing Magazine about <a href="http://www.smashingmagazine.com/2013/03/01/logical-breakpoints-responsive-design/">Logical Breakpoints For Your Responsive Design</a>. The article touches on how it you could theoretically produce different reading lengths and breakpoints for different languages. To support this idea Vasilis introduces an insightful little tool showing how the contrasting word length between different languages influences reading length.</p>
 
 <p><img src="http://static.tumblr.com/jdwzxqr/bx5mj0xoa/screen_shot_2013-03-02_at_08.16.28.png" alt="Cropped screenshot of The International Measure Slider"/></p>
 
@@ -131,20 +203,19 @@
 
 <p><a href="http://static.tumblr.com/jdwzxqr/u82moh7s5/language.jpg" class="cover" data-credit="© alangrlane" data-link="http://www.flickr.com/photos/53914298@N07"></a></p>
 
-              </div>
-            </article>
-        
-        
-            <article>  
-              <a class="post-link" href="/2012/11/20/be-careful-who-you-build-for.html"><h1 class="article-header">Be careful who you build for</h1></a>
-              <p class="date"><time>
-                  
-                  November
-                  20th,
-                  2012
-                </time></p>
-              <div class="article-content">
-                <p>This hilarious animated gif crafted by Tiago Franco (<a href="http://twitter.com/Alarka">@Alarka</a>) has probably been viewed by the entire web development community by now. It shows the responsive web designer&#8217;s instinctive grabbing of the browser handles whenever they open a new website. We all do it and there&#8217;s nothing wrong with that.</p>
+                </div>
+              </article>
+          
+              <article>  
+                <div class="article-content">
+                  <a class="post-link" href="/2012/11/20/be-careful-who-you-build-for.html"><h1 class="article-header">Be careful who you build for</h1></a>
+                  <p class="date"><time>
+                      
+                      November
+                      20th,
+                      2012
+                    </time></p>
+                  <p>This hilarious animated gif crafted by Tiago Franco (<a href="http://twitter.com/Alarka">@Alarka</a>) has probably been viewed by the entire web development community by now. It shows the responsive web designer&#8217;s instinctive grabbing of the browser handles whenever they open a new website. We all do it and there&#8217;s nothing wrong with that.</p>
 
 <p><img src="https://gimmebar-assets.s3.amazonaws.com/50a54eeeb0ce5.gif"/></p>
 
@@ -167,20 +238,19 @@
 
 </ol></div>
 
-              </div>
-            </article>
-        
-        
-            <article>  
-              <a class="post-link" href="/2012/10/04/the-airfix-responsive-workflow.html"><h1 class="article-header">The Airfix Responsive Workflow</h1></a>
-              <p class="date"><time>
-                  
-                  October
-                  4th,
-                  2012
-                </time></p>
-              <div class="article-content">
-                <p>I had an epiphany recently regarding one of the biggest concerns around adopting a responsive methodology for web projects — workflow.</p>
+                </div>
+              </article>
+          
+              <article>  
+                <div class="article-content">
+                  <a class="post-link" href="/2012/10/04/the-airfix-responsive-workflow.html"><h1 class="article-header">The Airfix Responsive Workflow</h1></a>
+                  <p class="date"><time>
+                      
+                      October
+                      4th,
+                      2012
+                    </time></p>
+                  <p>I had an epiphany recently regarding one of the biggest concerns around adopting a responsive methodology for web projects — workflow.</p>
 
 <p>People have been stating that responsive design projects require a fundamental shift in the web design workflow we have become accustomed to from years of building fixed layouts based on flat images that try to represent a website. I believe the shift is actually relatively small, in fact you might be working this way already.</p>
 
@@ -233,20 +303,19 @@
 
 </ol></div>
 
-              </div>
-            </article>
-        
-        
-            <article>  
-              <a class="post-link" href="/2012/08/27/where-print-fits-in-responsive-web-design.html"><h1 class="article-header">Where print fits in responsive web design</h1></a>
-              <p class="date"><time>
-                  
-                  August
-                  27th,
-                  2012
-                </time></p>
-              <div class="article-content">
-                <p>A stub<sup id="fnref:p30308855354-1"><a href="#fn:p30308855354-1" rel="footnote">1</a></sup> is the part of a document torn off and kept as a record, it usually resides at the end of documents like cheques, receipts and tickets.</p>
+                </div>
+              </article>
+          
+              <article>  
+                <div class="article-content">
+                  <a class="post-link" href="/2012/08/27/where-print-fits-in-responsive-web-design.html"><h1 class="article-header">Where print fits in responsive web design</h1></a>
+                  <p class="date"><time>
+                      
+                      August
+                      27th,
+                      2012
+                    </time></p>
+                  <p>A stub<sup id="fnref:p30308855354-1"><a href="#fn:p30308855354-1" rel="footnote">1</a></sup> is the part of a document torn off and kept as a record, it usually resides at the end of documents like cheques, receipts and tickets.</p>
 
 <p>I can&#8217;t think of a more apt description of this handy little technique I am about to share with you to show you how I would approach <strong>print styles</strong> in responsive projects.</p>
 
@@ -295,20 +364,19 @@
 
 </ol></div>
 
-              </div>
-            </article>
-        
-        
-            <article>  
-              <a class="post-link" href="/2012/06/30/pattern-translations.html"><h1 class="article-header">Pattern Translations</h1></a>
-              <p class="date"><time>
-                  
-                  June
-                  30th,
-                  2012
-                </time></p>
-              <div class="article-content">
-                <p>We are accustomed to the phrase &#8220;design patterns&#8221; which encompasses an established solution to a design problem consisting of purpose, function and appearance. There are lots of libraries cataloging these solutions to help designers and developers make sensible decisions when designing and building a product.</p>
+                </div>
+              </article>
+          
+              <article>  
+                <div class="article-content">
+                  <a class="post-link" href="/2012/06/30/pattern-translations.html"><h1 class="article-header">Pattern Translations</h1></a>
+                  <p class="date"><time>
+                      
+                      June
+                      30th,
+                      2012
+                    </time></p>
+                  <p>We are accustomed to the phrase &#8220;design patterns&#8221; which encompasses an established solution to a design problem consisting of purpose, function and appearance. There are lots of libraries cataloging these solutions to help designers and developers make sensible decisions when designing and building a product.</p>
 
 <p>Two years ago Ethan Marcotte introduced <a href="http://www.alistapart.com/articles/responsive-web-design/" title="A List Apart: Articles: Responsive Web Design">Responsive Web Design</a>, which has become the biggest movement on the web since The Web Standards movement. With Responsive Web Design we changed the way we make websites, our tools remain largely the same but our approach is different.</p>
 
@@ -331,20 +399,19 @@
 
 </ol></div>
 
-              </div>
-            </article>
-        
-        
-            <article>  
-              <a class="post-link" href="/2012/05/13/source-shuffling-responsive-images-based-on.html"><h1 class="article-header">Source shuffling - responsive images based on media queries</h1></a>
-              <p class="date"><time>
-                  
-                  May
-                  13th,
-                  2012
-                </time></p>
-              <div class="article-content">
-                <p>There are lots of solutions to address the problem of responsive images. The solutions share a similar set of requirements, some meet the majority of the requirements, some don&#8217;t and specialise in doing one thing well.</p>
+                </div>
+              </article>
+          
+              <article>  
+                <div class="article-content">
+                  <a class="post-link" href="/2012/05/13/source-shuffling-responsive-images-based-on.html"><h1 class="article-header">Source shuffling - responsive images based on media queries</h1></a>
+                  <p class="date"><time>
+                      
+                      May
+                      13th,
+                      2012
+                    </time></p>
+                  <p>There are lots of solutions to address the problem of responsive images. The solutions share a similar set of requirements, some meet the majority of the requirements, some don&#8217;t and specialise in doing one thing well.</p>
 
 <p>I recently read <a href="http://blog.cloudfour.com/a-framework-for-discussing-responsive-images-solutions/" title="a framework for discussing responsive images solutions">a framework for discussing responsive images solutions</a> by Jason Grigsby and his first point really hit home with me. Scaling a large image for mobile devices may not produce the desired results every time, content authors should be allowed to specify different images for different contexts.</p>
 
@@ -432,20 +499,19 @@ var queries = [
 MQ.init(queries);
 </script><p><a href="http://static.tumblr.com/jdwzxqr/hm8mohcyk/shuffling.jpg" class="cover" data-credit="© Anthony Abbott" data-link="http://www.flickr.com/photos/antsnaps"></a></p>
 
-              </div>
-            </article>
-        
-        
-            <article>  
-              <a class="post-link" href="/2012/04/26/building-with-content-choreography.html"><h1 class="article-header">Building with Content Choreography</h1></a>
-              <p class="date"><time>
-                  
-                  April
-                  26th,
-                  2012
-                </time></p>
-              <div class="article-content">
-                <p>Responsive Web Design allows us to change layouts and element appearance based upon the width and/or height of the destination device. It&#8217;s the ideal scenario for users, coders and content coordinators alike - same site, same code, same content, just optimised for your experience depending on the display properties of the device you are using.</p>
+                </div>
+              </article>
+          
+              <article>  
+                <div class="article-content">
+                  <a class="post-link" href="/2012/04/26/building-with-content-choreography.html"><h1 class="article-header">Building with Content Choreography</h1></a>
+                  <p class="date"><time>
+                      
+                      April
+                      26th,
+                      2012
+                    </time></p>
+                  <p>Responsive Web Design allows us to change layouts and element appearance based upon the width and/or height of the destination device. It&#8217;s the ideal scenario for users, coders and content coordinators alike - same site, same code, same content, just optimised for your experience depending on the display properties of the device you are using.</p>
 
 <p>There can be stumbling blocks along the way to a beautiful unified site that runs perfectly on all platforms, which I&#8217;ll not go into as they are well documented (think, responsive images, page weight and so-on). The one that has been teasing me for a while is Content Choreography. Trent Walton <a href="http://trentwalton.com/2011/07/14/content-choreography/">wrote a great article on the matter</a>. My key takeaway from his article was that when it comes to the narrow width single column view, content stacking is unavoidable and the approach the majority of us take is to simply stack the page elements in the order they appear in our document order.</p>
 
@@ -482,16 +548,13 @@ MQ.init(queries);
 <li><a href="http://blog.woop.ie/post/23227066135/content-choreography-mixin">Content Choreography SASS mixin</a> by Stewart Curry</li>
 </ul><p><a href="http://farm9.staticflickr.com/8368/8405185756_3578971882_h.jpg" class="cover" data-credit="© Kryziz Bonny" data-link="http://www.flickr.com/photos/kryziz"></a></p>
 
-              </div>
-            </article>
-        
-
-    <!-- /.container -->
+                </div>
+              </article>
+          
+    
+      <!-- /.container -->
+    </div>
   </div>
-
-
-
-</div>
 
 
   
@@ -501,15 +564,17 @@ MQ.init(queries);
             
             
             <div class="footer-col copyright">
-                <p><span>&copy; Jordan Moore 2023</span></p>
+                <p><span>&copy; Jordan Moore 2024</span></p>
             </div>
             
             <nav>
                 <ul>
                     <!-- <li><a href="#start" >&larr; Start</a></li> -->
                     <!-- <li><a href="/bookshelf" >Bookshelf</a></li> -->
-                    <li><a href="/lab" >Projects</a></li>
-                    <li><a href="https://jordanmoore.substack.com/" class="substack-link"><i class="ico-substack"></i> Substack</a></li>
+                    <!-- <li><a href="/lab" >Projects</a></li> -->
+                    <li><a href="/now" >Now</a></li>
+                    <li><a href="https://www.x.com/jordanmoore">@jordanmoore</a></li>
+                    <!-- <li><a href="https://jordanmoore.substack.com/" class="substack-link">Substack</a></li> -->
                     <li><a href="https://jordanm.co.uk/feed.xml" class="-rss nav-mb-hide"><i class="ico-rss"></i> Subscribe</a></li>
                 </ul>
             </nav>

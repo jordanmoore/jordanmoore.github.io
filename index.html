@@ -3,32 +3,27 @@ layout: homepage
 ---
 
 
-  <div class="blog-posts">
-        {% for post in paginator.posts %}
-        {% if forloop.first == true %}
-        <header>
-            {% include home-nav.html %}
-        </header>
-        <div id="start"></div>
-        {% endif %}
-            <article>  
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><h1 class="article-header">{{ post.title }}</h1></a>
-              <p class="date"><time>
-                  {% assign d = post.date | date: "%-d"  %}
-                  {{ post.date | date: "%B" }}
-                  {% case d %}
-                  {% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
-                  {{ post.date | date: "%Y" }}
-                </time></p>
-              <div class="article-content">
-                {{ post.content }}
-              </div>
-            </article>
-        {% endfor %}
-
-    <!-- /.container -->
+<div class="blog-posts-wrapper">
+      <div class="blog-posts">
+          <header>
+              {% include home-nav.html %}
+          </header>
+          {% for post in paginator.posts %}
+              <article>  
+                <div class="article-content">
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><h1 class="article-header">{{ post.title }}</h1></a>
+                  <p class="date"><time>
+                      {% assign d = post.date | date: "%-d"  %}
+                      {{ post.date | date: "%B" }}
+                      {% case d %}
+                      {% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %},
+                      {{ post.date | date: "%Y" }}
+                    </time></p>
+                  {{ post.content }}
+                </div>
+              </article>
+          {% endfor %}
+    
+      <!-- /.container -->
+    </div>
   </div>
-
-
-
-</div>

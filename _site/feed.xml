@@ -6,13 +6,162 @@
 </description>
     <link>https://jordanm.co.uk/</link>
     <atom:link href="https://jordanm.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 16 Feb 2023 13:40:58 +0000</pubDate>
-    <lastBuildDate>Thu, 16 Feb 2023 13:40:58 +0000</lastBuildDate>
+    <pubDate>Tue, 28 May 2024 16:09:54 +0100</pubDate>
+    <lastBuildDate>Tue, 28 May 2024 16:09:54 +0100</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
+        <title>The Illusory Internet</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/internet.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I have been using Twitter less frequently than I used to, and now I find myself in a situation where I’m torn between not wanting to engage with the platform at all, and experiencing a sense of loss aversion that Twitter seems to evoke through its various psychological design levers it enjoys pulling (I have a hunch that they do an awful lot more than dopamine spiking through engagement buttons).&lt;/p&gt;
+
+&lt;p&gt;I tend to find that during these drier periods, I’ll get random notifications from people engaging with some of my older tweets. Today, someone engaged with &lt;a href=&quot;https://twitter.com/jordanmoore/status/1218672445877555201&quot;&gt;a monologue I shared from Hideo Kojima’s Metal Gear Solid 2&lt;/a&gt; released in 2001 which features horrifyingly accurate predictions about social media before social media even existed as well as some correlations with the 2016 election 15 years before it happened, and it covers the nature of memes before the word entered the broader public lexicon.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;“The digital society furthers human flaws and selectively rewards development of convenient half-truths.”&lt;/li&gt;
+  &lt;li&gt;“The untested truths spun by different interests continue to churn and accumulate in the sandbox of political correctness and value systems.”&lt;/li&gt;
+  &lt;li&gt;“Everyone withdrawals into their own small gated community, afraid of a larger forum; they stay inside their little ponds leaking what ever “truth” suits them into the growing cesspool of society at large.”&lt;/li&gt;
+  &lt;li&gt;“The different cardinal truths neither clash nor mesh, no one is invalidated but no one is right.”&lt;/li&gt;
+  &lt;li&gt;“The world is being engulfed in “Truth”. And this is the way the world ends. Not with a BANG, but with a whimper.”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;After rewatching the video on the lazy Saturday afternoon that it arrived in my notifications, I decided to look into the story behind the monologue and found myself in a dark little corner of the web called “Agora Road’s Macintosh Cafe” which hosted a provocative thread called the Dead Internet Theory, written by someone calling themselves “IlluminatiPirate”, referenced the aforementioned scene from Metal Gear Solid.&lt;/p&gt;
+
+&lt;p&gt;Some choice language and expressions aside1, the thread raises some interesting points that are worth revisiting at this point in the history of the web. Many outlets have dismissed the theory in previous years, but now that we’re getting a bit of a feel of where this whole artificial intelligence thing is going.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-internet-feels-empty-and-devoid-of-people&quot;&gt;“The internet feels empty and devoid of people”&lt;/h2&gt;
+
+&lt;p&gt;Initially, I also dismissed the theory, particularly this part of the author’s thread, but I quickly remembered what brought me here - a notification on an old tweet that followed a pattern I noticed that arises when I spent time away from Twitter. The pattern roughly goes: time passes, an old tweet with an ok-ish amount of engagement for an account of my small size is liked or shared by an account that I have never heard of before with no real person in the avatar and a similar-looking bio to others that follow this pattern.&lt;/p&gt;
+
+&lt;p&gt;Hmm.&lt;/p&gt;
+
+&lt;p&gt;The Dead Internet Theory thread goes on to make a number of claims, some seemingly outlandish and difficult to verify, some unmistakably true such as the claim that bots are generating more conversations and generating more content on social networks than humans than we realise. Elon Musk’s public sounding of the alarm bell/attempt to back out of the Twitter deal/attempt to drive down the value of the Twitter deal, or some combination of all 3 came to mind when reading through the theory.&lt;/p&gt;
+
+&lt;p&gt;As it turns out, bots account for 5% of Twitter users2, which doesn’t sound too scary until you read that they account for 21%-29% of the content on the platform. Close to a third of the content isn’t made by humans.&lt;/p&gt;
+
+&lt;p&gt;“Ah but that’s just a problem with Twitter” you might say, to which I was shocked to hear that the problem is worse outside of Twitter’s walled garden - 64% of all internet traffic is bots3. Or to put it another way, humans are the minority on the web.&lt;/p&gt;
+
+&lt;h2 id=&quot;c-v-opinions&quot;&gt;⌘+C, ⌘+V Opinions&lt;/h2&gt;
+
+&lt;p&gt;We like to be liked. The Dead Internet Theory thread author made the following observation on human behaviour and how we interface with the web, and how it is prone to hijacking:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The internet is a fast way to get info, and info is what moves the mind, and the thing is, the mind likes recognition. When the “likes” were introduced without negative feedback they created a copy-feedback subconscious, they made it so only “positive” opinions be propagated (also accepted), and in it’s way negative opinions to be obsolete.&lt;/p&gt;
+
+  &lt;p&gt;Now everyone is too cowardly to have an opinion so they copy others they like, they are more likely to follow trends and say what others said, you can also see it with the paranoia of always wanting to listen to experts.&lt;/p&gt;
+
+  &lt;p&gt;The fast feedback system of the net created a human obsession to be in with trends, getting away from it makes it so you always feel like you are missing out, to play it safe in a trend is more easy as you can copy what already is accepted. In this way, the internet and social media, which was supposed to democratise media by allowing users to create whatever content they wanted, has instead been hijacked by a powerful few.&lt;/p&gt;
+
+  &lt;p&gt;Creation of original content is how the internet used to work. Anonymous people were willing to express their opinions and try radical or experimental things. More truly original content, uninfluenced by bots or paid influencers, was created due to anonymity as protection against negative feedback. On the old internet, you could start anew every time you posted something.&lt;/p&gt;
+
+  &lt;p&gt;Now add bots to this. Make it so an opinion be repeated more and more, they are faster than us, so the positive feedback makes is so we copy the bots, and anonymity can’t do anything against it because we can’t influence the bot like we would a human, this is an easy weapon to manipulate people, so anyone with an agenda can use a bot, is designed in a way compared to how clickbaits are made, most won’t read the content, this creates tv-like propaganda where they aren’t influenced by the user and that puts bots at a great advantage over any other opinion because it wont change, and we are copying that.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To summarise: consensus can be manufactured and propagated into the collective networked mind of social media, which will then proceed to reward those who echo the sentiment back into the network, reciting their predefined opinions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/internet-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I genuinely set out without the intention of talking about ChatGPT because everybody has it well covered. And we’ve done so well to get to this point in a piece like this without a clichéd nod to it, but we have to at this point, because no doubt you’ve drawn those conclusions already - the “oh dear God, what happens when we let that become part of this?” type of conclusion. It turns out, there is already a subreddit populated purely by ChatGPT both in terms of posts and replies to itself. The two things that worried me the most about that were learning that:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;If the usernames didn’t contain the letters “GPT” you could swear that it was normal human beings having a conversation on the web&lt;/li&gt;
+  &lt;li&gt;And these conversations are running on the old version of GPT: GPT2 (the vastly inferior model)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;A few months ago, an interaction on Twitter left me very pissed. I have negative interactions from time to time and they genuinely don’t bother me, but this one did. I posted a UI concept for reading multiple branches of a conversation on Twitter - purely as something I would like to see, and by no means a suggestion for Twitter to take seriously as a solution.&lt;/p&gt;
+
+&lt;p&gt;It gained a decent amount of attention (once again, for an account of my humble size) and that was 99% positive for the first few days. Then about a week later, I woke up from a sleep and carried out my usual bad habit of checking email, Reddit, and Twitter first thing after waking and noticed that I had 20+ notifications. Again - for an account of my size, 20+ means either: something amazing has happened - likely some big account has shared something, or something bad has happened.&lt;/p&gt;
+
+&lt;p&gt;It was the latter. Sentiment had completely changed on the tweet. Every single new notification took the shape of either personal insult, or sniping at the UI concept - no constructive critique, just some variation of “L take” and other short quote tweets and responses.&lt;/p&gt;
+
+&lt;p&gt;I tried to find the source - the one who had flipped the sentiment from 99% good to 100% bad, and I couldn’t find them. I looked at the profiles of the people who were behind the more vitriolic responses, and they all followed a similar pattern:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;No real face in the avatar (or AI generated face for that matter)&lt;/li&gt;
+  &lt;li&gt;Poor ratio of following to followers&lt;/li&gt;
+  &lt;li&gt;Followers always capped around the 100 mark&lt;/li&gt;
+  &lt;li&gt;VAST majority of interactions on their timeline were the same sort of replies to other people&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I am now entirely convinced that the interaction I had, that left me rattled in a way that I haven’t felt in quite some time on social media, was either entirely bots, or mostly orchestrated by bots in terms of setting the sentiment for others to follow. This reframing has been both helpful and unsettling.&lt;/p&gt;
+
+&lt;p&gt;I’ll try and bring this home to some sort of optimistic outlook. It seems that there is at least some degree of validity to the Dead Internet Theory in that bots are starting to run the show, and set narratives to follow. The fact that you rarely see the words “this changed my mind, thank you” in online discussions is something of a red flag to indicate that perhaps the web isn’t the best place to be having these types of discussions anyway. And, in a way, it’s slightly meditative to detach from the emotion of a fuelled discussion online knowing that there is a significant chance you’re talking to machine code.&lt;/p&gt;
+
+&lt;p&gt;The alternative path is to pivot towards true, human connection. I’m having more phone calls with people I know from Twitter than I ever have before, and it’s refreshing to have those conversations that aren’t being watched and scored by others.&lt;/p&gt;
+
+&lt;p&gt;The friction of the dial-up web where technology kept us from being extremely online was a flavour of how these things should have worked, so maybe it’s time to exercise some self-control and disconnect. Bots don’t have to be a problem in your everyday life if you don’t spend all of your every life with them.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 25 Feb 2023 23:00:00 +0000</pubDate>
+        <link>https://jordanm.co.uk/2023/02/25/the-illusory-internet.html</link>
+        <guid isPermaLink="true">https://jordanm.co.uk/2023/02/25/the-illusory-internet.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>How to Dismantle a Creative Wall</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/img/creative-wall.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Zen and the Art of Motorcycle Maintenance by Robert M. Pirsig is one of those books, like Self-Renewal by John Gardner, where I come away from it receiving a completely different message from the author than most of the people I talk to about the piece.&lt;/p&gt;
+
+&lt;p&gt;The centrepiece of the book, for me, happens around a relatively obscure passage around the halfway point of the book where Pirsig’s character, Phaedrus, grows increasingly agitated with one of his students who was struggling to complete a 500 word assignment about the United States.&lt;/p&gt;
+
+&lt;p&gt;She was suffering from a classic case of a creative blockage in the form of writer’s block. She didn’t know where to start and the size of the task at hand had become so daunting and that familiar feeling of imposter syndrome when faced with the empty canvas staring back at her. The subject was too broad to latch onto a good starting point.&lt;/p&gt;
+
+&lt;p&gt;When it came to the due date, the student still hadn’t produced a word. Her creative blockage also impeded Phaedrus when he tried to help her. He suggested narrowing the subject down from the wide topic of the United States down to the main street in Bozeman.&lt;/p&gt;
+
+&lt;p&gt;Still nothing.&lt;/p&gt;
+
+&lt;p&gt;Phaedrus became angry and shouted “You’re not looking!” at the student. The character remembered a time where he too had too much to say on a subject, and the fact that there are an infinite number of things to say in all directions. The more you look, the more you see.&lt;/p&gt;
+
+&lt;p&gt;“Narrow it down to the front of one building on the main street of Bozeman. The Opera House. Start with the upper left-hand brick.”
+The student returned to the next class looking shellshocked as she handed in a five thousand word essay.&lt;/p&gt;
+
+&lt;h2 id=&quot;pirsigs-brick&quot;&gt;Pirsig’s Brick&lt;/h2&gt;
+
+&lt;p&gt;Pirsig’s Brick demonstrates the idea that depth of knowledge can lead to greater understanding at the breadth, or put another way: looking closely at the micro level can unblock you for understanding the macro level.&lt;/p&gt;
+
+&lt;p&gt;Another way of looking at the issue faced by the student (and any time we face similar creative blockages in our work) is that there is some unseen force getting in the way of flow. In Pirsig’s example, the impediment to flow was the sheer breadth of the topic to begin with. The book also added that:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;She was blocked because she was trying to repeat, in her writing, things she had already heard, just as on the first day he had tried to repeat things he had already decided to say. She couldn’t think of anything to write about Bozeman because she couldn’t recall anything she had heard worth repeating. She was strangely unaware that she could look and see freshly for herself, as she wrote, without primary regard for what had been said before. The narrowing down to one brick destroyed the blockage because it was so obvious she had to do some original and direct seeing.&lt;/p&gt;
+
+  &lt;p&gt;— Robert M. Pirsig, Zen and the Art of Motorcycle Maintenance&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Pirsig’s Brick is a tool for seeing things freshly “without primary regard for what has been said before” which creates that perfect tension of challenge and ability enabling flow. Former chess player and martial arts champion, Josh Waitzkin, is one of the few people I have noticed who has made reference to Pirsig’s Brick in his book “The Art of Learning”.&lt;/p&gt;
+
+&lt;p&gt;After referencing Pirsig’s Brick, he notes on understanding:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The learning principle is to plunge into the detailed mystery of the micro in order to understand what makes the macro tick.&lt;/p&gt;
+
+  &lt;p&gt;— Josh Waitzkin, “The Art of Learning”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And followed up immediately after by taking aim at the blockages of creative flow…&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Our obstacle is that we live in an attention-deficit culture. We are bombarded with more and more information on television, radio, cell phones, video games, the Internet. The constant supply of stimulus has the potential to turn us into addicts, always hungering for something new and prefabricated to keep us entertained. When nothing exciting is going on, we might get bored, distracted, separated from the moment. So we look for new entertainment, surf channels, flip through magazines. If caught in these rhythms, we are like tiny current-bound surface fish, floating along a two-dimensional world without any sense for the gorgeous abyss below. When these societally induced tendencies translate into the learning process, they have devastating effect.&lt;/p&gt;
+
+  &lt;p&gt;— Josh Waitzkin, “The Art of Learning”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I have come to learn over time that most of the art of staying in creative flow is just getting obstacles out of the way to let the process unfold on its own. Robert M. Pirsig has provided us with an incredibly effective tool for not only removing these obstacles, but one that also has the added benefit of opening up new ways of thinking and looking at things deeply in the abyss with the intention of bringing new value and insights up to the surface.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 14 Feb 2023 23:00:00 +0000</pubDate>
+        <link>https://jordanm.co.uk/2023/02/14/how-to-dismantle-a-creative-wall.html</link>
+        <guid isPermaLink="true">https://jordanm.co.uk/2023/02/14/how-to-dismantle-a-creative-wall.html</guid>
+        
+        
+      </item>
+    
+      <item>
         <title>Working Backwards from Magic</title>
-        <description>&lt;p&gt;I have wanted to write about working backwards from magic for quite a while now, partially from a place of laying claim to the idea as &lt;a href=&quot;https://twitter.com/jordanmoore/status/1480897225333133317?s=20&amp;amp;t=Gtc62GVa9EhQ302FHzA0LA&quot;&gt;some smart minds are taking note of the idea&lt;/a&gt;, but I didn’t want to rush out a half-baked take on a concept that I truly believe has the power to change the world.&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/img/wbfm.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I have wanted to write about working backwards from magic for quite a while now, partially from a place of laying claim to the idea as &lt;a href=&quot;https://twitter.com/jordanmoore/status/1480897225333133317?s=20&amp;amp;t=Gtc62GVa9EhQ302FHzA0LA&quot;&gt;some smart minds are taking note of the idea&lt;/a&gt;, but I didn’t want to rush out a half-baked take on a concept that I truly believe has the power to change the world.&lt;/p&gt;
 
 &lt;p&gt;My ego temporarily entertained the idea of writing a book about the concept, however, even though I believe that working backwards from magic is an extremely powerful approach to creative problem-solving, it would be disingenuous to package a relatively simple idea with 200+ pages of padding to make a quick buck in the self-help/productivity niche. The concept really doesn’t need that much unpacking, it’s almost laughably simple and it has the capacity (at least in my experience) to make conventional approaches to problem-solving look ridiculously convoluted by comparison.&lt;/p&gt;
 
@@ -29,8 +178,6 @@
 &lt;p&gt;In order to know where we’re going, we need to understand the problem we’re trying to solve. How deeply you understand it doesn’t necessarily matter, this is more about having something to aim at rather than nothing.&lt;/p&gt;
 
 &lt;h3 id=&quot;step-2-remove-all-limitations&quot;&gt;Step 2: Remove all limitations&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/imac.png&quot; class=&quot;imac&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Leave conventional thinking at the door. It’s of no use to us in this process. Removes all limitations from the problem, all assumptions, all technical restrictions, all preconceived notions and concepts, get all of that out of the way and start from this point because by default, you’re making something new and therefore more valuable. What you won’t want to do is see how others are solving the problem - this gets you back into conventional thinking and solving problems with existing solutions.&lt;/p&gt;
 
@@ -76,7 +223,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;th&gt;Solutions&lt;/th&gt;
-&lt;td&gt;Already exist, may be remixes/combinations of existing solutions&lt;/td&gt;
+&lt;td&gt;Already exist, may be combinations of existing solutions&lt;/td&gt;
 &lt;td&gt;Typically new, unlikely to exist&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -89,8 +236,6 @@
 &lt;p&gt;The issue with conventional thinking is that it often involves an abundance of rules and processes that rarely produce the insanely valuable outcomes. The possibility space is artificially limited from the start. Ideas that create companies like Uber are left for other daring adventurers and the conventional thinker can only watch from the sidelines and wait for ideas to become mainstream before integrating them.&lt;/p&gt;
 
 &lt;p&gt;Working backwards from magic starts from a completely different and grander possibility space. It begins with the simple question: “if this worked like magic, what would that look like?”&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/spacex.png&quot; class=&quot;spacex&quot; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -111,7 +256,9 @@
     
       <item>
         <title>Intentional and Emergent Design Systems II</title>
-        <description>&lt;p&gt;I believe Robin Rendle’s &lt;a href=&quot;https://www.robinrendle.com/essays/systems-mistakes-and-the-sea&quot;&gt;Systems, Mistakes, and the Sea&lt;/a&gt; was a catalyst for several enjoyable articles on design systems since the beginning of the year. Notably Jeremy Keith’s &lt;a href=&quot;https://adactio.com/journal/16342&quot;&gt;Web standards, dictionaries, and design systems&lt;/a&gt;, Frank Chimero’s &lt;a href=&quot;https://frankchimero.com/blog/2020/gardening-vs-architecture/&quot;&gt;Gardening vs Architecture&lt;/a&gt;, a subsequent, deeper dive in Jeremy’s &lt;a href=&quot;https://adactio.com/journal/16369&quot;&gt;Architects, gardeners, and design systems&lt;/a&gt;, and Dave Rupert’s &lt;a href=&quot;https://daverupert.com/2020/01/the-web-is-industrialized-and-i-helped-industrialize-it/&quot;&gt;The Web is Industrialized and I helped industrialize it&lt;/a&gt;.&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/img/intentional-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I believe Robin Rendle’s &lt;a href=&quot;https://www.robinrendle.com/essays/systems-mistakes-and-the-sea&quot;&gt;Systems, Mistakes, and the Sea&lt;/a&gt; was a catalyst for several enjoyable articles on design systems since the beginning of the year. Notably Jeremy Keith’s &lt;a href=&quot;https://adactio.com/journal/16342&quot;&gt;Web standards, dictionaries, and design systems&lt;/a&gt;, Frank Chimero’s &lt;a href=&quot;https://frankchimero.com/blog/2020/gardening-vs-architecture/&quot;&gt;Gardening vs Architecture&lt;/a&gt;, a subsequent, deeper dive in Jeremy’s &lt;a href=&quot;https://adactio.com/journal/16369&quot;&gt;Architects, gardeners, and design systems&lt;/a&gt;, and Dave Rupert’s &lt;a href=&quot;https://daverupert.com/2020/01/the-web-is-industrialized-and-i-helped-industrialize-it/&quot;&gt;The Web is Industrialized and I helped industrialize it&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;What follows is a contribution to this discussion. I’m still unpacking it but it feels timely to push some thoughts out into the open whether they’re ready or not.&lt;/p&gt;
 
@@ -139,7 +286,7 @@
 
 &lt;p&gt;Although not a like-for-like comparison, it’s interesting to see that the same voices who would bemoan libraries such as jQuery and Bootstrap - two libraries full to the brim of conjectural bloat - haven’t noticed the hypocrisy in advocating for design system first approaches before building up to more complex components. The same voices who evangelise for accessibility damning jQuery for adverse effects on performance and page weight are happy to tax users for a speculative design system&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/img/pillar.jpg&quot; class=&quot;pillar&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/intentional-3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In contrast, emergent design systems require only accepting evidence-based patterns and components into its system. It flips everything on its head asking the parts to prove themselves to be replicable and have sufficient utility. They need &lt;a href=&quot;https://frankchimero.com/blog/2020/gardening-vs-architecture/&quot;&gt;the gardeners Frank Chimero alluded to&lt;/a&gt;.&lt;/p&gt;
 
@@ -198,7 +345,7 @@
 
 &lt;p&gt;&lt;strong&gt;Do design systems limit creativity?&lt;/strong&gt; The answer rests on what type of system you subscribe to.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/img/gardening.jpg&quot; class=&quot;gardening&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/intentional-4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The worst incarnation of a design system designs designers out of the picture. If I were building an AI tool to displace designers, I’d point them towards an all-encompassing, intentional design system. I fear that we’re blindly running towards automation and we’re giving the algorithms the template our jobs. It’s not hard to imagine a world where No Code technology complements No Design. By contrast, the best incarnation of a design system leaves room for creativity, invention, the &lt;strong&gt;human&lt;/strong&gt; elements.&lt;/p&gt;
 
@@ -249,7 +396,9 @@
     
       <item>
         <title>Intentional and Emergent Design Systems</title>
-        <description>&lt;p&gt;There are two competing approaches in designing design systems. I’m going to call these approaches intentional design systems and emergent design systems to create a clear distinction between both.&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/img/intentional-1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There are two competing approaches in designing design systems. I’m going to call these approaches intentional design systems and emergent design systems to create a clear distinction between both.&lt;/p&gt;
 
 &lt;h3 id=&quot;an-intentional-design-system&quot;&gt;An intentional design system&lt;/h3&gt;
 
@@ -290,15 +439,15 @@
     
       <item>
         <title>Idea Friction</title>
-        <description>&lt;p&gt;&lt;span class=&quot;small-caps&quot;&gt;Noun&lt;/span&gt; &lt;em&gt;The time between idea cogitation in the mind to manifestation in a sharable form.&lt;/em&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/img/idea-friction.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;small-caps&quot;&gt;Noun&lt;/span&gt; &lt;em&gt;The time between idea cogitation in the mind to manifestation in a sharable form.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;One of the biggest challenges in any creative endeavour is manifesting ideas as close to the speed they form in the mind as possible. Ideas tend to have a half-life in that the longer we hold on to them without expressing or capturing them, the more fragmented they become from the original concept.&lt;/p&gt;
 
 &lt;p&gt;In general, the faster you can express and capture ideas, the more they stay true and intact. Therefore, verbalising your ideas is the fastest route to expressing and capturing them. It’s the current benchmark.&lt;/p&gt;
 
 &lt;p&gt;Writing down ideas, whether by pen or by typing, increases idea friction but enjoys the retrieval benefit of finding them again at a later point in time. Sketching, drawing or visualising through design tools has a much greater rate of idea friction but enjoys the benefit of higher fidelity than other methods.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/idea.jpg&quot; class=&quot;idea&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Idea friction is especially true of any &lt;strong&gt;collaborative&lt;/strong&gt; endeavour where you have an exchange of ideas. If the ideas are being discussed verbally you need to bank your idea, wait your turn, listen and understand ideas from other parties, contribute, notice how it affects your idea, then communicate.&lt;/p&gt;
 
@@ -313,13 +462,15 @@
     
       <item>
         <title>Experience Gaps</title>
-        <description>&lt;p&gt;I hold a special place in my heart for Pearl Jam’s Yield album, released in 1998. It’s a remarkable album, easily overlooked. At first glance, the cover is pretty forgettable and not unlike something you would find scrolling through Unsplash, searching for the word ‘road’. Yet I’ve heard fellow fans gushing about how the yield sign in the middle of a road that has no junction to yield to and no traffic to give way to is actually a message saying to just yield to experience and let go.&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/img/experience-gaps.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I hold a special place in my heart for Pearl Jam’s Yield album, released in 1998. It’s a remarkable album, easily overlooked. At first glance, the cover is pretty forgettable and not unlike something you would find scrolling through Unsplash, searching for the word ‘road’. Yet I’ve heard fellow fans gushing about how the yield sign in the middle of a road that has no junction to yield to and no traffic to give way to is actually a message saying to just yield to experience and let go.&lt;/p&gt;
 
 &lt;p&gt;I don’t buy it. Nor did I buy the black and white photos in the booklet taken by the bassist, Jeff Ament. They were dull and uninspiring. Nevertheless, they were my access to the lyrics and the personnel involved with each song, the instruments they played, the sound engineers and producers. These details matter when you obsess about music.&lt;/p&gt;
 
 &lt;p&gt;Over a series of listens with headphones on, the album booklet spread out on the floor in front of me, as I often did in the late ’90s before the days of streaming music, I started to notice some unusual things with this once trivial booklet. It started when I was listening to the song ‘Given to Fly’. I took notice of the accompanying photo as it looked like a photo of a statue gazing towards the sky, spreading its wings. The strange thing was that this was the only photo in the booklet that clearly depicted the track, whereas the rest of them didn’t. I flipped through the booklet towards one of my favourite tracks, ‘Faithfull’. I was met with a photo of a concrete building viewed from the ground. Did the building represent something? It wasn’t a church or somewhere you would practice your faith. As I contemplated the meaning behind the image, I noticed that one of the windows near the top was clearly shaped like a triangle, not a rectangle like the others.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/img/yield2.jpg&quot; class=&quot;yield&quot; alt=&quot;Pearl Jam&apos;s 1998 album, Yield&quot; /&gt;&lt;/p&gt;
+&lt;!-- &lt;img src=&quot;/img/yield2.jpg&quot; class=&quot;yield&quot; alt=&quot;Pearl Jam&apos;s 1998 album, Yield&quot; /&gt; --&gt;
 
 &lt;p&gt;I flipped the album closed to reveal the boring cover shot of the triangular yield sign. Was this a clue of some sort? I pored over the other shots in the booklet. The next track, ‘No Way’, had a photo of birds perched on telephone wires with a backdrop of clouds. Again, uninspiring at first glance, but there it was again, hiding in plain sight – an unnaturally shaped cloud in the shape of a triangle! I searched online for ‘Pearl Jam yield signs in booklet’ and didn’t get any useful results. I kept looking and found hidden yield signs in every photo of the book, some more obvious than others; some might even have been my imagination seeing something that wasn’t there.&lt;/p&gt;
 
@@ -335,6 +486,8 @@
 
 &lt;p&gt;In some sense, record collections were regarded as an extension of ourselves.&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;/img/experience-gaps-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
 &lt;p&gt;Digital streaming favours speed over the old process, which was accidentally meditative in that it was slow and it coerced you into being present in the experience. Perhaps digital is also hampered by the limitations of the screen eliminating the other senses that played supporting roles in this experience, such as touch and smell. As a result, streaming music feels shallow, a little like 360° panoramic photos of a landmark. It looks great for a moment, the novelty of the technology excites you for a moment, but you’re not really there.&lt;/p&gt;
 
 &lt;h3 id=&quot;new-adventures-in-wi-fi&quot;&gt;New adventures in Wi-Fi&lt;/h3&gt;
@@ -343,12 +496,7 @@
 
 &lt;p&gt;Dropping a slide in place triggers a sequence of events beginning with the internal Arduino Yun with an NFC (near-field communication) shield read the NFC sticker on the back of the slide. Once the tag is identified over Wi-Fi, the Pi MusicBox API plays the selected album from Spotify through the connected speakers. To me, Brendan’s Plastic Player is the perfect example of analogue and digital music experiences coexisting in balance and harmony with each other. Other senses are brought back into play – the speed of digital (as a bug, not a feature) is eliminated by the time it takes you to leaf through the collection of slides, select one, and play. It’s not easy to skip tracks, browse, and add thousands to your collection by design. It’s thoughtfully paced; it leaves room for meaning. Decisions are slower and more deliberate.&lt;/p&gt;
 
-&lt;figure&gt;
-&lt;img src=&quot;/img/plastic-player.png&quot; alt=&quot;A photo of Brendan&apos;s contraption&quot; /&gt;
-&lt;figcaption&gt;&lt;p&gt;Brendan Dawes&apos; &lt;a href=&quot;http://www.brendandawes.com/projects/plasticplayer&quot;&gt;Plastic Player project&lt;/a&gt;&lt;/p&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Brendan’s creation makes a screen look like a limitation rather than an optimal interface in this more considered approach to digital music. It’s easy to imagine how we could take the idea further – you could trade the physical slides with your friends and family; you would be able to gift them, as they’re a tangible analogue interface to a digital medium; you could even imagine music clubs sending you random slides each month with the kind of excitement and anticipation experienced when opening Panini football stickers. Best of all, the slides themselves could enable the yield triangles to exist and set up opportunities for another person to constellate and find personal meaning in an analogue space. All of these offshoots let the listener spend time with the complete work of the artist rather than skipping through it or past it. This thought experiment makes room beyond the screen for new ideas.&lt;/p&gt;
+&lt;p&gt;Brendan’s &lt;a href=&quot;http://www.brendandawes.com/projects/plasticplayer&quot;&gt;Plastic Player project&lt;/a&gt; makes a screen look like a limitation rather than an optimal interface in this more considered approach to digital music. It’s easy to imagine how we could take the idea further – you could trade the physical slides with your friends and family; you would be able to gift them, as they’re a tangible analogue interface to a digital medium; you could even imagine music clubs sending you random slides each month with the kind of excitement and anticipation experienced when opening Panini football stickers. Best of all, the slides themselves could enable the yield triangles to exist and set up opportunities for another person to constellate and find personal meaning in an analogue space. All of these offshoots let the listener spend time with the complete work of the artist rather than skipping through it or past it. This thought experiment makes room beyond the screen for new ideas.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -365,11 +513,11 @@
     
       <item>
         <title>Unpacking Design Problems</title>
-        <description>&lt;p&gt;The best puzzles are the ones that demand more of you. When the answer appears obvious, but you second guess yourself. When you know there’s more to it than meets the eye.&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/img/puzzle-1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Nob Yoshigahara’s infamous number tree puzzle is certainly one of my personal favourites for just these reasons. It gives you a set of information and asks, What do you make of this?&lt;/p&gt;
+&lt;p&gt;The best puzzles are the ones that demand more of you. When the answer appears obvious, but you second guess yourself. When you know there’s more to it than meets the eye.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://jordanm.co.uk/img/puzzle.png&quot; alt=&quot;Nob Yoshigahara&apos;s infamous number tree puzzle&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Nob Yoshigahara’s infamous number tree puzzle is certainly one of my personal favourites for just these reasons. It gives you a set of information and asks, &lt;a href=&quot;https://jordanm.co.uk/img/puzzle.png&quot;&gt;What do you make of this?&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Puzzles are a great tool for strengthening mental muscles that can help unpack design problems. They push you to adopt a different mindset and perspective, challenge assumptions, study intently, and look closely. Like a puzzle, difficult design problems evoke that same moment of epiphany when you peel back the layers to find hidden truths.&lt;/p&gt;
 
@@ -394,8 +542,6 @@
 &lt;/blockquote&gt;
 
 &lt;p&gt;For a good example of first principles in action, try this Wikipedia experiment. Click on the first non-parenthesized link in any random article and follow the chain. It will lead you down a path toward the most basic understanding of any concept. Strangely, approximately 80% of articles deconstructed in this manner bring you back to the Wikipedia article about philosophy.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/levelling.jpg&quot; alt=&quot;Levelling&quot; class=&quot;levelling&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;question-everything&quot;&gt;Question everything&lt;/h2&gt;
 
@@ -453,7 +599,9 @@
     
       <item>
         <title>Design Laws in Nature</title>
-        <description>&lt;p&gt;Living in Ireland I have become accustomed to rain as our weather system’s default setting. Umbrellas are dispensable in the Moore family as wind and rain have proved too worthy an opponent for many a shelter device across varying price brackets. When Managing Director of Their Capital, &lt;a href=&quot;https://tim.blog/2016/01/13/eric-weinstein/&quot;&gt;Eric Weinstein, spoke to Tim Ferris&lt;/a&gt; about the lack of innovation in umbrella design, hinting that the answer might be in Origami or perhaps nature, my interest piqued and sent me down a rabbit hole.&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/img/design-laws.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Living in Ireland I have become accustomed to rain as our weather system’s default setting. Umbrellas are dispensable in the Moore family as wind and rain have proved too worthy an opponent for many a shelter device across varying price brackets. When Managing Director of Their Capital, &lt;a href=&quot;https://tim.blog/2016/01/13/eric-weinstein/&quot;&gt;Eric Weinstein, spoke to Tim Ferris&lt;/a&gt; about the lack of innovation in umbrella design, hinting that the answer might be in Origami or perhaps nature, my interest piqued and sent me down a rabbit hole.&lt;/p&gt;
 
 &lt;p&gt;The rabbit hole confirmed my suspicions that we borrow from nature all the time, particularly in physical product design. The borrowing is often conscious, and sometimes we arrive at the same conclusions for problems that nature has been resolving over vast periods of time. Initially, I took Eric’s challenge on as a thought experiment, and like any good thought experiment, I got lost down an avenue leading to ideas beyond the original scope - even completely separate to the original problem. Distractions like this excite me. I enjoy seeing how deep the rabbit hole goes particularly when the journey is peppered with little epiphanies along the way - a process I call “mining for truths” much to the groans of anyone around me when I verbalise this process.&lt;/p&gt;
 
@@ -486,7 +634,7 @@
 (Kobayashi: 2005)&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;img src=&quot;/img/peacock.jpg&quot; alt=&quot;A peacock&quot; class=&quot;peacock&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/design-laws-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;NASA has several biomimicry projects in development including bio-inspired exercise equipment helping astronauts maintain fitness during spaceflight, solar propulsion mechanisms and glider technology inspired by a seagull’s wingspan that saves on the need for continuous thrust and fuel costs.&lt;/p&gt;
 
@@ -526,8 +674,6 @@
 
 &lt;p&gt;Tim’s talk had such a profound effect on my work that I threw out my old methods of picking numbers out of the air for things like element widths, font sizes and vertical rhythms and instead explored a more meaningful set of measurements true to nature, born out of maths, the language of the universe.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://jordanm.co.uk/img/dali-last-supper.jpg&quot; alt=&quot;https://en.m.wikipedia.org/wiki/File:Dali_-_The_Sacrament_of_the_Last_Supper_-_lowres.jpg&quot; /&gt;&lt;/p&gt;
-
 &lt;p&gt;Back to traditional art for a moment. One of my favourite paintings is Salvador Dali’s 1955 piece The Sacrament of the Last Supper. It is by far the lesser known of the two famous Last Supper paintings, and like Da Vinci’s, Dali unapologetically employs the Golden Ratio in the altar that dominates the centrepiece of this remarkable union of religious imagery and surrealism. Here Dali had a reproducible algorithm for beauty, harnessed from nature, communicated back through his medium, the canvas, stirring the soul through the eyes of the viewer.&lt;/p&gt;
 
 &lt;h2 id=&quot;constellation&quot;&gt;Constellation&lt;/h2&gt;
@@ -542,7 +688,7 @@
 
 &lt;p&gt;Moriarty calls this phenomenon “constellation”, a human desire to see patterns and make connections between points. Looking up to the stars in the night sky, our ancestors created many images through self-recognition and seeing meaning and significance between points of light across a dark expanse. These connections appear to be stimulated where novelty exists rather than manifesting from the mundane. Look at the Beatles For Sale album cover juxtaposed with the Sgt. Pepper’s Lonely Hearts Club artwork. One generated meaning and a multitude of interpretations in the eye of the beholder where the other just framed four guys from Liverpool ready to sing a few songs for you, the listener.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://jordanm.co.uk/img/beatles.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/design-laws-4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;So how does constellation, or the act of constellating help us design better digital products? Firstly your product needs to serve a purpose beyond a utility, particularly if that purpose leads to meaning or reveals greater truths. Constellating is a quick means to meaning, what red herrings give rise to speculation and new interpretations? Why do some of the great films such as Donny Darko leave parts of the story untold? People fill in the gaps with personal significance which means that somewhat counterintuitively, incompleteness by design encourages constellation which creates greater personal meaning rather than pre-prescribed, one-size-fits-all meaning.&lt;/p&gt;
 
@@ -641,111 +787,6 @@
         <pubDate>Fri, 20 Jul 2018 01:00:01 +0100</pubDate>
         <link>https://jordanm.co.uk/2018/07/20/industry-fatigue.html</link>
         <guid isPermaLink="true">https://jordanm.co.uk/2018/07/20/industry-fatigue.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Mapping User Experiences to Individuals Using the Big 5 OCEAN Personality Traits</title>
-        <description>&lt;p&gt;The Big Five Personality Traits, sometimes referred to as the five factor model (FFM), is a model commonly used by psychologists to describe individual personalities. The original model was constructed by Ernest Tupes and Raymond Christal in 1961&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; but it didn’t reach mainstream academic audiences until the 1980s and early 90s.&lt;/p&gt;
-
-&lt;p&gt;Multiple sets of independent researchers on human personality arrived at the same conclusion in naming the five factors that generally predict and explain behaviour which indicates the factors are valid as far as we know today.&lt;/p&gt;
-
-&lt;p&gt;Each of the five factors (O,C,E,A,N) are scored between 1-100 according to the individual ranked against average scores after completing a series of questions (&lt;a href=&quot;https://openpsychometrics.org/tests/IPIP-BFFM/&quot;&gt;try it out for yourself&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;The five factors are:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;span class=&quot;small-caps color-red&quot;&gt;Openness&lt;/span&gt; - this trait describes someone’s appreciation for art, adventure, inventiveness, creativity, sensitivity to beauty, likely to hold unconventional beliefs - things of an abstract nature. I personally sit on the 95th percentile for openness which seems abnormally high, but most people in the design industry tend to rank quite highly in this factor&lt;/li&gt;
-  &lt;li&gt;&lt;span class=&quot;small-caps color-red&quot;&gt;Conscientiousness&lt;/span&gt; - a sense of self-discipline, desire for achievement, tendency to defy measures impeding the route to success, orderly, attention to detail&lt;/li&gt;
-  &lt;li&gt;&lt;span class=&quot;small-caps color-red&quot;&gt;Extraversion&lt;/span&gt; - mostly describes what kind of social animal you are, the ability to start conversations, talking to a variety of people at a party, ability to assert themselves, extraverts rather than introverts&lt;/li&gt;
-  &lt;li&gt;&lt;span class=&quot;small-caps color-red&quot;&gt;Agreeableness&lt;/span&gt; - sensitivity towards others, empathy for the emotions of others, interested in people and the desire to make people feel at ease, giving up time for others, kind, generous, trusting, optimistic about the intentions of others&lt;/li&gt;
-  &lt;li&gt;&lt;span class=&quot;small-caps color-red&quot;&gt;Neuroticism&lt;/span&gt; - negative emotions such as anger, anxiety, depression, easily stressed and irritated, worrying, prone to mood swings&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Every person maps differently to each of the OCEAN personality traits, and having an understanding of how others around you correlate is beneficial to your interactions with them. Not everybody is comfortable being open about the specific scores on each of the factors, particularly as some indicate socially negative traits such as anxiety and depression. Before co-founding our product design studio, each of the directors took the Big Five Personality test as a means to a) see how aligned/unaligned we were in our own individual personalities and b) as a means of empathising with each other in recognising our strengths and supporting our weaknesses. I understand that not everybody would be comfortable sharing something that is so personal to the individual, but we found this exercise has eradicated any talk of &lt;em&gt;“I don’t understand [person]’s point of view”&lt;/em&gt; and &lt;em&gt;“I don’t get where [person] coming from”&lt;/em&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-persona-conundrum&quot;&gt;The Persona Conundrum&lt;/h2&gt;
-
-&lt;p&gt;For me, the tools and methodologies within the field of user experience are flawed in that they do not address concerns beneath a user group level. A truly meaningful experience would speak to the &lt;strong&gt;individual&lt;/strong&gt; rather than taking a one-size-fits-all blanket approach.&lt;/p&gt;
-
-&lt;p&gt;We are great at understanding the needs and desires of groups of people, but even personas - the UX tool designed to help empathise with specific users - always bring us back into solutions that scale up to cater for groups based on the assumed needs of a single user. Designing an experience for Sarah, a junior shop assistant who likes long walks, often leads that the majority of users become Sarah and her intended experience is their experience. Job Stories are a relatively new entry into this space where they fix the problem of personas splitting audiences, getting in the way of shared goals. Job Stories are a good means of orienting towards tasks and for that reason remain compatible with an OCEAN approach to UX where Job Stories address universal functional requirements. It leaves room for a presentational layer and certain functional elements catered for individuals.&lt;/p&gt;
-
-&lt;h2 id=&quot;practical-applications&quot;&gt;Practical Applications&lt;/h2&gt;
-
-&lt;p&gt;Applications could adapt their interfaces to individuals. Let’s imagine a fitness app with a audio guided run feature. Users in the upper percentiles of conscientiousness may benefit from the orderly, disciplined commands of a drill sergeant and from an app that stretches their goals slightly beyond their comfort zone pushing the user to compete at their best. For people on the other end of the conscientiousness scale, a softer approach would be necessary along with positive reinforcement to help them be the best that they can be without pushing them into territory that alienates them or makes them feel inadequate.&lt;/p&gt;
-
-&lt;p&gt;The same could apply for language and labels used within interfaces. Perhaps some colours appeal to certain personalities? Maybe there are images that intimidate people that inspire other sets of people?&lt;/p&gt;
-
-&lt;p&gt;Looking at the differences between individuals along OCEAN factors studies have shown that individuals high in agreeableness (people who give up time for others, make people feel at ease) are less likely to negotiate salary increases within their company. Perhaps we can create applications that help people move towards desired outcomes in adjusting elements in their personality that may be impeding on particular life goals.&lt;/p&gt;
-
-&lt;h2 id=&quot;potential-dangers-and-opportunities&quot;&gt;Potential dangers and opportunities&lt;/h2&gt;
-
-&lt;p&gt;One of the biggest challenges in pursuing this untapped area of UX is gathering the data required to determine a person’s scores along the Big Five Personality Traits. It’s not exactly ideal to have users answer a full personality test under the promise of a better user experience on the other side of this unique onboarding experience, and it’s certainly not ideal to gather this data in any way that negatively affects a user’s privacy. Maybe it’s something that happens over time where certain actions can produce a score against the OCEAN factors, or games, puzzles and quizzes may unlock this type of information. There is work to be done and design problems to figure out here.&lt;/p&gt;
-
-&lt;p&gt;Then there’s the question of how you store this information and what exactly you do with it. I don’t believe it is necessary to store this data on servers or let any company see a user’s scores. That is for the individual to know and for the product experience to react to it. It is potentially dangerous territory, but then again, so is everything we do:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;If ethics is about the question of how to act, and designers help to shape how technologies mediate action, designing should be considered ‘ethics by other means.’
-Every technological artefact that is used will mediate human actions, and every act of design, therefore, helps to constitute moral practices.&lt;/p&gt;
-
-  &lt;p&gt;&lt;span class=&quot;small-caps&quot;&gt;P. P. Verbeek, What Things Do&lt;/span&gt; &lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;In other words, every design decision you make is loaded with your intent and bias. We’re already knee deep in the danger game whether you have realised this sobering fact already or not. Another one of the major challenges is engineering objectivity into this process, and whether this field is explored further or not, we should look to engineer objectivity into our work regardless.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-next&quot;&gt;What next?&lt;/h2&gt;
-
-&lt;p&gt;I’m at the mystery stage of the knowledge funnel as described by Roger Martin in his 2009 book The Design of Business&lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. I have identified that this is an area with great potential and the next steps are to build heuristics to see if we can mine the mystery for insights with the eventual hope of turning the research into a reliable, replicable algorithm give us the capability to create and resonate with the people who use the things we make.&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Big_Five_personality_traits&quot;&gt;https://en.wikipedia.org/wiki/Big_Five_personality_traits&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;P. P. Verbeek, What Things Do, 2009 (Page 69) &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-    &lt;li id=&quot;fn:3&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;R. Martin, The Design of Business, 2009 &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Wed, 06 Jun 2018 10:12:00 +0100</pubDate>
-        <link>https://jordanm.co.uk/2018/06/06/intro-ocean-ux.html</link>
-        <guid isPermaLink="true">https://jordanm.co.uk/2018/06/06/intro-ocean-ux.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Managing Daily Tasks</title>
-        <description>&lt;p&gt;Writing my to-do list for the day is a key part of my morning routine and essential to state setting and priming. Before I have a chance to get distracted by emails and other notifications vying for my attention I sit down with my morning coffee and write down the tasks I want to complete for the day.&lt;/p&gt;
-
-&lt;p&gt;I use elements from &lt;a href=&quot;http://bulletjournal.com&quot;&gt;Ryder Carroll’s Bullet Journal&lt;/a&gt; to list out today’s tasks. Each task starts with a bullet point followed by a short description of the task. When completed the bullet point is crossed out so it changes from “•” to “×”. If I didn’t finish a task and I still consider it to be a valuable thing to do I move it to tomorrow’s list by replacing the bullet point with “&amp;gt;” indicating that the task has been deferred.&lt;/p&gt;
-
-&lt;p&gt;If the task is delegated or can be deleted from the list before starting, then it gets a nice, satisfying line through it. Using this system means that when reviewing my list at the end of the day I get a quick visual reference ensuring every bulleted task has been in some way and nothing slips through the net.&lt;/p&gt;
-
-&lt;p&gt;You can go deeper with Bullet Journalling using tools like the Ryder’s Future Log for planning goals for the month, but I found that in practice navigating between pages became more frustrating than helpful. I found the most value in the daily task management part of the system so I have no qualms about utilising only that part of the Bullet Journal methodology.&lt;/p&gt;
-
-&lt;h2 id=&quot;so-why-not-software&quot;&gt;So why not software?&lt;/h2&gt;
-
-&lt;p&gt;One of biggest advantages is where it falls short for me in managing daily tasks. Software is faster than pen and paper. It’s easy to create a new task and add it to your list, which makes it easy to fill your list with things to do without a chance to properly think through the value of each task. I have been through countless task manager and to-do list tools to find one that sticks but in the end, I have always come back to pen and paper.&lt;/p&gt;
-
-&lt;p&gt;Unlike a physical book, has to compete for your attention amongst other open apps, windows and browser tabs. I remember using a popular app based on the Getting Things Done (GTD) methodology and thinking it was working for me as I logged numerous tasks rapidly and proceeded to get to work. However, the problem started as soon as I started working on the tasks I had just set myself. The app would be hidden under multiple windows and sometimes I would go for days before realising it was still open with old, irrelevant tasks (and some forgotten items).&lt;/p&gt;
-
-&lt;p&gt;Such apps allow you to set due dates and notifications, but I find they take me out of my current flow and I end up working the app rather than the app working for me. You don’t want to end up in a situation where you have to bend to fit the opinions of an app - what happens if you decide to change your to-do writing style or system? The software probably wants you to do it a certain way.&lt;/p&gt;
-
-&lt;h2 id=&quot;why-pen-and-paper&quot;&gt;Why pen and paper?&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;The great thing about pen and paper is its inefficiency&lt;/strong&gt;. It takes time to write the list, and that’s the beauty of it! Editing is clunky and it gets annoying when you have to rewrite tasks that you need to move from day to day. For that reason, it encourages taking time to write better, more realistic goals. is too forgiving in that regard, pen and paper hold you more accountable and it promotes thinking through big tasks and breaking them down into achievable subtasks that can be done today.&lt;/p&gt;
-
-&lt;p&gt;Using a good old fashioned notebook has the additional advantage of taking your eyes off the screen. That pause enforces a small step back and seeing the bigger picture. It’s therapeutic.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 23 Mar 2018 09:12:00 +0000</pubDate>
-        <link>https://jordanm.co.uk/2018/03/23/managing-daily-tasks.html</link>
-        <guid isPermaLink="true">https://jordanm.co.uk/2018/03/23/managing-daily-tasks.html</guid>
         
         
       </item>

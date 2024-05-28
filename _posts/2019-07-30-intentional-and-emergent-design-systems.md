@@ -6,6 +6,8 @@ date: '2019-07-30T00:00:01+00:00'
 
 ---
 
+![](/img/intentional-1.png)
+
 There are two competing approaches in designing design systems. I’m going to call these approaches intentional design systems and emergent design systems to create a clear distinction between both.
 
 ### An intentional design system

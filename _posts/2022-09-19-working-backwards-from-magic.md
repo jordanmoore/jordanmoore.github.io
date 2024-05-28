@@ -5,6 +5,8 @@ date: '2022-09-19T00:00:00+01:00'
 
 ---
 
+![](/img/wbfm.png)
+
 I have wanted to write about working backwards from magic for quite a while now, partially from a place of laying claim to the idea as [some smart minds are taking note of the idea](https://twitter.com/jordanmoore/status/1480897225333133317?s=20&t=Gtc62GVa9EhQ302FHzA0LA), but I didn’t want to rush out a half-baked take on a concept that I truly believe has the power to change the world.
 
 My ego temporarily entertained the idea of writing a book about the concept, however, even though I believe that working backwards from magic is an extremely powerful approach to creative problem-solving, it would be disingenuous to package a relatively simple idea with 200+ pages of padding to make a quick buck in the self-help/productivity niche. The concept really doesn't need that much unpacking, it's almost laughably simple and it has the capacity (at least in my experience) to make conventional approaches to problem-solving look ridiculously convoluted by comparison.
@@ -22,8 +24,6 @@ It is a tool that can be turned towards design and development problems, product
 In order to know where we’re going, we need to understand the problem we’re trying to solve. How deeply you understand it doesn’t necessarily matter, this is more about having something to aim at rather than nothing.
 
 ### Step 2: Remove all limitations
-
-<img src="/img/imac.png" class="imac">
 
 Leave conventional thinking at the door. It’s of no use to us in this process. Removes all limitations from the problem, all assumptions, all technical restrictions, all preconceived notions and concepts, get all of that out of the way and start from this point because by default, you’re making something new and therefore more valuable. What you won’t want to do is see how others are solving the problem - this gets you back into conventional thinking and solving problems with existing solutions.
 
@@ -69,7 +69,7 @@ Conventional thinking in digital design adopts the generic process of discovery 
 </tr>
 <tr>
 <th>Solutions</th>
-<td>Already exist, may be remixes/combinations of existing solutions</td>
+<td>Already exist, may be combinations of existing solutions</td>
 <td>Typically new, unlikely to exist</td>
 </tr>
 <tr>
@@ -82,8 +82,6 @@ Conventional thinking in digital design adopts the generic process of discovery 
 The issue with conventional thinking is that it often involves an abundance of rules and processes that rarely produce the insanely valuable outcomes. The possibility space is artificially limited from the start. Ideas that create companies like Uber are left for other daring adventurers and the conventional thinker can only watch from the sidelines and wait for ideas to become mainstream before integrating them.
 
 Working backwards from magic starts from a completely different and grander possibility space. It begins with the simple question: "if this worked like magic, what would that look like?"
-
-<img src="/img/spacex.png" class="spacex">
 
 ---
 

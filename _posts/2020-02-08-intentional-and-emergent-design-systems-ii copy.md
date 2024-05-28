@@ -6,6 +6,8 @@ date: '2020-02-07T00:00:01+00:00'
 
 ---
 
+![](/img/intentional-2.png)
+
 I believe Robin Rendle's [Systems, Mistakes, and the Sea](https://www.robinrendle.com/essays/systems-mistakes-and-the-sea) was a catalyst for several enjoyable articles on design systems since the beginning of the year. Notably Jeremy Keith's [Web standards, dictionaries, and design systems](https://adactio.com/journal/16342), Frank Chimero's [Gardening vs Architecture](https://frankchimero.com/blog/2020/gardening-vs-architecture/), a subsequent, deeper dive in Jeremy's [Architects, gardeners, and design systems](https://adactio.com/journal/16369), and Dave Rupert's [The Web is Industrialized and I helped industrialize it](https://daverupert.com/2020/01/the-web-is-industrialized-and-i-helped-industrialize-it/). 
 
 What follows is a contribution to this discussion. I'm still unpacking it but it feels timely to push some thoughts out into the open whether they're ready or not.
@@ -34,7 +36,7 @@ The scope of an intentional design system is large by default and requires some 
 
 Although not a like-for-like comparison, it's interesting to see that the same voices who would bemoan libraries such as jQuery and Bootstrap - two libraries full to the brim of conjectural bloat - haven't noticed the hypocrisy in advocating for design system first approaches before building up to more complex components. The same voices who evangelise for accessibility damning jQuery for adverse effects on performance and page weight are happy to tax users for a speculative design system[^1].
 
-<img src="/img/pillar.jpg" class="pillar">
+![](/img/intentional-3.png)
 
 In contrast, emergent design systems require only accepting evidence-based patterns and components into its system. It flips everything on its head asking the parts to prove themselves to be replicable and have sufficient utility. They need [the gardeners Frank Chimero alluded to](https://frankchimero.com/blog/2020/gardening-vs-architecture/).
 
@@ -88,7 +90,7 @@ If I could give an artificial intelligence the keys to fully automating modern d
 
 **Do design systems limit creativity?** The answer rests on what type of system you subscribe to.
 
-<img src="/img/gardening.jpg" class="gardening">
+![](/img/intentional-4.png)
 
 The worst incarnation of a design system designs designers out of the picture. If I were building an AI tool to displace designers, I'd point them towards an all-encompassing, intentional design system. I fear that we're blindly running towards automation and we're giving the algorithms the template our jobs. It's not hard to imagine a world where No Code technology complements No Design. By contrast, the best incarnation of a design system leaves room for creativity, invention, the **human** elements.
 

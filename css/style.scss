@@ -3,13 +3,14 @@ $white: #FFF9F9;
 $grey: #828386;
 $red: #EF0300;
 $dark-red: #B80C09;
-$serif: "Libre Caslon Text", serif;
+$serif: "Source Serif", serif;
 $sans: "SF Pro Display", -apple-system, BlinkMacSystemFont, "myriad-pro", sans-serif;
 
 @import url('https://rsms.me/inter/inter.css');
 
 html {
   font-family: 'Inter', sans-serif;
+  background: red;
 }
 
 @supports (font-variation-settings: normal) {

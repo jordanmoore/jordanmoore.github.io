@@ -21,4 +21,5 @@ gems:
 # Build settings
 markdown: kramdown
 sass:
-  style: compressed
+  sass_dir: css  # Directory for Sass partials
+  style: compressed  # Output style: nested, expanded, compact, compressed

@@ -6,11 +6,11 @@ date: '2018-09-11T00:00:01+00:00'
 
 ---
 
+![](/img/puzzle-1.png)
+
 The best puzzles are the ones that demand more of you. When the answer appears obvious, but you second guess yourself. When you know there’s more to it than meets the eye.
 
-Nob Yoshigahara's infamous number tree puzzle is certainly one of my personal favourites for just these reasons. It gives you a set of information and asks, What do you make of this?
-
-![Nob Yoshigahara's infamous number tree puzzle](https://jordanm.co.uk/img/puzzle.png)
+Nob Yoshigahara's infamous number tree puzzle is certainly one of my personal favourites for just these reasons. It gives you a set of information and asks, [What do you make of this?](https://jordanm.co.uk/img/puzzle.png)
 
 Puzzles are a great tool for strengthening mental muscles that can help unpack design problems. They push you to adopt a different mindset and perspective, challenge assumptions, study intently, and look closely. Like a puzzle, difficult design problems evoke that same moment of epiphany when you peel back the layers to find hidden truths.
 
@@ -33,8 +33,6 @@ Mike Bithell, an independent game developer, sums this up nicely:
 > "Oftentimes, when trying to reinvent the wheel, you end up with a wheel. But there is a nice moment of 'huh, I guess that's why people just use wheels'... that process of justifying the standard is satisfying, if massively wasteful. Still. Cool wheel."
 
 For a good example of first principles in action, try this Wikipedia experiment. Click on the first non-parenthesized link in any random article and follow the chain. It will lead you down a path toward the most basic understanding of any concept. Strangely, approximately 80% of articles deconstructed in this manner bring you back to the Wikipedia article about philosophy.
-
-<img src="/img/levelling.jpg" alt="Levelling" class="levelling">
 
 ## Question everything
 

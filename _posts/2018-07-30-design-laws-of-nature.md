@@ -6,6 +6,8 @@ date: '2018-07-30T00:00:01+00:00'
 
 ---
 
+![](/img/design-laws.png)
+
 Living in Ireland I have become accustomed to rain as our weather system's default setting. Umbrellas are dispensable in the Moore family as wind and rain have proved too worthy an opponent for many a shelter device across varying price brackets. When Managing Director of Their Capital, [Eric Weinstein, spoke to Tim Ferris](https://tim.blog/2016/01/13/eric-weinstein/) about the lack of innovation in umbrella design, hinting that the answer might be in Origami or perhaps nature, my interest piqued and sent me down a rabbit hole.
 
 The rabbit hole confirmed my suspicions that we borrow from nature all the time, particularly in physical product design. The borrowing is often conscious, and sometimes we arrive at the same conclusions for problems that nature has been resolving over vast periods of time. Initially, I took Eric's challenge on as a thought experiment, and like any good thought experiment, I got lost down an avenue leading to ideas beyond the original scope - even completely separate to the original problem. Distractions like this excite me. I enjoy seeing how deep the rabbit hole goes particularly when the journey is peppered with little epiphanies along the way - a process I call "mining for truths" much to the groans of anyone around me when I verbalise this process.
@@ -33,7 +35,7 @@ Examples of biomimicry in mechanics include the Shinkansen Bullet Train, the wor
 > "This shape has enabled the new 500-series to reduce air pressure by 30% and electricity use by 15%, even though speeds have increased by 10% over the former series. Another benefit has been confirmed through a favourable reputation among customers that these trains give a comfortable ride. This is due to the fact that changes in pressure when the trains enter tunnels are smaller."
 (Kobayashi: 2005)
 
-<img src="/img/peacock.jpg" alt="A peacock" class="peacock">
+![](/img/design-laws-2.png)
 
 NASA has several biomimicry projects in development including bio-inspired exercise equipment helping astronauts maintain fitness during spaceflight, solar propulsion mechanisms and glider technology inspired by a seagull's wingspan that saves on the need for continuous thrust and fuel costs.
 
@@ -73,8 +75,6 @@ There have been experiments in digital design to utilise the Golden Ratio. This 
 
 Tim's talk had such a profound effect on my work that I threw out my old methods of picking numbers out of the air for things like element widths, font sizes and vertical rhythms and instead explored a more meaningful set of measurements true to nature, born out of maths, the language of the universe.
 
-![https://en.m.wikipedia.org/wiki/File:Dali_-_The_Sacrament_of_the_Last_Supper_-_lowres.jpg](https://jordanm.co.uk/img/dali-last-supper.jpg)
-
 Back to traditional art for a moment. One of my favourite paintings is Salvador Dali’s 1955 piece The Sacrament of the Last Supper. It is by far the lesser known of the two famous Last Supper paintings, and like Da Vinci's, Dali unapologetically employs the Golden Ratio in the altar that dominates the centrepiece of this remarkable union of religious imagery and surrealism. Here Dali had a reproducible algorithm for beauty, harnessed from nature, communicated back through his medium, the canvas, stirring the soul through the eyes of the viewer.
 
 ## Constellation
@@ -87,7 +87,7 @@ In another one of his lectures titled "Who Buried Paul?", a deep dive into the P
 
 Moriarty calls this phenomenon "constellation", a human desire to see patterns and make connections between points. Looking up to the stars in the night sky, our ancestors created many images through self-recognition and seeing meaning and significance between points of light across a dark expanse. These connections appear to be stimulated where novelty exists rather than manifesting from the mundane. Look at the Beatles For Sale album cover juxtaposed with the Sgt. Pepper's Lonely Hearts Club artwork. One generated meaning and a multitude of interpretations in the eye of the beholder where the other just framed four guys from Liverpool ready to sing a few songs for you, the listener.
 
-![](https://jordanm.co.uk/img/beatles.jpg)
+![](/img/design-laws-4.png)
 
 So how does constellation, or the act of constellating help us design better digital products? Firstly your product needs to serve a purpose beyond a utility, particularly if that purpose leads to meaning or reveals greater truths. Constellating is a quick means to meaning, what red herrings give rise to speculation and new interpretations? Why do some of the great films such as Donny Darko leave parts of the story untold? People fill in the gaps with personal significance which means that somewhat counterintuitively, incompleteness by design encourages constellation which creates greater personal meaning rather than pre-prescribed, one-size-fits-all meaning.
 
