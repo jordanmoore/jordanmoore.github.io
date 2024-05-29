@@ -77,6 +77,8 @@ Tim's talk had such a profound effect on my work that I threw out my old methods
 
 Back to traditional art for a moment. One of my favourite paintings is Salvador Dali’s 1955 piece The Sacrament of the Last Supper. It is by far the lesser known of the two famous Last Supper paintings, and like Da Vinci's, Dali unapologetically employs the Golden Ratio in the altar that dominates the centrepiece of this remarkable union of religious imagery and surrealism. Here Dali had a reproducible algorithm for beauty, harnessed from nature, communicated back through his medium, the canvas, stirring the soul through the eyes of the viewer.
 
+<img src="/img/separator-2.png" alt="" class="separator" />
+
 ## Constellation
 
 Brian Moriarty is one of my heroes in the gaming industry. He is best known for adventure games such as Loom and The Dig as well as his infamous lecture "The Secret of Psalm 46" which has been adapted into a dramatic production, a graphic novel and plays a role in my favourite video game, The Witness (no spoilers here, sorry).
@@ -86,8 +88,6 @@ In another one of his lectures titled "Who Buried Paul?", a deep dive into the P
 > "Humans project meaning and significance where there is none, particularly in cases where none exists. The meanings we expect to see. The significance we WANT to see. Constellation is a form of self-recognition."
 
 Moriarty calls this phenomenon "constellation", a human desire to see patterns and make connections between points. Looking up to the stars in the night sky, our ancestors created many images through self-recognition and seeing meaning and significance between points of light across a dark expanse. These connections appear to be stimulated where novelty exists rather than manifesting from the mundane. Look at the Beatles For Sale album cover juxtaposed with the Sgt. Pepper's Lonely Hearts Club artwork. One generated meaning and a multitude of interpretations in the eye of the beholder where the other just framed four guys from Liverpool ready to sing a few songs for you, the listener.
-
-![](/img/design-laws-4.png)
 
 So how does constellation, or the act of constellating help us design better digital products? Firstly your product needs to serve a purpose beyond a utility, particularly if that purpose leads to meaning or reveals greater truths. Constellating is a quick means to meaning, what red herrings give rise to speculation and new interpretations? Why do some of the great films such as Donny Darko leave parts of the story untold? People fill in the gaps with personal significance which means that somewhat counterintuitively, incompleteness by design encourages constellation which creates greater personal meaning rather than pre-prescribed, one-size-fits-all meaning.
 

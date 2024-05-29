@@ -388,6 +388,7 @@ header {
 
 .footnotes {
   font-family: $sans;
+  word-break: break-word;
 
   ol {
 	margin-top: 4.236em;
@@ -518,6 +519,16 @@ html, body {
   ::-webkit-scrollbar {
 	display: none;
   }
+}
+
+img.separator {
+	max-height: 60vh;
+	object-fit: contain;
+	width: 100%;
+}
+
+.standard {
+	padding-bottom: 6.18em;
 }
 
 

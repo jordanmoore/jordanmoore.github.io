@@ -40,12 +40,7 @@ blockquote {
   font-style: italic;
 
   @media screen and (min-width: 520px) {
-	border-left: 2px solid fade-out($dark, 0.9);
-
-	@media (prefers-color-scheme: dark) {
-	  border-left: 2px solid fade-out($white, 0.9);
-	}
-
+    border-left: 2px solid $white-10;
 	margin: 3.2em 0;
 	padding: 0 1.6em 0 2em;
   }

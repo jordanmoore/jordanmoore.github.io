@@ -1,11 +1,12 @@
 ---
 layout: post
-title: The Illusory Internet
-date: '2023-02-26T00:00:00+01:00'
+title: Digital Minimalism
+date: '2023-05-29T00:00:00+01:00'
+hidden: true
 
 ---
 
-![](/img/internet.png)
+![](/img/digital-min.png)
 
 I have been using Twitter less frequently than I used to, and now I find myself in a situation where I'm torn between not wanting to engage with the platform at all, and experiencing a sense of loss aversion that Twitter seems to evoke through its various psychological design levers it enjoys pulling (I have a hunch that they do an awful lot more than dopamine spiking through engagement buttons).
 
@@ -19,7 +20,7 @@ I tend to find that during these drier periods, I’ll get random notifications 
 
 After rewatching the video on the lazy Saturday afternoon that it arrived in my notifications, I decided to look into the story behind the monologue and found myself in a dark little corner of the web called “Agora Road’s Macintosh Cafe” which hosted a provocative thread called the Dead Internet Theory, written by someone calling themselves “IlluminatiPirate”, referenced the aforementioned scene from Metal Gear Solid.
 
-Some choice language and expressions aside[^1], the thread raises some interesting points that are worth revisiting at this point in the history of the web. Many outlets have dismissed the theory in previous years, but now that we’re getting a bit of a feel of where this whole artificial intelligence thing is going.
+Some choice language and expressions aside1, the thread raises some interesting points that are worth revisiting at this point in the history of the web. Many outlets have dismissed the theory in previous years, but now that we’re getting a bit of a feel of where this whole artificial intelligence thing is going.
 
 ## “The internet feels empty and devoid of people”
 
@@ -29,9 +30,9 @@ Hmm.
 
 The Dead Internet Theory thread goes on to make a number of claims, some seemingly outlandish and difficult to verify, some unmistakably true such as the claim that bots are generating more conversations and generating more content on social networks than humans than we realise. Elon Musk’s public sounding of the alarm bell/attempt to back out of the Twitter deal/attempt to drive down the value of the Twitter deal, or some combination of all 3 came to mind when reading through the theory.
 
-As it turns out, bots account for 5% of Twitter users[^2], which doesn't sound too scary until you read that they account for 21%-29% of the content on the platform. Close to a third of the content isn’t made by humans.
+As it turns out, bots account for 5% of Twitter users2, which doesn't sound too scary until you read that they account for 21%-29% of the content on the platform. Close to a third of the content isn’t made by humans.
 
-“Ah but that’s just a problem with Twitter” you might say, to which I was shocked to hear that the problem is worse outside of Twitter’s walled garden - 64% of all internet traffic is bots[^3]. Or to put it another way, humans are the minority on the web.
+“Ah but that’s just a problem with Twitter” you might say, to which I was shocked to hear that the problem is worse outside of Twitter’s walled garden - 64% of all internet traffic is bots3. Or to put it another way, humans are the minority on the web.
 
 ## ⌘+C, ⌘+V Opinions
 
@@ -49,7 +50,7 @@ We like to be liked. The Dead Internet Theory thread author made the following o
 
 To summarise: consensus can be manufactured and propagated into the collective networked mind of social media, which will then proceed to reward those who echo the sentiment back into the network, reciting their predefined opinions.
 
-![](/img/internet-2.png)
+<img src="/img/separator-1.png" class="separator" alt="" />
 
 I genuinely set out without the intention of talking about ChatGPT because everybody has it well covered. And we’ve done so well to get to this point in a piece like this without a clichéd nod to it, but we have to at this point, because no doubt you’ve drawn those conclusions already - the “oh dear God, what happens when we let that become part of this?” type of conclusion. It turns out, there is already a subreddit populated purely by ChatGPT both in terms of posts and replies to itself. The two things that worried me the most about that were learning that:
 
@@ -76,10 +77,3 @@ I’ll try and bring this home to some sort of optimistic outlook. It seems that
 The alternative path is to pivot towards true, human connection. I’m having more phone calls with people I know from Twitter than I ever have before, and it’s refreshing to have those conversations that aren’t being watched and scored by others.
 
 The friction of the dial-up web where technology kept us from being extremely online was a flavour of how these things should have worked, so maybe it’s time to exercise some self-control and disconnect. Bots don’t have to be a problem in your everyday life if you don’t spend all of your every life with them.
-
-
-[^1]: Slightly meta sub point: I believe we need to get better at separating message from messenger. Pre-filtering happens all the time across online discussions where the source determines people’s views on any particular topic to the point that the viewpoint itself rarely gets past the pre-filtering for an honest assessment against the reader’s own values.
-
-[^2]: According to research conducted by Similarweb - https://www.similarweb.com/blog/insights/twitter-bot-research-news
-
-[^3]: According to research by Barracuda - https://assets.barracuda.com/assets/docs/dms/Bot_Attacks_report_vol1_EN.pdf
