@@ -57,4 +57,4 @@ I have noticed that:
 Much of the Buddhist literature points out that thinking (or more specifically, the identification with thought) is the source of suffering, and—that sense of dissatisfaction that has crept into my own life the further I get from childhood. I’d add that device usage falls into a very similar category with regard to obscuring our awareness in the immediate _now_. Thankfully, there seems to be an undo button.
 
 
-[^1]: I find a lot of the discourse around habits tends to be understated surface-level chat rather than the actual integration of habits and just how remarkably powerful and identity-changing they can be.
+[^1]: I find a lot of the talk about habits is quite surface-level, not really getting into how powerful and identity-changing actually integrating these habits can be.
