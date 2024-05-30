@@ -1,79 +1,60 @@
 ---
 layout: post
 title: Digital Minimalism
-date: '2023-05-29T00:00:00+01:00'
-hidden: true
-
+date: '2023-05-30T00:00:00+01:00'
 ---
 
 ![](/img/digital-min.png)
 
-I have been using Twitter less frequently than I used to, and now I find myself in a situation where I'm torn between not wanting to engage with the platform at all, and experiencing a sense of loss aversion that Twitter seems to evoke through its various psychological design levers it enjoys pulling (I have a hunch that they do an awful lot more than dopamine spiking through engagement buttons).
+My brother bought me a copy of Cal Newport’s book, [Digital Minimalism](https://calnewport.com/writing/#books), a few years ago—long before I realised it was an unexpected antidote to a nagging feeling that I’ve had for quite some time now: the feeling that the colours, vibrancy, and general aliveness of life and everything in it seemed brighter when I was younger.
 
-I tend to find that during these drier periods, I’ll get random notifications from people engaging with some of my older tweets. Today, someone engaged with [a monologue I shared from Hideo Kojima’s Metal Gear Solid 2](https://twitter.com/jordanmoore/status/1218672445877555201) released in 2001 which features horrifyingly accurate predictions about social media before social media even existed as well as some correlations with the 2016 election 15 years before it happened, and it covers the nature of memes before the word entered the broader public lexicon.
+The world tells you to write thoughts like that off as seeing things through “rose-tinted glasses” or that it’s just nostalgia talking and you’re only remembering the highlight reel rather than the mundane, but I believe that this quiet dissatisfaction was more than just a longing for the “good ol’ days.” For instance, how come I can recall the feeling and texture of the door that led into my late granny’s house? I can’t recall my own front door that easily.
 
-- “The digital society furthers human flaws and selectively rewards development of convenient half-truths.”
-- “The untested truths spun by different interests continue to churn and accumulate in the sandbox of political correctness and value systems.”
-- “Everyone withdrawals into their own small gated community, afraid of a larger forum; they stay inside their little ponds leaking what ever "truth" suits them into the growing cesspool of society at large.”
-- “The different cardinal truths neither clash nor mesh, no one is invalidated but no one is right.”
-- “The world is being engulfed in "Truth". And this is the way the world ends. Not with a BANG, but with a whimper.”
+As you’ve probably guessed, this is another “phones = bad” piece, but I want to bypass the usual talk of addiction and how these things are rewiring our brains in unhealthy ways and share my experience in adopting digital minimalism and the unexpected upshot of cultivating something that feels like _real-time nostalgia_.
 
-After rewatching the video on the lazy Saturday afternoon that it arrived in my notifications, I decided to look into the story behind the monologue and found myself in a dark little corner of the web called “Agora Road’s Macintosh Cafe” which hosted a provocative thread called the Dead Internet Theory, written by someone calling themselves “IlluminatiPirate”, referenced the aforementioned scene from Metal Gear Solid.
+### Technology Constrains Awareness
 
-Some choice language and expressions aside1, the thread raises some interesting points that are worth revisiting at this point in the history of the web. Many outlets have dismissed the theory in previous years, but now that we’re getting a bit of a feel of where this whole artificial intelligence thing is going.
+Again, I don’t want to cover the angles that Cal has expertly documented, like social media’s repeated spiking and exhausting of our dopamine receptors. Instead, I’ve noticed how my own device addiction has constrained my awareness.
 
-## “The internet feels empty and devoid of people”
+When we cup our devices in our hands, they reduce sensory inputs down to a limited, one-dimensional nature. The screen is flat, there is no variance in texture, no associated smell—it’s mostly just visual representations of things in a small box with no additional senses apart from sound on occasion. Our awareness becomes confined and tunnel-like as the world around us just passes us by.
 
-Initially, I also dismissed the theory, particularly this part of the author’s thread, but I quickly remembered what brought me here - a notification on an old tweet that followed a pattern I noticed that arises when I spent time away from Twitter. The pattern roughly goes: time passes, an old tweet with an ok-ish amount of engagement for an account of my small size is liked or shared by an account that I have never heard of before with no real person in the avatar and a similar-looking bio to others that follow this pattern.
+By contrast, the awareness I had as a child was the opposite. It was _multi_-sensory, big, wide, open, bright. The act of _noticing_ happened because it was a muscle that couldn’t help but be trained every day. There was no living in a physical world as well as the barely noticeable transition to living in a virtual world that we make every day in the present world. Awareness was unbound, alive, connected.
 
-Hmm.
+### Integrating Digital Minimalism
 
-The Dead Internet Theory thread goes on to make a number of claims, some seemingly outlandish and difficult to verify, some unmistakably true such as the claim that bots are generating more conversations and generating more content on social networks than humans than we realise. Elon Musk’s public sounding of the alarm bell/attempt to back out of the Twitter deal/attempt to drive down the value of the Twitter deal, or some combination of all 3 came to mind when reading through the theory.
+I was likely living in denial about phone addiction. I knew I had a habit of using it a lot during the day, but as I started going down the digital minimalism rabbit hole and reading up everything I could put my hands on, something about my screen time seemed off compared to the numbers that various authors were reporting. I was easily clocking up a minimum of 5+ hours of usage a day, which I had thought was an average amount... turns out it wasn’t anywhere near average.
 
-As it turns out, bots account for 5% of Twitter users2, which doesn't sound too scary until you read that they account for 21%-29% of the content on the platform. Close to a third of the content isn’t made by humans.
+My stomach sank thinking about what I would do if I could get all of that time back. It was the perfect kick up the ass to start living out the ideas and practices in the book. Cal Newport's suggested 30-day social media fast exercise inadvertently became a 5 months and 23 days fast (and counting) through the sheer power of an _integrated_ habit[^1].
 
-“Ah but that’s just a problem with Twitter” you might say, to which I was shocked to hear that the problem is worse outside of Twitter’s walled garden - 64% of all internet traffic is bots3. Or to put it another way, humans are the minority on the web.
+Then I started getting fiercely protective over my attention—and I needed to go there mentally otherwise it wouldn't work and old behaviours would take over. Integration had to be brutal to be effective. I adopted language with regards to attention being “stolen” which reframed any culprits with disgust and a burning desire cut them out.
 
-## ⌘+C, ⌘+V Opinions
+Steps included:
 
-We like to be liked. The Dead Internet Theory thread author made the following observation on human behaviour and how we interface with the web, and how it is prone to hijacking:
+- Removing all apps except messaging and calls
+- Blocking all notifications from my Apple Watch except for Activity. (The Apple Watch itself might be next in line to go in favour of an analog watch)
+- Mass unsubscribing from all newsletters (apart from the ones I really care to read). This took weeks to complete and was oddly satisfying. Do yourself a favour and _don’t_ use a service to do this for you. The action of pressing the unsubscribe button feels like another micro-commitment to the cause
+- Adding the Screen Time widget to my home screen as a reminder of how much attention has been stolen today
+- Buying a phone safe. Not a novelty one, a proper heavy one that I can’t open until the timer expires.
+- Finding alternative habits. This is one of those things that people say in a breezy manner, but again this requires a brutal change in your identity for it to really stick
 
-> The internet is a fast way to get info, and info is what moves the mind, and the thing is, the mind likes recognition. When the "likes" were introduced without negative feedback they created a copy-feedback subconscious, they made it so only "positive" opinions be propagated (also accepted), and in it's way negative opinions to be obsolete.
-> 
-> Now everyone is too cowardly to have an opinion so they copy others they like, they are more likely to follow trends and say what others said, you can also see it with the paranoia of always wanting to listen to experts.
-> 
-> The fast feedback system of the net created a human obsession to be in with trends, getting away from it makes it so you always feel like you are missing out, to play it safe in a trend is more easy as you can copy what already is accepted. In this way, the internet and social media, which was supposed to democratise media by allowing users to create whatever content they wanted, has instead been hijacked by a powerful few.
-> 
-> Creation of original content is how the internet used to work. Anonymous people were willing to express their opinions and try radical or experimental things. More truly original content, uninfluenced by bots or paid influencers, was created due to anonymity as protection against negative feedback. On the old internet, you could start anew every time you posted something.
-> 
-> Now add bots to this. Make it so an opinion be repeated more and more, they are faster than us, so the positive feedback makes is so we copy the bots, and anonymity can't do anything against it because we can't influence the bot like we would a human, this is an easy weapon to manipulate people, so anyone with an agenda can use a bot, is designed in a way compared to how clickbaits are made, most won't read the content, this creates tv-like propaganda where they aren't influenced by the user and that puts bots at a great advantage over any other opinion because it wont change, and we are copying that.
+During the first few weeks, I found myself reaching for my phone even when it wasn't in my pocket, which really hammered home the fact that I had some unhealthy, unconscious addictive behaviours associated with my phone that I wasn’t fully aware of until I stopped using it. This happened a lot when I found myself waiting for something.
 
-To summarise: consensus can be manufactured and propagated into the collective networked mind of social media, which will then proceed to reward those who echo the sentiment back into the network, reciting their predefined opinions.
+<img src="/img/separator-1.png" alt="" class="separator tree" />
 
-<img src="/img/separator-1.png" class="separator" alt="" />
+To remedy this particularly tricky habit, instead of trying to use willpower to stop the action, I bought a nice soft cover A6 notebook that fits neatly in my pocket. Now when I reach for my phone, I pull the notebook out instead and write. And I’ll shamefully admit, I have got significant mileage out of doing the judgey thing of looking at others in a waiting situation with their heads craned down and locked on their device—it gives me a little kick of feeling superior which further helps my integration. The books don’t tell you that part, and I shouldn’t have told you that part, but I’ll admit it here because it works for me and my fragile ego and it might help break the spell for you too.
 
-I genuinely set out without the intention of talking about ChatGPT because everybody has it well covered. And we’ve done so well to get to this point in a piece like this without a clichéd nod to it, but we have to at this point, because no doubt you’ve drawn those conclusions already - the “oh dear God, what happens when we let that become part of this?” type of conclusion. It turns out, there is already a subreddit populated purely by ChatGPT both in terms of posts and replies to itself. The two things that worried me the most about that were learning that:
+### Progress Report
 
-1. If the usernames didn’t contain the letters “GPT” you could swear that it was normal human beings having a conversation on the web
-2. And these conversations are running on the old version of GPT: GPT2 (the vastly inferior model)
+I’m about 6 months into the journey, and as I mentioned at the beginning, it has been something of an antidote to the numbing of experience that comes with constraining awareness.
 
-A few months ago, an interaction on Twitter left me very pissed. I have negative interactions from time to time and they genuinely don’t bother me, but this one did. I posted a UI concept for reading multiple branches of a conversation on Twitter - purely as something I would like to see, and by no means a suggestion for Twitter to take seriously as a solution.
+I have noticed that:
 
-It gained a decent amount of attention (once again, for an account of my humble size) and that was 99% positive for the first few days. Then about a week later, I woke up from a sleep and carried out my usual bad habit of checking email, Reddit, and Twitter first thing after waking and noticed that I had 20+ notifications. Again - for an account of my size, 20+ means either: something amazing has happened - likely some big account has shared something, or something bad has happened.
+- My attention span expanded after learning to lean into boredom again. Remember _boredom_?
+- My awareness expanded from the tunnelled version that came with my device usage towards something much broader and much more present
+- Instead of feeling nostalgic for childhood experiences (or, controversially, Lockdown #1), I noticed I started to get that same feeling about last week, yesterday, and sometimes, that feeling about this very morning
+- Feelings of time slowing down
 
-It was the latter. Sentiment had completely changed on the tweet. Every single new notification took the shape of either personal insult, or sniping at the UI concept - no constructive critique, just some variation of “L take” and other short quote tweets and responses.
+Much of the Buddhist literature points out that thinking (or more specifically, the identification with thought) is the source of suffering, and—that sense of dissatisfaction that has crept into my own life the further I get from childhood. I’d add that device usage falls into a very similar category with regard to obscuring our awareness in the immediate _now_. Thankfully, there seems to be an undo button.
 
-I tried to find the source - the one who had flipped the sentiment from 99% good to 100% bad, and I couldn’t find them. I looked at the profiles of the people who were behind the more vitriolic responses, and they all followed a similar pattern:
 
-- No real face in the avatar (or AI generated face for that matter)
-- Poor ratio of following to followers
-- Followers always capped around the 100 mark
-- VAST majority of interactions on their timeline were the same sort of replies to other people
-
-I am now entirely convinced that the interaction I had, that left me rattled in a way that I haven’t felt in quite some time on social media, was either entirely bots, or mostly orchestrated by bots in terms of setting the sentiment for others to follow. This reframing has been both helpful and unsettling.
-
-I’ll try and bring this home to some sort of optimistic outlook. It seems that there is at least some degree of validity to the Dead Internet Theory in that bots are starting to run the show, and set narratives to follow. The fact that you rarely see the words “this changed my mind, thank you” in online discussions is something of a red flag to indicate that perhaps the web isn’t the best place to be having these types of discussions anyway. And, in a way, it’s slightly meditative to detach from the emotion of a fuelled discussion online knowing that there is a significant chance you’re talking to machine code.
-
-The alternative path is to pivot towards true, human connection. I’m having more phone calls with people I know from Twitter than I ever have before, and it’s refreshing to have those conversations that aren’t being watched and scored by others.
-
-The friction of the dial-up web where technology kept us from being extremely online was a flavour of how these things should have worked, so maybe it’s time to exercise some self-control and disconnect. Bots don’t have to be a problem in your everyday life if you don’t spend all of your every life with them.
+[^1]: I find a lot of the discourse around habits tends to be understated surface-level chat rather than the actual integration of habits and just how remarkably powerful and identity-changing they can be.
