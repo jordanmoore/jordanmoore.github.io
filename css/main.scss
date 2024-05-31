@@ -47,12 +47,15 @@ img {
 
 // Selection Styles
 ::-moz-selection {
-  background: #fef4ad;
+  background: #222;
+  color: #faffaa;
+  text-shadow: 0 0px 1px #ffa;
 }
 
 ::selection {
-  background: #fef4ad;
-  color: $dark;
+  background: #222;
+  color: #faffaa;
+  text-shadow: 0 0 1px #ffa;
 }
 
 // Utility Classes
