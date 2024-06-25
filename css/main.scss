@@ -778,18 +778,12 @@ footer {
 
 .now-content {
     margin-top: 5.2em;
-    border-left: 1px dashed rgba(255, 255, 255, 0.3);
-    padding-left: 2em;
     padding-bottom: 5.2em;
 }
 
 .date-tag {
     font-family: $sans;
-    background: white;
-    color: $dark;
-    font-size: 0.88em;
-    display: inline-block;
-    padding: 0.15em 0.7em 0.1em;
+    color: white;
+    font-size: 1.2em;
     font-weight: 600;
-    transform: translateX(-2.2em);
 }
