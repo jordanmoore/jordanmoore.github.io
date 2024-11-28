@@ -37,9 +37,11 @@ By moving all of the limitations out of the way (current understanding of how ta
 
 The world is full of secrets like this left to discover. We’re lucky we are in software because most of the hardware secrets have been discovered. The web is just getting started and there are millions of life-changing ideas in waiting.
 
+![](/img/tubes.png)
+
 ### Step 3: Introduce Reality and Meet Magic in the Middle
 
-As we’ve just discussed in the Uber example, it’s not enough to start from magic and leave it at that. There is a need to get real which involves remaining disciplined about keeping conventional thinking at arm’s length. 
+As we’ve just discussed in the Uber example, it’s not enough to start from magic and leave it at that. There is a need to get real which involves remaining disciplined about keeping conventional thinking at arm’s length.
 
 Working backwards from magic requires you to start from impossible and slowly introduce just enough reality until your solution is as close to magic as possible.
 
@@ -47,7 +49,7 @@ Before Apple took over the world, the old saying was “nobody gets fired for ch
 
 ## Conventional Thinking vs Working Backwards From Magic
 
-My intention isn't to encourage a complete rejection of conventional thinking altogether. Tried and tested solutions have their time and place, but at a time where design is self-commoditising in software I can't help but feel that the industry is declaring "mission complete" and [systemising too soon](https://jordanm.co.uk/2020/02/07/intentional-and-emergent-design-systems-ii-copy.html). 
+My intention isn't to encourage a complete rejection of conventional thinking altogether. Tried and tested solutions have their time and place, but at a time where design is self-commoditising in software I can't help but feel that the industry is declaring "mission complete" and [systemising too soon](https://jordanm.co.uk/2020/02/07/intentional-and-emergent-design-systems-ii-copy.html).
 
 Conventional thinking in digital design adopts the generic process of discovery through to completion by passing through all the usual stops along the way: user stories, competitive analysis, personas, wireframes and so on. Such processes are rapidly becoming checklists, or worse - ass-covering exercises so that the designer can blame the process if their work doesn't quite return on the investment.
 
@@ -89,6 +91,6 @@ Working backwards from magic starts from a completely different and grander poss
 
 For this approach to work, it needs to live in a culture that is open to risk, making mistakes, and learning from failure quickly. We are taught from an early age that mistakes are bad and that learning to repeat answers from books is how to progress in life - in essence: do what everybody else is doing, DON'T think different. I can't help but think that this leads to the type of ass-covering through a plethora of rules, conventions and processes that have become the norm in creative work.
 
-I have found that, in my experience, working backwards from magic democratises design more than existing approaches which seem to revel in the authority of a UX leader type bringing the timid, naive client and others through the dangerous world of design. In contrast, asking a client "if this worked like magic, what would that look like?" brings them to the table without the need to jump through hoops, or worry about saying the right technical terms or have concerns about whether something can or can't be achieved. 
+I have found that, in my experience, working backwards from magic democratises design more than existing approaches which seem to revel in the authority of a UX leader type bringing the timid, naive client and others through the dangerous world of design. In contrast, asking a client "if this worked like magic, what would that look like?" brings them to the table without the need to jump through hoops, or worry about saying the right technical terms or have concerns about whether something can or can't be achieved.
 
 I have also started to become comfortable with the idea that "it'll never work" is a good indication that I'm on the right track towards creating new value. "It'll never work" simply means that it doesn't exist (yet) and you're firmly in working backwards from magic territory. Your possibility space is infinitely bigger.
