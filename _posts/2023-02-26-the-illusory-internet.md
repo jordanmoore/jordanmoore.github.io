@@ -31,6 +31,8 @@ The Dead Internet Theory thread goes on to make a number of claims, some seeming
 
 As it turns out, bots account for 5% of Twitter users[^2], which doesn't sound too scary until you read that they account for 21%-29% of the content on the platform. Close to a third of the content isn’t made by humans.
 
+![](/img/mask.png)
+
 “Ah but that’s just a problem with Twitter” you might say, to which I was shocked to hear that the problem is worse outside of Twitter’s walled garden - 64% of all internet traffic is bots[^3]. Or to put it another way, humans are the minority on the web.
 
 ## ⌘+C, ⌘+V Opinions
@@ -38,13 +40,13 @@ As it turns out, bots account for 5% of Twitter users[^2], which doesn't sound t
 We like to be liked. The Dead Internet Theory thread author made the following observation on human behaviour and how we interface with the web, and how it is prone to hijacking:
 
 > The internet is a fast way to get info, and info is what moves the mind, and the thing is, the mind likes recognition. When the "likes" were introduced without negative feedback they created a copy-feedback subconscious, they made it so only "positive" opinions be propagated (also accepted), and in it's way negative opinions to be obsolete.
-> 
+>
 > Now everyone is too cowardly to have an opinion so they copy others they like, they are more likely to follow trends and say what others said, you can also see it with the paranoia of always wanting to listen to experts.
-> 
+>
 > The fast feedback system of the net created a human obsession to be in with trends, getting away from it makes it so you always feel like you are missing out, to play it safe in a trend is more easy as you can copy what already is accepted. In this way, the internet and social media, which was supposed to democratise media by allowing users to create whatever content they wanted, has instead been hijacked by a powerful few.
-> 
+>
 > Creation of original content is how the internet used to work. Anonymous people were willing to express their opinions and try radical or experimental things. More truly original content, uninfluenced by bots or paid influencers, was created due to anonymity as protection against negative feedback. On the old internet, you could start anew every time you posted something.
-> 
+>
 > Now add bots to this. Make it so an opinion be repeated more and more, they are faster than us, so the positive feedback makes is so we copy the bots, and anonymity can't do anything against it because we can't influence the bot like we would a human, this is an easy weapon to manipulate people, so anyone with an agenda can use a bot, is designed in a way compared to how clickbaits are made, most won't read the content, this creates tv-like propaganda where they aren't influenced by the user and that puts bots at a great advantage over any other opinion because it wont change, and we are copying that.
 
 To summarise: consensus can be manufactured and propagated into the collective networked mind of social media, which will then proceed to reward those who echo the sentiment back into the network, reciting their predefined opinions.
