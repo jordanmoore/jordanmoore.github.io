@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Moving Attention and the Effortless Ease of Childhood Being
-date: '2025-02-21T00:00:00+01:00'
+date: '2025-02-22T01:00:00+01:00'
 ---
 
 ![](/img/lines.png)
