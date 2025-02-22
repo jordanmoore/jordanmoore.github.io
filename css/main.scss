@@ -45,17 +45,9 @@ img {
     height: auto;
 }
 
-// Selection Styles
-::-moz-selection {
-    background: #222;
-    color: #faffaa;
-    text-shadow: 0 0px 1px #ffa;
-}
-
-::selection {
-    background: #222;
-    color: #faffaa;
-    text-shadow: 0 0 1px #ffa;
+.responsive-video {
+  width: 100%;
+  height: auto;
 }
 
 // Utility Classes
@@ -198,6 +190,11 @@ header {
     blockquote {
         padding: 1em;
     }
+}
+
+p u {
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(255,255,255,0.3);
 }
 
 .post-link {
