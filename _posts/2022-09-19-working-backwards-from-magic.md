@@ -35,9 +35,9 @@ Instead, Uber decided to work backwards from magic and started from impossible. 
 
 By moving all of the limitations out of the way (current understanding of how taxis work, technical limitations, society’s expectations of what a taxi does), Uber was able to create something new and of significantly greater value than the existing solutions to the problem.
 
-The world is full of secrets like this left to discover. We’re lucky we are in software because most of the hardware secrets have been discovered. The web is just getting started and there are millions of life-changing ideas in waiting.
+![](/img/taxi.png)
 
-![](/img/tubes.png)
+The world is full of secrets like this left to discover. We’re lucky we are in software because most of the hardware secrets have been discovered. The web is just getting started and there are millions of life-changing ideas in waiting.
 
 ### Step 3: Introduce Reality and Meet Magic in the Middle
 

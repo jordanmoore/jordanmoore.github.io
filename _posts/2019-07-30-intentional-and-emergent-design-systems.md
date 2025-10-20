@@ -21,6 +21,8 @@ I have a few concerns with this way of working with design systems. Front-loadin
 
 Assuming the pieces will arrange themselves into answers means that you begin by painting yourself into a corner with something yet to prove its worth. This variety of design systems thinking usually finds its authors and gatekeepers consulting with the system over answers rather than thinking from first principles. Intentional design system advocates focus primarily on the what and how rather than the why.
 
+![](/img/Gospers_glider_gun.gif)
+
 ### An emergent design system
 
 Then there is the opposing approach, the unashamedly cart before horse way of looking at design systems.

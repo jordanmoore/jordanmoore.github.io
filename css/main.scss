@@ -774,6 +774,14 @@ footer {
 .now-content {
     margin-top: 5.2em;
     padding-bottom: 5.2em;
+    .date-tag {
+        color: $red;
+        font-size: 1em;
+        font-weight: 500;
+    }
+    h3 {
+        font-size: 1em;
+    }
 }
 
 .date-tag {
