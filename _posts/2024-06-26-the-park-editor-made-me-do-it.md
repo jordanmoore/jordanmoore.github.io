@@ -26,7 +26,7 @@ Any hobbyist pushing their skills beyond their comfort zone and getting the outc
 
 Then I wanted to share the map AND the texture pack with the world which meant that I needed to build my first website. Thankfully, the early web had Geocities - the tool that launched a million careers in the industry. I had no idea what I was doing at the time (which is still true in what I do today), and I had no idea that there was even a career path in making web things with digital tools.
 
-![](/img/stair.png)
+![](/img/skater.png)
 
 Many people talk about how the Pro Skater series created paradigm shifts in terms of openness to different music genres, which it did for me too, but my shift looked like discovering an entirely new hobby, building upon new web design skills through tutorial sites like [Pinoy7](https://web.archive.org/web/20010210135632/http://www.pinoy7.com/psptutorials/pipe-joints.htm)[^1] to try and replicate a lot of the wonderfully overly-skeuomorphic interfaces of the time period.
 
@@ -75,7 +75,6 @@ Like Alcatraz, it's another overlooked real-world level. New York is 3 levels in
 
 6. **Venice Beach: THPS 2** —
 I know my list is a little heavy on Pro Skater 2 levels, but I simply can't leave Venice Beach off this list. It leans slightly more towards street skate styles in a map that has vert areas dotted around the perimiter, but as far as levels with a distinct visual identity go, Venice Beach is very memorable.
-![](/img/ollie.png)
 
 7. **College: THPS 4** —
 One of only two starting levels on my list, College feels very different than anything before it in the previous games. It sprawls to the point of appearing like an open world THPS game and it's nostagia bright just like your actual college years.

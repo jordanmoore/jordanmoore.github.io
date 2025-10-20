@@ -2,7 +2,7 @@
 ---
 
 @import url(https://rsms.me/inter/inter.css);
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
 
 @import "variables";
 @import "typography";
@@ -16,22 +16,21 @@
 
 body {
     font-size: 16px;
-    font-family: $serif;
+    font-family: $sans;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
     background: white;
+    color: $dark;
     @media screen and (min-width: 720px) and (min-height: 720px) {
         white-space: nowrap;
         overflow-x: auto;
     }
-    background: $dark;
-    color: $white;
 }
 
 a {
-    color: $white;
+    color: $red;
     text-decoration: underline;
     text-underline-offset: 2px;
     text-decoration-color: $white-40;
@@ -46,8 +45,8 @@ img {
 }
 
 .responsive-video {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 // Utility Classes
@@ -142,7 +141,6 @@ header {
 .article-content,
 .standard-content {
     p {
-        color: $white-60;
         font-size: 1.0625em;
         letter-spacing: -0.09px;
         line-height: 1.6em;
@@ -158,8 +156,6 @@ header {
         line-height: 1.45em;
         font-size: 1em;
         margin-bottom: 0.4em;
-        color: fade-out($dark, 0.4);
-        color: fade-out($white, 0.2);
     }
 
     ul {
@@ -189,12 +185,14 @@ header {
 
     blockquote {
         padding: 1em;
+        border-left: 1px solid $dark-20;
     }
 }
 
 p u {
-  text-decoration: none;
-  border-bottom: 1px dashed rgba(255,255,255,0.3);
+    text-decoration: none;
+    background-color: lightgoldenrodyellow;
+    font-weight: 500;
 }
 
 .post-link {
@@ -220,7 +218,7 @@ p u {
     .role {
         font-weight: 400;
         font-size: 0.9375em;
-        color: $white-60;
+        color: $dark-60;
         display: block;
     }
 
@@ -229,12 +227,13 @@ p u {
         vertical-align: middle;
         position: relative;
         margin-right: 0.6em;
-        background: url("../../img/av-logo.png") center center no-repeat;
+        background: url("../../img/avatar.jpg") center center no-repeat;
         width: 49px;
         height: 51px;
         background-size: contain;
         margin-left: 0;
         margin-right: 0.6em;
+        border-radius: 100%;
     }
 
     &:before {
@@ -244,10 +243,6 @@ p u {
     a {
         text-decoration: none;
         color: $dark;
-
-        @media (prefers-color-scheme: dark) {
-            color: $white;
-        }
 
         span {
             display: none;
@@ -360,7 +355,6 @@ p u {
 
 .bd-lab {
     padding-top: 2.6em;
-    background: $dark;
     white-space: normal;
     overflow-x: auto;
 
@@ -369,9 +363,6 @@ p u {
     }
 
     header {
-        background: $dark;
-        color: white;
-
         margin-bottom: 5.2em;
     }
 
@@ -405,7 +396,7 @@ p u {
 
     ol {
         margin-top: 4.236em;
-        border-top: 1px solid $white-20;
+        border-top: 1px solid $dark-20;
         padding-top: 1.6em;
 
         li {
@@ -417,6 +408,7 @@ p u {
 
             p {
                 margin: 0 0 0.3em;
+                font-size: 11px;
             }
         }
     }
@@ -441,7 +433,7 @@ p u {
 
     hr {
         margin-top: 0;
-        border-bottom: 1px solid $white-20;
+        border-bottom: 1px solid $dark-20;
     }
 
     .sidebar {
@@ -454,7 +446,7 @@ p u {
 
         hr {
             margin: 2em 0 2em;
-            border-bottom: 1px solid $white-20;
+            border-bottom: 1px solid $dark-20;
 
             &:after {
                 display: none;
@@ -511,14 +503,12 @@ p u {
 
 .bd-bookshelf,
 .bd-lab {
-    background-color: $dark;
-
     .article-header,
     article {
-        color: $white;
+        color: $dark;
 
         .article-content p {
-            color: fade-out($white, 0.4);
+            color: fade-out($dark, 0.4);
 
             max-width: $col-width;
             margin-left: auto;
@@ -552,7 +542,7 @@ img.separator {
     h1 {
         font-size: 1.3125em;
         font-weight: 400;
-        color: $white;
+        color: $dark;
     }
     h2,
     h3,
@@ -567,7 +557,7 @@ img.separator {
     p,
     li {
         line-height: 1.5em;
-        color: $white-60;
+        color: $dark-60;
     }
     ul {
         list-style-type: disc;
@@ -630,7 +620,7 @@ img.separator {
             left: -2em;
             background: linear-gradient(
                 to bottom,
-                $white-20,
+                $dark-20,
                 transparent
             ); /* Gradient background */
             pointer-events: none;
@@ -643,9 +633,13 @@ img.separator {
         h5,
         h6 {
             font-family: $sans;
-            font-weight: 600;
-            font-size: 1.0625em;
+            font-weight: 500;
+            font-size: 0.84375em;
             margin-top: 2em;
+            text-transform: uppercase;
+            max-width: 215px;
+            letter-spacing: 0.36px;
+            color: $red;
         }
 
         table {
@@ -669,7 +663,7 @@ img.separator {
             }
             font-family: $sans;
             font-size: 0.8125em;
-            background: $dark;
+            background: white;
             z-index: 2;
         }
         @media screen and (min-width: 920px) and (min-height: 720px) {
@@ -699,9 +693,9 @@ img.separator {
         }
 
         h1 {
-            font-size: 1.3125em;
-            font-weight: 400;
-            color: $white;
+            font-size: 1em;
+            font-weight: 500;
+            color: $red;
         }
 
         table {
@@ -731,13 +725,17 @@ img.separator {
     }
 
     .article-content {
-        p {
-            color: fade-out($dark, 0.4);
+        p,
+        ul,
+        ol {
+            font-size: 0.84375em;
             &.date {
-                color: $white-40;
             }
-
-            color: fade-out($white, 0.4);
+        }
+        .footnotes {
+            p {
+                font-size: 11.5px;
+            }
         }
     }
 }

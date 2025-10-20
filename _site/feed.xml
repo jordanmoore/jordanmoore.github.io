@@ -4,10 +4,10 @@
     <title>Product Design, Responsive Web Design, UX Design, Belfast Northern Ireland | Jordan Moore</title>
     <description>Product designer, responsive web designer and UX designer in Belfast, Northern Ireland, specialising in user experience and accessible design
 </description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 14 Mar 2025 17:18:01 +0000</pubDate>
-    <lastBuildDate>Fri, 14 Mar 2025 17:18:01 +0000</lastBuildDate>
+    <link>https://jordanm.co.uk/</link>
+    <atom:link href="https://jordanm.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 20 Oct 2025 17:53:00 +0100</pubDate>
+    <lastBuildDate>Mon, 20 Oct 2025 17:53:00 +0100</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -50,10 +50,7 @@
 
 &lt;p&gt;In short: focusing on the breath simply didn’t work for me. It doesn’t help that I’m a ridiculously shallow breather also. What has only recently clicked, and I could be colossally wrong but right in the placebo sense that it seems to work for me, is that &lt;u&gt;this flavour meditation is the practice of moving that ball of attention from being solely anchored on thinking (which can only ever ruminate backwards or project forwards, it can’t do “now”) and move it to anchor that is &lt;em&gt;nowing&lt;/em&gt; like the breath&lt;/u&gt;, or in my case, picking an anchor like the sensation of your hands.&lt;/p&gt;
 
-&lt;video class=&quot;responsive-video&quot; loop=&quot;&quot; autoplay=&quot;&quot; muted=&quot;&quot; playsinline=&quot;&quot;&gt;
-  &lt;source src=&quot;/img/moving-attention.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-  Your browser does not support the video tag.
-&lt;/video&gt;
+&lt;p&gt;&lt;img src=&quot;/img/hands.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;why-move-attention-elsewhere-why-not-stay-in-thought&quot;&gt;Why Move Attention Elsewhere? Why Not Stay in Thought?&lt;/h2&gt;
 
@@ -113,8 +110,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Sat, 22 Feb 2025 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/2025/02/22/moving-attention.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2025/02/22/moving-attention.html</guid>
+        <link>https://jordanm.co.uk/2025/02/22/moving-attention.html</link>
+        <guid isPermaLink="true">https://jordanm.co.uk/2025/02/22/moving-attention.html</guid>
         
         
       </item>
@@ -143,7 +140,7 @@
 
 &lt;p&gt;Then I wanted to share the map AND the texture pack with the world which meant that I needed to build my first website. Thankfully, the early web had Geocities - the tool that launched a million careers in the industry. I had no idea what I was doing at the time (which is still true in what I do today), and I had no idea that there was even a career path in making web things with digital tools.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/img/stair.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/skater.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Many people talk about how the Pro Skater series created paradigm shifts in terms of openness to different music genres, which it did for me too, but my shift looked like discovering an entirely new hobby, building upon new web design skills through tutorial sites like &lt;a href=&quot;https://web.archive.org/web/20010210135632/http://www.pinoy7.com/psptutorials/pipe-joints.htm&quot;&gt;Pinoy7&lt;/a&gt;&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; to try and replicate a lot of the wonderfully overly-skeuomorphic interfaces of the time period.&lt;/p&gt;
 
@@ -200,8 +197,7 @@ Like Alcatraz, it’s another overlooked real-world level. New York is 3 levels 
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;Venice Beach: THPS 2&lt;/strong&gt; —
-I know my list is a little heavy on Pro Skater 2 levels, but I simply can’t leave Venice Beach off this list. It leans slightly more towards street skate styles in a map that has vert areas dotted around the perimiter, but as far as levels with a distinct visual identity go, Venice Beach is very memorable.
-&lt;img src=&quot;/img/ollie.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+I know my list is a little heavy on Pro Skater 2 levels, but I simply can’t leave Venice Beach off this list. It leans slightly more towards street skate styles in a map that has vert areas dotted around the perimiter, but as far as levels with a distinct visual identity go, Venice Beach is very memorable.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;College: THPS 4&lt;/strong&gt; —
@@ -230,8 +226,8 @@ Even though this suffers all of the afforementioned problems with downhill level
 &lt;/div&gt;
 </description>
         <pubDate>Wed, 26 Jun 2024 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2024/06/26/the-park-editor-made-me-do-it.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2024/06/26/the-park-editor-made-me-do-it.html</guid>
+        <link>https://jordanm.co.uk/2024/06/26/the-park-editor-made-me-do-it.html</link>
+        <guid isPermaLink="true">https://jordanm.co.uk/2024/06/26/the-park-editor-made-me-do-it.html</guid>
         
         
       </item>
@@ -303,8 +299,8 @@ Even though this suffers all of the afforementioned problems with downhill level
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 30 May 2024 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2024/05/30/digital-minimalism.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2024/05/30/digital-minimalism.html</guid>
+        <link>https://jordanm.co.uk/2024/05/30/digital-minimalism.html</link>
+        <guid isPermaLink="true">https://jordanm.co.uk/2024/05/30/digital-minimalism.html</guid>
         
         
       </item>
@@ -338,8 +334,6 @@ Even though this suffers all of the afforementioned problems with downhill level
 &lt;p&gt;The Dead Internet Theory thread goes on to make a number of claims, some seemingly outlandish and difficult to verify, some unmistakably true such as the claim that bots are generating more conversations and generating more content on social networks than humans than we realise. Elon Musk’s public sounding of the alarm bell/attempt to back out of the Twitter deal/attempt to drive down the value of the Twitter deal, or some combination of all 3 came to mind when reading through the theory.&lt;/p&gt;
 
 &lt;p&gt;As it turns out, bots account for 5% of Twitter users&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;, which doesn’t sound too scary until you read that they account for 21%-29% of the content on the platform. Close to a third of the content isn’t made by humans.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/mask.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;“Ah but that’s just a problem with Twitter” you might say, to which I was shocked to hear that the problem is worse outside of Twitter’s walled garden - 64% of all internet traffic is bots&lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. Or to put it another way, humans are the minority on the web.&lt;/p&gt;
 
@@ -408,8 +402,8 @@ Even though this suffers all of the afforementioned problems with downhill level
 &lt;/div&gt;
 </description>
         <pubDate>Sat, 25 Feb 2023 23:00:00 +0000</pubDate>
-        <link>http://localhost:4000/2023/02/25/the-illusory-internet.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2023/02/25/the-illusory-internet.html</guid>
+        <link>https://jordanm.co.uk/2023/02/25/the-illusory-internet.html</link>
+        <guid isPermaLink="true">https://jordanm.co.uk/2023/02/25/the-illusory-internet.html</guid>
         
         
       </item>
@@ -466,8 +460,8 @@ The student returned to the next class looking shellshocked as she handed in a f
 &lt;p&gt;I have come to learn over time that most of the art of staying in creative flow is just getting obstacles out of the way to let the process unfold on its own. Robert M. Pirsig has provided us with an incredibly effective tool for not only removing these obstacles, but one that also has the added benefit of opening up new ways of thinking and looking at things deeply in the abyss with the intention of bringing new value and insights up to the surface.&lt;/p&gt;
 </description>
         <pubDate>Tue, 14 Feb 2023 23:00:00 +0000</pubDate>
-        <link>http://localhost:4000/2023/02/14/how-to-dismantle-a-creative-wall.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2023/02/14/how-to-dismantle-a-creative-wall.html</guid>
+        <link>https://jordanm.co.uk/2023/02/14/how-to-dismantle-a-creative-wall.html</link>
+        <guid isPermaLink="true">https://jordanm.co.uk/2023/02/14/how-to-dismantle-a-creative-wall.html</guid>
         
         
       </item>
@@ -565,8 +559,8 @@ The student returned to the next class looking shellshocked as she handed in a f
 &lt;p&gt;I have also started to become comfortable with the idea that “it’ll never work” is a good indication that I’m on the right track towards creating new value. “It’ll never work” simply means that it doesn’t exist (yet) and you’re firmly in working backwards from magic territory. Your possibility space is infinitely bigger.&lt;/p&gt;
 </description>
         <pubDate>Mon, 19 Sep 2022 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/2022/09/19/working-backwards-from-magic.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2022/09/19/working-backwards-from-magic.html</guid>
+        <link>https://jordanm.co.uk/2022/09/19/working-backwards-from-magic.html</link>
+        <guid isPermaLink="true">https://jordanm.co.uk/2022/09/19/working-backwards-from-magic.html</guid>
         
         
       </item>
@@ -705,17 +699,15 @@ The student returned to the next class looking shellshocked as she handed in a f
 &lt;/div&gt;
 </description>
         <pubDate>Fri, 07 Feb 2020 00:00:01 +0000</pubDate>
-        <link>http://localhost:4000/2020/02/07/intentional-and-emergent-design-systems-ii-copy.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2020/02/07/intentional-and-emergent-design-systems-ii-copy.html</guid>
+        <link>https://jordanm.co.uk/2020/02/07/intentional-and-emergent-design-systems-ii-copy.html</link>
+        <guid isPermaLink="true">https://jordanm.co.uk/2020/02/07/intentional-and-emergent-design-systems-ii-copy.html</guid>
         
         
       </item>
     
       <item>
         <title>Intentional and Emergent Design Systems</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/intentional-1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;There are two competing approaches in designing design systems. I’m going to call these approaches intentional design systems and emergent design systems to create a clear distinction between both.&lt;/p&gt;
+        <description>&lt;p&gt;There are two competing approaches in designing design systems. I’m going to call these approaches intentional design systems and emergent design systems to create a clear distinction between both.&lt;/p&gt;
 
 &lt;h3 id=&quot;an-intentional-design-system&quot;&gt;An intentional design system&lt;/h3&gt;
 
@@ -724,7 +716,7 @@ The student returned to the next class looking shellshocked as she handed in a f
 &lt;p&gt;I have a few concerns with this way of working with design systems. Front-loading design and/or build with the pieces you believe you’ll eventually need to arrive at a solution creates a limited set of outcomes. Any attempt to create more pieces in anticipation of generating a greater number of outcomes results in conjectural bloat – a cost offset to the user paid for in unnecessary data and time.&lt;/p&gt;
 
 &lt;!-- &lt;figure&gt;
-    &lt;img src=&quot;http://localhost:4000/img/intentionalds.jpg&quot;&gt;
+    &lt;img src=&quot;https://jordanm.co.uk/img/intentionalds.jpg&quot;&gt;
     &lt;figcaption&gt;Simplified flow of an intentional design system (building blocks first)&lt;/figcaption&gt;
 &lt;/figure&gt; --&gt;
 
@@ -737,7 +729,7 @@ The student returned to the next class looking shellshocked as she handed in a f
 &lt;p&gt;This approach is much closer to the user needs end of the scale by beginning with creative solutions before deriving patterns and systems (i.e the system emerges from real, coded scenarios).&lt;/p&gt;
 
 &lt;!-- &lt;figure&gt;
-    &lt;img src=&quot;http://localhost:4000/img/emergentds.jpg&quot;&gt;
+    &lt;img src=&quot;https://jordanm.co.uk/img/emergentds.jpg&quot;&gt;
     &lt;figcaption&gt;Simplified flow of an emergent design system (solution first, derive systems)&lt;/figcaption&gt;
 &lt;/figure&gt; --&gt;
 
@@ -748,17 +740,15 @@ The student returned to the next class looking shellshocked as she handed in a f
 &lt;p&gt;Waiting for systems to emerge, through a continuous process of building and deconstructing, goes some way towards remedying the assumptions of the alternative technique.&lt;/p&gt;
 </description>
         <pubDate>Tue, 30 Jul 2019 01:00:01 +0100</pubDate>
-        <link>http://localhost:4000/2019/07/30/intentional-and-emergent-design-systems.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/07/30/intentional-and-emergent-design-systems.html</guid>
+        <link>https://jordanm.co.uk/2019/07/30/intentional-and-emergent-design-systems.html</link>
+        <guid isPermaLink="true">https://jordanm.co.uk/2019/07/30/intentional-and-emergent-design-systems.html</guid>
         
         
       </item>
     
       <item>
         <title>Idea Friction</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/idea-friction.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;span class=&quot;small-caps&quot;&gt;Noun&lt;/span&gt; &lt;em&gt;The time between idea cogitation in the mind to manifestation in a sharable form.&lt;/em&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;span class=&quot;small-caps&quot;&gt;Noun&lt;/span&gt; &lt;em&gt;The time between idea cogitation in the mind to manifestation in a sharable form.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;One of the biggest challenges in any creative endeavour is manifesting ideas as close to the speed they form in the mind as possible. Ideas tend to have a half-life in that the longer we hold on to them without expressing or capturing them, the more fragmented they become from the original concept.&lt;/p&gt;
 
@@ -771,15 +761,15 @@ The student returned to the next class looking shellshocked as she handed in a f
 &lt;p&gt;It is therefore desirable where possible to reduce idea friction by shortening the time between idea conception internally and manifestation externally so ideas can be captured and acted upon.&lt;/p&gt;
 </description>
         <pubDate>Sat, 13 Apr 2019 01:00:01 +0100</pubDate>
-        <link>http://localhost:4000/2019/04/13/idea-friction.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/04/13/idea-friction.html</guid>
+        <link>https://jordanm.co.uk/2019/04/13/idea-friction.html</link>
+        <guid isPermaLink="true">https://jordanm.co.uk/2019/04/13/idea-friction.html</guid>
         
         
       </item>
     
       <item>
         <title>Experience Gaps</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/experience-gaps.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;/img/experience-gaps.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I hold a special place in my heart for Pearl Jam’s Yield album, released in 1998. It’s a remarkable album, easily overlooked. At first glance, the cover is pretty forgettable and not unlike something you would find scrolling through Unsplash, searching for the word ‘road’. Yet I’ve heard fellow fans gushing about how the yield sign in the middle of a road that has no junction to yield to and no traffic to give way to is actually a message saying to just yield to experience and let go.&lt;/p&gt;
 
@@ -803,8 +793,6 @@ The student returned to the next class looking shellshocked as she handed in a f
 
 &lt;p&gt;In some sense, record collections were regarded as an extension of ourselves.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/img/experience-gaps-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
 &lt;p&gt;Digital streaming favours speed over the old process, which was accidentally meditative in that it was slow and it coerced you into being present in the experience. Perhaps digital is also hampered by the limitations of the screen eliminating the other senses that played supporting roles in this experience, such as touch and smell. As a result, streaming music feels shallow, a little like 360° panoramic photos of a landmark. It looks great for a moment, the novelty of the technology excites you for a moment, but you’re not really there.&lt;/p&gt;
 
 &lt;h3 id=&quot;new-adventures-in-wi-fi&quot;&gt;New adventures in Wi-Fi&lt;/h3&gt;
@@ -822,8 +810,8 @@ The student returned to the next class looking shellshocked as she handed in a f
 &lt;p&gt;&lt;em&gt;Originally published in &lt;a href=&quot;https://newadventuresconf.com/2019/fringe/publication/&quot;&gt;New Adventures Paper 2019&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 20 Feb 2019 00:00:01 +0000</pubDate>
-        <link>http://localhost:4000/2019/02/20/experience-gaps.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/02/20/experience-gaps.html</guid>
+        <link>https://jordanm.co.uk/2019/02/20/experience-gaps.html</link>
+        <guid isPermaLink="true">https://jordanm.co.uk/2019/02/20/experience-gaps.html</guid>
         
         
       </item>

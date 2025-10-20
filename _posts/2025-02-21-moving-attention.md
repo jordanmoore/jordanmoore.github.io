@@ -32,20 +32,17 @@ My initial misunderstanding of attention came partly from the literature on medi
 
 Meditation[^2] is, in essence, the act of **unsticking attention**. For years, I wondered what was meant by “watching the breath” and why that seemed like a good thing to do, because whenever I followed this instruction, I would go into “manual breathing mode” and then the ball of attention would snap back up to thinking, or bounce between being in my chest where breathing was happening, then back up to thinking in a thought loop of:
 
-- Shit. I’m manually breathing, go back to focusing on the breath you fool 
+- Shit. I’m manually breathing, go back to focusing on the breath you fool
 - wait, we’re thinking aren’t we? But thinking isn’t bad, just acknowledge it, don’t judge&hellip;
 - wait, still thinking, go back to manual breathing. Oh, why isn’t this automatic?
 
 In short: focusing on the breath simply didn’t work for me. It doesn’t help that I'm a ridiculously shallow breather also. What has only recently clicked, and I could be colossally wrong but right in the placebo sense that it seems to work for me, is that <u>this flavour meditation is the practice of moving that ball of attention from being solely anchored on thinking (which can only ever ruminate backwards or project forwards, it can’t do “now”) and move it to anchor that is <em>nowing</em> like the breath</u>, or in my case, picking an anchor like the sensation of your hands.
 
-<video class="responsive-video" loop autoplay muted playsinline>
-  <source src="/img/moving-attention.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![](/img/hands.png)
 
 ## Why Move Attention Elsewhere? Why Not Stay in Thought?
 
-If thought is happening now, why can't thought be an object of attention? It seems like this would work if you could chose the *mechanics of thinking itself*, if there was a sensation like the rising and falling of the chest or the buzzing of blood pumping through the hands but for thinking. But there isn't. Just the contents of thought which can't do now. Only past events (even thoughts like “I'm manually breathing” is behind the beat of now) and future events. 
+If thought is happening now, why can't thought be an object of attention? It seems like this would work if you could chose the *mechanics of thinking itself*, if there was a sensation like the rising and falling of the chest or the buzzing of blood pumping through the hands but for thinking. But there isn't. Just the contents of thought which can't do now. Only past events (even thoughts like “I'm manually breathing” is behind the beat of now) and future events.
 
 Moving attention to the breath or bodily sensations offers direct access to now. They exist purely in the present moment *because they are nowing*. Now appears to be the default mode that we were supposed to be abiding in before language started on its own evolutionary path, not unlike technology, where it continues to accumulate more and more labels for things which takes us further from the thing *itself*.
 

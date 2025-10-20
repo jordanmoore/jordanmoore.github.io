@@ -31,8 +31,6 @@ The Dead Internet Theory thread goes on to make a number of claims, some seeming
 
 As it turns out, bots account for 5% of Twitter users[^2], which doesn't sound too scary until you read that they account for 21%-29% of the content on the platform. Close to a third of the content isn’t made by humans.
 
-![](/img/mask.png)
-
 “Ah but that’s just a problem with Twitter” you might say, to which I was shocked to hear that the problem is worse outside of Twitter’s walled garden - 64% of all internet traffic is bots[^3]. Or to put it another way, humans are the minority on the web.
 
 ## ⌘+C, ⌘+V Opinions

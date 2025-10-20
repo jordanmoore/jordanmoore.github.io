@@ -8,7 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://jordanm.co.uk"
 github: [metadata]
 twitter_username: jordanmoore
-github_username:  jordanmoore
+github_username: jordanmoore
 paginate: 10
 exclude: [node_modules]
 gems:
@@ -21,5 +21,5 @@ gems:
 # Build settings
 markdown: kramdown
 sass:
-  sass_dir: css  # Directory for Sass partials
-  style: compressed  # Output style: nested, expanded, compact, compressed
+  sass_dir: css # Directory for Sass partials
+  style: compressed # Output style: nested, expanded, compact, compressed

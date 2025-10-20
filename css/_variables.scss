@@ -1,13 +1,23 @@
 // Variables
-$dark: #000;
+$dark: #010101;
 $white: rgba(255, 255, 255, 1);
 $white-60: rgba(255, 255, 255, 0.6);
 $white-40: rgba(255, 255, 255, 0.4);
 $white-20: rgba(255, 255, 255, 0.2);
 $white-10: rgba(255, 255, 255, 0.1);
+$dark-60: rgba(0, 0, 0, 0.6);
+$dark-40: rgba(0, 0, 0, 0.4);
+$dark-20: rgba(0, 0, 0, 0.2);
+$dark-10: rgba(0, 0, 0, 0.1);
 $grey: #828386;
-$red: #EF0300;
-$dark-red: #B80C09;
+$red: #ef0300;
+$dark-red: #b80c09;
 $serif: "Source Serif 4", serif;
-$sans: "Inter var", "SF Pro Display", -apple-system, BlinkMacSystemFont, "myriad-pro", sans-serif;
+$sans:
+    "Inter var",
+    "SF Pro Display",
+    -apple-system,
+    BlinkMacSystemFont,
+    "myriad-pro",
+    sans-serif;
 $col-width: 528px;

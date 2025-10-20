@@ -6,7 +6,7 @@ date: '2019-02-20T00:00:01+00:00'
 
 ---
 
-![](/img/experience-gaps.png)
+![](/img/experience-gaps.jpg)
 
 I hold a special place in my heart for Pearl Jam’s Yield album, released in 1998. It’s a remarkable album, easily overlooked. At first glance, the cover is pretty forgettable and not unlike something you would find scrolling through Unsplash, searching for the word ‘road’. Yet I’ve heard fellow fans gushing about how the yield sign in the middle of a road that has no junction to yield to and no traffic to give way to is actually a message saying to just yield to experience and let go.
 
@@ -27,8 +27,6 @@ In today’s digitally transformed music industry with streaming on demand, Yiel
 > [...] covers are part of a whole regime of organizing information and space that is now in danger of disappearing. While the design of libraries and bookstores prioritizes the coherent visual display of book covers and spines so that people can navigate collections and find the singular physical objects the covers signify, the endlessly rewritable surface of the screen dispenses with that arrangement.
 
 In some sense, record collections were regarded as an extension of ourselves.
-
-![](/img/experience-gaps-2.png)
 
 Digital streaming favours speed over the old process, which was accidentally meditative in that it was slow and it coerced you into being present in the experience. Perhaps digital is also hampered by the limitations of the screen eliminating the other senses that played supporting roles in this experience, such as touch and smell. As a result, streaming music feels shallow, a little like 360° panoramic photos of a landmark. It looks great for a moment, the novelty of the technology excites you for a moment, but you’re not really there.
 
