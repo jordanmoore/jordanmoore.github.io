@@ -5,13 +5,13 @@ date: '2022-09-19T00:00:00+01:00'
 
 ---
 
-![](/img/wbfm.png)
-
 I have wanted to write about working backwards from magic for quite a while now, partially from a place of laying claim to the idea as [some smart minds are taking note of the idea](https://twitter.com/jordanmoore/status/1480897225333133317?s=20&t=Gtc62GVa9EhQ302FHzA0LA), but I didn’t want to rush out a half-baked take on a concept that I truly believe has the power to change the world.
 
 My ego temporarily entertained the idea of writing a book about the concept, however, even though I believe that working backwards from magic is an extremely powerful approach to creative problem-solving, it would be disingenuous to package a relatively simple idea with 200+ pages of padding to make a quick buck in the self-help/productivity niche. The concept really doesn't need that much unpacking, it's almost laughably simple and it has the capacity (at least in my experience) to make conventional approaches to problem-solving look ridiculously convoluted by comparison.
 
 I feel that as an industry (and I’d perhaps extend this towards society as a whole) that we are sleepwalking into a level of comfort where big, bold, radical thinking has made way for safe, tried and tested systems and processes that produce reliably similar results and more of what the world already has. The industry seems as though it is short on new ideas and bravery, and big on conventional thinking and mass-producing more of the same. It's tilting towards anti-progress. Working backwards from magic is the pushback against this mode of thinking.
+
+![](/img/wbfm.png)
 
 ## What is Working Backwards from Magic?
 
