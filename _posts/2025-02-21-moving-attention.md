@@ -4,9 +4,9 @@ title: Moving Attention and the Effortless Ease of Childhood Being
 date: '2025-02-22T01:00:00+01:00'
 ---
 
-![](/img/lines.png)
-
 I need to be upfront about a couple of things: the first is that [Michael Smith’s thread on Letting Go](https://x.com/Morphenius/status/1862836057278206400) left such a huge impression on me in terms of being able to throw words around something unwordable which, in turn, made it more accessible to people and inspired me to do something similar and adjacent. The second is that, after years and years of on/off practicing meditation and reading Eastern philosophy, <u>I think that I’ve been going in the wrong direction due to a series of misunderstandings that I want to talk about here because it might be helpful for people similarly confused as to the utility of a lot of this stuff</u>.
+
+![](/img/koi.png)
 
 ## What do they mean by “Attention”?
 
