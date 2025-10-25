@@ -2,7 +2,7 @@
 layout: post
 title: Industry Fatigue
 date: '2018-07-20T00:00:01+00:00'
-
+hidden: true
 
 ---
 

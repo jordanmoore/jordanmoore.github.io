@@ -2,7 +2,7 @@
 layout: post
 title: Unpacking Design Problems
 date: '2018-09-11T00:00:01+00:00'
-
+hidden: true
 
 ---
 
@@ -49,7 +49,7 @@ Some good starting points for exploratory questioning are:
 * Who does this well?
 * What question did I not ask that would be valuable to know?
 
-Feel free to use why liberally. Why is like a jackhammer for drilling through a problem’s layers. Why is flexible enough to get to the basic fundamentals (see: first principles), but can also be used to dig deeper into the problem you’re facing.  
+Feel free to use why liberally. Why is like a jackhammer for drilling through a problem’s layers. Why is flexible enough to get to the basic fundamentals (see: first principles), but can also be used to dig deeper into the problem you’re facing.
 
 Sometimes, the best follow-up question is no question at all. A tactical silence can encourage your client to fill in the gap and reveal additional knowledge that might have otherwise been overlooked.
 

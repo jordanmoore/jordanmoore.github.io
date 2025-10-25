@@ -3,14 +3,14 @@ layout: post
 title: Design Laws in Nature
 date: '2018-07-30T00:00:01+00:00'
 
-
 ---
 
-![](/img/design-laws.png)
 
 Living in Ireland I have become accustomed to rain as our weather system's default setting. Umbrellas are dispensable in the Moore family as wind and rain have proved too worthy an opponent for many a shelter device across varying price brackets. When Managing Director of Their Capital, [Eric Weinstein, spoke to Tim Ferris](https://tim.blog/2016/01/13/eric-weinstein/) about the lack of innovation in umbrella design, hinting that the answer might be in Origami or perhaps nature, my interest piqued and sent me down a rabbit hole.
 
 The rabbit hole confirmed my suspicions that we borrow from nature all the time, particularly in physical product design. The borrowing is often conscious, and sometimes we arrive at the same conclusions for problems that nature has been resolving over vast periods of time. Initially, I took Eric's challenge on as a thought experiment, and like any good thought experiment, I got lost down an avenue leading to ideas beyond the original scope - even completely separate to the original problem. Distractions like this excite me. I enjoy seeing how deep the rabbit hole goes particularly when the journey is peppered with little epiphanies along the way - a process I call "mining for truths" much to the groans of anyone around me when I verbalise this process.
+
+![](/img/design-laws.png)
 
 ## Evolution: nature’s R&D department
 
@@ -35,15 +35,13 @@ Examples of biomimicry in mechanics include the Shinkansen Bullet Train, the wor
 > "This shape has enabled the new 500-series to reduce air pressure by 30% and electricity use by 15%, even though speeds have increased by 10% over the former series. Another benefit has been confirmed through a favourable reputation among customers that these trains give a comfortable ride. This is due to the fact that changes in pressure when the trains enter tunnels are smaller."
 (Kobayashi: 2005)
 
-![](/img/design-laws-2.png)
-
 NASA has several biomimicry projects in development including bio-inspired exercise equipment helping astronauts maintain fitness during spaceflight, solar propulsion mechanisms and glider technology inspired by a seagull's wingspan that saves on the need for continuous thrust and fuel costs.
 
 Beyond physical features, certain characteristics of digital systems can be found in nature. The internet bears striking similarities with fungal bio-systems in regards to how they pass information and exchange nutrients[^3]. It isn't clear whether the nature of the web was a result of learning from nature itself, or a case of humans and nature reaching the same conclusion, or a complete coincidence, but noteworthy nonetheless that there are potentially many metaphors we can call upon from 3.8 billion years of evolution.
 
 ## What can we learn from it in digital product design?
 
-Here’s the kicker: digital design virtually rules out all physical aspects of lessons from nature. The adaptability of our screens in being able to display images, text, art, film, games - that open range of uses is its downfall when looking for like clues in nature. Where does nature project images onto a surface as a means of guiding a subject? We could point towards the fact that birds can visualise elements of the earth’s magnetic fields to aid migration flight paths, or that bats and dolphins make use of sonar to sense the environment around them as wayfinding techniques, but that’s not going to be any useful model for a human in any sort of meaningful way.   
+Here’s the kicker: digital design virtually rules out all physical aspects of lessons from nature. The adaptability of our screens in being able to display images, text, art, film, games - that open range of uses is its downfall when looking for like clues in nature. Where does nature project images onto a surface as a means of guiding a subject? We could point towards the fact that birds can visualise elements of the earth’s magnetic fields to aid migration flight paths, or that bats and dolphins make use of sonar to sense the environment around them as wayfinding techniques, but that’s not going to be any useful model for a human in any sort of meaningful way.
 
 In addition to that, I think we've been down the skeuomorphic route before in regards to the affordance of digital things where past visual cues inform the use of interface elements within new contexts. Maybe we threw the baby out with the bathwater on that one. Ditching skeuomorphism for a flatter, "purer", native digital user interfaces seems more like a stylistic decision rather than one that is overly beneficial considering we've torn out a massive but hard to quantify familiarity and meaning piece between user and interface. Nature didn't have a major role to play in such interfaces, even though I would have liked to explore how certain instincts such as fire = burn, snake = fear and prickly surfaces = stingy. Then there is a measuring exercise in seeing how effective these visual cues are over time when the suggested texture doesn't provide the expected touch feedback as all current touchscreen glass produces the same feeling. If texture's function in nature is to provide useful function, it certainly doesn't have any functional application in digital products beyond visual cues.
 
@@ -77,7 +75,7 @@ Tim's talk had such a profound effect on my work that I threw out my old methods
 
 Back to traditional art for a moment. One of my favourite paintings is Salvador Dali’s 1955 piece The Sacrament of the Last Supper. It is by far the lesser known of the two famous Last Supper paintings, and like Da Vinci's, Dali unapologetically employs the Golden Ratio in the altar that dominates the centrepiece of this remarkable union of religious imagery and surrealism. Here Dali had a reproducible algorithm for beauty, harnessed from nature, communicated back through his medium, the canvas, stirring the soul through the eyes of the viewer.
 
-<img src="/img/separator-2.png" alt="" class="separator" />
+![](/img/paul.png)
 
 ## Constellation
 
