@@ -205,6 +205,9 @@ p u {
     font-family: $sans;
     display: flex;
     align-items: center;
+    @media screen and (min-width: 792px) {
+        margin-left: 1em;
+    }
     div {
         position: relative;
         top: 2px;
