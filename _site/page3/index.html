@@ -52,6 +52,70 @@
           
               <article>  
                 <div class="article-content">
+                  <a class="post-link" href="/2014/07/10/emmets-hidden-power-features.html"><h1 class="article-header">Emmet's hidden power features</h1></a>
+                  <p class="date"><time>
+                      
+                      July
+                      10th,
+                      2014
+                    </time></p>
+                  <p><a href="http://emmet.io/">Emmet</a> (formerly known as Zen Coding) is a plugin for text editors helping you create CSS and HTML faster by using abbreviations to write common values saving ridiculous amounts of time along the way.</p>
+
+<p>There are heaps of really useful features alongside Emmet&#8217;s primary text-expanding function. Here are a few of the hidden gems that I frequently use when coding<sup id="fnref:p91335536701-1"><a href="#fn:p91335536701-1" rel="footnote">1</a></sup>.</p>
+
+<h2>Inline Calculation</h2>
+
+<p>Emmet has a built-in calculator which allows you to solve equations directly in your code. I use this daily to solve EM values in CSS, particularly for nested EM values simply by pressing<sup id="fnref:p91335536701-2"><a href="#fn:p91335536701-2" rel="footnote">2</a></sup><kbd>Cmd</kbd> <kbd>Shift</kbd> <kbd>Y</kbd> beside an equation like: 24/16 (desired pixel value/base pixel value).</p>
+
+<p>You can also chain this with abbreviations, so typing: <code>mb24/16</code> and pressing <kbd>Cmd</kbd> <kbd>Shift</kbd> <kbd>Y</kbd> then <kbd>tab</kbd> would output: <code>margin-bottom: 1.5em</code>.</p>
+
+<h2>Jump to Matching Pair</h2>
+
+<p>Sometimes when coding HTML I might find a closing tag and it&#8217;s not always quick and easy to trace back to where the opening tag exists. Pressing <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>T</kbd> when the cursor is in the closing (or opening) tag jumps to the opening (or closing) tag pair.</p>
+
+<h2>Code comments</h2>
+
+<p>To prevent running into the situation in the previous tip, I recommend placing comments beside your closing tags. But writing the class name of the element for a second time and wrapping it in comments can take up time, and it&#8217;s extra effort that won&#8217;t be beneficial until you run into scenarios where you need to revisit that code, so it&#8217;s often forgotten about or left out completely.</p>
+
+<p>Thankfully Emmet makes it easier to write comments beneath closing tags by adding a tiny snippet to the end of an abbreviation. Typing: <code>.container&gt;ul&gt;li*5&gt;a|c</code> expands to:</p>
+
+<pre><code>&lt;div class="container"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;!-- /.container --&gt;</code></pre>
+
+<p>So writing comments where elements close is as easy as writing <code>|c</code>.</p>
+
+<h2>Convert image to Data URI</h2>
+
+<p>One of the most underused features of Emmet is it&#8217;s built-in ability to convert images to data:URI schemes. Using a data:URI instead of linking to an external image saves an extra HTTP request which ultimately improves the performance of your site by reducing latency.</p>
+
+<p>To convert an image to a data:URI, place your cursor in the image tag and press <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>D</kbd>.</p>
+
+<hr><p>Emmet can be as powerful as you want it to be. It&#8217;s worth using for its text-expansion capabilities alone saving huge amounts of coding time, but beyond that lies a very powerful suite of development tools.</p>
+
+<div class="footnotes">
+<hr><ol><li id="fn:p91335536701-1">
+<p>This article assumes you are familiar with Emmet. If you haven&#8217;t tried it out yet <a href="http://emmet.io/">you absolutely must</a>. <a href="#fnref:p91335536701-1" rev="footnote">↩</a></p>
+</li>
+
+<li id="fn:p91335536701-2">
+<p>The keyboard shortcuts shown here work for my Mac installation of Sublime Text and Emmet. From what I can tell they may differ between installations, Windows installs will obviously have different shortcuts too. Bring up the Go To Anything menu and start typing the name of the command you wish to use to see the shortcut key. <a href="#fnref:p91335536701-2" rev="footnote">↩</a></p>
+</li>
+
+</ol></div>
+
+                </div>
+              </article>
+          
+              <article>  
+                <div class="article-content">
                   <a class="post-link" href="/2013/12/19/view-full-site-the-worst-anti-pattern.html"><h1 class="article-header">View full site - the worst anti-pattern</h1></a>
                   <p class="date"><time>
                       
@@ -603,44 +667,6 @@ flex-direction: column;
 </li>
 
 </ol></div>
-
-                </div>
-              </article>
-          
-              <article>  
-                <div class="article-content">
-                  <a class="post-link" href="/2013/03/02/responding-to-language.html"><h1 class="article-header">Responding to Language</h1></a>
-                  <p class="date"><time>
-                      
-                      March
-                      2nd,
-                      2013
-                    </time></p>
-                  <p>Recently Vasilis van Gemert authored a very useful article on Smashing Magazine about <a href="http://www.smashingmagazine.com/2013/03/01/logical-breakpoints-responsive-design/">Logical Breakpoints For Your Responsive Design</a>. The article touches on how it you could theoretically produce different reading lengths and breakpoints for different languages. To support this idea Vasilis introduces an insightful little tool showing how the contrasting word length between different languages influences reading length.</p>
-
-<p><img src="http://static.tumblr.com/jdwzxqr/bx5mj0xoa/screen_shot_2013-03-02_at_08.16.28.png" alt="Cropped screenshot of The International Measure Slider"/></p>
-
-<p>This tool is worth bookmarking if you are designing multi-lingual layouts. You can take it a step further by <strong>responding to the user’s language using CSS</strong>.</p>
-
-<p>The language of an HTML document is defined by the ‘lang’ attribute in the ‘&lt;html&gt;’ tag at the root of the document. This gives us a hook that we can use in CSS to apply globally to the document.</p>
-
-<p>Imagine a scenario where we had a blog that has a language switcher between English and German. Generally German words are longer than English so we might want to set the reading length on the German version of our article to a slightly wider value.</p>
-
-<p>The CSS might look something like this:</p>
-
-<pre><code>article {
-   max-width:33em;
-}
-:lang(de) article {
-  max-width:40em;
-}
-</code></pre>
-
-<p>As soon as the ‘lang’ attribute is changed from the default ‘en’ to ‘de’ (through a mechanism like a language select dropdown) the width of the ‘&lt;article&gt;’ changes to a wider reading length making a (potentially) easier read for our German readers.</p>
-
-<p>You could extend this technique to tweak the rest of the layout to adapt to the changing line-length. The fact that the language attribute is at the root of the document makes for a nice and clean base to apply global rules that respond to different languages.</p>
-
-<p><a href="http://static.tumblr.com/jdwzxqr/u82moh7s5/language.jpg" class="cover" data-credit="© alangrlane" data-link="http://www.flickr.com/photos/53914298@N07"></a></p>
 
                 </div>
               </article>
