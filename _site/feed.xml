@@ -6,9 +6,54 @@
 </description>
     <link>https://jordanm.co.uk/</link>
     <atom:link href="https://jordanm.co.uk/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 May 2026 16:18:36 +0100</pubDate>
-    <lastBuildDate>Thu, 21 May 2026 16:18:36 +0100</lastBuildDate>
+    <pubDate>Fri, 12 Jun 2026 17:00:48 +0100</pubDate>
+    <lastBuildDate>Fri, 12 Jun 2026 17:00:48 +0100</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>Loops and Where Creativity Goes Next</title>
+        <description>&lt;p&gt;Every new AI model upgrade seems to be accompanied by a general sense of amazement and unease. You get the inevitable flooding of social feeds with increasingly compelling “one-shots” that leave an unsettling pang of this incredible technology eating into what you do for a living, which - not to be too dramatic - feels like a significant part of our identity.&lt;/p&gt;
+
+&lt;p&gt;We’ve probably all asked ourselves some form of a question like “what do I do when AI can do everything I do?” Especially considering that there are fewer and fewer corners of what we do to retreat to when this technology becomes more and more capable, and doesn’t require 8+ hours of sleep every night, and isn’t as distracted by the snacks drawer… mmm.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/mfa.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Anyway, it was a regular Wednesday when I loaded up my “1001 Albums You Must Hear Before You Die” daily challenge and it was one I had heard a few things about but never properly listened through - the definitive ambient music album: Brian Eno’s Music For Airports. It was a nice listen. Good background music for my usual rummage around Wikipedia to learn more about the album of the day. I was reading through the facts about how the album was made and I couldn’t help but notice that Eno, in 1978, made a move that I feel maps the direction and purpose of creative work in this current unmapped era of creativity.&lt;/p&gt;
+
+&lt;p&gt;I want to reassure you at this point, I’m not making some contrived historical reference to introduce the main idea like every business book ever written, this is actually useful and actually applicable. When making this album, Brian Eno’s studio would have looked like a network of tape loops. Long stretches of tape running between spindles at defined intervals. Each reel contained an idea - one loop might contain a single piano note, another might contain a vocal sustaining a note, and they would all repeat continuously along these different intervals due to how far the reel was stretched across the room. Eno recorded the results.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I just set all of these loops running and let them configure in whichever way they wanted to, and in fact the result is very, very nice. The interesting thing is that it doesn’t sound at all mechanical or mathematical as you would imagine. It sounds like some guy is sitting there playing the piano with quite intense feeling. The spacing and dynamics of “his” playing sound very well organized. That was an example of hardly interfering at all.&lt;/p&gt;
+
+  &lt;p&gt;— Brian Eno on the making of Music for Airports&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This became what was later labelled “generative music”. The systems and conditions that Eno put in place “made” the album. Rather than playing the individual instruments himself at the time of recording, the tape loops simply played and the music organised itself. Quite a remarkable process for its time, but what really grabbed my attention was how people reacted to the music. Eno spoke about this with Rick Rubin on the Broken Record podcast.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;…people listen to (the music) and think, “oh, that’s nice. How did you do that?” When you tell them, they’re inevitably disappointed because they thought it was a moment of artistic inspiration. And I say “it was, it just happened somewhere else further back along the line.”&lt;/p&gt;
+
+  &lt;p&gt;— Brian Eno on the Broken Record Podcast&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The idea that the creativity “happened further back along the line” felt like a moment of clarity in amongst the ever-present sense of identity loss.&lt;/p&gt;
+
+&lt;p&gt;I started writing my thoughts about this a few weeks ago when I started to observe that the general running of a company is like a series of loops. Since then, loops have become a big talking point in the last week - the idea that people should build little systems that do the work and tweak them between runs rather than doing the manual coding and/or co-piloting.&lt;/p&gt;
+
+&lt;p&gt;How very Eno.&lt;/p&gt;
+
+&lt;p&gt;A quick warning though - I feel like “Loops” are just this week’s word/approximation of the broader move that goes way beyond small, repeatable processes into any act of creativity that AI appears to be chewing through as we speak.&lt;/p&gt;
+
+&lt;p&gt;Brian Eno made the move from instrumentalist → producer. It didn’t make him any less of a musician when he no longer played the notes, the instrument changed and so did his relationship with it. As a designer, my instruments for creative work are Figma, typefaces, imagery, and code. If I move into producer mode, the creativity happens further back along the line where I create the conditions, observe the output, tweak the conditions, and experiment.&lt;/p&gt;
+
+&lt;p&gt;I’ve used the word “creativity” a lot because I am speaking from my direct experience as a designer, but for me this extends to anyone who has created a company process, built a system, written code - it’s the same flavour of move from operator → producer. The creative decisions at that level are far more powerful than anything that you can do as an individual at the coalface. At least that’s how it feels to me: losing a walled garden, but gaining a kingdom.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 12 Jun 2026 01:00:00 +0100</pubDate>
+        <link>https://jordanm.co.uk/2026/06/12/loops.html</link>
+        <guid isPermaLink="true">https://jordanm.co.uk/2026/06/12/loops.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>User Interfaces and &quot;Blandification&quot;</title>
@@ -706,146 +751,6 @@ The student returned to the next class looking shellshocked as she handed in a f
         <pubDate>Mon, 19 Sep 2022 00:00:00 +0100</pubDate>
         <link>https://jordanm.co.uk/2022/09/19/working-backwards-from-magic.html</link>
         <guid isPermaLink="true">https://jordanm.co.uk/2022/09/19/working-backwards-from-magic.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Intentional and Emergent Design Systems II</title>
-        <description>&lt;p&gt;&lt;img src=&quot;/img/intentional-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I believe Robin Rendle’s &lt;a href=&quot;https://www.robinrendle.com/essays/systems-mistakes-and-the-sea&quot;&gt;Systems, Mistakes, and the Sea&lt;/a&gt; was a catalyst for several enjoyable articles on design systems since the beginning of the year. Notably Jeremy Keith’s &lt;a href=&quot;https://adactio.com/journal/16342&quot;&gt;Web standards, dictionaries, and design systems&lt;/a&gt;, Frank Chimero’s &lt;a href=&quot;https://frankchimero.com/blog/2020/gardening-vs-architecture/&quot;&gt;Gardening vs Architecture&lt;/a&gt;, a subsequent, deeper dive in Jeremy’s &lt;a href=&quot;https://adactio.com/journal/16369&quot;&gt;Architects, gardeners, and design systems&lt;/a&gt;, and Dave Rupert’s &lt;a href=&quot;https://daverupert.com/2020/01/the-web-is-industrialized-and-i-helped-industrialize-it/&quot;&gt;The Web is Industrialized and I helped industrialize it&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;What follows is a contribution to this discussion. I’m still unpacking it but it feels timely to push some thoughts out into the open whether they’re ready or not.&lt;/p&gt;
-
-&lt;p&gt;I believe that we are collectively tapping into something important within the design system discourse. Something felt, but difficult to uncover and put into words. However, it is gaining shape with some common themes around the role of &lt;strong&gt;humans and machines&lt;/strong&gt;, &lt;strong&gt;order and chaos&lt;/strong&gt;, &lt;strong&gt;industry and liberty&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;I’m going to dive deeper into the conversation through the framing I believe helps me most by elaborating on &lt;a href=&quot;http://jordanm.co.uk/2019/07/30/intentional-and-emergent-design-systems.html&quot;&gt;Intentional and Emergent Design Systems&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;recapping-intentional-and-emergent-design-systems&quot;&gt;Recapping Intentional and Emergent Design Systems&lt;/h2&gt;
-
-&lt;p&gt;It helps to read &lt;a href=&quot;http://jordanm.co.uk/2019/07/30/intentional-and-emergent-design-systems.html&quot;&gt;the original, short article first&lt;/a&gt;, but as a brief summary:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Intentional&lt;/strong&gt; design systems are the typical approach to building design systems: design system first → design/build solutions from the system, i.e intentionally designing a system regardless of the solution.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Emergent&lt;/strong&gt; design systems start from solutions and work backwards to find emerging, reusable patterns for the system.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-reach--scope-of-design-systems&quot;&gt;The Reach &amp;amp; Scope of Design Systems&lt;/h2&gt;
-
-&lt;p&gt;As far as I am aware, there is no collective understanding of the desirable reach of a design system. The intentional camp believes that everything must come from the system. By default, the system permeates the entire product.&lt;/p&gt;
-
-&lt;p&gt;In an intentional design system, there is no room for chaos. Only order. If something doesn’t fit the system it doesn’t belong in the system. If something cannot be born out of the system, it will not belong in the system. Intentional systems are authoritarian by nature.&lt;/p&gt;
-
-&lt;p&gt;Their liberal counterpart, the emergent design system, begins with creativity and chaos deriving patterns for the system later. Decisions start from user outcomes (the sum of all parts) and work backwards to find reusable parts. It’s hard to quantify the reach of emergent systems. It may cover a small amount of the product, and it may cover a lot of the product. It’s not all-encompassing. There is likely a correlation between the number of unique user problems encountered and the overall coverage of the system.&lt;/p&gt;
-
-&lt;p&gt;The scope of an intentional design system is large by default and requires some degree of conjectural bloat (code for scenarios that have yet to occur). When components are front-loaded into the process you get wastage as a byproduct. Guesswork and assumptions are part of the product’s DNA. I don’t blame anyone in thinking that this approach is the sensible direction. We’ve been conditioned to believe the next new thing should come first in the chain of events, whether it’s mobile-first, content first, users first - when it comes to building products in design and code, you can be forgiven for adopting a design system first approach.&lt;/p&gt;
-
-&lt;p&gt;Although not a like-for-like comparison, it’s interesting to see that the same voices who would bemoan libraries such as jQuery and Bootstrap - two libraries full to the brim of conjectural bloat - haven’t noticed the hypocrisy in advocating for design system first approaches before building up to more complex components. The same voices who evangelise for accessibility damning jQuery for adverse effects on performance and page weight are happy to tax users for a speculative design system&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/intentional-3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In contrast, emergent design systems require only accepting evidence-based patterns and components into its system. It flips everything on its head asking the parts to prove themselves to be replicable and have sufficient utility. They need &lt;a href=&quot;https://frankchimero.com/blog/2020/gardening-vs-architecture/&quot;&gt;the gardeners Frank Chimero alluded to&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;A useful lens for drawing that difficult line around the scope and reach of a design system might be around the value of tasks the UI components will provide to users. Low-value tasks (the type that provides limited utility such as a terms and conditions page) are perfect for design systems to do the heavy lifting - if not &lt;strong&gt;all&lt;/strong&gt; of the lifting. High-value tasks (such as a search box on an e-commerce product) should require more human attention and deservedly so. Think of a pilot flying a plane full of passengers - the most critical (and therefore high-value) parts of a flight are: taxiing, takeoff, and landing. Autopilot can take care of the rest. You want your pilot at his or her sharpest for those key moments. Your design system is no different.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-sunk-cost-fallacy-of-design-systems&quot;&gt;The Sunk Cost Fallacy of Design Systems&lt;/h2&gt;
-
-&lt;p&gt;An intentional design system assumes that your design work is done. You can maintain it, of course, but making changes to the system becomes a bureaucratic process.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;We’ve industrialized design and are relegated to squeezing efficiencies out of it through our design systems. All CSS changes must now have a business value and user story ticket attached to it.&lt;/p&gt;
-
-  &lt;p&gt;Dave Rupert — &lt;a href=&quot;https://daverupert.com/2020/01/the-web-is-industrialized-and-i-helped-industrialize-it/&quot;&gt;The Web is Industrialized and I helped industrialize it&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I remember coming up against design bureaucracy during my time working as part of a large scale product team. We were faced with many new user problems in need of solutions. The team were hellbent on shaping the solution to the problem out of the prebuilt pieces of the design system. Reasoning by analogy. The method of thinking rarely leads to new solutions for new problems. First-principles reasoning was deemed too expensive.&lt;/p&gt;
-
-&lt;p&gt;I was met with arguments like “That means we’re going to have to create a new rule for this component, we’ll have to get internal sign-off, the developers will have to invest extra effort, it’ll need to go through testing, do you seriously want to go through all those steps?”&lt;/p&gt;
-
-&lt;p&gt;It was clear that we had been designed into a corner by our design system or at least our organisation’s ideology. What if our initial assumptions were wrong? What if we didn’t have the pieces to address these new problems?&lt;/p&gt;
-
-&lt;p&gt;I noticed a pattern. If a problem could be easily solved, low-effort, low value, or if it had already been solved - defer to the system. Watch out for when the system pushes back. If the design system pushes back, it’s time for human intervention and invention.&lt;/p&gt;
-
-&lt;p&gt;Individuals commit the sunk cost fallacy when they continue a behaviour or endeavour as a result of previously invested resources (time, money or effort) (Arkes &amp;amp; Blumer, 1985). The same is true for design systems that grow in scope beyond a team’s ability to become dynamic to the system and its user’s needs. Decisions are deferred to the system by default, and anything that requires the system to change is met with often insurmountable objections because of the time, money, and/or effort to change the system.&lt;/p&gt;
-
-&lt;p&gt;Useful questions to ask when the system pushes back:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Do we need to amend the system?&lt;/li&gt;
-  &lt;li&gt;Is it a unique case that should sit outside the system?&lt;/li&gt;
-  &lt;li&gt;Is it likely to reoccur in different variations?&lt;/li&gt;
-  &lt;li&gt;Is it something that &lt;strong&gt;should&lt;/strong&gt; be governed by a design system?&lt;/li&gt;
-  &lt;li&gt;Does the system bake in more assumptions than a different approach? (Occam’s Razor is a good guide for software decisions)&lt;/li&gt;
-  &lt;li&gt;Does building the best thing involve building it out of the things we’ve already built? Or does it require building something new?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;You can tell what type of design system you’re working with if it biases solutions towards pre-existing components or if the system gives you the freedom to invent.&lt;/p&gt;
-
-&lt;h2 id=&quot;leaving-room-for-creativity&quot;&gt;Leaving Room for Creativity&lt;/h2&gt;
-
-&lt;p&gt;The majority of systems I hear people advocate for &lt;em&gt;appear&lt;/em&gt; to subscribe to intentional design systems. Because of this, one of my overriding fears is that design systems are designing designers out of the picture. For years we’ve pushed against the idea of design as a commodity, yet here we are commoditising design down to atomic levels.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Sometimes you load up a show on Netflix or a song on Spotify and you can feel the algorithm in it.”&lt;/p&gt;
-
-  &lt;p&gt;Frank Chimero — &lt;a href=&quot;https://frankchimero.com/blog/2020/gardening-vs-architecture/&quot;&gt;Gardening vs Architecture&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I used to poke fun at the websites of the early 2010s claiming to be “handcrafted”. Now I’m thinking they were on to something. Perhaps “handcrafted” was the wrong adjective, but I think they were trying to describe something else. Something made through more effort, deliberateness, craft, and creativity. These experiences placed more of an emphasis on the importance of aesthetics, they spoke to human ideals such as affordance, familiarity, and metaphor. Flat design lends itself towards low-effort commoditisation and malleability in a design system - perhaps leading to the ideology of “everything that can be systemised, will be systemised”.&lt;/p&gt;
-
-&lt;p&gt;There is a certain coldness in the algorithms. You can feel the algorithm in a rigid design system that spans every corner of a product. You don’t want a design system that feels “automated” - well, &lt;strong&gt;you&lt;/strong&gt; might but your users certainly don’t. Your users would rather a product designed with care (dare I say, “handcrafted?”).&lt;/p&gt;
-
-&lt;p&gt;The benchmark must surely be what resonates with users - and if that is an amalgamation of predefined components and rules that must work because the system says so, then fine, so be it. I firmly believe that it makes much more sense to start from resonance and work backwards treating users first and systems second.&lt;/p&gt;
-
-&lt;p&gt;If I could give an artificial intelligence the keys to fully automating modern design, I’d point it towards an intentional design system. An emergent approach leaves room for mystery, chaos, intuition, creativity and expression - the unpredictable, unique, innately human elements.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Do design systems limit creativity?&lt;/strong&gt; The answer rests on what type of system you subscribe to.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/intentional-4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The worst incarnation of a design system designs designers out of the picture. If I were building an AI tool to displace designers, I’d point them towards an all-encompassing, intentional design system. I fear that we’re blindly running towards automation and we’re giving the algorithms the template our jobs. It’s not hard to imagine a world where No Code technology complements No Design. By contrast, the best incarnation of a design system leaves room for creativity, invention, the &lt;strong&gt;human&lt;/strong&gt; elements.&lt;/p&gt;
-
-&lt;p&gt;And my argument is exactly that - we should safeguard the human elements of the design process. There will always be a need for human intervention, the kind of which requires a human eye to correct for optical alignment when the machines produce rounding errors, or perhaps it is our all too human flaws that produce the rounding errors, either way, the goal should be to prioritise people over rules, algorithms, and automation. Ultimately you want to design systems that liberate creative teams rather than systems that constrain creative teams.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Jeremy Keith recently added colour to the idea of intentional and emergent design systems drawing ideological comparisons with language prescriptivists and language descriptivists.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Language prescriptivists attempt to define rules about what’s right or right or wrong in a language. Rules like “never end a sentence with a preposition.” Prescriptivists are generally fighting a losing battle and spend most of their time bemoaning the decline of their language because people aren’t following the rules.&lt;/p&gt;
-
-  &lt;p&gt;Language descriptivists work the exact opposite way. They see their job as documenting existing language usage instead of defining it. Lexicographers—like Merriam-Webster or the Oxford English Dictionary—receive complaints from angry prescriptivists when dictionaries document usage like “literally” meaning “figuratively”.&lt;/p&gt;
-
-  &lt;p&gt;Jeremy Keith - &lt;a href=&quot;https://adactio.com/journal/16342&quot;&gt;Web standards, dictionaries, and design systems&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;When I first read the article, I quietly took issue with where Jeremy’s interpretation landed. The reasoning up until the ending resonated, but I believed his conclusion put intentional design systems on the side of beauty at odds with the emergent design systems - accurate but not beautiful.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;I think we can learn from the worlds of web standards and dictionaries here. A prescriptive approach might give you a beautiful design system, but if it doesn’t reflect the actual product, it’s fiction. A descriptive approach might give a design system with imperfections and annoying flaws, but at least it will be accurate.&lt;/p&gt;
-
-  &lt;p&gt;I think it’s more important for a design system to be accurate than beautiful.&lt;/p&gt;
-
-  &lt;p&gt;Jeremy Keith - &lt;a href=&quot;https://adactio.com/journal/16342&quot;&gt;Web standards, dictionaries, and design systems&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;How can front-loaded design systems result in more beautiful products than design systems that begin with the end in mind and work backwards?&lt;/p&gt;
-
-&lt;p&gt;Then I realised the flaw in my thinking. Jeremy was describing the design system &lt;em&gt;itself&lt;/em&gt;, not the fruits of the system. (The irony of my flawed thinking further highlights my own biases towards the emergent end of the spectrum!)&lt;/p&gt;
-
-&lt;p&gt;I feel that one further elaboration is required: an intentional design system can create beautiful design systems, an emergent design system can be created from beautiful products.&lt;/p&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;I’ve been told that a speculative design system makes the point that I’m trying to make with “intentional” design systems much clearer. I really don’t care what label anyone wants to use as I mentioned in the previous article, I’m not trying to make this a “thing”. I seek no such fame. All I want to do is outline there are two competing approaches here which people aren’t talking about. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Fri, 07 Feb 2020 00:00:01 +0000</pubDate>
-        <link>https://jordanm.co.uk/2020/02/07/intentional-and-emergent-design-systems-ii-copy.html</link>
-        <guid isPermaLink="true">https://jordanm.co.uk/2020/02/07/intentional-and-emergent-design-systems-ii-copy.html</guid>
         
         
       </item>
